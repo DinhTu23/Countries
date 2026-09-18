@@ -1,0 +1,75 @@
+<!doctype html><html lang="vi"><head><meta charset="utf8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hồ sơ quốc gia — Danh mục</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+Display:wght@700&family=Noto+Sans:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#f4ecda; --surface:#fffdf7; --ink:#2a2015; --ink-soft:#6a5842; --ink-faint:#8b7a61;
+  --border:#d7c4a0; --border-soft:#e4d6b8; --accent:#9c5322; --accent-deep:#6d3813;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c; --surface:#1f1910; --ink:#ece1cb; --ink-soft:#b7a686; --ink-faint:#8d7d63;
+    --border:#453a25; --border-soft:#372e1e; --accent:#dd9d59; --accent-deep:#f0bd85;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Noto Serif",Georgia,serif; font-size:17px; line-height:1.7;
+  padding:40px 18px 70px;
+}
+.wrap{max-width:760px; margin:0 auto;}
+.eyebrow{
+  font-family:"Noto Sans",sans-serif; text-transform:uppercase; letter-spacing:.16em;
+  font-size:.68rem; font-weight:700; color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",serif; font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.4rem); margin:.3em 0 .25em; letter-spacing:-.01em;
+}
+.lede{color:var(--ink-soft); font-style:italic; margin:0 0 2em; font-size:1.02rem;}
+.list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px;}
+.list li{
+  background:var(--surface); border:1px solid var(--border-soft); border-left:3px solid var(--accent);
+  border-radius:8px; box-shadow:var(--shadow);
+}
+.list a{
+  display:flex; align-items:center; gap:14px; padding:14px 18px;
+  text-decoration:none; color:inherit;
+}
+.list .flag{width:34px; height:23px; flex:0 0 auto; border-radius:3px; border:1px solid var(--border); overflow:hidden;}
+.list .flag svg{display:block; width:100%; height:100%;}
+.list .name{
+  font-family:"Noto Serif Display","Noto Serif",serif; font-weight:700; font-size:1.05rem; color:var(--accent-deep);
+}
+.list .meta{
+  font-family:"Noto Sans",sans-serif; font-size:.72rem; color:var(--ink-faint);
+  margin-top:.15em; letter-spacing:.02em;
+}
+.foot{
+  margin-top:2.5em; font-family:"Noto Sans",sans-serif; font-size:.76rem; color:var(--ink-faint); font-style:italic;
+}
+</style></head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Hồ sơ quốc gia</div>
+  <h1>Danh mục các nước đã tìm hiểu</h1>
+  <p class="lede">Mỗi bài là một hồ sơ đầy đủ: địa lý, lịch sử, thể chế, kinh tế, văn hóa, ẩm thực, địa điểm nổi tiếng và vị thế quốc tế.</p>
+  <ul class="list">
+    <li>
+      <a href="Vietnam.html">
+        <span class="flag"><svg viewBox="0 0 30 20"><rect width="30" height="20" fill="#da251d"/><polygon fill="#ffff00" points="15,5 16.1226,8.4549 19.7553,8.4549 16.8164,10.5902 17.9389,14.0451 15,11.9098 12.0611,14.0451 13.1836,10.5902 10.2447,8.4549 13.8774,8.4549"/></svg></span>
+        <span>
+          <span class="name">Việt Nam</span>
+          <span class="meta">Đông Nam Á</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+  <p class="foot">Danh mục này tự cập nhật mỗi khi có một bài mới được lưu.</p>
+</div>
+</body></html>

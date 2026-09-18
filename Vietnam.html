@@ -1,0 +1,1126 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Việt Nam — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Việt Nam</div>
+          <h1>Việt Nam</h1>
+          <div class="period">Châu Á · Đông Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Việt Nam: nền đỏ, ngôi sao vàng năm cánh ở giữa">
+            <rect width="30" height="20" fill="#da251d"/>
+            <polygon fill="#ffff00" points="15,5 16.1226,8.4549 19.7553,8.4549 16.8164,10.5902 17.9389,14.0451 15,11.9098 12.0611,14.0451 13.1836,10.5902 10.2447,8.4549 13.8774,8.4549"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Việt Nam là dải đất hình chữ S bên bờ Biển Đông, nơi hơn một trăm triệu người thuộc 54 dân tộc cùng chia sẻ một nền văn minh lúa nước lâu đời. Từ một đất nước bị chiến tranh chia cắt, Việt Nam đã trở thành một trong những nền kinh tế xuất khẩu tăng trưởng nhanh nhất châu Á sau công cuộc Đổi Mới năm 1986. Đất nước vẫn do một đảng duy nhất lãnh đạo, và vừa trải qua cuộc cải tổ bộ máy hành chính lớn nhất trong nhiều thập kỷ. Nếu chỉ nhớ một điều về Việt Nam, hãy nhớ: đây là câu chuyện về khả năng thích nghi — từ chiến tranh sang hòa bình, từ bao cấp sang thị trường, từ 63 tỉnh xuống còn 34.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">331.345 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~102,3 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 2025</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Hà Nội</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Việt</span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Tín ngưỡng dân gian<small>Phật giáo, Công giáo…<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Đồng (₫, VND)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~5.100 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính 2026</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~TK VII TCN</span>
+          <span class="tl-what">Nước Văn Lang</span>
+          <span class="tl-note">Nhà nước sơ khai đầu tiên thời các Vua Hùng, gắn với văn hóa Đông Sơn và trống đồng</span>
+        </li>
+        <li>
+          <span class="tl-when">179 TCN</span>
+          <span class="tl-what">Âu Lạc thất thủ</span>
+          <span class="tl-note">An Dương Vương thua Triệu Đà, mở đầu hơn một nghìn năm Bắc thuộc</span>
+        </li>
+        <li>
+          <span class="tl-when">năm 40</span>
+          <span class="tl-what">Khởi nghĩa Hai Bà Trưng</span>
+          <span class="tl-note">Cuộc nổi dậy lớn đầu tiên, giành lại quyền tự chủ trong ba năm</span>
+        </li>
+        <li>
+          <span class="tl-when">938</span>
+          <span class="tl-what">Chiến thắng Bạch Đằng</span>
+          <span class="tl-note">Ngô Quyền đánh tan quân Nam Hán, chấm dứt Bắc thuộc, mở kỷ nguyên độc lập</span>
+        </li>
+        <li>
+          <span class="tl-when">1010</span>
+          <span class="tl-what">Dời đô về Thăng Long</span>
+          <span class="tl-note">Lý Thái Tổ chuyển kinh đô từ Hoa Lư ra Thăng Long — Hà Nội ngày nay</span>
+        </li>
+        <li>
+          <span class="tl-when">1258 · 1285 · 1288</span>
+          <span class="tl-what">Ba lần thắng Nguyên – Mông</span>
+          <span class="tl-note">Nhà Trần chặn đứng đế chế mạnh nhất thế giới đương thời</span>
+        </li>
+        <li>
+          <span class="tl-when">1428</span>
+          <span class="tl-what">Lê Lợi lập nhà Lê</span>
+          <span class="tl-note">Kết thúc 10 năm khởi nghĩa Lam Sơn, đánh đuổi quân Minh</span>
+        </li>
+        <li>
+          <span class="tl-when">1789</span>
+          <span class="tl-what">Quang Trung đại phá quân Thanh</span>
+          <span class="tl-note">Chiến thắng Ngọc Hồi – Đống Đa trong dịp Tết Kỷ Dậu</span>
+        </li>
+        <li>
+          <span class="tl-when">1802 – 1804</span>
+          <span class="tl-what">Nhà Nguyễn &amp; quốc hiệu “Việt Nam”</span>
+          <span class="tl-note">Gia Long thống nhất đất nước, đóng đô ở Huế, đặt quốc hiệu Việt Nam</span>
+        </li>
+        <li>
+          <span class="tl-when">1858 – 1884</span>
+          <span class="tl-what">Pháp xâm lược</span>
+          <span class="tl-note">Từ tiếng súng ở Đà Nẵng đến Hòa ước Patenôtre: Việt Nam thành thuộc địa</span>
+        </li>
+        <li>
+          <span class="tl-when">2/9/1945</span>
+          <span class="tl-what">Tuyên ngôn Độc lập</span>
+          <span class="tl-note">Hồ Chí Minh khai sinh nước Việt Nam Dân chủ Cộng hòa sau Cách mạng Tháng Tám</span>
+        </li>
+        <li>
+          <span class="tl-when">1954</span>
+          <span class="tl-what">Điện Biên Phủ &amp; Genève</span>
+          <span class="tl-note">Pháp thất bại ngày 7/5; Hiệp định Genève 21/7 chia cắt hai miền tại vĩ tuyến 17</span>
+        </li>
+        <li>
+          <span class="tl-when">30/4/1975</span>
+          <span class="tl-what">Thống nhất đất nước</span>
+          <span class="tl-note">Chiến tranh kết thúc; hai miền chính thức hợp nhất ngày 2/7/1976</span>
+        </li>
+        <li>
+          <span class="tl-when">12/1986</span>
+          <span class="tl-what">Đổi Mới</span>
+          <span class="tl-note">Đại hội VI mở đường sang kinh tế thị trường định hướng XHCN</span>
+        </li>
+        <li>
+          <span class="tl-when">1995 · 2007</span>
+          <span class="tl-what">Hội nhập quốc tế</span>
+          <span class="tl-note">Gia nhập ASEAN và bình thường hóa quan hệ với Mỹ (1995); vào WTO (2007)</span>
+        </li>
+        <li>
+          <span class="tl-when">2025 – 2026</span>
+          <span class="tl-what">Tinh gọn bộ máy</span>
+          <span class="tl-note">Sáp nhập còn 34 tỉnh, bỏ cấp huyện; thay đổi lớn ở thượng tầng lãnh đạo</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ X phần lớn dựa vào sử liệu chép muộn và khảo cổ học, nên các con số mang tính ước lệ. Một số văn kiện dùng ngày 2/7/1976 (thống nhất về nhà nước) thay vì 30/4/1975 (kết thúc chiến sự) làm mốc thống nhất.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Về số liệu dân số</b>
+        Tổng cục Thống kê, Liên Hợp Quốc và Ngân hàng Thế giới thường công bố các ước tính dân số Việt Nam chênh lệch nhau đôi chút tùy thời điểm và phương pháp. Con số trong bài lấy theo ước tính năm 2025.
+      </aside>
+
+      <p class="lede">Việt Nam trải dài hình chữ S dọc bờ đông bán đảo Đông Dương, phía bắc giáp Trung Quốc, phía tây giáp Lào và Campuchia, phía đông và nam là Biển Đông.</p>
+
+      <p>Với diện tích khoảng <span class="tg">331.345 km²</span><a class="cite" href="#ref-1">[1]</a>, địa hình Việt Nam chủ yếu là đồi núi, trong khi phần lớn dân cư lại tập trung ở hai vùng đồng bằng châu thổ trù phú: đồng bằng sông Hồng ở phía bắc và đồng bằng sông Cửu Long ở phía nam. Đường bờ biển dài hơn <span class="tg">3.260 km</span> khiến biển gắn chặt với sinh kế, an ninh và cả bản sắc của người Việt. Khí hậu nhiệt đới gió mùa làm miền Bắc có bốn mùa rõ rệt, còn miền Nam gần như chỉ có mùa mưa và mùa khô.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">102,3 triệu người</span><a class="cite" href="#ref-1">[1]</a>, đứng thứ ba Đông Nam Á sau Indonesia và Philippines. Đất nước có 54 dân tộc, trong đó người Kinh chiếm phần lớn dân số, sống xen kẽ hoặc liền kề với 53 dân tộc thiểu số tập trung chủ yếu ở vùng núi phía Bắc, Tây Nguyên và Tây Nam Bộ. Tốc độ đô thị hóa tăng nhanh, với Hà Nội và Thành phố Hồ Chí Minh là hai đô thị lớn nhất.</p>
+
+      <p>Từ ngày <span class="tg">12/6/2025</span>, cả nước thực hiện một trong những đợt cải cách địa giới hành chính lớn nhất lịch sử hiện đại: 63 tỉnh, thành cũ được sáp nhập còn <span class="tg">34 tỉnh, thành phố</span>, đồng thời bỏ hẳn cấp huyện, chuyển sang mô hình chính quyền địa phương hai cấp gồm tỉnh/thành phố và xã/phường<a class="cite" href="#ref-2">[2]</a>. Đây là thay đổi sâu rộng, ảnh hưởng trực tiếp đến bộ máy hành chính, quy hoạch đô thị và đời sống người dân trên cả nước.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Việt Nam có thể đọc như một chuỗi dài những lần mất rồi giành lại quyền tự chủ — và mỗi lần giành lại, người Việt đều bồi thêm một lớp vào bản sắc của mình.</p>
+
+      <p><b>Thời dựng nước.</b> Truyền thuyết chép rằng các <span class="nv" data-note="Danh hiệu chung của những người đứng đầu nước Văn Lang, theo sử cũ có 18 đời nối nhau trị vì — con số mang tính ước lệ.">Vua Hùng</span> lập nước Văn Lang khoảng thế kỷ VII TCN, kinh đô ở Phong Châu (Phú Thọ ngày nay). Nền tảng vật chất của thời kỳ này là văn hóa Đông Sơn với đỉnh cao là trống đồng. Khoảng năm 258 TCN, <span class="nv" data-note="Tức Thục Phán, thủ lĩnh Âu Việt, người hợp nhất Âu Việt và Lạc Việt thành nước Âu Lạc, đóng đô ở Cổ Loa.">An Dương Vương</span> thay thế Hùng Vương, lập nước Âu Lạc và xây thành Cổ Loa. Đến năm <span class="tg">179 TCN</span>, Âu Lạc rơi vào tay Triệu Đà, mở đầu giai đoạn Bắc thuộc.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao “nghìn năm Bắc thuộc” quan trọng</b>
+        Đây là giai đoạn người Việt tiếp nhận chữ Hán, Nho giáo, Phật giáo và kỹ thuật phương Bắc, nhưng vẫn giữ được tiếng nói riêng và cấu trúc làng xã — lý do bản sắc không bị hòa tan sau hơn một nghìn năm.
+      </aside>
+
+      <p><b>Hơn nghìn năm Bắc thuộc (179 TCN – 938).</b> Suốt thời kỳ này, các cuộc khởi nghĩa nổ ra liên tục: <span class="nv" data-note="Trưng Trắc và Trưng Nhị, lãnh đạo cuộc khởi nghĩa năm 40, lập chính quyền tự chủ kéo dài ba năm.">Hai Bà Trưng</span> năm <span class="tg">40</span>, Bà Triệu năm 248, Lý Bí lập nước Vạn Xuân năm 544, rồi Mai Thúc Loan và Phùng Hưng ở thế kỷ VIII. Tất cả đều bị dập tắt, nhưng chúng duy trì một ký ức chính trị liên tục về quyền tự chủ.</p>
+
+      <p><b>Kỷ nguyên độc lập (938 – 1858).</b> Năm <span class="tg">938</span>, <span class="nv" data-note="Người đánh tan quân Nam Hán bằng trận địa cọc ngầm trên sông Bạch Đằng, mở đầu thời kỳ độc lập lâu dài.">Ngô Quyền</span> chiến thắng trên sông Bạch Đằng, chấm dứt Bắc thuộc. Các triều đại kế tiếp — Đinh, Tiền Lê, Lý, Trần, Hồ, Lê, Mạc, Tây Sơn, Nguyễn — dần định hình một quốc gia có luật pháp, khoa cử và biên giới. Năm <span class="tg">1010</span>, <span class="nv" data-note="Vua sáng lập nhà Lý, người ban Chiếu dời đô chuyển kinh đô từ Hoa Lư ra Thăng Long.">Lý Thái Tổ</span> dời đô ra Thăng Long; năm 1070 Văn Miếu được dựng, mở đầu nền giáo dục khoa cử. Nhà Trần ba lần đánh bại quân Nguyên – Mông (<span class="tg">1258, 1285, 1288</span>) với công lớn của <span class="nv" data-note="Trần Quốc Tuấn, tổng chỉ huy kháng chiến chống Nguyên – Mông, tác giả Hịch tướng sĩ.">Trần Hưng Đạo</span>. Sau 20 năm thuộc Minh, <span class="nv" data-note="Lãnh đạo khởi nghĩa Lam Sơn (1418–1427), lên ngôi năm 1428, lập nhà Hậu Lê.">Lê Lợi</span> giành lại độc lập năm <span class="tg">1428</span>, và dưới thời Lê Thánh Tông, bộ luật Hồng Đức cùng quá trình “Nam tiến” đưa lãnh thổ mở rộng dần về phương Nam.</p>
+
+      <p><b>Chia cắt, Tây Sơn và nhà Nguyễn.</b> Từ thế kỷ XVI, đất nước rơi vào cảnh phân tranh Nam – Bắc triều rồi Trịnh – Nguyễn, lấy sông Gianh làm ranh giới suốt gần hai thế kỷ. Phong trào Tây Sơn lật đổ cục diện đó; năm <span class="tg">1789</span>, <span class="nv" data-note="Tức Nguyễn Huệ, người chỉ huy trận Ngọc Hồi – Đống Đa đánh tan quân Thanh trong dịp Tết Kỷ Dậu.">Quang Trung</span> đại phá quân Thanh. Đến năm <span class="tg">1802</span>, <span class="nv" data-note="Tức Nguyễn Ánh, người lập ra nhà Nguyễn — triều đại phong kiến cuối cùng của Việt Nam.">Gia Long</span> thống nhất đất nước, đóng đô ở Huế, và năm 1804 chính thức đặt quốc hiệu <b>Việt Nam</b>.</p>
+
+      <p><b>Pháp thuộc và cách mạng (1858 – 1945).</b> Năm <span class="tg">1858</span>, liên quân Pháp – Tây Ban Nha nổ súng ở Đà Nẵng; đến Hòa ước Patenôtre năm <span class="tg">1884</span>, Việt Nam trở thành thuộc địa và xứ bảo hộ của Pháp. Thời kỳ này để lại đường sắt, đô thị kiểu Âu, cà phê, bánh mì — và cả sự phổ biến của chữ Quốc ngữ. Các phong trào yêu nước nối nhau thất bại cho đến khi Đảng Cộng sản Việt Nam ra đời năm <span class="tg">1930</span>; Cách mạng Tháng Tám 1945 dẫn tới bản Tuyên ngôn Độc lập ngày <span class="tg">2/9/1945</span>.</p>
+
+      <p><b>Ba mươi năm chiến tranh (1946 – 1975).</b> Kháng chiến chống Pháp kết thúc bằng chiến thắng Điện Biên Phủ ngày <span class="tg">7/5/1954</span>; Hiệp định Genève sau đó chia đất nước tại vĩ tuyến 17. Cuộc chiến tiếp theo với sự can dự của Hoa Kỳ kéo dài đến ngày <span class="tg">30/4/1975</span>, và hai miền chính thức hợp nhất thành Cộng hòa Xã hội chủ nghĩa Việt Nam ngày 2/7/1976. Ngay sau đó, Việt Nam còn trải qua chiến tranh biên giới Tây Nam (1978–1979) và chiến tranh biên giới phía Bắc (1979).</p>
+
+      <p><b>Đổi Mới và hội nhập (1986 – nay).</b> Khủng hoảng kinh tế thời bao cấp buộc Đảng khởi động <span class="tg">Đổi Mới</span> tại Đại hội VI tháng 12/1986. Năm <span class="tg">1995</span>, Việt Nam gia nhập ASEAN và bình thường hóa quan hệ với Hoa Kỳ; năm <span class="tg">2007</span> gia nhập WTO. Bản sắc Việt Nam hôm nay vì thế là sự pha trộn giữa cội rễ bản địa Đông Nam Á, ảnh hưởng Nho – Phật từ phương Bắc, dấu ấn Pháp thời thuộc địa và tinh thần dân tộc được tôi luyện qua chiến tranh — cộng thêm tâm lý thực dụng, hướng ra thế giới của một xã hội trẻ đang đô thị hóa rất nhanh.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Việt Nam</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Đảng Cộng sản Việt Nam</span>
+          <span class="tier-desc">Lực lượng lãnh đạo Nhà nước &amp; xã hội (Điều 4 Hiến pháp), đứng đầu là Tổng Bí thư</span>
+        </li>
+        <li>
+          <span class="tier-role">Chủ tịch nước · Quốc hội · Chính phủ</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, cơ quan lập pháp và cơ quan hành pháp</span>
+        </li>
+        <li>
+          <span class="tier-role">34 tỉnh, thành phố trực thuộc Trung ương</span>
+          <span class="tier-desc">Cấp chính quyền địa phương thứ nhất, từ sau đợt sáp nhập 6/2025</span>
+        </li>
+        <li>
+          <span class="tier-role">Xã, phường</span>
+          <span class="tier-desc">Cấp cơ sở; cấp huyện đã bị xóa bỏ hoàn toàn</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Điều 4 Hiến pháp</b>
+        Hiến pháp 2013 quy định Đảng Cộng sản Việt Nam là lực lượng lãnh đạo Nhà nước và xã hội, đồng thời gắn bó mật thiết với nhân dân và chịu sự giám sát của nhân dân.
+      </aside>
+
+      <p>Việt Nam là nhà nước đơn nhất theo mô hình một đảng lãnh đạo. Quốc hội về mặt hình thức là cơ quan quyền lực nhà nước cao nhất, trong khi Chính phủ điều hành hành pháp và Chủ tịch nước giữ vai trò nguyên thủ quốc gia, đại diện đối nội và đối ngoại.</p>
+
+      <p>Bộ máy lãnh đạo hiện tại có một điểm đặc biệt: từ ngày <span class="tg">7/4/2026</span>, <span class="nv" data-note="Cựu Bộ trưởng Công an (2016–2024), giữ chức Tổng Bí thư từ 8/2024; được bầu làm Chủ tịch nước nhiệm kỳ đầy đủ ngày 7/4/2026, đồng thời nắm giữ cả hai chức vụ cao nhất.">Tô Lâm</span> đồng thời giữ cả hai vị trí cao nhất — Tổng Bí thư và Chủ tịch nước — một sự tập trung quyền lực hiếm gặp trong lịch sử chính trị Việt Nam đương đại<a class="cite" href="#ref-3">[3]</a><a class="cite" href="#ref-4">[4]</a>. Cùng thời điểm, <span class="nv" data-note="Được bầu làm Thủ tướng Chính phủ Việt Nam năm 2026, thay thế Phạm Minh Chính.">Lê Minh Hưng</span> trở thành Thủ tướng, còn <span class="nv" data-note="Chủ tịch Quốc hội Việt Nam, đứng đầu cơ quan lập pháp.">Trần Thanh Mẫn</span> tiếp tục giữ ghế Chủ tịch Quốc hội.</p>
+
+      <p>Cải cách hành chính 2025 cũng tái cấu trúc chính quyền địa phương: cả nước hiện chỉ còn hai cấp — tỉnh/thành phố và xã/phường — sau khi cấp huyện bị xóa bỏ hoàn toàn, nhằm giảm tầng nấc trung gian và tinh giản biên chế<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Trước Đổi Mới, Việt Nam vận hành theo mô hình kinh tế kế hoạch hóa tập trung với nhiều khó khăn. Từ năm 1986, đất nước chuyển dần sang kinh tế thị trường định hướng xã hội chủ nghĩa, đẩy mạnh xuất khẩu và thu hút đầu tư nước ngoài. Việc gia nhập Tổ chức Thương mại Thế giới năm 2007, cùng hàng loạt hiệp định thương mại tự do thế hệ mới như CPTPP, EVFTA và RCEP, đã đưa Việt Nam trở thành một trong những nền kinh tế mở và tăng trưởng nhanh nhất khu vực.</p>
+
+      <p>GDP bình quân đầu người danh nghĩa hiện ước đạt khoảng <span class="tg">5.100 USD</span>, tương đương khoảng <span class="tg">19.600 USD</span> nếu tính theo sức mua tương đương<a class="cite" href="#ref-1">[1]</a> — tăng nhiều lần so với thời điểm bắt đầu Đổi Mới. Cơ cấu kinh tế đã chuyển dịch mạnh từ nông nghiệp sang công nghiệp chế biến, chế tạo và dịch vụ, với điện tử, dệt may và da giày là các trụ cột xuất khẩu. Nông nghiệp tuy giảm tỷ trọng nhưng vẫn giữ vị thế toàn cầu ở gạo, cà phê, hạt điều, hồ tiêu và thủy sản.</p>
+
+      <p>Tuy nhiên, tăng trưởng phụ thuộc lớn vào xuất khẩu khiến Việt Nam nhạy cảm với các cú sốc thương mại. Tháng <span class="tg">10/2025</span>, Việt Nam và Hoa Kỳ công bố khung thỏa thuận thương mại đối ứng, trong đó Mỹ duy trì mức thuế <span class="tg">20%</span> với hàng hóa Việt Nam trong khi mở đường miễn thuế cho một số mặt hàng; đổi lại, Việt Nam cam kết mở cửa mạnh thị trường cho nông sản, ô tô, dược phẩm và dữ liệu số của Mỹ<a class="cite" href="#ref-5">[5]</a>. Đây tiếp tục là một biến số lớn cho triển vọng kinh tế Việt Nam trong những năm tới.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Văn hóa Việt Nam lấy làng xã và gia đình làm trung tâm, với tín ngưỡng thờ cúng tổ tiên gần như phổ biến trong mọi gia đình, bất kể có theo tôn giáo nào khác hay không. Phật giáo, Công giáo, đạo Cao Đài và Hòa Hảo cùng tồn tại bên cạnh tín ngưỡng dân gian, tạo nên một bức tranh tôn giáo đa dạng nhưng ít mang tính xung đột.</p>
+
+      <p>Về mặt tâm lý xã hội, người Việt thường được mô tả là coi trọng quan hệ cộng đồng và thứ bậc trong gia đình, dòng họ, đồng thời có tinh thần thích nghi và chấp nhận rủi ro cao trong kinh doanh — một phần lý giải cho làn sóng khởi nghiệp và khu vực kinh tế phi chính thức sôi động. Việc học được đề cao như con đường đổi đời, một di sản kéo dài từ truyền thống khoa cử. Tết Nguyên đán vẫn là dịp lễ quan trọng nhất trong năm, gắn với truyền thống đoàn tụ gia đình và tôn vinh tổ tiên.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Nước mắm</b>
+        Thứ gia vị làm từ cá ủ muối này có mặt trong hầu hết bữa ăn Việt. Mỗi vùng có công thức pha nước chấm riêng, và cách pha ấy thường là chi tiết phân biệt món ăn “đúng vị” với món ăn chỉ na ná.
+      </aside>
+
+      <p>Ẩm thực Việt Nam nổi tiếng nhờ sự cân bằng: ít dầu mỡ hơn ẩm thực Trung Hoa, nhiều rau thơm và rau sống hơn phần lớn khu vực, và gần như món nào cũng đi kèm một chén nước chấm. Triết lý phối vị xoay quanh việc hòa hợp chua – cay – mặn – ngọt – đắng, cùng sự kết hợp giữa món nóng và rau nguội, giữa thịt và thảo mộc.</p>
+
+      <p>Ba miền có ba tính cách ẩm thực rõ rệt. Miền Bắc chuộng vị thanh, tiết chế, ít cay và ít ngọt — phở Hà Nội hay bún chả là đại diện. Miền Trung, đặc biệt là Huế, ăn cay và mặn đậm hơn, đồng thời giữ lại truyền thống ẩm thực cung đình với các món cầu kỳ, bày biện tinh tế. Miền Nam ngọt hơn, phóng khoáng hơn, dùng nhiều nước dừa và rau trái của vùng đồng bằng sông Cửu Long.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu ba miền</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Phở</span><span class="pick-desc">Nước dùng ninh xương nhiều giờ với quế, hồi, gừng nướng — món Việt nổi tiếng nhất thế giới.</span></li>
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Bún chả</span><span class="pick-desc">Thịt nướng than hoa thả trong bát nước mắm pha chua ngọt, ăn kèm bún và rau sống.</span></li>
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Chả cá</span><span class="pick-desc">Cá ướp nghệ và riềng, rán trên chảo nóng ngay tại bàn với thì là và hành lá.</span></li>
+        <li><span class="pick-where">Miền Trung</span><span class="pick-name">Bún bò Huế</span><span class="pick-desc">Nước dùng cay nồng mùi sả và mắm ruốc, đậm chất cố đô.</span></li>
+        <li><span class="pick-where">Miền Trung</span><span class="pick-name">Mì Quảng · Cao lầu</span><span class="pick-desc">Hai món sợi đặc trưng xứ Quảng và Hội An, rất ít nước dùng, đậm vị.</span></li>
+        <li><span class="pick-where">Miền Nam</span><span class="pick-name">Cơm tấm</span><span class="pick-desc">Sườn nướng, bì, chả trứng trên nền gạo tấm — bữa sáng quốc dân của Sài Gòn.</span></li>
+        <li><span class="pick-where">Miền Nam</span><span class="pick-name">Hủ tiếu · Bánh xèo</span><span class="pick-desc">Dấu ấn giao thoa Hoa – Khmer – Việt của vùng đất phương Nam.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Bánh mì</span><span class="pick-desc">Ổ bánh Pháp được Việt hóa thành món đường phố nổi tiếng toàn cầu.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Gỏi cuốn</span><span class="pick-desc">Bánh tráng cuốn tôm thịt, bún và rau thơm, chấm nước mắm hoặc tương đậu.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Cà phê là một chương riêng. Cây cà phê do người Pháp mang tới từ thế kỷ XIX nay đã đưa Việt Nam thành nước sản xuất cà phê lớn thứ hai thế giới, với gần <span class="tg">95%</span> sản lượng là robusta<a class="cite" href="#ref-6">[6]</a>. Người Việt uống cà phê theo cách riêng: cà phê sữa đá đậm đặc, cà phê trứng của Hà Nội, cà phê muối của Huế, cà phê dừa — tất cả đều mạnh và ngọt hơn khẩu vị phương Tây.</p>
+
+      <p>Cuối cùng, ẩm thực Việt gắn liền với văn hóa vỉa hè: ghế nhựa thấp, quán cóc, bia hơi và những gánh hàng rong bán từ tờ mờ sáng. Với nhiều du khách, ăn uống trên vỉa hè chính là trải nghiệm Việt Nam chân thực nhất.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Lưu ý tên địa phương</b>
+        Sau đợt sáp nhập tỉnh tháng 6/2025, nhiều địa danh du lịch đã đổi tỉnh chủ quản. Bài này ghi vị trí theo vùng miền để tránh nhầm lẫn với bản đồ hành chính cũ.
+      </aside>
+
+      <p>Việt Nam hiện có <span class="tg">9 di sản thế giới</span> được UNESCO công nhận — gồm 6 di sản văn hóa, 2 di sản thiên nhiên và 1 di sản hỗn hợp — đứng thứ hai Đông Nam Á sau Indonesia<a class="cite" href="#ref-7">[7]</a>. Bên cạnh đó là hệ thống bãi biển, hang động, cao nguyên và đô thị mang nhiều lớp lịch sử chồng lên nhau.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Việt Nam</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Đông Bắc</span><span class="pick-name">Vịnh Hạ Long – Cát Bà</span><span class="pick-desc">Hàng nghìn đảo đá vôi giữa biển; di sản thiên nhiên thế giới từ 1994, mở rộng năm 2023.</span></li>
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Hà Nội</span><span class="pick-desc">Phố cổ 36 phố phường, Hồ Gươm, Văn Miếu và kiến trúc Pháp — thủ đô hơn một nghìn năm tuổi.</span></li>
+        <li><span class="pick-where">Tây Bắc</span><span class="pick-name">Sa Pa – Fansipan</span><span class="pick-desc">Ruộng bậc thang và đỉnh núi cao nhất Đông Dương (3.147 m), vùng cư trú của người H’Mông, Dao.</span></li>
+        <li><span class="pick-where">Đồng bằng Bắc Bộ</span><span class="pick-name">Tràng An – Ninh Bình</span><span class="pick-desc">“Hạ Long trên cạn”: núi đá, hang nước và cố đô Hoa Lư; di sản hỗn hợp duy nhất của Việt Nam.</span></li>
+        <li><span class="pick-where">Bắc Trung Bộ</span><span class="pick-name">Phong Nha – Kẻ Bàng</span><span class="pick-desc">Vương quốc hang động, nơi có Sơn Đoòng — hang tự nhiên lớn nhất thế giới.</span></li>
+        <li><span class="pick-where">Miền Trung</span><span class="pick-name">Cố đô Huế</span><span class="pick-desc">Kinh thành, lăng tẩm nhà Nguyễn và nhã nhạc cung đình bên dòng sông Hương.</span></li>
+        <li><span class="pick-where">Miền Trung</span><span class="pick-name">Hội An &amp; Mỹ Sơn</span><span class="pick-desc">Thương cảng cổ rực đèn lồng và quần thể tháp Chăm — hai di sản nằm cạnh nhau.</span></li>
+        <li><span class="pick-where">Nam Trung Bộ</span><span class="pick-name">Đà Nẵng – Bà Nà</span><span class="pick-desc">Biển Mỹ Khê, đèo Hải Vân và Cầu Vàng nổi tiếng trên mạng xã hội toàn cầu.</span></li>
+        <li><span class="pick-where">Miền Nam</span><span class="pick-name">TP. Hồ Chí Minh</span><span class="pick-desc">Đô thị lớn nhất nước: chợ Bến Thành, Dinh Độc Lập, Nhà thờ Đức Bà, địa đạo Củ Chi.</span></li>
+        <li><span class="pick-where">Tây Nam Bộ</span><span class="pick-name">Đồng bằng sông Cửu Long</span><span class="pick-desc">Chợ nổi Cái Răng, miệt vườn và mạng lưới kênh rạch chằng chịt.</span></li>
+        <li><span class="pick-where">Đảo</span><span class="pick-name">Phú Quốc</span><span class="pick-desc">Đảo lớn nhất Việt Nam, trung tâm nghỉ dưỡng biển và quê hương của nước mắm trứ danh.</span></li>
+        <li><span class="pick-where">Tây Nguyên</span><span class="pick-name">Đà Lạt &amp; cao nguyên</span><span class="pick-desc">Thành phố sương mù thời Pháp, thủ phủ cà phê và không gian văn hóa cồng chiêng.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>“Ngoại giao cây tre”</b>
+        Cách ví von cho chính sách đối ngoại Việt Nam: gốc vững — kiên định về chủ quyền và lợi ích quốc gia — nhưng cành uyển chuyển trong quan hệ với các nước lớn, tránh ngả hẳn về một phía.
+      </aside>
+
+      <p>Về đối ngoại, Việt Nam theo đuổi chính sách “ngoại giao cây tre”, cân bằng quan hệ với các nước lớn thay vì chọn phe. Việt Nam hiện có quan hệ đối tác chiến lược toàn diện với nhiều cường quốc — trong đó có Hoa Kỳ, Trung Quốc, Nga, Nhật Bản, Hàn Quốc, Ấn Độ và Úc — đồng thời là thành viên tích cực của <span class="nv" data-note="Hiệp hội các quốc gia Đông Nam Á — tổ chức khu vực mà Việt Nam gia nhập năm 1995.">ASEAN</span>, APEC, và từng hai lần là ủy viên không thường trực Hội đồng Bảo an Liên Hợp Quốc.</p>
+
+      <p>Vấn đề nóng kéo dài nhất là tranh chấp chủ quyền trên Biển Đông, đặc biệt tại quần đảo Hoàng Sa và Trường Sa, nơi Việt Nam có yêu sách chồng lấn với Trung Quốc và một số nước Đông Nam Á khác. Đây vẫn là điểm cọ xát thường xuyên trong quan hệ Việt – Trung, dù hai bên duy trì kênh đối thoại và hợp tác kinh tế song song.</p>
+
+      <p>Song song đó, quan hệ thương mại với Hoa Kỳ — thị trường xuất khẩu lớn nhất của Việt Nam — đang bước vào giai đoạn định hình lại dưới sức ép thuế quan, trong khi việc tập trung quyền lực vào tay Tô Lâm từ năm 2026 cũng khiến giới quan sát quốc tế theo dõi sát định hướng chính sách đối nội và đối ngoại của Việt Nam trong nhiệm kỳ tới. Ở trong nước, ba bài toán lớn được nhắc đến nhiều nhất là già hóa dân số đến sớm so với mức thu nhập, biến đổi khí hậu đe dọa đồng bằng sông Cửu Long, và nhu cầu thoát khỏi vai trò gia công giá rẻ để đi lên các nấc cao hơn của chuỗi giá trị.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Việt Nam</h2>
+      <ol class="funs">
+        <li><b>Chữ viết Latinh giữa vùng chữ tượng hình.</b> Tiếng Việt dùng chữ Quốc ngữ — hệ chữ Latinh có dấu do các giáo sĩ phương Tây thế kỷ XVII hệ thống hóa — khiến Việt Nam khác hẳn Trung Quốc, Nhật Bản hay Thái Lan.</li>
+        <li><b>Tên nước mới có từ 1804.</b> Quốc hiệu “Việt Nam” được vua Gia Long chính thức đặt năm 1804; trước đó đất nước từng mang các tên Văn Lang, Âu Lạc, Vạn Xuân, Đại Cồ Việt, Đại Việt, Đại Nam.</li>
+        <li><b>Cường quốc cà phê robusta.</b> Việt Nam là nước sản xuất cà phê lớn thứ hai thế giới, với gần 95% sản lượng là robusta — nguyên liệu chính của phần lớn cà phê hòa tan toàn cầu<a class="cite" href="#ref-6">[6]</a>.</li>
+        <li><b>Số một thế giới về hạt điều.</b> Việt Nam dẫn đầu xuất khẩu hạt điều 18 năm liên tiếp, chiếm hơn 80% sản lượng xuất khẩu toàn cầu, đạt kỷ lục 730.000 tấn trị giá 4,37 tỷ USD trong năm 2024<a class="cite" href="#ref-8">[8]</a>.</li>
+        <li><b>Hang lớn nhất hành tinh.</b> Sơn Đoòng ở Quảng Bình lớn đến mức bên trong có rừng nguyên sinh, sông ngầm và cả mây hình thành; hang chỉ được người dân phát hiện năm 1991 và khảo sát khoa học năm 2009.</li>
+        <li><b>Chín di sản thế giới.</b> Việt Nam có 9 di sản UNESCO, đứng thứ hai Đông Nam Á sau Indonesia; mới nhất là quần thể Yên Tử – Vĩnh Nghiêm – Côn Sơn, Kiếp Bạc được công nhận năm 2025<a class="cite" href="#ref-7">[7]</a>.</li>
+        <li><b>Múa rối nước — độc nhất thế giới.</b> Loại hình sân khấu này ra đời từ những cánh đồng ngập nước đồng bằng sông Hồng khoảng thế kỷ XI, với nghệ nhân đứng ngâm mình sau tấm mành điều khiển con rối trên mặt nước.</li>
+        <li><b>Món Việt vào từ điển Anh.</b> “Pho” và “banh mi” đã được đưa vào từ điển Oxford như những từ tiếng Anh vay mượn — bánh mì chính là di sản Pháp thuộc được Việt hóa triệt để.</li>
+        <li><b>Quốc gia của xe máy.</b> Xe máy là phương tiện chính của hàng chục triệu người; dòng xe cuồn cuộn giờ tan tầm ở Hà Nội và TP. Hồ Chí Minh là hình ảnh du khách nhớ nhất về Việt Nam.</li>
+        <li><b>54 dân tộc, một tiếng nói chung.</b> Trên lãnh thổ có hơn 100 ngôn ngữ đang được sử dụng, còn tiếng Việt phổ thông là ngôn ngữ thanh điệu với sáu thanh ở giọng Bắc — một trong những rào cản lớn nhất với người học nước ngoài.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Việt Nam có khoảng <span class="tg">102,3 triệu</span> dân, 54 dân tộc, diện tích <span class="tg">331.345 km²</span>, bờ biển hơn 3.260 km.</li>
+        <li>Lịch sử xoay quanh trục: Văn Lang → hơn 1.000 năm Bắc thuộc → <span class="tg">938</span> Ngô Quyền giành độc lập → các triều đại phong kiến → Pháp thuộc → 1945 → 1975 → Đổi Mới.</li>
+        <li>Đổi Mới (<span class="tg">1986</span>) chuyển đất nước từ kinh tế kế hoạch hóa sang thị trường, đưa GDP/người tăng vọt.</li>
+        <li>Từ <span class="tg">6/2025</span>, cả nước còn <span class="tg">34 tỉnh, thành phố</span>; cấp huyện bị xóa bỏ hoàn toàn.</li>
+        <li>Từ <span class="tg">4/2026</span>, Tô Lâm đồng thời giữ chức Tổng Bí thư và Chủ tịch nước; Lê Minh Hưng làm Thủ tướng.</li>
+        <li>Ẩm thực cân bằng, nhiều rau thơm và nước chấm; ba miền ba khẩu vị: Bắc thanh, Trung cay đậm, Nam ngọt.</li>
+        <li>9 di sản UNESCO; cà phê đứng thứ 2 và hạt điều đứng số 1 thế giới về xuất khẩu.</li>
+        <li>Biển Đông và quan hệ thương mại với Mỹ (thuế <span class="tg">20%</span>) là hai vấn đề đối ngoại nổi bật nhất hiện nay.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Sự kiện nào chấm dứt hơn một nghìn năm Bắc thuộc, và diễn ra năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Chiến thắng Bạch Đằng của Ngô Quyền trước quân Nam Hán năm 938.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Quốc hiệu “Việt Nam” chính thức xuất hiện dưới triều vua nào, năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Vua Gia Long, năm 1804, sau khi nhà Nguyễn thống nhất đất nước năm 1802.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Sau cải cách hành chính 2025, Việt Nam chuyển sang mô hình chính quyền địa phương mấy cấp, và cấp nào bị xóa bỏ?</p>
+          <details><summary>Xem đáp án</summary><p>Hai cấp — tỉnh/thành phố và xã/phường; cấp huyện bị xóa bỏ hoàn toàn.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Điểm đặc biệt trong bộ máy lãnh đạo cao nhất của Việt Nam từ tháng 4/2026 là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Tô Lâm đồng thời giữ cả hai chức vụ cao nhất — Tổng Bí thư Đảng và Chủ tịch nước.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Hãy nêu ba nét khác biệt trong khẩu vị của ẩm thực ba miền Bắc – Trung – Nam.</p>
+          <details><summary>Xem đáp án</summary><p>Miền Bắc thanh đạm, ít cay ít ngọt; miền Trung (nhất là Huế) cay và mặn đậm, giữ truyền thống cung đình; miền Nam ngọt hơn, dùng nhiều nước dừa và rau trái miệt vườn.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Kể tên ít nhất bốn di sản thế giới UNESCO của Việt Nam.</p>
+          <details><summary>Xem đáp án</summary><p>Ví dụ: Vịnh Hạ Long – Cát Bà, Cố đô Huế, Phố cổ Hội An, Thánh địa Mỹ Sơn, Phong Nha – Kẻ Bàng, Hoàng thành Thăng Long, Thành nhà Hồ, Tràng An, Yên Tử – Vĩnh Nghiêm – Côn Sơn, Kiếp Bạc.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Vietnam</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu diện tích, dân số ước tính 2025, cơ cấu tôn giáo 2021, GDP theo IMF World Economic Outlook 2026). <a href="https://en.wikipedia.org/wiki/Vietnam" target="_blank" rel="noopener">en.wikipedia.org/wiki/Vietnam</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-2">Quốc hội nước CHXHCN Việt Nam. Nghị quyết số 202/2025/QH15 về sắp xếp đơn vị hành chính cấp tỉnh, hiệu lực từ 12/6/2025 (tổng hợp qua Thư Viện Pháp Luật). <a href="https://thuvienphapluat.vn/phap-luat/danh-sach-34-tinh-thanh-viet-nam-moi-nhat-kem-ban-do-hanh-chinh-tu-ngay-1262025-the-nao-221145.html" target="_blank" rel="noopener">thuvienphapluat.vn</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>Tô Lâm</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/T%C3%B4_L%C3%A2m" target="_blank" rel="noopener">en.wikipedia.org/wiki/Tô_Lâm</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-4">U.S. Department of State. <i>Election of Vietnamese President To Lam and Prime Minister Le Minh Hung</i>. Thông cáo báo chí, tháng 4/2026. <a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/04/election-of-vietnamese-president-to-lam-and-prime-minister-le-minh-hung" target="_blank" rel="noopener">state.gov</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-5">Office of the United States Trade Representative (USTR). <i>Fact Sheet: The United States and Viet Nam Reach a Framework Agreement for Reciprocal, Fair, and Balanced Trade</i>. Tháng 10/2025. <a href="https://ustr.gov/about/policy-offices/press-office/fact-sheets/2025/october/fact-sheet-united-states-and-viet-nam-reach-framework-agreement-reciprocal-fair-and-balanced-trade" target="_blank" rel="noopener">ustr.gov</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-6">Việt Nam News (Thông tấn xã Việt Nam). <i>Việt Nam cements status as world's No.2 coffee producer, robusta powerhouse</i>. 2026 (dẫn số liệu USDA niên vụ 2025/26). <a href="https://vietnamnews.vn/economy/1781254/viet-nam-cements-status-as-world-s-no-2-coffee-producer-robusta-powerhouse.html" target="_blank" rel="noopener">vietnamnews.vn</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-7">Wikipedia contributors. <i>List of World Heritage Sites in Vietnam</i>. Wikipedia, Bách khoa toàn thư mở (danh sách 9 di sản, cập nhật 2025). <a href="https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Vietnam" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-8">Bộ Công Thương – Cổng thông tin ASEMCONNECT Việt Nam. <i>Cashew exports in 2024 and opportunities to increase cashew exports in 2025</i>. 2025. <a href="https://asemconnectvietnam.gov.vn/default.aspx?ID1=2&amp;ZID1=8&amp;ID8=141053" target="_blank" rel="noopener">asemconnectvietnam.gov.vn</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, xuất khẩu) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Các chi tiết còn tranh cãi — như tranh chấp Biển Đông hay niên đại thời Hùng Vương — được trình bày ở mức khái quát và có ghi chú, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
