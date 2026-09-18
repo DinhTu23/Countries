@@ -1,0 +1,1135 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Campuchia — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Campuchia</div>
+          <h1>Campuchia</h1>
+          <div class="period">Châu Á · Đông Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Campuchia: ba dải ngang xanh dương – đỏ – xanh dương, giữa dải đỏ là hình ngôi đền Angkor Wat màu trắng">
+            <rect width="30" height="20" fill="#032ea1"/>
+            <rect y="5" width="30" height="10" fill="#e00025"/>
+            <rect x="4.5" y="14.2" width="21" height="1" fill="#ffffff"/>
+            <rect x="5.5" y="12.9" width="19" height="1.5" fill="#ffffff"/>
+            <polygon fill="#ffffff" points="9.3,13 7.3,13 7.3,11.4 8.0,11.4 8.0,10.2 8.5,10.2 8.5,9.2 8.9,9.2 9.3,8.3 9.7,9.2 10.1,9.2 10.1,10.2 10.6,10.2 10.6,11.4 11.3,11.4 11.3,13"/>
+            <polygon fill="#ffffff" points="20.7,13 18.7,13 18.7,11.4 19.4,11.4 19.4,10.2 19.9,10.2 19.9,9.2 20.3,9.2 20.7,8.3 21.1,9.2 21.5,9.2 21.5,10.2 22.0,10.2 22.0,11.4 22.7,11.4 22.7,13"/>
+            <polygon fill="#ffffff" points="18.2,13 11.8,13 11.8,10.8 12.7,10.8 12.7,9.2 13.5,9.2 13.5,7.8 14.2,7.8 15,6.3 15.8,7.8 16.5,7.8 16.5,9.2 17.3,9.2 17.3,10.8 18.2,10.8"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Campuchia là đất nước của những ngôi đền cổ và một dòng sông đổi chiều theo mùa, nơi đế chế Angkor từng là một trong những nền văn minh hùng mạnh nhất Đông Nam Á suốt sáu thế kỷ. Nhưng đất nước cũng mang vết thương sâu của nạn diệt chủng Khmer Đỏ, trước khi tái thiết thành một nền kinh tế dựa vào may mặc, du lịch và ngày càng gắn chặt với Trung Quốc. Về chính trị, quyền lực vẫn xoay quanh một đảng cầm quyền và một gia tộc duy nhất suốt bốn thập kỷ. Nếu chỉ nhớ một điều về Campuchia, hãy nhớ: đây là đất nước đã đi từ đỉnh cao Angkor, qua đáy vực diệt chủng, để tìm đường trở lại với chính mình — một hành trình chưa trọn vẹn.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">181.035 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~18,05 triệu<a class="cite" href="#ref-2">[2]</a><small>ước tính 2026</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Phnom Penh</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Khmer</span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Phật giáo Theravada<small>~96,5% dân số<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Riel (KHR)<small>USD dùng song song rộng rãi</small></span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~2.870 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa; ~8.650 USD theo PPP, ước tính 2025</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">TK I – VI</span>
+          <span class="tl-what">Vương quốc Phù Nam</span>
+          <span class="tl-note">Nền văn minh Ấn Độ hóa sớm ở hạ lưu sông Mekong, giao thương biển sầm uất</span>
+        </li>
+        <li>
+          <span class="tl-when">TK VI – VIII</span>
+          <span class="tl-what">Chân Lạp</span>
+          <span class="tl-note">Kế tục Phù Nam, sau tách thành Lục Chân Lạp và Thủy Chân Lạp</span>
+        </li>
+        <li>
+          <span class="tl-when">802</span>
+          <span class="tl-what">Lập Đế chế Khmer</span>
+          <span class="tl-note">Jayavarman II tự xưng "vua của các vua" tại núi Kulen, khai sinh đế chế Angkor</span>
+        </li>
+        <li>
+          <span class="tl-when">889 – 910</span>
+          <span class="tl-what">Dựng kinh đô Angkor</span>
+          <span class="tl-note">Yasovarman I xây kinh đô Yasodharapura cùng hệ thống hồ chứa khổng lồ</span>
+        </li>
+        <li>
+          <span class="tl-when">1113 – 1150</span>
+          <span class="tl-what">Xây dựng Angkor Wat</span>
+          <span class="tl-note">Suryavarman II dựng đền thờ thần Vishnu, mất hơn 30 năm hoàn thành</span>
+        </li>
+        <li>
+          <span class="tl-when">1181 – 1219</span>
+          <span class="tl-what">Angkor Thom &amp; đền Bayon</span>
+          <span class="tl-note">Jayavarman VII phục hưng đế chế sau cuộc tấn công của người Chăm, chuyển sang Phật giáo</span>
+        </li>
+        <li>
+          <span class="tl-when">1431</span>
+          <span class="tl-what">Xiêm La chiếm Angkor</span>
+          <span class="tl-note">Triều đình bỏ kinh đô, dời dần về phía nam, mở đầu thời kỳ suy tàn</span>
+        </li>
+        <li>
+          <span class="tl-when">1863</span>
+          <span class="tl-what">Bảo hộ Pháp</span>
+          <span class="tl-note">Vua Norodom I ký hiệp ước chấp nhận bảo hộ để tránh bị Xiêm, Việt Nam thôn tính</span>
+        </li>
+        <li>
+          <span class="tl-when">9/11/1953</span>
+          <span class="tl-what">Độc lập</span>
+          <span class="tl-note">Vua Norodom Sihanouk vận động ngoại giao, giành độc lập khỏi Pháp</span>
+        </li>
+        <li>
+          <span class="tl-when">18/3/1970</span>
+          <span class="tl-what">Lon Nol đảo chính</span>
+          <span class="tl-note">Lật đổ Sihanouk, lập Cộng hòa Khmer thân Mỹ, mở đầu nội chiến</span>
+        </li>
+        <li>
+          <span class="tl-when">1975 – 1979</span>
+          <span class="tl-what">Chế độ Khmer Đỏ</span>
+          <span class="tl-note">Pol Pot cầm quyền; nạn diệt chủng khiến 1,5 – 2 triệu người chết</span>
+        </li>
+        <li>
+          <span class="tl-when">7/1/1979</span>
+          <span class="tl-what">Lật đổ Khmer Đỏ</span>
+          <span class="tl-note">Quân đội Việt Nam cùng lực lượng Campuchia nổi dậy giải phóng Phnom Penh</span>
+        </li>
+        <li>
+          <span class="tl-when">1991 – 1993</span>
+          <span class="tl-what">Hòa bình Paris &amp; UNTAC</span>
+          <span class="tl-note">Bầu cử do Liên Hợp Quốc giám sát, khôi phục chế độ quân chủ lập hiến</span>
+        </li>
+        <li>
+          <span class="tl-when">1997</span>
+          <span class="tl-what">Hun Sen đảo chính</span>
+          <span class="tl-note">Loại bỏ đối thủ chính trị, dần củng cố quyền lực gần như tuyệt đối</span>
+        </li>
+        <li>
+          <span class="tl-when">8/2023</span>
+          <span class="tl-what">Chuyển giao cho Hun Manet</span>
+          <span class="tl-note">Con trai cả của Hun Sen kế nhiệm chức Thủ tướng sau 38 năm cha cầm quyền</span>
+        </li>
+        <li>
+          <span class="tl-when">2025 – 2026</span>
+          <span class="tl-what">Xung đột biên giới Thái Lan</span>
+          <span class="tl-note">Giao tranh vũ trang tháng 7/2025 và Hiệp định hòa bình Kuala Lumpur còn mong manh</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ IX phần lớn dựa vào bia ký và khảo cổ học nên mang tính ước lệ. Số người chết dưới thời Khmer Đỏ vẫn còn chênh lệch giữa các nguồn, dao động từ 1,5 đến 2 triệu người.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Về số liệu dân số</b>
+        Tổng cục Thống kê Campuchia, Liên Hợp Quốc và Ngân hàng Thế giới công bố các ước tính dân số chênh lệch đôi chút tùy thời điểm. Con số trong bài lấy theo ước tính giữa năm 2026.
+      </aside>
+
+      <p class="lede">Campuchia nằm giữa bán đảo Đông Dương, phía tây và tây bắc giáp Thái Lan, phía đông bắc giáp Lào, phía đông và đông nam giáp Việt Nam, phía tây nam là Vịnh Thái Lan.</p>
+
+      <p>Với diện tích khoảng <span class="tg">181.035 km²</span><a class="cite" href="#ref-1">[1]</a>, địa hình Campuchia là một vùng trũng trung tâm được bao quanh bởi núi non: dãy Cardamom và Voi ở phía tây nam, dãy Dangrek dọc biên giới Thái Lan ở phía bắc, và cao nguyên lượn sóng ở phía đông bắc giáp Lào, Việt Nam. Trái tim của vùng trũng trung tâm là <span class="nv" data-note="Hồ nước ngọt lớn nhất Đông Nam Á, thông với sông Mekong qua sông Tonle Sap dài khoảng 120 km.">Biển Hồ Tonle Sap</span> — hồ nước ngọt lớn nhất Đông Nam Á với một đặc điểm hiếm có trên thế giới: vào mùa mưa, nước sông Mekong dâng cao đẩy ngược dòng chảy của sông Tonle Sap, khiến diện tích hồ phình to gấp bốn đến năm lần so với mùa khô và tạo ra một trong những ngư trường nước ngọt giàu có nhất hành tinh.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">18,05 triệu người</span><a class="cite" href="#ref-2">[2]</a>, trong đó người Khmer chiếm khoảng 95%, sống chủ yếu ở vùng đồng bằng trung tâm quanh Tonle Sap và Mekong. Các nhóm thiểu số gồm người Chăm theo Hồi giáo, người Hoa, người Việt và hàng chục dân tộc bản địa cư trú ở cao nguyên Đông Bắc như Tampuan, Kreung, Bunong. Phnom Penh là trung tâm chính trị – kinh tế lớn nhất; Siem Reap là cửa ngõ du lịch Angkor; Sihanoukville là cảng biển lớn nhất và cũng là điểm nóng đầu tư từ Trung Quốc; Battambang là đô thị lớn thứ hai, còn giữ nhiều kiến trúc thời Pháp thuộc.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Campuchia có thể đọc như một đường cong khắc nghiệt: từ đỉnh cao của một đế chế từng thống trị phần lớn Đông Nam Á lục địa, xuống đáy vực của một trong những cuộc diệt chủng đẫm máu nhất thế kỷ 20, rồi một hành trình tái thiết còn dang dở.</p>
+
+      <p><b>Phù Nam &amp; Chân Lạp (thế kỷ I – VIII).</b> Vương quốc <span class="nv" data-note="Nhà nước Ấn Độ hóa sớm nhất được ghi nhận ở Đông Nam Á lục địa, phát triển rực rỡ nhờ tuyến thương mại biển nối Ấn Độ và Trung Hoa.">Phù Nam</span> hình thành ở hạ lưu sông Mekong từ khoảng thế kỷ I, tiếp nhận Hindu giáo, chữ Phạn và mô hình vương quyền từ Ấn Độ qua con đường giao thương biển. Đến khoảng thế kỷ VI, Chân Lạp — nhà nước kế tục nằm sâu trong lục địa hơn — dần thay thế Phù Nam, trước khi tách thành Lục Chân Lạp (phía bắc) và Thủy Chân Lạp (phía nam) vào đầu thế kỷ VIII.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao 802 là một cột mốc</b>
+        Nghi lễ trên núi Kulen năm 802 không chỉ lập ra một vương triều mới, mà còn khai sinh khái niệm "devaraja" (vua – thần), nền tảng tư tưởng chính trị xuyên suốt hơn sáu thế kỷ của đế chế Angkor.
+      </aside>
+
+      <p><b>Đế chế Angkor thời hoàng kim (802 – 1181).</b> Năm <span class="tg">802</span>, <span class="nv" data-note="Người sáng lập Đế chế Khmer, tự xưng là vua của các vua (chakravartin) trong một nghi lễ trên núi Kulen.">Jayavarman II</span> tuyên bố độc lập và thống nhất các tiểu quốc Khmer, khai sinh Đế chế Angkor. Các vua kế tiếp biến vùng đất quanh Biển Hồ thành trung tâm quyền lực: Yasovarman I dựng kinh đô Yasodharapura cùng hệ thống hồ chứa nước khổng lồ (baray) phục vụ nông nghiệp lúa nước quy mô lớn. Đỉnh cao kiến trúc đến vào năm <span class="tg">1113 – 1150</span>, khi <span class="nv" data-note="Vị vua đưa Đế chế Khmer đạt lãnh thổ rộng lớn nhất, đồng thời là người khởi công xây dựng Angkor Wat.">Suryavarman II</span> cho xây <span class="nv" data-note="Công trình tôn giáo đơn lẻ lớn nhất thế giới, ban đầu thờ thần Vishnu theo Hindu giáo, sau chuyển thành chùa Phật giáo Theravada.">Angkor Wat</span> để thờ thần Vishnu — một công trình mất hơn 30 năm và đến nay vẫn là công trình tôn giáo đơn lẻ lớn nhất thế giới.</p>
+
+      <p><b>Phục hưng dưới Jayavarman VII (1181 – 1219).</b> Năm 1177, quân Chăm bất ngờ đánh chiếm và cướp phá Angkor. <span class="nv" data-note="Vị vua Phật giáo Đại thừa nổi tiếng nhất của Angkor, người xây Angkor Thom, đền Bayon và hàng trăm bệnh viện, nhà nghỉ dọc các tuyến đường trong đế chế.">Jayavarman VII</span> đánh bật quân Chăm, lên ngôi và xây dựng lại kinh thành mới — Angkor Thom — với đền Bayon ở trung tâm, nổi bật bởi hàng trăm khuôn mặt đá khổng lồ mỉm cười bí ẩn. Ông cũng là vị vua đưa Phật giáo Đại thừa trở thành quốc giáo, khác với truyền thống Hindu giáo của các tiên vương, đồng thời mở rộng mạng lưới đường sá, bệnh viện và nhà nghỉ khắp đế chế — thời kỳ đế chế Khmer kiểm soát lãnh thổ rộng lớn nhất, trải dài qua phần lớn Đông Nam Á lục địa ngày nay.</p>
+
+      <p><b>Suy tàn &amp; thời kỳ Hậu Angkor (1431 – thế kỷ XIX).</b> Năm <span class="tg">1431</span>, quân Xiêm La từ Ayutthaya đánh chiếm và cướp phá Angkor, buộc triều đình rút lui về phía nam, lần lượt đặt kinh đô ở Longvek rồi Oudong. Bị kẹp giữa hai láng giềng đang trỗi dậy là Xiêm La và các chúa Nguyễn/triều Nguyễn của Việt Nam, Campuchia dần mất lãnh thổ — kể cả vùng châu thổ sông Mekong (Nam Kỳ ngày nay) — và có giai đoạn phải triều cống cả hai bên để tồn tại.</p>
+
+      <p><b>Bảo hộ Pháp (1863 – 1953).</b> Trước nguy cơ bị thôn tính hoàn toàn, vua Norodom I ký hiệp ước chấp nhận bảo hộ Pháp năm <span class="tg">1863</span>, đưa Campuchia vào Liên bang Đông Dương. Pháp xây dựng đường sá, đồn điền cao su và bộ máy hành chính hiện đại, đồng thời duy trì vương quyền bản địa mang tính hình thức; các nhà khảo cổ của Viện Viễn Đông Bác Cổ cũng là những người đầu tiên trùng tu quy mô lớn quần thể Angkor, góp phần đưa di sản này trở lại với thế giới.</p>
+
+      <aside class="sidenote">
+        <b>Cánh đồng chết</b>
+        Tên gọi chung cho hàng nghìn địa điểm hành quyết và chôn tập thể trên khắp Campuchia thời Khmer Đỏ; nổi tiếng nhất là Choeung Ek gần Phnom Penh, nay là khu tưởng niệm.
+      </aside>
+
+      <p><b>Độc lập, nội chiến &amp; diệt chủng (1953 – 1979).</b> Vua <span class="nv" data-note="Quốc vương, sau là Thủ tướng và Quốc trưởng Campuchia nhiều lần; biểu tượng chính trị trung tâm suốt nửa sau thế kỷ 20.">Norodom Sihanouk</span> vận động ngoại giao khéo léo giành độc lập khỏi Pháp năm <span class="tg">1953</span>, theo đuổi chính sách trung lập trong Chiến tranh Lạnh nhưng để lực lượng cộng sản Việt Nam dùng đường tiếp vận qua lãnh thổ phía đông, khiến Mỹ ném bom bí mật khu vực này cuối thập niên 1960. Năm <span class="tg">1970</span>, tướng Lon Nol đảo chính lật đổ Sihanouk, lập Cộng hòa Khmer thân Mỹ, đẩy đất nước vào nội chiến toàn diện. Ngày <span class="tg">17/4/1975</span>, lực lượng Khmer Đỏ do <span class="nv" data-note="Lãnh đạo tối cao của Khmer Đỏ và nước Campuchia Dân chủ (1975–1979), chịu trách nhiệm chính cho nạn diệt chủng.">Pol Pot</span> cầm đầu chiếm Phnom Penh, lập nước Campuchia Dân chủ và tiến hành một trong những cuộc thử nghiệm xã hội cực đoan, đẫm máu nhất thế kỷ 20: sơ tán toàn bộ dân thành thị về nông thôn, xóa bỏ tiền tệ, trường học, tôn giáo, hành quyết hàng loạt trí thức và người bị nghi ngờ. Trong bốn năm cầm quyền, ước tính <span class="tg">1,5 – 2 triệu người</span> — khoảng một phần tư dân số khi đó — đã chết vì hành quyết, lao động khổ sai, đói và bệnh tật.</p>
+
+      <p><b>Việt Nam can thiệp &amp; nội chiến kéo dài (1979 – 1991).</b> Ngày <span class="tg">7/1/1979</span>, quân đội Việt Nam cùng lực lượng Campuchia nổi dậy lật đổ chế độ Khmer Đỏ, lập Cộng hòa Nhân dân Campuchia do Heng Samrin đứng đầu. Tàn quân Khmer Đỏ cùng hai phe phái khác — theo Sihanouk và theo Son Sann — tiếp tục kháng chiến từ biên giới Thái Lan dưới danh nghĩa "Chính phủ Liên hiệp Campuchia Dân chủ", được nhiều nước phương Tây và Trung Quốc hậu thuẫn vì lý do Chiến tranh Lạnh, kéo dài xung đột thêm một thập kỷ.</p>
+
+      <p><b>Hòa bình, khôi phục quân chủ &amp; kỷ nguyên Hun Sen (1991 – 2023).</b> Hiệp định Hòa bình Paris năm <span class="tg">1991</span> chính thức chấm dứt xung đột; phái bộ Liên Hợp Quốc UNTAC giám sát cuộc bầu cử năm <span class="tg">1993</span>, khôi phục chế độ quân chủ lập hiến với Sihanouk trở lại ngôi vua. Nhưng năm <span class="tg">1997</span>, <span class="nv" data-note="Đồng Thủ tướng thuộc Đảng Nhân dân Campuchia (CPP), tiến hành đảo chính năm 1997 và cầm quyền liên tục đến năm 2023 — một trong những nhà lãnh đạo tại vị lâu nhất thế giới.">Hun Sen</span> — khi đó đồng Thủ tướng thuộc Đảng Nhân dân Campuchia (CPP) — tiến hành đảo chính loại bỏ đối thủ chính trị, từng bước biến CPP thành lực lượng chi phối gần như tuyệt đối chính trường suốt 38 năm ông cầm quyền.</p>
+
+      <p><b>Chuyển giao thế hệ (2023 – nay).</b> Tháng <span class="tg">8/2023</span>, <span class="nv" data-note="Con trai cả của Hun Sen, tốt nghiệp học viện quân sự West Point (Mỹ), kế nhiệm cha làm Thủ tướng Campuchia từ tháng 8/2023.">Hun Manet</span> tiếp quản chức Thủ tướng, trong khi Hun Sen chuyển sang giữ ghế Chủ tịch Thượng viện nhưng vẫn nắm ảnh hưởng chính trị lớn. Từ giữa năm 2025, quan hệ với Thái Lan xấu đi nghiêm trọng vì tranh chấp biên giới quanh khu vực các ngôi đền cổ, dẫn tới xung đột vũ trang và một hiệp định hòa bình còn nhiều mong manh kéo sang đầu năm 2026.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Campuchia</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Quốc vương Norodom Sihamoni</span>
+          <span class="tier-desc">Nguyên thủ quốc gia mang tính biểu tượng, do Hội đồng Ngôi vua bầu, không nắm thực quyền chính trị</span>
+        </li>
+        <li>
+          <span class="tier-role">Đảng Nhân dân Campuchia (CPP)</span>
+          <span class="tier-desc">Đảng cầm quyền chi phối gần như tuyệt đối bộ máy nhà nước liên tục từ năm 1979</span>
+        </li>
+        <li>
+          <span class="tier-role">Thủ tướng Hun Manet &amp; Nội các</span>
+          <span class="tier-desc">Đứng đầu hành pháp từ tháng 8/2023, kế nhiệm cha là Hun Sen</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội (125 ghế) &amp; Thượng viện (62 ghế)</span>
+          <span class="tier-desc">Cơ quan lập pháp lưỡng viện; đa số áp đảo thuộc về CPP</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Ai thực sự nắm quyền?</b>
+        Theo Hiến pháp, Chủ tịch Thượng viện là người tạm quyền nguyên thủ quốc gia khi vua và Chủ tịch Quốc hội vắng mặt — nên ghế này Hun Sen nắm từ 2024 vẫn mang trọng lượng chính trị lớn, dù con trai ông đã là Thủ tướng.
+      </aside>
+
+      <p>Campuchia theo chế độ quân chủ lập hiến: Quốc vương là nguyên thủ quốc gia mang tính nghi lễ, được Hội đồng Ngôi vua — gồm đại diện hoàng tộc, chính phủ và giáo hội Phật giáo — bầu chọn khi ngôi vua trống, chứ không cha truyền con nối trực tiếp. Quyền lực thực chất nằm ở Đảng Nhân dân Campuchia (CPP) và bộ máy hành pháp do Thủ tướng đứng đầu.</p>
+
+      <p>Sau khi giải thể đảng đối lập lớn nhất — Đảng Cứu quốc Campuchia (CNRP) — vào năm 2017, CPP giành toàn bộ 125 ghế Quốc hội trong các cuộc bầu cử 2018 và 2023, khiến nhiều tổ chức quốc tế xếp Campuchia vào nhóm "nhà nước một đảng trên thực tế"<a class="cite" href="#ref-3">[3]</a>. Việc chuyển giao quyền lực từ Hun Sen sang <span class="nv" data-note="Được bầu làm Thủ tướng Campuchia từ tháng 8/2023, con trai cả của cựu Thủ tướng Hun Sen.">Hun Manet</span> năm 2023 vẫn giữ nguyên cấu trúc quyền lực mang tính gia tộc: Hun Sen tiếp tục giữ ghế Chủ tịch Thượng viện từ 2024, còn nhiều thành viên khác trong gia đình và mạng lưới thân cận nắm các vị trí then chốt trong quân đội, cảnh sát và doanh nghiệp nhà nước.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Từ một nước nông nghiệp kiệt quệ sau nội chiến và diệt chủng, Campuchia đã chuyển đổi mạnh sang nền kinh tế dựa vào ba trụ cột: xuất khẩu may mặc – giày dép, du lịch xoay quanh Angkor Wat, và xây dựng – bất động sản với dòng vốn đầu tư trực tiếp chủ yếu từ Trung Quốc. Ngân hàng Thế giới dự báo tăng trưởng GDP Campuchia đạt khoảng <span class="tg">4,8%</span> năm 2025<a class="cite" href="#ref-4">[4]</a>, thấp hơn mức 6% của năm 2024, do thị trường bất động sản hạ nhiệt, xung đột biên giới với Thái Lan làm gián đoạn thị trường lao động và du lịch, cùng các rào cản thương mại mới.</p>
+
+      <p>Tháng 8/2025, Campuchia là một trong những nước đầu tiên ký thỏa thuận thuế quan đối ứng với Hoa Kỳ, chấp nhận mức thuế <span class="tg">19%</span> cho hàng xuất khẩu sang Mỹ — thị trường tiêu thụ hàng may mặc lớn nhất của nước này — đổi lại được miễn trừ một số rào cản khác<a class="cite" href="#ref-5">[5]</a>. Trung Quốc vẫn là nhà đầu tư và chủ nợ lớn nhất, tài trợ nhiều dự án hạ tầng quy mô lớn, trong đó việc nâng cấp căn cứ hải quân Ream ở Sihanoukville gây lo ngại từ Mỹ và các nước láng giềng về khả năng Trung Quốc có được chỗ đứng quân sự lâu dài tại Vịnh Thái Lan.</p>
+
+      <p>Mặt trái gây tranh cãi nhất của làn sóng đầu tư này là sự trỗi dậy của các "công viên lừa đảo trực tuyến" tại Sihanoukville và một số vùng biên giới, gắn với nạn buôn người và cưỡng bức lao động quy mô lớn<a class="cite" href="#ref-8">[8]</a>. Vấn đề này khiến Campuchia chịu áp lực quốc tế ngày càng lớn, buộc chính phủ phải đẩy mạnh các đợt truy quét từ năm 2025.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Phật giáo Theravada là trục tinh thần của đời sống Khmer: ngôi chùa làng (wat) vừa là nơi thờ tự vừa là trung tâm sinh hoạt cộng đồng, và theo truyền thống, nam giới Khmer thường xuất gia tạm thời một thời gian trong đời để tích lũy công đức. Nghệ thuật múa cổ điển Khmer — thường gọi là múa Apsara — mô phỏng hình ảnh các tiên nữ được chạm khắc trên tường đền Angkor, từng chỉ biểu diễn trong cung đình và nay được UNESCO công nhận là di sản văn hóa phi vật thể của nhân loại.</p>
+
+      <p>Về mặt tâm lý xã hội, ký ức về nạn diệt chủng Khmer Đỏ vẫn in đậm trong nhiều gia đình Khmer — gần như không gia đình nào không mất người thân trong giai đoạn 1975–1979, kể cả phần lớn nghệ nhân, nhạc công và học giả truyền thống. Điều này góp phần tạo nên một xã hội coi trọng sự ổn định và thận trọng với xáo trộn chính trị, song song với một phong trào phục hồi văn hóa nghệ thuật truyền thống bền bỉ suốt bốn thập kỷ qua. Gia đình mở rộng và sự kính trọng người lớn tuổi, nhà sư vẫn là nền tảng đạo đức xã hội. Tết cổ truyền Khmer Chol Chnam Thmay (tháng 4) và lễ hội đua thuyền Bon Om Touk trên sông Tonle Sap — trùng dịp dòng chảy đảo ngược từ cuối mùa mưa — là hai dịp lễ lớn nhất trong năm.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Prahok</b>
+        Mắm cá nước ngọt lên men rất đậm mùi, gần như có mặt trong mọi món kho, canh hay nước chấm của người Khmer — được ví như "phô mai của Campuchia": càng nặng mùi càng được coi là đúng vị.
+      </aside>
+
+      <p>Ẩm thực Khmer cân bằng vị chua – cay – mặn – ngọt tương tự các nước láng giềng, nhưng có một linh hồn rất riêng: <span class="nv" data-note="Mắm cá nước ngọt lên men, gia vị nền tảng của gần như mọi món ăn truyền thống Khmer.">prahok</span> — thứ mắm cá lên men đậm đặc dùng làm nền cho vô số món kho, canh và nước chấm. Ẩm thực này cũng mang dấu ấn giao thoa: cà ri và nghệ đến từ Ấn Độ, mì và món nước đến từ cộng đồng người Hoa gốc Triều Châu, còn bánh mì và cà phê là di sản từ thời Pháp thuộc.</p>
+
+      <p>Ba vùng địa lý cho ba sắc thái ẩm thực khác nhau. Vùng đồng bằng trung tâm quanh Biển Hồ và sông Mekong thiên về cá nước ngọt — nướng, hấp hoặc làm mắm — nhờ nguồn thủy sản dồi dào bậc nhất Đông Nam Á. Vùng duyên hải Kampot – Kep nổi tiếng hải sản tươi sống và đặc biệt là tiêu Kampot, trong khi cao nguyên Đông Bắc (Ratanakiri, Mondulkiri) dùng nhiều rau rừng và thịt nướng theo phong cách các dân tộc bản địa, chịu ảnh hưởng rõ nét từ ẩm thực Lào.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món ăn tiêu biểu của Campuchia</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Biển Hồ</span><span class="pick-name">Amok</span><span class="pick-desc">Cà ri cá hấp trong lá chuối với nước cốt dừa và trứng — món quốc hồn quốc túy của người Khmer.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Prahok</span><span class="pick-desc">Mắm cá nước ngọt lên men đậm mùi, gia vị nền tảng của gian bếp Khmer.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Nom banh chok</span><span class="pick-desc">Bún gạo lên men chan nước cốt cá và rau sống — món ăn sáng phổ biến nhất Campuchia.</span></li>
+        <li><span class="pick-where">Phnom Penh</span><span class="pick-name">Bai sach chrouk</span><span class="pick-desc">Cơm thịt heo nướng than, ăn kèm dưa chua và nước mắm gừng — bữa sáng quốc dân của thủ đô.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Lok lak</span><span class="pick-desc">Thịt bò xào lúc lắc kiểu Khmer, ăn cùng xà lách, cà chua và nước chấm tiêu chanh.</span></li>
+        <li><span class="pick-where">Phnom Penh</span><span class="pick-name">Kuy teav</span><span class="pick-desc">Hủ tiếu nước gốc Triều Châu, thường dùng vào bữa sáng với giá, hẹ và thịt băm.</span></li>
+        <li><span class="pick-where">Kampot – Kep</span><span class="pick-name">Kdam chaa</span><span class="pick-desc">Cua xào tiêu xanh Kampot — đặc sản trứ danh của vùng biển phía nam.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Nham</span><span class="pick-desc">Gỏi trộn chua cay từ thịt, cá hoặc đu đủ, chuối bào sợi.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Num ansom chek</span><span class="pick-desc">Bánh nếp gói lá chuối nhân chuối hoặc đậu — món tráng miệng truyền thống ngày lễ.</span></li>
+        <li><span class="pick-where">Cao nguyên</span><span class="pick-name">Thịt nướng ống tre</span><span class="pick-desc">Thịt lợn hoặc gà nướng trong ống tre, chấm muối tiêu rừng, đặc trưng của các dân tộc Đông Bắc.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Về đồ uống, cà phê sữa đá kiểu Khmer — pha đặc, ngọt và nhiều đá — phổ biến khắp các quán ven đường, bên cạnh nước thốt nốt tươi hoặc lên men nhẹ từ những rặng thốt nốt đặc trưng của vùng nông thôn. Bia Angkor, mang tên ngôi đền nổi tiếng nhất đất nước, là thương hiệu bia quốc dân gắn liền với các bữa tiệc và quán nhậu vỉa hè. Cũng như nhiều nước láng giềng, văn hóa ăn uống Khmer thường dọn hết các món lên mâm cùng lúc để cả nhà dùng chung, và chợ đêm hay các gánh hàng rong ven đường vẫn là nơi trải nghiệm ẩm thực đường phố chân thực nhất.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Vì sao chỉ ba tháp?</b>
+        Đền thật có năm tháp xếp hình hoa mai, nhưng khi nhìn chính diện — góc nhìn quen thuộc trên quốc kỳ và mọi tấm ảnh — chỉ ba tháp lộ rõ, hai tháp còn lại khuất phía sau.
+      </aside>
+
+      <p>Campuchia hiện có <span class="tg">4 di sản thế giới</span> được UNESCO công nhận<a class="cite" href="#ref-7">[7]</a>, toàn bộ đều là di sản văn hóa gắn với nền văn minh Angkor và tiền Angkor — một mật độ hiếm có so với diện tích đất nước. Bên cạnh quần thể đền đài, Campuchia còn sở hữu hồ nước ngọt lớn nhất khu vực, các bãi biển phía nam và những đô thị mang dấu ấn thuộc địa Pháp.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Campuchia</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Siem Reap</span><span class="pick-name">Angkor Wat</span><span class="pick-desc">Công trình tôn giáo đơn lẻ lớn nhất thế giới, di sản UNESCO từ 1992, biểu tượng in trên quốc kỳ.</span></li>
+        <li><span class="pick-where">Siem Reap</span><span class="pick-name">Angkor Thom &amp; đền Bayon</span><span class="pick-desc">Kinh thành cuối cùng của đế chế Khmer với hàng trăm khuôn mặt đá khổng lồ mỉm cười bí ẩn.</span></li>
+        <li><span class="pick-where">Siem Reap</span><span class="pick-name">Ta Prohm</span><span class="pick-desc">Ngôi đền bị rễ cây cổ thụ nuốt chửng, nổi tiếng qua loạt phim Lara Croft: Tomb Raider.</span></li>
+        <li><span class="pick-where">Preah Vihear</span><span class="pick-name">Đền Preah Vihear</span><span class="pick-desc">Ngôi đền trên vách núi biên giới Thái Lan, tâm điểm tranh chấp chủ quyền được ICJ xử cho Campuchia năm 1962.</span></li>
+        <li><span class="pick-where">Preah Vihear</span><span class="pick-name">Koh Ker</span><span class="pick-desc">Kinh đô ngắn ngủi của đế chế Khmer thế kỷ X, di sản UNESCO mới nhất, công nhận năm 2023.</span></li>
+        <li><span class="pick-where">Kampong Thom</span><span class="pick-name">Sambor Prei Kuk</span><span class="pick-desc">Quần thể đền gạch thời tiền Angkor (Chân Lạp), di sản UNESCO từ 2017.</span></li>
+        <li><span class="pick-where">Phnom Penh</span><span class="pick-name">Cung điện Hoàng gia &amp; chùa Bạc</span><span class="pick-desc">Nơi ở chính thức của Quốc vương với mái vàng cong đặc trưng kiến trúc Khmer.</span></li>
+        <li><span class="pick-where">Phnom Penh</span><span class="pick-name">Bảo tàng Tuol Sleng (S-21) &amp; Choeung Ek</span><span class="pick-desc">Nhà tù và cánh đồng chết — chứng tích rợn người về nạn diệt chủng Khmer Đỏ.</span></li>
+        <li><span class="pick-where">Trung tâm</span><span class="pick-name">Biển Hồ Tonle Sap</span><span class="pick-desc">Hồ nước ngọt lớn nhất Đông Nam Á với các làng chài nổi và dòng chảy đảo chiều theo mùa.</span></li>
+        <li><span class="pick-where">Duyên hải</span><span class="pick-name">Sihanoukville &amp; Koh Rong</span><span class="pick-desc">Cảng biển sầm uất và các đảo cát trắng, nước trong ở Vịnh Thái Lan.</span></li>
+        <li><span class="pick-where">Duyên hải</span><span class="pick-name">Kampot &amp; Kep</span><span class="pick-desc">Thị trấn thuộc địa Pháp yên bình, nổi tiếng tiêu Kampot và cua ghẹ tươi.</span></li>
+        <li><span class="pick-where">Tây Bắc</span><span class="pick-name">Battambang</span><span class="pick-desc">Đô thị kiến trúc Pháp cổ, nổi tiếng với "tàu tre" (norry) độc đáo trên đường ray tự chế.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Nghiêng về Trung Quốc</b>
+        Trái với chính sách cân bằng nước lớn của một số nước ASEAN, Campuchia là đồng minh gần gũi nhất của Trung Quốc trong khu vực về cả kinh tế lẫn quân sự.
+      </aside>
+
+      <p>Về đối ngoại, Campuchia gắn bó với Trung Quốc chặt chẽ hơn bất kỳ thành viên ASEAN nào khác — Trung Quốc là nhà đầu tư, chủ nợ và đối tác quân sự lớn nhất, thể hiện rõ qua dự án nâng cấp căn cứ hải quân Ream khiến Mỹ và các nước láng giềng lo ngại về khả năng tiếp cận quân sự lâu dài tại Vịnh Thái Lan. Campuchia là thành viên của <span class="nv" data-note="Hiệp hội các quốc gia Đông Nam Á — tổ chức khu vực mà Campuchia gia nhập năm 1999.">ASEAN</span> từ năm 1999 và thường được xem là tiếng nói ủng hộ lập trường của Trung Quốc trong khối.</p>
+
+      <p>Vấn đề nóng nhất hiện nay là xung đột biên giới với Thái Lan, bùng phát từ tháng 5/2025 và leo thang thành giao tranh vũ trang cuối tháng 7/2025 quanh khu vực các ngôi đền cổ tranh chấp, khiến hàng chục người thiệt mạng và hơn 280.000 dân hai bên phải sơ tán<a class="cite" href="#ref-6">[6]</a>. Hiệp định hòa bình Kuala Lumpur ký tháng 10/2025 — dưới sự chứng kiến của Tổng thống Mỹ Donald Trump và Thủ tướng Malaysia Anwar Ibrahim — đã hạ nhiệt xung đột, nhưng các vụ việc lẻ tẻ, mìn sát thương và tranh chấp phân giới vẫn tiếp diễn sang đầu năm 2026, cho thấy hòa bình vẫn còn mong manh.</p>
+
+      <p>Song song đó, quan hệ thương mại với Hoa Kỳ bước vào giai đoạn mới sau thỏa thuận thuế quan đối ứng 19% ký tháng 8/2025. Ở trong nước, nạn "công viên lừa đảo trực tuyến" gắn với buôn người và cưỡng bức lao động tại Sihanoukville và vùng biên giới tiếp tục là điểm nóng nhân quyền lớn nhất, khiến Campuchia chịu áp lực từ Mỹ, Liên Hợp Quốc và các tổ chức quốc tế phải trấn áp mạnh tay hơn. Ba bài toán lớn nhất trong nước hiện nay là giảm phụ thuộc vào ngành may mặc giá rẻ, xử lý hệ lụy xã hội của nạn lừa đảo trực tuyến, và cân bằng quan hệ ngày càng lệch về Trung Quốc trong bối cảnh áp lực từ phương Tây gia tăng.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Campuchia</h2>
+      <ol class="funs">
+        <li><b>Ngôi đền duy nhất trên một lá quốc kỳ.</b> Campuchia là nước duy nhất trên thế giới có hình ảnh một công trình kiến trúc thật — Angkor Wat — được vẽ ngay chính giữa quốc kỳ.</li>
+        <li><b>Công trình tôn giáo lớn nhất hành tinh.</b> Angkor Wat rộng hơn 160 ha, lớn hơn diện tích của nhiều thành phố nhỏ, và được xây chỉ bằng sức người cùng công cụ thời trung cổ trong hơn 30 năm.</li>
+        <li><b>Hồ nước đổi chiều dòng chảy.</b> Biển Hồ Tonle Sap là một trong số ít nơi trên thế giới có dòng sông đảo ngược chiều chảy hai lần mỗi năm theo nhịp lũ sông Mekong.</li>
+        <li><b>Một trong những bảng chữ cái dài nhất còn dùng.</b> Chữ Khmer có 74 ký tự (33 phụ âm, nguyên âm và dấu phụ), khiến nó trở thành một trong những hệ chữ viết dài nhất thế giới hiện còn được sử dụng chính thức.</li>
+        <li><b>"Vua của các loại tiêu".</b> Tiêu Kampot từng được đầu bếp Pháp ca ngợi bằng danh xưng này và là một trong số ít nông sản Đông Nam Á có chỉ dẫn địa lý được bảo hộ tại Liên minh châu Âu.</li>
+        <li><b>Đất nước dùng song song hai đồng tiền.</b> Đồng USD được chấp nhận rộng rãi song song với đồng Riel trong hầu hết giao dịch hằng ngày — mức độ đô la hóa hiếm thấy ở một quốc gia có chủ quyền.</li>
+        <li><b>"Tàu tre" độc nhất vô nhị.</b> Ở Battambang, người dân từng tự chế những chuyến "norry" — sàn tre gắn động cơ nhỏ chạy trên đường ray cũ — thành phương tiện vận chuyển hàng hóa và khách du lịch rất đặc trưng.</li>
+        <li><b>Một ngôi đền, hai tôn giáo.</b> Angkor Wat ban đầu được xây để thờ thần Vishnu theo Hindu giáo, nhưng dần chuyển thành nơi thờ Phật từ khoảng thế kỷ XIV và vẫn là nơi hành hương Phật giáo cho tới nay.</li>
+        <li><b>Vết sẹo dân số của diệt chủng.</b> Khmer Đỏ giết hại có chủ đích gần như toàn bộ giới trí thức, nghệ sĩ và tăng lữ, khiến Campuchia mất nhiều thế hệ nhân lực có học vấn chỉ trong bốn năm.</li>
+        <li><b>Múa Apsara sống lại từ tro tàn.</b> Phần lớn nghệ nhân múa cung đình Khmer bị sát hại thời Khmer Đỏ; bộ môn múa Apsara được khôi phục sau 1979 nhờ số ít nghệ nhân sống sót truyền lại cho thế hệ sau.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Campuchia có khoảng <span class="tg">18,05 triệu</span> dân, diện tích <span class="tg">181.035 km²</span>, thủ đô Phnom Penh.</li>
+        <li>Đế chế Angkor (<span class="tg">802 – 1431</span>) từng là một trong những nền văn minh hùng mạnh nhất Đông Nam Á; Angkor Wat là công trình tôn giáo đơn lẻ lớn nhất thế giới.</li>
+        <li>Khmer Đỏ (<span class="tg">1975 – 1979</span>) gây ra nạn diệt chủng khiến 1,5 – 2 triệu người chết.</li>
+        <li>Việt Nam giúp lật đổ Khmer Đỏ năm 1979; hòa bình được lập lại qua Hiệp định Paris 1991 và bầu cử UNTAC 1993.</li>
+        <li>Gia tộc Hun Sen – Hun Manet cùng đảng CPP chi phối chính trường từ 1979 tới nay; Hun Manet làm Thủ tướng từ <span class="tg">8/2023</span>.</li>
+        <li>Kinh tế dựa vào may mặc xuất khẩu, du lịch Angkor và đầu tư Trung Quốc; tăng trưởng GDP khoảng <span class="tg">4,8%</span> năm 2025.</li>
+        <li><span class="tg">4 di sản UNESCO</span> đều liên quan tới đế chế Angkor và tiền Angkor.</li>
+        <li>Xung đột biên giới với Thái Lan (2025 – 2026) và nạn lừa đảo trực tuyến là hai vấn đề nóng nhất hiện nay.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Ai lập ra Đế chế Khmer và vào năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Jayavarman II, năm 802, trong một nghi lễ trên núi Kulen.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Angkor Wat được xây dựng dưới thời vua nào và ban đầu thờ vị thần nào?</p>
+          <details><summary>Xem đáp án</summary><p>Suryavarman II (1113–1150), ban đầu thờ thần Vishnu theo Hindu giáo, sau chuyển thành chùa Phật giáo.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Chế độ Khmer Đỏ cầm quyền trong giai đoạn nào và gây ra hậu quả gì?</p>
+          <details><summary>Xem đáp án</summary><p>1975–1979, dưới sự lãnh đạo của Pol Pot; ước tính 1,5–2 triệu người chết vì hành quyết, lao động khổ sai, đói và bệnh tật.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Ai đã giúp lật đổ chế độ Khmer Đỏ vào năm 1979?</p>
+          <details><summary>Xem đáp án</summary><p>Quân đội Việt Nam cùng lực lượng Campuchia nổi dậy, giải phóng Phnom Penh ngày 7/1/1979.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Món ăn nào được coi là "linh hồn" ẩm thực Khmer, và món nào là món ăn sáng phổ biến nhất?</p>
+          <details><summary>Xem đáp án</summary><p>Prahok (mắm cá lên men) là gia vị nền tảng; nom banh chok (bún số) là món ăn sáng phổ biến nhất.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Kể tên ít nhất ba trong bốn di sản thế giới UNESCO của Campuchia.</p>
+          <details><summary>Xem đáp án</summary><p>Angkor, đền Preah Vihear, Sambor Prei Kuk, Koh Ker.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Cambodia</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu diện tích, cơ cấu tôn giáo, GDP ước tính 2025). <a href="https://en.wikipedia.org/wiki/Cambodia" target="_blank" rel="noopener">en.wikipedia.org/wiki/Cambodia</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-2">Worldometer. <i>Cambodia Population (2026)</i>. <a href="https://www.worldometers.info/world-population/cambodia-population/" target="_blank" rel="noopener">worldometers.info</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>History of Cambodia</i>. Wikipedia, Bách khoa toàn thư mở (mốc lịch sử đế chế Angkor, Khmer Đỏ, chuyển giao chính trị 1993–2023). <a href="https://en.wikipedia.org/wiki/History_of_Cambodia" target="_blank" rel="noopener">en.wikipedia.org/wiki/History_of_Cambodia</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-4">World Bank. <i>Strong Buffers and Targeted Reforms Can Help Cambodia Withstand Economic Pressures</i>. Thông cáo báo chí, tháng 12/2025. <a href="https://www.worldbank.org/en/news/press-release/2025/12/11/strong-buffers-and-targeted-reforms-can-help-cambodia-withstand-economic-pressures-says-world-bank" target="_blank" rel="noopener">worldbank.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-5">Office of the United States Trade Representative (USTR). <i>Fact Sheet: The United States and Cambodia Reach an Agreement on Reciprocal Trade</i>. Tháng 10/2025. <a href="https://ustr.gov/about/policy-offices/press-office/fact-sheets/2025/october/fact-sheet-united-states-and-cambodia-reach-agreement-reciprocal-trade" target="_blank" rel="noopener">ustr.gov</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-6">Wikipedia contributors. <i>2025 Cambodian–Thai border crisis</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2025_Cambodian%E2%80%93Thai_border_crisis" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-7">UNESCO. <i>UNESCO commends Cambodia for the inscription of Koh Ker on the World Heritage List</i>. 2023. <a href="https://www.unesco.org/en/articles/unesco-commends-cambodia-inscription-koh-ker-world-heritage-list" target="_blank" rel="noopener">unesco.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-8">Wikipedia contributors. <i>Scam centers in Cambodia</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Scam_centers_in_Cambodia" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, tăng trưởng) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Các chi tiết còn tranh cãi — như số người chết dưới thời Khmer Đỏ hay diễn biến xung đột biên giới Thái Lan — được trình bày ở mức khái quát và có ghi chú, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
