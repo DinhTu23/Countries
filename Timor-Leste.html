@@ -1,0 +1,1123 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Đông Timor — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Đông Timor</div>
+          <h1>Đông Timor</h1>
+          <div class="period">Châu Á · Đông Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 40 20" role="img" aria-label="Quốc kỳ Đông Timor: nền đỏ, tam giác vàng và tam giác đen ở phía cột cờ, ngôi sao trắng năm cánh trong tam giác đen">
+            <rect width="40" height="20" fill="#DA0029"/>
+            <polygon fill="#FFC72C" points="0,0 0,20 20,10"/>
+            <polygon fill="#000000" points="0,0 0,20 13.333,10"/>
+            <polygon fill="#FFFFFF" points="3.691,8.091 5.439,8.981 6.826,7.594 6.519,9.532 8.267,10.422 6.329,10.729 6.022,12.667 5.132,10.919 3.194,11.226 4.581,9.839"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Đông Timor (tên chính thức: Cộng hòa Dân chủ Đông Timor, tiếng Bồ Đào Nha: <i>Timor-Leste</i>) chiếm nửa phía đông của đảo Timor, ở rìa ngoài cùng của Đông Nam Á, nơi Biển Timor và Biển Băng-đa gặp nhau. Đây là quốc gia trẻ nhất châu Á tính theo tuổi độc lập: sau hơn bốn thế kỷ là thuộc địa Bồ Đào Nha rồi 24 năm bị Indonesia chiếm đóng đẫm máu, Đông Timor mới khôi phục chủ quyền năm 2002. Đất nước nhỏ bé này vẫn là một trong những nền kinh tế phụ thuộc dầu khí nhất thế giới, nhưng vừa ghi dấu mốc lớn nhất trong lịch sử ngoại giao của mình: tháng 10/2025, Đông Timor chính thức trở thành thành viên đầy đủ thứ 11 của ASEAN. Nếu chỉ nhớ một điều về Đông Timor, hãy nhớ: đây là câu chuyện của một dân tộc giành độc lập bằng máu và kiên trì, rồi từ điểm xuất phát gần như bằng không phải vừa dựng nước vừa bước ra hội nhập khu vực.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">15.007 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~1,43 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 2026</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Dili</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Bồ Đào Nha &amp; Tetum<small>chính thức; hơn 15 tiếng bản địa</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Công giáo<small>~97,6%<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Đô la Mỹ (USD)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~1.490 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính 2025</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~hàng nghìn năm trước</span>
+          <span class="tl-what">Người bản địa đầu tiên</span>
+          <span class="tl-note">Người Papua rồi các nhóm Nam Đảo (Austronesian) di cư đến đảo Timor, để lại hơn chục ngôn ngữ bản địa còn tồn tại đến nay</span>
+        </li>
+        <li>
+          <span class="tl-when">TK XIV</span>
+          <span class="tl-what">Thương mại gỗ đàn hương</span>
+          <span class="tl-note">Thương nhân Trung Hoa và Java tìm đến Timor mua gỗ đàn hương quý, đưa hòn đảo vào mạng lưới thương mại châu Á sớm</span>
+        </li>
+        <li>
+          <span class="tl-when">1515</span>
+          <span class="tl-what">Người Bồ Đào Nha đến</span>
+          <span class="tl-note">Nhà buôn và tu sĩ Dòng Đa Minh đặt chân lên Timor, mở đầu hơn bốn thế kỷ hiện diện của Bồ Đào Nha</span>
+        </li>
+        <li>
+          <span class="tl-when">1859</span>
+          <span class="tl-what">Hiệp ước Lisbon</span>
+          <span class="tl-note">Bồ Đào Nha và Hà Lan chính thức chia đôi đảo Timor: nửa đông thuộc Bồ, nửa tây thuộc Hà Lan — nay là Indonesia</span>
+        </li>
+        <li>
+          <span class="tl-when">1942 – 1945</span>
+          <span class="tl-what">Nhật chiếm đóng</span>
+          <span class="tl-note">Quân Nhật chiếm Timor thời Thế chiến II; du kích Timor sát cánh cùng lính Úc, hàng chục nghìn thường dân thiệt mạng vì trả thù</span>
+        </li>
+        <li>
+          <span class="tl-when">4/1974</span>
+          <span class="tl-what">Cách mạng Hoa Cẩm Chướng</span>
+          <span class="tl-note">Chính biến ở Lisbon mở đường phi thực dân hóa cho các thuộc địa Bồ Đào Nha, trong đó có Timor</span>
+        </li>
+        <li>
+          <span class="tl-when">28/11/1975</span>
+          <span class="tl-what">Tuyên bố độc lập</span>
+          <span class="tl-note">Mặt trận FRETILIN đơn phương tuyên bố thành lập nước Cộng hòa Dân chủ Đông Timor</span>
+        </li>
+        <li>
+          <span class="tl-when">7/12/1975</span>
+          <span class="tl-what">Indonesia xâm lược</span>
+          <span class="tl-note">Chín ngày sau, quân đội Indonesia đổ bộ Dili, sáp nhập Đông Timor làm tỉnh thứ 27</span>
+        </li>
+        <li>
+          <span class="tl-when">12/11/1991</span>
+          <span class="tl-what">Thảm sát Santa Cruz</span>
+          <span class="tl-note">Binh lính Indonesia nổ súng vào đoàn đưa tang tại nghĩa trang Santa Cruz, đưa vấn đề Đông Timor ra ánh sáng dư luận quốc tế</span>
+        </li>
+        <li>
+          <span class="tl-when">1996</span>
+          <span class="tl-what">Giải Nobel Hòa bình</span>
+          <span class="tl-note">Giám mục Carlos Filipe Ximenes Belo và José Ramos-Horta được trao giải vì nỗ lực tìm giải pháp công bằng cho Đông Timor</span>
+        </li>
+        <li>
+          <span class="tl-when">30/8/1999</span>
+          <span class="tl-what">Trưng cầu dân ý</span>
+          <span class="tl-note">78,5% cử tri chọn tách khỏi Indonesia trong cuộc bỏ phiếu do Liên Hợp Quốc tổ chức</span>
+        </li>
+        <li>
+          <span class="tl-when">1999 – 2002</span>
+          <span class="tl-what">UNTAET quản lý chuyển tiếp</span>
+          <span class="tl-note">Lực lượng gìn giữ hòa bình quốc tế và chính quyền lâm thời Liên Hợp Quốc điều hành đất nước sau làn sóng bạo lực hậu trưng cầu</span>
+        </li>
+        <li>
+          <span class="tl-when">20/5/2002</span>
+          <span class="tl-what">Khôi phục độc lập</span>
+          <span class="tl-note">Đông Timor chính thức trở thành quốc gia có chủ quyền; Xanana Gusmão trở thành Tổng thống đầu tiên</span>
+        </li>
+        <li>
+          <span class="tl-when">2018</span>
+          <span class="tl-what">Hiệp ước biên giới biển với Úc</span>
+          <span class="tl-note">Hai nước ký hiệp định phân định ranh giới trên Biển Timor, mở đường khai thác mỏ khí Greater Sunrise</span>
+        </li>
+        <li>
+          <span class="tl-when">10/2025</span>
+          <span class="tl-what">Gia nhập ASEAN</span>
+          <span class="tl-note">Đông Timor trở thành thành viên đầy đủ thứ 11 của ASEAN tại Hội nghị Cấp cao lần thứ 47 ở Kuala Lumpur, sau 14 năm nộp đơn</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ XVI chủ yếu dựa trên khảo cổ học và ước tính của giới nghiên cứu, mang tính tương đối. Số thương vong trong giai đoạn chiếm đóng 1975–1999 vẫn còn được các nhà nghiên cứu tranh luận, các ước tính dao động phổ biến từ 100.000 đến hơn 200.000 người.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Về số liệu dân số</b>
+        Tổng cục Thống kê Đông Timor, Liên Hợp Quốc và Ngân hàng Thế giới công bố các ước tính dân số chênh lệch đôi chút tùy thời điểm và phương pháp. Con số trong bài lấy theo ước tính năm 2026.
+      </aside>
+
+      <p class="lede">Đông Timor chiếm nửa phía đông của đảo Timor, cộng thêm vùng tách rời Oecusse nằm lọt trong lãnh thổ Tây Timor thuộc Indonesia, cùng hai đảo nhỏ Ataúro và Jaco.</p>
+
+      <p>Với diện tích khoảng <span class="tg">15.007 km²</span><a class="cite" href="#ref-1">[1]</a> — chỉ bằng một phần hai mươi Việt Nam — địa hình Đông Timor chủ yếu là núi non hiểm trở, đỉnh cao nhất là núi <span class="nv" data-note="Còn gọi là núi Ramelau, cao 2.986 m, đỉnh núi cao nhất Đông Timor, nơi có tượng Đức Mẹ Maria và là điểm hành hương leo núi ngắm bình minh nổi tiếng.">Tatamailau</span>. Khí hậu nhiệt đới gió mùa chia năm thành mùa mưa và mùa khô rõ rệt; vùng biển phía nam nằm trong Tam giác San hô (Coral Triangle) — một trong những vùng biển đa dạng sinh học bậc nhất hành tinh.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">1,43 triệu người</span><a class="cite" href="#ref-1">[1]</a>, là một trong những nước có dân số trẻ nhất châu Á với độ tuổi trung vị dưới 20 và tỷ suất sinh thuộc hàng cao nhất khu vực. Cư dân thuộc nhiều nhóm sắc tộc gốc Papua và Nam Đảo, nói hơn 30 ngôn ngữ và phương ngữ khác nhau — trong đó Tetum và Bồ Đào Nha là hai ngôn ngữ chính thức, còn Mambai, Makasae, Fataluku, Bunak là những tiếng bản địa lớn. Đông Timor cũng là nước có tỷ lệ dân số theo Công giáo cao vào hàng bậc nhất châu Á, khoảng <span class="tg">97,6%</span><a class="cite" href="#ref-1">[1]</a> — một di sản trực tiếp từ thời Bồ Đào Nha, và cũng là điểm khác biệt căn bản với Indonesia theo đạo Hồi.</p>
+
+      <p>Về hành chính, đất nước chia thành <span class="tg">14 đô thị</span> (municipality), trong đó Oecusse-Ambeno là vùng đặc khu kinh tế nằm tách biệt về mặt địa lý, được trao quy chế tự trị đặc biệt để thúc đẩy phát triển. Thủ đô Dili, nằm ở bờ biển phía bắc, là trung tâm chính trị, kinh tế và cảng biển lớn nhất cả nước.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Đông Timor là một chuỗi dài bị các thế lực bên ngoài chi phối — Bồ Đào Nha, Nhật Bản, rồi Indonesia — và mỗi lần vùng lên, người Timor lại trả giá bằng máu để giữ lấy bản sắc riêng của mình.</p>
+
+      <p><b>Thời tiền thuộc địa.</b> Các nhóm cư dân gốc Papua rồi các làn sóng di cư Nam Đảo (Austronesian) đến định cư trên đảo Timor từ hàng nghìn năm trước, hình thành hàng chục nhóm ngôn ngữ và tộc người khác nhau — một sự đa dạng vẫn còn nguyên vẹn đến hôm nay. Từ khoảng thế kỷ XIV, gỗ đàn hương thơm mọc trên đảo đã thu hút thương nhân Trung Hoa và Java, đưa Timor vào mạng lưới thương mại hàng hải châu Á từ rất sớm, trước khi người châu Âu xuất hiện.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao chia đôi một hòn đảo</b>
+        Từ thế kỷ XVII, Bồ Đào Nha và Hà Lan cùng tranh giành ảnh hưởng trên đảo Timor. Hiệp ước Lisbon năm 1859 chính thức phân định ranh giới, để lại một đường biên giới nhân tạo vẫn tồn tại đến ngày nay giữa Đông Timor độc lập và tỉnh Tây Timor thuộc Indonesia.
+      </aside>
+
+      <p><b>Thời Bồ Đào Nha (1515 – 1975).</b> Từ năm <span class="tg">1515</span>, thương nhân và tu sĩ Dòng Đa Minh đặt chân lên Timor để buôn gỗ đàn hương và truyền giáo. Năm <span class="tg">1702</span>, Timor chính thức trở thành thuộc địa Bồ Đào Nha, nhưng do vị trí xa xôi và ít giá trị kinh tế, đây luôn là một trong những thuộc địa bị Lisbon xao lãng nhất — hạ tầng gần như không phát triển, còn quyền lực địa phương phần lớn nằm trong tay giới quý tộc lai Bồ – Timor gọi là <span class="nv" data-note="Cộng đồng người lai gốc Bồ Đào Nha và Timor bản địa, nắm nhiều quyền lực thực tế ở các vùng xa trung tâm thuộc địa suốt thời Bồ Đào Nha cai trị.">Topasses</span>. Năm <span class="tg">1859</span>, Hiệp ước Lisbon chính thức chia đôi đảo Timor giữa Bồ Đào Nha và Hà Lan, đặt nền cho biên giới hiện nay.</p>
+
+      <p><b>Thế chiến II (1942 – 1945).</b> Dù Bồ Đào Nha trung lập, quân Nhật vẫn chiếm đóng Timor để chặn đường tiếp cận của Đồng minh. Một nhóm nhỏ lính Úc cùng hàng nghìn du kích Timor kháng cự quân Nhật trong gần một năm, nhưng cái giá phải trả là sự trả thù tàn khốc: ước tính <span class="tg">40.000 – 70.000</span> thường dân Timor thiệt mạng. Sự hy sinh này về sau trở thành một phần căn cứ đạo lý cho yêu sách độc lập của Đông Timor.</p>
+
+      <p><b>Phi thực dân hóa và tuyên bố độc lập chớp nhoáng (1974 – 1975).</b> Cuộc <span class="nv" data-note="Cuộc chính biến quân sự không đổ máu ngày 25/4/1974 ở Bồ Đào Nha, lật đổ chế độ độc tài Estado Novo và mở đường phi thực dân hóa cho các thuộc địa của Bồ Đào Nha.">Cách mạng Hoa Cẩm Chướng</span> ở Lisbon năm <span class="tg">1974</span> đột ngột mở đường phi thực dân hóa. Tại Timor, hai đảng chính trị lớn — UDT thiên bảo hoàng và FRETILIN thiên tả — nhanh chóng đối đầu, dẫn tới một cuộc nội chiến ngắn. Ngày <span class="tg">28/11/1975</span>, FRETILIN đơn phương tuyên bố thành lập nước Cộng hòa Dân chủ Đông Timor. Chỉ chín ngày sau, ngày <span class="tg">7/12/1975</span>, quân đội Indonesia đổ bộ Dili, mở đầu một trong những cuộc chiếm đóng đẫm máu nhất Đông Nam Á thời hiện đại.</p>
+
+      <aside class="sidenote">
+        <b>Balibo Five</b>
+        Năm nhà báo nước ngoài bị lực lượng Indonesia sát hại tại thị trấn Balibo ngày 16/10/1975 khi đang đưa tin về cuộc xâm lược sắp diễn ra — sự kiện sau này được dựng thành phim <i>Balibo</i> và trở thành biểu tượng cho sự im lặng quốc tế trước thảm kịch Đông Timor.
+      </aside>
+
+      <p><b>24 năm chiếm đóng (1975 – 1999).</b> Indonesia sáp nhập Đông Timor làm tỉnh thứ 27, nhưng vấp phải kháng chiến bền bỉ của lực lượng du kích <span class="nv" data-note="Lực lượng vũ trang kháng chiến của FRETILIN, chiến đấu chống quân đội Indonesia trong suốt 24 năm chiếm đóng, dưới sự chỉ huy của Xanana Gusmão từ năm 1981.">Falintil</span> trên rừng núi. Chính quyền Indonesia đàn áp mạnh tay bằng quân sự, di dân cưỡng bức và bỏ đói, khiến giới nghiên cứu ước tính có từ 100.000 đến hơn 200.000 người Timor thiệt mạng vì chiến sự, đói kém và bệnh tật — một tỷ lệ tử vong so với dân số thuộc hàng cao nhất thế kỷ XX. Ngày <span class="tg">12/11/1991</span>, vụ thảm sát Santa Cruz — binh lính Indonesia nổ súng vào đoàn đưa tang ở Dili — được phóng viên nước ngoài quay lại và phát sóng toàn cầu, đảo ngược hoàn toàn dư luận quốc tế. Năm <span class="tg">1996</span>, Giải Nobel Hòa bình được trao cho Giám mục <span class="nv" data-note="Giám mục Công giáo Đông Timor, đồng nhận Giải Nobel Hòa bình năm 1996 vì các nỗ lực ôn hòa tìm giải pháp công bằng cho vấn đề Đông Timor.">Carlos Filipe Ximenes Belo</span> và nhà ngoại giao <span class="nv" data-note="Nhà hoạt động và ngoại giao kỳ cựu của phong trào độc lập Đông Timor, đồng nhận Giải Nobel Hòa bình 1996, sau này làm Bộ trưởng Ngoại giao, rồi Tổng thống Đông Timor (2007–2012, và từ 2022).">José Ramos-Horta</span>, đưa vấn đề Đông Timor lên tầm ngoại giao thế giới.</p>
+
+      <p><b>Trưng cầu dân ý và khôi phục độc lập (1999 – 2002).</b> Sau khủng hoảng tài chính châu Á và sự sụp đổ của Tổng thống Suharto, Indonesia chấp thuận tổ chức trưng cầu dân ý do Liên Hợp Quốc giám sát. Ngày <span class="tg">30/8/1999</span>, <span class="tg">78,5%</span> cử tri Đông Timor chọn tách khỏi Indonesia<a class="cite" href="#ref-9">[9]</a>. Kết quả này châm ngòi cho một làn sóng bạo lực trả thù dữ dội của dân quân thân Indonesia, phá hủy phần lớn hạ tầng đất nước trước khi lực lượng gìn giữ hòa bình quốc tế (INTERFET) can thiệp. Từ <span class="tg">1999</span> đến <span class="tg">2002</span>, Phái bộ Liên Hợp Quốc UNTAET quản lý giai đoạn chuyển tiếp, và ngày <span class="tg">20/5/2002</span>, Đông Timor chính thức khôi phục độc lập, với <span class="nv" data-note="Cựu chỉ huy Falintil, bị Indonesia bắt giam năm 1992, trở thành Tổng thống đầu tiên của Đông Timor độc lập (2002–2007), sau đó hai lần làm Thủ tướng, hiện tiếp tục giữ chức Thủ tướng từ 2023.">Xanana Gusmão</span> trở thành Tổng thống đầu tiên.</p>
+
+      <p><b>Xây dựng nhà nước và hội nhập khu vực (2002 – nay).</b> Con đường hậu độc lập không hề bằng phẳng: năm 2006, một cuộc khủng hoảng chính trị – quân sự nghiêm trọng từng đẩy đất nước đến bờ vực nội chiến, buộc lực lượng gìn giữ hòa bình quốc tế quay trở lại. Từ đó, Đông Timor dần ổn định thể chế, xây dựng Quỹ Dầu khí quốc gia, và theo đuổi mục tiêu hội nhập khu vực. Sau 14 năm nộp đơn, tháng <span class="tg">10/2025</span> Đông Timor chính thức trở thành thành viên đầy đủ thứ 11 của ASEAN — dấu mốc ngoại giao lớn nhất kể từ ngày độc lập.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Đông Timor</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống</span>
+          <span class="tier-desc">Nguyên thủ quốc gia do dân bầu trực tiếp, nhiệm kỳ 5 năm, có quyền phủ quyết và giải tán Quốc hội trong một số trường hợp</span>
+        </li>
+        <li>
+          <span class="tier-role">Thủ tướng &amp; Nội các</span>
+          <span class="tier-desc">Cơ quan hành pháp, chịu trách nhiệm trước Quốc hội; Thủ tướng thường là lãnh đạo đảng hoặc liên minh chiếm đa số ghế</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội Quốc gia</span>
+          <span class="tier-desc">Cơ quan lập pháp đơn viện, 65 ghế, bầu theo hình thức đại diện tỷ lệ, nhiệm kỳ 5 năm</span>
+        </li>
+        <li>
+          <span class="tier-role">14 đô thị &amp; các đơn vị hành chính cơ sở</span>
+          <span class="tier-desc">Mỗi đô thị chia thành các postos administrativos (khu hành chính) rồi đến sucos (làng) — cấp chính quyền gần dân nhất</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Bán tổng thống chế</b>
+        Đông Timor theo mô hình cộng hòa bán tổng thống: quyền lực chia sẻ giữa một Tổng thống dân bầu trực tiếp và một Thủ tướng đứng đầu Chính phủ, tương tự mô hình của Bồ Đào Nha — di sản thể chế từ thời thuộc địa.
+      </aside>
+
+      <p>Đông Timor là nhà nước cộng hòa dân chủ đa đảng theo mô hình bán tổng thống, chịu ảnh hưởng rõ nét từ hệ thống chính trị Bồ Đào Nha. Tổng thống là nguyên thủ quốc gia, đại diện đối ngoại và tổng tư lệnh danh nghĩa, trong khi quyền điều hành thực tế nằm ở Thủ tướng và Nội các, chịu trách nhiệm trước Quốc hội.</p>
+
+      <p>Tính đến năm 2026, <span class="nv" data-note="Nhà ngoại giao kỳ cựu, đồng nhận Giải Nobel Hòa bình 1996, tái đắc cử Tổng thống Đông Timor nhiệm kỳ thứ hai năm 2022.">José Ramos-Horta</span> giữ chức Tổng thống, còn <span class="nv" data-note="Cựu chỉ huy kháng chiến Falintil, Tổng thống đầu tiên của Đông Timor (2002–2007), trở lại làm Thủ tướng từ tháng 7/2023 sau khi đảng CNRT của ông giành đa số phiếu.">Xanana Gusmão</span> — biểu tượng của phong trào độc lập — tiếp tục giữ chức Thủ tướng. Hai nhân vật kỳ cựu này gần như luân phiên nắm giữ các vị trí quyền lực cao nhất kể từ năm 2002, phản ánh vai trò trung tâm của thế hệ lãnh đạo kháng chiến trong nền chính trị Đông Timor hậu độc lập.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Nền kinh tế Đông Timor được Quỹ Tiền tệ Quốc tế (IMF) mô tả là "nền kinh tế phụ thuộc dầu khí nhất thế giới"<a class="cite" href="#ref-2">[2]</a>. Doanh thu từ khai thác dầu khí ngoài khơi trong nhiều năm được đổ vào Quỹ Dầu khí quốc gia, thành lập năm 2005 theo mô hình quỹ đầu tư quốc gia Na Uy, từng có giá trị lên tới khoảng <span class="tg">19 tỷ USD</span> — gấp gần mười lần ngân sách quốc gia hằng năm<a class="cite" href="#ref-2">[2]</a>. Tuy nhiên, mức rút quỹ hằng năm để chi ngân sách đã liên tục vượt ngưỡng bền vững kể từ năm 2009, khiến tính bền vững tài khóa dài hạn trở thành mối lo lớn nhất của giới hoạch định chính sách.</p>
+
+      <p>GDP bình quân đầu người danh nghĩa hiện ước đạt khoảng <span class="tg">1.490 USD</span><a class="cite" href="#ref-1">[1]</a>, thuộc nhóm thấp nhất Đông Nam Á. Cơ cấu kinh tế nghiêng hẳn về công nghiệp khai khoáng (chủ yếu dầu khí, chiếm hơn một nửa GDP), trong khi nông nghiệp — dù chỉ đóng góp khoảng một phần mười GDP — vẫn là sinh kế của gần <span class="tg">80%</span> lực lượng lao động, chủ yếu dưới hình thức canh tác tự cung tự cấp<a class="cite" href="#ref-2">[2]</a>. Cà phê là mặt hàng xuất khẩu phi dầu khí lớn nhất, đóng góp phần lớn kim ngạch xuất khẩu ngoài dầu khí của cả nước; Đông Timor cũng nằm trong nhóm các nước xuất khẩu quế lớn trên thế giới.</p>
+
+      <p>Nghèo đói vẫn phổ biến: theo số liệu công bố, gần một nửa dân số sống dưới chuẩn nghèo quốc gia, và phần lớn dân số sống với mức chi tiêu dưới 5,5 USD/ngày<a class="cite" href="#ref-2">[2]</a>. Một điểm sáng tiềm năng là mỏ khí <span class="nv" data-note="Mỏ khí đốt và condensate lớn nằm ở Biển Timor, được xem là nguồn thu tương lai quan trọng nhất của Đông Timor sau khi các mỏ dầu khí hiện tại cạn kiệt.">Greater Sunrise</span>, sau khi Hiệp ước biên giới biển với Úc năm <span class="tg">2018</span> giải quyết tranh chấp lãnh thổ kéo dài hàng chục năm<a class="cite" href="#ref-10">[10]</a>; tuy vậy, việc khai thác thương mại mỏ này đến nay vẫn chưa được triển khai do bất đồng về địa điểm đặt nhà máy chế biến khí. Chính phủ đặt hy vọng vào việc đa dạng hóa sang du lịch, nông nghiệp giá trị cao và lợi ích từ tư cách thành viên ASEAN mới có được để giảm bớt sự lệ thuộc vào dầu khí.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Văn hóa Đông Timor là sự đan xen giữa tín ngưỡng bản địa lâu đời và Công giáo — tôn giáo được hơn 97% dân số theo, một trong những tỷ lệ cao nhất châu Á. Ở tầng sâu hơn lớp Công giáo, khái niệm <span class="nv" data-note="Khái niệm bản địa Timor về những gì thiêng liêng, cấm kỵ hoặc mang quyền lực siêu nhiên, chi phối quan hệ giữa con người, tổ tiên và đất đai trong đời sống thường ngày.">lulik</span> (thiêng liêng, cấm kỵ) vẫn chi phối sâu sắc đời sống cộng đồng: những ngôi <span class="nv" data-note="Những ngôi nhà truyền thống mang tính thiêng liêng, nơi lưu giữ các vật gia bảo của dòng họ và diễn ra các nghi lễ quan trọng, vẫn được xây dựng và tôn kính ở nhiều vùng nông thôn Đông Timor.">uma lulik</span> (nhà thiêng của dòng họ) vẫn được dựng lại và gìn giữ ở khắp các làng bản, là nơi cất giữ vật gia bảo và diễn ra các nghi lễ trọng đại của dòng họ.</p>
+
+      <p>Về tâm lý xã hội, người Timor thường được mô tả là coi trọng quan hệ họ hàng, làng xóm và tinh thần cộng đồng gắn bó chặt chẽ — một phần bắt nguồn từ chính lịch sử kháng chiến chung kéo dài nhiều thế hệ. Ký ức về giai đoạn chiếm đóng vẫn để lại dấu ấn sâu đậm trong tâm thức tập thể, được nhắc đến thường xuyên trong diễn ngôn chính trị và giáo dục như nền tảng của bản sắc dân tộc hậu độc lập. Tục ăn trầu (<span class="nv" data-note="Tục nhai trầu cau (bua malus) là nghi thức xã giao phổ biến ở Đông Timor: mời trầu là cách thể hiện lòng hiếu khách và mở đầu mọi cuộc gặp gỡ, đàm phán quan trọng.">bua malus</span>) là một nghi thức xã giao gần như bắt buộc: mời trầu cau là cách người Timor thể hiện thiện chí và mở đầu các cuộc trò chuyện, từ thăm hỏi thường ngày đến đàm phán hôn nhân hay giải quyết tranh chấp đất đai theo tục lệ.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Cà phê hữu cơ</b>
+        Cà phê arabica trồng ở vùng cao Ermera và Maubisse phần lớn theo phương thức canh tác hữu cơ truyền thống, không dùng hóa chất, và ngày càng được thị trường quốc tế đánh giá cao về chất lượng.
+      </aside>
+
+      <p>Ẩm thực Đông Timor giản dị, dựa trên những gì đất và biển sẵn có: gạo, ngô, khoai lang, sắn là lương thực chính, ăn cùng cá, thịt heo, thịt gà và rất nhiều dừa. Triết lý nấu nướng không cầu kỳ gia vị như các nước láng giềng, mà thiên về hương vị tươi, mộc — ớt, chanh, cà chua và rau thơm địa phương là những thành phần chủ đạo tạo nên vị chua – cay – mặn hài hòa trong hầu hết các món.</p>
+
+      <p>Có sự khác biệt rõ giữa vùng cao và vùng biển. Vùng núi trung tâm, nơi phần lớn dân cư sinh sống, thiên về các món từ ngô và đậu như <i>batar daan</i>; trong khi vùng ven biển phía bắc quanh Dili và phía đông đảo lại nghiêng về cá tươi, tiêu biểu là <i>ikan sabuko</i> ướp me chua. Hơn bốn thế kỷ đô hộ của Bồ Đào Nha để lại dấu ấn đậm trong ẩm thực: từ món hầm đậu <i>feijoada</i>, bánh trứng kiểu Bồ, đến thói quen dùng rượu vang và cà phê phin kiểu Âu — trong khi các món cà ri nhẹ vị lại cho thấy ảnh hưởng từ Malay và Indonesia láng giềng.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món ăn &amp; thức uống tiêu biểu</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Vùng cao</span><span class="pick-name">Batar daan</span><span class="pick-desc">Ngô, đậu xanh và bí ngô hầm mềm — món ăn quen thuộc nhất ở vùng núi trung tâm.</span></li>
+        <li><span class="pick-where">Ven biển</span><span class="pick-name">Ikan sabuko</span><span class="pick-desc">Cá thu ướp me chua với húng quế và ớt, phản ánh truyền thống đánh bắt lâu đời.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Budu</span><span class="pick-desc">Nước chấm cà chua, bạc hà, chanh và hành tây — ăn kèm gần như mọi bữa cơm.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Caril Timor</span><span class="pick-desc">Cà ri gà vị nhẹ với ớt chuông nướng và nước cốt dừa, mang hơi hướng Malay.</span></li>
+        <li><span class="pick-where">Di sản Bồ</span><span class="pick-name">Feijoada</span><span class="pick-desc">Món hầm đậu trắng với thịt heo và xúc xích chorizo — di sản trực tiếp từ ẩm thực Bồ Đào Nha.</span></li>
+        <li><span class="pick-where">Lên men</span><span class="pick-name">Tapai</span><span class="pick-desc">Gạo hoặc sắn lên men, vị chua ngọt nhẹ và hơi cay nồng của men rượu.</span></li>
+        <li><span class="pick-where">Tráng miệng</span><span class="pick-name">Bibingka</span><span class="pick-desc">Bánh dừa nướng nhiều lớp, vàng giòn bên ngoài, mềm ẩm bên trong.</span></li>
+        <li><span class="pick-where">Di sản Bồ</span><span class="pick-name">Pastel de nata kiểu Timor</span><span class="pick-desc">Bánh trứng nướng giòn phiên bản địa phương của món tart trứng nổi tiếng Bồ Đào Nha.</span></li>
+        <li><span class="pick-where">Vùng cao</span><span class="pick-name">Cà phê Ermera – Maubisse</span><span class="pick-desc">Arabica hữu cơ trồng trên núi cao, hương vị được giới sành cà phê quốc tế đánh giá cao.</span></li>
+        <li><span class="pick-where">Truyền thống</span><span class="pick-name">Tuak</span><span class="pick-desc">Rượu cọ lên men tự nhiên, thường xuất hiện trong các dịp lễ hội và nghi lễ làng.</span></li>
+        <li><span class="pick-where">Xã giao</span><span class="pick-name">Bua malus (trầu cau)</span><span class="pick-desc">Không hẳn là món ăn mà là nghi thức: mời trầu mở đầu mọi cuộc gặp gỡ quan trọng.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Chưa có di sản UNESCO</b>
+        Tính đến 2026, Đông Timor chưa có địa danh nào được UNESCO công nhận là Di sản Thế giới, nhưng Vườn quốc gia Nino Konis Santana đã được công nhận là Khu dự trữ sinh quyển UNESCO — một bước đệm quan trọng.
+      </aside>
+
+      <p>Do dân số ít và ngành du lịch còn non trẻ, nhiều bãi biển, rạn san hô và cung đường trekking của Đông Timor vẫn gần như nguyên sơ — một điểm hấp dẫn ngày càng được các nhà làm du lịch bền vững chú ý, đặc biệt sau khi đất nước gia nhập ASEAN mở ra kỳ vọng thu hút thêm du khách khu vực.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Đông Timor</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Dili</span><span class="pick-desc">Tượng Cristo Rei trên đồi nhìn ra vịnh, bãi biển Areia Branca và Bảo tàng Kháng chiến kể lại 24 năm đấu tranh giành độc lập.</span></li>
+        <li><span class="pick-where">Ngoài khơi Dili</span><span class="pick-name">Đảo Ataúro</span><span class="pick-desc">Được xem là có mật độ đa dạng cá rạn san hô cao bậc nhất thế giới, thiên đường lặn biển còn ít người biết đến.</span></li>
+        <li><span class="pick-where">Cực đông</span><span class="pick-name">Đảo Jaco</span><span class="pick-desc">Hòn đảo thiêng không người ở ngoài khơi Tutuala, cát trắng và nước biển trong vắt ở "tận cùng thế giới".</span></li>
+        <li><span class="pick-where">Vùng cao trung tâm</span><span class="pick-name">Núi Tatamailau (Ramelau)</span><span class="pick-desc">Đỉnh núi cao nhất nước, 2.986 m; leo núi ban đêm để ngắm bình minh trên tượng Đức Mẹ ở đỉnh là trải nghiệm được nhiều người tìm đến.</span></li>
+        <li><span class="pick-where">Biên giới tây bắc</span><span class="pick-name">Balibo</span><span class="pick-desc">Thị trấn đồn lũy lịch sử, nơi năm nhà báo nước ngoài bị sát hại năm 1975, nay có bảo tàng tưởng niệm và tầm nhìn ra Tây Timor.</span></li>
+        <li><span class="pick-where">Bờ đông bắc</span><span class="pick-name">Baucau</span><span class="pick-desc">Đô thị cổ thời Bồ Đào Nha với kiến trúc thuộc địa, hồ nước tự nhiên và tầm nhìn hướng núi Matebian.</span></li>
+        <li><span class="pick-where">Cực đông</span><span class="pick-name">Vườn quốc gia Nino Konis Santana</span><span class="pick-desc">Khu dự trữ sinh quyển UNESCO rộng hơn 123.000 ha, trải từ rạn san hô đến rừng nhiệt đới, nơi trú ngụ của nhiều loài chim quý.</span></li>
+        <li><span class="pick-where">Vùng cao phía tây</span><span class="pick-name">Maubisse &amp; Ermera</span><span class="pick-desc">Thủ phủ cà phê hữu cơ trên núi cao, khí hậu mát mẻ và nhà nghỉ pousada thời thuộc địa.</span></li>
+        <li><span class="pick-where">Bờ nam</span><span class="pick-name">Vùng lặn biển Tam giác San hô</span><span class="pick-desc">Nhiều điểm lặn dọc bờ nam vẫn còn hoang sơ, nằm trong vùng biển đa dạng sinh học bậc nhất thế giới.</span></li>
+        <li><span class="pick-where">Dili</span><span class="pick-name">Chợ Tais</span><span class="pick-desc">Nơi bán vải thổ cẩm tais dệt tay truyền thống — mỗi hoa văn mang bản sắc riêng của từng vùng, từng dòng họ.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Cộng đồng các nước nói tiếng Bồ Đào Nha</b>
+        Đông Timor là thành viên của CPLP (Cộng đồng các quốc gia nói tiếng Bồ Đào Nha), duy trì quan hệ đặc biệt gần gũi với Bồ Đào Nha, Brasil và các nước châu Phi Lusophone — một mạng lưới ngoại giao độc đáo hiếm quốc gia châu Á nào có được.
+      </aside>
+
+      <p>Sự kiện đối ngoại quan trọng nhất của Đông Timor trong nhiều năm qua là việc chính thức trở thành thành viên đầy đủ thứ <span class="tg">11</span> của ASEAN vào tháng <span class="tg">10/2025</span>, sau 14 năm kiên trì theo đuổi tư cách thành viên kể từ đơn xin gia nhập năm 2011<a class="cite" href="#ref-5">[5]</a>. Đây được xem là bước ngoặt đưa đất nước nhỏ bé và nghèo nhất khu vực chính thức bước vào bàn cờ ngoại giao và kinh tế Đông Nam Á, mở ra cơ hội tiếp cận thị trường, đầu tư và hỗ trợ kỹ thuật từ các nước láng giềng.</p>
+
+      <p>Quan hệ với Indonesia — nước từng chiếm đóng — đã được bình thường hóa và trở nên hợp tác chặt chẽ kể từ đầu những năm 2000, dù ký ức lịch sử vẫn còn nhạy cảm trong một bộ phận dư luận. Với Úc, mối quan hệ trải qua nhiều thăng trầm quanh tranh chấp biên giới biển và mỏ khí Greater Sunrise, nhưng đã bước sang trang mới sau Hiệp ước 2018<a class="cite" href="#ref-10">[10]</a>; việc khai thác thương mại mỏ khí này vẫn là trọng tâm đàm phán kinh tế song phương. Bồ Đào Nha và Cộng đồng CPLP tiếp tục là đối tác viện trợ và ngôn ngữ – văn hóa quan trọng, trong khi ảnh hưởng đầu tư của Trung Quốc tại Đông Timor cũng đang gia tăng, thu hút sự chú ý của các nước lớn trong khu vực.</p>
+
+      <p>Ở trong nước, ba bài toán được nhắc đến nhiều nhất là: tính bền vững của Quỹ Dầu khí quốc gia khi nguồn thu từ các mỏ hiện tại đang cạn dần trong lúc mức rút quỹ vẫn vượt ngưỡng an toàn; nhu cầu cấp bách đa dạng hóa kinh tế ra khỏi sự lệ thuộc dầu khí, trong đó nông nghiệp giá trị cao, cà phê và du lịch được kỳ vọng là hướng đi; và bài toán tạo việc làm cho một dân số rất trẻ đang gia nhập thị trường lao động ngày một đông.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Đông Timor</h2>
+      <ol class="funs">
+        <li><b>Quốc gia trẻ nhất châu Á.</b> Khôi phục độc lập năm 2002, Đông Timor là quốc gia có chủ quyền non trẻ nhất châu Á, và là nước đầu tiên của thế kỷ XXI ra đời từ một cuộc trưng cầu dân ý do Liên Hợp Quốc tổ chức.</li>
+        <li><b>Nước Á duy nhất nói tiếng Bồ Đào Nha chính thức.</b> Cùng Tetum, tiếng Bồ Đào Nha là ngôn ngữ chính thức — khiến Đông Timor là thành viên duy nhất ở châu Á của cả ASEAN lẫn Cộng đồng các nước nói tiếng Bồ Đào Nha (CPLP).</li>
+        <li><b>Thành viên ASEAN mới toanh.</b> Sau 14 năm nộp đơn, Đông Timor mới chính thức gia nhập ASEAN vào tháng 10/2025, trở thành thành viên thứ 11 và là nước gia nhập gần đây nhất của khối.</li>
+        <li><b>Quỹ dầu khí lớn gấp mười ngân sách.</b> Quỹ Dầu khí quốc gia từng đạt khoảng 19 tỷ USD — gấp gần mười lần ngân sách quốc gia hằng năm — nhưng IMF xem đây là nền kinh tế phụ thuộc dầu khí nhất thế giới.</li>
+        <li><b>Rạn san hô nhiều cá nhất hành tinh.</b> Vùng biển quanh đảo Ataúro được một số nghiên cứu ghi nhận có mật độ loài cá rạn san hô cao hơn bất cứ nơi nào từng khảo sát trên Trái Đất.</li>
+        <li><b>Hai giải Nobel Hòa bình cho một dân tộc nhỏ.</b> Năm 1996, Giám mục Carlos Filipe Ximenes Belo và nhà ngoại giao José Ramos-Horta cùng được trao Giải Nobel Hòa bình vì nỗ lực đấu tranh ôn hòa cho Đông Timor.</li>
+        <li><b>Lá cờ được tuyên bố hai lần.</b> Quốc kỳ hiện tại từng được giương lên năm 1975, chỉ chín ngày trước khi Indonesia xâm lược, rồi được khôi phục nguyên vẹn làm quốc kỳ chính thức năm 2002.</li>
+        <li><b>Nhà thiêng vẫn được dựng mới.</b> Tục xây uma lulik — nhà thiêng lưu giữ vật gia bảo dòng họ — vẫn phổ biến ở nhiều làng, cho thấy tín ngưỡng bản địa vẫn sống động song song với hơn 97% dân số theo Công giáo.</li>
+        <li><b>Cà phê hữu cơ trên núi cao.</b> Phần lớn cà phê arabica Đông Timor được trồng theo lối hữu cơ truyền thống không hóa chất tại vùng núi Ermera và Maubisse, ngày càng được giới sành cà phê quốc tế săn đón.</li>
+        <li><b>Một đảo, hai quốc gia, một vùng đất tách rời.</b> Đông Timor sở hữu vùng đặc khu Oecusse nằm tách biệt hoàn toàn trong lãnh thổ Tây Timor của Indonesia — một trong những đường biên giới bất thường hiếm gặp ở Đông Nam Á.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Đông Timor có khoảng <span class="tg">1,43 triệu</span> dân, diện tích <span class="tg">15.007 km²</span>, thủ đô Dili, hơn 97% dân số theo Công giáo.</li>
+        <li>Lịch sử xoay quanh trục: hơn 4 thế kỷ thuộc địa Bồ Đào Nha → <span class="tg">28/11/1975</span> tuyên bố độc lập → <span class="tg">7/12/1975</span> Indonesia xâm lược → 24 năm chiếm đóng → <span class="tg">1999</span> trưng cầu dân ý → <span class="tg">2002</span> khôi phục độc lập.</li>
+        <li>Xanana Gusmão (Thủ tướng) và José Ramos-Horta (Tổng thống) là hai lãnh đạo kháng chiến kỳ cựu vẫn nắm quyền lực cao nhất.</li>
+        <li>Kinh tế phụ thuộc nặng vào dầu khí và Quỹ Dầu khí quốc gia; cà phê là mặt hàng xuất khẩu phi dầu khí chủ lực; nghèo đói vẫn phổ biến.</li>
+        <li>Tháng <span class="tg">10/2025</span>, chính thức trở thành thành viên đầy đủ thứ <span class="tg">11</span> của ASEAN — dấu mốc ngoại giao lớn nhất kể từ ngày độc lập.</li>
+        <li>Văn hóa pha trộn Công giáo và tín ngưỡng bản địa lulik/uma lulik; tục mời trầu cau (bua malus) là nghi thức xã giao quan trọng.</li>
+        <li>Ẩm thực giản dị dựa trên gạo, ngô, cá, dừa; chịu ảnh hưởng ẩm thực Bồ Đào Nha (feijoada, bánh trứng) và Malay (cà ri).</li>
+        <li>Điểm đến nổi bật: đảo Ataúro (lặn biển), đảo Jaco, núi Tatamailau, Balibo, Vườn quốc gia Nino Konis Santana.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Đông Timor tuyên bố độc lập lần đầu vào ngày nào, và điều gì xảy ra chỉ chín ngày sau đó?</p>
+          <details><summary>Xem đáp án</summary><p>Ngày 28/11/1975, FRETILIN tuyên bố độc lập; chín ngày sau (7/12/1975), quân đội Indonesia xâm lược và sáp nhập Đông Timor.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Cuộc trưng cầu dân ý năm 1999 diễn ra khi nào, và kết quả ra sao?</p>
+          <details><summary>Xem đáp án</summary><p>Ngày 30/8/1999, do Liên Hợp Quốc tổ chức; 78,5% cử tri chọn tách khỏi Indonesia để giành độc lập.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Hai nhân vật nào cùng nhận Giải Nobel Hòa bình năm 1996 vì vấn đề Đông Timor?</p>
+          <details><summary>Xem đáp án</summary><p>Giám mục Carlos Filipe Ximenes Belo và nhà ngoại giao José Ramos-Horta.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Sự kiện đối ngoại lớn nhất của Đông Timor năm 2025 là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Chính thức trở thành thành viên đầy đủ thứ 11 của ASEAN vào tháng 10/2025, sau 14 năm nộp đơn.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Vì sao Đông Timor được IMF gọi là "nền kinh tế phụ thuộc dầu khí nhất thế giới"?</p>
+          <details><summary>Xem đáp án</summary><p>Vì phần lớn GDP và ngân sách quốc gia đến từ doanh thu dầu khí và Quỹ Dầu khí quốc gia, trong khi các ngành kinh tế phi dầu khí — như cà phê — còn rất nhỏ.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Hãy nêu ít nhất ba địa điểm du lịch nổi bật của Đông Timor.</p>
+          <details><summary>Xem đáp án</summary><p>Ví dụ: đảo Ataúro, đảo Jaco, núi Tatamailau (Ramelau), Balibo, Baucau, Vườn quốc gia Nino Konis Santana, vùng cà phê Maubisse – Ermera.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Timor-Leste</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp diện tích, dân số ước tính 2026, cơ cấu tôn giáo theo điều tra dân số 2022, GDP theo ước tính 2025). <a href="https://en.wikipedia.org/wiki/Timor-Leste" target="_blank" rel="noopener">en.wikipedia.org/wiki/Timor-Leste</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-2">Wikipedia contributors. <i>Economy of Timor-Leste</i>. Wikipedia, Bách khoa toàn thư mở (cơ cấu GDP, Quỹ Dầu khí quốc gia, tỷ lệ nghèo, cơ cấu lao động nông nghiệp). <a href="https://en.wikipedia.org/wiki/Economy_of_Timor-Leste" target="_blank" rel="noopener">en.wikipedia.org/wiki/Economy_of_Timor-Leste</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>Timeline of East Timorese history</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Timeline_of_East_Timorese_history" target="_blank" rel="noopener">en.wikipedia.org/wiki/Timeline_of_East_Timorese_history</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-4">Wikipedia contributors. <i>Xanana Gusmão</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Xanana_Gusm%C3%A3o" target="_blank" rel="noopener">en.wikipedia.org/wiki/Xanana_Gusmão</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-5">Sebastian Strangio. <i>'History Is Made': Timor-Leste Becomes ASEAN's 11th Member</i>. The Diplomat, tháng 10/2025. <a href="https://thediplomat.com/2025/10/history-is-made-timor-leste-becomes-aseans-11th-member/" target="_blank" rel="noopener">thediplomat.com</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-6">Wikipedia contributors. <i>Cuisine of Timor-Leste</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Cuisine_of_Timor-Leste" target="_blank" rel="noopener">en.wikipedia.org/wiki/Cuisine_of_Timor-Leste</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-7">ASEAN Secretariat. <i>Democratic Republic of Timor-Leste — National Flag Color Specification</i>. Tháng 10/2025 (thông số tỷ lệ, hình học và màu Pantone/hex chính thức của quốc kỳ). <a href="https://asean.org/wp-content/uploads/2025/10/Flag-specification-timor-leste.pdf" target="_blank" rel="noopener">asean.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-8">Tourism Timor-Leste. <i>Destinations</i>. Cổng thông tin du lịch chính thức Đông Timor. <a href="https://timorleste.tl/destinations" target="_blank" rel="noopener">timorleste.tl/destinations</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-9">Wikipedia contributors. <i>1999 East Timorese independence referendum</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/1999_East_Timorese_independence_referendum" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-10">Bộ Ngoại giao và Thương mại Úc (DFAT). <i>Australia's maritime arrangements with Timor-Leste</i>. <a href="https://www.dfat.gov.au/geo/timor-leste/australias-maritime-arrangements-with-timor-leste" target="_blank" rel="noopener">dfat.gov.au</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, quỹ dầu khí) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Số liệu thương vong thời kỳ chiếm đóng 1975–1999 vẫn còn tranh cãi giữa các nhà nghiên cứu nên được trình bày dưới dạng khoảng ước tính.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
