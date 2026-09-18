@@ -1,0 +1,1121 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Lào — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Lào</div>
+          <h1>Lào</h1>
+          <div class="period">Châu Á · Đông Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Lào: hai dải đỏ trên dưới, dải xanh lam ở giữa rộng gấp đôi, hình tròn trắng ở chính giữa">
+            <rect width="30" height="20" fill="#ce1126"/>
+            <rect y="5" width="30" height="10" fill="#002868"/>
+            <circle cx="15" cy="10" r="4" fill="#ffffff"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Lào là quốc gia duy nhất ở Đông Nam Á không giáp biển, nằm trọn trong lục địa, ôm lấy dòng Mekong chảy dọc gần hết chiều dài đất nước. Từ vương quốc "Triệu Voi" hùng mạnh thời trung đại, Lào trải qua gần một thế kỷ dưới ảnh hưởng của Xiêm rồi trở thành thuộc địa Pháp, hứng chịu những đợt ném bom dữ dội nhất lịch sử chiến tranh trong thời Chiến tranh Lạnh, để rồi trở thành nước cộng hòa xã hội chủ nghĩa do một đảng lãnh đạo từ năm 1975. Nếu chỉ nhớ một điều về Lào, hãy nhớ: đây là đất nước của những nghịch lý âm thầm — nghèo tài nguyên đất nhưng giàu nước và thủy điện, ít dân số nhưng nằm ở ngã tư chiến lược giữa các cường quốc láng giềng.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">236.800 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~7,98 triệu<a class="cite" href="#ref-2">[2]</a><small>ước tính giữa 2026</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Vientiane<small>(Viêng Chăn)</small></span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Lào</span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Phật giáo Nam Tông<a class="cite" href="#ref-1">[1]</a><small>~66%; còn lại là tín ngưỡng vật linh dân gian</small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Kíp Lào (₭, LAK)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~2.100 USD<a class="cite" href="#ref-3">[3]</a><small>danh nghĩa; ~10.100 USD theo PPP, ước tính 2025</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">TK VIII – X</span>
+          <span class="tl-what">Người Tai di cư xuống Nam</span>
+          <span class="tl-note">Các nhóm Tai từ Quảng Tây và Bắc Việt Nam di cư xuống lưu vực Mekong, hòa trộn với cư dân Môn-Khmer bản địa</span>
+        </li>
+        <li>
+          <span class="tl-when">1353</span>
+          <span class="tl-what">Lập vương quốc Lan Xang</span>
+          <span class="tl-note">Fa Ngum thống nhất các mường Lào, lập "Vương quốc Triệu Voi", đóng đô ở Luang Prabang</span>
+        </li>
+        <li>
+          <span class="tl-when">1637 – 1694</span>
+          <span class="tl-what">Thời hoàng kim dưới Sourigna Vongsa</span>
+          <span class="tl-note">Vị vua trị vì lâu nhất đưa Lan Xang lên đỉnh cao quyền lực và thịnh vượng</span>
+        </li>
+        <li>
+          <span class="tl-when">1707</span>
+          <span class="tl-what">Lan Xang chia ba</span>
+          <span class="tl-note">Tranh chấp ngôi báu khiến vương quốc tách thành Luang Prabang, Vientiane và Champasak</span>
+        </li>
+        <li>
+          <span class="tl-when">1779 – 1893</span>
+          <span class="tl-what">Chịu sự bảo hộ của Xiêm</span>
+          <span class="tl-note">Sau khi Vientiane thất thủ, cả ba vương quốc Lào lần lượt thần phục vương triều Xiêm</span>
+        </li>
+        <li>
+          <span class="tl-when">1893</span>
+          <span class="tl-what">Pháp lập chế độ bảo hộ</span>
+          <span class="tl-note">Pháp sáp nhập lãnh thổ Lào vào Liên bang Đông Dương, vẽ lại biên giới hiện đại</span>
+        </li>
+        <li>
+          <span class="tl-when">12/10/1945</span>
+          <span class="tl-what">Lao Issara tuyên bố độc lập</span>
+          <span class="tl-note">Phong trào "Lào Tự do" tuyên bố độc lập ngay sau khi Nhật đầu hàng, nhưng Pháp sớm tái chiếm</span>
+        </li>
+        <li>
+          <span class="tl-when">22/10/1953</span>
+          <span class="tl-what">Hiệp ước Pháp – Lào</span>
+          <span class="tl-note">Pháp trao trả toàn bộ chủ quyền còn lại cho Vương quốc Lào độc lập</span>
+        </li>
+        <li>
+          <span class="tl-when">1964 – 1973</span>
+          <span class="tl-what">"Cuộc chiến bí mật"</span>
+          <span class="tl-note">Không quân Mỹ ném hơn hai triệu tấn bom xuống Lào để cắt tuyến đường Hồ Chí Minh, trung bình một phi vụ mỗi 8 phút suốt 9 năm</span>
+        </li>
+        <li>
+          <span class="tl-when">2/12/1975</span>
+          <span class="tl-what">Thành lập CHDCND Lào</span>
+          <span class="tl-note">Vua Savang Vatthana thoái vị, Pathet Lào lập nước Cộng hòa Dân chủ Nhân dân Lào</span>
+        </li>
+        <li>
+          <span class="tl-when">1986</span>
+          <span class="tl-what">Cơ chế Kinh tế Mới (NEM)</span>
+          <span class="tl-note">Đại hội IV của Đảng mở đường chuyển từ kinh tế kế hoạch hóa sang kinh tế thị trường</span>
+        </li>
+        <li>
+          <span class="tl-when">23/7/1997</span>
+          <span class="tl-what">Gia nhập ASEAN</span>
+          <span class="tl-note">Lào cùng Myanmar trở thành thành viên chính thức của khối ASEAN</span>
+        </li>
+        <li>
+          <span class="tl-when">12/2021</span>
+          <span class="tl-what">Khai trương đường sắt Lào – Trung</span>
+          <span class="tl-note">Tuyến Boten – Vientiane dài 422 km, hiện đại hóa hạ tầng đường sắt gần như từ con số không</span>
+        </li>
+        <li>
+          <span class="tl-when">2022 – 2023</span>
+          <span class="tl-what">Khủng hoảng nợ &amp; lạm phát</span>
+          <span class="tl-note">Nợ công vượt 115% GDP, lạm phát đạt đỉnh 41% vào tháng 2/2023 do đồng kíp mất giá mạnh</span>
+        </li>
+        <li>
+          <span class="tl-when">8/1/2026</span>
+          <span class="tl-what">Đại hội XII Đảng NDCM Lào</span>
+          <span class="tl-note">Thongloun Sisoulith tái đắc cử Tổng Bí thư kiêm Chủ tịch nước; công bố chiến lược "kinh tế tự chủ"</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ XIV chủ yếu dựa vào biên niên sử Phật giáo và khảo cổ học nên mang tính ước lệ. Một số nguồn ghi năm lập Lan Xang là 1354 thay vì 1353 tùy theo cách tính lịch.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Quốc gia không giáp biển</b>
+        Lào là nước duy nhất ở Đông Nam Á hoàn toàn không có đường bờ biển, phải trung chuyển hàng hóa qua cảng của Việt Nam hoặc Thái Lan — một bất lợi địa lý ảnh hưởng sâu sắc đến chiến lược phát triển kinh tế.
+      </aside>
+
+      <p class="lede">Lào nằm giữa lòng bán đảo Đông Dương, không giáp biển, bao quanh bởi năm quốc gia láng giềng và bị chia cắt bởi những dãy núi trập trùng.</p>
+
+      <p>Với diện tích khoảng <span class="tg">236.800 km²</span><a class="cite" href="#ref-1">[1]</a>, Lào giáp Trung Quốc ở phía bắc, Việt Nam ở phía đông, Campuchia ở phía nam, Thái Lan ở phía tây và Myanmar ở phía tây bắc. Địa hình chủ yếu là núi và cao nguyên, trong đó cao nguyên Xiêng Khoảng ở phía bắc và cao nguyên Bolaven ở phía nam là hai vùng đất cao quan trọng nhất. Đỉnh cao nhất, Phou Bia, cao <span class="tg">2.818 m</span>. Sông Mekong chảy dọc gần như suốt chiều dài đất nước, vừa là biên giới tự nhiên với Thái Lan, vừa là huyết mạch giao thông, nguồn thủy sản và nguồn thủy điện chính.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">7,98 triệu người</span><a class="cite" href="#ref-2">[2]</a>, thuộc hàng thấp nhất Đông Nam Á. Cơ cấu dân tộc đa dạng với hơn 160 nhóm được phân loại chính thức thành bốn hệ ngôn ngữ; theo cách phân loại phổ biến, người Lào Lùm (gốc Tai, sống ở vùng thấp) chiếm khoảng <span class="tg">53%</span>, người Khmu khoảng 11%, người H'Mông khoảng 9%, còn lại là hàng chục nhóm dân tộc khác<a class="cite" href="#ref-1">[1]</a> sống chủ yếu ở vùng núi cao. Vientiane là thủ đô và đô thị lớn nhất, nhưng phần lớn dân số Lào vẫn sống ở nông thôn, canh tác nông nghiệp tự cung tự cấp.</p>
+
+      <p>Do địa hình núi non chia cắt, hạ tầng giao thông từng là điểm nghẽn lớn nhất của đất nước: đến trước năm <span class="tg">2021</span>, Lào gần như không có tuyến đường sắt nào đáng kể. Tuyến đường sắt Lào – Trung dài 422 km nối Boten ở biên giới Trung Quốc với Vientiane, khai trương cuối năm 2021, là một phần của kế hoạch tuyến đường sắt xuyên Á Côn Minh – Singapore, đánh dấu bước ngoặt hạ tầng lớn nhất trong lịch sử hiện đại của Lào.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Lào là câu chuyện về một vương quốc từng thống nhất rộng lớn, rồi bị chia cắt, thần phục ngoại bang, và cuối cùng tái sinh như một nước cộng hòa xã hội chủ nghĩa mang trong mình vết sẹo chiến tranh sâu đậm nhất khu vực.</p>
+
+      <p><b>Các vương quốc sơ khai.</b> Từ thế kỷ VIII đến X, các nhóm người Tai di cư từ vùng Quảng Tây và Bắc Việt Nam xuống định cư dọc lưu vực Mekong, dần hòa trộn với cư dân Môn – Khmer bản địa vốn đã lập nên những tiểu quốc chịu ảnh hưởng của đế chế Angkor. Đây là nền tảng dân tộc học cho vương quốc thống nhất ra đời hai thế kỷ sau.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao gọi là "Triệu Voi"</b>
+        "Lan Xang" trong tiếng Lào cổ nghĩa là "Triệu Voi" (Land of a Million Elephants) — tên gọi phản ánh cả sức mạnh quân sự (voi chiến) lẫn sự trù phú của vương quốc thời trung đại.
+      </aside>
+
+      <p><b>Lan Xang – Vương quốc Triệu Voi (1353 – 1707).</b> Năm <span class="tg">1353</span>, hoàng tử <span class="nv" data-note="Người thống nhất các mường Lào rải rác thành một vương quốc duy nhất, từng sống lưu vong ở triều đình Khmer và cưới công chúa Angkor trước khi trở về lập nước.">Fa Ngum</span> — với sự hậu thuẫn quân sự từ triều đình Khmer — thống nhất các mường Lào rải rác thành vương quốc <b>Lan Xang</b>, đóng đô ở Luang Prabang và đưa Phật giáo Nam Tông trở thành quốc giáo. Vương quốc đạt đỉnh cao thịnh vượng dưới thời <span class="nv" data-note="Vị vua trị vì lâu nhất trong lịch sử Lan Xang, giai đoạn hòa bình và phát triển được xem là thời hoàng kim của vương quốc.">Sourigna Vongsa</span> (<span class="tg">1637–1694</span>), khi Lan Xang kiểm soát lãnh thổ trải rộng hơn nhiều so với nước Lào hiện đại, bao gồm cả một phần đông bắc Thái Lan ngày nay.</p>
+
+      <p><b>Chia ba &amp; lệ thuộc Xiêm (1707 – 1893).</b> Khi Sourigna Vongsa qua đời năm <span class="tg">1707</span> mà không chỉ định người kế vị rõ ràng, tranh chấp ngôi báu khiến Lan Xang tan rã thành ba vương quốc kình địch: Luang Prabang, Vientiane và Champasak. Sự chia rẽ này tạo cơ hội cho vương triều Xiêm (Thái Lan ngày nay) can thiệp. Năm <span class="tg">1828</span>, sau khi vua <span class="nv" data-note="Vua Vientiane khởi binh chống lại sự khống chế của Xiêm năm 1826-1828 nhưng thất bại; Vientiane bị tàn phá và dân cư bị cưỡng bức di dời sang bờ tây sông Mekong.">Anouvong</span> của Vientiane khởi binh chống Xiêm thất bại, kinh đô Vientiane bị san phẳng và phần lớn dân cư bị cưỡng bức di dời sang bờ hữu ngạn Mekong (nay thuộc Thái Lan) — một trong những chấn thương lịch sử sâu sắc nhất còn ám ảnh ký ức dân tộc Lào.</p>
+
+      <p><b>Bảo hộ Pháp (1893 – 1945).</b> Lợi dụng tranh chấp lãnh thổ Pháp – Xiêm, Pháp buộc Xiêm nhượng lại các lãnh thổ Lào và lập chế độ bảo hộ năm <span class="tg">1893</span>, sáp nhập Lào vào Liên bang Đông Dương cùng Việt Nam và Campuchia. Biên giới hiện đại của Lào phần lớn được vẽ ra trong giai đoạn này. Pháp cai trị gián tiếp qua hệ thống vua chúa địa phương, ít đầu tư hạ tầng hơn nhiều so với Việt Nam, khiến Lào bước vào thế kỷ XX với nền tảng công nghiệp gần như trống rỗng.</p>
+
+      <p><b>Con đường giành độc lập (1945 – 1953).</b> Ngay sau khi Nhật đầu hàng tháng 8/1945, phong trào <span class="nv" data-note="Nghĩa là 'Lào Tự do' — phong trào dân tộc chủ nghĩa tuyên bố độc lập cho Lào năm 1945, nhưng tan rã năm 1949 khi Pháp tái chiếm, một nhánh trở thành Pathet Lào.">Lao Issara</span> tuyên bố độc lập ngày <span class="tg">12/10/1945</span>, nhưng Pháp nhanh chóng tái chiếm Đông Dương vào năm 1946. Lao Issara lưu vong sang Thái Lan rồi tan rã năm 1949; một nhánh cấp tiến trong phong trào trở thành hạt nhân của lực lượng cộng sản <b>Pathet Lào</b> sau này. Năm 1949, Pháp công nhận Vương quốc Lào là nhà nước bán độc lập trong Liên hiệp Pháp; đến <span class="tg">22/10/1953</span>, Hiệp ước Pháp – Lào trao trả toàn bộ chủ quyền còn lại.</p>
+
+      <p><b>Nội chiến &amp; "Cuộc chiến bí mật" (1954 – 1975).</b> Ngay sau độc lập, Lào rơi vào nội chiến giữa Chính phủ Vương quốc thân phương Tây và Pathet Lào thân cộng sản, được Việt Nam Dân chủ Cộng hòa hậu thuẫn. Do vị trí nằm cạnh tuyến đường Hồ Chí Minh, Lào trở thành chiến trường của cái gọi là "cuộc chiến bí mật": từ <span class="tg">1964</span> đến <span class="tg">1973</span>, không quân Mỹ thực hiện khoảng 580.000 phi vụ — trung bình một phi vụ mỗi 8 phút, ngày đêm liên tục suốt 9 năm — trút hơn hai triệu tấn bom xuống lãnh thổ Lào<a class="cite" href="#ref-4">[4]</a>, biến nước này thành quốc gia bị ném bom nặng nề nhất tính theo đầu người trong lịch sử chiến tranh.</p>
+
+      <p><b>Cộng hòa Dân chủ Nhân dân Lào &amp; Đổi mới (1975 – nay).</b> Sau khi Sài Gòn và Phnom Penh sụp đổ, Pathet Lào giành quyền kiểm soát hoàn toàn; ngày <span class="tg">2/12/1975</span>, vua <span class="nv" data-note="Vị vua cuối cùng của Vương quốc Lào, buộc phải thoái vị năm 1975 khi nước Cộng hòa Dân chủ Nhân dân Lào được thành lập.">Savang Vatthana</span> thoái vị, chấm dứt 600 năm quân chủ và khai sinh nước Cộng hòa Dân chủ Nhân dân Lào do Đảng Nhân dân Cách mạng Lào lãnh đạo. Khoảng 300.000 người, tương đương 10% dân số, đã rời bỏ đất nước sau biến cố này. Sau một thập niên kinh tế kế hoạch hóa trì trệ, Đại hội IV năm <span class="tg">1986</span> khởi động <b>Cơ chế Kinh tế Mới</b> (NEM), mở đường cho thị trường và đầu tư nước ngoài trong khi Đảng vẫn giữ độc quyền chính trị. Lào gia nhập ASEAN năm <span class="tg">1997</span>, và bước sang thế kỷ XXI với chiến lược biến vị trí "không giáp biển" thành "cầu nối trên bộ" (land-linked) giữa Trung Quốc và các nước ASEAN còn lại.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Lào</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Đảng Nhân dân Cách mạng Lào (LPRP)</span>
+          <span class="tier-desc">Lực lượng lãnh đạo duy nhất, đứng đầu là Tổng Bí thư kiêm Chủ tịch nước</span>
+        </li>
+        <li>
+          <span class="tier-role">Chủ tịch nước · Quốc hội · Chính phủ</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, cơ quan lập pháp và cơ quan hành pháp</span>
+        </li>
+        <li>
+          <span class="tier-role">18 tỉnh &amp; thủ đô Vientiane</span>
+          <span class="tier-desc">Cấp chính quyền địa phương thứ nhất</span>
+        </li>
+        <li>
+          <span class="tier-role">Huyện · Bản (làng)</span>
+          <span class="tier-desc">Cấp cơ sở, nơi vận hành trực tiếp đời sống nông thôn</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Một đảng, không đối lập</b>
+        Hiến pháp Lào quy định Đảng Nhân dân Cách mạng Lào là "lực lượng lãnh đạo" duy nhất của nhà nước và xã hội; không tồn tại đảng đối lập hợp pháp, mô hình chính trị gần giống Việt Nam và Trung Quốc.
+      </aside>
+
+      <p>Lào là nhà nước đơn nhất theo mô hình một đảng lãnh đạo, tương tự Việt Nam và Trung Quốc. Quốc hội về mặt hình thức là cơ quan quyền lực nhà nước cao nhất và có quyền bầu Chủ tịch nước, trong khi Chính phủ do Thủ tướng đứng đầu điều hành hành pháp.</p>
+
+      <p>Ngày <span class="tg">8/1/2026</span>, Đại hội đại biểu toàn quốc lần thứ XII của Đảng Nhân dân Cách mạng Lào khai mạc tại Vientiane. <span class="nv" data-note="Tổng Bí thư Đảng NDCM Lào kiêm Chủ tịch nước, tái đắc cử tại Đại hội XII tháng 1/2026, từng là Thủ tướng và Phó Thủ tướng trước đó.">Thongloun Sisoulith</span> tái đắc cử vị trí Tổng Bí thư kiêm Chủ tịch nước<a class="cite" href="#ref-5">[5]</a>, trong khi <span class="nv" data-note="Thủ tướng Chính phủ Lào, điều hành nội các và chịu trách nhiệm chính về các cải cách kinh tế gần đây.">Sonexay Siphandone</span> tiếp tục giữ chức Thủ tướng và <span class="nv" data-note="Chủ tịch Quốc hội Lào, đứng đầu cơ quan lập pháp.">Xaysomphone Phomvihane</span> giữ chức Chủ tịch Quốc hội. Đại hội cũng thông qua chiến lược theo đuổi "một nền kinh tế độc lập, tự chủ" nhằm giảm bớt sự phụ thuộc vào các khoản vay nước ngoài.</p>
+
+      <p>Trước đó, tháng 3/2025, Lào đã tiến hành sửa đổi hiến pháp và tái cơ cấu chính phủ, hợp nhất một số bộ ngành — như Bộ Kế hoạch &amp; Đầu tư với Bộ Tài chính, Bộ Năng lượng &amp; Mỏ với Bộ Công Thương — nhằm tinh gọn bộ máy và tăng hiệu quả điều hành kinh tế.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Sau khi Cơ chế Kinh tế Mới ra đời năm 1986, Lào dần chuyển từ kinh tế kế hoạch hóa tập trung sang kinh tế thị trường định hướng xã hội chủ nghĩa, mở cửa cho đầu tư nước ngoài và tư nhân hóa một phần khu vực doanh nghiệp nhà nước. Tuy nhiên, là một nước nhỏ, không giáp biển và có nền tảng công nghiệp mỏng, chiến lược phát triển của Lào trong hai thập niên qua xoay quanh việc khai thác tài nguyên nước và khoáng sản, đặc biệt là thủy điện.</p>
+
+      <p>GDP bình quân đầu người hiện ước đạt khoảng <span class="tg">2.100 USD</span> theo giá danh nghĩa, tương đương khoảng <span class="tg">10.100 USD</span> nếu tính theo sức mua tương đương<a class="cite" href="#ref-3">[3]</a> — thuộc nhóm thấp nhất Đông Nam Á. Lào được mệnh danh là "bình ắc quy của Đông Nam Á": lượng điện xuất khẩu tăng từ 12 terawatt-giờ năm 2014 lên 38 terawatt-giờ năm 2024, chiếm khoảng <span class="tg">80%</span> tổng sản lượng điện quốc gia, mang lại doanh thu 2,65 tỷ USD năm 2023<a class="cite" href="#ref-6">[6]</a>, chủ yếu bán cho Thái Lan và ngày càng nhiều cho Việt Nam.</p>
+
+      <aside class="sidenote">
+        <b>Nghịch lý điện năng</b>
+        Dù xuất khẩu điện khổng lồ, nhiều vùng nông thôn Lào vẫn mất điện thường xuyên vì phần lớn đường dây truyền tải được xây riêng cho khách hàng nước ngoài, còn lưới điện nội địa vẫn dựa vào hạ tầng từ thập niên 1970.
+      </aside>
+
+      <p>Mặt trái của mô hình tăng trưởng dựa vào thủy điện và khai khoáng là gánh nặng nợ công. Đến năm 2019, Lào đã vay khoảng 5,25 tỷ USD từ Trung Quốc để xây dựng các dự án hạ tầng như đường sắt Lào – Trung và loạt đập thủy điện<a class="cite" href="#ref-7">[7]</a>. Nợ công đạt đỉnh <span class="tg">115,7%</span> GDP năm 2022, giảm còn khoảng 94% vào cuối năm 2024, một phần nhờ Lào hoãn trả khoảng 3,23 tỷ USD nợ gốc và lãi cho Trung Quốc kể từ năm 2020. Cùng lúc, cú sốc mất giá đồng kíp đẩy lạm phát lên đỉnh <span class="tg">41%</span> vào tháng 2/2023 — mức cao chưa từng thấy trong nhiều thập kỷ — trước khi hạ nhiệt về mức một chữ số nhờ các biện pháp ổn định vĩ mô. Tăng trưởng GDP những năm gần đây dao động quanh 3,7–4,5%, trong khi Chính phủ đặt mục tiêu đạt 6% nhờ đa dạng hóa đầu tư từ Việt Nam, Nga và các định chế đa phương — dù Trung Quốc vẫn chiếm tới khoảng 66% tổng vốn đầu tư trực tiếp nước ngoài, khiến việc giảm phụ thuộc vẫn còn là một chặng đường dài.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Phật giáo Nam Tông thấm sâu vào đời sống thường nhật của người Lào hơn bất cứ yếu tố văn hóa nào khác. Hình ảnh các nhà sư mặc áo cà sa vàng cam đi khất thực mỗi sáng tinh mơ, đặc biệt tại Luang Prabang, là biểu tượng gắn liền với bản sắc dân tộc. Hầu hết đàn ông Lào đều xuất gia tu tập một thời gian trong đời, coi đó là cách báo hiếu cha mẹ và tích lũy công đức.</p>
+
+      <p>Về tâm lý xã hội, người Lào thường được mô tả với tinh thần "bo pen nyang" (không sao đâu) — thái độ sống ung dung, tránh xung đột, coi trọng sự hòa hợp trong cộng đồng hơn là tốc độ hay hiệu suất. Nhịp sống chậm rãi này một phần bắt nguồn từ cấu trúc xã hội nông nghiệp truyền thống, một phần từ giáo lý nhà Phật về vô thường và buông bỏ. Gia đình mở rộng và cấu trúc bản làng vẫn là đơn vị xã hội cốt lõi, đặc biệt ở vùng nông thôn nơi phần lớn dân số sinh sống. Lễ hội <b>Bun Pi Mai</b> (Tết té nước, giữa tháng Tư dương lịch) là dịp lễ quan trọng nhất trong năm, đánh dấu năm mới theo Phật lịch với nghi thức té nước gột rửa vận xui và cầu may mắn.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Vô địch thế giới về gạo nếp</b>
+        Người Lào tiêu thụ trung bình 171 kg gạo nếp mỗi người mỗi năm — mức cao nhất thế giới. Sự gắn bó với xôi nếp được xem là biểu tượng bản sắc: "ăn nếp" gần như đồng nghĩa với "là người Lào".
+      </aside>
+
+      <p>Ẩm thực Lào ít ngọt, nhiều vị chua – cay – đắng, dùng rất nhiều rau thơm tươi và các loại mắm cá lên men. Bữa ăn truyền thống được bày trên mâm mây thấp (ka toke), mọi người ngồi quây quần trên chiếu, cùng chia sẻ chung một giỏ xôi nếp — biểu tượng của sự gắn kết cộng đồng. Không giống nhiều nền ẩm thực châu Á phục vụ theo trình tự món, các món ở Lào được bày ra cùng lúc để thực khách tự phối hợp khẩu vị.</p>
+
+      <p>Cà phê cũng là một phần quan trọng của nền kinh tế và văn hóa: cao nguyên Bolaven ở miền nam, với đất đỏ bazan và độ cao lý tưởng, sản xuất cả robusta lẫn arabica chất lượng cao, ngày càng được thị trường quốc tế chú ý.</p>
+
+      <p>Gắn bó với gạo nếp sâu đến mức người Lào tiêu thụ trung bình <span class="tg">171 kg</span> gạo nếp mỗi người mỗi năm — mức cao nhất thế giới<a class="cite" href="#ref-8">[8]</a> — và coi việc "ăn nếp" gần như đồng nghĩa với việc là người Lào, phân biệt mình với các nước láng giềng vốn ăn gạo tẻ là chính.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món ăn &amp; thức uống tiêu biểu</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Quốc hồn quốc túy</span><span class="pick-name">Khảu niệu (xôi nếp)</span><span class="pick-desc">Gạo nếp hấp trong giỏ tre, ăn bằng tay, chấm cùng hầu hết các món khác — linh hồn của bữa ăn Lào.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Larb (Lạp)</span><span class="pick-desc">Nộm thịt băm trộn thính gạo rang, nước mắm cá, ớt và rau thơm — được xem là "món quốc gia" của Lào.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Tam mak hoong</span><span class="pick-desc">Nộm đu đủ xanh giã tay với tỏi, ớt, mắm cá pa dek và nước me — chua cay đặc trưng.</span></li>
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Or lam</span><span class="pick-desc">Món hầm rau củ đặc trưng Luang Prabang với thịt trâu khô, đắng nhẹ từ cây mak khen.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Sai oua</span><span class="pick-desc">Xúc xích thịt heo nướng ướp sả, riềng, lá chanh — thơm nồng đặc trưng núi rừng.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Mok pa</span><span class="pick-desc">Cá ướp gia vị, hấp trong lá chuối — cách chế biến giữ trọn vị ngọt tự nhiên của cá sông Mekong.</span></li>
+        <li><span class="pick-where">Gia vị</span><span class="pick-name">Jeow</span><span class="pick-desc">Họ nước chấm sền sệt từ ớt nướng, cà chua hoặc cá — ăn kèm rau sống và xôi nếp.</span></li>
+        <li><span class="pick-where">Đồ uống</span><span class="pick-name">Beerlao</span><span class="pick-desc">Bia quốc dân của Lào, từng được tạp chí Time (2004) khen là một trong những loại bia ngon nhất châu Á.</span></li>
+        <li><span class="pick-where">Đồ uống</span><span class="pick-name">Lao-lao</span><span class="pick-desc">Rượu nếp chưng cất thủ công, thường thấy trong các nghi lễ và tiệc làng.</span></li>
+        <li><span class="pick-where">Cao nguyên Bolaven</span><span class="pick-name">Cà phê Lào</span><span class="pick-desc">Robusta và arabica trồng trên đất đỏ bazan độ cao lớn — pha đậm, uống cùng sữa đặc.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Lưu ý an toàn</b>
+        Ở một số vùng nông thôn, đặc biệt tại tỉnh Xiêng Khoảng, vẫn còn tồn tại bom mìn chưa nổ từ thời chiến tranh. Du khách nên luôn đi theo lối mòn đã được đánh dấu an toàn khi tham quan.
+      </aside>
+
+      <p>Lào hiện có <span class="tg">3 di sản thế giới</span> được UNESCO công nhận<a class="cite" href="#ref-9">[9]</a><a class="cite" href="#ref-10">[10]</a>, khiêm tốn hơn nhiều so với các nước láng giềng nhưng đều mang giá trị độc đáo bậc nhất khu vực — từ cố đô Phật giáo, phế tích Khmer tiền Angkor đến bãi đá bí ẩn hàng nghìn năm tuổi.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Lào</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Bắc Lào · UNESCO</span><span class="pick-name">Luang Prabang</span><span class="pick-desc">Cố đô nghìn năm bên sông Mekong, nơi sư khất thực mỗi sáng; di sản thế giới từ 1995.</span></li>
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Vientiane</span><span class="pick-desc">Thạt Luổng dát vàng, khải hoàn môn Patuxai và nhịp sống chậm rãi bên bờ Mekong.</span></li>
+        <li><span class="pick-where">Bắc Lào</span><span class="pick-name">Vang Vieng</span><span class="pick-desc">Thung lũng đá vôi kỳ vĩ, nổi tiếng với môn thả bè và khinh khí cầu ngắm hoàng hôn.</span></li>
+        <li><span class="pick-where">Đông Bắc · UNESCO</span><span class="pick-name">Cánh Đồng Chum</span><span class="pick-desc">Hơn 2.100 chum đá khổng lồ tuổi đời hàng nghìn năm<a class="cite" href="#ref-9">[9]</a>, công dụng vẫn còn là bí ẩn khảo cổ.</span></li>
+        <li><span class="pick-where">Nam Lào · UNESCO</span><span class="pick-name">Vat Phou</span><span class="pick-desc">Quần thể đền Khmer tiền Angkor thờ thần Shiva, tựa lưng vào núi thiêng Phou Kao.</span></li>
+        <li><span class="pick-where">Nam Lào</span><span class="pick-name">Si Phan Don (4.000 đảo)</span><span class="pick-desc">Khu vực Mekong tách thành hàng nghìn cù lao, nơi có thác Khone Phapheng hùng vĩ nhất Đông Nam Á.</span></li>
+        <li><span class="pick-where">Nam Lào</span><span class="pick-name">Cao nguyên Bolaven</span><span class="pick-desc">Đồn điền cà phê, thác nước và khí hậu mát mẻ hiếm có giữa vùng nhiệt đới.</span></li>
+        <li><span class="pick-where">Bắc Lào</span><span class="pick-name">Luang Namtha &amp; Nam Ha</span><span class="pick-desc">Trung tâm du lịch sinh thái cộng đồng, trekking rừng nguyên sinh cùng các dân tộc thiểu số.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>"Không giáp biển" thành "cầu nối trên bộ"</b>
+        Khẩu hiệu phát triển của Chính phủ Lào: biến bất lợi địa lý thành lợi thế bằng cách trở thành trạm trung chuyển đường bộ và đường sắt giữa Trung Quốc và các nước ASEAN còn lại.
+      </aside>
+
+      <p>Lào là thành viên của <span class="nv" data-note="Hiệp hội các quốc gia Đông Nam Á — tổ chức khu vực mà Lào gia nhập năm 1997 cùng Myanmar.">ASEAN</span> từ năm 1997 và từng đảm nhiệm vai trò Chủ tịch luân phiên ASEAN năm 2024. Về đối ngoại, Lào duy trì quan hệ đặc biệt gần gũi với Việt Nam — được mô tả là quan hệ "hữu nghị vĩ đại, đoàn kết đặc biệt" từ thời kháng chiến — đồng thời ngày càng phụ thuộc sâu vào Trung Quốc về vốn đầu tư, thương mại và hạ tầng.</p>
+
+      <p>Vấn đề nóng nhất hiện nay là bài toán nợ công và sự phụ thuộc kinh tế vào Trung Quốc: các khoản vay khổng lồ cho đường sắt và thủy điện đã đẩy Lào vào thế phải đàm phán hoãn nợ nhiều lần, trong khi vẫn cần dòng vốn Trung Quốc để duy trì tăng trưởng — một vòng luẩn quẩn mà giới quan sát quốc tế gọi là "bẫy nợ mềm". Song song đó là nghịch lý năng lượng: dù xuất khẩu điện thu về hàng tỷ USD mỗi năm, tình trạng mất điện luân phiên vẫn xảy ra ở nhiều vùng nông thôn do lưới điện nội địa lạc hậu<a class="cite" href="#ref-6">[6]</a>. Ở bình diện xã hội, di sản chiến tranh vẫn hiện hữu: bom mìn chưa nổ (UXO) từ Cuộc chiến bí mật vẫn gây thương vong hằng năm — 48 trường hợp chỉ riêng trong năm 2024<a class="cite" href="#ref-4">[4]</a> — dù tốc độ rà phá bom mìn đã cải thiện đáng kể so với các thập niên trước.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Lào</h2>
+      <ol class="funs">
+        <li><b>"Triệu Voi" là tên gốc của đất nước.</b> "Lan Xang" nghĩa đen là Vương quốc Triệu Voi — phản ánh vai trò trung tâm của loài voi trong quân sự và văn hóa Lào thời trung đại.</li>
+        <li><b>Quốc gia bị ném bom nhiều nhất lịch sử tính theo đầu người.</b> Từ 1964–1973, Mỹ thả hơn hai triệu tấn bom xuống Lào qua 580.000 phi vụ<a class="cite" href="#ref-4">[4]</a> — nhiều hơn tổng lượng bom cả hai phe dùng trong Thế chiến II.</li>
+        <li><b>80 triệu quả bom con chưa nổ vẫn còn nằm dưới đất.</b> Công tác rà phá bom mìn (UXO) vẫn tiếp diễn hơn nửa thế kỷ sau chiến tranh<a class="cite" href="#ref-4">[4]</a>, mỗi ngày các đội rà phá có thể tìm thấy hàng chục vật thể nguy hiểm.</li>
+        <li><b>Cánh Đồng Chum vẫn là một bí ẩn chưa lời giải.</b> Hơn 2.100 chum đá được xác định niên đại từ khoảng 1240–660 TCN<a class="cite" href="#ref-9">[9]</a>, nhưng công dụng chính xác — mai táng, cất trữ hay chưng cất — vẫn còn tranh cãi giữa các nhà khảo cổ.</li>
+        <li><b>Vô địch thế giới về ăn xôi nếp.</b> Người Lào tiêu thụ trung bình 171 kg gạo nếp mỗi người mỗi năm<a class="cite" href="#ref-8">[8]</a>, mức cao nhất hành tinh — ăn nếp gần như là một phần định danh dân tộc.</li>
+        <li><b>"Bình ắc quy" của Đông Nam Á.</b> Lào xuất khẩu khoảng 80% sản lượng điện, chủ yếu từ thủy điện, sang Thái Lan và Việt Nam, thu về hàng tỷ USD mỗi năm<a class="cite" href="#ref-6">[6]</a> dù nhiều vùng trong nước vẫn thiếu điện ổn định.</li>
+        <li><b>Gần như không có đường sắt cho đến năm 2021.</b> Tuyến đường sắt Lào – Trung khai trương cuối 2021 là tuyến đường sắt hiện đại đầu tiên của cả nước, rút ngắn hành trình Vientiane – biên giới Trung Quốc xuống còn vài giờ.</li>
+        <li><b>Nước duy nhất Đông Nam Á không giáp biển.</b> Toàn bộ hàng hóa xuất nhập khẩu của Lào phải trung chuyển qua cảng biển của các nước láng giềng, chủ yếu là Việt Nam và Thái Lan.</li>
+        <li><b>Gần như mọi đàn ông đều từng đi tu.</b> Xuất gia một thời gian ngắn trong đời là truyền thống phổ biến với nam giới Lào theo Phật giáo Nam Tông, được xem là cách báo hiếu cha mẹ.</li>
+        <li><b>Beerlao được Time bình chọn là một trong những bia ngon nhất châu Á.</b> Loại bia quốc dân này gắn liền với hình ảnh Lào trong mắt du khách quốc tế nhiều thập kỷ qua<a class="cite" href="#ref-8">[8]</a>.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Lào có khoảng <span class="tg">7,98 triệu</span> dân, diện tích <span class="tg">236.800 km²</span>, là nước duy nhất Đông Nam Á không giáp biển.</li>
+        <li>Lịch sử xoay quanh trục: Lan Xang (<span class="tg">1353</span>) → chia ba (1707) → lệ thuộc Xiêm → bảo hộ Pháp (1893) → độc lập (1953) → Cuộc chiến bí mật → CHDCND Lào (<span class="tg">1975</span>) → Đổi mới NEM (1986).</li>
+        <li>Một đảng lãnh đạo — Đảng NDCM Lào; Thongloun Sisoulith là Tổng Bí thư kiêm Chủ tịch nước từ Đại hội XII (<span class="tg">1/2026</span>), Sonexay Siphandone là Thủ tướng.</li>
+        <li>Kinh tế dựa nhiều vào thủy điện xuất khẩu (~80% sản lượng điện) nhưng gánh nợ công lớn, phần nhiều vay từ Trung Quốc.</li>
+        <li>Ẩm thực lấy xôi nếp làm trung tâm — mức tiêu thụ cao nhất thế giới; món tiêu biểu là larb và tam mak hoong.</li>
+        <li>3 di sản UNESCO: Luang Prabang, Vat Phou, Cánh Đồng Chum.</li>
+        <li>Là quốc gia bị ném bom nặng nề nhất lịch sử tính theo đầu người (1964–1973); bom mìn chưa nổ vẫn là vấn đề nhân đạo dai dẳng.</li>
+        <li>Gia nhập ASEAN năm <span class="tg">1997</span>; ngày càng phụ thuộc vào vốn đầu tư và thương mại từ Trung Quốc.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Vương quốc Lan Xang được thành lập năm nào, bởi ai, và tên gọi này nghĩa là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Năm 1353, bởi Fa Ngum; "Lan Xang" nghĩa là "Triệu Voi".</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Vì sao giai đoạn 1964–1973 được gọi là "Cuộc chiến bí mật", và hậu quả lâu dài của nó là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Mỹ ném bom Lào nhằm cắt tuyến đường Hồ Chí Minh mà không công khai thừa nhận; hậu quả là hàng chục triệu bom con chưa nổ (UXO) vẫn gây thương vong đến ngày nay.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Cơ chế Kinh tế Mới (NEM) được đưa ra năm nào và thay đổi điều gì?</p>
+          <details><summary>Xem đáp án</summary><p>Năm 1986, tại Đại hội IV; chuyển đất nước từ kinh tế kế hoạch hóa tập trung sang kinh tế thị trường, mở cửa đầu tư nước ngoài.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Vì sao Lào được gọi là "bình ắc quy của Đông Nam Á", và nghịch lý nào đi kèm danh xưng đó?</p>
+          <details><summary>Xem đáp án</summary><p>Vì Lào xuất khẩu khoảng 80% sản lượng điện (chủ yếu thủy điện) sang Thái Lan và Việt Nam; nghịch lý là nhiều vùng nông thôn trong nước vẫn thiếu điện do lưới điện nội địa lạc hậu.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Kể tên ba di sản thế giới UNESCO của Lào.</p>
+          <details><summary>Xem đáp án</summary><p>Luang Prabang (cố đô), Vat Phou (đền Khmer ở Champasak), và Cánh Đồng Chum (Xiêng Khoảng).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Món ăn nào được xem là "quốc hồn quốc túy" của ẩm thực Lào, và người Lào tiêu thụ nó nhiều thế nào so với thế giới?</p>
+          <details><summary>Xem đáp án</summary><p>Xôi nếp (khảu niệu); người Lào tiêu thụ trung bình 171 kg gạo nếp/người/năm — mức cao nhất thế giới.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Laos</i>. Wikipedia, Bách khoa toàn thư mở (diện tích, tôn giáo, cơ cấu dân tộc). <a href="https://en.wikipedia.org/wiki/Laos" target="_blank" rel="noopener">en.wikipedia.org/wiki/Laos</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-2">Worldometer. <i>Laos Population (2026)</i>. Dẫn số liệu Liên Hợp Quốc, ước tính giữa năm 2026. <a href="https://www.worldometers.info/world-population/laos-population/" target="_blank" rel="noopener">worldometers.info</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-3">GFMag / Wikipedia contributors. <i>Economy of Laos</i>. Số liệu GDP bình quân đầu người danh nghĩa và PPP, ước tính 2025. <a href="https://en.wikipedia.org/wiki/Economy_of_Laos" target="_blank" rel="noopener">en.wikipedia.org/wiki/Economy_of_Laos</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-4">Vatican News. <i>Laos, the most heavily bombed country in the world</i>. Tháng 7/2026 (dẫn số liệu Legacies of War, MAG, HALO Trust). <a href="https://www.vaticannews.va/en/world/news/2026-07/laos-the-most-heavily-bombed-country-in-the-world.html" target="_blank" rel="noopener">vaticannews.va</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-5">The Diplomat; Wikipedia contributors. <i>12th Central Committee of the Lao People's Revolutionary Party</i>. Tường thuật Đại hội XII, tháng 1/2026. <a href="https://en.wikipedia.org/wiki/12th_Central_Committee_of_the_Lao_People%27s_Revolutionary_Party" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-6">Malay Mail. <i>Laos power paradox: Booming exports to Thailand and Vietnam, but blackouts at home persist</i>. Tháng 9/2026. <a href="https://www.malaymail.com/news/world/2026/09/14/laos-power-paradox-booming-exports-to-thailand-and-vietnam-but-blackouts-at-home-persist/235043" target="_blank" rel="noopener">malaymail.com</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-7">Lowy Institute. <i>Trapped in debt: China's role in Laos' economic crisis</i>; East Asia Forum. <i>Can Laos de-risk from China on its own terms?</i> (3/2026). <a href="https://www.lowyinstitute.org/publications/trapped-debt-china-s-role-laos-economic-crisis" target="_blank" rel="noopener">lowyinstitute.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-8">Wikipedia contributors. <i>Lao cuisine</i> — mức tiêu thụ gạo nếp, Beerlao, các món ăn truyền thống. <a href="https://en.wikipedia.org/wiki/Lao_cuisine" target="_blank" rel="noopener">en.wikipedia.org/wiki/Lao_cuisine</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-9">UNESCO World Heritage Centre; Wikipedia contributors. <i>Plain of Jars</i> — niên đại, số lượng địa điểm, tình trạng UXO. <a href="https://en.wikipedia.org/wiki/Plain_of_Jars" target="_blank" rel="noopener">en.wikipedia.org/wiki/Plain_of_Jars</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-10">UNESCO World Heritage Centre. <i>Vat Phou and Associated Ancient Settlements within the Champasak Cultural Landscape</i>. <a href="https://whc.unesco.org/en/list/481/" target="_blank" rel="noopener">whc.unesco.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, nợ công, xuất khẩu điện) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Công dụng chính xác của Cánh Đồng Chum và một số chi tiết còn tranh cãi được trình bày ở mức khái quát, có ghi chú rõ.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
