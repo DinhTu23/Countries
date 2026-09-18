@@ -1,0 +1,1143 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Malaysia — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Malaysia</div>
+          <h1>Malaysia</h1>
+          <div class="period">Châu Á · Đông Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 40 20" role="img" aria-label="Quốc kỳ Malaysia: 14 sọc ngang đỏ trắng xen kẽ, góc trên bên trái nền xanh dương với trăng lưỡi liềm và ngôi sao 14 cánh màu vàng">
+            <rect y="0.0000" width="40" height="1.4286" fill="#CC0001"/>
+            <rect y="1.4286" width="40" height="1.4286" fill="#FFFFFF"/>
+            <rect y="2.8571" width="40" height="1.4286" fill="#CC0001"/>
+            <rect y="4.2857" width="40" height="1.4286" fill="#FFFFFF"/>
+            <rect y="5.7143" width="40" height="1.4286" fill="#CC0001"/>
+            <rect y="7.1429" width="40" height="1.4286" fill="#FFFFFF"/>
+            <rect y="8.5714" width="40" height="1.4286" fill="#CC0001"/>
+            <rect y="10.0000" width="40" height="1.4286" fill="#FFFFFF"/>
+            <rect y="11.4286" width="40" height="1.4286" fill="#CC0001"/>
+            <rect y="12.8571" width="40" height="1.4286" fill="#FFFFFF"/>
+            <rect y="14.2857" width="40" height="1.4286" fill="#CC0001"/>
+            <rect y="15.7143" width="40" height="1.4286" fill="#FFFFFF"/>
+            <rect y="17.1429" width="40" height="1.4286" fill="#CC0001"/>
+            <rect y="18.5714" width="40" height="1.4286" fill="#FFFFFF"/>
+            <rect x="0" y="0" width="16" height="10" fill="#010066"/>
+            <circle cx="5" cy="5" r="2.6" fill="#FFCC00"/>
+            <circle cx="6.3" cy="5" r="2.35" fill="#010066"/>
+            <polygon fill="#FFCC00" points="11.30,1.70 11.60,3.68 12.73,2.03 12.14,3.94 13.88,2.94 12.52,4.41 14.52,4.27 12.65,5.00 14.52,5.73 12.52,5.59 13.88,7.06 12.14,6.06 12.73,7.97 11.60,6.32 11.30,8.30 11.00,6.32 9.87,7.97 10.46,6.06 8.72,7.06 10.08,5.59 8.08,5.73 9.95,5.00 8.08,4.27 10.08,4.41 8.72,2.94 10.46,3.94 9.87,2.03 11.00,3.68"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Malaysia là một liên bang bị chia đôi bởi Biển Đông: một nửa nằm trên bán đảo Mã Lai, nửa kia trên đảo Borneo. Đây là một trong những xã hội đa sắc tộc, đa tôn giáo phức tạp nhất châu Á — nơi người Mã Lai theo Hồi giáo, người Hoa, người Ấn và hàng chục dân tộc bản địa Borneo cùng chung sống dưới một thể chế quân chủ lập hiến độc đáo có "vua luân phiên". Từ một xứ thuộc địa xuất khẩu thiếc và cao su, Malaysia đã vươn lên thành một mắt xích quan trọng trong chuỗi cung ứng bán dẫn toàn cầu và là nước xuất khẩu dầu cọ lớn thứ hai thế giới. Nếu chỉ nhớ một điều về Malaysia, hãy nhớ: đây là bài toán giữ thăng bằng — giữa các sắc tộc, giữa Hồi giáo và thế tục, giữa Mỹ và Trung Quốc — được điều hành bằng một nền chính trị thỏa hiệp liên tục.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">329.847 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~34,9 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 2025</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Kuala Lumpur<small>Putrajaya: trung tâm hành chính liên bang</small></span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Mã Lai<small>Bahasa Malaysia; tiếng Anh phổ biến</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Hồi giáo<small>quốc giáo; còn có Phật giáo, Cơ Đốc giáo, Ấn Độ giáo<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Ringgit (RM, MYR)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~15.100 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính IMF 2026; PPP ~47.000 USD</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~40.000 năm trước</span>
+          <span class="tl-what">Người tối cổ ở hang Niah</span>
+          <span class="tl-note">Vết tích cư trú sớm nhất được biết đến trên lãnh thổ Malaysia ngày nay, tại Sarawak</span>
+        </li>
+        <li>
+          <span class="tl-when">TK VII – XIII</span>
+          <span class="tl-what">Ảnh hưởng Srivijaya</span>
+          <span class="tl-note">Các tiểu quốc trên bán đảo, trong đó có Langkasuka, nằm trong quỹ đạo đế chế hàng hải Srivijaya</span>
+        </li>
+        <li>
+          <span class="tl-when">~1400</span>
+          <span class="tl-what">Lập Vương triều Malacca</span>
+          <span class="tl-note">Parameswara sáng lập cảng thị Malacca, sau cải sang Hồi giáo, biến nơi đây thành trung tâm thương mại và Hồi giáo hóa vùng biển</span>
+        </li>
+        <li>
+          <span class="tl-when">1511</span>
+          <span class="tl-what">Bồ Đào Nha chiếm Malacca</span>
+          <span class="tl-note">Chấm dứt vương triều Hồi giáo Malacca, mở đầu hơn 400 năm ảnh hưởng thực dân châu Âu</span>
+        </li>
+        <li>
+          <span class="tl-when">1641</span>
+          <span class="tl-what">Hà Lan giành Malacca</span>
+          <span class="tl-note">Liên minh Hà Lan – Johor đánh bật Bồ Đào Nha khỏi eo biển Malacca</span>
+        </li>
+        <li>
+          <span class="tl-when">1786 – 1824</span>
+          <span class="tl-what">Người Anh đặt chân</span>
+          <span class="tl-note">Francis Light lập thương điếm Penang (1786); Hiệp ước Anh – Hà Lan 1824 chia vùng ảnh hưởng, đưa bán đảo Mã Lai vào quỹ đạo Anh</span>
+        </li>
+        <li>
+          <span class="tl-when">1874 – 1895</span>
+          <span class="tl-what">Hệ thống Residents Anh</span>
+          <span class="tl-note">Hiệp ước Pangkor mở đường cho các "Resident" Anh cố vấn cho vua bản xứ; bốn bang hợp thành Các bang Mã Lai Liên hiệp (FMS)</span>
+        </li>
+        <li>
+          <span class="tl-when">1942 – 1945</span>
+          <span class="tl-what">Nhật chiếm đóng</span>
+          <span class="tl-note">Quân Nhật chiếm toàn bộ Malaya, Sabah, Sarawak trong Thế chiến II, để lại ký ức cay đắng và mầm mống dân tộc chủ nghĩa</span>
+        </li>
+        <li>
+          <span class="tl-when">1948 – 1960</span>
+          <span class="tl-what">Tình trạng khẩn cấp Malaya</span>
+          <span class="tl-note">Xung đột vũ trang giữa lực lượng Anh – Khối thịnh vượng chung và du kích Đảng Cộng sản Malaya</span>
+        </li>
+        <li>
+          <span class="tl-when">31/8/1957</span>
+          <span class="tl-what">Merdeka!</span>
+          <span class="tl-note">Liên bang Malaya độc lập dưới quyền Thủ tướng đầu tiên Tunku Abdul Rahman</span>
+        </li>
+        <li>
+          <span class="tl-when">16/9/1963</span>
+          <span class="tl-what">Thành lập Malaysia</span>
+          <span class="tl-note">Malaya hợp nhất với Singapore, Sabah (Bắc Borneo) và Sarawak thành Liên bang Malaysia</span>
+        </li>
+        <li>
+          <span class="tl-when">9/8/1965</span>
+          <span class="tl-what">Singapore tách ra</span>
+          <span class="tl-note">Singapore rời liên bang, trở thành quốc gia độc lập sau mâu thuẫn chính trị – sắc tộc</span>
+        </li>
+        <li>
+          <span class="tl-when">13/5/1969</span>
+          <span class="tl-what">Bạo loạn sắc tộc &amp; NEP</span>
+          <span class="tl-note">Xung đột sắc tộc sau bầu cử dẫn tới Chính sách Kinh tế Mới (1971), ưu tiên kinh tế cho người Bumiputera</span>
+        </li>
+        <li>
+          <span class="tl-when">1981 – 2003</span>
+          <span class="tl-what">Kỷ nguyên Mahathir</span>
+          <span class="tl-note">Công nghiệp hóa cấp tốc, ô tô quốc gia Proton, tháp đôi Petronas, Tầm nhìn 2020</span>
+        </li>
+        <li>
+          <span class="tl-when">2018</span>
+          <span class="tl-what">Bê bối 1MDB &amp; GE14</span>
+          <span class="tl-note">Lần đầu tiên kể từ độc lập, liên minh cầm quyền Barisan Nasional thất cử sau bê bối quỹ đầu tư nhà nước 1MDB</span>
+        </li>
+        <li>
+          <span class="tl-when">2022 – 2025</span>
+          <span class="tl-what">Anwar Ibrahim &amp; ghế Chủ tịch ASEAN</span>
+          <span class="tl-note">Anwar trở thành Thủ tướng sau quốc hội treo (11/2022); Malaysia làm Chủ tịch ASEAN năm 2025, đón Tổng thống Mỹ Trump ký thỏa thuận thương mại</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ XV phần lớn dựa vào khảo cổ học và sử liệu nước ngoài (Trung Hoa, Ả Rập), nên mang tính ước lệ. Ngày thành lập Malaysia (16/9) và ngày độc lập của Malaya (31/8) là hai mốc khác nhau, thường bị nhầm lẫn với nhau.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Một nước, hai vùng đất</b>
+        Bán đảo Mã Lai (Tây Malaysia) và Sabah – Sarawak trên đảo Borneo (Đông Malaysia) cách nhau khoảng 640 km biển. Đi giữa hai miền vẫn cần hộ chiếu hoặc giấy tờ tùy thân đầy đủ như một chuyến "xuất cảnh" nội địa.
+      </aside>
+
+      <p class="lede">Malaysia là quốc gia hiếm hoi trên thế giới có lãnh thổ bị chia cắt hoàn toàn bởi biển thành hai phần cách xa nhau: bán đảo Mã Lai ở phía tây và hai bang Sabah, Sarawak ở phía đông trên đảo Borneo.</p>
+
+      <p>Với diện tích khoảng <span class="tg">329.847 km²</span><a class="cite" href="#ref-1">[1]</a>, Tây Malaysia giáp Thái Lan ở phía bắc và nối với Singapore bằng đường đắp cao ở cực nam, trong khi Đông Malaysia giáp Indonesia và bao quanh Brunei — một quốc gia nhỏ nằm lọt hẳn trong lãnh thổ Sarawak. Đất nước có những cánh rừng mưa nhiệt đới được xem là lâu đời nhất thế giới, tuổi ước tính hơn 130 triệu năm, cùng dãy núi Titiwangsa chạy dọc bán đảo và đỉnh Kinabalu ở Sabah — ngọn núi cao nhất Đông Nam Á hải đảo.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">34,9 triệu người</span><a class="cite" href="#ref-1">[1]</a>, cấu thành từ nhóm <span class="nv" data-note="Thuật ngữ hiến định chỉ người Mã Lai và các dân tộc bản địa (Orang Asli ở bán đảo, các sắc tộc Borneo như Iban, Kadazan-Dusun ở Sabah, Sarawak), được hưởng một số ưu tiên hiến định.">Bumiputera</span> (gồm người Mã Lai và các dân tộc bản địa) chiếm khoảng 63,8%, người Hoa khoảng 20,6% và người Ấn khoảng 6%<a class="cite" href="#ref-1">[1]</a>. Sabah và Sarawak là nơi cư trú của hàng chục dân tộc bản địa Borneo như Iban, Kadazan-Dusun, Bidayuh và Melanau, khiến bức tranh sắc tộc ở Đông Malaysia còn đa dạng hơn cả bán đảo.</p>
+
+      <p>Về mặt hành chính, Malaysia gồm <span class="tg">13 bang</span> và <span class="tg">3 lãnh thổ liên bang</span> (Kuala Lumpur, Putrajaya, Labuan). Chín bang trên bán đảo vẫn giữ các vị vua Mã Lai cha truyền con nối, trong khi Malacca, Penang, Sabah và Sarawak do các Thống đốc do nhà vua liên bang bổ nhiệm đứng đầu. Đô thị hóa tập trung mạnh ở vùng thung lũng Klang quanh Kuala Lumpur, trong khi Sabah và Sarawak vẫn còn nhiều vùng nông thôn, rừng núi thưa dân.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Malaysia là câu chuyện của các cảng thị nằm trên tuyến hàng hải huyết mạch nối Ấn Độ Dương với Biển Đông — nơi thương mại, tôn giáo và quyền lực thực dân liên tục định hình lại bản đồ chính trị.</p>
+
+      <p><b>Các vương quốc cổ.</b> Từ khoảng 40.000 năm trước đã có dấu vết con người tại hang Niah (Sarawak). Đến thiên niên kỷ đầu Công nguyên, các tiểu quốc trên bán đảo như <span class="nv" data-note="Vương quốc cổ tồn tại khoảng thế kỷ II–XV, một trong những nhà nước sớm nhất được ghi nhận trên bán đảo Mã Lai, chịu ảnh hưởng Ấn Độ giáo – Phật giáo.">Langkasuka</span> nằm trong quỹ đạo ảnh hưởng của đế chế hàng hải Srivijaya, tiếp nhận Ấn Độ giáo và Phật giáo qua con đường buôn bán.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao Malacca quan trọng</b>
+        Cảng thị này không chỉ là trung tâm thương mại mà còn là nơi Hồi giáo lan tỏa khắp quần đảo Mã Lai, đặt nền móng ngôn ngữ, luật pháp và nghi thức triều đình mà các vương quốc Mã Lai sau này đều mô phỏng theo.
+      </aside>
+
+      <p><b>Vương triều Hồi giáo Malacca (~1400 – 1511).</b> Theo biên niên sử Mã Lai, <span class="nv" data-note="Hoàng tử gốc Palembang (Sumatra), người sáng lập cảng thị Malacca khoảng năm 1400, sau này cải sang Hồi giáo và lấy hiệu Iskandar Shah.">Parameswara</span> lập nên Malacca bên eo biển cùng tên, biến nơi đây thành trạm trung chuyển tơ lụa, gốm sứ và hương liệu giữa Trung Hoa, Ấn Độ và Trung Đông. Sau khi cải sang Hồi giáo, triều đình Malacca trở thành trung tâm truyền bá Hồi giáo ra khắp quần đảo, đồng thời nhận sự bảo trợ của nhà Minh — từng đón hạm đội Trịnh Hòa ghé thăm nhiều lần.</p>
+
+      <p><b>Ba làn sóng thực dân châu Âu (1511 – 1824).</b> Năm <span class="tg">1511</span>, Bồ Đào Nha do Afonso de Albuquerque chỉ huy chiếm Malacca, chấm dứt vương triều Hồi giáo bản địa. Năm <span class="tg">1641</span>, Hà Lan liên minh với Vương quốc Johor đánh bật Bồ Đào Nha. Người Anh xuất hiện muộn hơn: <span class="nv" data-note="Sĩ quan Công ty Đông Ấn Anh, người thiết lập thương điếm trên đảo Penang năm 1786, mở đầu sự hiện diện của Anh ở Malaya.">Francis Light</span> lập thương điếm trên đảo Penang năm <span class="tg">1786</span>; đến Hiệp ước Anh – Hà Lan năm 1824, bán đảo Mã Lai chính thức rơi vào vùng ảnh hưởng của Anh, còn quần đảo Indonesia thuộc về Hà Lan.</p>
+
+      <p><b>Malaya thuộc Anh (1874 – 1941).</b> Hiệp ước Pangkor năm <span class="tg">1874</span> đưa các "Resident" người Anh vào triều đình các vua Mã Lai với danh nghĩa "cố vấn" nhưng nắm thực quyền, mở đầu cho việc bốn bang Selangor, Perak, Negeri Sembilan và Pahang hợp thành Các bang Mã Lai Liên hiệp năm 1895. Trong khi đó, ở Borneo, gia tộc Brooke người Anh cai trị Sarawak với tước hiệu "Rajah Trắng" từ năm 1841, còn Sabah do Công ty Bắc Borneo Đặc hứa quản lý. Thời kỳ này để lại đồn điền cao su, hầm mỏ thiếc, đường sắt và một lượng lớn lao động nhập cư người Hoa, người Ấn — nền tảng của cơ cấu đa sắc tộc Malaysia ngày nay.</p>
+
+      <p><b>Nhật chiếm đóng &amp; hậu chiến (1941 – 1957).</b> Quân Nhật tràn qua Malaya cuối năm 1941, chiếm Singapore đầu năm 1942 và cai trị hà khắc đến khi đầu hàng năm <span class="tg">1945</span>. Kế hoạch "Malayan Union" hậu chiến của Anh, trao quyền công dân bình đẳng bất kể sắc tộc, vấp phải phản đối dữ dội của người Mã Lai và bị thay bằng Liên bang Malaya năm 1948, khôi phục vị thế các vua bản xứ. Cùng năm đó, tình trạng khẩn cấp được ban bố để đối phó du kích cộng sản, kéo dài đến năm 1960.</p>
+
+      <p><b>Độc lập &amp; thành lập Malaysia (1957 – 1969).</b> Ngày <span class="tg">31/8/1957</span>, Liên bang Malaya giành độc lập dưới quyền Thủ tướng đầu tiên <span class="nv" data-note="Thủ tướng đầu tiên của Malaya độc lập (1957) rồi Malaysia (1963–1970), được tôn vinh là 'Cha đẻ của nền độc lập'.">Tunku Abdul Rahman</span>. Ngày <span class="tg">16/9/1963</span>, Malaya hợp nhất với Singapore, Sabah và Sarawak thành Liên bang Malaysia, nhưng chỉ hai năm sau, ngày 9/8/1965, Singapore tách ra thành quốc gia độc lập do bất đồng chính trị – sắc tộc gay gắt. Căng thẳng nội bộ lên đến đỉnh điểm với bạo loạn sắc tộc <span class="tg">13/5/1969</span> tại Kuala Lumpur sau một kỳ bầu cử, dẫn tới việc ban hành Chính sách Kinh tế Mới (NEP) năm 1971 nhằm nâng đỡ kinh tế cho cộng đồng Bumiputera.</p>
+
+      <p><b>Kỷ nguyên Mahathir &amp; hiện đại hóa (1981 – 2003).</b> Thủ tướng tại vị lâu nhất, <span class="nv" data-note="Thủ tướng Malaysia 1981–2003, sau trở lại nắm quyền lần hai 2018–2020; kiến trúc sư của công cuộc công nghiệp hóa và các dự án biểu tượng như tháp đôi Petronas.">Mahathir Mohamad</span>, đẩy mạnh công nghiệp hóa, cho ra đời hãng xe quốc gia Proton, xây tháp đôi Petronas — tòa nhà cao nhất thế giới giai đoạn 1998–2004 — và công bố "Tầm nhìn 2020" năm 1991, đặt mục tiêu đưa Malaysia thành nước phát triển. Khi khủng hoảng tài chính châu Á ập đến năm 1997–1998, Malaysia chọn áp đặt kiểm soát vốn thay vì nhận cứu trợ của IMF, một quyết định gây tranh cãi nhưng giúp phục hồi nhanh.</p>
+
+      <p><b>Malaysia đương đại (2015 – nay).</b> Bê bối quỹ đầu tư nhà nước 1MDB bị phanh phui từ năm 2015, liên quan tới hàng tỷ USD bị cáo buộc thất thoát dưới thời Thủ tướng Najib Razak, đã châm ngòi cho cuộc tổng tuyển cử năm 2018 — lần đầu tiên kể từ độc lập, liên minh Barisan Nasional mất quyền lãnh đạo. Sau vài năm bất ổn chính trị với nhiều đời thủ tướng, quốc hội treo tại tổng tuyển cử tháng 11/2022 đưa <span class="nv" data-note="Thủ tướng Malaysia từ 24/11/2022, lãnh đạo liên minh 'Chính phủ Đoàn kết' sau quốc hội treo; từng là nhân vật đối lập nổi tiếng, ngồi tù nhiều năm trước khi lên nắm quyền.">Anwar Ibrahim</span> lên làm Thủ tướng, đứng đầu một liên minh "Chính phủ Đoàn kết" chưa từng có tiền lệ, quy tụ cả các đối thủ chính trị cũ.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Malaysia</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Yang di-Pertuan Agong</span>
+          <span class="tier-desc">Quốc vương liên bang mang tính nghi lễ, do Hội đồng các Vua bầu luân phiên 5 năm/lần trong số 9 vị vua Mã Lai cha truyền con nối</span>
+        </li>
+        <li>
+          <span class="tier-role">Thủ tướng &amp; Nội các · Quốc hội lưỡng viện</span>
+          <span class="tier-desc">Hạ viện (Dewan Rakyat, dân bầu) và Thượng viện (Dewan Negara) nắm lập pháp; Thủ tướng đứng đầu hành pháp</span>
+        </li>
+        <li>
+          <span class="tier-role">13 bang &amp; 3 lãnh thổ liên bang</span>
+          <span class="tier-desc">Chín bang có vua Mã Lai riêng; Sabah, Sarawak có quyền tự trị đặc biệt theo Thỏa thuận Malaysia 1963 (MA63)</span>
+        </li>
+        <li>
+          <span class="tier-role">Chính quyền địa phương</span>
+          <span class="tier-desc">Hội đồng thành phố, thị xã và quận — cấp hành chính cơ sở</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Vua luân phiên</b>
+        Malaysia là một trong số ít quốc gia có nguyên thủ quốc gia được "bầu" theo nhiệm kỳ cố định giữa các vị vua vùng — một dàn xếp độc nhất vô nhị nhằm dung hòa quyền lợi giữa các bang có vương triều.
+      </aside>
+
+      <p>Malaysia là nhà nước liên bang theo mô hình quân chủ lập hiến nghị viện. Đứng đầu nhà nước là <span class="nv" data-note="Nguyên thủ quốc gia hiện tại của Malaysia, Sultan bang Johor, được Hội đồng các Vua bầu làm Yang di-Pertuan Agong từ tháng 1/2024.">Sultan Ibrahim Iskandar</span> của bang Johor, giữ ngôi Yang di-Pertuan Agong từ năm 2024<a class="cite" href="#ref-3">[3]</a>. Đây là vị trí mang tính biểu tượng và tôn giáo (người bảo trợ tối cao của đạo Hồi), luân phiên 5 năm một lần giữa 9 vị vua bang theo quyết định của Hội đồng các Vua — một cơ chế hiếm có trên thế giới.</p>
+
+      <p>Quyền hành pháp thực chất nằm trong tay Thủ tướng. Từ ngày 24/11/2022, <span class="nv" data-note="Thủ tướng Malaysia từ 24/11/2022, lãnh đạo liên minh 'Chính phủ Đoàn kết' sau quốc hội treo; từng là nhân vật đối lập nổi tiếng, ngồi tù nhiều năm trước khi lên nắm quyền.">Anwar Ibrahim</span> giữ cương vị Thủ tướng, cầm đầu liên minh "Chính phủ Đoàn kết" gồm cả các khối từng đối đầu nhau, cùng hai Phó Thủ tướng là <span class="nv" data-note="Chủ tịch đảng UMNO, giữ chức Phó Thủ tướng Malaysia trong Chính phủ Đoàn kết của Anwar Ibrahim.">Ahmad Zahid Hamidi</span> và <span class="nv" data-note="Chính khách đến từ Sarawak, giữ chức Phó Thủ tướng, đại diện tiếng nói của các đảng Đông Malaysia trong chính phủ liên bang.">Fadillah Yusof</span><a class="cite" href="#ref-4">[4]</a>. Quốc hội lưỡng viện gồm Hạ viện (Dewan Rakyat) do dân bầu trực tiếp và Thượng viện (Dewan Negara) kết hợp giữa ghế do các bang cử và ghế do nhà vua bổ nhiệm.</p>
+
+      <p>Một đặc điểm hiến định quan trọng là quyền tự trị đặc biệt của Sabah và Sarawak theo Thỏa thuận Malaysia 1963 (MA63), bao gồm quyền kiểm soát nhập cư riêng và tỷ lệ phân chia nguồn thu tài nguyên — những cam kết mà giới chính trị gia hai bang này vẫn liên tục vận động để được thực thi đầy đủ hơn.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Từ một nền kinh tế thuộc địa dựa vào xuất khẩu thiếc và cao su, Malaysia bước vào công nghiệp hóa mạnh mẽ từ thập niên 1980 dưới thời Mahathir, rồi tiếp tục đa dạng hóa sang điện tử, dầu khí và dịch vụ tài chính. GDP bình quân đầu người danh nghĩa hiện ước đạt khoảng <span class="tg">15.100 USD</span>, tương đương gần <span class="tg">47.000 USD</span> nếu tính theo sức mua tương đương<a class="cite" href="#ref-1">[1]</a>, thuộc nhóm cao trong Đông Nam Á, chỉ sau Singapore và Brunei.</p>
+
+      <p>Ngành điện – điện tử (E&amp;E) đóng góp tới khoảng <span class="tg">40%</span> kim ngạch xuất khẩu, với Malaysia nắm giữ khoảng 13% năng lực đóng gói – kiểm định bán dẫn công đoạn sau (back-end) của toàn cầu<a class="cite" href="#ref-2">[2]</a>. Dầu cọ là trụ cột nông nghiệp: Malaysia là nước sản xuất và xuất khẩu dầu cọ lớn thứ hai thế giới, chỉ sau Indonesia. Dầu khí qua tập đoàn quốc doanh Petronas cùng khí hóa lỏng (LNG) vẫn là nguồn thu ngân sách quan trọng, dù chính phủ đang nỗ lực giảm phụ thuộc. Các đối tác thương mại lớn nhất gồm Singapore, Hoa Kỳ, Trung Quốc, Hong Kong và Nhật Bản<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Năm <span class="tg">2025</span>, Malaysia đồng thời là Chủ tịch luân phiên ASEAN và là bên đàm phán thương mại trực tiếp với chính quyền Trump. Sau khi Mỹ ban đầu đe dọa áp thuế đối ứng 25% lên hàng Malaysia, hai bên đạt khung thỏa thuận vào tháng 10/2025, hạ mức thuế xuống còn <span class="tg">19%</span> có hiệu lực từ 7/8/2025, kèm theo việc Mỹ miễn thuế cho hơn 1.700 mặt hàng Malaysia và một biên bản ghi nhớ về khoáng sản thiết yếu; đổi lại Malaysia cam kết điều chỉnh thuế quan và rào cản phi thuế quan để mở cửa hơn cho nông sản, công nghệ và dịch vụ Mỹ<a class="cite" href="#ref-5">[5]</a><a class="cite" href="#ref-6">[6]</a>. Song song đó, làn sóng đầu tư vào trung tâm dữ liệu và hạ tầng trí tuệ nhân tạo đang biến Malaysia, đặc biệt là bang Johor giáp Singapore, thành một trung tâm điện toán đám mây khu vực.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Khẩu hiệu du lịch "Malaysia, Truly Asia" phần nào phản ánh đúng thực tế: đây là nơi hiếm hoi mà lễ hội của bốn tôn giáo lớn — Hari Raya của người Hồi giáo, Tết Nguyên đán của người Hoa, Deepavali của người Ấn giáo và Giáng sinh — đều là ngày nghỉ lễ quốc gia. Nguyên tắc lập quốc Rukun Negara, được soạn sau bạo loạn 1969, đặt niềm tin vào Thượng đế, trung thành với vua và hiến pháp, thượng tôn pháp luật và đạo đức làm nền tảng đoàn kết dân tộc.</p>
+
+      <p>Về mặt tâm lý xã hội, các cộng đồng sắc tộc ở Malaysia phần lớn sống cạnh nhau trong hòa bình nhưng vẫn giữ những ranh giới văn hóa, ngôn ngữ và trường học riêng khá rõ — một trạng thái đôi khi được mô tả là "hòa hợp trong chia tách". Chính sách ưu tiên kinh tế cho người Bumiputera (kế thừa từ NEP) vẫn là chủ đề tranh luận thường xuyên giữa các cộng đồng. Người Malaysia nói chung coi trọng thứ bậc, sự tôn kính với người lớn tuổi và giới quý tộc, đồng thời nổi tiếng với lối nói pha trộn "Manglish" — tiếng Anh lai Mã Lai, Hoa và Tamil trong giao tiếp hằng ngày.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Văn hóa quán mamak</b>
+        Các quán ăn "mamak" do người Hồi giáo gốc Ấn mở, phục vụ 24/7, là không gian trung lập nơi mọi sắc tộc cùng tụ họp ăn khuya, xem bóng đá và uống teh tarik — một biểu tượng xã hội đặc trưng của Malaysia.
+      </aside>
+
+      <p>Ẩm thực Malaysia là sự cộng hưởng của ba dòng chảy lớn — Mã Lai, Hoa và Ấn — cùng dòng lai Peranakan (Baba-Nyonya, kết hợp Hoa và Mã Lai) và ẩm thực bản địa Borneo. Triết lý chung xoay quanh việc phối trộn nước cốt dừa, ớt, sả, riềng và mắm tôm (belacan) để tạo ra vị cay – béo – đậm đà đặc trưng, khác hẳn vị thanh của ẩm thực Việt hay vị nhạt của ẩm thực Trung Hoa gốc.</p>
+
+      <p>Khác biệt vùng miền cũng rõ rệt: bán đảo phía bắc (Kedah, Penang) chịu ảnh hưởng Thái với vị chua cay của laksa Assam; miền trung và Kuala Lumpur là nơi giao thoa mọi dòng ẩm thực; Đông Malaysia (Sabah, Sarawak) có các món cá nước ngọt, rau rừng và gạo nếp đặc trưng của các dân tộc bản địa. Đồ uống quốc dân là teh tarik — trà sữa "kéo" tạo bọt — cùng cà phê kiểu kopitiam pha đậm với sữa đặc.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu các cộng đồng</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Mã Lai</span><span class="pick-name">Nasi lemak</span><span class="pick-desc">Cơm nấu nước cốt dừa và lá dứa, ăn kèm sambal cay, cá cơm chiên, trứng và lạc — món quốc hồn quốc túy.</span></li>
+        <li><span class="pick-where">Mã Lai</span><span class="pick-name">Rendang</span><span class="pick-desc">Thịt bò hầm nước cốt dừa và gia vị đến khi keo sánh, thường xuất hiện dịp Hari Raya.</span></li>
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Satay</span><span class="pick-desc">Thịt xiên nướng than, chấm nước sốt đậu phộng — món ăn chung của mọi cộng đồng.</span></li>
+        <li><span class="pick-where">Penang</span><span class="pick-name">Laksa Assam</span><span class="pick-desc">Bún cá nước dùng chua từ me, đậm vị miền bắc bán đảo, khác hẳn laksa cà ri miền nam.</span></li>
+        <li><span class="pick-where">Hoa</span><span class="pick-name">Char kway teow</span><span class="pick-desc">Hủ tiếu xào lửa lớn với tôm, lạp xưởng, trứng và giá đỗ — đặc sản đường phố Penang.</span></li>
+        <li><span class="pick-where">Peranakan</span><span class="pick-name">Nyonya laksa &amp; kuih</span><span class="pick-desc">Ẩm thực lai Hoa – Mã Lai của cộng đồng Baba-Nyonya ở Malacca và Penang, cầu kỳ và nhiều gia vị.</span></li>
+        <li><span class="pick-where">Ấn</span><span class="pick-name">Roti canai &amp; nasi kandar</span><span class="pick-desc">Bánh chiên bơ ăn với cà ri, và cơm chan nhiều loại cà ri theo phong cách Ấn Hồi giáo.</span></li>
+        <li><span class="pick-where">Sabah – Sarawak</span><span class="pick-name">Hinava &amp; mì Sarawak</span><span class="pick-desc">Gỏi cá sống chua cay của người Kadazan-Dusun, và món mì đặc trưng của Kuching.</span></li>
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Teh tarik</span><span class="pick-desc">Trà sữa được "kéo" qua lại giữa hai ly để tạo bọt mịn — thức uống biểu tượng của quán mamak.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Sầu riêng giữ vị trí đặc biệt trong văn hóa ẩm thực Malaysia, được tôn xưng là "vua của các loại trái cây"; các giống nổi tiếng như Musang King có cả một mùa vụ được người dân háo hức chờ đợi hằng năm. Món tráng miệng đá bào cendol — nước cốt dừa, đường thốt nốt và thạch bột gạo xanh — cũng phổ biến khắp Đông Nam Á nhưng người Malaysia luôn nhận đây là phiên bản gốc của mình.</p>
+
+      <p>Văn hóa ăn uống Malaysia gắn liền với các "hawker centre" và quán mamak mở cửa suốt đêm, nơi món ăn của các cộng đồng khác nhau được bày bán sát cạnh nhau trên cùng một dãy phố — một hình ảnh thu nhỏ của chính xã hội đa sắc tộc nước này.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Sáu di sản, hai vùng đất</b>
+        Trong 6 di sản UNESCO của Malaysia, có sự cân bằng thú vị giữa di sản văn hóa trên bán đảo và di sản thiên nhiên hoang sơ ở Borneo.
+      </aside>
+
+      <p>Malaysia hiện có <span class="tg">6 di sản thế giới</span> được UNESCO công nhận, gần nhất là Công viên Rừng Selangor (FRIM) được ghi danh năm 2025<a class="cite" href="#ref-7">[7]</a>. Bên cạnh đó là hệ thống đảo, cao nguyên và đô thị di sản trải dài từ bán đảo sang Borneo.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Malaysia</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Kuala Lumpur</span><span class="pick-name">Tháp đôi Petronas</span><span class="pick-desc">Biểu tượng quốc gia, từng là tòa nhà cao nhất thế giới giai đoạn 1998–2004.</span></li>
+        <li><span class="pick-where">Selangor</span><span class="pick-name">Batu Caves</span><span class="pick-desc">Quần thể hang động Ấn Độ giáo với tượng thần Murugan mạ vàng cao hơn 42m và cầu thang 272 bậc sặc sỡ.</span></li>
+        <li><span class="pick-where">Penang</span><span class="pick-name">George Town</span><span class="pick-desc">Phố cổ đa văn hóa, di sản UNESCO, nổi tiếng với ẩm thực đường phố và tranh tường nghệ thuật.</span></li>
+        <li><span class="pick-where">Malacca</span><span class="pick-name">Phố cổ Malacca</span><span class="pick-desc">Cố đô của vương triều Hồi giáo, mang dấu ấn kiến trúc Bồ Đào Nha, Hà Lan và Peranakan; cùng George Town tạo thành một di sản UNESCO.</span></li>
+        <li><span class="pick-where">Pahang</span><span class="pick-name">Cao nguyên Cameron</span><span class="pick-desc">Đồn điền trà và nông trại dâu tây trên độ cao mát mẻ, di sản từ thời thuộc địa Anh.</span></li>
+        <li><span class="pick-where">Kedah</span><span class="pick-name">Đảo Langkawi</span><span class="pick-desc">Quần đảo nghỉ dưỡng miễn thuế với cáp treo SkyBridge và bãi biển nổi tiếng.</span></li>
+        <li><span class="pick-where">Sabah</span><span class="pick-name">Núi Kinabalu</span><span class="pick-desc">Đỉnh núi cao nhất Đông Nam Á hải đảo (4.095m), một trong 6 di sản UNESCO của Malaysia.</span></li>
+        <li><span class="pick-where">Sarawak</span><span class="pick-name">Gunung Mulu</span><span class="pick-desc">Vườn quốc gia sở hữu hệ thống hang động đá vôi lớn bậc nhất thế giới, di sản UNESCO.</span></li>
+        <li><span class="pick-where">Perak</span><span class="pick-name">Thung lũng Lenggong</span><span class="pick-desc">Di sản khảo cổ học nơi tìm thấy bộ xương người tiền sử "Perak Man", có niên đại hàng chục nghìn năm.</span></li>
+        <li><span class="pick-where">Sarawak</span><span class="pick-name">Kuching</span><span class="pick-desc">Thành phố ven sông mang dấu ấn triều đại "Rajah Trắng" Brooke, cửa ngõ khám phá văn hóa bản địa Borneo.</span></li>
+        <li><span class="pick-where">Pahang</span><span class="pick-name">Cao nguyên Genting</span><span class="pick-desc">Khu nghỉ dưỡng trên núi với sòng bạc hợp pháp duy nhất — điểm đặc biệt ở một quốc gia đa số theo Hồi giáo.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Hiệp ước Hòa bình Kuala Lumpur</b>
+        Tháng 10/2025, với vai trò Chủ tịch ASEAN, Malaysia đứng ra làm trung gian cho thỏa thuận ngừng xung đột biên giới giữa Thái Lan và Campuchia — một điểm nhấn ngoại giao của Anwar Ibrahim trong năm cầm quyền của mình.
+      </aside>
+
+      <p>Năm 2025, Malaysia giữ vai trò Chủ tịch luân phiên ASEAN, tổ chức hai kỳ thượng đỉnh tại Kuala Lumpur. Tại hội nghị tháng 10, khối kết nạp Đông Timor làm thành viên thứ 11, đồng thời chứng kiến Thái Lan và Campuchia ký Hiệp ước Hòa bình Kuala Lumpur nhằm chấm dứt xung đột biên giới<a class="cite" href="#ref-4">[4]</a>. Cùng dịp này, Tổng thống Mỹ Donald Trump thăm Malaysia và ký thỏa thuận thương mại đối ứng cùng biên bản ghi nhớ về khoáng sản thiết yếu với Thủ tướng Anwar Ibrahim<a class="cite" href="#ref-5">[5]</a>.</p>
+
+      <p>Malaysia cũng là một bên tranh chấp chủ quyền tại Biển Đông, với các yêu sách chồng lấn quanh khu vực thềm lục địa phía bắc Borneo, dù ít gay gắt hơn so với các bên tranh chấp khác. Đối nội, ba vấn đề được nhắc tới nhiều nhất là áp lực chi phí sinh hoạt trong bối cảnh cắt giảm trợ giá xăng dầu, tranh luận dai dẳng về chính sách ưu tiên Bumiputera, và đòi hỏi của Sabah – Sarawak về việc thực thi đầy đủ quyền tự trị theo Thỏa thuận Malaysia 1963.</p>
+
+      <p>Trên bình diện đối ngoại rộng hơn, Malaysia theo đuổi chính sách trung lập thực dụng, vừa duy trì quan hệ kinh tế sâu rộng với Trung Quốc — đối tác thương mại lớn — vừa củng cố quan hệ an ninh và thương mại với Hoa Kỳ, đồng thời tận dụng vị thế Chủ tịch ASEAN năm 2025 để khẳng định vai trò trung gian hòa giải trong khu vực.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Malaysia</h2>
+      <ol class="funs">
+        <li><b>Một quốc gia, hai vùng đất cách biển.</b> Tây Malaysia (bán đảo) và Đông Malaysia (Sabah, Sarawak trên đảo Borneo) cách nhau hơn 600km biển — hiếm quốc gia nào có địa lý bị chia cắt như vậy.</li>
+        <li><b>Vua luân phiên duy nhất thế giới.</b> Nguyên thủ quốc gia được 9 vị vua bang bầu luân phiên 5 năm một lần — một cơ chế quân chủ không nơi nào khác có.</li>
+        <li><b>Từng sở hữu tòa nhà cao nhất thế giới.</b> Tháp đôi Petronas giữ kỷ lục tòa nhà cao nhất hành tinh từ 1998 đến 2004.</li>
+        <li><b>Cường quốc dầu cọ.</b> Malaysia là nước sản xuất và xuất khẩu dầu cọ lớn thứ hai thế giới, chỉ sau Indonesia.</li>
+        <li><b>Rừng mưa 130 triệu năm tuổi.</b> Nhiều khu rừng nguyên sinh của Malaysia được cho là lâu đời hơn cả rừng Amazon.</li>
+        <li><b>Tượng thần cao nhất ngoài Ấn Độ.</b> Tượng thần Murugan tại Batu Caves cao hơn 42m, là tượng thần Hindu lớn nhất bên ngoài lãnh thổ Ấn Độ.</li>
+        <li><b>Bốn tôn giáo, bốn ngày lễ lớn.</b> Hari Raya, Tết Nguyên đán, Deepavali và Giáng sinh đều là ngày nghỉ lễ chính thức toàn quốc.</li>
+        <li><b>"Manglish" — tiếng Anh ba trong một.</b> Người Malaysia pha trộn tiếng Anh với từ vựng và ngữ điệu Mã Lai, Hoa, Tamil thành một phương ngữ riêng dùng hằng ngày.</li>
+        <li><b>Sòng bạc hợp pháp hiếm hoi.</b> Cao nguyên Genting là nơi có sòng bạc hợp pháp duy nhất tại một quốc gia đa số dân theo Hồi giáo.</li>
+        <li><b>Chủ tịch ASEAN, người hòa giải khu vực.</b> Năm 2025, Malaysia đứng ra làm trung gian cho thỏa thuận hòa bình Thái Lan – Campuchia ngay tại thủ đô Kuala Lumpur.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Malaysia có khoảng <span class="tg">34,9 triệu</span> dân, diện tích <span class="tg">329.847 km²</span>, chia thành bán đảo Mã Lai và Sabah – Sarawak trên đảo Borneo.</li>
+        <li>Lịch sử xoay quanh trục: các vương quốc cổ → Vương triều Hồi giáo Malacca (~1400) → thực dân Bồ Đào Nha – Hà Lan – Anh → Nhật chiếm đóng → <span class="tg">1957</span> độc lập → <span class="tg">1963</span> thành lập Malaysia.</li>
+        <li>Thể chế quân chủ lập hiến độc đáo: Yang di-Pertuan Agong luân phiên 5 năm/lần giữa 9 vua bang; Thủ tướng Anwar Ibrahim nắm hành pháp từ <span class="tg">2022</span>.</li>
+        <li>Xã hội đa sắc tộc: Bumiputera ~64%, Hoa ~21%, Ấn ~6%; bốn tôn giáo lớn cùng có ngày lễ quốc gia.</li>
+        <li>Kinh tế dựa vào điện tử – bán dẫn, dầu cọ (xuất khẩu lớn thứ hai thế giới) và dầu khí; GDP/người danh nghĩa khoảng <span class="tg">15.100 USD</span>.</li>
+        <li>6 di sản UNESCO trải từ phố cổ Malacca – George Town đến rừng nguyên sinh Borneo.</li>
+        <li>Năm <span class="tg">2025</span>, Malaysia làm Chủ tịch ASEAN, đàm phán thuế quan với Mỹ (còn <span class="tg">19%</span>) và làm trung gian hòa bình Thái Lan – Campuchia.</li>
+        <li>Vấn đề nóng trong nước: chi phí sinh hoạt, tranh luận chính sách Bumiputera, và quyền tự trị Sabah – Sarawak theo MA63.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Vì sao có thể nói Malaysia là "một quốc gia, hai vùng đất"?</p>
+          <details><summary>Xem đáp án</summary><p>Vì lãnh thổ chia thành bán đảo Mã Lai (Tây Malaysia) và hai bang Sabah, Sarawak trên đảo Borneo (Đông Malaysia), cách nhau hơn 600km biển.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Ai lập ra Vương triều Hồi giáo Malacca và vì sao cảng thị này quan trọng?</p>
+          <details><summary>Xem đáp án</summary><p>Parameswara lập ra Malacca khoảng năm 1400; đây trở thành trung tâm thương mại và truyền bá Hồi giáo lớn nhất khu vực trước khi bị Bồ Đào Nha chiếm năm 1511.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Cơ chế bầu chọn nguyên thủ quốc gia của Malaysia có gì đặc biệt?</p>
+          <details><summary>Xem đáp án</summary><p>Yang di-Pertuan Agong được Hội đồng các Vua bầu luân phiên 5 năm một lần trong số 9 vị vua bang Mã Lai cha truyền con nối.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Sự kiện 13/5/1969 dẫn tới chính sách gì, và chính sách đó nhằm mục đích gì?</p>
+          <details><summary>Xem đáp án</summary><p>Dẫn tới Chính sách Kinh tế Mới (NEP, 1971), nhằm nâng đỡ sự tham gia kinh tế của cộng đồng Bumiputera sau bạo loạn sắc tộc.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Hai trụ cột xuất khẩu lớn nhất của kinh tế Malaysia hiện nay là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Ngành điện – điện tử/bán dẫn (khoảng 40% xuất khẩu) và dầu cọ (Malaysia là nước xuất khẩu lớn thứ hai thế giới).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Vai trò ngoại giao nổi bật của Malaysia trong năm 2025 là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Làm Chủ tịch luân phiên ASEAN, làm trung gian cho Hiệp ước Hòa bình Kuala Lumpur giữa Thái Lan và Campuchia, đồng thời ký thỏa thuận thương mại với Mỹ.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">The World Factbook (bản cộng đồng cập nhật theo CIA World Factbook). <i>Malaysia</i>. (tổng hợp số liệu diện tích, dân số ước tính 2025, cơ cấu sắc tộc – tôn giáo, GDP theo ước tính IMF 2026). <a href="https://theworldfactbook.org/country/malaysia.html" target="_blank" rel="noopener">theworldfactbook.org/country/malaysia.html</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-2">Wikipedia contributors. <i>Economy of Malaysia</i>. Wikipedia, Bách khoa toàn thư mở (số liệu ngành điện – điện tử, dầu cọ, đối tác thương mại). <a href="https://en.wikipedia.org/wiki/Economy_of_Malaysia" target="_blank" rel="noopener">en.wikipedia.org/wiki/Economy_of_Malaysia</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>Prime Minister of Malaysia</i> &amp; <i>Anwar Ibrahim</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Prime_Minister_of_Malaysia" target="_blank" rel="noopener">en.wikipedia.org/wiki/Prime_Minister_of_Malaysia</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-4">Wikipedia contributors. <i>2025 in Malaysia</i>. Wikipedia, Bách khoa toàn thư mở (Yang di-Pertuan Agong, các Phó Thủ tướng, hội nghị ASEAN, Hiệp ước Hòa bình Kuala Lumpur). <a href="https://en.wikipedia.org/wiki/2025_in_Malaysia" target="_blank" rel="noopener">en.wikipedia.org/wiki/2025_in_Malaysia</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-5">Office of the United States Trade Representative (USTR). <i>Fact Sheet: The United States and Malaysia Reach an Agreement on Reciprocal Trade</i>. Tháng 10/2025. <a href="https://ustr.gov/about/policy-offices/press-office/fact-sheets/2025/october/fact-sheet-united-states-and-malaysia-reach-agreement-reciprocal-trade" target="_blank" rel="noopener">ustr.gov</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-6">paultan.org. <i>Donald Trump reduces US tariffs on Malaysia to 19% — new rate in effect from August 7; previously 25%</i>. Tháng 8/2025. <a href="https://paultan.org/2025/08/01/donald-trump-reduces-us-tariffs-on-malaysia-to-19-percent/" target="_blank" rel="noopener">paultan.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-7">1000journey.my. <i>Malaysia's 6 UNESCO World Heritage Sites (2025 Update)</i>. 2025. <a href="https://1000journey.my/en/malaysia-unesco-world-heritage-sites-2025/" target="_blank" rel="noopener">1000journey.my</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-8">Wikipedia contributors. <i>Malaysia</i>. Wikipedia, Bách khoa toàn thư mở (lịch sử tổng quát: Vương triều Malacca, thời thuộc địa, thành lập Malaysia, sự kiện 13/5/1969). <a href="https://en.wikipedia.org/wiki/Malaysia" target="_blank" rel="noopener">en.wikipedia.org/wiki/Malaysia</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, thuế quan) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Các chi tiết còn tranh cãi — như chính sách Bumiputera hay tranh chấp Biển Đông — được trình bày ở mức khái quát và có ghi chú, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
