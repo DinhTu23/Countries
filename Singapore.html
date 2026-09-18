@@ -1,0 +1,1113 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Singapore — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Singapore</div>
+          <h1>Singapore</h1>
+          <div class="period">Châu Á · Đông Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Singapore: nửa trên đỏ, nửa dưới trắng; góc trên gần cột cờ có trăng lưỡi liềm trắng và năm ngôi sao trắng xếp vòng tròn">
+            <rect width="30" height="10" fill="#ED2939"/>
+            <rect y="10" width="30" height="10" fill="#FFFFFF"/>
+            <circle cx="6.32" cy="5" r="3.68" fill="#FFFFFF"/>
+            <circle cx="8.33" cy="5" r="4.03" fill="#ED2939"/>
+            <polygon fill="#FFFFFF" points="13.89,2.00 14.09,2.61 14.74,2.62 14.21,3.00 14.41,3.61 13.89,3.23 13.37,3.61 13.57,3.00 13.04,2.62 13.69,2.61"/>
+            <polygon fill="#FFFFFF" points="15.90,3.46 16.10,4.07 16.75,4.08 16.22,4.46 16.42,5.07 15.90,4.69 15.38,5.07 15.58,4.46 15.05,4.08 15.70,4.07"/>
+            <polygon fill="#FFFFFF" points="15.13,5.82 15.33,6.43 15.98,6.44 15.45,6.82 15.65,7.43 15.13,7.05 14.61,7.43 14.81,6.82 14.28,6.44 14.93,6.43"/>
+            <polygon fill="#FFFFFF" points="12.65,5.82 12.85,6.43 13.50,6.44 12.97,6.82 13.17,7.43 12.65,7.05 12.13,7.43 12.33,6.82 11.80,6.44 12.45,6.43"/>
+            <polygon fill="#FFFFFF" points="11.88,3.46 12.08,4.07 12.73,4.08 12.20,4.46 12.40,5.07 11.88,4.69 11.36,5.07 11.56,4.46 11.03,4.08 11.68,4.07"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Singapore là một thành phố-đảo quốc rộng chưa đầy 750 km² ở mũi phía nam bán đảo Mã Lai, nhưng lại là một trong những nền kinh tế giàu có và cạnh tranh nhất thế giới. Từ một trạm mậu dịch nhỏ của Anh năm 1819, quốc đảo này đã đi qua chiếm đóng Nhật Bản, một cuộc hôn nhân ngắn ngủi và cay đắng với Malaysia, rồi tự tay dựng nên một trong những câu chuyện phát triển thần kỳ nhất thế kỷ XX dưới bàn tay của <span class="nv" style="cursor:default">Lý Quang Diệu</span>. Nếu chỉ nhớ một điều về Singapore, hãy nhớ: đây là một quốc gia nhỏ bé về diện tích nhưng vận hành với kỷ luật, kế hoạch và tầm nhìn dài hạn hiếm nơi nào sánh được — biến bất lợi "không có gì trong tay" thành động lực để làm mọi thứ tốt hơn phần còn lại của thế giới.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">744,3 km²<a class="cite" href="#ref-1">[1]</a><small>tăng dần nhờ lấn biển</small></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~6,11 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 2025</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Singapore<small>thành phố-quốc gia, không có thủ đô riêng</small></span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Anh · Mã Lai · Hoa · Tamil<small>Mã Lai là quốc ngữ</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Phật giáo ~31%<a class="cite" href="#ref-1">[1]</a><small>Kitô giáo, Hồi giáo, không tôn giáo…</small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Đô la Singapore (S$, SGD)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~107.760 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính 2026 — hạng 4 thế giới</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">TK XIV</span>
+          <span class="tl-what">Temasek &amp; Singapura</span>
+          <span class="tl-note">"Thị trấn biển" Temasek được ghi trong sử thi Nagarakretagama (1365); truyền thuyết đổi tên thành Singapura — "Thành phố Sư tử"</span>
+        </li>
+        <li>
+          <span class="tl-when">1613</span>
+          <span class="tl-what">Chìm vào quên lãng</span>
+          <span class="tl-note">Người Bồ Đào Nha phá hủy khu định cư ven sông; đảo trở thành làng chài nhỏ trong hai thế kỷ</span>
+        </li>
+        <li>
+          <span class="tl-when">6/2/1819</span>
+          <span class="tl-what">Raffles cập bến</span>
+          <span class="tl-note">Stamford Raffles ký hiệp ước lập trạm mậu dịch tự do của Anh, khi đó đảo chỉ có khoảng 150 dân</span>
+        </li>
+        <li>
+          <span class="tl-when">1824 · 1826</span>
+          <span class="tl-what">Anh mua đứt đảo</span>
+          <span class="tl-note">Công ty Đông Ấn Anh chính thức sở hữu Singapore; sáp nhập cùng Penang, Malacca thành Các Khu định cư Eo biển</span>
+        </li>
+        <li>
+          <span class="tl-when">1867</span>
+          <span class="tl-what">Thuộc địa Vương miện</span>
+          <span class="tl-note">Tách khỏi quyền quản lý của Ấn Độ thuộc Anh, trở thành Crown Colony riêng biệt</span>
+        </li>
+        <li>
+          <span class="tl-when">15/2/1942</span>
+          <span class="tl-what">Singapore thất thủ</span>
+          <span class="tl-note">Quân Nhật chiếm đảo; Churchill gọi đây là "thảm họa tồi tệ nhất" trong lịch sử quân sự Anh; đảo bị đổi tên Syonan-to</span>
+        </li>
+        <li>
+          <span class="tl-when">1945</span>
+          <span class="tl-what">Anh quay trở lại</span>
+          <span class="tl-note">Nhật đầu hàng, chính quyền quân sự Anh tạm thời tiếp quản đảo</span>
+        </li>
+        <li>
+          <span class="tl-when">1959</span>
+          <span class="tl-what">Tự trị nội bộ</span>
+          <span class="tl-note">Đảng Hành động Nhân dân (PAP) thắng cử; Lý Quang Diệu trở thành Thủ tướng đầu tiên</span>
+        </li>
+        <li>
+          <span class="tl-when">16/9/1963</span>
+          <span class="tl-what">Sáp nhập Malaysia</span>
+          <span class="tl-note">Singapore gia nhập Liên bang Malaysia cùng Malaya, Sabah, Sarawak</span>
+        </li>
+        <li>
+          <span class="tl-when">9/8/1965</span>
+          <span class="tl-what">Độc lập</span>
+          <span class="tl-note">Tách khỏi Malaysia sau bất đồng chính trị, trở thành quốc gia có chủ quyền — ngoài ý muốn ban đầu của chính Lý Quang Diệu</span>
+        </li>
+        <li>
+          <span class="tl-when">1965 – 1990</span>
+          <span class="tl-what">"Từ thế giới thứ ba lên thứ nhất"</span>
+          <span class="tl-note">Công nghiệp hóa thần tốc: Khu công nghiệp Jurong, nhà ở HDB, Sân bay Changi (1981), tuyến MRT đầu tiên (1987)</span>
+        </li>
+        <li>
+          <span class="tl-when">1990 · 2004</span>
+          <span class="tl-what">Chuyển giao quyền lực êm thấm</span>
+          <span class="tl-note">Goh Chok Tong kế nhiệm làm Thủ tướng thứ hai (1990), rồi Lý Hiển Long — con trai Lý Quang Diệu — làm Thủ tướng thứ ba (2004)</span>
+        </li>
+        <li>
+          <span class="tl-when">2015</span>
+          <span class="tl-what">Lý Quang Diệu qua đời</span>
+          <span class="tl-note">"Người cha lập quốc" mất ở tuổi 91, để lại di sản một quốc đảo giàu có bậc nhất châu Á</span>
+        </li>
+        <li>
+          <span class="tl-when">2020</span>
+          <span class="tl-what">Hawker culture được UNESCO vinh danh</span>
+          <span class="tl-note">Văn hóa trung tâm ẩm thực bình dân trở thành di sản văn hóa phi vật thể của nhân loại</span>
+        </li>
+        <li>
+          <span class="tl-when">2023 – 2025</span>
+          <span class="tl-what">Thế hệ lãnh đạo thứ tư</span>
+          <span class="tl-note">Tharman Shanmugaratnam đắc cử Tổng thống (2023); Lawrence Wong thành Thủ tướng thứ tư (2024); Khu kinh tế đặc biệt Johor – Singapore khởi động (2024–2025)</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ XIX chủ yếu dựa trên ghi chép rời rạc và khảo cổ học nên còn nhiều khoảng trống; các mốc từ 1819 trở đi có văn bản hành chính đối chiếu rõ ràng hơn.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Một đảo quốc đang lớn dần</b>
+        Nhờ liên tục lấn biển bằng cát nhập khẩu, diện tích Singapore đã tăng khoảng một phần tư kể từ độc lập — nhưng đây cũng là nguồn cơn ma sát với các nước láng giềng vốn hạn chế xuất khẩu cát.
+      </aside>
+
+      <p class="lede">Singapore nằm ở đầu mút phía nam bán đảo Mã Lai, ngay trên eo biển Malacca — một trong những tuyến hàng hải nhộn nhịp nhất hành tinh, nối Ấn Độ Dương với Biển Đông và Thái Bình Dương.</p>
+
+      <p>Với diện tích chỉ <span class="tg">744,3 km²</span><a class="cite" href="#ref-1">[1]</a> — nhỏ hơn thành phố Hà Nội nhiều lần — Singapore là một trong số ít thành phố-quốc gia còn tồn tại trên thế giới ngày nay. Không có nông thôn, không có tỉnh thành, toàn bộ lãnh thổ vừa là thủ đô vừa là cả nước. Đảo chính Singapore được bao quanh bởi hơn 60 đảo nhỏ, một vài đảo trong số đó (như Jurong, Tekong, Pulau Ubin) mang chức năng công nghiệp, quân sự hoặc bảo tồn thiên nhiên.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">6,11 triệu người</span><a class="cite" href="#ref-1">[1]</a>, khiến Singapore trở thành một trong những nơi có mật độ dân số cao nhất thế giới — hơn 8.000 người/km². Xã hội được tổ chức theo khung "CMIO" chính thức: người Hoa chiếm khoảng <span class="tg">74%</span>, người Mã Lai <span class="tg">13,5%</span>, người gốc Ấn <span class="tg">9%</span> và nhóm khác <span class="tg">3,2%</span><a class="cite" href="#ref-1">[1]</a>. Gần một nửa cư dân trên đảo hiện là người không mang quốc tịch Singapore — lao động nước ngoài, thường trú nhân và du học sinh — phản ánh mức độ phụ thuộc rất lớn vào nhân lực nhập cư để duy trì tăng trưởng.</p>
+
+      <p>Khí hậu xích đạo nóng ẩm quanh năm, không có bốn mùa rõ rệt, chỉ có mùa gió mùa đông bắc (tháng 12 – 3) mưa nhiều hơn. Vì đất chật người đông, phần lớn dân cư — khoảng 80% — sống trong các khu chung cư công do Ủy ban Phát triển Nhà ở (HDB) xây dựng và quản lý, một mô hình nhà ở xã hội quy mô lớn hiếm có trên thế giới.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Singapore hiện đại được kể lại như một câu chuyện gọn ghẽ: một điểm dừng chân hàng hải bị lãng quên, được người Anh "phát hiện lại" làm cảng tự do, rồi vụt trở thành một trong những nền kinh tế thành công nhất thế kỷ XX chỉ trong một đời người.</p>
+
+      <p><b>Thời cổ đại.</b> Cái tên <span class="nv" data-note="Tên gọi cổ của Singapore, được ghi trong sử thi Nagarakretagama năm 1365, có nghĩa gần với 'thị trấn ở biển'.">Temasek</span> xuất hiện trong các văn bản Mã Lai và Java từ thế kỷ XIV như một thương cảng nhỏ thuộc mạng lưới ảnh hưởng của đế chế Srivijaya rồi Majapahit. Theo truyền thuyết Mã Lai (Sejarah Melayu), một hoàng tử Sumatra tên Sang Nila Utama khi ghé đảo đã nhìn thấy một con thú lạ mà ông tưởng là sư tử, nên đặt tên vùng đất là <b>Singapura</b> — "Thành phố Sư tử" trong tiếng Phạn. Năm <span class="tg">1613</span>, quân Bồ Đào Nha đốt phá khu định cư ven sông, và hòn đảo gần như chìm vào quên lãng suốt hai thế kỷ, chỉ còn là nơi cư trú của vài trăm ngư dân và cướp biển.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao Raffles chọn Singapore</b>
+        Công ty Đông Ấn Anh cần một cảng trung chuyển tự do trên tuyến đường sang Trung Quốc để cạnh tranh với người Hà Lan đang kiểm soát phần lớn Đông Nam Á hải đảo. Vị trí ở cửa ngõ eo biển Malacca khiến Singapore gần như lý tưởng.
+      </aside>
+
+      <p><b>Trạm mậu dịch của Anh (1819 – 1942).</b> Ngày <span class="tg">6/2/1819</span>, <span class="nv" data-note="Sir Thomas Stamford Raffles, quan chức Công ty Đông Ấn Anh, người ký hiệp ước với Quốc vương Johor để lập trạm mậu dịch tự do trên đảo Singapore.">Stamford Raffles</span> ký hiệp ước với vương triều Johor, biến Singapore thành một cảng tự do không thuế quan. Chính sách này lập tức thu hút thương nhân Hoa, Ấn, Ả Rập, Bugis và châu Âu đổ về, đưa dân số từ khoảng 150 người năm 1819 lên hơn <span class="tg">10.000</span> chỉ năm năm sau<a class="cite" href="#ref-2">[2]</a>. Năm 1824, Công ty Đông Ấn chính thức mua đứt đảo; năm 1826, Singapore cùng Penang và Malacca hợp thành <b>Các Khu định cư Eo biển</b> (Straits Settlements), rồi năm 1867 trở thành thuộc địa Vương miện (Crown Colony) trực thuộc Luân Đôn. Kênh đào Suez khai thông năm 1869 càng củng cố vị thế trạm trung chuyển của đảo trên hải trình Âu – Á.</p>
+
+      <p><b>Nhật chiếm đóng (1942 – 1945).</b> Ngày <span class="tg">15/2/1942</span>, quân đội Anh đầu hàng Nhật Bản chỉ sau một tuần giao tranh trên bộ — sự kiện mà <span class="nv" data-note="Thủ tướng Anh trong Thế chiến II, người mô tả thất thủ Singapore là thảm họa quân sự tồi tệ nhất lịch sử nước Anh.">Winston Churchill</span> gọi là "thảm họa tồi tệ nhất và cuộc đầu hàng lớn nhất" trong lịch sử quân sự Anh. Đảo bị đổi tên thành Syonan-to ("Đảo Nam của Nhật Bản") và trải qua ba năm chiếm đóng khắc nghiệt, gồm cả vụ thảm sát Sook Ching nhắm vào cộng đồng người Hoa. Trải nghiệm này phá vỡ hình ảnh bất khả chiến bại của đế quốc Anh trong mắt người bản địa, gieo mầm cho phong trào đòi tự trị sau chiến tranh.</p>
+
+      <p><b>Từ tự trị đến độc lập (1945 – 1965).</b> Sau khi Nhật đầu hàng, Anh khôi phục quyền cai trị nhưng dần nhượng bộ tự trị. Năm <span class="tg">1959</span>, Singapore giành quyền tự quản nội bộ; đảng <span class="nv" data-note="Đảng Hành động Nhân dân — People's Action Party — đảng cầm quyền Singapore liên tục từ 1959 đến nay.">Hành động Nhân dân (PAP)</span> thắng cử áp đảo và <span class="nv" data-note="Thủ tướng đầu tiên của Singapore (1959–1990), kiến trúc sư của mô hình phát triển kinh tế và bộ máy nhà nước Singapore hiện đại.">Lý Quang Diệu</span> trở thành Thủ tướng đầu tiên ở tuổi 35. Tin rằng một đảo nhỏ không tài nguyên khó tồn tại độc lập, ông vận động sáp nhập vào Liên bang Malaysia, hoàn tất ngày <span class="tg">16/9/1963</span>. Nhưng cuộc hôn nhân chính trị này nhanh chóng đổ vỡ vì bất đồng sâu sắc về chính sách chủng tộc và kinh tế giữa PAP và chính quyền trung ương Kuala Lumpur. Ngày <span class="tg">9/8/1965</span>, Quốc hội Malaysia biểu quyết trục xuất Singapore ra khỏi liên bang; Lý Quang Diệu công bố độc lập trong một cuộc họp báo mà ông bật khóc trên truyền hình — độc lập đến với Singapore không như một chiến thắng được tìm kiếm, mà như một biến cố bị áp đặt.</p>
+
+      <p><b>Kỳ tích phát triển (1965 – nay).</b> Không tài nguyên thiên nhiên, thiếu nước ngọt, bị hai nước láng giềng lớn bao quanh, chính phủ PAP theo đuổi chiến lược công nghiệp hóa hướng xuất khẩu, thu hút đầu tư đa quốc gia, xây dựng bộ máy công vụ liêm chính và một hệ thống nhà ở công cộng quy mô lớn qua HDB. Cuốn hồi ký của Lý Quang Diệu mang tên "From Third World to First" (Từ Thế giới thứ ba lên Thế giới thứ nhất) đã trở thành cách gọi quen thuộc cho hành trình này. Quyền lực chuyển giao êm thấm cho <span class="nv" data-note="Thủ tướng thứ hai của Singapore, giai đoạn 1990–2004.">Goh Chok Tong</span> năm 1990, rồi <span class="nv" data-note="Con trai cả của Lý Quang Diệu, Thủ tướng thứ ba của Singapore giai đoạn 2004–2024.">Lý Hiển Long</span> năm 2004, và <span class="nv" data-note="Thủ tướng thứ tư của Singapore từ tháng 5/2024, thuộc thế hệ lãnh đạo '4G' của đảng PAP.">Lawrence Wong</span> năm 2024 — mỗi lần đều không có gián đoạn hay khủng hoảng chính trị, điều hiếm gặp ở các nền chính trị châu Á. Lý Quang Diệu qua đời năm 2015, nhưng di sản thể chế và triết lý quản trị thực dụng của ông vẫn định hình cách Singapore vận hành cho đến hôm nay.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Singapore</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống</span>
+          <span class="tier-desc">Nguyên thủ quốc gia do dân bầu trực tiếp; vai trò phần lớn mang tính nghi lễ nhưng nắm quyền phủ quyết một số vấn đề then chốt như sử dụng dự trữ quốc gia</span>
+        </li>
+        <li>
+          <span class="tier-role">Thủ tướng &amp; Nội các</span>
+          <span class="tier-desc">Nắm thực quyền hành pháp, điều hành đất nước hằng ngày; hiện do Lawrence Wong đứng đầu</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội</span>
+          <span class="tier-desc">Cơ quan lập pháp một viện; đảng PAP giữ đa số áp đảo liên tục từ 1959 đến nay</span>
+        </li>
+        <li>
+          <span class="tier-role">Công vụ &amp; các ủy ban pháp định</span>
+          <span class="tier-desc">Bộ máy hành chính kỹ trị nổi tiếng hiệu quả và liêm chính (HDB, EDB, MAS, CPF…)</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Hệ thống GRC</b>
+        Phần lớn ghế Quốc hội được bầu theo cụm cử tri đại diện nhóm (Group Representation Constituency) — một khối vài ghế bầu chung một lần, chính thức nhằm bảo đảm đại diện sắc tộc thiểu số nhưng cũng bị phe đối lập cho là gây bất lợi cho các đảng nhỏ.
+      </aside>
+
+      <p>Singapore là một nước cộng hòa nghị viện đơn nhất. Tổng thống do dân bầu trực tiếp theo nhiệm kỳ 6 năm, giữ vai trò nguyên thủ quốc gia và có quyền giám sát riêng đối với việc sử dụng dự trữ tài khóa tích lũy cũng như bổ nhiệm các vị trí công vụ then chốt — một cơ chế "phanh hãm" được thiết kế để ngăn một chính phủ tương lai tiêu xài vô trách nhiệm. Quyền hành pháp thực tế nằm ở Thủ tướng và Nội các, chịu trách nhiệm trước Quốc hội.</p>
+
+      <p>Đảng <span class="tg">Hành động Nhân dân (PAP)</span> đã cầm quyền liên tục từ năm 1959, một kỷ lục hiếm có với các nền dân chủ nghị viện. Trong cuộc bầu cử năm <span class="tg">2025</span>, PAP tiếp tục giành đa số áp đảo, dù đảng đối lập lớn nhất — Đảng Công nhân (Workers' Party) — vẫn duy trì và mở rộng phần nào số ghế của mình, phản ánh một xu hướng chậm rãi hướng tới đa nguyên chính trị hơn trong vài chu kỳ bầu cử gần đây. Bộ máy công vụ Singapore nổi tiếng thế giới về tính liêm chính, lương thưởng cạnh tranh với khu vực tư và văn hóa trọng thành tích (meritocracy) — những yếu tố thường được viện dẫn để giải thích hiệu quả quản trị của quốc đảo.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Không có tài nguyên thiên nhiên đáng kể, thậm chí phải nhập khẩu cả nước ngọt và cát, Singapore xây dựng sự thịnh vượng gần như hoàn toàn từ vị trí địa lý, thể chế minh bạch và con người. Nền kinh tế vận hành theo mô hình thị trường mở kết hợp vai trò điều tiết chủ động của nhà nước — thường được gọi là "chủ nghĩa nhà nước can thiệp" (dirigisme) — với khu vực dịch vụ chiếm khoảng <span class="tg">75%</span> GDP và công nghiệp khoảng 25%<a class="cite" href="#ref-3">[3]</a>.</p>
+
+      <p>GDP danh nghĩa năm 2026 ước đạt khoảng <span class="tg">660 tỷ USD</span>, còn GDP bình quân đầu người danh nghĩa đạt khoảng <span class="tg">107.760 USD</span> — cao thứ tư thế giới, và nếu tính theo sức mua tương đương thì Singapore đứng số một toàn cầu với khoảng <span class="tg">173.700 USD</span><a class="cite" href="#ref-1">[1]</a><a class="cite" href="#ref-3">[3]</a>. Cảng Singapore là cảng trung chuyển (transshipment) bận rộn nhất thế giới, còn tỷ lệ thương mại trên GDP lên tới hơn <span class="tg">300%</span> — cho thấy mức độ phụ thuộc cực lớn vào dòng chảy hàng hóa và vốn quốc tế. Các trụ cột kinh tế chính gồm dịch vụ tài chính và quản lý tài sản, điện tử bán dẫn, lọc hóa dầu, dược phẩm — công nghệ sinh học và ngày càng nhiều là kinh tế số và trí tuệ nhân tạo.</p>
+
+      <p>Tăng trưởng GDP đạt <span class="tg">4,4%</span> năm 2024 nhưng được dự báo chậm lại còn khoảng <span class="tg">1–3%</span> năm 2026<a class="cite" href="#ref-3">[3]</a> trong bối cảnh kinh tế toàn cầu bất ổn và căng thẳng thương mại Mỹ – Trung. Tỷ lệ thất nghiệp duy trì ở mức rất thấp, khoảng 2%, nhưng chi phí sinh hoạt và giá bất động sản — cả nhà ở công lẫn tư — vẫn là mối lo thường trực của người dân, khiến Singapore liên tục đứng đầu hoặc gần đầu các bảng xếp hạng thành phố đắt đỏ nhất thế giới.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Văn hóa Singapore là một tấm thảm dệt từ bốn dòng chính — Hoa, Mã Lai, Ấn và "nhóm khác" (chủ yếu gốc Âu-Á) — được chính thức hóa qua khung chính sách gọi tắt là CMIO. Nhà nước chủ động thúc đẩy hòa hợp sắc tộc qua chính sách nhà ở (mỗi khu chung cư HDB phải có tỷ lệ sắc tộc cân đối), giáo dục song ngữ bắt buộc (tiếng Anh cộng với "tiếng mẹ đẻ" theo sắc tộc) và luật pháp nghiêm khắc với phát ngôn kích động thù hằn tôn giáo, chủng tộc.</p>
+
+      <p>Về tâm lý xã hội, người Singapore thường tự trào bằng từ lóng <b>"kiasu"</b> (tiếng Phúc Kiến, nghĩa đen là "sợ thua") để mô tả tâm lý cạnh tranh, sợ bỏ lỡ cơ hội đã ăn sâu vào giáo dục, sự nghiệp và cả xếp hàng mua đồ. Xã hội đề cao chủ nghĩa thực dụng, kỷ luật và trọng thành tích: thành công cá nhân gắn chặt với kết quả học tập từ rất sớm, tạo áp lực thi cử nổi tiếng khắc nghiệt. Song song đó, Singapore cũng nổi tiếng với hệ thống luật lệ nghiêm ngặt — từ cấm bán kẹo cao su, phạt tiền xả rác, hút thuốc nơi công cộng, đến hình phạt roi cho một số tội vandalism — được chính phủ biện minh là nền tảng của một xã hội trật tự, sạch sẽ và an toàn bậc nhất châu Á. Nam giới trưởng thành phải thực hiện nghĩa vụ quân sự quốc gia (National Service) kéo dài khoảng hai năm, một trải nghiệm gắn kết thế hệ được nhiều người coi là "nghi lễ trưởng thành" chung của đàn ông Singapore.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>"Ăn cơm chưa?"</b>
+        Câu chào cửa miệng phổ biến ở Singapore theo cách nói của nhiều cộng đồng gốc Hoa, phản ánh việc ẩm thực gần như là mối bận tâm quốc dân — người Singapore có thể tranh luận hàng giờ về quán mì nào ngon nhất.
+      </aside>
+
+      <p>Ẩm thực Singapore là sản phẩm trực tiếp của lịch sử thương cảng đa sắc tộc: món ăn Phúc Kiến, Quảng Đông, Triều Châu, Hải Nam của người Hoa hòa trộn với ẩm thực Mã Lai, Ấn Độ (cả Bắc lẫn Nam Ấn) và đặc biệt là ẩm thực Peranakan — kết quả pha trộn giữa người Hoa nhập cư sớm với văn hóa Mã Lai bản địa. Triết lý chung là tận dụng gia vị đậm đà của khu vực nhiệt đới, chế biến nhanh trên lửa lớn và phục vụ ngay tại chỗ.</p>
+
+      <p>Trái tim của văn hóa ẩm thực Singapore là các <b>trung tâm ẩm thực bình dân (hawker centre)</b> — những khu chợ ăn uống công cộng, giá rẻ, quy tụ hàng chục gian hàng nhỏ san sát nhau. Năm <span class="tg">2020</span>, UNESCO chính thức công nhận văn hóa hawker của Singapore là di sản văn hóa phi vật thể của nhân loại, mô tả đây là những "phòng ăn chung của cộng đồng" nơi mọi sắc tộc, thu nhập cùng ngồi ăn chung<a class="cite" href="#ref-4">[4]</a>. Một số quầy hawker, như Hawker Chan, thậm chí từng được gắn sao Michelin — điều gần như chưa từng có với đồ ăn đường phố ở nơi khác trên thế giới.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu của Singapore</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Quốc hồn quốc túy</span><span class="pick-name">Cơm gà Hải Nam</span><span class="pick-desc">Cơm nấu bằng nước luộc gà và mỡ gà, ăn kèm gà luộc mềm và nước chấm gừng ớt — thường được xem là "món quốc dân" của Singapore.</span></li>
+        <li><span class="pick-where">Hải sản</span><span class="pick-name">Cua sốt ớt (chili crab)</span><span class="pick-desc">Cua biển sốt cà chua – ớt sền sệt, cay ngọt, thường ăn kèm bánh bao chiên để chấm nước sốt.</span></li>
+        <li><span class="pick-where">Peranakan</span><span class="pick-name">Laksa</span><span class="pick-desc">Bún gạo trong nước dùng cà ri nước cốt dừa, tôm và đậu phụ — di sản ẩm thực lai Hoa – Mã Lai đặc trưng.</span></li>
+        <li><span class="pick-where">Đường phố</span><span class="pick-name">Char kway teow</span><span class="pick-desc">Bánh phở dẹt xào lửa lớn với xì dầu đen, lạp xưởng, giá đỗ và trứng — món "wok hei" (hơi chảo) tiêu biểu.</span></li>
+        <li><span class="pick-where">Mã Lai</span><span class="pick-name">Satay</span><span class="pick-desc">Thịt xiên nướng than, chấm sốt đậu phộng — món ăn chơi phổ biến khắp các khu chợ đêm.</span></li>
+        <li><span class="pick-where">Ấn Độ</span><span class="pick-name">Roti prata</span><span class="pick-desc">Bánh bột chiên nhiều lớp giòn xốp, ăn kèm cà ri — phiên bản Singapore hóa của bánh paratha Ấn Độ.</span></li>
+        <li><span class="pick-where">Ăn sáng</span><span class="pick-name">Kaya toast &amp; cà phê "kopi"</span><span class="pick-desc">Bánh mì nướng phết mứt trứng dừa kaya và bơ, ăn cùng trứng lòng đào và cà phê pha kiểu Nam Dương.</span></li>
+        <li><span class="pick-where">Trung Hoa</span><span class="pick-name">Bak kut teh</span><span class="pick-desc">Canh sườn heo hầm tiêu và thảo mộc, món ăn gắn với cộng đồng lao động cảng gốc Phúc Kiến, Triều Châu xưa.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Bên cạnh các món chính, văn hóa "kopitiam" — quán cà phê kiểu cũ — vẫn là nơi tụ họp quen thuộc mỗi sáng, còn các khu chợ đêm (pasar malam) và phố ẩm thực đường Đường Geylang, Chinatown, Tiong Bahru là nơi thực khách có thể nếm đủ cả bốn dòng ẩm thực chính chỉ trong một buổi tối. Với một quốc gia không có "vùng miền" theo nghĩa địa lý, chính sự đa dạng sắc tộc đã đóng vai trò "vùng miền" tạo nên bản đồ hương vị của Singapore.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Di sản UNESCO duy nhất</b>
+        Vườn Bách thảo Singapore (Singapore Botanic Gardens) là Di sản Thế giới UNESCO duy nhất của đảo quốc, được công nhận năm 2015 — cũng là vườn bách thảo nhiệt đới đầu tiên trên thế giới được vinh danh theo cách này<a class="cite" href="#ref-5">[5]</a>.
+      </aside>
+
+      <p>Vì diện tích nhỏ, gần như mọi điểm đến nổi tiếng của Singapore đều nằm gọn trong bán kính vài chục phút di chuyển, khiến đảo quốc trở thành một trong những điểm đến "gói gọn" dễ khám phá nhất châu Á — dù chỉ có một di sản UNESCO chính thức, bù lại bằng mật độ công trình biểu tượng hiện đại dày đặc hiếm nơi nào sánh được.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Singapore</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Vịnh Marina</span><span class="pick-name">Marina Bay Sands</span><span class="pick-desc">Khu nghỉ dưỡng – sòng bạc với hồ bơi vô cực trên mái, biểu tượng đường chân trời Singapore từ 2010.</span></li>
+        <li><span class="pick-where">Vịnh Marina</span><span class="pick-name">Gardens by the Bay</span><span class="pick-desc">Công viên sinh thái với hàng "Siêu cây" (Supertree) khổng lồ và hai mái vòm nhà kính khí hậu nhân tạo.</span></li>
+        <li><span class="pick-where">Vịnh Marina</span><span class="pick-name">Tượng Merlion</span><span class="pick-desc">Nửa sư tử nửa cá, biểu tượng chính thức của du lịch Singapore, gợi lại cả hai cái tên Temasek và Singapura.</span></li>
+        <li><span class="pick-where">Trung tâm</span><span class="pick-name">Vườn Bách thảo Singapore</span><span class="pick-desc">Di sản UNESCO duy nhất của Singapore (2015), có Vườn Lan quốc gia nổi tiếng bên trong.</span></li>
+        <li><span class="pick-where">Đảo nghỉ dưỡng</span><span class="pick-name">Sentosa</span><span class="pick-desc">Đảo giải trí phía nam với bãi biển nhân tạo, Universal Studios và các khu nghỉ dưỡng ven biển.</span></li>
+        <li><span class="pick-where">Phố cổ</span><span class="pick-name">Chinatown</span><span class="pick-desc">Khu phố người Hoa với đền Phật Nha Xá Lợi, dãy nhà phố (shophouse) thời thuộc địa được bảo tồn.</span></li>
+        <li><span class="pick-where">Phố cổ</span><span class="pick-name">Little India &amp; Kampong Glam</span><span class="pick-desc">Hai khu phố sắc tộc cạnh nhau — đền Hindu rực rỡ và Thánh đường Hồi giáo Sultan mái vàng.</span></li>
+        <li><span class="pick-where">Sân bay</span><span class="pick-name">Jewel Changi Airport</span><span class="pick-desc">Nhà ga phức hợp với thác nước trong nhà cao nhất thế giới (Rain Vortex, 40 m) ngay giữa sân bay.</span></li>
+        <li><span class="pick-where">Mua sắm</span><span class="pick-name">Đường Orchard Road</span><span class="pick-desc">Trục mua sắm sầm uất bậc nhất Đông Nam Á, dài hơn 2 km trung tâm đảo.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Ngoại giao "nước nhỏ"</b>
+        Các lãnh đạo Singapore nhiều lần nhấn mạnh triết lý "một quốc gia nhỏ phải khiến mình trở nên hữu ích và đáng tin cậy" — lý do đảo quốc đầu tư mạnh vào vai trò trung gian, hòa giải và tổ chức các hội nghị quốc tế lớn.
+      </aside>
+
+      <p>Về đối ngoại, Singapore theo đuổi chính sách thực dụng, tránh ngả hẳn về một cường quốc: vừa là đối tác an ninh thân cận của Hoa Kỳ, vừa duy trì quan hệ kinh tế sâu rộng với Trung Quốc — đối tác thương mại lớn nhất của đảo quốc. Singapore là một trong năm thành viên sáng lập <span class="nv" data-note="Hiệp hội các quốc gia Đông Nam Á, thành lập năm 1967 với Singapore là một trong năm thành viên sáng lập.">ASEAN</span> năm 1967, đồng thời tích cực trong APEC, WTO và thường được chọn làm địa điểm tổ chức các cuộc gặp thượng đỉnh quốc tế quan trọng nhờ vị thế trung lập và an ninh cao.</p>
+
+      <p>Vấn đề nóng gần đây nhất là <span class="nv" data-note="Khu kinh tế đặc biệt Johor – Singapore, dự án hợp tác kinh tế xuyên biên giới giữa bang Johor (Malaysia) và Singapore, khởi động chính thức năm 2024–2025.">Khu kinh tế đặc biệt Johor – Singapore (JS-SEZ)</span>, một sáng kiến hợp tác xuyên biên giới với Malaysia nhằm mở rộng không gian phát triển công nghiệp và nhà ở sang bang Johor lân cận — vừa là cơ hội giảm áp lực đất đai cho Singapore, vừa đặt ra câu hỏi về cạnh tranh việc làm và giá đất cho phía Malaysia<a class="cite" href="#ref-7">[7]</a>. Trong nước, ba mối lo được nhắc tới nhiều nhất là chi phí sinh hoạt và giá nhà ở tăng cao, dân số già hóa nhanh với tỷ lệ sinh thuộc nhóm thấp nhất thế giới, và bài toán cân bằng giữa thu hút nhân tài nước ngoài với tâm lý lo ngại của một bộ phận người bản địa về cạnh tranh việc làm và bản sắc quốc gia. Biến đổi khí hậu cũng là mối đe dọa dài hạn nghiêm trọng: chính phủ ước tính phải chi tới <span class="tg">100 tỷ SGD</span> trong thế kỷ tới để ứng phó nước biển dâng, do phần lớn diện tích đảo chỉ cao hơn mực nước biển vài mét. Cuối cùng, giới quan sát quốc tế cũng thường nêu vấn đề không gian cho tự do ngôn luận và đối lập chính trị bị hạn chế, dù điều này ít làm lung lay sự ủng hộ rộng rãi của cử tri đối với mô hình quản trị hiện tại.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Singapore</h2>
+      <ol class="funs">
+        <li><b>Một quốc gia không có thủ đô riêng.</b> Vì là thành phố-quốc gia, toàn bộ Singapore vừa là thủ đô vừa là cả nước — khác với mọi quốc gia láng giềng trong khu vực.</li>
+        <li><b>Từ thế giới thứ ba lên thứ nhất chỉ trong một thế hệ.</b> Năm 1965, GDP đầu người Singapore còn thấp hơn nhiều nước láng giềng; sáu thập kỷ sau, đảo quốc đứng vào nhóm giàu nhất thế giới tính theo đầu người.</li>
+        <li><b>Merlion — biểu tượng ghép từ hai truyền thuyết.</b> Đầu sư tử gợi tên gọi Singapura ("Thành phố Sư tử"), thân cá gợi tên cổ Temasek ("thị trấn biển") — một biểu tượng được tạo ra có chủ đích vào năm 1964 chứ không phải cổ tích lâu đời.</li>
+        <li><b>Luật lệ nổi tiếng nghiêm khắc.</b> Bán kẹo cao su bị cấm từ năm 1992 (trừ mục đích y tế, thuốc theo toa từ 2004); xả rác, hút thuốc sai chỗ hay không giật nước nhà vệ sinh công cộng đều có thể bị phạt tiền.</li>
+        <li><b>Sân bay được yêu thích bậc nhất thế giới.</b> Changi liên tục đứng đầu các bảng xếp hạng sân bay tốt nhất toàn cầu, nổi bật với nhà ga Jewel có thác nước trong nhà cao nhất thế giới.</li>
+        <li><b>Bốn ngôn ngữ chính thức, một quốc ngữ thiểu số.</b> Dù người Hoa chiếm đa số dân số, tiếng Mã Lai mới là quốc ngữ và được dùng trong quốc ca "Majulah Singapura".</li>
+        <li><b>Ẩm thực đường phố từng đạt sao Michelin.</b> Một số quầy hawker ở Singapore là những quán ăn đường phố hiếm hoi trên thế giới được gắn sao Michelin, dù giá một suất ăn chỉ vài đô la.</li>
+        <li><b>"Thành phố trong vườn" đúng nghĩa đen.</b> Từ khẩu hiệu "Garden City" thập niên 1960, Singapore chuyển hướng thành "City in a Garden" — phủ xanh cả những tòa cao ốc bằng chính sách bắt buộc bù đắp diện tích cây xanh khi xây dựng.</li>
+        <li><b>Đảo quốc đang "lớn" dần theo năm tháng.</b> Nhờ lấn biển liên tục, diện tích Singapore đã tăng khoảng một phần tư so với thời điểm độc lập năm 1965.</li>
+        <li><b>Nghĩa vụ quân sự là trải nghiệm chung của cả một thế hệ.</b> Mọi nam công dân và thường trú nhân đủ tuổi đều phải hoàn thành khoảng hai năm nghĩa vụ quân sự quốc gia — một "nghi lễ trưởng thành" gắn kết xã hội đa sắc tộc.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Singapore là thành phố-quốc gia rộng <span class="tg">744,3 km²</span>, dân số khoảng <span class="tg">6,11 triệu</span>, mật độ dân số thuộc nhóm cao nhất thế giới.</li>
+        <li>Lịch sử: Temasek/Singapura thời cổ → Raffles lập trạm mậu dịch Anh <span class="tg">1819</span> → Nhật chiếm đóng <span class="tg">1942–1945</span> → sáp nhập rồi tách khỏi Malaysia, độc lập <span class="tg">9/8/1965</span>.</li>
+        <li>Lý Quang Diệu là Thủ tướng đầu tiên (1959–1990), kiến trúc sư mô hình phát triển; kế nhiệm êm thấm qua Goh Chok Tong, Lý Hiển Long, và Lawrence Wong (từ 2024).</li>
+        <li>GDP/người danh nghĩa khoảng <span class="tg">107.760 USD</span> (hạng 4 thế giới); PPP đứng số 1 toàn cầu; cảng trung chuyển bận rộn nhất thế giới.</li>
+        <li>Đảng PAP cầm quyền liên tục từ <span class="tg">1959</span>; Tổng thống do dân bầu giữ vai trò giám sát dự trữ quốc gia, Thủ tướng nắm thực quyền hành pháp.</li>
+        <li>Ẩm thực đa sắc tộc Hoa – Mã Lai – Ấn – Peranakan; văn hóa hawker centre được UNESCO công nhận năm <span class="tg">2020</span>.</li>
+        <li>Di sản UNESCO duy nhất: Vườn Bách thảo Singapore (2015); biểu tượng du lịch là tượng Merlion.</li>
+        <li>Vấn đề nóng: Khu kinh tế đặc biệt Johor – Singapore, chi phí sinh hoạt, già hóa dân số, biến đổi khí hậu và nước biển dâng.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Ai đã ký hiệp ước lập trạm mậu dịch tự do của Anh tại Singapore năm 1819, và bối cảnh khi đó ra sao?</p>
+          <details><summary>Xem đáp án</summary><p>Sir Stamford Raffles, quan chức Công ty Đông Ấn Anh; khi đó đảo chỉ có khoảng 150 dân, là một làng chài nhỏ.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Vì sao Singapore tách khỏi Liên bang Malaysia năm 1965, và điều gì đặc biệt trong cách công bố sự kiện này?</p>
+          <details><summary>Xem đáp án</summary><p>Do bất đồng sâu sắc về chính sách chủng tộc và kinh tế giữa PAP và chính quyền Kuala Lumpur; Quốc hội Malaysia biểu quyết trục xuất Singapore, và Lý Quang Diệu đã bật khóc khi công bố độc lập trên truyền hình.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Cơ chế nào cho phép Tổng thống Singapore giám sát dự trữ quốc gia dù quyền hành pháp chính nằm ở Thủ tướng?</p>
+          <details><summary>Xem đáp án</summary><p>Tổng thống do dân bầu trực tiếp, có quyền giám sát riêng với việc sử dụng dự trữ tài khóa tích lũy và bổ nhiệm một số vị trí công vụ then chốt, như một cơ chế "phanh hãm" độc lập với chính phủ đương nhiệm.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Văn hóa ẩm thực nào của Singapore được UNESCO công nhận là di sản phi vật thể năm 2020, và vì sao?</p>
+          <details><summary>Xem đáp án</summary><p>Văn hóa hawker centre (trung tâm ẩm thực bình dân) — được mô tả là "phòng ăn chung của cộng đồng" nơi mọi sắc tộc, thu nhập cùng ngồi ăn chung.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Biểu tượng Merlion của Singapore kết hợp hai yếu tố nào, tương ứng với hai cái tên lịch sử gì của đảo quốc?</p>
+          <details><summary>Xem đáp án</summary><p>Đầu sư tử tương ứng với tên Singapura ("Thành phố Sư tử"); thân cá tương ứng với tên cổ Temasek ("thị trấn biển").</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Nêu ít nhất hai vấn đề "nóng" mà Singapore đang đối mặt trong những năm gần đây.</p>
+          <details><summary>Xem đáp án</summary><p>Ví dụ: chi phí sinh hoạt và giá nhà tăng cao, dân số già hóa và tỷ lệ sinh thấp, cân bằng giữa nhân tài nước ngoài và bản sắc quốc gia, biến đổi khí hậu/nước biển dâng, hoặc hợp tác và cạnh tranh trong Khu kinh tế đặc biệt Johor – Singapore.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Singapore</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu diện tích, dân số ước tính 2025, cơ cấu sắc tộc và tôn giáo, GDP danh nghĩa và PPP 2026). <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank" rel="noopener">en.wikipedia.org/wiki/Singapore</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+        <li id="ref-2">Wikipedia contributors. <i>History of Singapore</i>. Wikipedia, Bách khoa toàn thư mở (các mốc từ thời Temasek, Raffles 1819, Nhật chiếm đóng, đến độc lập 1965 và các đời Thủ tướng). <a href="https://en.wikipedia.org/wiki/History_of_Singapore" target="_blank" rel="noopener">en.wikipedia.org/wiki/History_of_Singapore</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>Economy of Singapore</i>. Wikipedia, Bách khoa toàn thư mở (cơ cấu GDP theo ngành, tăng trưởng, thương mại, xếp hạng cạnh tranh). <a href="https://en.wikipedia.org/wiki/Economy_of_Singapore" target="_blank" rel="noopener">en.wikipedia.org/wiki/Economy_of_Singapore</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+        <li id="ref-4">UNESCO Intangible Cultural Heritage / Wikipedia contributors. <i>Singaporean cuisine — Hawker culture in Singapore</i>. Ghi danh Danh sách Di sản văn hóa phi vật thể đại diện của nhân loại, 2020. <a href="https://en.wikipedia.org/wiki/Singaporean_cuisine" target="_blank" rel="noopener">en.wikipedia.org/wiki/Singaporean_cuisine</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+        <li id="ref-5">UNESCO World Heritage Centre. <i>Singapore Botanic Gardens</i>. Di sản Thế giới, ghi danh năm 2015. <a href="https://whc.unesco.org/en/list/1483/" target="_blank" rel="noopener">whc.unesco.org/en/list/1483</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+        <li id="ref-6">Wikipedia contributors. <i>Flag of Singapore</i>. Wikipedia, Bách khoa toàn thư mở (thiết kế, màu sắc, ý nghĩa trăng lưỡi liềm và năm ngôi sao). <a href="https://en.wikipedia.org/wiki/Flag_of_Singapore" target="_blank" rel="noopener">en.wikipedia.org/wiki/Flag_of_Singapore</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+        <li id="ref-7">Singapore Economic Development Board (EDB). <i>How the Johor-Singapore Special Economic Zone is shaping up to be different from past collaborations</i>. 2025. <a href="https://www.edb.gov.sg/en/business-insights/insights/how-the-johor-singapore-special-economic-zone-is-shaping-up-to-be-different-from-past-collaborations.html" target="_blank" rel="noopener">edb.gov.sg</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+        <li id="ref-8">Worldometer / Trading Economics. <i>Singapore GDP</i>. Tổng hợp số liệu GDP danh nghĩa và dự báo tăng trưởng 2026. <a href="https://www.worldometers.info/gdp/singapore-gdp/" target="_blank" rel="noopener">worldometers.info/gdp/singapore-gdp</a><span class="ref-meta">Truy cập ngày 19/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, tăng trưởng) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Các chi tiết còn tranh cãi — như mức độ hạn chế tự do chính trị hay quan hệ với các nước láng giềng — được trình bày ở mức khái quát và có ghi chú, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
