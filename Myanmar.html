@@ -1,0 +1,1132 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Myanmar — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Myanmar</div>
+          <h1>Myanmar</h1>
+          <div class="period">Châu Á · Đông Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Myanmar: ba sọc ngang vàng nghệ, xanh lá, đỏ, ngôi sao trắng năm cánh ở giữa">
+            <rect width="30" height="6.667" y="0" fill="#fecb00"/>
+            <rect width="30" height="6.667" y="6.667" fill="#34b233"/>
+            <rect width="30" height="6.667" y="13.333" fill="#ea2839"/>
+            <polygon fill="#ffffff" points="15,5 16.1226,8.4549 19.7553,8.4549 16.8164,10.5902 17.9389,14.0451 15,11.9098 12.0611,14.0451 13.1836,10.5902 10.2447,8.4549 13.8774,8.4549"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Myanmar (tên cũ: Miến Điện / Burma) là quốc gia lớn nhất Đông Nam Á lục địa, nơi hơn 100 sắc tộc cùng sinh sống dưới cái bóng của Phật giáo Theravada và của quân đội. Từng là vựa lúa lớn nhất thế giới thời thuộc Anh, đất nước rơi vào nửa thế kỷ cô lập dưới chế độ quân sự, có một thập kỷ mở cửa dang dở, rồi quay lại đảo chính năm 2021 và chìm trong cuộc nội chiến vẫn đang tiếp diễn. Nếu chỉ nhớ một điều về Myanmar, hãy nhớ: đây là đất nước mà ngôi chùa vàng, tấm áo longyi và cuộc chiến kéo dài nhất thế giới cùng tồn tại trên một dải đất.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">676.578 km²<a class="cite" href="#ref-1">[1]</a><small>lớn nhất Đông Nam Á lục địa</small></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~55,8 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính gần nhất</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Naypyidaw<small>TP lớn nhất: Yangon</small></span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Miến Điện</span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Phật giáo Theravada<small>~88%; còn lại Kitô giáo, Hồi giáo…<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Kyat (K, MMK)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~1.519 USD<a class="cite" href="#ref-2">[2]</a><small>danh nghĩa; PPP ~5.315 USD, ước tính 2026</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~TK II TCN – TK XI</span>
+          <span class="tl-what">Các thành bang Pyu</span>
+          <span class="tl-note">Cư dân Pyu dựng các đô thị có tường thành dọc sông Irrawaddy, sớm tiếp nhận Phật giáo qua giao thương với Ấn Độ</span>
+        </li>
+        <li>
+          <span class="tl-when">1044</span>
+          <span class="tl-what">Anawrahta lập vương triều Pagan</span>
+          <span class="tl-note">Lần đầu thống nhất lưu vực Irrawaddy, đưa Phật giáo Theravada thành quốc giáo</span>
+        </li>
+        <li>
+          <span class="tl-when">1287</span>
+          <span class="tl-what">Mông Cổ đánh phá Pagan</span>
+          <span class="tl-note">Vương triều Pagan tan rã, mở đầu hai thế kỷ phân liệt giữa các tiểu quốc</span>
+        </li>
+        <li>
+          <span class="tl-when">1510 – 1752</span>
+          <span class="tl-what">Vương triều Taungoo</span>
+          <span class="tl-note">Từng dựng nên đế chế được coi là rộng lớn nhất Đông Nam Á thời bấy giờ</span>
+        </li>
+        <li>
+          <span class="tl-when">1752 – 1885</span>
+          <span class="tl-what">Vương triều Konbaung</span>
+          <span class="tl-note">Triều đại phong kiến cuối cùng, ba lần giao tranh với Đế quốc Anh</span>
+        </li>
+        <li>
+          <span class="tl-when">1824 – 1885</span>
+          <span class="tl-what">Ba cuộc chiến Anh – Miến</span>
+          <span class="tl-note">Kết thúc bằng việc Anh thôn tính toàn bộ vương quốc, phế truất vua Thibaw</span>
+        </li>
+        <li>
+          <span class="tl-when">1942 – 1945</span>
+          <span class="tl-what">Nhật chiếm đóng</span>
+          <span class="tl-note">Quân đội Nhật kiểm soát Miến Điện trong Thế chiến II, để lại tàn phá nặng nề</span>
+        </li>
+        <li>
+          <span class="tl-when">4/1/1948</span>
+          <span class="tl-what">Độc lập khỏi Anh</span>
+          <span class="tl-note">Nội chiến sắc tộc bùng nổ gần như ngay lập tức và chưa từng chấm dứt hoàn toàn</span>
+        </li>
+        <li>
+          <span class="tl-when">2/3/1962</span>
+          <span class="tl-what">Tướng Ne Win đảo chính</span>
+          <span class="tl-note">Mở đầu nửa thế kỷ quân đội nắm quyền và chính sách tự cô lập "Con đường Miến Điện lên chủ nghĩa xã hội"</span>
+        </li>
+        <li>
+          <span class="tl-when">8/8/1988</span>
+          <span class="tl-what">Cuộc nổi dậy 8888</span>
+          <span class="tl-note">Hàng nghìn người biểu tình bị đàn áp; Aung San Suu Kyi nổi lên thành biểu tượng đối lập</span>
+        </li>
+        <li>
+          <span class="tl-when">2007</span>
+          <span class="tl-what">Cách mạng Yên bào</span>
+          <span class="tl-note">Các nhà sư dẫn đầu làn sóng biểu tình phản đối giá nhiên liệu tăng vọt</span>
+        </li>
+        <li>
+          <span class="tl-when">2010 – 2015</span>
+          <span class="tl-what">Mở cửa dang dở</span>
+          <span class="tl-note">Quân đội nới lỏng kiểm soát, thả Aung San Suu Kyi; NLD thắng cử áp đảo năm 2015</span>
+        </li>
+        <li>
+          <span class="tl-when">2016 – 2017</span>
+          <span class="tl-what">Khủng hoảng Rohingya</span>
+          <span class="tl-note">Chiến dịch quân sự ở bang Rakhine khiến hơn 700.000 người Rohingya chạy sang Bangladesh</span>
+        </li>
+        <li>
+          <span class="tl-when">1/2/2021</span>
+          <span class="tl-what">Đảo chính quân sự</span>
+          <span class="tl-note">Quân đội bắt giữ Aung San Suu Kyi, lật đổ chính phủ dân cử, châm ngòi nội chiến toàn quốc</span>
+        </li>
+        <li>
+          <span class="tl-when">28/3/2025</span>
+          <span class="tl-what">Động đất Sagaing – Mandalay</span>
+          <span class="tl-note">Trận động đất mạnh giết hơn 3.600 người, tàn phá miền Trung Myanmar giữa lúc nội chiến<a class="cite" href="#ref-3">[3]</a></span>
+        </li>
+        <li>
+          <span class="tl-when">12/2025 – 4/2026</span>
+          <span class="tl-what">Bầu cử &amp; Min Aung Hlaing làm Tổng thống</span>
+          <span class="tl-note">USDP do quân đội hậu thuẫn thắng áp đảo cuộc bầu cử gây tranh cãi; Min Aung Hlaing được Đại cử tri đoàn bầu làm Tổng thống ngày 3/4/2026</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ XI phần lớn dựa vào khảo cổ học và sử liệu chép muộn, mang tính ước lệ. Việc dùng tên "Myanmar" hay "Burma" vẫn còn gây tranh cãi quốc tế kể từ khi chính quyền quân sự đổi tên nước năm 1989.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Về số liệu dân số</b>
+        Myanmar chưa tổ chức tổng điều tra dân số đầy đủ trên toàn quốc kể từ 2014 do xung đột vũ trang tại nhiều khu vực, nên các con số dân số hiện nay đều là ước tính.
+      </aside>
+
+      <p class="lede">Myanmar trải dài từ dãy Himalaya ở phía bắc xuống vịnh Bengal và biển Andaman ở phía nam, giáp Ấn Độ, Bangladesh, Trung Quốc, Lào và Thái Lan.</p>
+
+      <p>Với diện tích khoảng <span class="tg">676.578 km²</span><a class="cite" href="#ref-1">[1]</a>, Myanmar là quốc gia rộng nhất Đông Nam Á lục địa. Địa hình gồm vành đai núi non bao quanh lưu vực sông Irrawaddy — huyết mạch nông nghiệp và giao thông của cả nước — cùng đường bờ biển dài khoảng <span class="tg">1.930 km</span> dọc vịnh Bengal và biển Andaman. Khí hậu nhiệt đới gió mùa chia làm ba vùng rõ rệt: đồng bằng trung tâm khô nóng, vùng cao nguyên phía bắc và phía đông mát mẻ, và dải duyên hải mưa nhiều.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">55,8 triệu người</span><a class="cite" href="#ref-1">[1]</a>. Đây là một trong những quốc gia đa dạng sắc tộc bậc nhất châu Á, với <span class="tg">135 nhóm dân tộc</span> được chính phủ chính thức công nhận. Người Bamar (Miến) chiếm khoảng 68% dân số và tập trung ở vùng đồng bằng trung tâm, trong khi các dân tộc lớn khác — Karen (Kayin), Shan, Rakhine, Mon, Chin, Kachin, Kayah — sinh sống chủ yếu ở các vùng cao biên giới, nơi cũng là chiến trường chính của các cuộc xung đột vũ trang kéo dài nhiều thập kỷ. Thủ đô hành chính là <span class="nv" data-note="Thủ đô hành chính được chính quyền quân sự xây dựng bí mật từ năm 2005 giữa vùng đồng bằng khô cằn, cách Yangon khoảng 320 km về phía bắc.">Naypyidaw</span>, nhưng Yangon — thủ đô cũ — vẫn là trung tâm kinh tế, dân cư và văn hóa lớn nhất.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Myanmar là chuỗi những đế chế Phật giáo huy hoàng xen giữa những giai đoạn chia cắt, ngoại xâm và — trong hơn bảy thập kỷ độc lập — gần như liên tục nội chiến.</p>
+
+      <p><b>Thời cổ đại.</b> Từ khoảng thế kỷ II TCN, cư dân <span class="nv" data-note="Một trong những dân tộc cổ nhất được ghi nhận ở Myanmar, dựng các đô thị có tường thành dọc sông Irrawaddy và để lại hệ thống chữ viết cổ.">Pyu</span> đã lập nên các thành bang dọc sông Irrawaddy, tiếp nhận Phật giáo qua con đường giao thương với Ấn Độ. Các di chỉ thành cổ Pyu ngày nay là một trong hai di sản UNESCO của đất nước.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao Pagan quan trọng</b>
+        Ở thời hoàng kim, Pagan từng có tới hơn 10.000 công trình Phật giáo; hơn 2.000 công trình còn tồn tại đến nay, khiến nơi đây trở thành một trong những quần thể kiến trúc tôn giáo dày đặc nhất thế giới.
+      </aside>
+
+      <p><b>Vương triều Pagan (1044 – 1287).</b> Năm <span class="tg">1044</span>, vua <span class="nv" data-note="Vị vua sáng lập vương triều Pagan, người lần đầu thống nhất lưu vực Irrawaddy và đưa Phật giáo Theravada trở thành tôn giáo chính thức.">Anawrahta</span> thống nhất lưu vực Irrawaddy, lập nên vương triều Pagan và đưa Phật giáo Theravada thành quốc giáo — nền tảng bản sắc tôn giáo của Myanmar cho đến ngày nay. Đế chế sụp đổ năm <span class="tg">1287</span> sau cuộc xâm lược của quân Mông Cổ, mở ra hai thế kỷ phân liệt giữa các tiểu vương quốc Bamar, Shan và Mon.</p>
+
+      <p><b>Taungoo và Konbaung (1510 – 1885).</b> Vương triều Taungoo tái thống nhất đất nước và có thời điểm kiểm soát lãnh thổ được xem là rộng lớn nhất Đông Nam Á. Kế đó, vương triều <span class="nv" data-note="Vương triều phong kiến cuối cùng của Myanmar (1752–1885), mở rộng lãnh thổ về phía tây tới Assam và Manipur, dẫn tới xung đột trực tiếp với Đế quốc Anh ở Ấn Độ.">Konbaung</span> tiếp tục mở rộng về phía tây, va chạm trực tiếp với Đế quốc Anh đang cai trị Ấn Độ. Ba cuộc <span class="tg">chiến tranh Anh – Miến (1824 – 1885)</span> lần lượt bào mòn vương quốc, và cuộc chiến thứ ba kết thúc bằng việc phế truất vua Thibaw, sáp nhập toàn bộ Miến Điện vào Ấn Độ thuộc Anh.</p>
+
+      <p><b>Thời thuộc Anh (1886 – 1948).</b> Người Anh xây dựng đường sắt, cảng biển và đưa Miến Điện trở thành nước xuất khẩu gạo lớn nhất thế giới, đồng thời đưa hàng trăm nghìn lao động Ấn Độ và Hoa sang làm việc — nguồn gốc của nhiều căng thẳng sắc tộc về sau. Quân Nhật chiếm đóng năm <span class="tg">1942 – 1945</span> trong Thế chiến II. Ngay trước độc lập, <span class="nv" data-note="Lãnh tụ phong trào độc lập Myanmar, cha của Aung San Suu Kyi; bị ám sát năm 1947, sáu tháng trước khi đất nước chính thức độc lập.">Aung San</span> ký Hiệp định Panglong năm 1947 hứa hẹn quyền tự trị cho các dân tộc thiểu số, nhưng bị ám sát chỉ vài tháng sau đó — một trong những "nếu như" lớn nhất lịch sử Myanmar, vì hiệp định này chưa từng được thực thi trọn vẹn.</p>
+
+      <p><b>Độc lập và nội chiến kéo dài (1948 – 1988).</b> Myanmar độc lập ngày <span class="tg">4/1/1948</span>, nhưng các cuộc nổi dậy vũ trang của lực lượng cộng sản và các dân tộc thiểu số bùng nổ gần như ngay lập tức, khiến đây trở thành một trong những cuộc nội chiến kéo dài nhất thế giới còn tiếp diễn đến hôm nay. Năm <span class="tg">1962</span>, tướng <span class="nv" data-note="Lãnh đạo cuộc đảo chính quân sự năm 1962, cầm quyền suốt 26 năm với chính sách tự cô lập 'Con đường Miến Điện lên chủ nghĩa xã hội', đẩy đất nước vào suy thoái kinh tế kéo dài.">Ne Win</span> đảo chính, quốc hữu hóa nền kinh tế và đóng cửa đất nước với thế giới bên ngoài trong nhiều thập kỷ.</p>
+
+      <p><b>8888, đổi tên và Suu Kyi (1988 – 2010).</b> Cuộc nổi dậy toàn quốc <span class="tg">8/8/1988</span> bị quân đội đàn áp đẫm máu; ngay sau đó, chính quyền quân sự đổi tên nước từ "Burma" thành "Myanmar" và đổi tên thủ đô Rangoon thành Yangon. <span class="nv" data-note="Con gái của Aung San, lãnh đạo đảng Liên minh Quốc gia vì Dân chủ (NLD), giải Nobel Hòa bình 1991, từng bị quản thúc tại gia tổng cộng khoảng 15 năm.">Aung San Suu Kyi</span> trở thành gương mặt đối lập tiêu biểu, bị quản thúc tại gia phần lớn thời gian từ 1989 đến 2010, dù NLD từng thắng áp đảo trong cuộc bầu cử 1990 mà quân đội không công nhận.</p>
+
+      <p><b>Thập kỷ mở cửa dang dở (2010 – 2021).</b> Sau khi ban hành hiến pháp 2008 dành sẵn 25% ghế quốc hội cho quân đội, chính quyền quân sự nới lỏng kiểm soát, thả Suu Kyi và tổ chức bầu cử bán tự do. NLD thắng áp đảo năm <span class="tg">2015</span> rồi <span class="tg">2020</span>, nhưng quân đội vẫn nắm các bộ then chốt. Xen giữa giai đoạn này là <span class="tg">khủng hoảng Rohingya 2016 – 2017</span>, khi chiến dịch quân sự ở bang Rakhine bị Liên Hợp Quốc mô tả mang dấu hiệu diệt chủng, đẩy hơn 700.000 người Rohingya sang tị nạn tại Bangladesh.</p>
+
+      <p><b>Đảo chính, nội chiến và bầu cử gây tranh cãi (2021 – nay).</b> Ngày <span class="tg">1/2/2021</span>, quân đội do <span class="nv" data-note="Tổng Tư lệnh quân đội Myanmar, lãnh đạo cuộc đảo chính 2021; được Đại cử tri đoàn bầu làm Tổng thống ngày 3/4/2026 sau khi từ chức Tổng Tư lệnh.">Min Aung Hlaing</span> đứng đầu đảo chính, bắt giữ Suu Kyi và lãnh đạo NLD, châm ngòi làn sóng biểu tình rồi leo thang thành nội chiến vũ trang trên toàn quốc giữa quân đội với Chính phủ Thống nhất Quốc gia (NUG) lưu vong, các lực lượng dân quân và hàng loạt tổ chức vũ trang sắc tộc. Trận động đất mạnh ngày <span class="tg">28/3/2025</span> tàn phá vùng Sagaing – Mandalay giữa lúc chiến sự vẫn tiếp diễn. Cuộc bầu cử ba giai đoạn từ tháng 12/2025 đến tháng 1/2026 — bị phương Tây coi là không tự do, công bằng vì cấm NLD tham gia và bỏ qua hàng loạt vùng chiến sự — đưa đảng USDP do quân đội hậu thuẫn lên nắm đa số áp đảo trong quốc hội, và Min Aung Hlaing chính thức trở thành Tổng thống ngày 3/4/2026<a class="cite" href="#ref-4">[4]</a><a class="cite" href="#ref-5">[5]</a>.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy quyền lực Myanmar</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống &amp; quân đội (Tatmadaw)</span>
+          <span class="tier-desc">Min Aung Hlaing giữ chức Tổng thống từ 4/2026; quân đội vẫn là trung tâm quyền lực thực chất theo Hiến pháp 2008</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội Liên bang (Pyidaungsu Hluttaw)</span>
+          <span class="tier-desc">Lưỡng viện, 25% ghế mặc định do quân đội bổ nhiệm; sau bầu cử 2025–26 do USDP kiểm soát đa số ghế dân cử</span>
+        </li>
+        <li>
+          <span class="tier-role">7 vùng, 7 bang &amp; 1 lãnh thổ liên bang</span>
+          <span class="tier-desc">Chia theo dân tộc đa số (bang) và vùng người Bamar chiếm đa số (vùng); Naypyidaw là lãnh thổ liên bang</span>
+        </li>
+        <li>
+          <span class="tier-role">Chính quyền song song trên thực địa</span>
+          <span class="tier-desc">Chính phủ Thống nhất Quốc gia (NUG) lưu vong và nhiều tổ chức vũ trang sắc tộc kiểm soát thực tế nhiều vùng lãnh thổ</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Hiến pháp 2008</b>
+        Bản hiến pháp do chính quyền quân sự soạn thảo dành riêng 25% ghế quốc hội cho quân đội bổ nhiệm và trao quyền phủ quyết mọi sửa đổi hiến pháp cho quân đội — điều khiến giới quan sát cho rằng nền dân chủ 2011–2021 chưa bao giờ thực sự hoàn chỉnh.
+      </aside>
+
+      <p>Về danh nghĩa, Myanmar là nhà nước cộng hòa liên bang với Tổng thống là nguyên thủ quốc gia kiêm người đứng đầu hành pháp, cùng quốc hội lưỡng viện gồm Hạ viện (Pyithu Hluttaw) và Thượng viện (Amyotha Hluttaw). Nhưng theo Hiến pháp 2008, quân đội luôn nắm sẵn ba bộ chủ chốt (Quốc phòng, Nội vụ, Biên giới) và 25% ghế quốc hội mà không cần bầu cử — đủ để phủ quyết bất kỳ sửa đổi hiến pháp nào.</p>
+
+      <p>Sau đảo chính 2021, quyền lực thực tế tập trung vào tay <span class="nv" data-note="Xem chú thích ở phần Lịch sử.">Min Aung Hlaing</span>, người điều hành đất nước qua Hội đồng Hành chính Nhà nước (SAC) trước khi chính thức trở thành Tổng thống ngày <span class="tg">3/4/2026</span> qua Đại cử tri đoàn Tổng thống — một cơ chế gồm nghị sĩ dân cử và nghị sĩ do quân đội bổ nhiệm<a class="cite" href="#ref-5">[5]</a>. Cùng thời điểm, Aung San Suu Kyi — vẫn đang thụ án tù nhiều năm với hàng loạt cáo buộc mà giới quan sát quốc tế cho là mang động cơ chính trị — được chuyển từ nhà tù sang quản thúc tại gia, một động thái nhiều nhà phân tích cho là nỗ lực cải thiện hình ảnh quốc tế của chính quyền<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Về hành chính địa phương, Myanmar chia thành 7 vùng (nơi người Bamar chiếm đa số) và 7 bang (mang tên các dân tộc thiểu số chính, như Shan, Kachin, Karen, Rakhine, Mon, Chin, Kayah), cộng thêm lãnh thổ liên bang Naypyidaw. Nhưng trên thực địa, ranh giới quyền lực thật sự không trùng với bản đồ hành chính: nhiều vùng bang do các tổ chức vũ trang sắc tộc hoặc chính quyền song song của phe kháng chiến kiểm soát.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Thời thuộc Anh, Miến Điện từng là nước xuất khẩu gạo lớn nhất thế giới và một trong những nền kinh tế giàu có nhất Đông Nam Á. Chính sách quốc hữu hóa và tự cô lập sau đảo chính 1962 đẩy đất nước vào suy thoái kéo dài; đợt mở cửa 2011–2020 mang lại tăng trưởng nhanh nhưng ngắn ngủi, bị cắt đứt bởi đảo chính 2021, đại dịch COVID-19 và các lệnh trừng phạt phương Tây tái áp đặt.</p>
+
+      <p>GDP hiện ước đạt khoảng <span class="tg">83,8 tỷ USD</span>, tương đương GDP bình quân đầu người danh nghĩa chỉ khoảng <span class="tg">1.519 USD</span> — hoặc khoảng 5.315 USD nếu tính theo sức mua tương đương<a class="cite" href="#ref-2">[2]</a>, thuộc nhóm thấp nhất Đông Nam Á. Nông nghiệp (lúa gạo, đậu, mè) vẫn là trụ cột sinh kế của phần lớn dân số, trong khi khí đốt tự nhiên xuất khẩu qua các đường ống sang Thái Lan và Trung Quốc là nguồn ngoại tệ quan trọng nhất của chính quyền quân sự.</p>
+
+      <p>Ngành đá quý là một chương đặc biệt: Myanmar cung cấp phần lớn ngọc bích (jade) chất lượng cao cho thị trường thế giới, chủ yếu khai thác tại mỏ Hpakant ở bang Kachin, nhưng ngành này từ lâu gắn liền với lao động nguy hiểm, buôn lậu qua biên giới Trung Quốc và nguồn thu nuôi dưỡng xung đột vũ trang<a class="cite" href="#ref-7">[7]</a>. Ngành may mặc — từng là nguồn việc làm và ngoại tệ lớn nhờ đơn hàng từ châu Âu — suy giảm mạnh sau đảo chính vì bất ổn và lệnh trừng phạt. Đồng kyat mất giá nghiêm trọng, lạm phát cao và tỷ lệ nghèo được Liên Hợp Quốc ước tính đã tăng gấp đôi kể từ 2021.</p>
+
+      <p>Một mảng kinh tế "ngầm" gây chấn động toàn cầu trong hai năm gần đây là các <span class="tg">"thành phố lừa đảo"</span> mọc lên dọc biên giới Thái Lan, nơi hàng chục nghìn người từ khắp châu Á bị lừa hoặc cưỡng ép lao động cho các đường dây lừa đảo trực tuyến quy mô hàng tỷ USD, núp bóng các đặc khu kinh tế trong vùng do dân quân biên giới kiểm soát. Sức ép quốc tế, lệnh trừng phạt của Mỹ và các chiến dịch phối hợp với Trung Quốc, Thái Lan đã dẫn tới nhiều cuộc truy quét và giải cứu quy mô lớn trong năm 2025 – 2026, nhưng vấn đề vẫn chưa được giải quyết triệt để<a class="cite" href="#ref-8">[8]</a>.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Phật giáo Theravada thấm sâu vào mọi mặt đời sống Myanmar: gần như thị trấn nào cũng có chùa, và giới tăng lữ (sangha) giữ vai trò trung tâm cả về tôn giáo lẫn chính trị — chính các nhà sư đã dẫn đầu cuộc nổi dậy 1988 và Cách mạng Yên bào 2007. Một nghi lễ quan trọng trong đời sống nam giới Bamar là <span class="nv" data-note="Nghi lễ xuất gia tạm thời, thường diễn ra khi bé trai còn nhỏ tuổi, được xem như một cột mốc trưởng thành quan trọng trong văn hóa Phật giáo Myanmar.">shinbyu</span> — xuất gia tạm thời tại chùa để tích đức và trải nghiệm đời sống tu hành.</p>
+
+      <p>Về tâm lý xã hội, người Myanmar thường được mô tả là coi trọng thứ bậc, sự nhẫn nại và việc "tích đức" (làm việc thiện để tích lũy phước báu) hơn là tích lũy vật chất tức thời. Tên gọi của người Bamar thường không có họ, chỉ gồm tên riêng — nhiều khi được đặt theo ngày trong tuần lúc sinh theo truyền thống chiêm tinh cổ. Bên cạnh đó, ý thức tự hào dân tộc mạnh mẽ của người Bamar đôi khi mâu thuẫn với khát vọng tự trị của hơn một trăm dân tộc thiểu số khác — một trong những căn nguyên sâu xa nhất của các cuộc xung đột vũ trang chưa dứt.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Lahpet — món ăn độc nhất</b>
+        Myanmar được cho là nơi duy nhất trên thế giới ăn lá trà lên men như một món ăn (lahpet) thay vì chỉ pha uống — một dấu ấn ẩm thực không nơi nào khác có.
+      </aside>
+
+      <p>Ẩm thực Myanmar là điểm giao thoa giữa ba nền ẩm thực lớn của châu Á: cà ri nhiều dầu kiểu Ấn Độ, mì và xào kiểu Trung Hoa, cùng các loại gia vị và rau thơm gần với Thái Lan — nhưng vẫn giữ những nét rất riêng, tiêu biểu là văn hóa ăn lá trà lên men. Bữa ăn truyền thống thường xoay quanh cơm, một món cà ri chính ("hin"), canh chua nhẹ và đĩa rau sống chấm nước mắm cá lên men (nga-pi).</p>
+
+      <p>Miền trung khô (Mandalay, Bagan) thiên về các món cà ri đậm dầu; vùng cao nguyên Shan chịu ảnh hưởng ẩm thực Vân Nam với các món mì, đậu và rau thảo mộc thanh nhẹ hơn; vùng duyên hải Rakhine và Mon nghiêng về hải sản và vị cay nồng đặc trưng.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món ăn &amp; thức uống tiêu biểu</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Mohinga</span><span class="pick-desc">Súp bún cá da trơn nấu với sả và bột đậu chiên giòn — món quốc thực, thường ăn vào bữa sáng.</span></li>
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Lahpet thoke</span><span class="pick-desc">Gỏi lá trà lên men trộn tỏi chiên, đậu và vừng — món ăn được xem là biểu tượng hiếu khách của người Miến.</span></li>
+        <li><span class="pick-where">Bang Shan</span><span class="pick-name">Mì Shan</span><span class="pick-desc">Sợi mì gạo dai ăn kèm thịt gà hoặc lợn băm, nước dùng thanh nhẹ chịu ảnh hưởng Vân Nam.</span></li>
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Ohn no khao swe</span><span class="pick-desc">Mì gà nấu nước cốt dừa, phủ hành phi và ớt khô — món ăn quen thuộc trong dịp lễ.</span></li>
+        <li><span class="pick-where">Mandalay</span><span class="pick-name">Mee shay</span><span class="pick-desc">Mì trộn thịt bò hầm và đậu phụ, đặc sản của cố đô Mandalay.</span></li>
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Nan gyi thoke</span><span class="pick-desc">Bún gạo dày trộn cà ri gà, trứng luộc và hành phi.</span></li>
+        <li><span class="pick-where">Bang Rakhine</span><span class="pick-name">Mont di</span><span class="pick-desc">Bún cá cay đặc trưng vùng duyên hải Rakhine, đậm vị hơn mohinga.</span></li>
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Samosa thoke</span><span class="pick-desc">Sa-mô-sa cắt nhỏ trộn bắp cải, bạc hà và nước sốt cà ri — món ăn vặt phổ biến ven đường.</span></li>
+        <li><span class="pick-where">Toàn quốc</span><span class="pick-name">Trà sữa Miến Điện</span><span class="pick-desc">Trà đen pha sữa đặc, uống kèm trà xanh miễn phí ("yay nway gyan") tại các quán trà vỉa hè.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Văn hóa quán trà (tea shop) là trung tâm đời sống xã hội Myanmar — nơi đàn ông tụ họp đọc báo, bàn chuyện thời sự bên tách trà sữa đặc và trà xanh miễn phí rót liên tục. Song song đó, tục nhai trầu cau (kun-ya) vẫn phổ biến rộng rãi, để lại những vệt đỏ quen thuộc trên vỉa hè khắp đất nước dù ngày càng bị cảnh báo về nguy cơ sức khỏe.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Lưu ý an toàn</b>
+        Do nội chiến vẫn tiếp diễn ở nhiều vùng bang, một số điểm đến lịch sử (như cố đô Mrauk U ở bang Rakhine) hiện rất khó hoặc không thể tiếp cận với du khách.
+      </aside>
+
+      <p>Myanmar hiện có <span class="tg">2 di sản thế giới</span> được UNESCO công nhận — quần thể thành cổ Pyu (2014) và khu di tích Bagan (2019)<a class="cite" href="#ref-9">[9]</a> — bên cạnh vô số ngôi chùa vàng, hồ nước và thị trấn thời thuộc địa còn nguyên vẹn.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Myanmar</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Yangon</span><span class="pick-name">Chùa Shwedagon</span><span class="pick-desc">Ngôi chùa vàng linh thiêng nhất Myanmar, theo truyền thuyết lưu giữ xá lợi tóc Đức Phật, sáng rực trên nền trời Yangon.</span></li>
+        <li><span class="pick-where">Vùng Mandalay</span><span class="pick-name">Bagan</span><span class="pick-desc">Hơn 2.000 đền chùa cổ trải trên đồng bằng ven sông Irrawaddy — di sản UNESCO 2019.</span></li>
+        <li><span class="pick-where">Bang Shan</span><span class="pick-name">Hồ Inle</span><span class="pick-desc">Làng chài nổi và ngư dân chèo thuyền bằng chân nổi tiếng thế giới, giữa cao nguyên Shan.</span></li>
+        <li><span class="pick-where">Vùng Mandalay</span><span class="pick-name">Mandalay &amp; chùa Kuthodaw</span><span class="pick-desc">Cố đô cuối cùng của triều Konbaung; Kuthodaw lưu giữ "cuốn sách lớn nhất thế giới" khắc trên 729 phiến đá.</span></li>
+        <li><span class="pick-where">Vùng Bago / Magway</span><span class="pick-name">Thành cổ Pyu</span><span class="pick-desc">Ba di chỉ thành cổ Sri Ksetra, Beikthano, Halin — di sản UNESCO 2014, minh chứng văn minh Pyu.</span></li>
+        <li><span class="pick-where">Bang Mon</span><span class="pick-name">Chùa Đá Vàng (Kyaiktiyo)</span><span class="pick-desc">Tảng đá mạ vàng chênh vênh trên vách núi, một trong những địa điểm hành hương linh thiêng nhất nước.</span></li>
+        <li><span class="pick-where">Lãnh thổ liên bang</span><span class="pick-name">Naypyidaw</span><span class="pick-desc">Thủ đô được xây mới hoàn toàn từ 2005 giữa vùng đồng bằng, nổi tiếng với đại lộ 20 làn xe gần như vắng bóng người.</span></li>
+        <li><span class="pick-where">Vùng Rakhine</span><span class="pick-name">Bãi biển Ngapali</span><span class="pick-desc">Bãi biển cát trắng ven vịnh Bengal, điểm nghỉ dưỡng biển nổi tiếng nhất Myanmar.</span></li>
+        <li><span class="pick-where">Bang Shan</span><span class="pick-name">Kalaw &amp; động Pindaya</span><span class="pick-desc">Thị trấn cao nguyên thời thuộc địa và hang động chứa hàng nghìn tượng Phật.</span></li>
+        <li><span class="pick-where">Bang Kayin</span><span class="pick-name">Hpa-An</span><span class="pick-desc">Vùng núi đá vôi karst và hang động linh thiêng ven sông Thanlwin, ít khách du lịch hơn nhưng cảnh quan ngoạn mục.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Đồng thuận 5 điểm ASEAN</b>
+        Thỏa thuận ASEAN đạt được ngay sau đảo chính 2021, yêu cầu chấm dứt bạo lực và đối thoại toàn diện. Đến nay Myanmar vẫn bị loại khỏi các hội nghị thượng đỉnh cấp lãnh đạo vì chưa thực hiện.
+      </aside>
+
+      <p>Kể từ đảo chính 2021, Myanmar bị loại khỏi các hội nghị thượng đỉnh cấp lãnh đạo của ASEAN theo "chính sách không đại diện chính trị", dù các cuộc gặp cấp ngoại trưởng vẫn tiếp diễn rải rác. Chính quyền quân sự nhiều lần bác bỏ lời kêu gọi trả tự do cho Aung San Suu Kyi và đối thoại với phe đối lập, khiến tiến trình hòa giải theo <span class="nv" data-note="Thỏa thuận 5 điểm ASEAN thông qua tháng 4/2021, kêu gọi chấm dứt ngay bạo lực, đối thoại giữa các bên, cử đặc phái viên ASEAN và cho phép viện trợ nhân đạo.">Đồng thuận 5 điểm</span> của ASEAN gần như đóng băng<a class="cite" href="#ref-10">[10]</a>.</p>
+
+      <p>Nội chiến bùng phát từ đảo chính 2021 đã cướp đi ít nhất khoảng 90.000 sinh mạng và khiến hơn 3,2 triệu người phải rời bỏ nhà cửa<a class="cite" href="#ref-11">[11]</a>. Bản đồ kiểm soát lãnh thổ ngày càng phân mảnh: quân đội vẫn giữ các đô thị lớn, trong khi Chính phủ Thống nhất Quốc gia (NUG), các lực lượng dân quân và nhiều tổ chức vũ trang sắc tộc — như Liên minh Ba Anh em ở phía bắc — kiểm soát phần lớn vùng nông thôn và biên giới sau chiến dịch "Operation 1027" năm 2023, dù quân đội đã giành lại một số khu vực từ cuối 2025.</p>
+
+      <p>Song song đó, khủng hoảng Rohingya bước sang năm thứ chín vẫn chưa có lối thoát: khoảng một triệu người Rohingya tiếp tục sống trong các trại tị nạn ở Bangladesh, trong khi ngân sách viện trợ quốc tế bị cắt giảm mạnh<a class="cite" href="#ref-12">[12]</a>. Tại bang Rakhine, lực lượng vũ trang Arakan Army — vốn đang giao tranh với quân đội chính phủ — nay kiểm soát phần lớn lãnh thổ và cũng bị cáo buộc có hành vi bạo lực nhắm vào chính cộng đồng Rohingya, khiến tình hình nhân đạo tại đây trở nên phức tạp hơn bao giờ hết.</p>
+
+      <p>Vấn đề gây chú ý toàn cầu nhất năm 2025 – 2026 có lẽ là các "thành phố lừa đảo" dọc biên giới Myanmar – Thái Lan, nơi hàng chục nghìn nạn nhân buôn người bị cưỡng bức vận hành các đường dây lừa đảo trực tuyến nhắm vào nạn nhân khắp thế giới. Sức ép từ Mỹ, Trung Quốc và Thái Lan đã dẫn tới nhiều đợt truy quét và giải cứu quy mô lớn, nhưng tình trạng vô luật pháp ở các vùng biên giới do dân quân kiểm soát khiến vấn đề khó dứt điểm<a class="cite" href="#ref-8">[8]</a>. Trong bối cảnh bị phương Tây cô lập và trừng phạt, Myanmar ngày càng phụ thuộc vào Trung Quốc về kinh tế và ngoại giao — một xu hướng được dự báo sẽ còn sâu sắc thêm sau khi Min Aung Hlaing củng cố quyền lực qua chức Tổng thống.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Myanmar</h2>
+      <ol class="funs">
+        <li><b>Lái xe bên phải, vô lăng cũng bên phải.</b> Năm 1970, tướng Ne Win bất ngờ ra lệnh chuyển từ lái xe bên trái sang bên phải chỉ sau một đêm, nhưng phần lớn ô tô nhập từ Nhật vẫn có vô lăng bên phải — khiến Myanmar trở thành một trong số ít nước trên thế giới có nghịch lý giao thông này.</li>
+        <li><b>Đổi tên đất nước năm 1989.</b> Chính quyền quân sự đổi tên chính thức từ "Burma" sang "Myanmar" và "Rangoon" sang "Yangon", một quyết định đến nay một số chính phủ phương Tây vẫn tranh cãi có nên công nhận hay không.</li>
+        <li><b>Cuốn "sách" lớn nhất thế giới.</b> Chùa Kuthodaw ở Mandalay lưu giữ toàn bộ kinh Tam Tạng Phật giáo khắc trên 729 phiến đá cẩm thạch, mỗi phiến đặt trong một tháp nhỏ riêng — được ví như trang sách khổng lồ bằng đá.</li>
+        <li><b>Hơn 2.000 ngôi đền trên một cánh đồng.</b> Bagan từng có tới hơn 10.000 công trình Phật giáo ở thời hoàng kim thế kỷ XI–XIII; hơn 2.000 công trình còn tồn tại là một trong những quần thể kiến trúc tôn giáo dày đặc nhất hành tinh.</li>
+        <li><b>Thủ đô bí ẩn giữa rừng.</b> Naypyidaw được xây dựng bí mật từ năm 2005 theo lệnh chính quyền quân sự, với đại lộ rộng tới 20 làn xe nhưng thường vắng bóng người qua lại.</li>
+        <li><b>Nội chiến gần như chưa từng ngừng.</b> Xung đột vũ trang giữa chính quyền trung ương và các lực lượng sắc tộc bùng nổ gần như ngay sau độc lập 1948 và tiếp diễn đến hôm nay — một trong những cuộc nội chiến kéo dài nhất còn hoạt động trên thế giới.</li>
+        <li><b>Cường quốc ngọc bích.</b> Myanmar cung cấp phần lớn nguồn ngọc bích (jade) chất lượng cao cho thị trường thế giới, chủ yếu từ mỏ Hpakant ở bang Kachin — nhưng ngành này gắn liền với lao động nguy hiểm và tài trợ xung đột.</li>
+        <li><b>Thanaka — mỹ phẩm 2.000 năm tuổi.</b> Lớp bột vàng nhạt nghiền từ vỏ cây thanaka được phụ nữ và trẻ em khắp Myanmar thoa lên mặt mỗi ngày, vừa làm đẹp vừa chống nắng — một tập tục đã tồn tại hơn hai thiên niên kỷ.</li>
+        <li><b>Không họ, chỉ có tên.</b> Phần lớn người Bamar không mang họ; tên gọi đầy đủ chỉ gồm tên riêng, nhiều khi được đặt theo ngày trong tuần lúc chào đời theo truyền thống chiêm tinh.</li>
+        <li><b>Món ăn duy nhất làm từ lá trà.</b> Lahpet thoke — gỏi lá trà lên men — khiến Myanmar có thể là quốc gia duy nhất trên thế giới coi lá trà là một món ăn chứ không chỉ để pha uống.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Myanmar rộng <span class="tg">676.578 km²</span> — lớn nhất Đông Nam Á lục địa — dân số khoảng <span class="tg">55,8 triệu</span>, với 135 dân tộc được công nhận.</li>
+        <li>Lịch sử xoay quanh trục: các thành bang Pyu → vương triều Pagan <span class="tg">1044–1287</span> → Taungoo, Konbaung → Anh thôn tính 1885 → độc lập <span class="tg">1948</span> → đảo chính 1962 → 8888 (1988) → đảo chính <span class="tg">2021</span>.</li>
+        <li>Nội chiến bùng nổ gần như ngay sau độc lập 1948 và vẫn tiếp diễn — hơn 90.000 người chết, hơn 3,2 triệu người mất nhà cửa kể từ 2021.</li>
+        <li>Bầu cử 2025–26 đưa USDP (do quân đội hậu thuẫn) lên nắm đa số quốc hội; <span class="tg">Min Aung Hlaing</span> trở thành Tổng thống ngày 3/4/2026.</li>
+        <li>GDP/người chỉ khoảng <span class="tg">1.519 USD</span> danh nghĩa — thuộc nhóm thấp nhất Đông Nam Á; kinh tế phụ thuộc khí đốt, nông nghiệp và ngọc bích.</li>
+        <li>Phật giáo Theravada (~88% dân số) là trục văn hóa trung tâm; ẩm thực nổi bật với mohinga và lahpet thoke — món duy nhất ăn lá trà lên men.</li>
+        <li>Chỉ có 2 di sản UNESCO (Bagan, thành cổ Pyu) nhưng cảnh quan tôn giáo (Shwedagon, hồ Inle) là biểu tượng quốc tế của đất nước.</li>
+        <li>Khủng hoảng Rohingya bước sang năm thứ chín; các "thành phố lừa đảo" biên giới Thái Lan là vấn đề an ninh khu vực nóng nhất 2025–2026.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Vương triều Pagan sụp đổ sau sự kiện nào, và vào năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Sau cuộc xâm lược của quân Mông Cổ năm 1287, mở ra hai thế kỷ phân liệt giữa các tiểu vương quốc.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Vì sao nội chiến Myanmar được xem là một trong những cuộc nội chiến kéo dài nhất thế giới?</p>
+          <details><summary>Xem đáp án</summary><p>Vì xung đột vũ trang giữa chính quyền trung ương và các lực lượng sắc tộc bùng nổ gần như ngay sau độc lập năm 1948 và chưa từng chấm dứt hoàn toàn cho đến nay.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Cuộc đảo chính quân sự gần nhất diễn ra khi nào, và ai bị bắt giữ?</p>
+          <details><summary>Xem đáp án</summary><p>Ngày 1/2/2021, quân đội bắt giữ Aung San Suu Kyi cùng lãnh đạo đảng NLD, lật đổ chính phủ dân cử.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Ai trở thành Tổng thống Myanmar vào tháng 4/2026, và qua cơ chế nào?</p>
+          <details><summary>Xem đáp án</summary><p>Min Aung Hlaing, được Đại cử tri đoàn Tổng thống (gồm nghị sĩ dân cử và nghị sĩ do quân đội bổ nhiệm) bầu ngày 3/4/2026, sau cuộc bầu cử 2025–26 do USDP thắng áp đảo.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Kể tên hai di sản thế giới UNESCO của Myanmar.</p>
+          <details><summary>Xem đáp án</summary><p>Quần thể thành cổ Pyu (công nhận năm 2014) và khu di tích Bagan (công nhận năm 2019).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Món lahpet thoke có gì đặc biệt so với ẩm thực các nước khác?</p>
+          <details><summary>Xem đáp án</summary><p>Đây là món gỏi làm từ lá trà lên men — Myanmar có thể là quốc gia duy nhất trên thế giới coi lá trà là một món ăn thay vì chỉ dùng để pha uống.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Myanmar</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu diện tích, dân số ước tính, cơ cấu tôn giáo và dân tộc). <a href="https://en.wikipedia.org/wiki/Myanmar" target="_blank" rel="noopener">en.wikipedia.org/wiki/Myanmar</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-2">Worldometer / IMF. <i>Myanmar GDP (2026)</i>. Tổng hợp số liệu GDP danh nghĩa và GDP/người theo Quỹ Tiền tệ Quốc tế. <a href="https://www.worldometers.info/gdp/myanmar-gdp/" target="_blank" rel="noopener">worldometers.info/gdp/myanmar-gdp</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-3">NPR. <i>Myanmar's earthquake death toll jumps to more than 1,600</i> &amp; các cập nhật liên quan. Tháng 3–4/2025. <a href="https://www.npr.org/2025/03/29/g-s1-57121/myanmar-earthquake-death-toll-jumps" target="_blank" rel="noopener">npr.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-4">Wikipedia contributors. <i>2025–26 Myanmar general election</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2025%E2%80%9326_Myanmar_general_election" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-5">Wikipedia contributors. <i>2026 Myanmar presidential election</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2026_Myanmar_presidential_election" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-6">CNN / Al Jazeera. <i>Myanmar's detained former leader Aung San Suu Kyi moved to house arrest</i>. Tháng 4/2026. <a href="https://www.cnn.com/2026/04/30/asia/myanmar-suu-kyi-house-arrest-intl-hnk" target="_blank" rel="noopener">cnn.com</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-7">Global Witness. <i>Jade and Conflict: Myanmar's Vicious Circle</i>. Báo cáo điều tra ngành ngọc bích Myanmar. <a href="https://www.globalwitness.org/en/campaigns/natural-resource-governance/jade-and-conflict-myanmars-vicious-circle/" target="_blank" rel="noopener">globalwitness.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-8">Indo-Pacific Defense FORUM / U.S. Department of the Treasury. <i>Thousands still trapped in Myanmar scam centers; U.S. targets money laundering operations</i>. Tháng 7/2026. <a href="https://ipdefenseforum.com/2026/07/thousands-still-trapped-in-myanmar-scam-centers-u-s-targets-money-laundering-operations/" target="_blank" rel="noopener">ipdefenseforum.com</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-9">UNESCO World Heritage Centre. <i>Myanmar — States Parties</i> (danh sách di sản thế giới được công nhận). <a href="https://whc.unesco.org/en/statesparties/mm" target="_blank" rel="noopener">whc.unesco.org/en/statesparties/mm</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-10">The Diplomat. <i>Myanmar Leader Criticizes Five-Point Consensus, Accuses ASEAN of 'Discrimination'</i> và các bài liên quan. Tháng 7–8/2026. <a href="https://thediplomat.com/2026/08/myanmar-leader-criticizes-five-point-consensus-accuses-asean-of-discrimination/" target="_blank" rel="noopener">thediplomat.com</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-11">Wikipedia contributors. <i>Myanmar civil war (2021–present)</i>. Wikipedia, Bách khoa toàn thư mở (số liệu thương vong, di dời và kiểm soát lãnh thổ dẫn theo ACLED, AAPP, Liên Hợp Quốc). <a href="https://en.wikipedia.org/wiki/Myanmar_civil_war_(2021%E2%80%93present)" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+        <li id="ref-12">NPR. <i>'Forget about going back': 9 years on, Rohingya crisis enters dangerous phase</i>. Tháng 8/2026. <a href="https://www.npr.org/2026/08/25/g-s1-140007/forget-about-going-back-9-years-on-rohingya-crisis-enters-dangerous-phase" target="_blank" rel="noopener">npr.org</a><span class="ref-meta">Truy cập ngày 18/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, thương vong chiến sự, số người tị nạn) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Các chi tiết còn tranh cãi hoặc nhạy cảm chính trị — như tính chính danh của bầu cử 2025–26, trách nhiệm trong khủng hoảng Rohingya hay niên đại thời Pyu — được trình bày ở mức khái quát, có ghi chú, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
