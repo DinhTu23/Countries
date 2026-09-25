@@ -1,0 +1,1135 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Nhật Bản — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Nhật Bản</div>
+          <h1>Nhật Bản</h1>
+          <div class="period">Châu Á · Đông Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Nhật Bản (Nhật Chương kỳ): nền trắng, hình tròn đỏ ở chính giữa">
+            <rect width="30" height="20" fill="#ffffff"/>
+            <circle cx="15" cy="10" r="6" fill="#bc002d"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Nhật Bản là một quần đảo núi lửa nằm ở rìa đông của châu Á, nơi hơn 120 triệu người sống dồn vào những dải đồng bằng ven biển hẹp, giữa động đất, bão và biển. Từ một xã hội võ sĩ đóng cửa hơn hai thế kỷ, nước này chỉ mất vài thập kỷ sau năm 1868 để trở thành cường quốc công nghiệp, rồi dựng lại từ đống tro tàn năm 1945 để thành một trong những nền kinh tế lớn nhất thế giới. Ngày nay Nhật Bản là nước già nhất hành tinh, đang nhập khẩu lao động nước ngoài nhiều chưa từng có và vừa trao cho nữ thủ tướng đầu tiên của mình một thắng lợi bầu cử mang tính kỷ lục. Nếu chỉ nhớ một điều về Nhật Bản, hãy nhớ: đây là nơi truyền thống và đổi mới không thay thế nhau mà cùng tồn tại — Thiên hoàng nghìn năm tuổi và tàu Shinkansen, đền Thần đạo và robot, kimono và anime.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">377.975 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~122,95 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 1/1/2026</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Tokyo (Đông Kinh)</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Nhật</span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Thần đạo &amp; Phật giáo<small>thường đan xen trong đời sống<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Yên (¥, JPY)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~35.700 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính 2026</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~14.000 – 300 TCN</span>
+          <span class="tl-what">Thời Jōmon</span>
+          <span class="tl-note">Cư dân săn bắt hái lượm làm ra một số loại gốm cổ nhất thế giới, in hoa văn dây thừng</span>
+        </li>
+        <li>
+          <span class="tl-when">~300 TCN</span>
+          <span class="tl-what">Thời Yayoi</span>
+          <span class="tl-note">Lúa nước và kim loại từ lục địa vào quần đảo, làng xóm định cư hình thành</span>
+        </li>
+        <li>
+          <span class="tl-when">TK III – VI</span>
+          <span class="tl-what">Thời Kofun &amp; triều đình Yamato</span>
+          <span class="tl-note">Những gò mộ hình lỗ khóa khổng lồ; triều đình Yamato hợp nhất dần các thủ lĩnh địa phương</span>
+        </li>
+        <li>
+          <span class="tl-when">710 · 794</span>
+          <span class="tl-what">Nara rồi Heian</span>
+          <span class="tl-note">Xây kinh đô theo mô hình Trường An, sau đó dời đến Heian-kyō (Kyoto), nơi giữ ngôi đô hơn một nghìn năm</span>
+        </li>
+        <li>
+          <span class="tl-when">1185 – 1192</span>
+          <span class="tl-what">Mạc phủ Kamakura</span>
+          <span class="tl-note">Minamoto no Yoritomo lập chính quyền võ sĩ, mở đầu gần bảy thế kỷ shōgun nắm thực quyền</span>
+        </li>
+        <li>
+          <span class="tl-when">1274 · 1281</span>
+          <span class="tl-what">Hai lần Mông Cổ xâm lược</span>
+          <span class="tl-note">Hạm đội nhà Nguyên bị đẩy lui, phần lớn nhờ bão và sức kháng cự của võ sĩ</span>
+        </li>
+        <li>
+          <span class="tl-when">1467 – 1590</span>
+          <span class="tl-what">Chiến Quốc (Sengoku)</span>
+          <span class="tl-note">Loạn Ōnin khởi đầu thế kỷ nội chiến; Oda, Toyotomi và Tokugawa lần lượt thống nhất đất nước</span>
+        </li>
+        <li>
+          <span class="tl-when">1603</span>
+          <span class="tl-what">Mạc phủ Edo</span>
+          <span class="tl-note">Tokugawa Ieyasu nhận chức shōgun; hơn 250 năm hòa bình và đóng cửa tương đối</span>
+        </li>
+        <li>
+          <span class="tl-when">1853 – 1854</span>
+          <span class="tl-what">Tàu đen của Perry</span>
+          <span class="tl-note">Hải quân Mỹ buộc Nhật mở cửa, làm rung chuyển thể chế Tokugawa</span>
+        </li>
+        <li>
+          <span class="tl-when">1868</span>
+          <span class="tl-what">Minh Trị Duy tân</span>
+          <span class="tl-note">Chính quyền trả về cho Thiên hoàng; Nhật hiện đại hóa nhanh chóng theo mô hình phương Tây</span>
+        </li>
+        <li>
+          <span class="tl-when">1894 – 1905</span>
+          <span class="tl-what">Thắng Trung Hoa và Nga</span>
+          <span class="tl-note">Nhật trở thành cường quốc thực dân đầu tiên của châu Á, sáp nhập Đài Loan rồi Triều Tiên</span>
+        </li>
+        <li>
+          <span class="tl-when">1931 – 1945</span>
+          <span class="tl-what">Chiến tranh châu Á – Thái Bình Dương</span>
+          <span class="tl-note">Từ sự kiện Mãn Châu đến Trân Châu Cảng (1941); hai quả bom nguyên tử tháng 8/1945, Nhật đầu hàng</span>
+        </li>
+        <li>
+          <span class="tl-when">1947</span>
+          <span class="tl-what">Hiến pháp hòa bình</span>
+          <span class="tl-note">Thiên hoàng thành biểu tượng; Điều 9 từ bỏ chiến tranh làm công cụ giải quyết tranh chấp</span>
+        </li>
+        <li>
+          <span class="tl-when">1964</span>
+          <span class="tl-what">Olympic Tokyo &amp; Shinkansen</span>
+          <span class="tl-note">Tàu cao tốc đầu tiên thế giới và Thế vận hội tuyên bố Nhật trở lại sân khấu quốc tế</span>
+        </li>
+        <li>
+          <span class="tl-when">1990 – 1991</span>
+          <span class="tl-what">Bong bóng vỡ</span>
+          <span class="tl-note">Giá đất và cổ phiếu sụp đổ, mở đầu những “thập niên mất mát” của giảm phát</span>
+        </li>
+        <li>
+          <span class="tl-when">11/3/2011</span>
+          <span class="tl-what">Tam trùng tai họa Tōhoku</span>
+          <span class="tl-note">Động đất, sóng thần và sự cố hạt nhân Fukushima làm gần 20.000 người chết và mất tích</span>
+        </li>
+        <li>
+          <span class="tl-when">10/2025 – 2/2026</span>
+          <span class="tl-what">Kỷ nguyên Takaichi</span>
+          <span class="tl-note">Nữ thủ tướng đầu tiên nhậm chức; đảng cầm quyền thắng lớn ở cuộc bầu cử hạ viện ngày 8/2/2026</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại thời Jōmon và Yayoi là ước lệ và còn được các nhà khảo cổ điều chỉnh. Ngày Nhật đầu hàng thường được tính là 15/8/1945 (Thiên hoàng phát thanh) hoặc 2/9/1945 (ký văn kiện đầu hàng).</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Về số liệu dân số</b>
+        Con số 122,95 triệu là ước tính đầu năm 2026. Niên giám thống kê chính thức ghi 123,80 triệu cho năm 2024 và điều tra dân số 2020 ghi 126,15 triệu. Ba mốc khác nhau vì dân số Nhật đang giảm mỗi năm.
+      </aside>
+
+      <p class="lede">Nhật Bản là một chuỗi đảo cong như cánh cung ngoài khơi bờ đông lục địa châu Á, phía bắc gặp biển Okhotsk, phía tây là biển Nhật Bản và phía đông mở ra Thái Bình Dương.</p>
+
+      <p>Nước này rộng khoảng <span class="tg">377.975 km²</span><a class="cite" href="#ref-1">[1]</a>, lớn hơn Đức một chút nhưng có ba phần tư là đồi núi nên người dân chỉ ở được trên những dải đồng bằng nhỏ dọc bờ biển. Bốn đảo chính là <span class="nv" data-note="Hokkaidō ở phía bắc, Honshū là đảo lớn nhất và nơi có Tokyo, Kyoto, Osaka; Shikoku và Kyūshū ở phía nam.">Hokkaidō, Honshū, Shikoku và Kyūshū</span>, cùng hàng nghìn đảo nhỏ trải xuống tận Okinawa. Địa chất là chìa khóa để hiểu đất nước này: Nhật nằm trên vành đai lửa Thái Bình Dương, nên núi lửa, suối nước nóng và động đất là chuyện thường ngày, còn tiêu chuẩn xây dựng chống động đất thuộc loại nghiêm ngặt nhất thế giới.</p>
+
+      <p>Dân số ước tính vào khoảng <span class="tg">122,95 triệu</span> người<a class="cite" href="#ref-1">[1]</a>, tập trung mạnh ở vành đai Tokyo – Osaka. Riêng Tokyo có khoảng <span class="tg">14,05 triệu</span> dân, cả nước chia thành <span class="tg">47 tỉnh</span> (gọi chung là todōfuken), và mật độ bình quân khoảng 338 người/km²<a class="cite" href="#ref-2">[2]</a>. Cấu trúc tuổi là điểm nhấn: người từ 65 tuổi trở lên chiếm khoảng <span class="tg">29,3%</span> dân số, trẻ em dưới 15 tuổi chỉ chiếm 11,2%. Năm 2024 nước này có khoảng 686.000 ca sinh, tỷ suất sinh 1,15 con/phụ nữ, còn tuổi thọ trung bình là 81,09 năm với nam và 87,13 năm với nữ<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Dù vẫn đồng nhất về sắc tộc so với nhiều nước, Nhật đang thay đổi. Tính đến cuối năm 2025 có <span class="tg">4.125.395</span> người nước ngoài sinh sống, tăng 9,5% trong một năm và là mức kỷ lục lần thứ tư liên tiếp; nhóm đông nhất là người Trung Quốc (930.428), tiếp theo là người Việt Nam (681.100) và người Hàn Quốc (407.341)<a class="cite" href="#ref-3">[3]</a>. Bên cạnh đó là người Ainu ở Hokkaidō và người Ryūkyū ở Okinawa, những cộng đồng bản địa có ngôn ngữ và văn hóa riêng.</p>
+
+      <aside class="sidenote">
+        <b>Người Việt ở Nhật</b>
+        Với hơn 681.000 người, cộng đồng người Việt là nhóm nước ngoài lớn thứ hai tại Nhật, phần đông là thực tập sinh, kỹ sư và du học sinh.
+      </aside>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Nhật Bản có nhịp điệu riêng: những thế kỷ ngoảnh vào trong để tiêu hóa, xen giữa những đợt mở cửa dồn dập để học hỏi, và ở cả hai giai đoạn người Nhật đều mang mọi thứ vay mượn về nhào nặn thành cái của mình.</p>
+
+      <p><b>Thời cổ đại.</b> Con người sống trên quần đảo từ hàng chục nghìn năm trước. Thời Jōmon (tính ước lệ từ khoảng 14.000 TCN) nổi tiếng với đồ gốm in dây thừng; thời Yayoi từ khoảng <span class="tg">300 TCN</span> đưa nghề trồng lúa nước và luyện kim vào, tạo nền cho làng xóm và giai cấp. Các thế kỷ sau đó là thời Kofun, khi những gò mộ hình lỗ khóa mọc lên khắp Yamato, mở đường cho triều đình Yamato thống nhất dần các vùng. Sử sách Trung Hoa còn nhắc tới nữ vương <span class="nv" data-note="Nữ cai trị của xứ Yamatai vào thế kỷ III theo sử Trung Hoa. Vị trí Yamatai vẫn là chủ đề tranh cãi lớn giữa các nhà sử học.">Himiko</span> nhưng vị trí vương quốc của bà vẫn còn tranh luận. Thái tử <span class="nv" data-note="Nhiếp chính thời Asuka (574–622), gắn với Hiến pháp 17 điều năm 604 và việc đẩy mạnh Phật giáo.">Shōtoku</span> và cải cách Taika (645) mô phỏng mô hình nhà nước Đường, còn kinh đô Nara (<span class="tg">710</span>) rồi Heian-kyō, tức Kyoto (<span class="tg">794</span>), đưa văn hóa triều đình lên đỉnh cao.</p>
+
+      <aside class="sidenote">
+        <b>Chữ viết vay mượn</b>
+        Người Nhật mượn chữ Hán (kanji) rồi tự tạo ra hai bộ chữ biểu âm hiragana và katakana vào thời Heian. Đây là một ví dụ điển hình về cách Nhật tiếp thu rồi biến đổi cái ngoại lai.
+      </aside>
+
+      <p><b>Heian và sự trỗi dậy của võ sĩ (794 – 1573).</b> Thời Heian, gia tộc Fujiwara giữ quyền nhiếp chính, còn cung đình sinh ra những kiệt tác văn chương như <span class="nv" data-note="Tiểu thuyết của nữ quan Murasaki Shikibu, viết vào đầu thế kỷ XI, thường được coi là một trong những tiểu thuyết đầu tiên của thế giới.">Truyện Genji</span>. Nhưng quyền lực thực dần chuyển sang tầng lớp võ sĩ: sau chiến thắng của nhà Minamoto ở Dan-no-ura năm <span class="tg">1185</span>, Yoritomo lập mạc phủ Kamakura và nhận danh hiệu shōgun năm 1192. Hai lần quân Nguyên – Mông tấn công năm <span class="tg">1274</span> và <span class="tg">1281</span> đều thất bại, và ký ức về những cơn “thần phong” (kamikaze) còn được nhắc mãi. Thời Muromachi sau đó vừa có Kim Các tự và trà đạo, vừa có <span class="tg">loạn Ōnin (1467)</span> chìm đất nước vào gần một thế kỷ nội chiến Sengoku.</p>
+
+      <p><b>Thống nhất và hòa bình Edo (1573 – 1868).</b> Ba người đã chấm dứt thời loạn: <span class="nv" data-note="Đại danh Owari, đánh bại nhiều đối thủ và lật đổ mạc phủ Ashikaga; bị phản bội và chết ở chùa Honnō-ji năm 1582.">Oda Nobunaga</span>, <span class="nv" data-note="Xuất thân bình dân, kế nghiệp Nobunaga, thống nhất Nhật Bản năm 1590 và phát động hai cuộc chiến tranh xâm lược Triều Tiên (1592, 1597).">Toyotomi Hideyoshi</span> và <span class="nv" data-note="Thắng ở trận Sekigahara năm 1600, nhận chức shōgun năm 1603 và lập mạc phủ Edo kéo dài đến 1868.">Tokugawa Ieyasu</span>. Người Bồ Đào Nha đã đến đảo Tanegashima năm 1543 mang theo súng hỏa mai, nhưng chính quyền Tokugawa từ thập niên 1630 hạn chế mạnh giao thương, chỉ để mở cảng Dejima (Nagasaki) với người Hà Lan và Trung Hoa. Trong hơn 250 năm hòa bình, đô thị Edo trở thành một trong những thành phố lớn nhất thế giới, tầng lớp thương nhân giàu lên, và nghệ thuật ukiyo-e, kabuki, thơ haiku của <span class="nv" data-note="Matsuo Bashō (1644–1694), bậc thầy haiku, tác giả lữ ký thơ Con đường hẹp phương Bắc.">Bashō</span> nở rộ.</p>
+
+      <p><b>Minh Trị và đế quốc (1853 – 1945).</b> Năm <span class="tg">1853</span>, đoàn “tàu đen” của Commodore Perry buộc Nhật mở cửa. Chế độ Tokugawa sụp đổ trong bối cảnh khủng hoảng, và năm <span class="tg">1868</span> cuộc Minh Trị Duy tân trả quyền lực về tay Thiên hoàng Minh Trị. Chỉ trong vài thập kỷ, Nhật xóa bỏ chế độ đẳng cấp, xây dựng quân đội và nhà máy hiện đại, ban hành Hiến pháp Minh Trị năm 1889, và thắng Trung Hoa (1894–95) rồi Nga (1904–05). Sau đó nước này sáp nhập Triều Tiên (1910), chiếm Mãn Châu (1931), mở rộng chiến tranh ở Trung Quốc từ 1937 và tấn công Trân Châu Cảng ngày <span class="tg">7/12/1941</span>. Chiến tranh kết thúc sau hai vụ ném bom nguyên tử xuống Hiroshima (6/8) và Nagasaki (9/8/1945). Di sản của giai đoạn này vẫn còn nhức nhối trong quan hệ với các nước láng giềng.</p>
+
+      <p><b>Chiếm đóng và phục hưng (1945 – nay).</b> Dưới sự chiếm đóng của Mỹ do tướng <span class="nv" data-note="Tư lệnh tối cao lực lượng Đồng minh ở Nhật (1945–1951), người giám sát các cải cách hậu chiến, trong đó có việc soạn hiến pháp mới.">MacArthur</span> đứng đầu, Nhật ban hành hiến pháp mới có hiệu lực ngày <span class="tg">3/5/1947</span>, cải cách ruộng đất, giải tán các tập đoàn tài phiệt zaibatsu và đặt quân đội vào khuôn khổ hòa bình. Hiệp ước San Francisco (1951) đưa nền độc lập trở lại năm 1952, đi kèm liên minh an ninh với Mỹ. Đảng Dân chủ Tự do (LDP), lập năm 1955, hầu như liên tục cầm quyền trong nhiều thập niên. Kỳ tích kinh tế được đánh dấu bởi Olympic Tokyo và tàu Shinkansen năm <span class="tg">1964</span>. Bong bóng tài sản vỡ năm 1990–91 chấm dứt kỷ nguyên tăng trưởng nóng, và thảm họa ngày 11/3/2011 ở Tōhoku là thử thách lớn nhất của nước này từ sau chiến tranh. Bản sắc Nhật hôm nay là sự pha trộn giữa nền tảng Thần đạo – Phật giáo, ảnh hưởng Nho giáo và văn minh Trung Hoa cổ, tinh thần tỉ mỉ của nghề thủ công, và ý thức tập thể được tôi luyện qua thiên tai, chiến tranh và hồi sinh.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Nhật Bản</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Thiên hoàng</span>
+          <span class="tier-desc">Biểu tượng của quốc gia và sự đoàn kết dân tộc, không nắm quyền chính trị; hiện là Naruhito (từ 1/5/2019, niên hiệu Reiwa)</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội (Diet): Chúng nghị viện &amp; Tham nghị viện</span>
+          <span class="tier-desc">Cơ quan quyền lực nhà nước cao nhất, lập pháp; hạ viện 465 ghế, thượng viện 248 ghế<a class="cite" href="#ref-1">[1]</a></span>
+        </li>
+        <li>
+          <span class="tier-role">Nội các do Thủ tướng đứng đầu</span>
+          <span class="tier-desc">Cơ quan hành pháp; Thủ tướng do Quốc hội bầu, hiện là Takaichi Sanae</span>
+        </li>
+        <li>
+          <span class="tier-role">47 tỉnh (todōfuken) &amp; thị xã, thị trấn, làng</span>
+          <span class="tier-desc">Chính quyền địa phương với thống đốc và hội đồng do dân bầu trực tiếp</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Điều 9 Hiến pháp</b>
+        Từ bỏ chiến tranh như một quyền của quốc gia và không duy trì lực lượng chiến tranh theo nghĩa thông thường. Thực tế Nhật có Lực lượng Phòng vệ Tự vệ (JSDF) lớn và hiện đại; cách diễn giải điều khoản này là đề tài tranh luận thường xuyên.
+      </aside>
+
+      <p>Nhật Bản là quân chủ lập hiến theo mô hình nghị viện. Thiên hoàng chỉ thực hiện các nghi lễ nhà nước do Hiến pháp quy định, quyền lực thực sự thuộc về Quốc hội và Nội các. Người đứng đầu đảng chiếm đa số ở hạ viện sẽ được bầu làm Thủ tướng.</p>
+
+      <p>Thủ tướng hiện nay là <span class="nv" data-note="Nữ thủ tướng đầu tiên của Nhật Bản, được bầu làm chủ tịch LDP tháng 10/2025 và nhậm chức thủ tướng ngay sau đó; theo đường lối bảo thủ, chủ trương tăng chi tiêu quốc phòng.">Takaichi Sanae</span>, nữ thủ tướng đầu tiên của Nhật Bản. Sau khi liên minh LDP – Kōmeitō kéo dài 26 năm tan vỡ vào tháng 10/2025, LDP chuyển sang hợp tác với <span class="nv" data-note="Đảng cải cách có gốc ở vùng Osaka; đối tác liên minh của LDP sau khi Kōmeitō rút khỏi.">Nippon Ishin no Kai</span> và trước bầu cử chỉ giữ đa số mong manh 233/465 ghế ở hạ viện<a class="cite" href="#ref-4">[4]</a>. Ngày <span class="tg">8/2/2026</span>, cuộc tổng tuyển cử đã đảo ngược tình thế: LDP một mình giành <span class="tg">316 ghế</span>, kỷ lục của một đảng đơn lẻ trong lịch sử hậu chiến, cộng với 36 ghế của Ishin thành <span class="tg">352 ghế</span> cho khối cầm quyền. Phía đối lập gồm liên minh Cải cách Trung dung (CDP cùng Kōmeitō) 49 ghế, Đảng Dân chủ vì Nhân dân 28 ghế và Sanseitō 15 ghế<a class="cite" href="#ref-5">[5]</a>. Con số 316 vượt ngưỡng hai phần ba ở hạ viện (310 ghế), cho phép LDP thông qua lại các dự luật bị thượng viện bác. Nhưng thượng viện vẫn chia đều thế lực nên các thay đổi lớn như sửa hiến pháp chưa thể chắc chắn<a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <p>Đây là bước ngoặt trong một hệ thống vốn quen với những thủ tướng thay nhau ngắn ngủi. Sự ủng hộ cao của người trẻ dành cho Takaichi và khả năng bà cầm quyền đến sát kỳ bầu cử kế tiếp năm 2028 là điều ít thấy ở chính trường Nhật thập niên qua.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Nhật Bản là một trong những nền kinh tế lớn nhất thế giới, với GDP danh nghĩa khoảng <span class="tg">4,38 nghìn tỷ USD</span> và GDP bình quân đầu người khoảng <span class="tg">35.700 USD</span> theo ước tính năm 2026<a class="cite" href="#ref-1">[1]</a>. Nền tảng của nó là công nghiệp chế tạo tinh vi: ô tô, máy công nghiệp, robot, thiết bị bán dẫn, vật liệu và điện tử tiêu dùng, gắn với những tập đoàn như Toyota hay Sony. Các mạng lưới nhà cung ứng lâu năm và văn hóa cải tiến liên tục (kaizen) tạo ra chất lượng nổi tiếng, trong khi khu vực dịch vụ chiếm phần lớn việc làm.</p>
+
+      <p>Tuy nhiên câu chuyện kinh tế thập niên gần đây là sự thoát khỏi giảm phát. Sau khi bong bóng tài sản vỡ, giá cả và lương gần như đứng yên trong nhiều năm. Điều này đã đảo chiều: Ngân hàng Nhật Bản (BOJ) nâng lãi suất chính sách lên <span class="tg">1,25%</span> vào ngày <span class="tg">18/9/2026</span> với kết quả biểu quyết 7–2, mức cao nhất từ năm 1995 và là khoảng cách ngắn nhất giữa hai lần tăng lãi suất kể từ 1990<a class="cite" href="#ref-6">[6]</a>. Quý II/2026 kinh tế tăng <span class="tg">1,1%</span> theo năm hóa so với quý trước, quý tăng trưởng dương thứ ba liên tiếp nhưng thấp hơn kỳ vọng vì bất ổn nguồn cung từ Trung Đông. Lạm phát lõi được dự báo khoảng 2,4% cho năm tài khóa 2026, còn tăng trưởng thực khoảng 0,9%; nhu cầu liên quan đến AI là điểm sáng<a class="cite" href="#ref-7">[7]</a>.</p>
+
+      <p>Chính sách tài khóa cũng đang thay đổi. Từ tháng <span class="tg">4/2027</span>, thuế tiêu dùng đối với thực phẩm sẽ giảm xuống 1% trong hai năm, kèm khoảng 600 tỷ yên trợ cấp tiền mặt mỗi năm cho các hộ gia đình<a class="cite" href="#ref-7">[7]</a>. Đồng yên yếu kéo giá hàng nhập khẩu lên, trong khi tiền lương thực tế giảm là mối lo của người dân<a class="cite" href="#ref-4">[4]</a>. Về dài hạn, thách thức lớn nhất vẫn là nhân khẩu học: lực lượng lao động thu hẹp và gánh nặng nợ công rất cao, khiến việc thu hút lao động nước ngoài và nâng năng suất trở thành bài toán sống còn.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Đời sống tinh thần của người Nhật đan xen Thần đạo và Phật giáo một cách tự nhiên: cưới xin thường theo nghi thức Thần đạo, tang lễ theo Phật giáo, còn Giáng sinh và Halloween được đón như dịp vui thương mại. Nhiều người không nhận mình theo tôn giáo nào nhưng vẫn đến đền vào dịp năm mới (hatsumōde) và tham dự lễ hội (matsuri) của địa phương. Các mùa gắn chặt với cảm thức thẩm mỹ: ngắm hoa anh đào (hanami) vào mùa xuân, ngắm lá đỏ (momijigari) vào mùa thu, và quan niệm <span class="nv" data-note="Cảm thức về vẻ đẹp mong manh, không hoàn hảo và vô thường, thể hiện trong trà đạo, gốm raku hay thơ haiku.">wabi-sabi</span> về cái đẹp trong sự dở dang.</p>
+
+      <p>Về tâm lý xã hội, các nhà nghiên cứu thường mô tả xã hội Nhật coi trọng hòa (wa), tức là giữ hài hòa nhóm, và sự phân biệt giữa <i>honne</i> (ý thật) và <i>tatemae</i> (bề ngoài xã giao). Quan hệ thứ bậc như senpai – kōhai (đàn anh – đàn em), lối nói kính ngữ, tinh thần đúng giờ và khái niệm <i>omotenashi</i> (hiếu khách không đòi hỏi đền đáp) đều bắt nguồn từ đó. Mặt trái là áp lực tuân thủ, văn hóa làm việc quá sức (khái niệm karōshi, chết vì làm việc quá độ, được thừa nhận từ lâu) và hiện tượng những người thu mình khỏi xã hội (hikikomori). Những cách khái quát như vậy chỉ đúng ở mức xu hướng, và giới trẻ hiện nay đang thay đổi nhiều so với thế hệ trước.</p>
+
+      <p>Ở tầm quốc tế, sức mạnh mềm của Nhật là vô song: manga và anime, trò chơi điện tử, ẩm thực, thiết kế, thời trang phố Harajuku. Thẩm mỹ <i>kawaii</i> (dễ thương) len vào cả cơ quan hành chính và biển báo công cộng, còn ở chiều ngược lại, nghệ thuật cổ như Nō, kabuki, cắm hoa ikebana và thư pháp vẫn có người hâm mộ.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Washoku</b>
+        Ẩm thực truyền thống Nhật (washoku) được UNESCO ghi danh là di sản văn hóa phi vật thể của nhân loại năm 2013, với nhấn mạnh vào nguyên liệu theo mùa, cách bày biện và mối gắn kết với dịp lễ.
+      </aside>
+
+      <p>Triết lý ẩm thực Nhật xoay quanh sự tinh tế và tôn trọng nguyên liệu: chọn đúng mùa (shun), giữ vị tự nhiên, ít gia vị phức tạp và đặt nặng cách trình bày. Nền tảng là cơm trắng kèm súp miso, đồ muối và món phụ, còn hương vị nền được gọi là <span class="nv" data-note="Vị ngọt đậm đà thứ năm, được nhà hóa học Ikeda Kikunae xác định năm 1908 khi nghiên cứu nước dùng dashi từ tảo bẹ kombu.">umami</span>, tạo ra từ nước dùng dashi (kombu và cá bào katsuobushi), tương miso và nước tương.</p>
+
+      <p>Sự khác biệt vùng miền rất rõ. Vùng Kantō quanh Tokyo có vị nước tương đậm, còn vùng Kansai (Osaka, Kyoto) chuộng nước dùng nhạt màu, tinh tế; Osaka được gọi là “nhà bếp của Nhật” và nổi tiếng với món ăn đường phố. Hokkaidō mạnh về hải sản và bơ sữa, Kyūshū nổi tiếng với ramen tonkotsu nước xương heo đục, còn Okinawa có lối nấu riêng gần với thực đơn “sống thọ”. Ở bàn ăn, người Nhật nói <i>itadakimasu</i> trước khi ăn, không bo tiền ở nhà hàng, và húp mì xì xụp được coi là lời khen ngon.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu khắp Nhật Bản</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Sushi &amp; sashimi</span><span class="pick-desc">Cơm giấm kết hợp cá tươi; từ quán băng chuyền bình dân đến nhà hàng omakase nghệ nhân.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Ramen</span><span class="pick-desc">Mì nước có thể dùng vị shōyu, miso, shio hay tonkotsu; mỗi vùng một biến thể.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Tempura</span><span class="pick-desc">Hải sản và rau chiên bột mỏng giòn nhẹ, gợi nhắc ảnh hưởng của người Bồ Đào Nha.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Soba · Udon</span><span class="pick-desc">Mì kiều mạch và mì lúa mì dày, ăn nóng hay lạnh, đại diện cho nhu cầu đơn giản mà tinh tế.</span></li>
+        <li><span class="pick-where">Kyoto</span><span class="pick-name">Kaiseki</span><span class="pick-desc">Bữa tiệc nhiều món nhỏ theo mùa, đỉnh cao nghệ thuật bày biện gắn với trà đạo.</span></li>
+        <li><span class="pick-where">Osaka</span><span class="pick-name">Takoyaki · Okonomiyaki</span><span class="pick-desc">Bánh bạch tuộc viên và bánh xèo kiểu Nhật, hai linh hồn của ẩm thực đường phố Kansai.</span></li>
+        <li><span class="pick-where">Hokkaidō</span><span class="pick-name">Hải sản &amp; ramen bơ ngô</span><span class="pick-desc">Cua, sò điệp, nhím biển và món mì đặc trưng của vùng lạnh giá.</span></li>
+        <li><span class="pick-where">Fukuoka · Kyūshū</span><span class="pick-name">Ramen tonkotsu Hakata</span><span class="pick-desc">Nước dùng xương heo hầm nhiều giờ trắng đục, sợi mì nhỏ, dai.</span></li>
+        <li><span class="pick-where">Hyōgo · Kobe</span><span class="pick-name">Bò wagyu</span><span class="pick-desc">Thịt bò vân mỡ mềm tan, được nuôi và phân hạng nghiêm ngặt.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Yakitori · Unagi</span><span class="pick-desc">Gà xiên nướng than và lươn nướng sốt ngọt, món của quán nhậu và ngày hè.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Bento &amp; onigiri</span><span class="pick-desc">Cơm hộp và cơm nắm, từ cửa hàng tiện lợi đến hộp cơm ga tàu (ekiben).</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Wagashi &amp; mochi</span><span class="pick-desc">Bánh ngọt truyền thống từ bột gạo và đậu đỏ, đi cùng trà xanh matcha.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Về đồ uống, trà xanh (matcha, sencha) gắn với nghi thức trà đạo, còn rượu sake, shōchū và whisky Nhật đã có tiếng trên thế giới. Văn hóa quán nhậu izakaya, cửa hàng tiện lợi (konbini) mở 24 giờ, và máy bán hàng tự động ở mọi góc phố là một phần đặc trưng của đời sống. Cách ăn uống ấy mang dấu ấn của một xã hội đề cao sự chỉn chu đến từng chi tiết nhỏ.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Di sản mới nhất</b>
+        “Các kinh đô cổ Asuka và Fujiwara” ở tỉnh Nara được UNESCO ghi danh ngày 26/7/2026, trở thành di sản thế giới thứ 27 của Nhật Bản.
+      </aside>
+
+      <p>Nhật Bản hiện có <span class="tg">27 di sản thế giới</span> được UNESCO công nhận, gồm 22 di sản văn hóa và 5 di sản thiên nhiên<a class="cite" href="#ref-8">[8]</a>. Di sản mới nhất là các kinh đô cổ Asuka và Fujiwara, nơi gắn với buổi đầu nhà nước Nhật vào thế kỷ VII<a class="cite" href="#ref-9">[9]</a>. Ngoài danh sách di sản, đất nước này có sức hút lớn nhờ sự tương phản giữa những đô thị siêu lớn và núi non cổ kính, được nối với nhau bằng một trong những mạng lưới đường sắt hiệu quả nhất thế giới.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Nhật Bản</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Kantō</span><span class="pick-name">Tokyo</span><span class="pick-desc">Đô thị siêu lớn của Nhật: ngã tư Shibuya, chùa Sensō-ji, Akihabara, Shinjuku và Hoàng cung.</span></li>
+        <li><span class="pick-where">Kansai</span><span class="pick-name">Kyoto</span><span class="pick-desc">Cố đô ngàn năm với Kim Các tự, Fushimi Inari, khu Gion; nhiều công trình được UNESCO ghi danh.</span></li>
+        <li><span class="pick-where">Kansai</span><span class="pick-name">Nara</span><span class="pick-desc">Chùa Tōdai-ji với tượng Phật lớn và công viên hươu tự do; kinh đô đầu tiên (710).</span></li>
+        <li><span class="pick-where">Kansai</span><span class="pick-name">Osaka &amp; lâu đài Himeji</span><span class="pick-desc">Osaka sôi động ẩm thực; Himeji là lâu đài gỗ trắng còn nguyên vẹn nhất, di sản thế giới.</span></li>
+        <li><span class="pick-where">Chūbu · Kantō</span><span class="pick-name">Núi Phú Sĩ</span><span class="pick-desc">Ngọn núi lửa cao 3.776 m, biểu tượng thiêng liêng, được ghi danh là di sản văn hóa năm 2013.</span></li>
+        <li><span class="pick-where">Chūgoku</span><span class="pick-name">Hiroshima &amp; Itsukushima</span><span class="pick-desc">Đài tưởng niệm Hòa bình và cổng torii nổi trên mặt nước ở đảo Miyajima.</span></li>
+        <li><span class="pick-where">Chūbu</span><span class="pick-name">Shirakawa-gō &amp; Gokayama</span><span class="pick-desc">Làng nhà mái rơm dốc gasshō-zukuri giữa vùng núi tuyết dày.</span></li>
+        <li><span class="pick-where">Kantō</span><span class="pick-name">Nikkō</span><span class="pick-desc">Đền Tōshō-gū thờ Tokugawa Ieyasu, rực rỡ chạm khắc trong rừng tuyết tùng.</span></li>
+        <li><span class="pick-where">Kansai</span><span class="pick-name">Kōya-san &amp; Kumano Kodo</span><span class="pick-desc">Núi thiêng Phật giáo Shingon và mạng lưới đường hành hương xuyên rừng núi.</span></li>
+        <li><span class="pick-where">Hokkaidō</span><span class="pick-name">Shiretoko</span><span class="pick-desc">Bán đảo hoang dã, di sản thiên nhiên nổi tiếng với gấu nâu và băng trôi.</span></li>
+        <li><span class="pick-where">Kyūshū</span><span class="pick-name">Yakushima</span><span class="pick-desc">Đảo rừng già với những cây tuyết tùng nghìn tuổi, thường được nhắc là nguồn cảm hứng cho phim hoạt hình của Ghibli.</span></li>
+        <li><span class="pick-where">Okinawa</span><span class="pick-name">Thành Shuri &amp; Ryūkyū</span><span class="pick-desc">Di tích của vương quốc Ryūkyū cũ, biển san hô và văn hóa rất khác đất liền.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Tranh chấp lãnh thổ</b>
+        Nhật có tranh chấp với Nga về bốn đảo phía bắc (Nhật gọi là Lãnh thổ phương Bắc), với Hàn Quốc về Takeshima (Hàn gọi là Dokdo) và với Trung Quốc về quần đảo Senkaku (Trung Quốc gọi là Điếu Ngư). Mỗi bên có lập luận và yêu sách riêng.
+      </aside>
+
+      <p>Về đối ngoại, trụ cột của Nhật Bản là liên minh an ninh với Hoa Kỳ, cùng vai trò trong G7, Quad và khối thương mại CPTPP. Nước này là nhà tài trợ và đầu tư lớn ở Đông Nam Á, gồm cả Việt Nam. Trong nhiều thập niên, Nhật chọn một quan điểm quốc phòng kiềm chế, nhưng làn sóng bất an trước Trung Quốc và Triều Tiên đang đẩy nước này tăng cường năng lực phòng vệ.</p>
+
+      <p>Điểm nóng lớn nhất hiện nay là quan hệ với Trung Quốc. Sau khi bà Takaichi phát biểu ngày <span class="tg">7/11/2025</span> rằng một tình huống khẩn cấp ở Đài Loan “có thể cấu thành mối đe dọa sinh tồn” đối với Nhật, Bắc Kinh phản ứng gay gắt bằng các biện pháp kinh tế và răn đe quân sự, làm tăng nguy cơ va chạm ngoài ý muốn<a class="cite" href="#ref-4">[4]</a>. Song song đó là những bài toán trong nước: giá sinh hoạt tăng, đồng yên yếu và việc BOJ nâng lãi suất<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Ba vấn đề dài hạn bao trùm mọi thứ khác. Thứ nhất là già hóa và giảm dân số, với tỷ suất sinh chỉ 1,15 và gần ba mươi phần trăm dân số trên 65 tuổi<a class="cite" href="#ref-2">[2]</a>. Thứ hai là nhập cư: số người nước ngoài vượt 4 triệu buộc xã hội tranh luận về cách hòa nhập và mức độ mở cửa<a class="cite" href="#ref-3">[3]</a>. Thứ ba là thiên tai, khi động đất và sóng thần vẫn là mối đe dọa thường trực, đòi hỏi chi phí phòng ngừa lớn.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Nhật Bản</h2>
+      <ol class="funs">
+        <li><b>Quốc hiệu nghĩa là “gốc của mặt trời”.</b> “Nihon” hay “Nippon” viết bằng hai chữ Hán 日本, nghĩa là gốc của mặt trời, nên nước này được gọi là xứ Mặt Trời mọc. Tiếng Việt “Nhật Bản” là âm Hán Việt của chính hai chữ đó.</li>
+        <li><b>Hơn 14.000 hòn đảo.</b> Quần đảo Nhật có hàng chục nghìn đảo nhỏ, nhưng bốn đảo chính chứa gần như toàn bộ dân cư.</li>
+        <li><b>Người Việt là nhóm nước ngoài đông thứ hai.</b> Cuối năm 2025 có 681.100 người Việt sống ở Nhật, chỉ sau người Trung Quốc<a class="cite" href="#ref-3">[3]</a>.</li>
+        <li><b>Nước già nhất hành tinh.</b> Người trên 65 tuổi chiếm khoảng 29,3% dân số, còn trẻ em dưới 15 tuổi chỉ 11,2%<a class="cite" href="#ref-2">[2]</a>.</li>
+        <li><b>Ba hệ chữ viết cùng lúc.</b> Một câu tiếng Nhật thường trộn kanji, hiragana và katakana, đôi khi thêm cả chữ Latinh (rōmaji).</li>
+        <li><b>Dòng Thiên hoàng cổ xưa.</b> Theo truyền thống, hoàng gia Nhật là dòng dõi quân chủ lâu đời nhất thế giới còn tồn tại, với truyền thuyết khởi đầu từ Thiên hoàng Jimmu; niên đại các đời đầu chủ yếu thuộc huyền thoại.</li>
+        <li><b>Khách sạn cổ nhất thế giới.</b> Nishiyama Onsen Keiunkan ở tỉnh Yamanashi, mở năm 705, được Guinness ghi nhận là khách sạn lâu đời nhất, do một gia đình điều hành qua hàng chục đời.</li>
+        <li><b>Shinkansen khai sinh năm 1964.</b> Đây là tuyến tàu cao tốc đầu tiên trên thế giới, chạy đúng giờ đến mức hãng tàu xin lỗi cả khi tàu rời ga sớm hơn giờ vài chục giây.</li>
+        <li><b>Đất nước của động đất.</b> Nhật chịu khoảng một phần năm số trận động đất mạnh trên thế giới, nên trường học tập dượt sơ tán và mỗi tòa nhà cao tầng đều thiết kế chống rung chấn.</li>
+        <li><b>Washoku là di sản văn hóa phi vật thể.</b> UNESCO ghi danh ẩm thực truyền thống Nhật năm 2013. Mỗi mùa xuân, bản tin “dự báo ngày hoa anh đào nở” theo từng vùng còn được theo dõi như dự báo thời tiết.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Nhật Bản có khoảng <span class="tg">122,95 triệu</span> dân, diện tích <span class="tg">377.975 km²</span>, 47 tỉnh, thủ đô Tokyo.</li>
+        <li>Lịch sử theo trục: Jōmon → Yayoi → Yamato → Nara <span class="tg">710</span> → Heian <span class="tg">794</span> → mạc phủ Kamakura <span class="tg">1185</span> → Sengoku → Edo <span class="tg">1603</span> → Minh Trị <span class="tg">1868</span> → 1945 → Hiến pháp <span class="tg">1947</span>.</li>
+        <li>Minh Trị Duy tân biến Nhật thành cường quốc công nghiệp chỉ sau vài thập kỷ; sau 1945 nước này hồi sinh dưới hiến pháp hòa bình (Điều 9).</li>
+        <li>Thiên hoàng chỉ là biểu tượng; quyền lực nằm ở Quốc hội và Nội các do Thủ tướng đứng đầu.</li>
+        <li>Takaichi Sanae là nữ thủ tướng đầu tiên; LDP thắng <span class="tg">316 ghế</span> ngày <span class="tg">8/2/2026</span>, kỷ lục hậu chiến.</li>
+        <li>BOJ nâng lãi suất lên <span class="tg">1,25%</span> ngày 18/9/2026; nợ công và đồng yên yếu là mối lo lớn.</li>
+        <li>Dân số già: <span class="tg">29,3%</span> trên 65 tuổi, tỷ suất sinh <span class="tg">1,15</span>; người nước ngoài <span class="tg">4,12 triệu</span>, trong đó người Việt <span class="tg">681.100</span>.</li>
+        <li><span class="tg">27</span> di sản UNESCO, mới nhất là Asuka – Fujiwara (26/7/2026); washoku được UNESCO ghi danh năm 2013.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Chế độ mạc phủ (shōgun) bắt đầu ở Nhật vào năm nào và do ai lập ra?</p>
+          <details><summary>Xem đáp án</summary><p>Mạc phủ Kamakura, khoảng năm 1185–1192, do Minamoto no Yoritomo lập; ông nhận danh hiệu shōgun năm 1192.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Ba nhân vật nào lần lượt thống nhất Nhật Bản sau thời Chiến Quốc?</p>
+          <details><summary>Xem đáp án</summary><p>Oda Nobunaga, Toyotomi Hideyoshi và Tokugawa Ieyasu; Ieyasu nhận chức shōgun năm 1603, mở ra thời Edo.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Sự kiện nào năm 1868 đưa Nhật Bản vào giai đoạn hiện đại hóa nhanh chóng?</p>
+          <details><summary>Xem đáp án</summary><p>Minh Trị Duy tân: quyền lực trả về tay Thiên hoàng, chế độ Tokugawa sụp đổ và Nhật học theo mô hình phương Tây sau khi mở cửa (từ 1853–54).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Kết quả bầu cử hạ viện ngày 8/2/2026 có điểm gì đặc biệt?</p>
+          <details><summary>Xem đáp án</summary><p>LDP của Thủ tướng Takaichi Sanae giành 316 ghế, kỷ lục của một đảng đơn lẻ trong lịch sử hậu chiến; cùng Ishin, khối cầm quyền có 352 ghế trên 465.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Nêu ba điểm khác biệt giữa ẩm thực Kansai, Kyūshū và Hokkaidō.</p>
+          <details><summary>Xem đáp án</summary><p>Kansai (Osaka, Kyoto) chuộng nước dùng nhạt tinh tế và món đường phố như takoyaki; Kyūshū nổi tiếng với ramen tonkotsu đục; Hokkaidō mạnh về hải sản và món dùng bơ sữa.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Kể tên ít nhất bốn di sản thế giới UNESCO của Nhật Bản và cho biết Nhật có tổng cộng bao nhiêu di sản.</p>
+          <details><summary>Xem đáp án</summary><p>Ví dụ: Kyoto, Nara, lâu đài Himeji, Hiroshima Peace Memorial, núi Phú Sĩ, Nikkō, Shirakawa-gō, Shiretoko, Yakushima. Tổng cộng 27 (22 văn hóa, 5 thiên nhiên), mới nhất là Asuka – Fujiwara năm 2026.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Japan</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu diện tích, dân số ước tính 1/1/2026, cơ cấu tôn giáo, GDP theo ước tính IMF 2026, thành phần Quốc hội). <a href="https://en.wikipedia.org/wiki/Japan" target="_blank" rel="noopener">en.wikipedia.org/wiki/Japan</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-2">Statistics Bureau of Japan. <i>Statistical Handbook of Japan 2026</i>. Bộ Nội vụ và Truyền thông Nhật Bản, 2026 (số liệu dân số, tỷ suất sinh, tuổi thọ, cơ cấu tuổi năm 2024). <a href="https://www.stat.go.jp/english/data/handbook/pdf/2026half_1.pdf" target="_blank" rel="noopener">stat.go.jp</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-3">Nippon.com. <i>Japan’s Foreign Population Rises Above 4 Million for the First Time</i>. 2026 (dẫn số liệu Cục Quản lý Xuất nhập cảnh, tính đến 31/12/2025). <a href="https://www.nippon.com/en/japan-data/h02750/" target="_blank" rel="noopener">nippon.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-4">Nippon.com. <i>Japanese Politics in 2026: Can Takaichi Rebuild Stable LDP Rule?</i> 2026. <a href="https://www.nippon.com/en/in-depth/d01197/" target="_blank" rel="noopener">nippon.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-5">Nippon.com. <i>A Landslide for Takaichi’s LDP: House of Representatives Election Results</i>. Tháng 2/2026. <a href="https://www.nippon.com/en/japan-data/h02703/" target="_blank" rel="noopener">nippon.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-6">Trading Economics. <i>Japan Interest Rate</i> (quyết định của Ngân hàng Nhật Bản ngày 18/9/2026). <a href="https://tradingeconomics.com/japan/interest-rate" target="_blank" rel="noopener">tradingeconomics.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-7">Daiichi Life Research Institute. <i>Japan Economic Outlook (August 2026)</i>. Tháng 8/2026. <a href="https://www.dlri.co.jp/english/report_en/202608YS.html" target="_blank" rel="noopener">dlri.co.jp</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-8">UNESCO World Heritage Centre. <i>Japan — State Party</i> (danh sách 27 di sản). <a href="https://whc.unesco.org/en/statesparties/jp" target="_blank" rel="noopener">whc.unesco.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-9">The Japan Times. <i>Japan’s Asuka-Fujiwara sites added to UNESCO list</i>. 26/7/2026. <a href="https://www.japantimes.co.jp/news/2026/07/26/japan/asuka-fujiwara-world-heritage/" target="_blank" rel="noopener">japantimes.co.jp</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, lãi suất, số ghế) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Phần lịch sử, văn hóa và ẩm thực dựa trên kiến thức phổ thông. Các chi tiết còn tranh cãi, như vị trí Yamatai, niên đại các đời Thiên hoàng đầu tiên hay tranh chấp lãnh thổ, được nêu ở mức khái quát và có ghi chú.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
