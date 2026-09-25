@@ -1,0 +1,1139 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Đài Loan — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Đài Loan</div>
+          <h1>Đài Loan</h1>
+          <div class="period">Châu Á · Đông Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Cờ Trung Hoa Dân Quốc (Đài Loan): nền đỏ, góc trên bên trái màu xanh với mặt trời trắng 12 tia">
+            <rect width="30" height="20" fill="#fe0000"/>
+            <rect width="15" height="10" fill="#000095"/>
+            <polygon fill="#ffffff" points="7.500,1.250 8.031,3.020 9.375,1.752 8.950,3.550 10.748,3.125 9.480,4.469 11.250,5.000 9.480,5.531 10.748,6.875 8.950,6.450 9.375,8.248 8.031,6.980 7.500,8.750 6.969,6.980 5.625,8.248 6.050,6.450 4.252,6.875 5.520,5.531 3.750,5.000 5.520,4.469 4.252,3.125 6.050,3.550 5.625,1.752 6.969,3.020"/>
+            <circle cx="7.5" cy="5" r="1.95" fill="#000095"/>
+            <circle cx="7.5" cy="5" r="1.7" fill="#ffffff"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Đài Loan là hòn đảo cao núi nằm giữa Biển Đông và Thái Bình Dương, nơi 23,3 triệu người sống trong một nền dân chủ sôi động, sản xuất phần lớn những con chip tiên tiến nhất hành tinh. Hòn đảo từng là quê hương của các dân tộc Nam Đảo, thuộc địa của Hà Lan, vương quốc của Trịnh Thành Công, tỉnh của nhà Thanh, thuộc địa Nhật Bản, rồi nơi chính quyền Trung Hoa Dân Quốc lui về năm 1949. Địa vị quốc tế của Đài Loan vẫn là một trong những vấn đề gai góc nhất thế giới: Bắc Kinh coi đây là một phần lãnh thổ của mình, còn chính quyền tại Đài Bắc điều hành hòn đảo như một nhà nước có chủ quyền thực tế. Nếu chỉ nhớ một điều về Đài Loan, hãy nhớ: đây là nơi một xã hội nhỏ về diện tích nhưng lớn về công nghệ, đã tự xây dựng dân chủ từ thời thiết quân luật, và giờ đứng ở tâm điểm cạnh tranh giữa Mỹ và Trung Quốc.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">36.193 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~23,3 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính tháng 12/2025</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Đài Bắc<small>(Taipei)</small></span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Quan thoại<small>chính thức; Mân Nam, Khách Gia, ngôn ngữ bản địa là “ngôn ngữ quốc gia”<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Phật giáo · Đạo giáo<small>Phật 28%, không tôn giáo 27%, Đạo 24%, Kitô 7% (2023)<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Tân Đài tệ<small>(NT$, TWD)</small></span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~42.100 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính 2026; ~98.000 USD theo sức mua</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~6000 TCN</span>
+          <span class="tl-what">Văn hóa Đại Bồn Khanh</span>
+          <span class="tl-note">Những cư dân nông nghiệp Nam Đảo đầu tiên được khảo cổ ghi nhận trên đảo</span>
+        </li>
+        <li>
+          <span class="tl-when">1624</span>
+          <span class="tl-what">Hà Lan lập Formosa</span>
+          <span class="tl-note">Công ty Đông Ấn Hà Lan xây pháo đài ở vùng Đài Nam ngày nay</span>
+        </li>
+        <li>
+          <span class="tl-when">1662</span>
+          <span class="tl-what">Vương quốc Đông Ninh</span>
+          <span class="tl-note">Trịnh Thành Công đuổi người Hà Lan, lập căn cứ chống nhà Thanh</span>
+        </li>
+        <li>
+          <span class="tl-when">1683</span>
+          <span class="tl-what">Nhà Thanh sáp nhập</span>
+          <span class="tl-note">Triều Thanh chiếm Đông Ninh và đặt Đài Loan dưới quyền cai trị</span>
+        </li>
+        <li>
+          <span class="tl-when">1885 – 1887</span>
+          <span class="tl-what">Thành lập tỉnh Đài Loan</span>
+          <span class="tl-note">Nhà Thanh nâng hòn đảo lên cấp tỉnh, đẩy mạnh hiện đại hóa</span>
+        </li>
+        <li>
+          <span class="tl-when">1895</span>
+          <span class="tl-what">Nhật Bản cai trị</span>
+          <span class="tl-note">Nhà Thanh nhượng đảo sau chiến tranh Trung – Nhật; kéo dài 50 năm</span>
+        </li>
+        <li>
+          <span class="tl-when">25/10/1945</span>
+          <span class="tl-what">Trung Hoa Dân Quốc tiếp quản</span>
+          <span class="tl-note">Nhật đầu hàng; chính quyền Quốc dân đảng tiếp nhận hòn đảo</span>
+        </li>
+        <li>
+          <span class="tl-when">1947</span>
+          <span class="tl-what">Sự kiện 28/2</span>
+          <span class="tl-note">Cuộc nổi dậy bị đàn áp đẫm máu, để lại vết thương lịch sử kéo dài</span>
+        </li>
+        <li>
+          <span class="tl-when">1949</span>
+          <span class="tl-what">Rút về Đài Loan</span>
+          <span class="tl-note">Thua nội chiến, chính phủ Tưởng Giới Thạch dời sang đảo; thiết quân luật</span>
+        </li>
+        <li>
+          <span class="tl-when">1971</span>
+          <span class="tl-what">Mất ghế Liên Hợp Quốc</span>
+          <span class="tl-note">Đại diện Trung Quốc tại LHQ chuyển sang Cộng hòa Nhân dân Trung Hoa</span>
+        </li>
+        <li>
+          <span class="tl-when">15/7/1987</span>
+          <span class="tl-what">Dỡ bỏ thiết quân luật</span>
+          <span class="tl-note">Sau gần 38 năm, mở đường cho tự do báo chí và lập đảng</span>
+        </li>
+        <li>
+          <span class="tl-when">1996</span>
+          <span class="tl-what">Bầu cử tổng thống trực tiếp</span>
+          <span class="tl-note">Lần đầu người dân trực tiếp chọn nguyên thủ quốc gia</span>
+        </li>
+        <li>
+          <span class="tl-when">2000</span>
+          <span class="tl-what">Chuyển giao quyền lực lần đầu</span>
+          <span class="tl-note">Đảng Dân Tiến thắng cử tổng thống, chấm dứt thế độc tôn của Quốc dân đảng</span>
+        </li>
+        <li>
+          <span class="tl-when">2014</span>
+          <span class="tl-what">Phong trào Hoa Hướng Dương</span>
+          <span class="tl-note">Sinh viên chiếm nghị viện phản đối hiệp định thương mại dịch vụ với Trung Quốc</span>
+        </li>
+        <li>
+          <span class="tl-when">2019</span>
+          <span class="tl-what">Hôn nhân đồng giới</span>
+          <span class="tl-note">Đài Loan hợp pháp hóa, đầu tiên ở châu Á</span>
+        </li>
+        <li>
+          <span class="tl-when">2024 – 2026</span>
+          <span class="tl-what">Kỷ nguyên Lại Thanh Đức</span>
+          <span class="tl-note">Tổng thống thuộc Dân Tiến đối mặt nghị viện do phe đối lập kiểm soát và sức ép quân sự</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại tiền sử dựa trên khảo cổ học nên chỉ mang tính ước lệ. Việc nâng Đài Loan lên tỉnh được thực hiện dần từ 1885 và hoàn tất năm 1887 tùy cách tính.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Gọi tên thế nào?</b>
+        “Đài Loan” là tên địa lý của hòn đảo. Tên chính thức của nhà nước là <i>Trung Hoa Dân Quốc</i> (Republic of China). Trong Olympic hay APEC, Đài Loan tham dự với tên “Chinese Taipei” (Trung Hoa Đài Bắc)<a class="cite" href="#ref-1">[1]</a>. Mỗi cách gọi hàm chứa một lập trường chính trị nên bài này dùng “Đài Loan” cho gọn.
+      </aside>
+
+      <p class="lede">Đài Loan là một hòn đảo hình chiếc lá, nằm cách bờ biển Phúc Kiến của Trung Quốc chừng 130 km qua eo biển Đài Loan, và là mắt xích giữa Đông Bắc Á với Đông Nam Á.</p>
+
+      <p>Với diện tích khoảng <span class="tg">36.193 km²</span><a class="cite" href="#ref-1">[1]</a>, Đài Loan xấp xỉ diện tích Hà Lan, nhưng địa hình bị chia đôi rõ rệt: nửa phía đông là dãy Trung Ương Sơn Mạch hiểm trở, còn nửa phía tây là đồng bằng ven biển nơi tập trung gần như toàn bộ dân cư và công nghiệp. Đỉnh cao nhất là <span class="nv" data-note="Tên tiếng Anh là Yu Shan hay Mount Jade. Cao 3.952 m, cao hơn núi Phú Sĩ của Nhật Bản (3.776 m) và là đỉnh cao nhất trên đảo.">Ngọc Sơn</span> cao <span class="tg">3.952 m</span><a class="cite" href="#ref-1">[1]</a>. Khí hậu cận nhiệt đới ở phía bắc và nhiệt đới ở phía nam, chịu ảnh hưởng của gió mùa và bão mùa hè – thu. Đảo nằm trên Vành đai lửa Thái Bình Dương nên động đất là hiểm họa thường trực.</p>
+
+      <p>Dân số cuối năm 2025 là <span class="tg">23.299.132 người</span>, giảm <span class="tg">101.088 người</span> so với một năm trước — năm giảm thứ hai liên tiếp<a class="cite" href="#ref-2">[2]</a>. Về thành phần, khoảng 95% là người Hán, khoảng 2,5% là dân tộc bản địa<a class="cite" href="#ref-1">[1]</a> — nhóm chia thành 16 dân tộc được công nhận chính thức, nói các ngôn ngữ Nam Đảo. Người Hán trên đảo lại gồm nhiều nhóm: người <b>Mân Nam</b> (Hokkien, đến từ Phúc Kiến từ thế kỷ XVII, chiếm đa số), người <b>Khách Gia</b> (Hakka) và “<b>ngoại tỉnh nhân</b>” — những người cùng con cháu đến từ khắp Trung Quốc lục địa quanh năm 1949. Ranh giới ấy từng quyết định rất nhiều trong chính trị, nay mờ dần, nhưng vẫn để lại dấu ấn trong bản sắc.</p>
+
+      <p>Ở góc độ xã hội, Đài Loan đang đối mặt với một cuộc khủng hoảng dân số. Năm 2025 chỉ có <span class="tg">107.812 ca sinh</span> (giảm từ 134.856 năm trước), tỷ suất sinh thô <span class="tg">4,62‰</span>, và người từ 65 tuổi trở lên đã chiếm <span class="tg">20,06%</span> dân số — ngưỡng “xã hội siêu già” theo tiêu chuẩn Liên Hợp Quốc<a class="cite" href="#ref-2">[2]</a>. Theo đó, tỷ suất sinh của Đài Loan được dự báo xuống dưới 0,8 con/phụ nữ, thuộc nhóm thấp nhất thế giới, thấp hơn cả Hàn Quốc<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Đài Loan là lịch sử của một hòn đảo bị nhiều thế lực lần lượt nhận là của mình, và dần dần hình thành một cộng đồng tự ý thức về chính nó.</p>
+
+      <p><b>Thời tiền sử và các dân tộc Nam Đảo.</b> Các nhà khảo cổ ghi nhận văn hóa <span class="nv" data-note="Văn hóa nông nghiệp thời đồ đá mới ở bờ tây bắc Đài Loan, khoảng 6000 TCN. Nhiều học giả coi đây là cội nguồn của sự bành trướng Nam Đảo ra Thái Bình Dương.">Đại Bồn Khanh</span> khoảng <span class="tg">6000 TCN</span><a class="cite" href="#ref-1">[1]</a>. Nhiều nhà ngôn ngữ học cho rằng đây là quê hương xa xưa của hệ ngôn ngữ Nam Đảo, vốn về sau lan tới Philippines, Indonesia, Madagascar và các đảo Thái Bình Dương — một giả thuyết được nhiều nhưng không phải mọi học giả đồng thuận. Trước khi người Hán định cư đông đúc, hòn đảo là địa bàn của nhiều bộ tộc bản địa như Siraya, Taivoan hay các dân tộc miền núi.</p>
+
+      <p><b>Thời thực dân Hà Lan – Tây Ban Nha.</b> Năm <span class="tg">1624</span>, Công ty Đông Ấn Hà Lan lập cứ điểm ở vùng Đài Nam và dựng pháo đài Zeelandia<a class="cite" href="#ref-1">[1]</a>; Tây Ban Nha chiếm một góc phía bắc từ 1626 nhưng bị Hà Lan đuổi năm 1642. Người Hà Lan khuyến khích nông dân Hán từ Phúc Kiến sang khai khẩn, mở đầu làn sóng di cư quyết định về sau.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao Trịnh Thành Công quan trọng</b>
+        Với người Đài Loan, ông là nhân vật lịch sử đa nghĩa: vị anh hùng đuổi Hà Lan, người khai mở cai trị của người Hán trên đảo, nhưng cũng là người gốc Trung – Nhật gắn với lý tưởng “phản Thanh phục Minh”.
+      </aside>
+
+      <p><b>Đông Ninh và nhà Thanh (1662 – 1895).</b> Năm <span class="tg">1662</span>, <span class="nv" data-note="Tên tiếng Anh là Koxinga (Quốc Tính Gia). Tướng nhà Minh có mẹ là người Nhật, đánh đuổi Hà Lan khỏi Đài Loan và lập Vương quốc Đông Ninh (Tungning).">Trịnh Thành Công</span> đuổi người Hà Lan và lập Vương quốc Đông Ninh làm căn cứ chống nhà Thanh. Năm <span class="tg">1683</span>, quân Thanh chiếm đảo. Trong gần hai thế kỷ, chính quyền nhà Thanh cai trị khá lỏng lẻo, đảo nổi tiếng với những vụ nổi dậy và xung đột giữa các nhóm cư dân. Đến 1885 – 1887, trước sức ép từ các cường quốc phương Tây, triều đình nâng Đài Loan thành một tỉnh và cho hiện đại hóa: xây đường sắt, điện tín, mở mang giao thông.</p>
+
+      <p><b>Nhật Bản cai trị (1895 – 1945).</b> Sau chiến tranh Thanh – Nhật, Hiệp ước Shimonoseki (<span class="tg">1895</span>) nhượng đảo cho Nhật Bản. Nhật xây dựng hạ tầng, đường sắt, thủy lợi và hệ thống giáo dục, biến đảo thành “vựa gạo, đường” của đế quốc, nhưng cũng đàn áp phản kháng và đồng hóa văn hóa, nhất là những năm chiến tranh. Di sản kép này vẫn khiến người Đài Loan nhìn thời kỳ ấy bằng nhiều cảm xúc lẫn lộn — điều dễ thấy trong ẩm thực, kiến trúc và cả những ký ức gia đình.</p>
+
+      <p><b>Trung Hoa Dân Quốc và thiết quân luật (1945 – 1987).</b> Sau khi Nhật đầu hàng, chính quyền Trung Hoa Dân Quốc tiếp quản đảo ngày <span class="tg">25/10/1945</span>. Tham nhũng, lạm phát và va chạm giữa chính quyền mới với dân bản địa dẫn tới <span class="nv" data-note="Cuộc nổi dậy toàn đảo bắt đầu từ ngày 28/2/1947, bị quân đội Quốc dân đảng đàn áp dữ dội. Số người thiệt mạng còn tranh luận, ước tính từ hàng nghìn đến hàng chục nghìn.">Sự kiện 28/2</span> năm <span class="tg">1947</span>. Khi thất bại trong nội chiến với phe cộng sản, chính phủ của <span class="nv" data-note="Lãnh đạo Quốc dân đảng và Trung Hoa Dân Quốc, đưa chính phủ rút sang Đài Loan tháng 12/1949, mất năm 1975.">Tưởng Giới Thạch</span> rút sang đảo ngày <span class="tg">7/12/1949</span>; thiết quân luật được ban bố từ tháng 5/1949 và kéo dài đến <span class="tg">15/7/1987</span><a class="cite" href="#ref-1">[1]</a>. Thời kỳ “Khủng bố Trắng” ấy cấm đảng đối lập và bắt bớ hàng loạt người bất đồng chính kiến, nhưng đồng thời là giai đoạn cải cách ruộng đất và công nghiệp hóa nhanh, đặt nền móng cho “kỳ tích Đài Loan”.</p>
+
+      <p><b>Dân chủ hóa (1987 – nay).</b> Sau khi <span class="nv" data-note="Con trai Tưởng Giới Thạch, tổng thống 1978–1988, người đặt nền móng cho việc dỡ bỏ thiết quân luật ngay trước khi qua đời.">Tưởng Kinh Quốc</span> cho dỡ bỏ thiết quân luật, đảo bước vào quá trình dân chủ hóa hiếm hoi ở khu vực. Năm <span class="tg">1996</span>, người dân lần đầu trực tiếp bầu tổng thống, người thắng cử là <span class="nv" data-note="Tổng thống 1988–2000, người Đài Loan bản địa đầu tiên giữ chức, được coi là cha đẻ của dân chủ hóa Đài Loan.">Lý Đăng Huy</span>. Năm <span class="tg">2000</span>, Đảng Dân Tiến lần đầu thắng cử tổng thống, chấm dứt hơn nửa thế kỷ cầm quyền liên tục của Quốc dân đảng. Từ đó, quyền lực luân phiên giữa hai đảng, với các dấu mốc như Hoa Hướng Dương (<span class="tg">2014</span>) và hôn nhân đồng giới (<span class="tg">2019</span>). Bản sắc “người Đài Loan” — khác với “người Trung Quốc” — ngày càng được nhiều cử tri nhấn mạnh, dù mức độ và cách hiểu vẫn là đề tài tranh luận trong xã hội.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Đài Loan</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Cử tri</span>
+          <span class="tier-desc">Trực tiếp bầu tổng thống (nhiệm kỳ 4 năm) và nghị viện</span>
+        </li>
+        <li>
+          <span class="tier-role">Tổng thống Lại Thanh Đức · Phó Tổng thống Tiêu Mỹ Cầm</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, do dân bầu trực tiếp; đảng Dân Tiến</span>
+        </li>
+        <li>
+          <span class="tier-role">Ngũ viện: Hành chính · Lập pháp · Tư pháp · Khảo thí · Giám sát</span>
+          <span class="tier-desc">Mô hình “ngũ quyền” của Tôn Trung Sơn; Hành chính viện do Thủ tướng Trác Vinh Thái đứng đầu, Lập pháp viện do Hàn Quốc Du làm Chủ tịch</span>
+        </li>
+        <li>
+          <span class="tier-role">6 thành phố đặc biệt và 16 huyện/thị</span>
+          <span class="tier-desc">Cấp địa phương; cử tri bầu trực tiếp thị trưởng, huyện trưởng và hội đồng</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Ngũ viện</b>
+        Hiến pháp Trung Hoa Dân Quốc thêm Khảo thí viện (tuyển chọn công chức) và Giám sát viện (giám sát, kiểm toán) bên cạnh ba nhánh quyền lực quen thuộc, theo học thuyết của Tôn Trung Sơn.
+      </aside>
+
+      <p>Đài Loan là nước cộng hòa bán tổng thống, với một tổng thống dân bầu và một thủ tướng do tổng thống bổ nhiệm<a class="cite" href="#ref-1">[1]</a>. Ở cấp cao nhất hiện nay là Tổng thống <span class="nv" data-note="Tên tiếng Anh William Lai Ching-te, nhậm chức ngày 20/5/2024, trước đó là phó tổng thống của bà Thái Anh Văn.">Lại Thanh Đức</span> và Phó Tổng thống <span class="nv" data-note="Bà Hsiao Bi-khim, từng là đại diện của Đài Loan tại Washington.">Tiêu Mỹ Cầm</span>, Thủ tướng <span class="nv" data-note="Cho Jung-tai, người đứng đầu Hành chính viện.">Trác Vinh Thái</span> và Chủ tịch Lập pháp viện <span class="nv" data-note="Han Kuo-yu, chính trị gia Quốc dân đảng, cựu thị trưởng Cao Hùng.">Hàn Quốc Du</span>.</p>
+
+      <p>Điểm đặc biệt của chính trường hiện nay là <b>chính phủ phân chia</b>: tổng thống thuộc Dân Tiến, nhưng Quốc dân đảng (KMT) cùng Đảng Dân chúng Đài Loan (TPP) chiếm ưu thế trong nghị viện sau bầu cử đầu năm 2024. Năm 2025, phe ủng hộ Dân Tiến phát động chiến dịch bãi nhiệm chưa từng có: <span class="tg">24 nghị sĩ KMT</span> cùng một thị trưởng TPP bị đưa ra bỏ phiếu, và tất cả đều thất bại do không đủ ngưỡng 25% cử tri đi bầu hoặc số phiếu phản đối vượt phiếu ủng hộ<a class="cite" href="#ref-3">[3]</a>. Kết quả củng cố thế mạnh của phe đối lập trong nghị viện và buộc Tổng thống Lại phải tìm thỏa hiệp.</p>
+
+      <p>Sang năm 2026, hệ quả hiện rõ. Nghị viện giằng co quanh gói <span class="tg">ngân sách quốc phòng đặc biệt</span> — phương án của chính phủ ở mức <span class="tg">1,25 nghìn tỷ Tân Đài tệ</span>, phe đối lập đưa các phương án nhỏ hơn<a class="cite" href="#ref-4">[4]</a>. Chủ tịch KMT <span class="nv" data-note="Cheng Li-wun, chủ tịch Quốc dân đảng; chuyến thăm Trung Quốc tháng 4/2026 khiến Dân Tiến lo ngại và gây tranh cãi trong nước.">Trịnh Lệ Văn</span> thăm Trung Quốc từ 7 đến 12/4 và gặp Tập Cận Bình ngày 10/4, hai bên nhắc tới “Đồng thuận 1992” và phản đối “Đài Loan độc lập” — chuyến đi mà phía Dân Tiến nhìn với nhiều nghi ngại<a class="cite" href="#ref-4">[4]</a>. Trước đó, ngày 26/3, cựu thị trưởng Đài Bắc <span class="nv" data-note="Ko Wen-je, cựu thị trưởng Đài Bắc, sáng lập Đảng Dân chúng Đài Loan (TPP).">Kha Văn Triết</span> bị tuyên <span class="tg">17 năm tù</span> vì tội hối lộ<a class="cite" href="#ref-5">[5]</a>. Sắp tới, cuộc bầu cử địa phương ngày <span class="tg">28/11/2026</span> sẽ là phép thử lớn: KMT và TPP liên minh ở một số nơi như Tân Bắc, trong khi Dân Tiến đưa ra ứng viên tại Đài Bắc, Đài Trung và các thành phố phía nam<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <aside class="sidenote">
+        <b>“Núi thần hộ quốc”</b>
+        Cách người Đài Loan gọi TSMC và ngành bán dẫn: vừa là trụ cột kinh tế, vừa là “lá chắn silicon” khiến nhiều nước có lợi ích trong việc giữ hòa bình ở eo biển.
+      </aside>
+
+      <p>Từ thập niên 1960, Đài Loan chuyển từ nông nghiệp sang công nghiệp xuất khẩu, với các nhóm doanh nghiệp nhỏ và vừa làm linh hồn cho “kỳ tích Đài Loan”. Bước ngoặt tiếp theo là công nghệ: Khu Khoa học Tân Trúc mở cửa năm 1980, và <span class="nv" data-note="Morris Chang (Trương Trung Mưu), sáng lập TSMC năm 1987, người đặt ra mô hình xưởng đúc chip thuần túy.">Trương Trung Mưu</span> lập <span class="nv" data-note="Công ty Chế tạo Bán dẫn Đài Loan (Taiwan Semiconductor Manufacturing Company), nhà sản xuất chip theo hợp đồng lớn nhất thế giới.">TSMC</span> năm 1987 với mô hình chỉ sản xuất chip cho các hãng khác thiết kế.</p>
+
+      <p>Ngày nay, nền kinh tế Đài Loan xoay quanh chip và thiết bị phục vụ trí tuệ nhân tạo: theo nguồn tổng hợp, phần lớn kim ngạch xuất khẩu hiện là bán dẫn và phần cứng AI<a class="cite" href="#ref-7">[7]</a>. Riêng TSMC chiếm <span class="tg">69,9%</span> thị trường gia công bán dẫn toàn cầu năm 2025 (tăng từ 64,4% năm 2024), với doanh thu <span class="tg">122,54 tỷ USD</span>, xa hơn hẳn Samsung (7,2%) và SMIC của Trung Quốc (5,32%)<a class="cite" href="#ref-8">[8]</a>. Tăng trưởng GDP năm 2025 được ghi nhận vào khoảng <span class="tg">8,7%</span><a class="cite" href="#ref-7">[7]</a>, và GDP bình quân đầu người danh nghĩa ước khoảng <span class="tg">42.100 USD</span> — khoảng <span class="tg">98.000 USD</span> nếu tính theo sức mua<a class="cite" href="#ref-1">[1]</a>. Ngoài chip còn có máy móc, hóa dầu, thép và một hệ sinh thái nhà cung ứng điện tử dày đặc.</p>
+
+      <p>Thương mại với Mỹ đang được định hình lại. Theo thỏa thuận thương mại Mỹ – Đài Loan đầu năm 2026, Washington hạ thuế đối ứng xuống <span class="tg">15%</span>; đổi lại các doanh nghiệp Đài Loan cam kết đầu tư ít nhất <span class="tg">250 tỷ USD</span> vào sản xuất bán dẫn tại Mỹ, cùng <span class="tg">250 tỷ USD</span> bảo lãnh tín dụng của chính quyền, còn TSMC dự kiến xây tới 12 nhà máy ở Arizona<a class="cite" href="#ref-9">[9]</a>. Chuyên gia nêu ba câu hỏi bỏ ngỏ: thặng dư thương mại của Đài Loan vẫn có thể tăng, nguy cơ “rỗng hóa” ngành chip trong nước khi dời sản xuất sang Mỹ, và tranh cãi về việc can thiệp tỷ giá Tân Đài tệ<a class="cite" href="#ref-9">[9]</a>.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Văn hóa Đài Loan là một lớp phủ nhiều tầng: nền bản địa Nam Đảo, di sản Hán từ Mân Nam và Khách Gia, ảnh hưởng Nhật Bản, và những gì người “ngoại tỉnh” mang đến sau 1949. Tín ngưỡng dân gian pha trộn Phật giáo, Đạo giáo và thờ tổ tiên; các ngôi miếu thờ Mazu, Quan Công hay Thành Hoàng nằm trong từng khu phố, và lễ hội rước thần như hành hương Mazu ở miền trung thu hút hàng chục nghìn người.</p>
+
+      <p>Xã hội Đài Loan thường được mô tả là vừa truyền thống vừa cởi mở. Người dân coi trọng gia đình và giáo dục, nhưng cũng tự hào về tự do báo chí, xã hội dân sự sôi nổi và đời sống LGBT hòa nhập — hôn nhân đồng giới được hợp pháp hóa từ năm 2019. Ngôn ngữ cũng phản ánh đa dạng: ngoài Quan thoại còn có tiếng Mân Nam, Khách Gia và các ngôn ngữ bản địa được công nhận là “ngôn ngữ quốc gia”<a class="cite" href="#ref-1">[1]</a>. Về tính cách chung, du khách hay nhắc tới sự lịch sự, sẵn lòng giúp đỡ và thói quen giữ gìn trật tự nơi công cộng, cùng văn hóa làm việc chăm chỉ với hệ quả là áp lực nhà ở và giờ làm dài, góp phần vào tỷ lệ sinh thấp.</p>
+
+      <p>Điện ảnh và văn học Đài Loan cũng có tiếng nói riêng: năm 2026, tác phẩm <i>Taiwan Travelogue</i> trở thành tác phẩm dịch từ tiếng Quan thoại đầu tiên giành giải International Booker<a class="cite" href="#ref-5">[5]</a> — một dấu mốc cho thấy sức sáng tạo của một nền văn hóa nhỏ.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Xiaochi — “món ăn nhẹ” đúng nghĩa</b>
+        Người Đài Loan gọi các món ăn vặt đậm đà bán ở chợ đêm là <i>xiaochi</i> (tiểu cật). Chúng không chỉ là đồ ăn chơi mà là cả một hệ thống ẩm thực, ngày nay đã được nâng lên thành các quán ăn cao cấp<a class="cite" href="#ref-10">[10]</a>.
+      </aside>
+
+      <p>Ẩm thực Đài Loan là kết quả của nhiều lớp giao thoa. Nền tảng sâu đậm nhất đến từ người Mân Nam suốt hơn một thế kỷ, nên các món hầm, nước tương và nêm nếm theo kiểu Phúc Kiến là “xương sống” của bữa ăn đại chúng. Người Khách Gia mang đến các món mặn đậm, dưa muối và thịt ba chỉ; sau 1949, hàng triệu người từ khắp Trung Hoa mang theo món Quảng Đông, Thượng Hải, Tứ Xuyên, Bắc Kinh; thời Nhật Bản để lại gạo japonica, sashimi, bento và kỹ thuật chế biến; viện trợ Mỹ sau chiến tranh đưa mì, bánh mì và thịt chế biến vào bếp ăn. Còn nền ẩm thực của các dân tộc bản địa thì dựa vào kê, khoai môn, khoai lang, thịt rừng và kỹ thuật lên men<a class="cite" href="#ref-10">[10]</a>.</p>
+
+      <p>Ăn uống ở Đài Loan là hoạt động cộng đồng. Chợ đêm — được tờ <i>The Guardian</i> gọi là “những khu chợ ẩm thực đường phố tốt nhất thế giới” năm 2014 — là nơi cả gia đình đi ăn tối; khu ẩm thực trong trung tâm thương mại hay trung tâm ăn uống đã chính thức hóa truyền thống hàng rong<a class="cite" href="#ref-10">[10]</a>. Đồng thời, do ảnh hưởng của Phật giáo, ăn chay khá phổ biến: khoảng 12–16% dân số cho biết không ăn thịt (2018), và có khoảng 6.000 nhà hàng chay tính đến năm 2023<a class="cite" href="#ref-10">[10]</a>.</p>
+
+      <p>Về đồ uống, Đài Loan nổi tiếng với trà — nhất là ô long vùng núi cao — cùng <b>trà sữa trân châu</b>, được cho là ra đời ở Đài Trung<a class="cite" href="#ref-10">[10]</a> (nguồn gốc chính xác còn tranh cãi giữa hai tiệm ở Đài Trung và Đài Nam). Cà phê cũng có lịch sử: cây cà phê đầu tiên được nhập vào Đài Nam năm 1884, và đến 2024 Đài Loan đứng thứ ba châu Á về mức tiêu thụ bình quân đầu người<a class="cite" href="#ref-10">[10]</a>. Rượu cao lương ở Kim Môn thì gắn với bối cảnh nội chiến những năm 1950.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Toàn đảo</span><span class="pick-name">Mì bò kho (niú ròu miàn)</span><span class="pick-desc">Món mì nước dùng bò hầm đỏ ra đời từ làn sóng người đến sau 1949, giờ được coi là “quốc túy”.<a class="cite" href="#ref-10">[10]</a></span></li>
+        <li><span class="pick-where">Chợ đêm</span><span class="pick-name">Trứng chiên hàu (ô á chiên)</span><span class="pick-desc">Hàu, trứng và bột khoai mì chiên dẻo, rưới sốt chua ngọt; được xem là món ăn vặt phổ biến nhất.<a class="cite" href="#ref-10">[10]</a></span></li>
+        <li><span class="pick-where">Mân Nam</span><span class="pick-name">Cơm thịt kho (lỗ nhục phạn)</span><span class="pick-desc">Thịt ba chỉ hầm nước tương và gia vị, phủ lên cơm trắng — bữa ăn bình dân nhất.</span></li>
+        <li><span class="pick-where">Mân Nam</span><span class="pick-name">Bánh bao kẹp (cát bao)</span><span class="pick-desc">Bánh hấp kẹp thịt ba chỉ kho, dưa cải, đậu phộng nghiền và ngò — “hamburger Đài Loan”.</span></li>
+        <li><span class="pick-where">Chợ đêm</span><span class="pick-name">Đậu phụ thối</span><span class="pick-desc">Đậu phụ lên men nặng mùi, chiên giòn hoặc nấu mềm, ăn kèm dưa cải; món thử thách với du khách.</span></li>
+        <li><span class="pick-where">Chợ đêm</span><span class="pick-name">Tiểu long bao</span><span class="pick-desc">Bánh bao nước hấp trong xửng tre, gốc Hoa Đông và trở thành hình ảnh quen thuộc của ẩm thực Đài Bắc.</span></li>
+        <li><span class="pick-where">Đài Trung</span><span class="pick-name">Trà sữa trân châu</span><span class="pick-desc">Trà đen, sữa và trân châu bột năng dai giòn — hiện tượng đồ uống toàn cầu.<a class="cite" href="#ref-10">[10]</a></span></li>
+        <li><span class="pick-where">Quà biếu</span><span class="pick-name">Bánh dứa</span><span class="pick-desc">Bánh vỏ bơ giòn nhân dứa, món quà lưu niệm quen thuộc nhất của du khách.<a class="cite" href="#ref-10">[10]</a></span></li>
+        <li><span class="pick-where">Núi cao</span><span class="pick-name">Trà ô long núi cao</span><span class="pick-desc">Trà trồng ở độ cao lớn như A Lý Sơn, thơm dịu, được xem là một trong những loại trà hàng đầu thế giới.</span></li>
+        <li><span class="pick-where">Kim Môn</span><span class="pick-name">Rượu cao lương</span><span class="pick-desc">Rượu cất từ lúa miến, đặc sản đảo Kim Môn, gắn với ký ức căng thẳng Chiến tranh Lạnh.<a class="cite" href="#ref-10">[10]</a></span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>UNESCO và Đài Loan</b>
+        Do bế tắc chính trị, Đài Loan chưa có di sản nào trong danh sách của UNESCO. Thay vào đó, họ tự lập danh sách dự kiến trong nước với 18 mục<a class="cite" href="#ref-11">[11]</a>.
+      </aside>
+
+      <p>Đài Loan không có di sản UNESCO chính thức, nhưng điểm đến thì không thiếu<a class="cite" href="#ref-11">[11]</a>. Đảo nhỏ mà đủ mọi thứ: đô thị hiện đại, đền miếu cổ, hẻm núi đá cẩm thạch, rừng sương mù, suối nước nóng, bờ biển nhiệt đới và các hòn đảo ngoài khơi. Giao thông nội địa khá thuận tiện, với đường sắt cao tốc nối Đài Bắc với Cao Hùng trong chưa đến hai tiếng.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Đài Loan</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Đài Bắc</span><span class="pick-name">Tòa tháp Taipei 101</span><span class="pick-desc">101 tầng, từng là tòa nhà cao nhất thế giới từ 2004 đến 2010; biểu tượng đô thị của đảo.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Đài Bắc</span><span class="pick-name">Bảo tàng Cố cung Quốc gia</span><span class="pick-desc">Lưu giữ hơn 696.000 hiện vật Trung Hoa, phần lớn được đưa sang từ Trung Quốc lục địa năm 1949.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Đài Bắc</span><span class="pick-name">Chợ đêm Sĩ Lâm</span><span class="pick-desc">Thường được coi là chợ đêm lớn và nổi tiếng nhất, nơi thử hầu hết món xiaochi.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Bắc Đài Loan</span><span class="pick-name">Cửu Phần</span><span class="pick-desc">Phố cổ sườn đồi thời khai mỏ vàng, lồng đèn đỏ, nhà trà kiểu cũ, nhìn ra biển.</span></li>
+        <li><span class="pick-where">Hoa Liên</span><span class="pick-name">Hẻm núi Taroko</span><span class="pick-desc">Hẻm đá cẩm thạch sâu do sông xẻ, là trung tâm của vườn quốc gia cùng tên.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Nam Đầu</span><span class="pick-name">Hồ Nhật Nguyệt</span><span class="pick-desc">Hồ nước lớn nhất Đài Loan, bao quanh bởi núi, đền chùa và đường đạp xe ven hồ.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Gia Nghĩa</span><span class="pick-name">A Lý Sơn</span><span class="pick-desc">Rừng hồng bách, đồn điền trà, thác nước và tuyến đường sắt rừng nổi tiếng ngắm bình minh.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Đài Nam</span><span class="pick-name">Cố đô Đài Nam</span><span class="pick-desc">Thành phố cổ nhất đảo với đền miếu và các pháo đài Hà Lan như Zeelandia và Provintia.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Cao Hùng</span><span class="pick-name">Cao Hùng &amp; Ao Sen</span><span class="pick-desc">Cảng lớn nhất phía nam, thành phố của nghệ thuật công cộng, đền chùa ven hồ và cảng biển sôi động.</span></li>
+        <li><span class="pick-where">Cực Nam</span><span class="pick-name">Vườn quốc gia Khẩn Đinh</span><span class="pick-desc">Bờ biển nhiệt đới, rạn san hô và bãi cát trắng — điểm nghỉ hè của người dân.<a class="cite" href="#ref-11">[11]</a></span></li>
+        <li><span class="pick-where">Trung tâm</span><span class="pick-name">Ngọc Sơn (Yu Shan)</span><span class="pick-desc">Đỉnh cao 3.952 m, cần giấy phép leo núi; là nơi dành cho người yêu trekking.</span></li>
+        <li><span class="pick-where">Ngoài khơi</span><span class="pick-name">Bành Hồ</span><span class="pick-desc">Quần đảo ở eo biển Đài Loan nổi tiếng với gió, biển, đá bazan và lịch sử hàng hải.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Hai cách nhìn về địa vị</b>
+        Chính phủ Trung Quốc coi Đài Loan là một phần lãnh thổ của mình và không loại trừ dùng vũ lực. Chính quyền tại Đài Bắc khẳng định nhà nước đang tồn tại và do người dân trên đảo bầu ra. Nhiều nước, gồm cả Mỹ, giữ lập trường “chính sách một Trung Quốc” theo cách hiểu riêng của mình mà không trực tiếp thừa nhận yêu sách của Bắc Kinh.
+      </aside>
+
+      <p>Vị thế quốc tế của Đài Loan là vấn đề chưa có lời giải. Năm <span class="tg">1971</span>, Liên Hợp Quốc chuyển ghế đại diện Trung Quốc sang Cộng hòa Nhân dân Trung Hoa; từ đó, số nước có quan hệ ngoại giao chính thức với Đài Bắc giảm dần, hiện chỉ còn <span class="tg">11 quốc gia thành viên LHQ cùng Tòa thánh Vatican</span><a class="cite" href="#ref-1">[1]</a>. Dù vậy, Đài Loan duy trì quan hệ kinh tế – văn hóa rộng khắp và tham gia nhiều tổ chức quốc tế dưới các tên gọi khác như “Chinese Taipei”. Với Mỹ, quan hệ được duy trì không chính thức qua <span class="nv" data-note="Đạo luật Mỹ thông qua năm 1979 sau khi Washington chuyển công nhận sang Bắc Kinh, cho phép Mỹ duy trì quan hệ không chính thức và cung cấp vũ khí phòng thủ cho Đài Loan.">Đạo luật Quan hệ Đài Loan</span> (1979).</p>
+
+      <p>Điểm nóng lớn nhất là áp lực quân sự từ Trung Quốc. Ngày <span class="tg">29 – 30/12/2025</span>, quân đội Trung Quốc tiến hành cuộc tập trận <span class="nv" data-note="Cuộc tập trận có tên “Sứ mệnh Chính nghĩa 2025” (Justice Mission-2025) của Quân Giải phóng Nhân dân Trung Quốc quanh Đài Loan, cuộc tập trận có tên thứ hai trong năm 2025.">Justice Mission-2025</span> quanh đảo, với <span class="tg">201 lượt máy bay</span>, <span class="tg">27 tàu hải quân</span> và <span class="tg">29 tàu hải cảnh</span>, bắn 27 quả rocket vào vùng tiếp giáp; Đài Loan cho biết 941 chuyến bay dân sự bị ảnh hưởng<a class="cite" href="#ref-12">[12]</a>. Bắc Kinh gắn cuộc tập trận với các hành động “ly khai” của Tổng thống Lại và gói vũ khí <span class="tg">11,1 tỷ USD</span> của Mỹ công bố hồi giữa tháng 12<a class="cite" href="#ref-12">[12]</a>. Các đợt tập trận như vậy đã trở thành công cụ gây sức ép thường xuyên của Bắc Kinh, thử phản ứng của Đài Loan và Mỹ.</p>
+
+      <p>Ở nhiều mặt trận khác, Đài Loan cũng đang chịu áp lực. Ngày 2/5/2026, chuyến thăm Eswatini bị hoãn của Tổng thống Lại chịu ảnh hưởng khi một số nước châu Phi từ chối cho bay qua không phận; tháng 7, Papua New Guinea đóng văn phòng kinh tế của Đài Bắc, viện lý do cải thiện quan hệ với Trung Quốc<a class="cite" href="#ref-5">[5]</a>. Cơ quan an ninh Đài Loan cảnh báo hơn 13.000 tài khoản mạng đáng ngờ tung tin sai trước bầu cử địa phương tháng 11<a class="cite" href="#ref-4">[4]</a>. Mặt khác, Mỹ tiếp tục ủng hộ: một dự luật lưỡng đảng bảo vệ cáp quang biển của Đài Loan được thúc đẩy, và Pháp hợp tác nâng cấp hệ thống phòng không cho khinh hạm Đài Loan<a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <p>Bài toán then chốt không nằm ở một biến cố riêng lẻ mà ở cấu trúc: kinh tế thế giới lệ thuộc vào chip Đài Loan, nên bất kỳ xung đột nào ở eo biển cũng có hệ quả toàn cầu; trong nước, xã hội chia rẽ về cách đối phó với Bắc Kinh, thể hiện qua cuộc giằng co ngân sách quốc phòng và chuyến thăm của Chủ tịch KMT. Trong khi đó, dân số già và ít sinh đang bào mòn nền tảng dài hạn của quốc gia.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Đài Loan</h2>
+      <ol class="funs">
+        <li><b>“Nhà máy chip” của thế giới.</b> TSMC nắm 69,9% thị trường gia công bán dẫn toàn cầu năm 2025 — gấp gần mười lần Samsung, đối thủ đứng thứ hai<a class="cite" href="#ref-8">[8]</a>.</li>
+        <li><b>Tỷ lệ sinh thấp nhất hành tinh.</b> Năm 2025 chỉ có 107.812 ca sinh; Đài Loan được nhận định đã vượt Hàn Quốc về mức sinh thấp<a class="cite" href="#ref-2">[2]</a>.</li>
+        <li><b>Ngọc Sơn cao hơn Phú Sĩ.</b> Đỉnh cao nhất đảo cao 3.952 m, vượt núi Phú Sĩ của Nhật Bản (3.776 m)<a class="cite" href="#ref-1">[1]</a>.</li>
+        <li><b>Tên gọi “Chinese Taipei”.</b> Tại Olympic và APEC, Đài Loan phải tham dự bằng tên này thay vì tên chính thức<a class="cite" href="#ref-1">[1]</a>.</li>
+        <li><b>Nước đầu tiên ở châu Á công nhận hôn nhân đồng giới.</b> Luật được thông qua năm 2019<a class="cite" href="#ref-1">[1]</a>.</li>
+        <li><b>Trà sữa trân châu ra đời trên đảo.</b> Thức uống này được cho là bắt nguồn từ Đài Trung, dù nơi phát minh chính xác còn tranh cãi<a class="cite" href="#ref-10">[10]</a>.</li>
+        <li><b>Taipei 101 từng là nóc nhà thế giới.</b> Tòa nhà 101 tầng giữ danh hiệu cao nhất thế giới từ 2004 đến 2010<a class="cite" href="#ref-11">[11]</a>.</li>
+        <li><b>Nhiều ngôn ngữ quốc gia.</b> Ngoài Quan thoại, tiếng Mân Nam, Khách Gia, các ngôn ngữ bản địa và ngôn ngữ ký hiệu Đài Loan đều được công nhận là ngôn ngữ quốc gia<a class="cite" href="#ref-1">[1]</a>.</li>
+        <li><b>Cường quốc ăn chay ở Đông Á.</b> Khoảng 12–16% dân số không ăn thịt, cùng hàng nghìn quán chay<a class="cite" href="#ref-10">[10]</a>.</li>
+        <li><b>Quê hương xa xưa của các dân tộc Nam Đảo.</b> Nhiều nhà ngôn ngữ học cho rằng ngữ hệ Nam Đảo — nay trải từ Madagascar đến Polynesia — bắt nguồn từ hòn đảo này.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Đài Loan rộng <span class="tg">36.193 km²</span>, dân số khoảng <span class="tg">23,3 triệu</span> và đang giảm; thủ đô Đài Bắc.</li>
+        <li>Chuỗi cai trị: Nam Đảo bản địa → Hà Lan (<span class="tg">1624</span>) → Đông Ninh (<span class="tg">1662</span>) → nhà Thanh (<span class="tg">1683</span>) → Nhật (<span class="tg">1895</span>) → Trung Hoa Dân Quốc (<span class="tg">1945</span>).</li>
+        <li>Chính phủ Tưởng Giới Thạch rút về đảo <span class="tg">1949</span>; thiết quân luật đến <span class="tg">15/7/1987</span>; tổng thống dân bầu lần đầu <span class="tg">1996</span>.</li>
+        <li>Chính phủ phân chia: tổng thống Lại Thanh Đức (Dân Tiến) đối diện nghị viện do KMT và TPP chiếm ưu thế.</li>
+        <li>TSMC nắm <span class="tg">69,9%</span> thị trường gia công chip toàn cầu (2025); Mỹ – Đài thuế <span class="tg">15%</span> kèm cam kết đầu tư <span class="tg">250 tỷ USD</span>.</li>
+        <li>Ẩm thực: mì bò, trứng chiên hàu, cơm thịt kho, trà sữa trân châu, chợ đêm; ảnh hưởng Mân Nam, Khách Gia, Nhật, Hoa lục 1949.</li>
+        <li>Không có di sản UNESCO chính thức; điểm nhấn: Taipei 101, Cố cung, Taroko, Hồ Nhật Nguyệt, A Lý Sơn.</li>
+        <li>Áp lực Trung Quốc (Justice Mission-2025) và địa vị quốc tế bỏ ngỏ là hai vấn đề nóng nhất; bầu cử địa phương <span class="tg">28/11/2026</span>.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Chính quyền Trung Hoa Dân Quốc rút về Đài Loan vào năm nào, và thiết quân luật kéo dài đến khi nào?</p>
+          <details><summary>Xem đáp án</summary><p>Chính phủ Tưởng Giới Thạch rút sang đảo năm 1949; thiết quân luật kéo dài đến ngày 15/7/1987.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Nêu thứ tự các thế lực cai trị Đài Loan từ thế kỷ XVII đến 1945.</p>
+          <details><summary>Xem đáp án</summary><p>Hà Lan (1624) → Vương quốc Đông Ninh của Trịnh Thành Công (1662) → nhà Thanh (1683) → Nhật Bản (1895) → Trung Hoa Dân Quốc tiếp quản (1945).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Vì sao nói Đài Loan có “chính phủ phân chia”?</p>
+          <details><summary>Xem đáp án</summary><p>Tổng thống Lại Thanh Đức thuộc Dân Tiến, nhưng Quốc dân đảng và Đảng Dân chúng Đài Loan chiếm ưu thế trong Lập pháp viện; các đợt bãi nhiệm năm 2025 đều thất bại.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">TSMC chiếm bao nhiêu phần trăm thị trường gia công bán dẫn toàn cầu năm 2025?</p>
+          <details><summary>Xem đáp án</summary><p>69,9% (tăng từ 64,4% năm 2024), theo TrendForce.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Kể tên ba món ăn hoặc đồ uống tiêu biểu của Đài Loan và nêu một ảnh hưởng lịch sử lên ẩm thực đảo.</p>
+          <details><summary>Xem đáp án</summary><p>Ví dụ: mì bò, trứng chiên hàu, trà sữa trân châu. Ảnh hưởng gồm người Mân Nam, Khách Gia, thời Nhật Bản, làn sóng người từ lục địa sau 1949 hoặc nền ẩm thực bản địa.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Tại sao Đài Loan không có di sản UNESCO chính thức, và họ làm gì thay thế?</p>
+          <details><summary>Xem đáp án</summary><p>Do bế tắc chính trị về địa vị quốc tế; Đài Loan tự lập danh sách dự kiến trong nước gồm 18 mục.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Taiwan</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp diện tích, dân số ước tính 12/2025, tôn giáo 2023, GDP theo IMF, mốc lịch sử). <a href="https://en.wikipedia.org/wiki/Taiwan" target="_blank" rel="noopener">en.wikipedia.org/wiki/Taiwan</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-2">Taipei Times. <i>Fertility rate falls to lowest globally</i>. 10/1/2026. <a href="https://www.taipeitimes.com/News/front/archives/2026/01/10/2003850357" target="_blank" rel="noopener">taipeitimes.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-3">Global Taiwan Institute. <i>Results of the July 26 Recall Elections</i>. 8/2025. <a href="https://globaltaiwan.org/2025/08/results-of-the-july-26-recall-elections/" target="_blank" rel="noopener">globaltaiwan.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-4">American Enterprise Institute. <i>China &amp; Taiwan Update, April 10, 2026</i>. 10/4/2026. <a href="https://aei.org/articles/china-taiwan-update-april-10-2026" target="_blank" rel="noopener">aei.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-5">Wikipedia contributors. <i>2026 in Taiwan</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2026_in_Taiwan" target="_blank" rel="noopener">en.wikipedia.org/wiki/2026_in_Taiwan</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-6">Wikipedia contributors. <i>2026 Taiwanese local elections</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-7">Wikipedia contributors. <i>Economy of Taiwan</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Economy_of_Taiwan" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-8">Taipei Times. <i>TSMC nets nearly 70% of 2025 foundry market</i> (dẫn số liệu TrendForce). 14/3/2026. <a href="https://www.taipeitimes.com/News/biz/archives/2026/03/14/2003853777" target="_blank" rel="noopener">taipeitimes.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-9">Council on Foreign Relations. <i>U.S.-Taiwan Trade Agreement Leaves Major Questions Open</i>. 2/2026. <a href="https://www.cfr.org/articles/u-s-taiwan-trade-agreement-leaves-major-questions-open" target="_blank" rel="noopener">cfr.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-10">Wikipedia contributors. <i>Taiwanese cuisine</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Taiwanese_cuisine" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-11">Wikipedia contributors. <i>Tourism in Taiwan</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Tourism_in_Taiwan" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-12">Global Taiwan Institute. <i>The PLA’s “Justice Mission-2025” Exercise Around Taiwan</i>. 1/2026. <a href="https://globaltaiwan.org/2026/01/pla-justice-mission-2025/" target="_blank" rel="noopener">globaltaiwan.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Địa vị của Đài Loan là vấn đề còn tranh chấp; bài trình bày lập trường của các bên ở mức khái quát, không khẳng định một chiều. Một số nguồn là Wikipedia tổng hợp nên số liệu nên được đối chiếu thêm với cơ quan thống kê Đài Loan khi cần dùng chính thức.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
