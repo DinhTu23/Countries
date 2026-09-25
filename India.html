@@ -1,0 +1,1167 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ấn Độ — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Ấn Độ</div>
+          <h1>Ấn Độ</h1>
+          <div class="period">Châu Á · Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Ấn Độ: ba dải ngang cam, trắng, xanh lá; giữa dải trắng là bánh xe Ashoka màu xanh hải quân với 24 nan">
+            <rect width="30" height="6.6667" y="0" fill="#ff9933"/>
+            <rect width="30" height="6.6667" y="6.6667" fill="#ffffff"/>
+            <rect width="30" height="6.6667" y="13.3333" fill="#138808"/>
+            <circle cx="15" cy="10" r="2.38" fill="none" stroke="#000080" stroke-width="0.24"/>
+            <circle cx="15" cy="10" r="0.42" fill="#000080"/>
+            <line x1="15" y1="10" x2="17.3800" y2="10.0000" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="17.2989" y2="10.6160" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="17.0611" y2="11.1900" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="16.6829" y2="11.6829" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="16.1900" y2="12.0611" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="15.6160" y2="12.2989" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="15.0000" y2="12.3800" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="14.3840" y2="12.2989" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="13.8100" y2="12.0611" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="13.3171" y2="11.6829" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="12.9389" y2="11.1900" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="12.7011" y2="10.6160" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="12.6200" y2="10.0000" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="12.7011" y2="9.3840" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="12.9389" y2="8.8100" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="13.3171" y2="8.3171" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="13.8100" y2="7.9389" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="14.3840" y2="7.7011" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="15.0000" y2="7.6200" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="15.6160" y2="7.7011" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="16.1900" y2="7.9389" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="16.6829" y2="8.3171" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="17.0611" y2="8.8100" stroke="#000080" stroke-width="0.11"/>
+            <line x1="15" y1="10" x2="17.2989" y2="9.3840" stroke="#000080" stroke-width="0.11"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Ấn Độ là quốc gia đông dân nhất hành tinh, với khoảng 1,48 tỷ người, hơn hai chục ngôn ngữ được hiến pháp công nhận và một dòng văn minh chảy liên tục từ thung lũng sông Ấn cách đây bốn nghìn năm. Đây cũng là nền dân chủ lớn nhất thế giới, nơi gần một tỷ cử tri bước vào phòng phiếu mỗi kỳ tổng tuyển cử, và là nền kinh tế lớn thứ sáu thế giới tính theo GDP danh nghĩa nhưng thứ ba theo sức mua tương đương. Nghịch lý là thu nhập bình quân đầu người vẫn còn thấp, hơn 87% lao động làm việc phi chính thức, và hàng loạt câu hỏi lớn về đẳng cấp, tôn giáo và vùng miền đang được đặt lại qua cuộc tổng điều tra dân số 2026–2027. Nếu chỉ nhớ một điều về Ấn Độ, hãy nhớ: đây là một đất nước “của số nhiều” — nhiều ngôn ngữ, nhiều tôn giáo, nhiều bang, nhiều tầng thời gian sống chung — và bài toán trung tâm của nó là biến quy mô khổng lồ ấy thành sức mạnh thay vì lực kéo.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">3.287.263 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~1,48 tỷ<a class="cite" href="#ref-1">[1]</a><small>ước tính 2026; điều tra 2011: 1,21 tỷ</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">New Delhi</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Hindi &amp; tiếng Anh<small>22 ngôn ngữ trong Phụ lục VIII<a class="cite" href="#ref-3">[3]</a></small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Ấn Độ giáo 79,8%<a class="cite" href="#ref-1">[1]</a><small>Hồi giáo 14,2%, Kitô giáo 2,3% (2011)</small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Rupee (₹, INR)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~2.813 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa 2026; theo PPP ~12.801 USD</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~2600 – 1900 TCN</span>
+          <span class="tl-what">Văn minh sông Ấn</span>
+          <span class="tl-note">Giai đoạn trưởng thành của Harappa và Mohenjo-daro, những đô thị quy hoạch đầu tiên của Nam Á</span>
+        </li>
+        <li>
+          <span class="tl-when">~1500 – 500 TCN</span>
+          <span class="tl-what">Thời kỳ Veda</span>
+          <span class="tl-note">Kinh Veda hình thành, đặt nền cho Bà-la-môn giáo và trật tự xã hội đẳng cấp</span>
+        </li>
+        <li>
+          <span class="tl-when">~TK VI – V TCN</span>
+          <span class="tl-what">Phật &amp; Mahavira</span>
+          <span class="tl-note">Đức Phật và người sáng lập đạo Jain xuất hiện giữa các tiểu quốc Mahajanapada</span>
+        </li>
+        <li>
+          <span class="tl-when">322 TCN</span>
+          <span class="tl-what">Đế quốc Maurya</span>
+          <span class="tl-note">Chandragupta Maurya lập đế quốc thống nhất phần lớn tiểu lục địa lần đầu tiên</span>
+        </li>
+        <li>
+          <span class="tl-when">~260 TCN</span>
+          <span class="tl-what">Ashoka &amp; chiến tranh Kalinga</span>
+          <span class="tl-note">Sau cuộc chiến đẫm máu, Ashoka hướng đến pháp (dhamma) và bảo trợ Phật giáo</span>
+        </li>
+        <li>
+          <span class="tl-when">TK IV – VI</span>
+          <span class="tl-what">Thời Gupta</span>
+          <span class="tl-note">“Thời hoàng kim” của khoa học, toán học, văn chương và nghệ thuật cổ điển</span>
+        </li>
+        <li>
+          <span class="tl-when">từ giữa TK IX</span>
+          <span class="tl-what">Đế quốc Chola</span>
+          <span class="tl-note">Cường quốc miền Nam có hải quân, thương mại và ảnh hưởng vươn tới Đông Nam Á</span>
+        </li>
+        <li>
+          <span class="tl-when">1206</span>
+          <span class="tl-what">Vương triều Hồi giáo Delhi</span>
+          <span class="tl-note">Mở đầu gần ba thế kỷ rưỡi cai trị của các sultan ở miền Bắc</span>
+        </li>
+        <li>
+          <span class="tl-when">1526</span>
+          <span class="tl-what">Đế quốc Mughal</span>
+          <span class="tl-note">Babur thắng tại Panipat; Akbar, Shah Jahan biến Mughal thành đế quốc rực rỡ nhất</span>
+        </li>
+        <li>
+          <span class="tl-when">1757</span>
+          <span class="tl-what">Trận Plassey</span>
+          <span class="tl-note">Công ty Đông Ấn Anh thắng ở Bengal, mở đường cho ách thống trị Anh</span>
+        </li>
+        <li>
+          <span class="tl-when">1857 – 1858</span>
+          <span class="tl-what">Khởi nghĩa lớn &amp; Crown rule</span>
+          <span class="tl-note">Cuộc nổi dậy bị dập tắt; Hoàng gia Anh trực tiếp cai trị Ấn Độ</span>
+        </li>
+        <li>
+          <span class="tl-when">1885</span>
+          <span class="tl-what">Đảng Quốc đại ra đời</span>
+          <span class="tl-note">Tổ chức chính trị chủ lực của phong trào dân tộc, sau này gắn với Gandhi và Nehru</span>
+        </li>
+        <li>
+          <span class="tl-when">15/8/1947</span>
+          <span class="tl-what">Độc lập &amp; chia tách</span>
+          <span class="tl-note">Anh rút đi; tiểu lục địa bị chia thành Ấn Độ và Pakistan trong bạo lực và di cư hàng loạt</span>
+        </li>
+        <li>
+          <span class="tl-when">26/1/1950</span>
+          <span class="tl-what">Hiến pháp có hiệu lực</span>
+          <span class="tl-note">Ấn Độ trở thành nước cộng hòa; ngày này được kỷ niệm là Ngày Cộng hòa</span>
+        </li>
+        <li>
+          <span class="tl-when">1991</span>
+          <span class="tl-what">Cải cách tự do hóa</span>
+          <span class="tl-note">Từ bỏ mô hình kế hoạch hóa khép kín để mở cửa thị trường và đầu tư</span>
+        </li>
+        <li>
+          <span class="tl-when">2024 – 2027</span>
+          <span class="tl-what">Chính phủ liên minh &amp; tổng điều tra</span>
+          <span class="tl-note">Modi nhiệm kỳ ba; điều tra dân số đầu tiên từ 2011, có đếm đẳng cấp lần đầu từ 1931</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước Công nguyên chỉ mang tính ước lệ và còn được các nhà sử học tranh luận; ngay cả năm sinh – mất của Đức Phật cũng có nhiều cách tính khác nhau. Mốc 1206 là cách đặt phổ biến cho sự ra đời của Vương triều Hồi giáo Delhi, dù một số nguồn chỉ nói chung là thế kỷ XII–XIII.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Về số liệu dân số</b>
+        Ấn Độ chưa làm tổng điều tra kể từ 2011 (dự kiến hoàn tất năm 2027), nên mọi con số dân số hiện nay đều là ước tính, dao động tùy nguồn: có nơi ghi 1,44 tỷ (2023), nơi khác ghi 1,48 tỷ (2026).
+      </aside>
+
+      <p class="lede">Ấn Độ là một tiểu lục địa hơn là một quốc gia thông thường: phía bắc là dãy Himalaya, phía nam là bán đảo nhọn thò ra Ấn Độ Dương, ở giữa là những đồng bằng phù sa và cao nguyên Deccan.</p>
+
+      <p>Diện tích khoảng <span class="tg">3.287.263 km²</span><a class="cite" href="#ref-1">[1]</a>, đường bờ biển dài <span class="tg">7.517 km</span><a class="cite" href="#ref-1">[1]</a>. Đỉnh cao nhất nằm trọn trong lãnh thổ Ấn Độ là <span class="nv" data-note="Đỉnh núi thuộc bang Uttarakhand, cao 7.816 m; Kangchenjunga cao hơn nhưng nằm trên biên giới với Nepal.">Nanda Devi</span>. Địa hình đi từ băng tuyết Himalaya qua đồng bằng sông Hằng – Ấn màu mỡ, sa mạc Thar ở phía tây, hai dải núi Ghats ven biển, tới các vùng đồng bằng ven biển nhiệt đới. Khí hậu bị chi phối bởi gió mùa: mùa mưa đến từ tháng Sáu, quyết định mùa màng và cả tâm trạng của cả nước.</p>
+
+      <p>Về dân cư, Ấn Độ là nước đông dân nhất thế giới, đã vượt Trung Quốc, với <span class="tg">tuổi trung vị khoảng 29,8</span> và tỷ lệ dân số trong độ tuổi lao động khoảng 68%<a class="cite" href="#ref-3">[3]</a>. Tốc độ tăng dân số đã chậm lại còn khoảng 0,89% mỗi năm, còn mức sinh chỉ còn khoảng <span class="tg">1,98 con/phụ nữ</span>, thấp hơn mức thay thế; tuổi thọ trung bình đạt khoảng 72 năm<a class="cite" href="#ref-3">[3]</a>. Đây là “lợi tức dân số” mà các nhà hoạch định thường nhắc đến, nhưng nó chỉ thành hiện thực nếu có đủ việc làm cho lực lượng lao động trẻ khổng lồ.</p>
+
+      <p>Ngôn ngữ là một mê cung. Điều tra ghi nhận <span class="tg">122 ngôn ngữ</span> và <span class="tg">234 tiếng mẹ đẻ</span>; Hindi là tiếng mẹ đẻ của khoảng 43,6% dân số, tiếp theo là Bengali (8%) và Marathi (6,9%); hiến pháp công nhận <span class="tg">22 ngôn ngữ</span> trong Phụ lục VIII<a class="cite" href="#ref-3">[3]</a>. Về tôn giáo (điều tra 2011), Ấn Độ giáo chiếm 79,8%, Hồi giáo 14,2%, Kitô giáo 2,3%, đạo Sikh 1,7%, Phật giáo 0,7% và đạo Jain 0,4%<a class="cite" href="#ref-1">[1]</a>. Cả Phật giáo lẫn đạo Jain, đạo Sikh đều ra đời trên chính đất Ấn. Đến năm 2011, khoảng 68,8% dân số vẫn sống ở nông thôn<a class="cite" href="#ref-3">[3]</a>, nhưng làn sóng đô thị hóa đang tăng tốc quanh Mumbai, Delhi, Bengaluru, Hyderabad và Chennai.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Ấn Độ không phải một đường thẳng mà là nhiều lớp phù sa chồng lên nhau: Indus, Veda, Phật giáo, Mughal, Anh — mỗi lớp không xóa sạch lớp trước mà chồng lên, tạo nên thứ bản sắc đa tầng đặc trưng của quốc gia này.</p>
+
+      <p><b>Cổ đại.</b> Văn minh sông Ấn (Harappa) đạt thời kỳ trưởng thành khoảng <span class="tg">2600 – 1900 TCN</span> với các đô thị được quy hoạch chặt chẽ<a class="cite" href="#ref-4">[4]</a>. Tiếp đó là thời kỳ Veda (khoảng <span class="tg">1500 – 500 TCN</span>), khi các bộ kinh Veda hình thành và xã hội dần phân tầng thành hệ thống varna. Từ khoảng thế kỷ VI TCN, các tiểu quốc <span class="nv" data-note="Mười sáu vương quốc lớn ở thung lũng sông Hằng; cuộc cạnh tranh giữa chúng dẫn tới sự trỗi dậy của Magadha rồi đế quốc Maurya.">Mahajanapada</span> tranh giành ưu thế; thời điểm này cũng là lúc <span class="nv" data-note="Tức Siddhartha Gautama, người sáng lập Phật giáo, sinh khoảng 563–483 TCN theo một cách tính phổ biến.">Đức Phật</span> và Mahavira, vị tổ của đạo Jain, giảng dạy những tư tưởng thách thức trật tự Bà-la-môn.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao Ashoka quan trọng đến hôm nay</b>
+        Trụ đá của Ashoka với bốn sư tử là quốc huy Ấn Độ, còn Bánh xe Pháp (Ashoka Chakra) 24 nan nằm giữa lá cờ. Hình tượng một vị vua từ bỏ chinh phạt để theo đuổi đạo đức là nguồn cảm hứng lâu dài của nền cộng hòa hiện đại.
+      </aside>
+
+      <p><b>Đế quốc cổ điển.</b> Năm <span class="tg">322 TCN</span>, <span class="nv" data-note="Người sáng lập đế quốc Maurya, thống nhất phần lớn Bắc Ấn và lưu vực sông Hằng.">Chandragupta Maurya</span> dựng nên đế quốc thống nhất đầu tiên trên phần lớn tiểu lục địa. Cháu ông là <span class="nv" data-note="Hoàng đế Maurya thế kỷ III TCN; sau chiến tranh Kalinga khoảng 260 TCN ông quay sang Phật giáo và khắc các chỉ dụ về đạo pháp lên đá.">Ashoka</span>, sau cuộc chiến Kalinga (khoảng <span class="tg">260 TCN</span>) đã hướng về phi bạo lực và truyền bá Phật giáo. Thời Gupta (thế kỷ IV–VI) thường được gọi là “thời hoàng kim” của văn chương, toán học và nghệ thuật<a class="cite" href="#ref-4">[4]</a>. Từ giữa thế kỷ IX, đế quốc <b>Chola</b> ở miền Nam vươn lên thành cường quốc biển, để lại dấu ấn thương mại và văn hóa suốt tới Đông Nam Á — nơi các vương quốc như Champa hay Angkor chịu ảnh hưởng đậm của Ấn Độ giáo và Phật giáo.</p>
+
+      <p><b>Trung đại: Delhi và Mughal.</b> Từ đầu thế kỷ XIII, các vương triều Hồi giáo thiết lập Vương quốc Delhi (mốc quen dùng là <span class="tg">1206</span>). Năm <span class="tg">1526</span>, <span class="nv" data-note="Người sáng lập đế quốc Mughal sau trận Panipat lần thứ nhất năm 1526.">Babur</span> lập nên đế quốc Mughal. Dưới <span class="nv" data-note="Trị vì 1556–1605, nổi tiếng với chính sách hòa hợp tôn giáo và bộ máy hành chính tập quyền.">Akbar</span> (1556–1605) đế quốc ổn định và mở rộng; <span class="nv" data-note="Trị vì 1628–1658, cho xây Taj Mahal để tưởng nhớ hoàng hậu Mumtaz Mahal.">Shah Jahan</span> (1628–1658) để lại Taj Mahal và những công trình kiến trúc lộng lẫy nhất. Sau cái chết của Aurangzeb năm <span class="tg">1707</span>, quyền lực Mughal suy yếu dần, tạo khoảng trống cho các thế lực khu vực và thương nhân châu Âu<a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <p><b>Thời thuộc Anh.</b> Ngày <span class="tg">23/6/1757</span>, Công ty Đông Ấn Anh thắng trận Plassey ở Bengal và bắt đầu kiểm soát dần tiểu lục địa. Cuộc nổi dậy lớn năm <span class="tg">1857</span> bị dập tắt; từ <span class="tg">1858</span>, Hoàng gia Anh trực tiếp cai trị (Crown rule). Đảng Quốc đại thành lập năm <span class="tg">1885</span>, và từ đầu thế kỷ XX, phong trào dân tộc đi tới cao trào với chiến lược bất bạo động của <span class="nv" data-note="Mohandas Karamchand Gandhi (1869–1948), lãnh tụ phong trào bất bạo động (satyagraha) chống ách thực dân Anh; bị ám sát ngày 30/1/1948.">Mahatma Gandhi</span>, cùng các nhà lãnh đạo như <span class="nv" data-note="Jawaharlal Nehru (1889–1964), Thủ tướng đầu tiên của Ấn Độ độc lập, tại nhiệm từ 1947 đến 1964.">Jawaharlal Nehru</span>.</p>
+
+      <p><b>Độc lập và cộng hòa.</b> Ngày <span class="tg">15/8/1947</span> Ấn Độ giành độc lập, nhưng tiểu lục địa bị chia làm hai nước Ấn Độ và Pakistan, kéo theo bạo lực và di cư hàng loạt mà ký ức vẫn còn ám ảnh đến nay. Hiến pháp do ủy ban soạn thảo dưới sự chủ trì của <span class="nv" data-note="B. R. Ambedkar (1891–1956), luật gia và lãnh tụ Dalit, chủ tịch ủy ban soạn thảo Hiến pháp Ấn Độ.">B. R. Ambedkar</span> có hiệu lực ngày <span class="tg">26/1/1950</span>, thiết lập nền cộng hòa dân chủ liên bang giữa một xã hội cực kỳ đa dạng và khác biệt.</p>
+
+      <p><b>Cải cách và Ấn Độ hiện đại.</b> Năm <span class="tg">1991</span>, sau khủng hoảng cán cân thanh toán, chính phủ Ấn Độ mở cửa nền kinh tế, bãi bỏ dần hệ thống giấy phép và giảm rào cản thương mại — bước ngoặt tương tự “Đổi Mới” của Việt Nam năm 1986. Trong hai thập kỷ sau, các ngành công nghệ thông tin, dược phẩm và dịch vụ trỗi dậy. Bản sắc Ấn Độ hôm nay là sự pha trộn giữa nền tảng tôn giáo – triết học cổ, di sản Hồi giáo và Mughal, dấu ấn Anh (tiếng Anh, luật, đường sắt, cricket) và tinh thần dân chủ hiến định — cộng thêm những tranh luận chưa dứt về vai trò của bản sắc Hindu trong đời sống chính trị.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Ấn Độ</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống — Droupadi Murmu</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, vai trò chủ yếu mang tính hình thức; do đại cử tri đoàn bầu</span>
+        </li>
+        <li>
+          <span class="tier-role">Thủ tướng &amp; Hội đồng Bộ trưởng — Narendra Modi</span>
+          <span class="tier-desc">Nắm quyền hành pháp thực tế, chịu trách nhiệm trước Hạ viện</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội: Lok Sabha (543 ghế) &amp; Rajya Sabha</span>
+          <span class="tier-desc">Hạ viện do dân bầu trực tiếp; Thượng viện đại diện các bang</span>
+        </li>
+        <li>
+          <span class="tier-role">28 bang &amp; 8 lãnh thổ liên bang</span>
+          <span class="tier-desc">Mỗi bang có quốc hội và thủ hiến riêng, quyền hạn chia theo hiến pháp liên bang</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Liên bang “nghiêng về trung ương”</b>
+        Hiến pháp Ấn Độ thường được gọi là liên bang có tính đơn nhất: quyền hạn được chia giữa trung ương và các bang, nhưng trung ương giữ ưu thế ở nhiều lĩnh vực. Đây là một nguồn căng thẳng lâu dài giữa Delhi và các chính quyền bang đối lập.
+      </aside>
+
+      <p>Ấn Độ là nước cộng hòa nghị viện liên bang với <span class="tg">28 bang và 8 lãnh thổ liên bang</span><a class="cite" href="#ref-1">[1]</a>. Tổng thống <span class="nv" data-note="Bà Droupadi Murmu nhậm chức năm 2022, là người thuộc cộng đồng bộ tộc (Adivasi) đầu tiên giữ chức vụ này.">Droupadi Murmu</span> là nguyên thủ quốc gia, còn Thủ tướng <span class="nv" data-note="Narendra Modi, lãnh đạo Đảng Bharatiya Janata (BJP), giữ chức Thủ tướng từ 2014; nhiệm kỳ ba bắt đầu tháng 6/2024.">Narendra Modi</span> điều hành chính phủ.</p>
+
+      <p>Cuộc tổng tuyển cử 2024 là một bước ngoặt: BJP giành <span class="tg">240 ghế</span> (giảm từ 303 năm 2019), liên minh NDA giành <span class="tg">293 ghế</span> trên tổng số 543, còn khối đối lập INDIA tăng lên <span class="tg">234 ghế</span> từ mức 52. Lần đầu tiên kể từ 2014, BJP mất thế đa số riêng và Modi phải lãnh đạo một chính phủ liên minh, dựa vào các đồng minh như Telugu Desam và Janata Dal (United). Có khoảng 968 triệu cử tri đăng ký, với tỷ lệ đi bỏ phiếu 66,1%<a class="cite" href="#ref-7">[7]</a>.</p>
+
+      <p>Bức tranh cấp bang cũng vừa được vẽ lại. Trong kỳ bầu cử tháng 4/2026, theo phân tích của ISAS-NUS, BJP giành <span class="tg">207/294 ghế</span> ở Tây Bengal, đánh bại bà Mamata Banerjee sau ba nhiệm kỳ; đảng mới TVK giành <span class="tg">108/234 ghế</span> ở Tamil Nadu trong lần tranh cử đầu tiên; liên minh UDF do Quốc đại dẫn dắt thắng <span class="tg">97/140 ghế</span> ở Kerala; còn liên minh do BJP dẫn đầu tiếp tục cầm quyền ở Assam với 92/126 ghế<a class="cite" href="#ref-8">[8]</a>. Kết quả cho thấy một Ấn Độ chính trị đang dịch chuyển chứ không phải bất biến.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Thời kỳ đầu độc lập, Ấn Độ theo mô hình kế hoạch hóa và thay thế nhập khẩu, với “License Raj” — hệ thống giấy phép dày đặc — kiềm chế cả doanh nghiệp tư nhân lẫn ngoại thương. Cải cách 1991 mở cửa nền kinh tế; từ đó dịch vụ (đặc biệt là phần mềm, gia công quy trình kinh doanh) trở thành đầu tàu tăng trưởng, khác với con đường công nghiệp chế tạo của Đông Á.</p>
+
+      <p>Hiện nay, GDP danh nghĩa của Ấn Độ khoảng <span class="tg">4,15 nghìn tỷ USD</span>, đứng thứ 6 thế giới, và khoảng <span class="tg">18,9 nghìn tỷ USD</span> theo sức mua tương đương, đứng thứ 3<a class="cite" href="#ref-2">[2]</a>. Nhưng GDP bình quân đầu người danh nghĩa chỉ khoảng <span class="tg">2.813 USD</span> (hạng 149) và khoảng 12.801 USD theo PPP (hạng 121)<a class="cite" href="#ref-2">[2]</a> — nghịch lý của một cường quốc kinh tế nằm ở nhóm thu nhập trung bình thấp. Tăng trưởng năm tài khóa 2025–26 ước đạt <span class="tg">7,6%</span>, lạm phát CPI tháng 3/2026 khoảng 3,48%<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Cơ cấu kinh tế (năm tài khóa 2023–24) gồm nông nghiệp 17,7%, công nghiệp 27,6% và dịch vụ 54,7%<a class="cite" href="#ref-2">[2]</a>. Kim ngạch xuất khẩu năm tài khóa 2025–26 đạt khoảng <span class="tg">860 tỷ USD</span>, nhập khẩu khoảng 979 tỷ USD; thị trường xuất khẩu lớn nhất là Mỹ (19,8%), EU (16,4%) và UAE (8,5%), trong khi nguồn nhập khẩu lớn nhất là Trung Quốc (20,1%)<a class="cite" href="#ref-2">[2]</a>. Điểm yếu cấu trúc rất rõ: khoảng <span class="tg">87,2%</span> lao động làm việc phi chính thức, thất nghiệp thanh niên khoảng 13,4%, và khoảng 5,3% dân số vẫn nằm dưới ngưỡng nghèo cùng cực (2022)<a class="cite" href="#ref-2">[2]</a>. Kinh tế số là điểm sáng: theo ước tính, nó chiếm 11,7% GDP và có thể vượt 1 nghìn tỷ USD vào năm 2029<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Hai thỏa thuận thương mại đầu 2026 đang định hình lại bối cảnh. Ngày <span class="tg">27/1/2026</span>, Ấn Độ và EU kết thúc đàm phán hiệp định thương mại tự do — mà Chủ tịch Ủy ban châu Âu gọi là “mẹ của mọi thỏa thuận” — tạo ra khu vực thương mại tự do bao trùm khoảng hai tỷ dân và gần 25% GDP toàn cầu; Ấn Độ sẽ giảm hoặc xóa thuế với 96,6% hàng EU, còn EU giảm thuế cho 99,5% hàng Ấn Độ<a class="cite" href="#ref-12">[12]</a>. Trước đó, ngày <span class="tg">3/2/2026</span>, Washington và New Delhi công bố thỏa thuận hạ mức thuế Mỹ đánh lên hàng Ấn Độ từ khoảng 50% (25% thuế đối ứng cộng 25% thuế phạt từ tháng 8/2025) xuống còn <span class="tg">18%</span>, đổi lại Ấn Độ cam kết giảm mạnh mua dầu Nga và mở cửa thị trường cho hàng Mỹ<a class="cite" href="#ref-11">[11]</a>.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Văn hóa Ấn Độ xoay quanh gia đình mở rộng, tôn giáo và lễ hội quanh năm: Diwali (lễ hội ánh sáng), Holi (lễ hội sắc màu), Eid, Giáng sinh, Vesak, Gurpurab của đạo Sikh… cùng tồn tại trong cùng một lịch nghỉ lễ quốc gia. Tôn giáo không phải một phần của đời sống mà là chất keo thấm vào ngôn ngữ, ẩm thực, cách chào hỏi, chọn ngày cưới và cả cách xây nhà.</p>
+
+      <p>Chiều sâu xã hội khó hiểu nhất là <b>đẳng cấp (varna và jati)</b>. Về pháp lý, phân biệt đẳng cấp bị cấm và Hiến pháp có chế độ bảo lưu ghế học tập, việc làm cho các nhóm thiệt thòi; nhưng trong thực tế, jati vẫn chi phối hôn nhân, nghề nghiệp, bầu cử ở nhiều nơi. Việc Nội các quyết định (30/4/2025) đưa yếu tố đẳng cấp vào cuộc điều tra dân số — lần đầu tiên từ năm 1931 — cho thấy vấn đề này không hề “cũ”<a class="cite" href="#ref-9">[9]</a>.</p>
+
+      <p>Về tâm lý xã hội, người Ấn thường được mô tả là coi trọng quan hệ gia đình và thứ bậc, đề cao học vấn kỹ thuật như con đường thăng tiến (kỹ sư, bác sĩ, quản trị), và có sức thích nghi cao trong môi trường thiếu thốn — tinh thần “jugaad”, tức xoay sở sáng tạo với nguồn lực hạn chế. Điện ảnh (Bollywood và các nền điện ảnh khu vực Tamil, Telugu, Bengali…), âm nhạc và cricket là những thứ đưa một đất nước vô cùng khác biệt về ngôn ngữ vào cùng một câu chuyện chung. Đây chỉ là những khái quát phổ biến, dễ trở thành khuôn mẫu, nên cần đọc như xu hướng chứ không phải quy luật áp cho từng cá nhân.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>“Cà ri” không phải một món</b>
+        Từ “curry” là cách người Anh gọi chung hàng trăm món sốt gia vị khác nhau. Ở Ấn Độ, người ta gọi tên từng món cụ thể — dal, sabzi, korma, vindaloo, jhol… — và mỗi nhà có công thức masala riêng.
+      </aside>
+
+      <p>Ẩm thực Ấn Độ là nghệ thuật dùng gia vị: ớt, thảo quả, thì là, nghệ, hồi hương (hing), gừng, rau mùi, tỏi được rang, giã, phi và phối theo hàng nghìn công thức<a class="cite" href="#ref-6">[6]</a>. Lương thực chính gồm gạo, bột mì nguyên cám (atta), kê ngọc trai (bajra) và nhiều loại đậu như masoor, toor, urad, moong<a class="cite" href="#ref-6">[6]</a>. Ăn chay rất phổ biến do ảnh hưởng tôn giáo: người Jain ăn chay nghiêm ngặt (không ăn cả các loại củ), còn nhiều tín đồ Vaishnava tránh cả hành và tỏi<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Bốn vùng có bốn tính cách. Miền Bắc ưa bánh mì dẹt (roti), đậu (dal), thịt hầm kín kiểu dum pukht chịu ảnh hưởng Ấn–Ba Tư; ở Kashmir có tiệc wazwan nhiều món thịt. Miền Nam dùng gạo là chính, hấp nhiều, dùng dừa như dấu ấn đặc trưng. Miền Tây chia đôi: Gujarat gần như hoàn toàn ăn chay do ảnh hưởng đạo Jain, còn Goa pha trộn với Bồ Đào Nha, nổi bật với vindaloo. Miền Đông ăn cá — cá chép, cá hilsa — dùng dầu mù tạt, và nổi tiếng với các món ngọt từ sữa như sandesh<a class="cite" href="#ref-6">[6]</a>. Trà sữa gia vị (chai) là thức uống quốc dân, uống ở mọi nơi từ nhà ga đến văn phòng; cà phê lọc chiếm ưu thế ở miền Nam.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu theo vùng</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Dal &amp; roti</span><span class="pick-desc">Bữa cơm thường nhật: đậu nấu nhừ tẩm gia vị ăn với bánh mì dẹt nướng, nền tảng của mọi bữa ăn Bắc Ấn.</span></li>
+        <li><span class="pick-where">Punjab · Delhi</span><span class="pick-name">Chole bhature · Paratha</span><span class="pick-desc">Đậu gà sốt cay ăn kèm bánh chiên phồng, hoặc bánh paratha nhân khoai — bữa sáng nặng bụng của miền Bắc.</span></li>
+        <li><span class="pick-where">Kashmir</span><span class="pick-name">Wazwan</span><span class="pick-desc">Bữa tiệc nhiều món thịt nấu công phu, hình mẫu của ẩm thực cưới hỏi vùng núi.</span></li>
+        <li><span class="pick-where">Hyderabad</span><span class="pick-name">Biryani</span><span class="pick-desc">Cơm basmati và thịt ướp gia vị hấp kín nồi (dum) — món cơm thơm nổi tiếng nhất Ấn Độ.</span></li>
+        <li><span class="pick-where">Miền Nam</span><span class="pick-name">Dosa · Idli</span><span class="pick-desc">Bánh xèo mỏng và bánh gạo hấp làm từ bột gạo – đậu lên men, ăn với sambar và chutney dừa.</span></li>
+        <li><span class="pick-where">Karnataka</span><span class="pick-name">Bisi bele bath</span><span class="pick-desc">Cơm nấu chung với đậu, rau và hỗn hợp gia vị — món “một nồi” đặc trưng của miền Nam.</span></li>
+        <li><span class="pick-where">Gujarat · Rajasthan</span><span class="pick-name">Thali</span><span class="pick-desc">Mâm cơm chay nhiều bát nhỏ đủ vị mặn, ngọt, chua, cay — cách ăn thể hiện triết lý cân bằng.</span></li>
+        <li><span class="pick-where">Goa</span><span class="pick-name">Vindaloo</span><span class="pick-desc">Món thịt chua cay nguồn gốc Bồ Đào Nha, được Ấn hóa bằng ớt và giấm.</span></li>
+        <li><span class="pick-where">Bengal</span><span class="pick-name">Cá hilsa · Sandesh</span><span class="pick-desc">Cá sông nấu dầu mù tạt, kèm bánh ngọt sữa mềm — hai đầu của bữa ăn Bengal.</span></li>
+        <li><span class="pick-where">Mumbai</span><span class="pick-name">Vada pav</span><span class="pick-desc">Bánh khoai chiên kẹp bánh mì mềm, món ăn nhanh của thành phố không ngủ.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Samosa · Chaat</span><span class="pick-desc">Bánh chiên nhân khoai và các món ăn vặt chua cay ngọt bán ở vỉa hè khắp nơi.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Masala chai</span><span class="pick-desc">Trà đen nấu với sữa, gừng, thảo quả — thức uống của mọi cuộc gặp gỡ.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Có một quy tắc chung: ăn bằng tay phải, và thức ăn thường được dâng thần trước khi ăn ở nhiều gia đình. Nhà hàng “Ấn” ở nước ngoài thường chỉ phản ánh một phần nhỏ của nền ẩm thực này, thiên về Bắc Ấn và Punjab.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Điểm mới nhất</b>
+        Sarnath — nơi Đức Phật lần đầu thuyết pháp — là di sản UNESCO mới nhất của Ấn Độ (2025); năm 2024 danh sách thêm mộ táng Moidam của triều Ahom (Assam) và Cảnh quan quân sự Maratha.
+      </aside>
+
+      <p>Ấn Độ hiện có <span class="tg">45 di sản thế giới</span> UNESCO — gồm 37 di sản văn hóa, 7 thiên nhiên và 1 hỗn hợp — cùng khoảng 70 di sản đang chờ xét duyệt<a class="cite" href="#ref-5">[5]</a>. Từ đỉnh Himalaya tới bãi biển Kerala, từ lăng mộ Mughal tới đền hang Phật giáo, đây là một trong những đất nước dày đặc di tích bậc nhất thế giới.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Ấn Độ</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Uttar Pradesh</span><span class="pick-name">Taj Mahal &amp; Agra</span><span class="pick-desc">Lăng cẩm thạch trắng do Shah Jahan xây (di sản 1983), cùng pháo đài Agra.</span></li>
+        <li><span class="pick-where">Delhi</span><span class="pick-name">Delhi cổ &amp; New Delhi</span><span class="pick-desc">Pháo đài Đỏ, lăng Humayun, tháp Qutb Minar và đại lộ kiểu Anh — thủ đô nhiều lớp thời gian.</span></li>
+        <li><span class="pick-where">Uttar Pradesh</span><span class="pick-name">Varanasi &amp; Sarnath</span><span class="pick-desc">Thành phố bên sông Hằng thiêng liêng nhất Ấn Độ giáo, kề nơi Đức Phật lần đầu thuyết pháp.</span></li>
+        <li><span class="pick-where">Rajasthan</span><span class="pick-name">Jaipur · Jaisalmer · Udaipur</span><span class="pick-desc">“Xứ của các vua”: cung điện, pháo đài đá đỏ và thành phố sa mạc màu vàng.</span></li>
+        <li><span class="pick-where">Maharashtra</span><span class="pick-name">Ajanta &amp; Ellora</span><span class="pick-desc">Quần thể hang đá Phật giáo, Ấn Độ giáo và Jain khắc vào vách núi (di sản 1983).</span></li>
+        <li><span class="pick-where">Maharashtra</span><span class="pick-name">Mumbai</span><span class="pick-desc">Thủ phủ tài chính và Bollywood, nơi có cổng Gateway of India và ga Victoria Terminus.</span></li>
+        <li><span class="pick-where">Karnataka</span><span class="pick-name">Hampi</span><span class="pick-desc">Tàn tích kinh đô đế quốc Vijayanagara giữa những tảng đá khổng lồ.</span></li>
+        <li><span class="pick-where">Tamil Nadu</span><span class="pick-name">Đền Chola &amp; Madurai</span><span class="pick-desc">Các đền tháp đồ sộ của miền Nam Dravidian, nơi lưu giữ truyền thống Chola.</span></li>
+        <li><span class="pick-where">Kerala</span><span class="pick-name">Kênh rạch Kerala</span><span class="pick-desc">Hệ thống đầm phá, thuyền nhà và đồn điền gia vị ở bờ tây nam.</span></li>
+        <li><span class="pick-where">Punjab</span><span class="pick-name">Đền Vàng Amritsar</span><span class="pick-desc">Thánh địa trung tâm của đạo Sikh, nổi tiếng với bếp ăn cộng đồng phục vụ mọi người.</span></li>
+        <li><span class="pick-where">Ladakh · Himalaya</span><span class="pick-name">Ladakh &amp; Nanda Devi</span><span class="pick-desc">Cao nguyên tu viện Phật giáo Tây Tạng và vùng núi cao nhất nằm trọn trong Ấn Độ.</span></li>
+        <li><span class="pick-where">Ven biển</span><span class="pick-name">Goa &amp; Konark</span><span class="pick-desc">Bãi biển và nhà thờ kiểu Bồ Đào Nha ở Goa; đền Mặt Trời hình cỗ xe ở Odisha.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>“Đa liên kết”</b>
+        Từ chỗ đứng ngoài khối trong Chiến tranh Lạnh, Ấn Độ nay thường được mô tả là theo chiến lược “đa liên kết” (multi-alignment): vừa ở Quad với Mỹ, Nhật, Úc, vừa ở BRICS và SCO cùng Nga, Trung Quốc.
+      </aside>
+
+      <p>Đối ngoại Ấn Độ đặt trên tham vọng tự chủ chiến lược: không kết đồng minh chính thức với siêu cường nào, nhưng đồng thời tham gia nhiều cơ chế đối nghịch nhau và đóng vai “tiếng nói của Nam Bán cầu”. Việt Nam và Ấn Độ có quan hệ đối tác chiến lược toàn diện, với nền tảng gắn kết lâu dài về chính trị, quốc phòng và văn hóa.</p>
+
+      <p>Vấn đề nóng thứ nhất là <b>quan hệ với Pakistan</b>. Sau vụ tấn công ở Pahalgam ngày 22/4/2025 làm 26 dân thường thiệt mạng ở Kashmir do Ấn Độ quản lý, New Delhi mở chiến dịch không kích “Operation Sindoor” ngày 7/5/2025 vào chín địa điểm ở Pakistan và Kashmir do Pakistan kiểm soát; hai bên đồng ý ngừng bắn ngày <span class="tg">10/5/2025</span> sau sự can thiệp của Mỹ và một số nước. Ấn Độ tuyên bố đình chỉ Hiệp ước Nước sông Ấn để trả đũa, còn kết quả quân sự vẫn bị tranh cãi: cả hai bên đều tuyên bố thắng lợi<a class="cite" href="#ref-13">[13]</a>. Kashmir và nguồn nước tiếp tục là ngòi nổ tiềm tàng giữa hai nước có vũ khí hạt nhân.</p>
+
+      <p>Thứ hai là <b>quan hệ với Trung Quốc</b>: hai nước có đường biên giới tranh chấp dài trên dãy Himalaya và từng va chạm ở thung lũng Galwan năm 2020; kể từ cuối 2024, quan hệ đã ấm lên trở lại dưới hình thức thận trọng, trong khi thâm hụt thương mại là mối lo lớn — Trung Quốc là nguồn nhập khẩu lớn nhất của Ấn Độ<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Thứ ba là <b>thương mại và địa chính trị dầu mỏ</b>: cú sốc thuế 50% của Mỹ năm 2025 rồi thỏa thuận tháng 2/2026 hạ xuống 18% cho thấy Ấn Độ vừa bị sức ép vì mua dầu Nga, vừa nhanh chóng đa dạng hóa bằng hiệp định với EU<a class="cite" href="#ref-11">[11]</a><a class="cite" href="#ref-12">[12]</a>.</p>
+
+      <p>Thứ tư là <b>cuộc tổng điều tra và bài toán đại diện chính trị</b>. Tổng điều tra dân số lần thứ 16 — cuộc đầu tiên từ 2011 — chia hai giai đoạn: lập danh sách nhà ở từ 1/4 đến 30/9/2026 và điều tra dân số vào tháng 2/2027, với khoảng <span class="tg">3,3 triệu điều tra viên</span>, cổng tự kê khai trực tuyến bằng 16 ngôn ngữ và lần đầu đếm đẳng cấp cụ thể (jati) kể từ 1931<a class="cite" href="#ref-9">[9]</a>. Số liệu này sẽ quyết định việc phân chia lại ghế Quốc hội. Dự luật Phân định lại ranh giới 2026, đề xuất nâng tối đa số ghế Lok Sabha từ 550 lên 850 và dùng dữ liệu 2011, được đưa ra ngày 16/4/2026 nhưng mất hiệu lực (infructuous) ngày 17/4/2026; theo mô phỏng, Tamil Nadu sẽ giảm từ 39 xuống 32 ghế còn Uttar Pradesh tăng từ 80 lên 89<a class="cite" href="#ref-10">[10]</a> — vì vậy vấn đề này đụng đến cân bằng Bắc–Nam vốn rất nhạy cảm.</p>
+
+      <p>Cuối cùng, ở trong nước, những bài toán dài hạn là việc làm cho lực lượng lao động trẻ, mức độ phi chính thức cao, chênh lệch vùng miền và bất bình đẳng thu nhập, cùng ô nhiễm không khí và áp lực nước — đây là những đánh giá chung của giới phân tích chứ không phải số liệu đơn lẻ trong bài.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Ấn Độ</h2>
+      <ol class="funs">
+        <li><b>Con số không ra đời ở đây.</b> Hệ thống số thập phân có chữ số 0 được các nhà toán học Ấn Độ phát triển từ thời cổ đại, trước khi qua thế giới Ả Rập rồi tới châu Âu.</li>
+        <li><b>Cờ vua từ Ấn Độ.</b> Trò chơi tiền thân của cờ vua là chaturanga, xuất hiện ở Ấn Độ vào khoảng thời Gupta, lan sang Ba Tư rồi thế giới Hồi giáo và châu Âu.</li>
+        <li><b>Đỉnh núi cao nhất “trọn nhà”.</b> Nanda Devi là đỉnh cao nhất nằm hoàn toàn trong lãnh thổ Ấn Độ, vì Kangchenjunga cao hơn nhưng nằm trên biên giới với Nepal<a class="cite" href="#ref-1">[1]</a>.</li>
+        <li><b>Hai chục ngôn ngữ chính thức.</b> Ngoài Hindi và tiếng Anh, Hiến pháp công nhận 22 ngôn ngữ, trong khi điều tra ghi nhận tới 122 ngôn ngữ và 234 tiếng mẹ đẻ<a class="cite" href="#ref-3">[3]</a>.</li>
+        <li><b>Một nền kinh tế số khổng lồ.</b> Kinh tế số của Ấn Độ được ước tính chiếm 11,7% GDP và có thể vượt 1 nghìn tỷ USD vào năm 2029<a class="cite" href="#ref-2">[2]</a>.</li>
+        <li><b>Cuộc điều tra khổng lồ.</b> Tổng điều tra 2026–27 huy động khoảng 3,3 triệu điều tra viên và có cổng tự khai bằng 16 ngôn ngữ; Thủ tướng Modi cũng tự kê khai trực tuyến<a class="cite" href="#ref-9">[9]</a>.</li>
+        <li><b>Đếm đẳng cấp lần đầu sau gần một thế kỷ.</b> Cuộc điều tra sắp tới sẽ ghi lại jati cụ thể, điều chưa có kể từ năm 1931<a class="cite" href="#ref-9">[9]</a>.</li>
+        <li><b>Dấu vết Ấn Độ ngay ở Việt Nam.</b> Thánh địa Mỹ Sơn của người Chăm, thờ thần Shiva, là minh chứng cho sự lan tỏa văn hóa Ấn Độ giáo tới Đông Nam Á cổ đại; Ấn Độ và Việt Nam nay là đối tác chiến lược toàn diện.</li>
+        <li><b>Ăn chay là chuyện thường ngày.</b> Nhờ ảnh hưởng của đạo Jain và Vaishnava, nhiều vùng như Gujarat gần như hoàn toàn ăn chay, tạo nên kho món chay phong phú bậc nhất thế giới<a class="cite" href="#ref-6">[6]</a>.</li>
+        <li><b>Thủ đô ba tầng thời gian.</b> Delhi chồng lên nhau Delhi Sultanate, Mughal và New Delhi thời Anh — mỗi lớp còn dấu tích nhìn thấy được ngay trong thành phố.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Ấn Độ có khoảng <span class="tg">1,48 tỷ</span> dân (ước tính 2026), diện tích <span class="tg">3.287.263 km²</span>, 28 bang và 8 lãnh thổ liên bang.</li>
+        <li>Lịch sử theo trục: sông Ấn → Veda → Maurya (<span class="tg">322 TCN</span>) → Gupta → Delhi Sultanate → Mughal (<span class="tg">1526</span>) → Anh → độc lập <span class="tg">15/8/1947</span>.</li>
+        <li>Hiến pháp có hiệu lực ngày <span class="tg">26/1/1950</span>; mở cửa kinh tế năm <span class="tg">1991</span>.</li>
+        <li>Kinh tế thứ 6 thế giới về GDP danh nghĩa (~<span class="tg">4,15 nghìn tỷ USD</span>), thứ 3 về PPP; GDP/người danh nghĩa chỉ ~<span class="tg">2.813 USD</span>.</li>
+        <li>Modi nhiệm kỳ ba từ 6/2024 với liên minh NDA <span class="tg">293 ghế</span>; BJP chỉ có 240 ghế.</li>
+        <li>Tháng 1–2/2026: FTA Ấn–EU (27/1) và thỏa thuận thuế Mỹ–Ấn hạ thuế còn <span class="tg">18%</span> (3/2).</li>
+        <li>Có <span class="tg">45</span> di sản UNESCO; Taj Mahal, Ajanta–Ellora, Sarnath là những cái tên tiêu biểu.</li>
+        <li>Tổng điều tra 2026–27 sẽ đếm đẳng cấp lần đầu từ 1931 và quyết định việc chia lại ghế Quốc hội.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Hoàng đế nào sau cuộc chiến Kalinga đã hướng về phi bạo lực và Phật giáo, và biểu tượng nào của ông xuất hiện trên quốc kỳ Ấn Độ?</p>
+          <details><summary>Xem đáp án</summary><p>Ashoka (Maurya, thế kỷ III TCN); Bánh xe Pháp (Ashoka Chakra) 24 nan nằm giữa dải trắng của quốc kỳ.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Đế quốc Mughal do ai sáng lập và vào năm nào? Nêu một công trình tiêu biểu.</p>
+          <details><summary>Xem đáp án</summary><p>Babur, năm 1526; công trình tiêu biểu là Taj Mahal do Shah Jahan xây dựng để tưởng nhớ hoàng hậu Mumtaz Mahal.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Ngày nào Ấn Độ giành độc lập, và ngày nào Hiến pháp có hiệu lực?</p>
+          <details><summary>Xem đáp án</summary><p>Độc lập ngày 15/8/1947; Hiến pháp có hiệu lực ngày 26/1/1950 (Ngày Cộng hòa).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Kết quả tổng tuyển cử 2024 có gì đặc biệt so với hai kỳ trước?</p>
+          <details><summary>Xem đáp án</summary><p>BJP giành 240 ghế, mất thế đa số riêng (272); Modi phải lập chính phủ liên minh NDA với 293 ghế.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Hãy nêu ba nét khác biệt của ẩm thực Bắc – Nam – Đông – Tây Ấn Độ.</p>
+          <details><summary>Xem đáp án</summary><p>Bắc: bánh mì dẹt, đậu, thịt hầm kín kiểu dum pukht; Nam: gạo, hấp và dừa; Đông: cá và dầu mù tạt, món ngọt từ sữa; Tây: Gujarat ăn chay, Goa pha Bồ Đào Nha với vindaloo.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Tổng điều tra dân số 2026–27 của Ấn Độ có hai điểm mới nào đáng chú ý?</p>
+          <details><summary>Xem đáp án</summary><p>Lần đầu có cổng tự kê khai trực tuyến (bằng 16 ngôn ngữ) và lần đầu đếm đẳng cấp cụ thể (jati) kể từ năm 1931; kết quả sẽ ảnh hưởng tới việc phân chia lại ghế Quốc hội.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>India</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp diện tích, dân số ước tính 2026, tôn giáo 2011, GDP theo IMF 2026, HDI, đơn vị hành chính, đường bờ biển). <a href="https://en.wikipedia.org/wiki/India" target="_blank" rel="noopener">en.wikipedia.org/wiki/India</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-2">Wikipedia contributors. <i>Economy of India</i>. Wikipedia, Bách khoa toàn thư mở (GDP, tăng trưởng FY2025–26, cơ cấu ngành, ngoại thương, lao động, kinh tế số). <a href="https://en.wikipedia.org/wiki/Economy_of_India" target="_blank" rel="noopener">en.wikipedia.org/wiki/Economy_of_India</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>Demographics of India</i>. Wikipedia, Bách khoa toàn thư mở (tuổi trung vị, mức sinh, ngôn ngữ, đô thị hóa). <a href="https://en.wikipedia.org/wiki/Demographics_of_India" target="_blank" rel="noopener">en.wikipedia.org/wiki/Demographics_of_India</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-4">Wikipedia contributors. <i>History of India</i>. Wikipedia, Bách khoa toàn thư mở (niên biểu từ văn minh sông Ấn tới độc lập). <a href="https://en.wikipedia.org/wiki/History_of_India" target="_blank" rel="noopener">en.wikipedia.org/wiki/History_of_India</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-5">Wikipedia contributors. <i>List of World Heritage Sites in India</i>. Wikipedia, Bách khoa toàn thư mở (45 di sản; bổ sung 2024–2025). <a href="https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_India" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-6">Wikipedia contributors. <i>Indian cuisine</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Indian_cuisine" target="_blank" rel="noopener">en.wikipedia.org/wiki/Indian_cuisine</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-7">Wikipedia contributors. <i>2024 Indian general election</i>. Wikipedia, Bách khoa toàn thư mở (số ghế BJP/NDA/INDIA, cử tri, tỷ lệ đi bầu). <a href="https://en.wikipedia.org/wiki/2024_Indian_general_election" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-8">Institute of South Asian Studies (ISAS), National University of Singapore. <i>India’s 2026 State Elections: Upsets in Tamil Nadu and West Bengal</i>. 2026. <a href="https://www.isas.nus.edu.sg/papers/indias-2026-state-elections-upsets-in-tamil-nadu-and-west-bengal/" target="_blank" rel="noopener">isas.nus.edu.sg</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-9">Wikipedia contributors. <i>2027 census of India</i>. Wikipedia, Bách khoa toàn thư mở (các giai đoạn, đếm đẳng cấp, tự kê khai, 3,3 triệu điều tra viên). <a href="https://en.wikipedia.org/wiki/2027_census_of_India" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-10">PRS Legislative Research. <i>The Delimitation Bill, 2026</i>. 2026. <a href="https://prsindia.org/billtrack/the-delimitation-bill-2026" target="_blank" rel="noopener">prsindia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-11">Drishti IAS. <i>India–US Trade Deal 2026</i>. Tháng 2/2026. <a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/india-us-trade-deal-2026" target="_blank" rel="noopener">drishtiias.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-12">World Economic Forum. <i>Here’s why the India-EU trade pact is the ‘mother of all deals’</i>. Tháng 2/2026. <a href="https://www.weforum.org/stories/2026/02/india-eu-mother-of-all-trade-deals-what-to-know/" target="_blank" rel="noopener">weforum.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-13">Wikipedia contributors. <i>Operation Sindoor</i> (xung đột Ấn Độ – Pakistan 2025). Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Operation_Sindoor" target="_blank" rel="noopener">en.wikipedia.org/wiki/Operation_Sindoor</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, ngoại thương) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn; số liệu dân số chỉ là ước tính vì Ấn Độ chưa có tổng điều tra sau 2011. Các chi tiết còn tranh cãi — như kết quả quân sự của Operation Sindoor, niên đại thời cổ đại hay vấn đề đẳng cấp — được trình bày ở mức khái quát và có ghi chú, tránh khẳng định một chiều. Phần văn hóa và tâm lý xã hội là các nhận định khái quát, không dẫn từng nguồn riêng lẻ.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
