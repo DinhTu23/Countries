@@ -1,0 +1,1152 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mông Cổ — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Mông Cổ</div>
+          <h1>Mông Cổ</h1>
+          <div class="period">Châu Á · Đông Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 40 20" role="img" aria-label="Quốc kỳ Mông Cổ: ba dải dọc đỏ – xanh lam – đỏ, biểu tượng Soyombo màu vàng ở dải đỏ bên trái">
+            <rect width="40" height="20" fill="#da2032"/>
+            <rect x="13.3333" width="13.3333" height="20" fill="#015197"/>
+            <g fill="#f9cf02">
+              <!-- ngọn lửa -->
+              <path d="M6.67 2.3 C7.35 3.3 7.7 3.9 7.25 4.75 C7.05 4.35 6.9 4.15 6.67 3.95 C6.44 4.15 6.29 4.35 6.09 4.75 C5.64 3.9 5.99 3.3 6.67 2.3Z"/>
+              <!-- mặt trời -->
+              <circle cx="6.67" cy="5.75" r="0.55"/>
+              <!-- trăng lưỡi liềm -->
+              <circle cx="6.67" cy="6.95" r="0.8"/>
+              <!-- tam giác hướng xuống -->
+              <path d="M5.95 7.85 L7.39 7.85 L6.67 9.25Z"/>
+              <!-- thái cực -->
+              <circle cx="6.67" cy="10.7" r="1.25"/>
+              <!-- hai cột bên -->
+              <rect x="4.55" y="3.7" width="0.6" height="12.4"/>
+              <rect x="8.19" y="3.7" width="0.6" height="12.4"/>
+              <!-- thanh ngang -->
+              <rect x="5.15" y="12.75" width="3.04" height="0.55"/>
+              <rect x="5.15" y="14.05" width="3.04" height="0.55"/>
+              <rect x="5.15" y="15.35" width="3.04" height="0.75"/>
+            </g>
+            <!-- nửa đỏ của thái cực + hai chấm -->
+            <path fill="#da2032" d="M6.67 9.45 A1.25 1.25 0 0 1 6.67 11.95 A0.625 0.625 0 0 1 6.67 10.7 A0.625 0.625 0 0 0 6.67 9.45Z"/>
+            <circle cx="6.67" cy="6.62" r="0.7" fill="#da2032"/>
+            <circle cx="6.67" cy="10.075" r="0.2" fill="#f9cf02"/>
+            <circle cx="6.67" cy="11.325" r="0.2" fill="#da2032"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Mông Cổ là đất nước nội lục kẹp giữa Nga và Trung Quốc, nơi chưa đầy 3,6 triệu người sống trên một diện tích lớn gấp gần năm lần Việt Nam, và số gia súc nhiều hơn số dân khoảng mười sáu lần. Bảy trăm năm trước, những kỵ binh từ thảo nguyên này dựng nên đế quốc lục địa liền khối lớn nhất lịch sử, từng ba lần đụng độ Đại Việt. Ngày nay Mông Cổ là một nền dân chủ nghị viện ồn ào và bất ổn, sống nhờ than và đồng bán sang Trung Quốc, và luôn tìm cách cân bằng giữa hai người láng giềng khổng lồ bằng chính sách “láng giềng thứ ba”. Nếu chỉ nhớ một điều về Mông Cổ, hãy nhớ: đây là đất nước nhỏ về dân số nhưng lớn về ký ức, đang loay hoay biến niềm tự hào thảo nguyên thành sức mạnh trong một thế giới do người khác vẽ bản đồ.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">1.564.116 km²<a class="cite" href="#ref-1">[1]</a><small>lớn thứ 18 thế giới</small></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~3,59 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 2025</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Ulaanbaatar<a class="cite" href="#ref-1">[1]</a><small>~48% dân số cả nước</small></span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Mông Cổ<small>phương ngữ Khalkha, viết chữ Kirin<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Phật giáo Tây Tạng<small>51,7%; không tôn giáo 40,6% (2020)<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Tögrög (₮, MNT)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~7.200 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, 2025</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">209 TCN</span>
+          <span class="tl-what">Đế quốc Hung Nô</span>
+          <span class="tl-note">Liên minh du mục đầu tiên thống nhất thảo nguyên, đối đầu với nhà Tần – Hán</span>
+        </li>
+        <li>
+          <span class="tl-when">1206</span>
+          <span class="tl-what">Thành Cát Tư Hãn xưng hãn</span>
+          <span class="tl-note">Đại hội quý tộc (khuraltai) suy tôn Temüjin, khai sinh Đế quốc Mông Cổ</span>
+        </li>
+        <li>
+          <span class="tl-when">1211 – 1241</span>
+          <span class="tl-what">Bành trướng ra Á – Âu</span>
+          <span class="tl-note">Từ Trung Hoa, Trung Á đến Đông Âu, quân Mông Cổ đi đến đâu thắng đến đó</span>
+        </li>
+        <li>
+          <span class="tl-when">1258 · 1285 · 1288</span>
+          <span class="tl-what">Ba lần thất bại trước Đại Việt</span>
+          <span class="tl-note">Quân Nguyên – Mông xâm lược nhưng bị nhà Trần đánh bại, dù đang là cường quốc mạnh nhất thế giới</span>
+        </li>
+        <li>
+          <span class="tl-when">1271</span>
+          <span class="tl-what">Nhà Nguyên</span>
+          <span class="tl-note">Hốt Tất Liệt lập triều Nguyên ở Trung Hoa, đóng đô ở Đại Đô (Bắc Kinh)</span>
+        </li>
+        <li>
+          <span class="tl-when">1368</span>
+          <span class="tl-what">Nhà Nguyên sụp đổ</span>
+          <span class="tl-note">Người Mông Cổ rút về thảo nguyên, kéo dài thời Bắc Nguyên</span>
+        </li>
+        <li>
+          <span class="tl-when">1578</span>
+          <span class="tl-what">Altan Khan và Đạt Lai Lạt Ma</span>
+          <span class="tl-note">Phật giáo Tây Tạng trở thành tín ngưỡng chủ đạo của người Mông Cổ</span>
+        </li>
+        <li>
+          <span class="tl-when">1691</span>
+          <span class="tl-what">Dưới ách nhà Thanh</span>
+          <span class="tl-note">Các hãn vùng Khalkha thần phục triều Thanh, kéo dài đến năm 1911</span>
+        </li>
+        <li>
+          <span class="tl-when">29/12/1911</span>
+          <span class="tl-what">Tuyên bố độc lập</span>
+          <span class="tl-note">Nhà Thanh sụp đổ; Bogd Khan lên ngôi vua – lãnh tụ tôn giáo của Mông Cổ độc lập</span>
+        </li>
+        <li>
+          <span class="tl-when">1921</span>
+          <span class="tl-what">Cách mạng nhân dân</span>
+          <span class="tl-note">Sükhbaatar và Choibalsan lật đổ chế độ cũ với sự hỗ trợ của Hồng quân Liên Xô</span>
+        </li>
+        <li>
+          <span class="tl-when">26/11/1924</span>
+          <span class="tl-what">Cộng hòa Nhân dân Mông Cổ</span>
+          <span class="tl-note">Nhà nước xã hội chủ nghĩa thứ hai thế giới, gắn chặt với Liên Xô</span>
+        </li>
+        <li>
+          <span class="tl-when">1937 – 1939</span>
+          <span class="tl-what">Đại thanh trừng</span>
+          <span class="tl-note">Hàng chục nghìn người, phần lớn là sư sãi, bị sát hại; chùa chiền bị phá hủy hàng loạt</span>
+        </li>
+        <li>
+          <span class="tl-when">1961</span>
+          <span class="tl-what">Gia nhập Liên Hợp Quốc</span>
+          <span class="tl-note">Sau nhiều năm bị Trung Hoa Dân quốc dùng quyền phủ quyết chặn lại</span>
+        </li>
+        <li>
+          <span class="tl-when">1990</span>
+          <span class="tl-what">Cách mạng dân chủ</span>
+          <span class="tl-note">Biểu tình ôn hòa buộc Đảng Nhân dân Cách mạng từ bỏ độc quyền, mở đường đa đảng</span>
+        </li>
+        <li>
+          <span class="tl-when">12/2/1992</span>
+          <span class="tl-what">Hiến pháp mới</span>
+          <span class="tl-note">Xác lập nền cộng hòa bán tổng thống, đa đảng và kinh tế thị trường</span>
+        </li>
+        <li>
+          <span class="tl-when">2025 – 2026</span>
+          <span class="tl-what">Khủng hoảng chính trị</span>
+          <span class="tl-note">Ba thủ tướng trong chưa đầy một năm; Nyam-Osoryn Uchral nhậm chức cuối 3/2026</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại thời Hung Nô và các đế quốc du mục dựa nhiều vào sử liệu Trung Hoa và khảo cổ học nên mang tính ước lệ. Nhà Nguyên được tính từ 1271 (khi Hốt Tất Liệt đặt quốc hiệu), dù có tài liệu tính từ 1260 (khi ông xưng đại hãn).</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>“Xứ sở trời xanh”</b>
+        Người Mông Cổ tự gọi mình là con dân của Möngkh Tenger — “Trời xanh vĩnh cửu”. Theo cách nói phổ biến, một năm có hơn 250 ngày nắng, nên hình ảnh bầu trời xanh gần như là biểu tượng quốc gia.
+      </aside>
+
+      <p class="lede">Mông Cổ là quốc gia không giáp biển, phía bắc giáp Nga, phía nam, đông và tây giáp Trung Quốc, và là một trong những nơi vắng người nhất hành tinh.</p>
+
+      <p>Với diện tích khoảng <span class="tg">1.564.116 km²</span><a class="cite" href="#ref-1">[1]</a>, Mông Cổ lớn hơn Việt Nam gần năm lần nhưng chỉ có khoảng <span class="tg">3,59 triệu dân</span><a class="cite" href="#ref-1">[1]</a>, tức mật độ chỉ khoảng 2,3 người trên mỗi km², thấp nhất trong các quốc gia có chủ quyền. Địa hình là cao nguyên trung bình hơn 1.500 mét so với mực nước biển: phía tây và tây bắc là dãy núi Altai và Khangai, đỉnh cao nhất cả nước là <span class="nv" data-note="Đỉnh cao nhất Mông Cổ, cao khoảng 4.374 m, thuộc quần thể núi Tavan Bogd ở cực tây, gần biên giới với Nga và Trung Quốc.">Khüiten</span> ở Tavan Bogd; phía nam là hoang mạc Gobi; phần còn lại là thảo nguyên mênh mông. Khí hậu lục địa cực đoan: mùa đông có thể xuống dưới −30°C, mùa hè ngắn và nóng, còn Ulaanbaatar thường được nhắc là thủ đô lạnh nhất thế giới.</p>
+
+      <p>Dân cư tập trung ở một điểm: riêng <span class="nv" data-note="Thủ đô và thành phố lớn nhất Mông Cổ, nằm ở độ cao khoảng 1.350 m bên sông Tuul. Từ 1924 mang tên Ulaanbaatar, nghĩa là “Anh hùng Đỏ”.">Ulaanbaatar</span> đã chiếm khoảng <span class="tg">48%</span> dân số cả nước<a class="cite" href="#ref-1">[1]</a>, phần lớn sống trong các khu “ger” (lều nỉ) ở ven đô thiếu hạ tầng. Về dân tộc, người Mông Cổ (chủ yếu là nhóm Khalkha) chiếm khoảng 95,6%, người Kazakh khoảng 3,8% và tập trung ở tỉnh Bayan-Ölgii phía tây<a class="cite" href="#ref-1">[1]</a>.</p>
+
+      <p>Nhưng “dân số” của thảo nguyên còn có bốn chân. Đến cuối năm 2025, cả nước có khoảng <span class="tg">58,1 triệu</span> gia súc, chủ yếu là cừu và dê, cộng với bò, ngựa và lạc đà<a class="cite" href="#ref-2">[2]</a> — nghĩa là mỗi người dân “sở hữu” trung bình hơn mười lăm con vật. Chăn nuôi du mục không chỉ là ngành kinh tế mà còn là cách sống, và cũng là điểm yếu của đất nước mỗi khi <span class="nv" data-note="Hiện tượng thiên tai đặc thù của Mông Cổ: mùa hè hạn hán khiến cỏ thiếu, rồi mùa đông băng giá và tuyết dày khiến hàng triệu gia súc chết đói hoặc chết cóng.">dzud</span> ập đến, khi mùa đông khắc nghiệt sau một mùa hè khô hạn khiến hàng triệu gia súc chết.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Mông Cổ là lịch sử của thảo nguyên: những liên minh du mục nổi lên, tràn ra thế giới, rồi rút về — và lần nào ký ức về sức mạnh ấy cũng được giữ lại để định hình bản sắc.</p>
+
+      <p><b>Thời các đế quốc du mục.</b> Trước Mông Cổ, thảo nguyên đã sinh ra nhiều thế lực lớn. Khoảng năm <span class="tg">209 TCN</span>, <span class="nv" data-note="Tức Mặc Đốn, thiền vu người sáng lập thực sự của liên minh Hung Nô, đánh bại Đông Hồ và Nguyệt Chi rồi uy hiếp nhà Hán.">Hung Nô</span> lập nên liên minh mạnh, sau đó là các thế lực Tiên Ti, Nhu Nhiên, Đột Quyết, Khiết Đan… lần lượt thay nhau thống trị. Điểm chung là họ sống bằng ngựa, cung tên và thương lượng bằng sức mạnh với các nền văn minh nông nghiệp ở phương nam.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao đế quốc Mông Cổ thành công</b>
+        Kỷ luật quân đội theo hệ thập phân (10–100–1.000–10.000 người), thăng chức theo năng lực thay vì huyết thống, tình báo tốt, cùng việc biết tiếp thu kỹ thuật công thành và kỹ sư từ các dân tộc bị chinh phục.
+      </aside>
+
+      <p><b>Thành Cát Tư Hãn và Đế quốc Mông Cổ.</b> Năm <span class="tg">1206</span>, sau nhiều năm thống nhất các bộ lạc, <span class="nv" data-note="Tên thật là Temüjin (khoảng 1162–1227). Ông xưng “Chinggis Khaan” tại khuraltai 1206, xây dựng bộ luật Yassa và quân đội kỷ luật cao độ.">Thành Cát Tư Hãn</span> được suy tôn làm đại hãn. Chỉ trong hai thế hệ, các đạo quân của ông và con cháu chinh phục Trung Á, Ba Tư, miền bắc Trung Hoa và tiến vào Đông Âu, tạo nên đế quốc lục địa liền khối lớn nhất lịch sử. Sau khi ông mất năm 1227, đế quốc chia thành nhiều hãn quốc. Ở phương đông, cháu ông là <span class="nv" data-note="Khubilai Khan, cháu Thành Cát Tư Hãn, đại hãn từ 1260, sáng lập triều Nguyên ở Trung Hoa và đóng đô ở Đại Đô (Bắc Kinh).">Hốt Tất Liệt</span> lập triều Nguyên năm <span class="tg">1271</span>. Chính triều Nguyên này ba lần mang quân xuống Đại Việt (1258, 1285, 1288) và đều thất bại.</p>
+
+      <p><b>Từ Bắc Nguyên đến thời nhà Thanh.</b> Năm <span class="tg">1368</span> nhà Nguyên bị nhà Minh đánh đuổi, người Mông Cổ rút lên thảo nguyên và chìm vào các cuộc tranh giành nội bộ. Năm <span class="tg">1578</span>, <span class="nv" data-note="Thủ lĩnh Mông Cổ thế kỷ XVI, người trao danh hiệu Đạt Lai Lạt Ma cho Sonam Gyatso, mở đường cho sự bành trướng của Phật giáo Tây Tạng vào Mông Cổ.">Altan Khan</span> gặp lãnh tụ Phật giáo Tây Tạng và từ đó Phật giáo Tây Tạng dần trở thành tín ngưỡng chủ đạo. Đến năm <span class="tg">1691</span> các hãn Khalkha thần phục nhà Thanh, và Mông Cổ nằm dưới quyền cai trị của triều Thanh cho đến 1911<a class="cite" href="#ref-1">[1]</a>.</p>
+
+      <p><b>Độc lập và thời xã hội chủ nghĩa.</b> Khi nhà Thanh sụp đổ, Mông Cổ tuyên bố độc lập ngày <span class="tg">29/12/1911</span>, với <span class="nv" data-note="Vị lãnh tụ Phật giáo cao nhất Mông Cổ (Jebtsundamba Khutuktu đời thứ 8), được tôn làm vua Bogd Khan của Mông Cổ độc lập, mất năm 1924.">Bogd Khan</span> làm quốc chủ. Năm <span class="tg">1921</span>, với sự trợ giúp của Hồng quân Liên Xô, cuộc cách mạng do <span class="nv" data-note="Damdin Sükhbaatar (1893–1923), chỉ huy quân cách mạng Mông Cổ năm 1921; quảng trường trung tâm Ulaanbaatar mang tên ông.">Sükhbaatar</span> và Choibalsan lãnh đạo lập nên chính quyền mới; ngày <span class="tg">26/11/1924</span> Cộng hòa Nhân dân Mông Cổ ra đời<a class="cite" href="#ref-1">[1]</a>. Trong thập niên 1930, dưới sự thúc đẩy của Liên Xô, cuộc thanh trừng 1937–1939 tàn phá tầng lớp tăng lữ và giới trí thức, còn hàng nghìn ngôi chùa bị phá bỏ. Đây là vết thương lớn mà xã hội Mông Cổ phải mất nhiều thập kỷ mới khôi phục, và là lý do sự hồi sinh Phật giáo sau 1990 mang ý nghĩa đặc biệt.</p>
+
+      <p><b>Dân chủ và hội nhập (1990 – nay).</b> Đầu năm <span class="tg">1990</span>, các cuộc biểu tình ôn hòa do giới trẻ và trí thức dẫn đầu buộc Đảng Nhân dân Cách mạng chấp nhận đa đảng, đi kèm cuộc chuyển đổi kinh tế thị trường đầy khó khăn. Hiến pháp ngày <span class="tg">12/2/1992</span> xác lập nhà nước cộng hòa bán tổng thống hiện nay<a class="cite" href="#ref-1">[1]</a>. Từ đó Mông Cổ trở thành hiện tượng hiếm có: một nền dân chủ nằm kẹp giữa hai quốc gia chuyên chế lớn là Nga và Trung Quốc. Bản sắc Mông Cổ hôm nay là sự pha trộn giữa niềm tự hào đế quốc, nếp sống du mục, Phật giáo Tây Tạng, dấu ấn Xô Viết và khát vọng hiện đại hóa của một xã hội trẻ đang đô thị hóa nhanh.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Mông Cổ</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Hiến pháp 1992 &amp; cử tri</span>
+          <span class="tier-desc">Người dân trực tiếp bầu Tổng thống và Quốc hội</span>
+        </li>
+        <li>
+          <span class="tier-role">Tổng thống</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, nhiệm kỳ 6 năm, không tái cử; có quyền phủ quyết luật</span>
+        </li>
+        <li>
+          <span class="tier-role">Đại Hural Quốc gia (126 ghế) · Chính phủ</span>
+          <span class="tier-desc">Quốc hội một viện lập pháp; Thủ tướng và nội các do đa số nghị viện lập ra</span>
+        </li>
+        <li>
+          <span class="tier-role">21 tỉnh (aimag) + Thủ đô Ulaanbaatar</span>
+          <span class="tier-desc">Bên dưới là các huyện (soum) và đơn vị cơ sở (bag) gắn với đời sống chăn nuôi</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Bán tổng thống</b>
+        Trong mô hình này, Tổng thống do dân bầu và có thực quyền (phủ quyết, bổ nhiệm một số chức vụ), nhưng Thủ tướng mới là người điều hành hằng ngày và phải có đa số trong nghị viện. Cách chia quyền này phần nào giải thích vì sao xung đột giữa các nhánh quyền lực dễ nổ ra như trong năm 2025.
+      </aside>
+
+      <p>Mông Cổ là nước cộng hòa bán tổng thống đơn nhất, do <span class="nv" data-note="Tổng thống Mông Cổ từ 2021, từng làm Thủ tướng (2017–2019). Nhiệm kỳ sáu năm, không được tái cử.">Ukhnaagiin Khürelsükh</span> làm nguyên thủ quốc gia<a class="cite" href="#ref-1">[1]</a>. Quốc hội, tức <span class="nv" data-note="State Great Khural, cơ quan lập pháp một viện với 126 ghế, có tên gọi kế thừa truyền thống hội nghị (khural) của người Mông Cổ.">Đại Hural Quốc gia</span>, có 126 ghế<a class="cite" href="#ref-1">[1]</a>, và Đảng Nhân dân Mông Cổ (MPP) — hậu duệ của chính đảng cầm quyền thời xã hội chủ nghĩa — vẫn là lực lượng thống trị, cạnh tranh chính với Đảng Dân chủ.</p>
+
+      <p>Chính trường những năm gần đây rất bất ổn. Tháng <span class="tg">6/2025</span>, sau các cuộc biểu tình của giới trẻ, Thủ tướng <span class="nv" data-note="Thủ tướng từ 2021 đến 6/2025; từ chức sau khi thất bại trong cuộc bỏ phiếu tín nhiệm tại Quốc hội.">Oyun-Erdene</span> mất chức và <span class="nv" data-note="Được bổ nhiệm làm Thủ tướng ngày 13/6/2025; bị Quốc hội bãi nhiệm ngày 17/10/2025 nhưng quyết định đó bị Tổng thống phủ quyết và Tòa Hiến pháp tuyên là vi hiến; cuối cùng từ chức vào tháng 3/2026.">Zandanshatar</span> lên thay. Đến tháng 10, Quốc hội bỏ phiếu bãi nhiệm ông Zandanshatar (71–40), nhưng Tổng thống phủ quyết và Tòa Hiến pháp tuyên bố quyết định đó vi hiến<a class="cite" href="#ref-3">[3]</a>. Cuộc khủng hoảng chỉ kết thúc khi ông Zandanshatar từ chức vào tháng <span class="tg">3/2026</span>; <span class="nv" data-note="Nyam-Osoryn Uchral, Chủ tịch MPP từ 15/11/2025 và từng làm Chủ tịch Quốc hội, được bổ nhiệm làm Thủ tướng cuối 3/2026, thủ tướng thứ ba của Mông Cổ trong chưa đầy một năm.">Uchral</span> được bổ nhiệm làm Thủ tướng, người thứ ba trong chưa đầy một năm<a class="cite" href="#ref-3">[3]</a><a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Kinh tế Mông Cổ chạy bằng khoáng sản. Đồng, than đá và vàng là ba mặt hàng xuất khẩu chính, đem lại phần lớn ngoại tệ, thuế và đầu tư nước ngoài<a class="cite" href="#ref-5">[5]</a>. Hai cái tên lớn nhất là mỏ đồng – vàng <span class="nv" data-note="Mỏ đồng – vàng khổng lồ ở sa mạc Gobi, do Rio Tinto điều hành cùng Chính phủ Mông Cổ; là một trong những mỏ đồng lớn nhất thế giới.">Oyu Tolgoi</span>, nơi sản lượng đồng tăng <span class="tg">60,6%</span> trong năm 2025<a class="cite" href="#ref-5">[5]</a>, và mỏ than <span class="nv" data-note="Một trong những mỏ than cốc lớn nhất thế giới, nằm ở vùng Nam Gobi, hầu như toàn bộ sản lượng bán sang Trung Quốc.">Tavan Tolgoi</span>. Điểm chung của cả hai là đầu ra: khoảng <span class="tg">86%</span> kim ngạch xuất khẩu của Mông Cổ đổ về Trung Quốc (năm 2023)<a class="cite" href="#ref-5">[5]</a>, khiến kinh tế nước này phụ thuộc rất lớn vào nhu cầu và giá cả từ một khách hàng duy nhất.</p>
+
+      <p>Tăng trưởng nhìn chung cao nhưng biến động: khoảng <span class="tg">6,9%</span> năm 2025 và dự báo khoảng 5–5,6% cho năm 2026<a class="cite" href="#ref-5">[5]</a><a class="cite" href="#ref-6">[6]</a>. Năm 2025, xuất khẩu quặng đồng tăng <span class="tg">76%</span> và vàng tăng 38%, trong khi than giảm gần 35%<a class="cite" href="#ref-6">[6]</a>. Lạm phát là vấn đề dai dẳng, ở mức <span class="tg">7,5%</span> vào tháng 12/2025 (riêng giá lương thực tăng 11,3%); nợ công khoảng 39,7% GDP, dự trữ ngoại hối trên 7 tỷ USD<a class="cite" href="#ref-6">[6]</a>. Chính phủ đề ra chương trình cải cách “Niềm tin mới – Cải cách mạnh dạn” cho giai đoạn 2026–2030, nhằm nâng hiệu quả bộ máy, cải cách thuế và doanh nghiệp nhà nước, phát triển nông thôn và năng lượng xanh<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Mặt trái của mô hình này là bất mãn xã hội về việc ai hưởng lợi từ tài nguyên. Ngày <span class="tg">17/6/2026</span>, người biểu tình chặn đường vận chuyển đồng từ Oyu Tolgoi, đòi phần lớn hơn của cải từ mỏ phải ở lại trong nước<a class="cite" href="#ref-4">[4]</a>. Ngoài ra, Mông Cổ vẫn phải nhập khẩu điện và sản phẩm dầu mỏ từ Nga và Trung Quốc<a class="cite" href="#ref-5">[5]</a>, nghĩa là nước xuất khẩu tài nguyên này lại phụ thuộc vào láng giềng cho năng lượng cơ bản.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Văn hóa Mông Cổ được nhào nặn bởi nếp sống chăn thả: con người luôn di chuyển theo mùa, sống trong <span class="nv" data-note="Lều nỉ tròn truyền thống của người du mục Mông Cổ (còn gọi yurt), dễ tháo lắp, chống lạnh tốt; cửa luôn quay về hướng nam.">ger</span>, và coi ngựa là người bạn đồng hành. Hiếu khách là chuẩn mực gần như thiêng liêng: khách đến nhà du mục giữa thảo nguyên luôn được mời trà sữa và thức ăn, vì trong vùng đất khắc nghiệt ấy, cứu giúp người lạ có thể quyết định sự sống còn.</p>
+
+      <p>Về tôn giáo, Phật giáo Tây Tạng chiếm khoảng 51,7% dân số, trong khi 40,6% tự nhận không theo tôn giáo, 3,2% theo Hồi giáo (chủ yếu là người Kazakh) và khoảng 2,5% theo Shaman giáo<a class="cite" href="#ref-1">[1]</a>. Nhưng ranh giới không cứng: tục thờ “Trời xanh” Tenger, tục kính núi, sông, ovoo (đống đá thiêng) của Shaman giáo vẫn đan xen với nghi lễ Phật giáo. Sau thời kỳ đàn áp, các thế hệ mới đang tìm lại đức tin và truyền thống của mình.</p>
+
+      <p>Ngày hội quốc gia lớn nhất là <span class="nv" data-note="Lễ hội truyền thống lớn nhất Mông Cổ, tổ chức vào giữa tháng 7 với ba môn thi đấu nam nhi: đấu vật, đua ngựa và bắn cung.">Naadam</span> (khoảng 11–15/7), gồm ba môn “nam nhi”: đấu vật, đua ngựa và bắn cung<a class="cite" href="#ref-4">[4]</a>. Tết Nguyên đán Mông Cổ, Tsagaan Sar, rơi vào đầu năm âm lịch (năm 2026 vào 1–3/3)<a class="cite" href="#ref-4">[4]</a>, là dịp gia đình đoàn tụ, chào hỏi người lớn tuổi và bày biện bánh, thịt cừu. Âm nhạc gồm đàn đầu ngựa morin khuur, hát cổ họng khöömei và điệu hát dài urtiin duu đã trở thành biểu tượng văn hóa được thế giới biết đến.</p>
+
+      <p>Về tâm lý xã hội, người Mông Cổ thường được mô tả là tự lập, thực tế và tự hào mạnh mẽ về lịch sử. Hình ảnh Thành Cát Tư Hãn xuất hiện khắp nơi, từ tượng đài, tiền tệ đến nhãn hiệu rượu bia — vừa là niềm tự hào dân tộc, vừa là cách để một nước nhỏ khẳng định mình trước hai láng giềng khổng lồ. Xã hội đang biến đổi nhanh giữa lối sống du mục và đô thị, giữa người già ở nông thôn và giới trẻ ở Ulaanbaatar tràn đầy tinh thần khởi nghiệp nhưng bất mãn với tham nhũng.</p>
+      <p class="band-foot">Nguồn tổng cho mục này: [1], [4].</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>“Thức ăn đỏ” và “thức ăn trắng”</b>
+        Người Mông Cổ chia bữa ăn thành thức ăn trắng (sữa, bơ, phô mai, sữa chua — chủ yếu ăn vào mùa hè) và thức ăn đỏ (thịt — chủ đạo vào mùa đông). Rau quả rất ít vì khí hậu.
+      </aside>
+
+      <p>Ẩm thực Mông Cổ là ẩm thực của người chăn nuôi: thịt, sữa và mỡ để chống chọi với mùa đông khắc nghiệt. Cừu và dê là nguyên liệu chủ đạo, bên cạnh thịt bò, ngựa và lạc đà. Gia vị đơn giản, chủ yếu là muối và đôi khi hành, tỏi; món ăn nhấn mạnh vị nguyên bản của thịt và độ béo, thay vì nhiều lớp hương vị như ở Đông Nam Á.</p>
+
+      <p>Cách chế biến cổ xưa nhất là dùng đá nóng: trong món <span class="nv" data-note="Khorkhog: thịt cừu (hoặc dê) hầm trong bình kín cùng những viên đá nung nóng, thường chia sẻ trong dịp tụ họp lớn; boodog là dê hoặc macmot nướng từ bên trong da với đá nóng.">khorkhog</span>, thịt được hầm cùng đá nung, còn ở món boodog, cả con dê hoặc con macmot được nấu từ bên trong da. Mùa hè là mùa của sữa: trà sữa muối <b>suutei tsai</b> uống hằng ngày, sữa ngựa lên men <b>airag</b> (còn gọi <i>koumiss</i>) là thức uống biểu tượng của mùa hè, cùng nhiều loại phô mai, sữa đông khô aaruul và kem sữa urum. Ở thành phố, ảnh hưởng Nga và Trung Quốc để lại salad, bánh bao và mì xào.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Món hầm</span><span class="pick-name">Khorkhog</span><span class="pick-desc">Thịt cừu hầm cùng đá nung trong bình kín, món tiệc của gia đình và khách quý.</span></li>
+        <li><span class="pick-where">Món hầm</span><span class="pick-name">Boodog</span><span class="pick-desc">Dê hoặc macmot nấu từ bên trong da bằng đá nóng, ăn trong dịp đặc biệt.</span></li>
+        <li><span class="pick-where">Bánh bao</span><span class="pick-name">Buuz</span><span class="pick-desc">Bánh hấp nhân thịt cừu hoặc bò, món không thể thiếu dịp Tsagaan Sar.</span></li>
+        <li><span class="pick-where">Bánh rán</span><span class="pick-name">Khuushuur</span><span class="pick-desc">Bánh nhân thịt rán giòn dạng bán nguyệt, quen thuộc ở hội Naadam.</span></li>
+        <li><span class="pick-where">Món nước</span><span class="pick-name">Bansh</span><span class="pick-desc">Bánh bao nhỏ nấu trong nước dùng hoặc trà sữa, món ăn nhẹ ấm bụng mùa đông.</span></li>
+        <li><span class="pick-where">Mì</span><span class="pick-name">Tsuivan</span><span class="pick-desc">Mì cán tay xào cùng thịt và rau củ, món cơm nhà phổ biến nhất.</span></li>
+        <li><span class="pick-where">Đồ uống</span><span class="pick-name">Suutei tsai</span><span class="pick-desc">Trà sữa mặn, thức uống hằng ngày của mọi nhà du mục.</span></li>
+        <li><span class="pick-where">Đồ uống</span><span class="pick-name">Airag</span><span class="pick-desc">Sữa ngựa cái lên men nhẹ có cồn, biểu tượng mùa hè trên thảo nguyên.</span></li>
+        <li><span class="pick-where">Sữa</span><span class="pick-name">Aaruul · Byaslag</span><span class="pick-desc">Sữa đông phơi khô và phô mai, thức ăn trắng để dành cho mùa đông.</span></li>
+        <li><span class="pick-where">Bánh</span><span class="pick-name">Boortsog</span><span class="pick-desc">Bánh rán ngọt hình vuông, bày cùng trà sữa trong dịp lễ.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Về văn hóa ăn uống, bữa ăn là dịp chia sẻ hơn là món ăn: thịt được chia theo thứ bậc, người chủ mời khách trước, và từ chối một chén sữa hay rượu mời bị coi là thiếu tế nhị. Văn hóa uống có riêng một vị thế: từ airag đến vodka (tên thương hiệu nổi tiếng gắn với hình ảnh Thành Cát Tư Hãn) — nhưng phần lớn là dịp giao tiếp, không chỉ để say.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Mùa nào đi?</b>
+        Khoảng tháng 6–9 là mùa du lịch chính: thảo nguyên xanh và hội Naadam. Mùa đông rất lạnh nhưng có lễ hội băng và tuyết đẹp.
+      </aside>
+
+      <p>Mông Cổ hiện có <span class="tg">7 di sản thế giới</span> được UNESCO công nhận — 5 di sản văn hóa và 2 di sản thiên nhiên (cả hai đều dùng chung với Nga)<a class="cite" href="#ref-7">[7]</a>. Di sản mới nhất là <span class="nv" data-note="Cụm gồm tám quần thể mộ của giới quý tộc Hung Nô, thuộc thế kỷ III TCN – II SCN, được UNESCO công nhận năm 2026 theo tiêu chí (iii).">Nghĩa địa của giới quý tộc Hung Nô</span>, được đưa vào danh sách năm <span class="tg">2026</span><a class="cite" href="#ref-8">[8]</a>. Phần còn lại của đất nước là thảo nguyên, hoang mạc, hồ và núi, nơi những chuyến đi kể chuyện nhiều hơn là những công trình.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Mông Cổ</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Ulaanbaatar</span><span class="pick-desc">Quảng trường Sükhbaatar, tu viện Gandan và bảo tàng Thành Cát Tư Hãn — nơi thấy rõ nhất sự giao thoa Phật giáo, Xô Viết và hiện đại.</span></li>
+        <li><span class="pick-where">Gần thủ đô</span><span class="pick-name">Gorkhi-Terelj</span><span class="pick-desc">Vườn quốc gia đá granit và đồng cỏ, nơi du khách thường lần đầu ngủ trong ger.</span></li>
+        <li><span class="pick-where">Trung tâm</span><span class="pick-name">Tượng đài Thành Cát Tư Hãn</span><span class="pick-desc">Tượng cưỡi ngựa bằng thép cao khoảng 40 m ở Tsonjin Boldog, nhìn ra thảo nguyên.</span></li>
+        <li><span class="pick-where">Orkhon</span><span class="pick-name">Kharkhorin &amp; Erdene Zuu</span><span class="pick-desc">Cố đô Karakorum của đế quốc Mông Cổ và tu viện Phật giáo đầu tiên của nước này; thuộc di sản Cảnh quan văn hóa thung lũng Orkhon (2004).</span></li>
+        <li><span class="pick-where">Trung tâm</span><span class="pick-name">Khustain Nuruu</span><span class="pick-desc">Vườn quốc gia nơi ngựa hoang Przewalski (takhi) được tái thả về tự nhiên.</span></li>
+        <li><span class="pick-where">Bắc</span><span class="pick-name">Hồ Khövsgöl</span><span class="pick-desc">“Ngọc bích xanh” lớn giữa rừng taiga, gần vùng sống của người chăn tuần lộc Tsaatan.</span></li>
+        <li><span class="pick-where">Gobi</span><span class="pick-name">Khongoryn Els</span><span class="pick-desc">Cồn cát “hát” cao hàng trăm mét ở Nam Gobi, lạc đà hai bướu thong dong dưới chân.</span></li>
+        <li><span class="pick-where">Gobi</span><span class="pick-name">Bayanzag (Vách Lửa)</span><span class="pick-desc">Nơi đoàn thám hiểm Mỹ tìm thấy trứng khủng long lần đầu vào thập niên 1920.</span></li>
+        <li><span class="pick-where">Tây</span><span class="pick-name">Altai Tavan Bogd</span><span class="pick-desc">Dãy núi tuyết và các quần thể khắc đá cổ (di sản 2011), nơi người Kazakh săn bằng đại bàng.</span></li>
+        <li><span class="pick-where">Tây bắc</span><span class="pick-name">Lưu vực Uvs Nuur</span><span class="pick-desc">Hồ nước mặn và hệ sinh thái chuyển tiếp thảo nguyên – sa mạc, di sản thiên nhiên chung với Nga (2003).</span></li>
+        <li><span class="pick-where">Đông bắc</span><span class="pick-name">Burkhan Khaldun</span><span class="pick-desc">Ngọn núi thiêng gắn với thời thơ ấu và nơi an nghỉ tương truyền của Thành Cát Tư Hãn (di sản 2015).</span></li>
+        <li><span class="pick-where">Cổ đại</span><span class="pick-name">Bia hươu &amp; mộ Hung Nô</span><span class="pick-desc">Hai di sản khảo cổ Thời đại Đồng thau (2023) và Hung Nô (2026), dấu vết của các nền văn minh thảo nguyên đầu tiên.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>“Láng giềng thứ ba”</b>
+        Từ đầu thập niên 1990, Mông Cổ theo đuổi chính sách kết thân với các cường quốc “thứ ba” như Mỹ, Nhật, Hàn Quốc, Ấn Độ, Đức, Thổ Nhĩ Kỳ và EU để không bị phụ thuộc hoàn toàn vào Nga và Trung Quốc.
+      </aside>
+
+      <p>Vị trí địa lý quyết định chính sách đối ngoại: Mông Cổ không giáp biển và mọi tuyến giao thương chính đều phải đi qua Nga hoặc Trung Quốc. Quan hệ với Nga bắt đầu từ ngày 5/11/1921 và với Trung Quốc từ 16/10/1949; Trung Quốc hiện là đối tác thương mại và nguồn đầu tư lớn nhất<a class="cite" href="#ref-9">[9]</a>. Để cân bằng, Ulaanbaatar theo đuổi chính sách “láng giềng thứ ba” từ đầu thập niên 1990<a class="cite" href="#ref-1">[1]</a>: Mỹ (quan hệ từ 1987), Nhật Bản (từ 1972, nhà tài trợ lớn), Hàn Quốc, Ấn Độ và Thổ Nhĩ Kỳ. Mông Cổ gia nhập Liên Hợp Quốc từ 1961 và giữ lập trường trung lập trong nhiều vấn đề quốc tế<a class="cite" href="#ref-9">[9]</a>.</p>
+
+      <p>Quan hệ với Nga đặt Mông Cổ vào thế khó. Tháng 9/2024, Tổng thống Putin thăm Mông Cổ, chuyến thăm đầu tiên tới một nước thành viên Tòa án Hình sự Quốc tế kể từ khi tòa ra lệnh bắt ông, và Ulaanbaatar không bắt giữ ông<a class="cite" href="#ref-9">[9]</a>. Tháng 10/2025 Tổng thống Khürelsükh gặp Thủ tướng Ấn Độ Modi<a class="cite" href="#ref-9">[9]</a>, một ví dụ cho nỗ lực đa dạng hóa quan hệ.</p>
+
+      <p>Một biến số chiến lược mới là đường ống dẫn khí <span class="nv" data-note="Đường ống khí đốt dài khoảng 2.600 km dự kiến chở khí từ Tây Siberia qua Mông Cổ sang Trung Quốc, công suất khoảng 50 tỷ m³/năm.">Power of Siberia 2</span>: dự kiến đi qua lãnh thổ Mông Cổ để tới Trung Quốc và giúp Mông Cổ thu hàng trăm triệu USD phí quá cảnh mỗi năm; tuy nhiên đến tháng 5/2026 các bên vẫn chưa chốt được giá khí, và việc xây dựng có thể mất khoảng một thập kỷ<a class="cite" href="#ref-10">[10]</a>.</p>
+
+      <p>Ở trong nước, các vấn đề nóng gồm: bất ổn chính trị và tham nhũng; tranh cãi về việc chia sẻ lợi ích từ khai thác mỏ (như vụ chặn đường vận chuyển đồng 6/2026)<a class="cite" href="#ref-4">[4]</a>; lạm phát và phụ thuộc vào Trung Quốc; ô nhiễm không khí ở Ulaanbaatar mỗi mùa đông vì các khu ger đốt than sưởi ấm; và sự dễ tổn thương trước thiên tai dzud, hạn hán và biến đổi khí hậu. Cuộc bầu cử tổng thống kế tiếp dự kiến vào năm 2027, khi nhiệm kỳ sáu năm của ông Khürelsükh kết thúc, nên cục diện chính trị còn nhiều biến động.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Mông Cổ</h2>
+      <ol class="funs">
+        <li><b>Đế quốc liền khối lớn nhất lịch sử.</b> Ở đỉnh cao thế kỷ XIII, Đế quốc Mông Cổ trải dài từ Triều Tiên đến Đông Âu, rộng khoảng 24 triệu km², gấp hơn mười lăm lần Mông Cổ ngày nay.</li>
+        <li><b>Ba lần thua Đại Việt.</b> Quân Nguyên – Mông xâm lược Đại Việt vào các năm 1258, 1285 và 1288 đều bị nhà Trần đánh bại — kết quả hiếm có với đội quân từng chinh phục hầu hết châu Á.</li>
+        <li><b>Nước thưa dân nhất thế giới.</b> Với chỉ khoảng 2,3 người trên mỗi km², Mông Cổ có mật độ dân số thấp nhất trong các quốc gia có chủ quyền<a class="cite" href="#ref-1">[1]</a>.</li>
+        <li><b>Mười sáu con vật cho mỗi người.</b> Cuối năm 2025 cả nước có 58,1 triệu gia súc, trong khi dân số chỉ khoảng 3,59 triệu<a class="cite" href="#ref-1">[1]</a><a class="cite" href="#ref-2">[2]</a>.</li>
+        <li><b>Gần một nửa dân số sống ở một thành phố.</b> Ulaanbaatar chiếm khoảng 48% dân số cả nước<a class="cite" href="#ref-1">[1]</a>, trong khi phần còn lại rải rác trên đất nước rộng gấp năm lần Việt Nam.</li>
+        <li><b>Ba môn “nam nhi” của Naadam.</b> Đấu vật, đua ngựa và bắn cung là ba môn của lễ hội lớn nhất năm; đua ngựa thường do trẻ em làm nài.</li>
+        <li><b>“Anh hùng Đỏ”.</b> Tên Ulaanbaatar có nghĩa là “Anh hùng Đỏ”, đặt từ năm 1924 để kỷ niệm cuộc cách mạng; trước đó thành phố có tên khác.</li>
+        <li><b>Mộ Thành Cát Tư Hãn vẫn chưa ai tìm thấy.</b> Theo truyền thuyết ông được chôn kín ở vùng núi Burkhan Khaldun, và vị trí chính xác đến nay vẫn là bí ẩn.</li>
+        <li><b>Người Mông Cổ ở Nội Mông đông hơn.</b> Số người dân tộc Mông Cổ sống ở Khu tự trị Nội Mông (Trung Quốc) theo điều tra dân số Trung Quốc 2020 khoảng 4 triệu, đông hơn cả dân số nước Mông Cổ.</li>
+        <li><b>Di sản Hung Nô mới được UNESCO công nhận.</b> Năm 2026 Mông Cổ có di sản thế giới thứ bảy, các nghĩa địa quý tộc Hung Nô<a class="cite" href="#ref-8">[8]</a>.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Mông Cổ rộng khoảng <span class="tg">1,56 triệu km²</span>, dân số khoảng <span class="tg">3,59 triệu</span>, gần một nửa sống ở Ulaanbaatar.</li>
+        <li>Lịch sử: Hung Nô (<span class="tg">209 TCN</span>) → Thành Cát Tư Hãn (<span class="tg">1206</span>) → nhà Nguyên (<span class="tg">1271–1368</span>) → nhà Thanh (<span class="tg">1691–1911</span>) → độc lập (<span class="tg">1911</span>) → Cộng hòa Nhân dân (<span class="tg">1924</span>) → dân chủ (<span class="tg">1990</span>).</li>
+        <li>Hiến pháp <span class="tg">1992</span> lập nên nền cộng hòa bán tổng thống; Quốc hội có 126 ghế.</li>
+        <li>Bất ổn chính trị: ba thủ tướng trong chưa đầy một năm; Uchral nhậm chức thủ tướng cuối <span class="tg">3/2026</span>.</li>
+        <li>Kinh tế sống nhờ đồng, than và vàng; khoảng <span class="tg">86%</span> xuất khẩu bán sang Trung Quốc.</li>
+        <li>Phật giáo Tây Tạng chiếm <span class="tg">51,7%</span> dân số; Naadam (giữa tháng 7) và Tsagaan Sar là hai lễ hội lớn nhất.</li>
+        <li>Ẩm thực dựa trên thịt cừu và sữa: khorkhog, buuz, khuushuur, suutei tsai và airag.</li>
+        <li><span class="tg">7</span> di sản UNESCO, mới nhất là mộ quý tộc Hung Nô (<span class="tg">2026</span>); chính sách “láng giềng thứ ba” cân bằng giữa Nga và Trung Quốc.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Năm 1206 xảy ra sự kiện gì đối với người Mông Cổ, và nhân vật chính là ai?</p>
+          <details><summary>Xem đáp án</summary><p>Temüjin được đại hội quý tộc suy tôn làm đại hãn, lấy hiệu Thành Cát Tư Hãn (Chinggis Khaan), khai sinh Đế quốc Mông Cổ.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Mông Cổ nằm dưới quyền cai trị của triều Thanh trong khoảng thời gian nào, và tuyên bố độc lập khi nào?</p>
+          <details><summary>Xem đáp án</summary><p>Từ 1691 đến 1911; Mông Cổ tuyên bố độc lập ngày 29/12/1911.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Hiến pháp 1992 thiết lập mô hình nhà nước nào, và quốc hội Mông Cổ có tên gì, bao nhiêu ghế?</p>
+          <details><summary>Xem đáp án</summary><p>Cộng hòa bán tổng thống; Quốc hội là Đại Hural Quốc gia (State Great Khural) với 126 ghế.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Vì sao nền kinh tế Mông Cổ được coi là dễ tổn thương, và nước nào là khách hàng chính?</p>
+          <details><summary>Xem đáp án</summary><p>Phụ thuộc lớn vào xuất khẩu khoáng sản (đồng, than, vàng) và Trung Quốc mua khoảng 86% xuất khẩu (2023) nên nhạy cảm với giá cả và nhu cầu từ một khách hàng duy nhất; ngoài ra còn nhập điện và nhiên liệu từ Nga.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Hãy kể tên ít nhất ba món ăn hoặc đồ uống truyền thống của Mông Cổ và mô tả một món.</p>
+          <details><summary>Xem đáp án</summary><p>Ví dụ: khorkhog (thịt cừu hầm cùng đá nung), buuz (bánh bao hấp nhân thịt), khuushuur (bánh rán nhân thịt), suutei tsai (trà sữa mặn), airag (sữa ngựa lên men).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Mông Cổ có bao nhiêu di sản thế giới UNESCO và di sản nào được công nhận gần đây nhất?</p>
+          <details><summary>Xem đáp án</summary><p>Bảy di sản; gần đây nhất là Nghĩa địa của giới quý tộc Hung Nô (2026). Các di sản khác gồm thung lũng Orkhon, quần thể khắc đá Altai, núi Burkhan Khaldun, Bia hươu, lưu vực Uvs Nuur và cảnh quan Dauria.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Mongolia</i>. Wikipedia, Bách khoa toàn thư mở (diện tích, dân số ước tính 2025, cơ cấu tôn giáo 2020, GDP/người 2025, các mốc lịch sử và thể chế). <a href="https://en.wikipedia.org/wiki/Mongolia" target="_blank" rel="noopener">en.wikipedia.org/wiki/Mongolia</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-2">Tân Hoa Xã (Xinhua). <i>Mongolia’s number of livestock up by 0.8 pct in 2025</i>. 28/12/2025. <a href="https://english.news.cn/20251228/e7315c1b468a4f8598e75bcf4d2b1ec0/c.html" target="_blank" rel="noopener">english.news.cn</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>2025 Mongolian political crisis</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2025_Mongolian_political_crisis" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-4">Wikipedia contributors. <i>2026 in Mongolia</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2026_in_Mongolia" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-5">Wikipedia contributors. <i>Economy of Mongolia</i>. Wikipedia, Bách khoa toàn thư mở (tăng trưởng, lạm phát, xuất khẩu, Oyu Tolgoi). <a href="https://en.wikipedia.org/wiki/Economy_of_Mongolia" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-6">East Asia Forum. <i>Mining drives Mongolia’s economy as reform momentum builds</i>. 24/2/2026. <a href="https://eastasiaforum.org/2026/02/24/mining-drives-mongolias-economy-as-reform-momentum-builds/" target="_blank" rel="noopener">eastasiaforum.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-7">Wikipedia contributors. <i>List of World Heritage Sites in Mongolia</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Mongolia" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-8">UNESCO World Heritage Centre. <i>The Cemetery Complexes of the Xiongnu Nobility</i>. 2026. <a href="https://whc.unesco.org/en/list/1759/" target="_blank" rel="noopener">whc.unesco.org/en/list/1759</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-9">Wikipedia contributors. <i>Foreign relations of Mongolia</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Foreign_relations_of_Mongolia" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-10">Al Jazeera. <i>What is the Power of Siberia 2 pipeline that Russia, China are planning?</i> 20/5/2026. <a href="https://www.aljazeera.com/features/2026/5/20/what-is-the-power-of-siberia-2-pipeline-that-russia-china-are-planning" target="_blank" rel="noopener">aljazeera.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, xuất khẩu, gia súc) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Số liệu kinh tế của các nguồn khác nhau về năm và phương pháp (ví dụ lạm phát tháng 12/2025 khác lạm phát bình quân năm), nên chỉ nên xem là ước lượng cùng bậc. Phần lịch sử cổ đại và các chi tiết còn tranh cãi được trình bày ở mức khái quát.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
