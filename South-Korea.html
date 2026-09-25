@@ -1,0 +1,1160 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Hàn Quốc — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<style>.refs li{overflow-wrap:anywhere;}</style>
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Hàn Quốc</div>
+          <h1>Hàn Quốc</h1>
+          <div class="period">Châu Á · Đông Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Hàn Quốc (Thái Cực Kỳ): nền trắng, hình thái cực đỏ – xanh ở giữa, bốn quẻ bát quái đen ở bốn góc">
+            <defs>
+              <g id="kr-sol">
+                <rect x="-3" y="-2.1" width="6" height="1"/>
+                <rect x="-3" y="-0.5" width="6" height="1"/>
+                <rect x="-3" y="1.1" width="6" height="1"/>
+              </g>
+              <g id="kr-brk">
+                <rect x="-3" y="-2.1" width="2.55" height="1"/><rect x="0.45" y="-2.1" width="2.55" height="1"/>
+                <rect x="-3" y="-0.5" width="2.55" height="1"/><rect x="0.45" y="-0.5" width="2.55" height="1"/>
+                <rect x="-3" y="1.1" width="2.55" height="1"/><rect x="0.45" y="1.1" width="2.55" height="1"/>
+              </g>
+              <g id="kr-kam">
+                <rect x="-3" y="-2.1" width="2.55" height="1"/><rect x="0.45" y="-2.1" width="2.55" height="1"/>
+                <rect x="-3" y="-0.5" width="6" height="1"/>
+                <rect x="-3" y="1.1" width="2.55" height="1"/><rect x="0.45" y="1.1" width="2.55" height="1"/>
+              </g>
+              <g id="kr-li">
+                <rect x="-3" y="-2.1" width="6" height="1"/>
+                <rect x="-3" y="-0.5" width="2.55" height="1"/><rect x="0.45" y="-0.5" width="2.55" height="1"/>
+                <rect x="-3" y="1.1" width="6" height="1"/>
+              </g>
+            </defs>
+            <rect width="30" height="20" fill="#ffffff"/>
+            <g transform="translate(15 10) rotate(-33.69)">
+              <circle r="5" fill="#0047a0"/>
+              <path fill="#cd2e3a" d="M-5,0 A5,5 0 0 1 5,0 A2.5,2.5 0 0 1 0,0 A2.5,2.5 0 0 0 -5,0 Z"/>
+            </g>
+            <g fill="#000000">
+              <use href="#kr-sol" transform="translate(6.264 4.176) rotate(33.69)"/>
+              <use href="#kr-kam" transform="translate(23.736 4.176) rotate(-33.69)"/>
+              <use href="#kr-li" transform="translate(6.264 15.824) rotate(-33.69)"/>
+              <use href="#kr-brk" transform="translate(23.736 15.824) rotate(33.69)"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Hàn Quốc là nửa phía nam của một bán đảo bị chia cắt, nơi hơn 51 triệu người sống trong một đất nước chỉ bằng khoảng một phần ba Việt Nam mà vẫn chen được vào nhóm 15 nền kinh tế lớn nhất thế giới. Từ đống tro tàn chiến tranh năm 1953, đất nước đi qua công nghiệp hóa dưới tay các tướng lĩnh, rồi tự mình lật đổ chế độ độc tài để có một nền dân chủ sôi động, nền dân chủ vừa đứng vững trước lệnh thiết quân luật tháng 12/2024. Nếu chỉ nhớ một điều về Hàn Quốc, hãy nhớ: đây là câu chuyện về tốc độ và cái giá của tốc độ — vươn lên nhanh đến mức được gọi là “kỳ tích”, và giờ phải đối mặt với tỷ lệ sinh thấp nhất thế giới, áp lực thi cử và khoảng cách thế hệ ngày càng rộng.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">100.472 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~51,1 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 2026</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Seoul</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Hàn<small>viết bằng chữ Hangul</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Không tôn giáo<small>51%; Kitô giáo 31%, Phật giáo 17% (2024)<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Won (₩, KRW)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~37.400 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính 2026</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">2333 TCN (truyền thuyết)</span>
+          <span class="tl-what">Cổ Triều Tiên</span>
+          <span class="tl-note">Truyền thuyết kể Dangun lập nước Gojoseon, mốc khai quốc của người Hàn</span>
+        </li>
+        <li>
+          <span class="tl-when">57 TCN – 668</span>
+          <span class="tl-what">Tam Quốc</span>
+          <span class="tl-note">Goguryeo, Baekje và Silla tranh giành bán đảo, theo truyền thống ghi chép</span>
+        </li>
+        <li>
+          <span class="tl-when">668</span>
+          <span class="tl-what">Silla thống nhất</span>
+          <span class="tl-note">Silla liên minh với nhà Đường, thâu tóm phần lớn bán đảo</span>
+        </li>
+        <li>
+          <span class="tl-when">918</span>
+          <span class="tl-what">Vương triều Goryeo</span>
+          <span class="tl-note">Wang Geon lập triều đại mà từ đó phương Tây gọi đất nước là “Korea”</span>
+        </li>
+        <li>
+          <span class="tl-when">1392</span>
+          <span class="tl-what">Joseon ra đời</span>
+          <span class="tl-note">Yi Seong-gye lập vương triều kéo dài hơn năm thế kỷ, lấy Tân Nho giáo làm gốc</span>
+        </li>
+        <li>
+          <span class="tl-when">1443 – 1446</span>
+          <span class="tl-what">Sáng tạo Hangul</span>
+          <span class="tl-note">Vua Sejong cùng các học giả chế ra bảng chữ cái riêng của người Hàn</span>
+        </li>
+        <li>
+          <span class="tl-when">1592 – 1598</span>
+          <span class="tl-what">Chiến tranh Imjin</span>
+          <span class="tl-note">Nhật Bản xâm lược; hải quân của Yi Sun-sin giữ vai trò then chốt</span>
+        </li>
+        <li>
+          <span class="tl-when">1910</span>
+          <span class="tl-what">Nhật Bản sáp nhập</span>
+          <span class="tl-note">Mở đầu 35 năm thuộc địa (đến 1945)</span>
+        </li>
+        <li>
+          <span class="tl-when">1/3/1919</span>
+          <span class="tl-what">Phong trào Một tháng Ba</span>
+          <span class="tl-note">Làn sóng biểu tình toàn quốc đòi độc lập, nổ ra trên cả nước</span>
+        </li>
+        <li>
+          <span class="tl-when">15/8/1945</span>
+          <span class="tl-what">Giải phóng</span>
+          <span class="tl-note">Nhật đầu hàng; bán đảo bị chia tại vĩ tuyến 38 giữa Mỹ và Liên Xô</span>
+        </li>
+        <li>
+          <span class="tl-when">15/8/1948</span>
+          <span class="tl-what">Thành lập Đại Hàn Dân Quốc</span>
+          <span class="tl-note">Chính phủ Syngman Rhee ra đời ở miền Nam<a class="cite" href="#ref-1">[1]</a></span>
+        </li>
+        <li>
+          <span class="tl-when">25/6/1950 – 27/7/1953</span>
+          <span class="tl-what">Chiến tranh Triều Tiên</span>
+          <span class="tl-note">Kết thúc bằng hiệp định đình chiến, không phải hiệp ước hòa bình<a class="cite" href="#ref-1">[1]</a></span>
+        </li>
+        <li>
+          <span class="tl-when">16/5/1961</span>
+          <span class="tl-what">Park Chung-hee đảo chính</span>
+          <span class="tl-note">Mở ra hơn hai thập niên công nghiệp hóa dưới bàn tay quân đội<a class="cite" href="#ref-1">[1]</a></span>
+        </li>
+        <li>
+          <span class="tl-when">1987</span>
+          <span class="tl-what">Dân chủ hóa</span>
+          <span class="tl-note">Phong trào tháng 6 buộc chính quyền chấp nhận bầu cử trực tiếp và hiến pháp mới<a class="cite" href="#ref-1">[1]</a></span>
+        </li>
+        <li>
+          <span class="tl-when">1997</span>
+          <span class="tl-what">Khủng hoảng tài chính</span>
+          <span class="tl-note">Cú sốc châu Á buộc Hàn Quốc cầu viện IMF, kéo theo cải tổ chaebol<a class="cite" href="#ref-1">[1]</a></span>
+        </li>
+        <li>
+          <span class="tl-when">12/2024 – 6/2025</span>
+          <span class="tl-what">Thiết quân luật &amp; bầu cử sớm</span>
+          <span class="tl-note">Tổng thống Yoon bị bãi nhiệm; Lee Jae-myung nhậm chức ngày 4/6/2025<a class="cite" href="#ref-1">[1]</a></span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại trước thế kỷ X phần lớn dựa vào sử liệu chép muộn và truyền thuyết, nên các con số mang tính ước lệ; mốc 2333 TCN của Gojoseon là truyền thống dân tộc, không phải kết luận khảo cổ học.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Tỷ lệ sinh 0,8 nghĩa là gì</b>
+        Tổng tỷ suất sinh (TFR) là số con trung bình mà một phụ nữ sinh ra trong cả cuộc đời. Cần khoảng 2,1 để dân số giữ nguyên qua các thế hệ; 0,8 nghĩa là mỗi thế hệ con nhỏ hơn thế hệ cha mẹ khoảng hai phần ba.
+      </aside>
+
+      <p class="lede">Hàn Quốc chiếm nửa phía nam bán đảo Triều Tiên, ba mặt giáp biển, còn phía bắc giáp Triều Tiên qua Khu phi quân sự (DMZ).</p>
+
+      <p>Diện tích cả nước khoảng <span class="tg">100.472 km²</span><a class="cite" href="#ref-1">[1]</a>, nhưng phần lớn là đồi núi, khiến người dân dồn vào các đồng bằng hẹp ở phía tây và phía nam. Dãy núi Taebaek chạy dọc bờ đông, còn đỉnh <span class="nv" data-note="Núi lửa đã tắt trên đảo Jeju, cao 1.947 m, là điểm cao nhất của Hàn Quốc; miệng núi lửa chứa một hồ nhỏ.">Hallasan</span> trên đảo Jeju là điểm cao nhất cả nước. Sông <span class="nv" data-note="Con sông chảy qua trung tâm Seoul; sự phát triển thần tốc của Hàn Quốc sau chiến tranh thường được gọi là “Kỳ tích sông Hán”.">Hán (Han)</span> uốn qua thủ đô, còn bờ biển phía tây và nam rất khúc khuỷu, có hàng nghìn hòn đảo. Khí hậu ôn đới gió mùa với bốn mùa rõ rệt: mùa đông khô lạnh từ Siberia thổi xuống, mùa hè nóng ẩm với đợt mưa dầm tháng 6 – 7, xuân và thu ngắn nhưng đẹp.</p>
+
+      <p>Dân số ước tính khoảng <span class="tg">51,1 triệu người</span><a class="cite" href="#ref-1">[1]</a>, gần như thuần nhất về dân tộc. Người nước ngoài chiếm <span class="tg">5,18%</span> dân số, tương đương khoảng 2,65 triệu người vào cuối năm 2024<a class="cite" href="#ref-2">[2]</a>. Về tôn giáo, 51% dân số không theo tôn giáo nào, 31% theo Kitô giáo và 17% theo Phật giáo<a class="cite" href="#ref-1">[1]</a> — tỷ lệ Kitô hữu cao bất thường so với phần còn lại của Đông Á. Khoảng một nửa dân số tập trung quanh Seoul và vùng thủ đô, nên phần còn lại của đất nước đang già đi và vắng dần.</p>
+
+      <p>Vấn đề nhân khẩu học nổi bật nhất là sinh đẻ. Tổng tỷ suất sinh từng chạm đáy <span class="tg">0,72</span> vào năm 2023, mức thấp nhất được ghi nhận ở bất kỳ quốc gia nào<a class="cite" href="#ref-2">[2]</a>. Năm 2025 chỉ số này hồi phục lên <span class="tg">0,80</span> với <span class="tg">254.500</span> ca sinh, mức cao nhất từ năm 2010; tuy vậy số người chết vẫn lên tới khoảng 363.400, nên dân số tiếp tục giảm tự nhiên khoảng 108.900 người<a class="cite" href="#ref-3">[3]</a>. Tỷ lệ người từ 65 tuổi trở lên đã ở mức <span class="tg">19,3%</span> theo ước tính năm 2024<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Hàn Quốc là lịch sử của một nước nhỏ kẹp giữa các nước lớn — Trung Hoa, Mông Cổ, Nhật Bản, rồi cuộc đối đầu Mỹ – Xô — và thường xuyên phải tự đứng dậy sau mỗi lần bị giẫm.</p>
+
+      <p><b>Khởi nguyên và Tam Quốc.</b> Truyền thuyết cho rằng <span class="nv" data-note="Nhân vật thần thoại, con của Hwanung và người gấu hóa thành phụ nữ; theo truyền thống lập nước Gojoseon năm 2333 TCN. Ngày “Khai Thiên” 3/10 hằng năm tưởng nhớ sự kiện này.">Dangun</span> lập nước Gojoseon năm 2333 TCN. Đến những thế kỷ đầu Công nguyên, bán đảo chia thành ba vương quốc: Goguryeo ở phía bắc, Baekje ở tây nam và Silla ở đông nam. Năm <span class="tg">668</span>, Silla liên minh với nhà Đường và thống nhất phần lớn bán đảo; ở phía bắc, vương quốc Balhae tiếp nối di sản Goguryeo. Thời Silla để lại những công trình Phật giáo đồ sộ quanh cố đô Gyeongju như chùa Bulguksa và hang đá Seokguram.</p>
+
+      <aside class="sidenote">
+        <b>Vì sao gọi là “Korea”</b>
+        Tên gọi phương Tây bắt nguồn từ Goryeo, cách các thương nhân Ả Rập và châu Âu thời trung đại gọi vương triều này. Người Hàn tự gọi nước mình là Hanguk (Hàn Quốc), còn Triều Tiên gọi phần lãnh thổ của họ là Joseon.
+      </aside>
+
+      <p><b>Goryeo (918 – 1392).</b> Năm <span class="tg">918</span>, <span class="nv" data-note="Tướng và người sáng lập Goryeo, thống nhất bán đảo năm 936 sau khi thu phục Hậu Bách Tế.">Wang Geon</span> lập nên Goryeo, vương triều Phật giáo với nghề in và gốm men ngọc (celadon) nổi tiếng. Thế kỷ XIII, quân Mông Cổ xâm lược nhiều lần; triều đình cho khắc hơn 80.000 mộc bản kinh Phật (Tripitaka Koreana), hiện còn lưu giữ tại chùa Haeinsa, vừa là lời cầu nguyện vừa là hành động chống ngoại xâm bằng văn hóa. Sau cùng Goryeo phải quy phục Mông Cổ, suy yếu dần cho đến khi bị thay thế.</p>
+
+      <p><b>Joseon (1392 – 1897).</b> Năm <span class="tg">1392</span>, tướng <span class="nv" data-note="Tướng Goryeo đảo chính, lập vương triều Joseon và chọn Hanyang (Seoul ngày nay) làm kinh đô.">Yi Seong-gye</span> lập nên Joseon<a class="cite" href="#ref-1">[1]</a>, chọn Tân Nho giáo làm hệ tư tưởng chính và tầng lớp quan lại – học giả <i>yangban</i> làm xương sống xã hội. Dưới triều <span class="nv" data-note="Vua thứ tư của Joseon (trị vì 1418–1450), nổi tiếng với khoa học, âm nhạc và việc ban hành chữ Hangul năm 1446.">Sejong Đại đế</span> (1418 – 1450), chữ <span class="tg">Hangul</span> ra đời năm 1443 và được công bố năm 1446, cho phép cả dân thường học đọc viết. Năm <span class="tg">1592</span>, <span class="nv" data-note="Đô đốc Joseon, nổi tiếng với chiến thuật hải quân và thuyền rùa (geobukseon) trong cuộc chiến chống quân Nhật.">Yi Sun-sin</span> cùng hải quân giữ vai trò then chốt trong việc chặn đường tiếp vận của quân Nhật xâm lược. Sau các cuộc xâm lăng của người Mãn năm 1627 và 1636, Joseon co cụm lại thành “vương quốc ẩn dật” cho tới khi bị ép mở cửa thế kỷ XIX.</p>
+
+      <p><b>Thuộc địa Nhật Bản (1910 – 1945).</b> Năm <span class="tg">1910</span>, Nhật Bản sáp nhập bán đảo và cai trị 35 năm, với chính sách đồng hóa nặng nề như hạn chế dùng tiếng Hàn và bắt đổi tên. Phong trào <span class="tg">Một tháng Ba</span> năm 1919 là đợt biểu tình lớn nhất; chính phủ lâm thời được lập ở Thượng Hải. Các vấn đề còn lại từ thời này — lao động cưỡng bức, phụ nữ bị ép làm “phụ nữ mua vui” — đến nay vẫn là điểm nhạy cảm trong quan hệ Hàn – Nhật.</p>
+
+      <p><b>Chia cắt và chiến tranh (1945 – 1953).</b> Ngày <span class="tg">15/8/1945</span> Nhật đầu hàng, bán đảo bị Mỹ và Liên Xô chia đôi tại vĩ tuyến 38. Ngày <span class="tg">15/8/1948</span>, Đại Hàn Dân Quốc được thành lập ở miền Nam với tổng thống đầu tiên là <span class="nv" data-note="Tổng thống đầu tiên của Hàn Quốc (1948–1960), bị lật đổ sau cuộc Cách mạng tháng 4 năm 1960.">Syngman Rhee</span>. Chiến tranh Triều Tiên bùng nổ ngày <span class="tg">25/6/1950</span> và dừng lại bằng hiệp định đình chiến ngày <span class="tg">27/7/1953</span><a class="cite" href="#ref-1">[1]</a>. Vì chưa có hiệp ước hòa bình nên về mặt pháp lý hai miền vẫn chưa chấm dứt chiến tranh.</p>
+
+      <p><b>Công nghiệp hóa dưới độc tài (1953 – 1987).</b> Sau vụ đảo chính ngày <span class="tg">16/5/1961</span>, tướng <span class="nv" data-note="Tổng thống Hàn Quốc từ 1961 đến khi bị ám sát năm 1979; khởi động các kế hoạch năm năm và nuôi dưỡng các tập đoàn chaebol.">Park Chung-hee</span> cầm quyền, áp dụng các kế hoạch kinh tế năm năm, nâng đỡ các tập đoàn <i>chaebol</i> và ưu tiên xuất khẩu. Đất nước giàu lên nhanh, nhưng cái giá là báo chí bị kiểm duyệt, đối lập bị đàn áp; vụ đàn áp cuộc nổi dậy ở Gwangju tháng 5/1980 dưới thời tướng Chun Doo-hwan trở thành vết thương lớn trong ký ức dân tộc.</p>
+
+      <p><b>Dân chủ hóa và hội nhập (1987 – nay).</b> Phong trào tháng 6/1987 buộc chính quyền chấp nhận bầu cử trực tiếp; hiến pháp hiện hành được thông qua ngày <span class="tg">29/10/1987</span><a class="cite" href="#ref-1">[1]</a>. Thế Vận hội Seoul 1988 giới thiệu đất nước ra thế giới, Hàn Quốc gia nhập OECD năm 1996<a class="cite" href="#ref-6">[6]</a>, vượt qua khủng hoảng 1997 và đồng đăng cai World Cup 2002 cùng Nhật Bản. Bản sắc hôm nay là sự pha trộn giữa nền tảng Nho giáo, Phật giáo, Kitô giáo mới nổi, niềm tự hào dân tộc và nếp sống “nhanh nhanh” (<i>ppalli-ppalli</i>) của một xã hội vừa công nghiệp hóa trong một đời người.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Hàn Quốc</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Cử tri</span>
+          <span class="tier-desc">Trực tiếp bầu Tổng thống và 300 nghị sĩ; bầu cả người đứng đầu địa phương</span>
+        </li>
+        <li>
+          <span class="tier-role">Tổng thống</span>
+          <span class="tier-desc">Nguyên thủ quốc gia kiêm đứng đầu hành pháp; nhiệm kỳ 5 năm, một nhiệm kỳ</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội · Chính phủ · Tòa án</span>
+          <span class="tier-desc">Quốc hội một viện 300 ghế; Chính phủ do Thủ tướng điều phối; Tòa án Hiến pháp có quyền quyết định việc bãi nhiệm</span>
+        </li>
+        <li>
+          <span class="tier-role">Chính quyền địa phương</span>
+          <span class="tier-desc">Seoul, các thành phố đô thị và các tỉnh, mỗi nơi có người đứng đầu dân bầu</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Bãi nhiệm khác kết án</b>
+        Tòa án Hiến pháp quyết định có bãi nhiệm tổng thống hay không (một quyết định hiến pháp), còn việc xét xử tội hình sự do tòa thường thực hiện riêng. Ông Yoon phải đi qua cả hai con đường.
+      </aside>
+
+      <p>Hàn Quốc là cộng hòa tổng thống chế, tổ chức theo hiến pháp năm 1987<a class="cite" href="#ref-1">[1]</a>. Tổng thống do dân bầu trực tiếp và chỉ được làm một nhiệm kỳ năm năm, nhằm ngăn lặp lại các thời kỳ độc tài; Quốc hội một viện gồm 300 ghế, và Đảng Dân chủ của Tổng thống hiện nắm 161 ghế<a class="cite" href="#ref-4">[4]</a>. Tòa án Hiến pháp là “trọng tài” trong những cuộc khủng hoảng lớn.</p>
+
+      <p>Tính hiệu quả của hệ thống được thử thách rõ nhất trong hai năm qua. Đêm <span class="tg">3/12/2024</span>, Tổng thống <span class="nv" data-note="Tổng thống thứ 20 của Hàn Quốc (2022–2025); tuyên bố thiết quân luật đêm 3/12/2024, bị Quốc hội luận tội và Tòa án Hiến pháp bãi nhiệm ngày 4/4/2025.">Yoon Suk Yeol</span> bất ngờ tuyên bố thiết quân luật với lý do các hoạt động “chống nhà nước” của phe đối lập; Quốc hội nhất trí bác bỏ chỉ sau vài giờ, luận tội ông ngày 14/12/2024 và Tòa án Hiến pháp nhất trí bãi nhiệm ngày <span class="tg">4/4/2025</span>. <span class="nv" data-note="Lãnh đạo Đảng Dân chủ; thua sít sao cuộc bầu cử tổng thống năm 2022, thắng cử năm 2025 và nhậm chức ngày 4/6/2025.">Lee Jae-myung</span> thắng cuộc bầu cử sớm sau đó và nhậm chức ngày <span class="tg">4/6/2025</span><a class="cite" href="#ref-1">[1]</a>. Ngày <span class="tg">19/2/2026</span>, một tòa án tuyên ông Yoon mức án chung thân vì tội cầm đầu cuộc nổi loạn<a class="cite" href="#ref-5">[5]</a>.</p>
+
+      <p>Ông Lee không có tuần trăng mật kéo dài. Trong cuộc bầu cử địa phương ngày <span class="tg">3/6/2026</span>, Đảng Dân chủ thắng phần lớn các ghế thị trưởng và tỉnh trưởng (12 trong 16 cuộc, theo Carnegie) nhưng để mất chức thị trưởng Seoul vào tay <span class="nv" data-note="Cựu thị trưởng Seoul thuộc phe bảo thủ, giành lại chức vụ này trong cuộc bầu cử địa phương 3/6/2026.">Oh Se-hoon</span>, và tỷ lệ ủng hộ của Tổng thống lần đầu xuống dưới 50%<a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Trong thập niên 1950 – 1960, Hàn Quốc thuộc nhóm nước nghèo nhất thế giới. Ngày nay, quy mô GDP danh nghĩa đạt khoảng <span class="tg">1,87 nghìn tỷ USD</span> năm 2025<a class="cite" href="#ref-6">[6]</a> và được xếp thứ 15 thế giới với khoảng <span class="tg">1,93 nghìn tỷ USD</span> năm 2026<a class="cite" href="#ref-1">[1]</a>. GDP bình quân đầu người danh nghĩa vào khoảng <span class="tg">37.400 USD</span>, và chỉ số phát triển con người (HDI) đạt 0,937, xếp thứ 20 thế giới<a class="cite" href="#ref-1">[1]</a>. Hàn Quốc gia nhập OECD năm 1996<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Động cơ của nền kinh tế là các <i>chaebol</i> — Samsung, Hyundai, SK, LG — cùng ba trụ cột xuất khẩu là chip bán dẫn, ô tô và đóng tàu<a class="cite" href="#ref-6">[6]</a>. Trung Quốc và Hoa Kỳ là hai thị trường xuất khẩu lớn nhất, chiếm lần lượt 23,4% và 17,3% năm 2025<a class="cite" href="#ref-6">[6]</a>. Cơn sốt trí tuệ nhân tạo đã đưa ngành chip lên vị trí gần như độc tôn: trong 20 ngày đầu tháng 9/2026, xuất khẩu chip nhớ đạt khoảng <span class="tg">21,5 tỷ USD</span>, tăng <span class="tg">350,7%</span> so với cùng kỳ, còn chỉ số KOSPI đóng cửa ở mức <span class="tg">7.007,72</span> điểm ngày 21/9<a class="cite" href="#ref-8">[8]</a>.</p>
+
+      <p>Đằng sau tăng trưởng chip là những lo ngại lớn. Kinh tế nói chung tăng trưởng chậm, khoảng 1,0% năm 2025 và dự báo 1,4% năm 2026<a class="cite" href="#ref-6">[6]</a>. Samsung Electronics và SK hynix chiếm hơn một nửa trọng số của KOSPI (khoảng 51,28% theo số liệu tháng 9/2026)<a class="cite" href="#ref-8">[8]</a>, nghĩa là cả thị trường phụ thuộc vào đúng một ngành. Chuyện thuế quan với Mỹ cũng chưa hết chông gai: theo bản thông tin chung tháng 11/2025, thuế với ô tô Hàn Quốc giảm còn <span class="tg">15%</span>, đổi lại Seoul cam kết đầu tư <span class="tg">350 tỷ USD</span> vào Mỹ (khoảng 200 tỷ USD tiền mặt và 150 tỷ USD hợp tác đóng tàu)<a class="cite" href="#ref-7">[7]</a>.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Nền tảng văn hóa Hàn Quốc là Nho giáo được thấm sâu qua năm thế kỷ Joseon: trọng thứ bậc, kính trên nhường dưới, đề cao gia đình và học vấn. Ngôn ngữ phản ánh điều đó rõ nhất: tiếng Hàn có nhiều cấp độ kính ngữ, và người nói phải đo tuổi tác, vị thế của đối phương ngay từ câu chào đầu tiên. Cái “nhìn mặt đoán ý” — <i>nunchi</i> — được xem là kỹ năng xã hội cơ bản, còn <i>jeong</i> (tình cảm gắn bó) và <i>han</i> (nỗi uất kết dồn nén qua lịch sử) thường được dùng để giải thích tâm hồn người Hàn.</p>
+
+      <p>Giáo dục là “tôn giáo dân sự” của xã hội. Kỳ thi đại học quốc gia (<i>suneung</i>) quan trọng đến mức cả nước điều chỉnh giờ làm và giờ bay vào ngày thi; học sinh sau giờ học còn đến các trung tâm luyện thi (<i>hagwon</i>) đến khuya. Áp lực đó lan sang thị trường lao động, nơi giờ làm dài và văn hóa liên hoan công ty (<i>hoesik</i>) vẫn phổ biến, khiến nhiều người trẻ than phiền về chính “thế hệ” của mình. Cuộc bầu cử 2026 còn cho thấy khoảng cách giới trong giới trẻ: khoảng 55,8% nam giới ở tuổi 20 ủng hộ phe bảo thủ trong khi khoảng 66,4% nữ giới cùng tuổi ủng hộ phe cấp tiến<a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <p>Ngoài đời sống thường ngày, Hàn Quốc còn là cường quốc mềm nhờ làn sóng <i>Hallyu</i>: từ K-pop, phim truyền hình đến điện ảnh, với <i>Parasite</i> giành Oscar Phim hay nhất năm 2020 và <i>Squid Game</i> gây sốt toàn cầu năm 2021. Các dịp lễ lớn là <i>Seollal</i> (Tết âm lịch) và <i>Chuseok</i> (Trung thu), khi hàng chục triệu người về quê, mặc <i>hanbok</i> và cúng tổ tiên.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Kimjang</b>
+        Tập tục cả xóm cùng làm kimchi trữ cho mùa đông đã được UNESCO ghi nhận là di sản văn hóa phi vật thể năm 2013. Cái được tôn vinh là việc chia sẻ, chứ không chỉ món ăn.
+      </aside>
+
+      <p>Bữa cơm Hàn xoay quanh <i>bapsang</i>: một bát cơm, một bát canh và nhiều đĩa đồ ăn kèm (<i>banchan</i>) đặt chung giữa bàn. Nền tảng vị giác là lên men — kimchi, tương đậu <i>doenjang</i>, nước tương <i>ganjang</i> và tương ớt <i>gochujang</i> — được người xưa dùng để trữ đồ ăn qua mùa đông khắc nghiệt. Nhiều bữa ăn còn theo nguyên tắc cân bằng ngũ sắc và ngũ vị, cùng quan niệm “thức ăn là thuốc”.</p>
+
+      <p>Mỗi vùng có dấu ấn riêng. Seoul giữ truyền thống cung đình với các bàn tiệc <i>hanjeongsik</i>; vùng Jeolla ở phía tây nam nổi tiếng nhất về ẩm thực với thực đơn cực phong phú, đại diện là Jeonju; vùng Gyeongsang ở đông nam ăn mặn và cay hơn; đảo Jeju nổi tiếng với hải sản, thịt heo đen và những nữ thợ lặn <i>haenyeo</i>; Gangwon ở đông bắc có món gà xào cay <i>dakgalbi</i> và mì lạnh. Đồ uống đặc trưng gồm <i>soju</i> và rượu gạo đục <i>makgeolli</i>, trà lúa mạch <i>boricha</i> và nước gạo ngọt <i>sikhye</i>.</p>
+
+      <p>Văn hóa ăn uống có nhiều phép tắc: dùng đũa kim loại và thìa, chờ người lớn tuổi cầm thìa trước, rót rượu bằng hai tay cho bề trên. Đi cùng là những thói quen rất Hàn như nướng thịt ngay tại bàn, ăn <i>chimaek</i> (gà rán và bia) và đặt đồ ăn giao tận nhà gần như bất kỳ giờ nào.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Kimchi</span><span class="pick-desc">Rau cải muối và lên men với ớt, tỏi, gừng; có hàng trăm biến thể và xuất hiện trong hầu hết bữa ăn.</span></li>
+        <li><span class="pick-where">Jeonju · Jeolla</span><span class="pick-name">Bibimbap</span><span class="pick-desc">Cơm trộn rau, thịt và tương ớt gochujang trong bát; bản Jeonju nổi tiếng nhất.</span></li>
+        <li><span class="pick-where">Seoul</span><span class="pick-name">Bulgogi</span><span class="pick-desc">Thịt bò thái mỏng ướp nước tương, đường và dầu mè rồi nướng, ăn cuốn rau xà lách.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Samgyeopsal</span><span class="pick-desc">Ba chỉ heo nướng tại bàn, cuốn lá rau với tỏi và tương ssamjang, món kết bạn của mọi buổi tụ tập.</span></li>
+        <li><span class="pick-where">Đường phố Seoul</span><span class="pick-name">Tteokbokki</span><span class="pick-desc">Bánh gạo dẻo hầm trong sốt ớt cay ngọt, thường ăn cùng chả cá và trứng luộc.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Naengmyeon</span><span class="pick-desc">Mì kiều mạch ăn lạnh trong nước dùng mát, món quê gốc miền Bắc nay đã thành món quốc dân.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Samgyetang</span><span class="pick-desc">Gà non nhồi gạo nếp và sâm hầm nguyên con, ăn giữa mùa hè để “lấy nóng trị nóng”.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Kimchi-jjigae · Sundubu</span><span class="pick-desc">Hai món canh hầm sôi sùng sục trong nồi đất: một vị kimchi chua cay, một vị đậu phụ non mềm.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Japchae</span><span class="pick-desc">Miến khoai lang xào với rau củ và thịt, món hay có trong tiệc lễ Tết.</span></li>
+        <li><span class="pick-where">Gangwon</span><span class="pick-name">Dakgalbi</span><span class="pick-desc">Gà xào sốt cay cùng bắp cải và bánh gạo trên chảo lớn, đặc sản của thành phố Chuncheon.</span></li>
+        <li><span class="pick-where">Andong · Gyeongsang</span><span class="pick-name">Jjimdak</span><span class="pick-desc">Gà hầm nước tương với miến và khoai tây, đậm đà và hơi ngọt.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Đi DMZ thế nào</b>
+        Khu vực Panmunjom và các đài quan sát DMZ chỉ vào được theo tour có đăng ký trước, kèm giấy tờ tùy thân. Lịch tour có thể bị hủy đột xuất khi căng thẳng tăng.
+      </aside>
+
+      <p>Hàn Quốc có <span class="tg">17 di sản thế giới</span> được UNESCO công nhận, gồm 15 di sản văn hóa và 2 di sản thiên nhiên; di sản mới nhất là các bức khắc đá cổ dọc suối Bangucheon ở Ulsan, được ghi danh năm 2025<a class="cite" href="#ref-9">[9]</a>. Cùng với các di sản là hệ thống núi, biển, làng cổ và đô thị công nghệ cao, tạo nên một điểm đến hiếm thấy: có thể sáng ăn cung điện thời Joseon, tối ngắm phố đèn neon.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Hàn Quốc</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Seoul</span><span class="pick-name">Gyeongbokgung &amp; Bukchon</span><span class="pick-desc">Cung điện chính của Joseon giữa lòng thủ đô, kề làng hanok Bukchon với các mái ngói cong.</span></li>
+        <li><span class="pick-where">Seoul</span><span class="pick-name">Changdeokgung</span><span class="pick-desc">Quần thể cung điện được UNESCO ghi danh năm 1997, nổi tiếng với hậu uyển Huwon.</span></li>
+        <li><span class="pick-where">Bắc Gyeonggi</span><span class="pick-name">DMZ &amp; Panmunjom</span><span class="pick-desc">Dải đất phi quân sự dài khoảng 250 km, nơi hai miền đối mặt và là vùng sinh thái nguyên vẹn hiếm có.</span></li>
+        <li><span class="pick-where">Suwon</span><span class="pick-name">Pháo đài Hwaseong</span><span class="pick-desc">Tường thành thế kỷ XVIII dài hơn 5 km, di sản thế giới từ 1997.</span></li>
+        <li><span class="pick-where">Gyeongju</span><span class="pick-name">Bulguksa &amp; Seokguram</span><span class="pick-desc">Chùa và hang đá Phật thời Silla, cùng các khu di tích lịch sử của cố đô nghìn năm tuổi.</span></li>
+        <li><span class="pick-where">Gyeongsang Nam</span><span class="pick-name">Haeinsa</span><span class="pick-desc">Ngôi chùa trên núi lưu giữ kho mộc bản Tripitaka Koreana khắc từ thế kỷ XIII.</span></li>
+        <li><span class="pick-where">Andong</span><span class="pick-name">Làng Hahoe</span><span class="pick-desc">Làng họ tộc bảo tồn nhà ngói và ván gỗ từ thời Joseon, đứng cạnh Yangdong trong danh sách UNESCO.</span></li>
+        <li><span class="pick-where">Jeonju</span><span class="pick-name">Làng hanok Jeonju</span><span class="pick-desc">Hơn nghìn ngôi nhà truyền thống nối nhau, thủ đô ẩm thực bibimbap.</span></li>
+        <li><span class="pick-where">Gangwon</span><span class="pick-name">Seoraksan</span><span class="pick-desc">Núi đá granite dựng đứng, rực lá đỏ vào mùa thu và phủ tuyết vào mùa đông.</span></li>
+        <li><span class="pick-where">Busan</span><span class="pick-name">Haeundae &amp; Gamcheon</span><span class="pick-desc">Bãi biển nổi tiếng nhất cả nước và ngôi làng nhà đủ màu xếp bậc thang trên sườn đồi.</span></li>
+        <li><span class="pick-where">Jeju</span><span class="pick-name">Hallasan &amp; hang dung nham</span><span class="pick-desc">Đảo núi lửa và các ống dung nham được UNESCO công nhận năm 2007.</span></li>
+        <li><span class="pick-where">Bờ tây nam</span><span class="pick-name">Bãi triều Getbol</span><span class="pick-desc">Bãi bùn triều rộng lớn, di sản thiên nhiên UNESCO 2021 và nơi trú chân của chim di cư.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Đình chiến chứ chưa hòa bình</b>
+        Hiệp định 27/7/1953 chỉ ngừng bắn, chưa phải hiệp ước hòa bình. Vì thế DMZ là một trong những biên giới bị canh phòng nghiêm ngặt nhất thế giới và mọi nước chủ chốt đều theo dõi sát mỗi động thái ở bán đảo.
+      </aside>
+
+      <p>Hàn Quốc là liên minh quân sự lâu năm của Mỹ và đồng thời phụ thuộc vào thị trường Trung Quốc, nên chính sách đối ngoại phải cân bằng giữa hai phía. Trong năm 2025, Tổng thống Lee đã chốt thỏa thuận thuế quan với Tổng thống Trump: bản thông tin chung ngày 13/11/2025 ghi nhận Washington đồng ý cho Seoul đóng tàu ngầm chạy bằng năng lượng hạt nhân và tiếp cận quyền làm giàu, tái chế nhiên liệu uranium cho mục đích dân sự<a class="cite" href="#ref-7">[7]</a>. Dù vậy, tháng 1/2026 ông Trump lại dọa áp thêm thuế vì cho rằng việc triển khai cam kết đầu tư bị chậm<a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <p>Với Triều Tiên, ông Lee chọn cách thực dụng: đề xuất lộ trình ba bước gồm đóng băng, cắt giảm rồi tiến tới phi hạt nhân hóa, và cho rằng việc đóng băng có thể là “biện pháp khẩn cấp tạm thời”<a class="cite" href="#ref-4">[4]</a>. Với Nhật Bản, ông đã gặp Thủ tướng Takaichi Sanae ba lần (10/2025, 1/2026, 5/2026), một sự gần gũi hiếm có giữa một tổng thống cấp tiến của Hàn Quốc và một thủ tướng bảo thủ Nhật<a class="cite" href="#ref-4">[4]</a>. Hội nghị APEC tháng 10/2025 tổ chức tại Gyeongju cũng là dịp Seoul khẳng định vai trò chủ nhà<a class="cite" href="#ref-7">[7]</a>.</p>
+
+      <p>Ở trong nước, có ba bài toán lớn. Thứ nhất là kinh tế: tăng trưởng chỉ ở mức 1 – 2% và đạo luật “Yellow Envelope” tháng 8/2025 mở rộng quyền của công đoàn khiến giới doanh nghiệp lo ngại<a class="cite" href="#ref-4">[4]</a>. Thứ hai là giá nhà và khoảng cách giàu nghèo khiến người trẻ chán nản<a class="cite" href="#ref-4">[4]</a>. Thứ ba là già hóa dân số cùng tỷ lệ sinh, đã phân tích ở trên.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Hàn Quốc</h2>
+      <ol class="funs">
+        <li><b>Chữ viết có “ngày sinh”.</b> Hangul được vua Sejong cùng các học giả sáng tạo và công bố năm 1446; ít bảng chữ cái nào trên thế giới có người sáng tạo và thời điểm ra đời rõ ràng đến vậy.</li>
+        <li><b>Biên giới nguy hiểm nhưng đầy thú hoang.</b> Dải DMZ dài khoảng 250 km hầu như không có người ở suốt hơn bảy thập kỷ, biến nơi đây thành một khu bảo tồn tự nhiên vô tình.</li>
+        <li><b>Tuổi “Hàn” đã bị xóa.</b> Từ tháng 6/2023, Hàn Quốc chính thức dùng tuổi theo năm sinh quốc tế thay cho cách tính tuổi cũ vốn khiến một đứa trẻ sinh ra đã được tính một tuổi.</li>
+        <li><b>Cả xóm cùng làm kimchi.</b> Tập tục kimjang được UNESCO ghi nhận năm 2013, vì nét đẹp cộng đồng trong việc chuẩn bị kimchi cho mùa đông.</li>
+        <li><b>Kho kinh Phật bằng gỗ.</b> Hơn 80.000 mộc bản Tripitaka Koreana khắc từ thế kỷ XIII vẫn nằm nguyên vẹn ở chùa Haeinsa, một di sản thế giới.</li>
+        <li><b>Sưởi ấm từ dưới sàn.</b> Hệ thống <i>ondol</i> truyền thống cho khói nóng chạy dưới nền nhà, là lý do người Hàn quen ngồi và ngủ trên sàn; bản hiện đại dùng ống nước nóng.</li>
+        <li><b>Điện ảnh chinh phục Hollywood.</b> <i>Parasite</i> năm 2020 là phim không nói tiếng Anh đầu tiên thắng giải Oscar Phim hay nhất, và <i>Squid Game</i> năm 2021 trở thành hiện tượng toàn cầu.</li>
+        <li><b>Nam giới phải đi nghĩa vụ quân sự.</b> Thời gian nhập ngũ khoảng 18 – 21 tháng tùy quân chủng, áp dụng cho cả các ngôi sao nổi tiếng nhất.</li>
+        <li><b>Tỷ lệ sinh thấp nhất thế giới.</b> Mức 0,72 năm 2023 được ghi nhận là thấp nhất mọi thời đại ở bất kỳ nước nào, dù năm 2025 đã nhích lên 0,80<a class="cite" href="#ref-2">[2]</a><a class="cite" href="#ref-3">[3]</a>.</li>
+        <li><b>Hai công ty chi phối cả sàn chứng khoán.</b> Samsung Electronics và SK hynix chiếm khoảng 51% trọng số KOSPI vào tháng 9/2026<a class="cite" href="#ref-8">[8]</a>; mức hơn một nửa hiếm thấy ở các thị trường lớn.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Hàn Quốc có khoảng <span class="tg">51,1 triệu</span> dân, diện tích <span class="tg">100.472 km²</span>, thủ đô Seoul, tiền tệ won.</li>
+        <li>Trục lịch sử: Gojoseon → Tam Quốc → Silla thống nhất (<span class="tg">668</span>) → Goryeo (<span class="tg">918</span>) → Joseon (<span class="tg">1392</span>) → thuộc địa Nhật (<span class="tg">1910–1945</span>) → chia cắt → chiến tranh (<span class="tg">1950–1953</span>).</li>
+        <li>Hangul do vua Sejong công bố năm <span class="tg">1446</span>.</li>
+        <li>Park Chung-hee đảo chính <span class="tg">1961</span>, công nghiệp hóa thần tốc; dân chủ hóa với hiến pháp <span class="tg">1987</span>.</li>
+        <li>Ngày <span class="tg">3/12/2024</span> Yoon ban bố thiết quân luật; bị bãi nhiệm <span class="tg">4/4/2025</span>; Lee Jae-myung nhậm chức <span class="tg">4/6/2025</span>; Yoon bị tuyên chung thân ngày <span class="tg">19/2/2026</span>.</li>
+        <li>Kinh tế dựa vào chaebol, chip, ô tô, đóng tàu; thuế ô tô vào Mỹ <span class="tg">15%</span>, cam kết đầu tư <span class="tg">350 tỷ USD</span>.</li>
+        <li>Tỷ lệ sinh <span class="tg">0,80</span> (2025), hồi phục từ đáy 0,72 nhưng dân số vẫn giảm tự nhiên.</li>
+        <li><span class="tg">17</span> di sản UNESCO; kimchi, bibimbap, bulgogi, samgyeopsal là những món nên nhớ.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Bảng chữ cái Hangul do ai sáng tạo và được công bố vào năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Do vua Sejong cùng các học giả sáng tạo; chữ ra đời năm 1443 và được công bố năm 1446.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Chiến tranh Triều Tiên kết thúc bằng văn bản gì, vào ngày nào, và vì sao hai miền vẫn chưa thật sự hết chiến tranh?</p>
+          <details><summary>Xem đáp án</summary><p>Bằng hiệp định đình chiến ngày 27/7/1953. Đó chỉ là ngừng bắn, không phải hiệp ước hòa bình, nên về mặt pháp lý chiến tranh chưa kết thúc.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Kể tên các bước chính dẫn đến việc Yoon Suk Yeol rời ghế tổng thống và hậu quả sau đó.</p>
+          <details><summary>Xem đáp án</summary><p>Tuyên bố thiết quân luật đêm 3/12/2024, Quốc hội bác bỏ trong vài giờ và luận tội ngày 14/12/2024, Tòa án Hiến pháp bãi nhiệm ngày 4/4/2025; ngày 19/2/2026 ông bị tuyên án chung thân vì tội cầm đầu nổi loạn.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Ba trụ cột xuất khẩu của Hàn Quốc là gì, và vì sao thị trường chứng khoán nước này bị xem là phụ thuộc vào chip?</p>
+          <details><summary>Xem đáp án</summary><p>Chip bán dẫn, ô tô và đóng tàu. Samsung Electronics và SK hynix chiếm khoảng 51% trọng số của KOSPI.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Nêu cấu trúc một bữa cơm Hàn truyền thống và ba thực phẩm lên men tiêu biểu.</p>
+          <details><summary>Xem đáp án</summary><p>Cơm, canh và nhiều đĩa banchan đặt chung giữa bàn. Thực phẩm lên men tiêu biểu là kimchi, tương đậu doenjang và tương ớt gochujang.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Hàn Quốc có bao nhiêu di sản UNESCO? Kể tên ít nhất bốn di sản.</p>
+          <details><summary>Xem đáp án</summary><p>17 di sản, gồm 15 văn hóa và 2 thiên nhiên. Ví dụ: cung Changdeokgung, pháo đài Hwaseong, các khu di tích Gyeongju, chùa Bulguksa và hang đá Seokguram, chùa Haeinsa, làng Hahoe, đảo núi lửa Jeju, bãi triều Getbol.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>South Korea</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu diện tích, dân số ước tính 2026, tôn giáo 2024, GDP và HDI, các mốc lịch sử hiện đại và cuộc khủng hoảng thiết quân luật 2024–2025). <a href="https://en.wikipedia.org/wiki/South_Korea" target="_blank" rel="noopener">en.wikipedia.org/wiki/South_Korea</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-2">Wikipedia contributors. <i>Demographics of South Korea</i>. Wikipedia, Bách khoa toàn thư mở (tổng tỷ suất sinh, cơ cấu tuổi, người nước ngoài cuối 2024). <a href="https://en.wikipedia.org/wiki/Demographics_of_South_Korea" target="_blank" rel="noopener">en.wikipedia.org/wiki/Demographics_of_South_Korea</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-3">Korea.net. <i>No. of births in 2025 breaks 15-year high at 254,500: data</i>. Tổng hợp thông báo của Bộ Dữ liệu và Thống kê ngày 25/2/2026. <a href="https://www.korea.net/NewsFocus/Society/view?articleId=288047" target="_blank" rel="noopener">korea.net</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-4">Carnegie Endowment for International Peace. <i>President Lee Jae Myung: A Year in Power</i>. Tháng 6/2026. <a href="https://carnegieendowment.org/posts/2026/06/president-lee-jae-myung-a-year-in-power" target="_blank" rel="noopener">carnegieendowment.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-5">CNBC. <i>Former South Korean president Yoon Suk Yeol gets life sentence over martial law attempt</i>. Ngày 19/2/2026. <a href="https://www.cnbc.com/2026/02/19/south-korea-ex-president-yoon-suk-yeol-life-sentence-guilty-insurrection-death-sentence-martial-law-verdict.html" target="_blank" rel="noopener">cnbc.com</a><span class="ref-meta">Truy cập ngày 25/9/2026 (chỉ dẫn nội dung tiêu đề và tóm tắt trên trang kết quả tìm kiếm; chưa đọc được toàn văn).</span></li>
+        <li id="ref-6">Wikipedia contributors. <i>Economy of South Korea</i>. Wikipedia, Bách khoa toàn thư mở (GDP 2025, tăng trưởng, đối tác thương mại, OECD). <a href="https://en.wikipedia.org/wiki/Economy_of_South_Korea" target="_blank" rel="noopener">en.wikipedia.org/wiki/Economy_of_South_Korea</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-7">Korea.net. <i>President Lee releases fact sheet with US on trade, security</i>. Tháng 11/2025. <a href="https://www.korea.net/NewsFocus/policies/view?articleId=282379" target="_blank" rel="noopener">korea.net</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-8">Seoul Economic Daily. <i>Memory Chip Exports Surge 351% as KOSPI Reclaims 7,000</i>. Ngày 22/9/2026. <a href="https://en.sedaily.com/finance/2026/09/22/memory-chip-exports-surge-351-percent-as-kospi-reclaims-7000" target="_blank" rel="noopener">en.sedaily.com</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+        <li id="ref-9">Wikipedia contributors. <i>List of World Heritage Sites in South Korea</i>. Wikipedia, Bách khoa toàn thư mở (17 di sản, cập nhật 2025). <a href="https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_South_Korea" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 25/9/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Phần lịch sử cổ – trung đại, văn hóa và ẩm thực dựa trên kiến thức lịch sử – văn hóa phổ thông nên chỉ ghi nguồn tổng. Các con số về GDP/người, dân số khác nhau đôi chút giữa các nguồn (ví dụ 37.412 và 37.520 USD); bài lấy số ước tính 2026 và nêu là “khoảng”. Vụ án Yoon Suk Yeol đang trong tiến trình pháp lý nên các bước kháng cáo có thể thay đổi kết quả.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+</body></html>
