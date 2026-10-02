@@ -1,0 +1,1134 @@
+<title>Afghanistan — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Afghanistan</div>
+          <h1>Afghanistan</h1>
+          <div class="period">Châu Á · Nam Á – Trung Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Lá cờ đang được chính quyền Taliban sử dụng: nền trắng, câu Shahada màu đen ở giữa">
+            <rect width="30" height="20" fill="#ffffff"/>
+            <text x="15" y="12.1" fill="#000000" font-family="'Noto Naskh Arabic','Amiri','Scheherazade New','Traditional Arabic',serif" font-weight="700" font-size="4.9" text-anchor="middle" direction="rtl" textLength="26" lengthAdjust="spacingAndGlyphs">لا إله إلا الله محمد رسول الله</text>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Afghanistan là vùng đất núi non không giáp biển nằm đúng ngã tư của châu Á, nơi Con đường Tơ lụa, các đạo quân Ba Tư, Hy Lạp, Mông Cổ, Anh, Liên Xô và Mỹ lần lượt đi qua. Chính vị trí ấy vừa tạo nên một di sản văn hóa rực rỡ — từ tượng Phật Bamiyan đến thơ Rumi — vừa biến đất nước thành bãi chiến trường gần như liên tục suốt gần nửa thế kỷ qua. Từ tháng 8/2021, Taliban trở lại cầm quyền, lập Tiểu vương quốc Hồi giáo mà cho đến nay chỉ duy nhất Nga công nhận chính thức. Nếu chỉ nhớ một điều về Afghanistan, hãy nhớ: đây là một xã hội bộ tộc kiên cường, nơi mọi đế chế đều có thể vào được, nhưng chưa ai cai trị được lâu theo ý mình.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">652.864 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~37–49 triệu<a class="cite" href="#ref-2">[2]</a><a class="cite" href="#ref-3">[3]</a><small>ước tính 2025–2026, chênh lệch lớn</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Kabul</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Pashto · Dari<small>hai ngôn ngữ chính thức</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Hồi giáo<small>~89% Sunni, ~11% Shia<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Afghani (AFN)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~375 USD<a class="cite" href="#ref-4">[4]</a><small>danh nghĩa, năm 2024</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~TK VI TCN</span>
+          <span class="tl-what">Bactria thuộc Ba Tư</span>
+          <span class="tl-note">Các vùng Bactria, Arachosia trở thành tỉnh của Đế chế Achaemenid</span>
+        </li>
+        <li>
+          <span class="tl-when">330 – 327 TCN</span>
+          <span class="tl-what">Alexander Đại đế</span>
+          <span class="tl-note">Quân Macedonia chinh phục vùng đất, mở ra thời kỳ Hy Lạp – Bactria</span>
+        </li>
+        <li>
+          <span class="tl-when">TK I – III</span>
+          <span class="tl-what">Đế chế Kushan</span>
+          <span class="tl-note">Phật giáo và nghệ thuật Gandhara nở rộ trên Con đường Tơ lụa</span>
+        </li>
+        <li>
+          <span class="tl-when">TK VII – X</span>
+          <span class="tl-what">Hồi giáo truyền đến</span>
+          <span class="tl-note">Quân Ả Rập tiến vào từ phía tây; quá trình Hồi giáo hóa kéo dài nhiều thế kỷ</span>
+        </li>
+        <li>
+          <span class="tl-when">977 – 1186</span>
+          <span class="tl-what">Đế chế Ghaznavid</span>
+          <span class="tl-note">Từ Ghazni, Mahmud dựng một đế chế trải từ Iran tới bắc Ấn Độ</span>
+        </li>
+        <li>
+          <span class="tl-when">1221</span>
+          <span class="tl-what">Thành Cát Tư Hãn tàn phá</span>
+          <span class="tl-note">Balkh, Herat, Bamiyan bị san phẳng trong cuộc xâm lược của Mông Cổ</span>
+        </li>
+        <li>
+          <span class="tl-when">TK XV</span>
+          <span class="tl-what">Herat thời Timurid</span>
+          <span class="tl-note">Herat thành kinh đô văn hóa của thế giới Ba Tư – Hồi giáo</span>
+        </li>
+        <li>
+          <span class="tl-when">1747</span>
+          <span class="tl-what">Ahmad Shah Durrani</span>
+          <span class="tl-note">Đại hội bộ tộc ở Kandahar bầu ông làm vua — khởi đầu nhà nước Afghanistan</span>
+        </li>
+        <li>
+          <span class="tl-when">1839 – 1893</span>
+          <span class="tl-what">Thời “Big Game”</span>
+          <span class="tl-note">Hai cuộc chiến với Anh; Đường Durand năm 1893 vạch biên giới với Ấn Độ thuộc Anh</span>
+        </li>
+        <li>
+          <span class="tl-when">19/8/1919</span>
+          <span class="tl-what">Giành lại độc lập</span>
+          <span class="tl-note">Sau chiến tranh Anh – Afghanistan lần ba, vua Amanullah giành quyền tự quyết đối ngoại</span>
+        </li>
+        <li>
+          <span class="tl-when">1973</span>
+          <span class="tl-what">Chấm dứt chế độ quân chủ</span>
+          <span class="tl-note">Mohammad Daoud Khan đảo chính vua Zahir Shah, lập nền cộng hòa</span>
+        </li>
+        <li>
+          <span class="tl-when">12/1979</span>
+          <span class="tl-what">Liên Xô can thiệp</span>
+          <span class="tl-note">Mở đầu cuộc chiến mười năm với các nhóm mujahideen được phương Tây hậu thuẫn</span>
+        </li>
+        <li>
+          <span class="tl-when">1989 – 1996</span>
+          <span class="tl-what">Nội chiến &amp; Taliban</span>
+          <span class="tl-note">Liên Xô rút quân; các phe mujahideen giao tranh; Taliban chiếm Kabul tháng 9/1996</span>
+        </li>
+        <li>
+          <span class="tl-when">10/2001</span>
+          <span class="tl-what">Mỹ tấn công</span>
+          <span class="tl-note">Sau vụ 11/9, liên quân lật đổ Taliban; nền Cộng hòa Hồi giáo được dựng lên</span>
+        </li>
+        <li>
+          <span class="tl-when">15/8/2021</span>
+          <span class="tl-what">Taliban trở lại</span>
+          <span class="tl-note">Kabul thất thủ khi Mỹ rút quân; Tiểu vương quốc Hồi giáo được tái lập</span>
+        </li>
+        <li>
+          <span class="tl-when">2025 – 2026</span>
+          <span class="tl-what">Công nhận &amp; chiến tranh</span>
+          <span class="tl-note">Nga công nhận Taliban; động đất Kunar; xung đột vũ trang với Pakistan từ 2/2026</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại cổ đại và trung đại mang tính khái quát; ranh giới các đế chế xưa không trùng với biên giới Afghanistan ngày nay. Ngày 19/8 là Ngày Độc lập chính thức, dù Hiệp ước Rawalpindi được ký ngày 8/8/1919.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Vì sao dân số chênh 11 triệu?</b>
+        Afghanistan chưa có cuộc tổng điều tra dân số đầy đủ nào kể từ năm 1979. Tháng 7/2026, Liên Hợp Quốc ước tính 48,6 triệu người, trong khi cơ quan thống kê của Taliban đưa ra con số 37,2 triệu — cả hai đều dựa trên mô hình ước tính chứ không phải đếm trực tiếp.
+      </aside>
+
+      <p class="lede">Afghanistan là quốc gia nội lục bao quanh bởi Pakistan, Iran, Turkmenistan, Uzbekistan, Tajikistan và một dải biên giới ngắn ngủi với Trung Quốc ở tận cùng hành lang Wakhan.</p>
+
+      <p>Với diện tích khoảng <span class="tg">652.864 km²</span><a class="cite" href="#ref-1">[1]</a>, gần gấp đôi Việt Nam, Afghanistan bị chia cắt bởi dãy <span class="nv" data-note="Dãy núi lớn chạy chéo qua Afghanistan từ đông bắc xuống tây nam, nối với Pamir và Himalaya; đỉnh cao nhất trong lãnh thổ Afghanistan là Noshaq (7.492 m).">Hindu Kush</span> chạy chéo từ đông bắc xuống tây nam. Núi cao chiếm phần lớn đất nước; phía bắc là đồng bằng màu mỡ dọc sông Amu Darya, phía nam và tây nam là các hoang mạc khô cằn như Registan. Khí hậu lục địa khô hạn khắc nghiệt: mùa hè nóng gắt, mùa đông lạnh buốt, và hạn hán lặp đi lặp lại là mối đe dọa thường trực với một nền nông nghiệp phụ thuộc vào tuyết tan từ núi.</p>
+
+      <p>Về dân số, các con số dao động rất xa: Ngân hàng Thế giới ước tính khoảng <span class="tg">43,8 triệu người</span> năm 2025<a class="cite" href="#ref-3">[3]</a>, Liên Hợp Quốc đưa ra <span class="tg">48,6 triệu</span>, còn chính quyền Taliban chỉ công bố <span class="tg">37,2 triệu</span><a class="cite" href="#ref-2">[2]</a>. Dù theo con số nào, đây cũng là một trong những dân số trẻ nhất thế giới, với phần đông người dân sống ở nông thôn.</p>
+
+      <p>Afghanistan là bức khảm của nhiều tộc người. Theo các ước tính phổ biến (vì không có số liệu điều tra chính thức nên tỷ lệ vẫn còn tranh cãi), người <span class="nv" data-note="Tộc người đông nhất Afghanistan, nói tiếng Pashto, sống chủ yếu ở miền nam và đông; cũng là tộc người chiếm đa số trong lực lượng Taliban.">Pashtun</span> đông nhất, tiếp theo là người Tajik, <span class="nv" data-note="Tộc người chủ yếu theo Hồi giáo Shia, cư trú ở vùng núi miền trung (Hazarajat); từng nhiều lần bị đàn áp trong lịch sử.">Hazara</span>, Uzbek, cùng các nhóm nhỏ hơn như Turkmen, Aimaq, Baloch, Nuristani. Tiếng Dari (một biến thể tiếng Ba Tư) là ngôn ngữ giao tiếp chung ở đô thị, còn tiếng Pashto phổ biến ở miền nam và đông. Gần như toàn bộ dân số theo Hồi giáo, khoảng <span class="tg">89%</span> là Sunni và khoảng <span class="tg">11%</span> là Shia<a class="cite" href="#ref-1">[1]</a>.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Afghanistan là câu chuyện của một ngã tư: mỗi đế chế đi qua đều để lại một lớp văn hóa, và mỗi lần ngoại bang muốn ở lại lâu đều vấp phải sức kháng cự của các bộ tộc miền núi.</p>
+
+      <p><b>Thời cổ đại (TK VI TCN – TK VI).</b> Vùng đất này từng là các tỉnh Bactria và Arachosia của Đế chế Ba Tư Achaemenid. Giai đoạn <span class="tg">330–327 TCN</span>, <span class="nv" data-note="Vua Macedonia (356–323 TCN); trong chiến dịch ở Bactria, ông cưới công chúa địa phương Roxana và lập nhiều thành phố mang tên Alexandria.">Alexander Đại đế</span> chinh phục khu vực; sau ông, vương quốc Hy Lạp – Bactria tồn tại hơn một thế kỷ, để lại thành cổ Ai Khanoum với nhà hát và phòng tập kiểu Hy Lạp ngay bên bờ sông Amu Darya. Hoàng đế Ấn Độ <span class="nv" data-note="Vua thứ ba của triều Maurya (trị vì khoảng 268–232 TCN), người truyền bá Phật giáo; chiếu chỉ của ông bằng tiếng Hy Lạp và Aramaic được tìm thấy ở Kandahar.">Ashoka</span> cũng để lại chiếu chỉ song ngữ ở Kandahar. Đỉnh cao của thời kỳ này là Đế chế <span class="nv" data-note="Đế chế do người Nguyệt Chi lập nên (TK I–III), đỉnh cao dưới thời vua Kanishka; kiểm soát một đoạn quan trọng của Con đường Tơ lụa.">Kushan</span>, khi Phật giáo và nghệ thuật Gandhara — pha trộn phong cách Hy Lạp với đề tài Phật giáo — lan tỏa sang Trung Á và Trung Hoa. Hai pho tượng Phật khổng lồ ở Bamiyan được tạc vào vách đá khoảng thế kỷ VI là chứng tích nổi tiếng nhất của thời đại này.</p>
+
+      <aside class="sidenote">
+        <b>“Nghĩa địa của các đế chế”</b>
+        Biệt danh quen thuộc này nhấn mạnh việc Anh, Liên Xô và Mỹ đều thất bại ở Afghanistan. Nhiều sử gia cho rằng nó bị cường điệu: trong lịch sử, nhiều đế chế như Achaemenid, Kushan hay Mông Cổ vẫn cai trị vùng đất này khá lâu.
+      </aside>
+
+      <p><b>Hồi giáo và các đế chế trung đại (TK VII – XVI).</b> Từ thế kỷ VII, quân Ả Rập tiến vào từ phía tây, nhưng phải mất vài thế kỷ Hồi giáo mới trở thành tôn giáo chủ đạo. Năm <span class="tg">977</span>, triều Ghaznavid ra đời ở Ghazni; dưới thời <span class="nv" data-note="Mahmud của Ghazni (trị vì 998–1030), người tiến hành hàng loạt cuộc viễn chinh vào Ấn Độ; đại thi hào Ferdowsi dâng tặng ông bộ sử thi Shahnameh.">Mahmud</span>, đế chế này trải dài từ Iran tới bắc Ấn Độ. Tiếp theo là triều Ghurid, chủ nhân của Tháp Jam. Năm <span class="tg">1221</span>, <span class="nv" data-note="Người sáng lập Đế quốc Mông Cổ; cuộc tây chinh của ông đã tàn phá các đô thị lớn của Khorasan và Afghanistan.">Thành Cát Tư Hãn</span> san phẳng Balkh, Herat và Bamiyan. Thế kỷ XV, dưới triều Timurid, Herat hồi sinh thành kinh đô văn hóa của thế giới Ba Tư, với thi sĩ Jami và danh họa Behzad. Năm <span class="tg">1504</span>, <span class="nv" data-note="Hậu duệ của Timur và Thành Cát Tư Hãn, chiếm Kabul năm 1504 rồi lập Đế quốc Mogul ở Ấn Độ năm 1526; ông được an táng tại Kabul theo di nguyện.">Babur</span> chiếm Kabul, từ đó tiến xuống lập Đế quốc Mogul ở Ấn Độ.</p>
+
+      <p><b>Đế chế Durrani và “Big Game” (1747 – 1919).</b> Năm <span class="tg">1747</span>, một hội đồng bộ tộc (loya jirga) ở Kandahar bầu <span class="nv" data-note="Thủ lĩnh người Pashtun (khoảng 1722–1772), được coi là 'cha đẻ' của Afghanistan hiện đại; lăng mộ của ông nằm ở Kandahar.">Ahmad Shah Durrani</span> làm vua, khởi đầu nhà nước mà người Afghanistan coi là tổ tiên trực tiếp của quốc gia mình. Thế kỷ XIX, Afghanistan bị kẹp giữa Đế quốc Anh ở Ấn Độ và Đế quốc Nga đang tiến xuống Trung Á — cuộc đấu được gọi là “Big Game”. Trong Chiến tranh Anh – Afghanistan lần thứ nhất (<span class="tg">1839–1842</span>), đạo quân Anh rút khỏi Kabul bị tiêu diệt gần như toàn bộ. Sau cuộc chiến thứ hai (1878–1880), Anh nắm quyền đối ngoại của Afghanistan. Năm <span class="tg">1893</span>, Đường Durand được vạch ra, chia đôi vùng cư trú của người Pashtun — nguồn gốc căng thẳng với Pakistan đến tận hôm nay. Sau cuộc chiến thứ ba năm 1919, vua <span class="nv" data-note="Vua Afghanistan (1919–1929), người giành lại độc lập hoàn toàn và tiến hành cải cách hiện đại hóa mạnh mẽ, nhưng phải thoái vị năm 1929 trước sự chống đối của giới bảo thủ.">Amanullah Khan</span> giành lại độc lập hoàn toàn.</p>
+
+      <p><b>Thế kỷ XX: từ quân chủ đến chiến tranh (1919 – 2001).</b> Các cải cách của Amanullah gặp phản ứng dữ dội và ông phải thoái vị năm 1929. Vua <span class="nv" data-note="Vị vua cuối cùng của Afghanistan (trị vì 1933–1973); thời kỳ của ông được nhớ đến như giai đoạn tương đối ổn định, với hiến pháp năm 1964.">Zahir Shah</span> trị vì bốn thập kỷ tương đối yên bình cho đến khi bị người anh họ Mohammad Daoud Khan lật đổ năm <span class="tg">1973</span>. Cuộc đảo chính cộng sản tháng 4/1978 dẫn tới nổi dậy khắp nơi, và tháng <span class="tg">12/1979</span> Liên Xô đưa quân vào. Mười năm chiến tranh với các nhóm mujahideen được Mỹ, Pakistan và Ả Rập Xê Út hậu thuẫn khiến hàng trăm nghìn đến hơn một triệu người thiệt mạng (các ước tính chênh lệch nhiều) và hàng triệu người phải tị nạn. Liên Xô rút quân năm <span class="tg">1989</span>; các phe mujahideen quay sang đánh nhau, và phong trào Taliban do <span class="nv" data-note="Mullah Mohammad Omar (khoảng 1960–2013), người sáng lập và thủ lĩnh tối cao đầu tiên của Taliban.">Mullah Omar</span> lãnh đạo chiếm Kabul tháng <span class="tg">9/1996</span>, áp đặt một chế độ Hồi giáo cực đoan. Tháng 3/2001, Taliban cho nổ tung hai tượng Phật Bamiyan.</p>
+
+      <p><b>Cộng hòa Hồi giáo (2001 – 2021).</b> Sau vụ khủng bố 11/9, Mỹ và đồng minh tấn công từ tháng <span class="tg">10/2001</span> vì Taliban che chở al-Qaeda. Chính quyền mới do <span class="nv" data-note="Tổng thống Afghanistan 2001–2014, lãnh đạo chính quyền lâm thời sau Hội nghị Bonn rồi đắc cử năm 2004 và 2009.">Hamid Karzai</span> đứng đầu, hiến pháp năm 2004 lập nên Cộng hòa Hồi giáo Afghanistan. Hai thập kỷ này mang lại trường học cho hàng triệu bé gái, báo chí tự do và đô thị phát triển, nhưng cũng đầy tham nhũng, phụ thuộc viện trợ và chiến sự dai dẳng. Thỏa thuận Doha giữa Mỹ và Taliban tháng 2/2020 mở đường cho Mỹ rút quân.</p>
+
+      <p><b>Taliban trở lại (2021 – nay).</b> Ngày <span class="tg">15/8/2021</span>, Tổng thống <span class="nv" data-note="Tổng thống Afghanistan 2014–2021, rời bỏ đất nước ngày 15/8/2021 khi Taliban tiến vào Kabul.">Ashraf Ghani</span> rời khỏi đất nước và Taliban tiến vào Kabul gần như không gặp kháng cự. Bản sắc Afghanistan hôm nay vì thế là sự chồng lớp của những di sản đối nghịch: niềm tự hào bộ tộc và Hồi giáo bảo thủ, ký ức về một nền văn minh Phật giáo và Ba Tư rực rỡ, và hàng triệu người trẻ từng lớn lên trong 20 năm mở cửa nay sống dưới một chế độ khép kín.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy quyền lực của Tiểu vương quốc Hồi giáo</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Thủ lĩnh Tối cao (Amir al-Mu'minin)</span>
+          <span class="tier-desc">Hibatullah Akhundzada — quyền lực tuyệt đối về tôn giáo, chính trị, quân sự; đặt tại Kandahar</span>
+        </li>
+        <li>
+          <span class="tier-role">Nội các tạm quyền · Tòa án Tối cao · Hội đồng ulema</span>
+          <span class="tier-desc">Thủ tướng Hasan Akhund điều hành chính phủ; không có quốc hội, không có bầu cử</span>
+        </li>
+        <li>
+          <span class="tier-role">34 tỉnh (wilayat)</span>
+          <span class="tier-desc">Thống đốc do Thủ lĩnh Tối cao trực tiếp bổ nhiệm</span>
+        </li>
+        <li>
+          <span class="tier-role">Quận, làng &amp; hội đồng truyền thống</span>
+          <span class="tier-desc">Jirga/shura địa phương vẫn giữ vai trò hòa giải trong cộng đồng</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Hiến pháp bị đình chỉ</b>
+        Taliban không áp dụng Hiến pháp năm 2004 của nền Cộng hòa và chưa ban hành hiến pháp mới; luật pháp được vận hành bằng sắc lệnh của Thủ lĩnh Tối cao theo cách diễn giải của họ về luật Hồi giáo (sharia).
+      </aside>
+
+      <p>Afghanistan hiện mang tên Tiểu vương quốc Hồi giáo Afghanistan, một chế độ thần quyền không có hiến pháp, quốc hội hay bầu cử. Đứng trên tất cả là Thủ lĩnh Tối cao <span class="nv" data-note="Học giả tôn giáo người Pashtun, thủ lĩnh thứ ba của Taliban từ năm 2016; hiếm khi xuất hiện trước công chúng và cai trị từ Kandahar.">Hibatullah Akhundzada</span>, người hiếm khi xuất hiện trước công chúng và điều hành từ Kandahar — thành trì tinh thần của phong trào — thay vì thủ đô Kabul<a class="cite" href="#ref-1">[1]</a>.</p>
+
+      <p>Chính phủ ở Kabul do Thủ tướng <span class="nv" data-note="Mohammad Hasan Akhund, một trong những người sáng lập Taliban, giữ chức Thủ tướng từ tháng 9/2021.">Hasan Akhund</span> đứng đầu, với các nhân vật nặng ký như Phó Thủ tướng <span class="nv" data-note="Đồng sáng lập Taliban, trưởng đoàn đàm phán của Taliban tại Doha với Mỹ.">Abdul Ghani Baradar</span>, Bộ trưởng Nội vụ <span class="nv" data-note="Thủ lĩnh mạng lưới Haqqani, Bộ trưởng Nội vụ của chính quyền Taliban.">Sirajuddin Haqqani</span> và Bộ trưởng Ngoại giao Amir Khan Muttaqi. Giới quan sát thường nhắc tới sự cọ xát giữa phe thực dụng ở Kabul, muốn mở rộng quan hệ quốc tế, và phe bảo thủ quanh Kandahar, nhưng các quyết định quan trọng nhất — như cấm phụ nữ đi học — đều đến từ Thủ lĩnh Tối cao.</p>
+
+      <p>Tháng <span class="tg">7/2025</span>, Nga trở thành quốc gia đầu tiên và đến nay là duy nhất chính thức công nhận chính quyền Taliban<a class="cite" href="#ref-5">[5]</a>. Một số nước như Trung Quốc, UAE, Uzbekistan đã tiếp nhận đại sứ do Taliban cử, nhưng chưa công nhận chính thức.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Trước năm 2021, viện trợ nước ngoài chiếm tỷ trọng rất lớn trong ngân sách và nền kinh tế Afghanistan. Khi Taliban trở lại, viện trợ phát triển bị cắt, khoảng 9 tỷ USD dự trữ ngoại hối ở nước ngoài bị phong tỏa và ngân hàng bị cô lập khỏi hệ thống tài chính quốc tế, khiến kinh tế co lại mạnh trong 2021–2022. Đến nay, nền kinh tế đã phục hồi phần nào: năm 2025 GDP tăng trưởng thực khoảng <span class="tg">4,8%</span>, nhưng GDP bình quân đầu người lại giảm <span class="tg">5,6%</span> vì dòng người hồi hương khổng lồ — khoảng <span class="tg">3,7 triệu</span> người — từ Iran và Pakistan<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>GDP bình quân đầu người danh nghĩa chỉ khoảng <span class="tg">375 USD</span> năm 2024<a class="cite" href="#ref-4">[4]</a>, thuộc nhóm thấp nhất thế giới. Nông nghiệp vẫn là sinh kế của phần lớn dân số; các mặt hàng xuất khẩu chính gồm than đá, trái cây khô, hạt thông, nghệ tây (saffron) và thảm dệt tay. Dưới lòng đất, Afghanistan sở hữu trữ lượng đồng, sắt, lithium và đất hiếm được ước tính rất lớn, nhưng an ninh bất ổn và thiếu hạ tầng khiến chúng gần như chưa được khai thác. Ngân hàng Thế giới cảnh báo lạm phát đã tăng trở lại lên <span class="tg">7,6%</span> vào tháng 3/2026, viện trợ tiếp tục sụt giảm, và tăng trưởng dân số đang vượt xa tăng trưởng kinh tế<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Một thay đổi gây chú ý là thuốc phiện. Năm 2022, Afghanistan trồng tới <span class="tg">232.000 ha</span> anh túc và là nguồn cung thuốc phiện lớn nhất thế giới. Sau lệnh cấm của Taliban tháng 4/2022, diện tích này giảm còn khoảng <span class="tg">10.200 ha</span> năm 2025<a class="cite" href="#ref-7">[7]</a>. Đổi lại, hàng triệu nông dân mất nguồn thu nhập chính mà chưa có cây trồng thay thế tương xứng.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <aside class="sidenote">
+        <b>Pashtunwali</b>
+        Bộ quy tắc ứng xử bất thành văn của người Pashtun, xoay quanh lòng hiếu khách (melmastia), quyền xin che chở (nanawatai), danh dự và việc báo thù (badal). Nó ảnh hưởng sâu đến chính trị và cách giải quyết xung đột, kể cả ngoài cộng đồng Pashtun.
+      </aside>
+
+      <p>Xã hội Afghanistan được tổ chức quanh gia đình mở rộng, dòng họ, bộ tộc và cộng đồng tôn giáo. Lòng trung thành thường dành cho họ hàng và làng xóm trước khi dành cho nhà nước — một lý do khiến chính quyền trung ương ở Kabul luôn yếu. Các tranh chấp từ đất đai đến hôn nhân thường được giải quyết qua jirga hoặc shura, hội đồng của những người cao tuổi có uy tín. Lòng hiếu khách là niềm tự hào lớn: khách đến nhà, dù xa lạ, vẫn được mời trà và ăn uống chu đáo.</p>
+
+      <p>Văn hóa Afghanistan có chiều sâu Ba Tư rõ rệt. Đại thi hào <span class="nv" data-note="Jalal ad-Din Rumi (1207–1273), nhà thơ Sufi vĩ đại của thế giới Ba Tư, sinh tại Balkh (bắc Afghanistan ngày nay), về sau sống và mất tại Konya (Thổ Nhĩ Kỳ).">Rumi</span> sinh năm <span class="tg">1207</span> ở Balkh, và thơ ca vẫn là phần sống động trong đời thường — người ta đọc thuộc thơ Hafez, Rumi hay những câu landay hai dòng của phụ nữ Pashtun. Tết Nowruz ngày 21/3 đánh dấu năm mới theo lịch Hijri dương lịch mà Afghanistan sử dụng chính thức. Môn buzkashi (giành xác dê trên lưng ngựa), điệu múa vòng tròn attan và nghệ thuật dệt thảm là những biểu tượng văn hóa quen thuộc.</p>
+
+      <p>Từ năm 2021, đời sống văn hóa – xã hội thay đổi sâu sắc. Âm nhạc công cộng bị cấm, phụ nữ bị loại khỏi phần lớn công việc và không gian công cộng, và Afghanistan là quốc gia duy nhất trên thế giới chính thức cấm trẻ em gái học trung học và đại học — theo UNESCO, khoảng <span class="tg">2,4 triệu</span> bé gái đang bị gạt khỏi giáo dục trung học<a class="cite" href="#ref-8">[8]</a>. Dù vậy, nhiều người Afghanistan vẫn lặng lẽ duy trì các lớp học tại nhà, các lớp trực tuyến và đời sống văn hóa trong cộng đồng di cư ở nước ngoài.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Bánh naan</b>
+        Không bữa ăn nào thiếu bánh naan nướng trong lò đất tandoor. Ở nhiều gia đình, bánh mì được coi gần như thiêng liêng — không bao giờ đặt bánh xuống đất hay vứt bỏ.
+      </aside>
+
+      <p>Ẩm thực Afghanistan là điểm gặp gỡ của Ba Tư, Ấn Độ và Trung Á: ít cay hơn món Ấn, đậm vị thịt và gạo hơn món Ba Tư, và chịu ảnh hưởng rõ của các tộc Turkic ở phía bắc. Triết lý ăn uống xoay quanh sự no đủ và chia sẻ: cơm, thịt cừu, sữa chua, rau thơm, trái cây khô và hạt là những thành phần không thể thiếu. Gia vị được dùng tinh tế — thì là Ai Cập, rau mùi, bạch đậu khấu, nghệ tây — để tạo hương thơm hơn là vị cay nồng.</p>
+
+      <p>Mỗi vùng có nét riêng. Kabul và miền trung là quê hương của các món cơm thập cẩm và bánh bao cầu kỳ; miền bắc, nơi người Uzbek và Turkmen sinh sống, chuộng mantu hấp và các món mì kiểu Trung Á; miền đông và nam của người Pashtun thiên về thịt nướng và thịt cừu phơi khô; Herat ở phía tây mang dấu ấn Iran rõ nét; còn vùng Hazarajat ở trung tâm nổi tiếng với các món từ sữa như qurut, sữa chua khô vo viên.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Kabuli palaw</span><span class="pick-desc">Cơm hấp với thịt cừu, phủ cà rốt sợi xào đường và nho khô — được coi là quốc món.</span></li>
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Mantu</span><span class="pick-desc">Bánh bao nhân thịt băm hành tây, rưới sữa chua tỏi và sốt đậu lăng.</span></li>
+        <li><span class="pick-where">Kabul</span><span class="pick-name">Ashak</span><span class="pick-desc">Sủi cảo nhân hẹ, phủ sữa chua và thịt băm, rắc bạc hà khô.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Bolani</span><span class="pick-desc">Bánh mỏng nhân khoai tây hoặc tỏi tây, chiên giòn, món ăn đường phố phổ biến.</span></li>
+        <li><span class="pick-where">Miền Đông</span><span class="pick-name">Chapli kebab</span><span class="pick-desc">Chả thịt băm dẹt trộn gia vị, chiên trên chảo lớn — đặc sản vùng Pashtun.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Qorma</span><span class="pick-desc">Món hầm thịt với hành phi, ăn cùng cơm hoặc naan trong bữa ăn gia đình.</span></li>
+        <li><span class="pick-where">Miền Nam</span><span class="pick-name">Landi</span><span class="pick-desc">Thịt cừu ướp muối phơi khô để dự trữ qua mùa đông, nấu cùng cơm.</span></li>
+        <li><span class="pick-where">Hazarajat</span><span class="pick-name">Kichiri qurut</span><span class="pick-desc">Cơm nhão đậu xanh ăn với sốt qurut chua mặn — món ấm áp mùa đông.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Naan</span><span class="pick-desc">Bánh mì dẹt nướng lò đất, bạn đồng hành của mọi bữa ăn.</span></li>
+        <li><span class="pick-where">Kabul</span><span class="pick-name">Sheer yakh</span><span class="pick-desc">Kem truyền thống làm thủ công, thơm nước hoa hồng và hạt dẻ cười.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Firni</span><span class="pick-desc">Pudding sữa thơm bạch đậu khấu, thường có trong các dịp lễ.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Trà là đồ uống quốc dân. Người Afghanistan uống trà xanh (chai sabz) hoặc trà đen, thường thêm bạch đậu khấu, rót không ngừng cho khách như một biểu hiện của lòng hiếu khách. Trà được dùng kèm kẹo đường, quả mơ khô, hạnh nhân hay đậu gà rang. Ngày hè, doogh — sữa chua pha nước, muối và bạc hà khô — là thức uống giải nhiệt phổ biến. Rượu bia bị cấm theo luật Hồi giáo.</p>
+
+      <p>Văn hóa ăn uống mang đậm tính cộng đồng: mọi người ngồi quanh một tấm khăn trải gọi là dastarkhan trên sàn nhà, ăn bằng tay phải, chia nhau từ những đĩa lớn đặt giữa. Theo truyền thống, khách và người lớn tuổi được mời phần ngon nhất, và từ chối thức ăn quá sớm có thể bị xem là thiếu lịch sự.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Lưu ý an toàn</b>
+        Nhiều chính phủ hiện khuyến cáo công dân không đến Afghanistan vì xung đột, khủng bố và nguy cơ bị bắt giữ. Danh sách dưới đây giới thiệu giá trị văn hóa – lịch sử, không phải gợi ý lịch trình du lịch.
+      </aside>
+
+      <p>Afghanistan có <span class="tg">2 di sản thế giới</span> được UNESCO công nhận — Tháp Jam cùng di tích khảo cổ xung quanh (2002) và cảnh quan văn hóa thung lũng Bamiyan (2003) — và cả hai đều nằm trong Danh sách Di sản bị đe dọa<a class="cite" href="#ref-9">[9]</a>. Ngoài ra, đất nước còn có nhiều đô thị cổ, đền thờ Hồi giáo và cảnh quan núi non hùng vĩ.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Afghanistan</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Miền Trung</span><span class="pick-name">Thung lũng Bamiyan</span><span class="pick-desc">Hốc đá trống nơi từng có hai tượng Phật khổng lồ, cùng hàng trăm hang tu thiền cổ; di sản UNESCO.</span></li>
+        <li><span class="pick-where">Miền Trung</span><span class="pick-name">Band-e Amir</span><span class="pick-desc">Chuỗi hồ nước xanh ngọc ngăn bởi đê đá vôi tự nhiên — vườn quốc gia đầu tiên của đất nước.</span></li>
+        <li><span class="pick-where">Miền Tây</span><span class="pick-name">Tháp Jam</span><span class="pick-desc">Tháp gạch triều Ghurid cao khoảng 65 m giữa hẻm núi hẻo lánh; di sản UNESCO.</span></li>
+        <li><span class="pick-where">Miền Tây</span><span class="pick-name">Herat</span><span class="pick-desc">Đại thánh đường gạch men xanh, thành cổ và các tháp Musalla thời Timurid.</span></li>
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Mazar-i-Sharif</span><span class="pick-desc">Đền Xanh lộng lẫy, trung tâm lễ hội Nowruz lớn nhất cả nước.</span></li>
+        <li><span class="pick-where">Miền Bắc</span><span class="pick-name">Balkh</span><span class="pick-desc">Được gọi là “mẹ của các thành phố”, quê hương Rumi, còn tường thành đất cổ.</span></li>
+        <li><span class="pick-where">Kabul</span><span class="pick-name">Vườn Babur</span><span class="pick-desc">Khu vườn bậc thang nơi an táng hoàng đế Babur, được trùng tu sau chiến tranh.</span></li>
+        <li><span class="pick-where">Kabul</span><span class="pick-name">Bảo tàng Quốc gia</span><span class="pick-desc">Từng bị cướp phá trong nội chiến; nhiều cổ vật được cứu và trưng bày trở lại.</span></li>
+        <li><span class="pick-where">Miền Nam</span><span class="pick-name">Kandahar</span><span class="pick-desc">Lăng Ahmad Shah Durrani và đền Kirka Sharif lưu giữ áo choàng được tin là của Nhà tiên tri.</span></li>
+        <li><span class="pick-where">Đông Bắc</span><span class="pick-name">Thung lũng Panjshir</span><span class="pick-desc">Thung lũng sông hiểm trở, cứ địa kháng chiến của Ahmad Shah Massoud.</span></li>
+        <li><span class="pick-where">Đông Bắc</span><span class="pick-name">Hành lang Wakhan</span><span class="pick-desc">Dải đất hẹp giữa Pamir và Hindu Kush, nơi người Kyrgyz du mục chăn bò yak.</span></li>
+        <li><span class="pick-where">Miền Đông</span><span class="pick-name">Mes Aynak</span><span class="pick-desc">Quần thể tu viện Phật giáo cổ nằm ngay trên một mỏ đồng khổng lồ chưa khai thác.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Hai lá cờ</b>
+        Lá cờ trắng in câu Shahada đen ở phần đầu bài là cờ do chính quyền Taliban sử dụng trong nước. Lá cờ ba màu đen – đỏ – xanh lá của nền Cộng hòa vẫn được nhiều cộng đồng người Afghanistan ở nước ngoài và một số phái bộ ngoại giao dùng.
+      </aside>
+
+      <p>Trên trường quốc tế, Afghanistan đang ở một vị thế kỳ lạ: chính quyền thực tế kiểm soát toàn bộ lãnh thổ nhưng gần như không được công nhận. Bước đột phá lớn nhất của Taliban là việc Nga chính thức công nhận vào tháng <span class="tg">7/2025</span><a class="cite" href="#ref-5">[5]</a>. Trung Quốc, Iran, các nước Trung Á và vùng Vịnh duy trì quan hệ thực dụng về thương mại và an ninh, trong khi phương Tây ràng buộc mọi bước bình thường hóa với quyền của phụ nữ. Tháng 7/2025, Tòa án Hình sự Quốc tế (ICC) phát lệnh bắt Hibatullah Akhundzada và Chánh án Tòa án Tối cao của Taliban với cáo buộc ngược đãi phụ nữ và trẻ em gái vì lý do giới tính.</p>
+
+      <p>Vấn đề nóng nhất hiện nay là xung đột với <span class="nv" data-note="Láng giềng phía đông và nam; từng là chỗ dựa chính của Taliban trong thập niên 1990 nhưng nay cáo buộc Taliban che chở nhóm Taliban Pakistan (TTP).">Pakistan</span>. Islamabad cáo buộc Kabul che chở nhóm Taliban Pakistan (TTP) đứng sau hàng loạt vụ tấn công; Taliban bác bỏ. Sau các cuộc đụng độ biên giới tháng 10/2025 và một lệnh ngừng bắn mong manh do Qatar và Thổ Nhĩ Kỳ làm trung gian, ngày <span class="tg">21/2/2026</span> Pakistan mở các đợt không kích vào lãnh thổ Afghanistan, rồi tuyên bố “chiến tranh công khai” khi giao tranh leo thang, kể cả không kích vào Kabul và Kandahar<a class="cite" href="#ref-10">[10]</a>. Đến giữa tháng 8/2026, xung đột vẫn tiếp diễn, Liên Hợp Quốc ghi nhận khoảng <span class="tg">500</span> dân thường thiệt mạng vì không kích — con số Pakistan bác bỏ<a class="cite" href="#ref-11">[11]</a>.</p>
+
+      <p>Song song là thảm họa nhân đạo. Hàng triệu người Afghanistan bị Iran và Pakistan trục xuất hoặc buộc trở về, đổ vào một nền kinh tế vốn đã kiệt quệ, trong lúc viện trợ quốc tế bị cắt giảm mạnh. Trận động đất mạnh <span class="tg">6,0</span> độ ở tỉnh Kunar đêm 31/8/2025 khiến hơn <span class="tg">2.200</span> người thiệt mạng theo số liệu chính thức, còn WHO ước tính gần 3.000 người<a class="cite" href="#ref-12">[12]</a>. Cuối tháng 9/2025, Taliban còn cắt internet trên toàn quốc trong khoảng hai ngày. Những năm tới, câu hỏi lớn với Afghanistan là liệu chế độ có nới lỏng các hạn chế với phụ nữ để đổi lấy hội nhập, và liệu cuộc chiến với Pakistan có kéo cả khu vực vào bất ổn mới.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Afghanistan</h2>
+      <ol class="funs">
+        <li><b>Gần nửa thế kỷ không điều tra dân số.</b> Cuộc tổng điều tra dân số gần nhất diễn ra năm 1979, ngay trước chiến tranh, và từ đó đến nay chưa có cuộc nào khác; vì thế các ước tính dân số hiện nay chênh nhau tới hơn 11 triệu người<a class="cite" href="#ref-2">[2]</a>.</li>
+        <li><b>Quê hương của Rumi.</b> Nhà thơ Sufi được đọc nhiều nhất thế giới sinh năm 1207 ở Balkh, phía bắc Afghanistan, trước khi gia đình di cư sang Anatolia.</li>
+        <li><b>Biên giới “ngón tay” với Trung Quốc.</b> Hành lang Wakhan hẹp và dài được vạch ra cuối thế kỷ XIX để làm vùng đệm giữa Đế quốc Nga và Ấn Độ thuộc Anh, tạo nên đoạn biên giới ngắn ngủi giữa Afghanistan và Trung Quốc.</li>
+        <li><b>Tranh sơn dầu cổ nhất thế giới.</b> Sau khi tượng Phật Bamiyan bị phá hủy, các nhà khoa học phát hiện tranh tường trong hang ở đây có dùng chất kết dính dầu từ khoảng thế kỷ VII — sớm hơn nhiều thế kỷ so với hội họa sơn dầu châu Âu.</li>
+        <li><b>Đá xanh của các pharaoh.</b> Lapis lazuli khai thác ở Badakhshan từ hàng nghìn năm trước đã đến tận Ai Cập cổ đại và Lưỡng Hà, kể cả trên các báu vật hoàng gia.</li>
+        <li><b>Buzkashi — polo với xác dê.</b> Môn thể thao quốc gia đòi hỏi kỵ sĩ giành và mang xác dê về đích giữa vòng vây của hàng chục đối thủ; một trận có thể kéo dài nhiều giờ.</li>
+        <li><b>Từ số một đến gần như số không.</b> Afghanistan từng là nơi trồng thuốc phiện lớn nhất thế giới; sau lệnh cấm năm 2022, diện tích trồng giảm hơn 95%<a class="cite" href="#ref-7">[7]</a>.</li>
+        <li><b>Lịch riêng, năm riêng.</b> Afghanistan dùng lịch Hijri dương lịch; năm mới bắt đầu ngày Nowruz (21/3), nên năm 2026 tương ứng phần lớn với năm 1405.</li>
+        <li><b>Hiện tượng cricket.</b> Đội tuyển cricket nam Afghanistan, phần lớn cầu thủ lớn lên trong trại tị nạn ở Pakistan, đã vào bán kết T20 World Cup 2024 — một trong những câu chuyện thể thao cảm động nhất thập kỷ.</li>
+        <li><b>Hai ngôn ngữ, một chữ viết.</b> Cả tiếng Dari và Pashto đều viết bằng chữ Ả Rập cải biên từ phải sang trái, nhưng Pashto có thêm nhiều ký tự riêng cho những âm không có trong tiếng Ba Tư.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Afghanistan rộng <span class="tg">652.864 km²</span>, không giáp biển; dân số ước tính <span class="tg">37–49 triệu</span>, chưa tổng điều tra từ 1979.</li>
+        <li>Hai ngôn ngữ chính thức Pashto và Dari; người Pashtun đông nhất, sau đó là Tajik, Hazara, Uzbek.</li>
+        <li>Trục lịch sử: Ba Tư → Alexander → Kushan (Phật giáo) → Hồi giáo → Ghaznavid → Mông Cổ <span class="tg">1221</span> → Timurid → Durrani <span class="tg">1747</span>.</li>
+        <li>Độc lập năm <span class="tg">1919</span>; Liên Xô can thiệp <span class="tg">1979</span>; Taliban lần 1 năm <span class="tg">1996</span>; Mỹ tấn công <span class="tg">2001</span>; Taliban trở lại <span class="tg">15/8/2021</span>.</li>
+        <li>Thủ lĩnh Tối cao Hibatullah Akhundzada cai trị từ Kandahar; không hiến pháp, không quốc hội; chỉ Nga công nhận (<span class="tg">7/2025</span>).</li>
+        <li>GDP/người chỉ khoảng <span class="tg">375 USD</span>; thuốc phiện giảm hơn 95% sau lệnh cấm 2022.</li>
+        <li>Quốc món Kabuli palaw; trà là đồ uống quốc dân; 2 di sản UNESCO là Tháp Jam và Bamiyan.</li>
+        <li>Vấn đề nóng: cấm nữ sinh học trung học trở lên, xung đột với Pakistan từ <span class="tg">2/2026</span>, làn sóng hồi hương và khủng hoảng nhân đạo.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Ai được coi là người sáng lập nhà nước Afghanistan hiện đại, và vào năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Ahmad Shah Durrani, được hội đồng bộ tộc ở Kandahar bầu làm vua năm 1747.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Đường Durand là gì và vì sao đến nay vẫn gây căng thẳng?</p>
+          <details><summary>Xem đáp án</summary><p>Đường biên giới do Anh vạch năm 1893 giữa Afghanistan và Ấn Độ thuộc Anh (nay là Pakistan); nó chia đôi vùng cư trú của người Pashtun và Afghanistan chưa bao giờ chính thức công nhận.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Thủ lĩnh Tối cao của Taliban hiện nay là ai, và ông điều hành từ thành phố nào?</p>
+          <details><summary>Xem đáp án</summary><p>Hibatullah Akhundzada, điều hành từ Kandahar thay vì thủ đô Kabul.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Quốc gia nào là nước đầu tiên chính thức công nhận chính quyền Taliban, và khi nào?</p>
+          <details><summary>Xem đáp án</summary><p>Nga, vào tháng 7/2025.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Món ăn nào được coi là quốc món của Afghanistan, và nó gồm những gì?</p>
+          <details><summary>Xem đáp án</summary><p>Kabuli palaw — cơm hấp với thịt cừu, phủ cà rốt sợi xào đường và nho khô, đôi khi thêm hạnh nhân hoặc hạt dẻ cười.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Kể tên hai di sản thế giới UNESCO của Afghanistan.</p>
+          <details><summary>Xem đáp án</summary><p>Tháp Jam cùng di tích khảo cổ xung quanh (2002) và cảnh quan văn hóa, di tích khảo cổ thung lũng Bamiyan (2003) — cả hai đều nằm trong danh sách di sản bị đe dọa.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Afghanistan</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu diện tích, cơ cấu tôn giáo, GDP, bộ máy lãnh đạo). <a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank" rel="noopener">en.wikipedia.org/wiki/Afghanistan</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-2">KabulNow. <i>UN Estimates Afghanistan’s Population at 48.6 Million, Taliban Says It Is 37.2 Million</i>. Tháng 7/2026. <a href="https://kabulnow.com/2026/07/un-estimates-afghanistans-population-at-48-6-million-taliban-says-it-is-37-2-million/" target="_blank" rel="noopener">kabulnow.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-3">World Bank, World Development Indicators. <i>Population, Total for Afghanistan</i> (qua Federal Reserve Bank of St. Louis – FRED, mã POPTOTAFA647NWDB). Số liệu năm 2025. <a href="https://fred.stlouisfed.org/series/POPTOTAFA647NWDB" target="_blank" rel="noopener">fred.stlouisfed.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-4">Trading Economics. <i>Afghanistan GDP per capita</i> (tổng hợp số liệu World Bank, năm 2024). <a href="https://tradingeconomics.com/afghanistan/gdp-per-capita" target="_blank" rel="noopener">tradingeconomics.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-5">Al Jazeera. <i>Russia recognises the Taliban: Which other countries may follow?</i> 4/7/2025. <a href="https://www.aljazeera.com/news/2025/7/4/russia-recognises-the-taliban-which-other-countries-may-follow" target="_blank" rel="noopener">aljazeera.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-6">World Bank. <i>Afghanistan’s Economy Shows Resilience, but Living Standards Are Falling</i>. Thông cáo báo chí, 26/5/2026. <a href="https://www.worldbank.org/en/news/press-release/2026/05/26/afghanistan-s-economy-shows-resilience-but-living-standards-are-falling" target="_blank" rel="noopener">worldbank.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-7">Al-Monitor. <i>Opium farming in Afghanistan shrank by a fifth in 2025, UN survey finds</i> (dẫn UNODC Afghanistan Opium Survey 2025). Tháng 11/2025. <a href="https://www.al-monitor.com/originals/2025/11/opium-farming-afghanistan-shrank-fifth-2025-un-survey-finds" target="_blank" rel="noopener">al-monitor.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-8">Associated Press (qua WCAX). <i>2.4 million Afghan girls shut out of secondary school 5 years after Taliban takeover, UN says</i>. 11/8/2026. <a href="https://www.wcax.com/2026/08/11/24-million-afghan-girls-shut-out-secondary-school-5-years-after-taliban-takeover-un-says/" target="_blank" rel="noopener">wcax.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-9">UNESCO World Heritage Centre. <i>Afghanistan — Properties inscribed on the World Heritage List</i>. <a href="https://whc.unesco.org/en/statesparties/af" target="_blank" rel="noopener">whc.unesco.org/en/statesparties/af</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-10">Wikipedia contributors. <i>2026 Afghanistan–Pakistan war</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2026_Afghanistan%E2%80%93Pakistan_war" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-11">The Soufan Center. <i>IntelBrief</i>, 14/8/2026. <a href="https://thesoufancenter.org/intelbrief-2026-august-14/" target="_blank" rel="noopener">thesoufancenter.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-12">Wikipedia contributors. <i>2025 Kunar earthquake</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp số liệu của chính quyền Taliban và WHO). <a href="https://en.wikipedia.org/wiki/2025_Kunar_earthquake" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, thuốc phiện, thương vong) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Dân số, tỷ lệ các tộc người và số thương vong trong xung đột với Pakistan đều là những con số còn tranh cãi, nên được trình bày dưới dạng khoảng hoặc ghi rõ nguồn từng bên.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
