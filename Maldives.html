@@ -1,0 +1,1130 @@
+<title>Maldives — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Maldives</div>
+          <h1>Maldives</h1>
+          <div class="period">Châu Á · Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 720 480" role="img" aria-label="Quốc kỳ Maldives: nền đỏ, hình chữ nhật xanh lá ở giữa với trăng lưỡi liềm trắng">
+            <rect width="720" height="480" fill="#d21034"/>
+            <rect x="120" y="120" width="480" height="240" fill="#007e3a"/>
+            <circle cx="390" cy="240" r="80" fill="#ffffff"/>
+            <circle cx="420" cy="240" r="80" fill="#007e3a"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Maldives là một chuỗi hơn một nghìn hòn đảo san hô rải trên Ấn Độ Dương, nơi điểm cao nhất cả nước chỉ khoảng 2,4 mét so với mặt biển. Đây là quốc gia nhỏ nhất châu Á cả về diện tích lẫn dân số, nhưng lại là một trong những thương hiệu du lịch nổi tiếng nhất hành tinh với mô hình “mỗi đảo một khu nghỉ dưỡng”. Đằng sau những bức ảnh biệt thự trên mặt nước là một nước cộng hòa Hồi giáo nghiêm ngặt, một nền chính trị nhiều biến động và một nền kinh tế mắc nợ nặng, phụ thuộc gần như hoàn toàn vào khách du lịch. Nếu chỉ nhớ một điều về Maldives, hãy nhớ: đây là một quốc gia sống nhờ biển và cũng có thể mất tất cả vì biển — từ mực nước dâng cho đến những cú sốc khiến máy bay ngừng bay tới.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">~298 km²<a class="cite" href="#ref-2">[2]</a><small>đất liền; vùng biển rộng gấp hàng trăm lần</small></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~530 nghìn<a class="cite" href="#ref-1">[1]</a><small>ước tính 2025</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Malé</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Dhivehi<small>tiếng Anh dùng rộng rãi</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Hồi giáo Sunni<small>quốc giáo<a class="cite" href="#ref-2">[2]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Rufiyaa (MVR)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~14.600 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, năm 2025</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">TK đầu Công nguyên</span>
+          <span class="tl-what">Những cư dân đầu tiên</span>
+          <span class="tl-note">Người từ Sri Lanka và Nam Ấn đến định cư, mang theo tiếng nói gốc Ấn-Arya và Phật giáo</span>
+        </li>
+        <li>
+          <span class="tl-when">1153</span>
+          <span class="tl-what">Cải sang Hồi giáo</span>
+          <span class="tl-note">Vua Dhovemi theo đạo Hồi và trở thành sultan đầu tiên; Phật giáo dần biến mất khỏi quần đảo</span>
+        </li>
+        <li>
+          <span class="tl-when">1343 – 1344</span>
+          <span class="tl-what">Ibn Battuta ghé thăm</span>
+          <span class="tl-note">Nhà du hành Maroc làm quan tòa ở Malé và để lại ghi chép quý về vương quốc đảo</span>
+        </li>
+        <li>
+          <span class="tl-when">1558 – 1573</span>
+          <span class="tl-what">Bồ Đào Nha chiếm Malé</span>
+          <span class="tl-note">15 năm bị chiếm đóng, kết thúc khi Muhammad Thakurufaanu đánh đuổi quân Bồ</span>
+        </li>
+        <li>
+          <span class="tl-when">1887</span>
+          <span class="tl-what">Xứ bảo hộ của Anh</span>
+          <span class="tl-note">Anh nắm đối ngoại và quốc phòng, sultan vẫn tự quản việc trong nước</span>
+        </li>
+        <li>
+          <span class="tl-when">1953</span>
+          <span class="tl-what">Nền cộng hòa thứ nhất</span>
+          <span class="tl-note">Mohamed Amin Didi bãi bỏ chế độ quân chủ, nhưng nền cộng hòa sụp đổ chưa đầy một năm sau</span>
+        </li>
+        <li>
+          <span class="tl-when">1959 – 1963</span>
+          <span class="tl-what">Cộng hòa Suvadive ly khai</span>
+          <span class="tl-note">Ba đảo san hô cực nam tách ra lập nhà nước riêng, rồi bị chính quyền Malé dẹp bỏ</span>
+        </li>
+        <li>
+          <span class="tl-when">26/7/1965</span>
+          <span class="tl-what">Độc lập</span>
+          <span class="tl-note">Chấm dứt quy chế bảo hộ của Anh; ngày này trở thành Quốc khánh</span>
+        </li>
+        <li>
+          <span class="tl-when">11/11/1968</span>
+          <span class="tl-what">Nền cộng hòa thứ hai</span>
+          <span class="tl-note">Chế độ sultan bị bãi bỏ hẳn; Ibrahim Nasir làm tổng thống</span>
+        </li>
+        <li>
+          <span class="tl-when">1972</span>
+          <span class="tl-what">Khu nghỉ dưỡng đầu tiên</span>
+          <span class="tl-note">Kurumba mở cửa đón khách, khai sinh ngành du lịch sau này thành xương sống kinh tế</span>
+        </li>
+        <li>
+          <span class="tl-when">1978 – 2008</span>
+          <span class="tl-what">Ba mươi năm Gayoom</span>
+          <span class="tl-note">Thời kỳ cầm quyền dài nhất châu Á, gồm cả cuộc đảo chính hụt năm 1988 bị Ấn Độ dập tắt</span>
+        </li>
+        <li>
+          <span class="tl-when">26/12/2004</span>
+          <span class="tl-what">Sóng thần Ấn Độ Dương</span>
+          <span class="tl-note">Thảm họa tàn phá nhiều đảo, thúc đẩy áp lực cải cách chính trị</span>
+        </li>
+        <li>
+          <span class="tl-when">2008</span>
+          <span class="tl-what">Hiến pháp mới &amp; bầu cử đa đảng</span>
+          <span class="tl-note">Mohamed Nasheed thắng cử, chấm dứt thời Gayoom</span>
+        </li>
+        <li>
+          <span class="tl-when">2012 – 2018</span>
+          <span class="tl-what">Khủng hoảng &amp; nghiêng về Trung Quốc</span>
+          <span class="tl-note">Nasheed mất chức trong tranh cãi; Abdulla Yameen cầm quyền, vay lớn từ Bắc Kinh</span>
+        </li>
+        <li>
+          <span class="tl-when">11/2023</span>
+          <span class="tl-what">Muizzu nhậm chức</span>
+          <span class="tl-note">Thắng cử với khẩu hiệu “India Out”, sau đó yêu cầu quân nhân Ấn Độ rút đi</span>
+        </li>
+        <li>
+          <span class="tl-when">4/2026</span>
+          <span class="tl-what">Trả nợ sukuk &amp; trưng cầu dân ý thất bại</span>
+          <span class="tl-note">Trả xong khoản nợ 500 triệu USD; cử tri bác đề xuất sửa hiến pháp của chính phủ</span>
+        </li>
+      </ol>
+      <p class="band-foot">Thời điểm người đầu tiên đến định cư ở Maldives chưa được xác định chắc chắn; các ước đoán dựa vào ngôn ngữ học và khảo cổ học còn chênh lệch nhau nhiều thế kỷ. Năm cải đạo 1153 theo biên niên sử truyền thống của Maldives.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>“Atoll” là gì?</b>
+        Bản thân chữ <i>atoll</i> (đảo san hô vòng) trong tiếng Anh được cho là mượn từ tiếng Dhivehi <i>atholhu</i>. Đó là những vành đai rạn san hô bao quanh một đầm phá, hình thành trên đỉnh các núi lửa cổ đã chìm xuống đáy biển.
+      </aside>
+
+      <p class="lede">Maldives nằm giữa Ấn Độ Dương, cách mũi phía nam Ấn Độ và Sri Lanka vài trăm kilômét về phía tây nam, trải dài như một chuỗi hạt từ bắc xuống nam, vắt qua cả đường xích đạo.</p>
+
+      <p>Quốc gia này gồm khoảng <span class="tg">1.192 hòn đảo san hô</span> gom thành <span class="tg">26 đảo san hô vòng</span> tự nhiên, với tổng diện tích đất chỉ khoảng <span class="tg">298 km²</span><a class="cite" href="#ref-2">[2]</a> — nhỏ hơn nhiều quận huyện ở Việt Nam. Ngược lại, vùng biển mà Maldives quản lý rộng tới hàng trăm nghìn kilômét vuông, nên có thể nói đây là một “quốc gia biển” hơn là quốc gia đất. Đặc điểm địa lý đáng nhớ nhất là độ thấp: điểm cao nhất cả nước chỉ khoảng <span class="tg">2,4 m</span> trên mực nước biển<a class="cite" href="#ref-2">[2]</a>, khiến Maldives thường được gọi là nước “phẳng nhất thế giới”. Khí hậu nhiệt đới gió mùa với hai mùa: mùa khô gió đông bắc (khoảng tháng 12 đến tháng 4) và mùa mưa gió tây nam.</p>
+
+      <p>Dân số Maldives vào khoảng <span class="tg">530 nghìn người</span><a class="cite" href="#ref-1">[1]</a>; tổng điều tra năm 2022 ghi nhận <span class="tg">515.132</span> người, bao gồm cả một lượng lớn lao động nước ngoài đến từ Bangladesh, Ấn Độ và các nước khác<a class="cite" href="#ref-2">[2]</a>. Chỉ khoảng 200 đảo có người địa phương sinh sống, thêm hơn một trăm đảo khác được dành riêng cho khu nghỉ dưỡng. Gần một nửa dân số dồn về vùng thủ đô <span class="nv" data-note="Thủ đô của Maldives, rộng chưa tới 2 km² nhưng có hơn một trăm nghìn người — một trong những đô thị đông đúc nhất thế giới.">Malé</span> và đảo nhân tạo <span class="nv" data-note="Đảo được bồi đắp bằng cát nạo vét từ lòng phá từ cuối thập niên 1990, xây dựng để giảm tải cho Malé và đón dân di cư từ các đảo xa.">Hulhumalé</span> bên cạnh, khiến Malé trở thành một trong những thành phố có mật độ dân số cao nhất hành tinh.</p>
+
+      <p>Về nguồn gốc, người Maldives hình thành từ sự pha trộn giữa các nhóm cư dân đến từ Sri Lanka, Nam Ấn Độ, cùng ảnh hưởng của thương nhân Ả Rập và Đông Phi qua nhiều thế kỷ. Tiếng <span class="nv" data-note="Ngôn ngữ quốc gia, thuộc nhánh Ấn-Arya, họ hàng gần với tiếng Sinhala của Sri Lanka; viết bằng chữ Thaana từ phải sang trái.">Dhivehi</span> là ngôn ngữ chung, có quan hệ gần gũi với tiếng Sinhala, trong khi tiếng Anh được dùng rộng rãi trong giáo dục, hành chính và du lịch.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Maldives là câu chuyện của một vương quốc đảo nằm trên tuyến hàng hải Ấn Độ Dương — đủ xa để giữ được nền tự chủ suốt gần một nghìn năm, nhưng đủ gần để mọi cường quốc trong vùng đều để mắt tới.</p>
+
+      <p><b>Thời Phật giáo.</b> Những cư dân đầu tiên được cho là đến từ Sri Lanka và Nam Ấn Độ từ khoảng những thế kỷ đầu Công nguyên hoặc sớm hơn. Trong hơn một nghìn năm, quần đảo theo Phật giáo; dấu tích các bảo tháp và tượng Phật vẫn được khai quật ở nhiều đảo. Maldives khi đó nổi tiếng khắp vùng Ấn Độ Dương nhờ vỏ ốc tiền (cowrie) — thứ được dùng làm tiền tệ từ châu Phi đến Trung Hoa, biến quần đảo nhỏ bé thành một “xưởng đúc tiền” tự nhiên của thế giới cổ.</p>
+
+      <aside class="sidenote">
+        <b>Vỏ ốc tiền</b>
+        Loài ốc cowrie nhỏ sống dày đặc trong các đầm phá Maldives. Vỏ của chúng nhẹ, bền, khó làm giả nên được dùng như tiền suốt nhiều thế kỷ trên cả một vùng rộng lớn quanh Ấn Độ Dương.
+      </aside>
+
+      <p><b>Vương quốc Hồi giáo (1153 – 1887).</b> Theo biên niên sử truyền thống, năm <span class="tg">1153</span> vua <span class="nv" data-note="Vị vua Phật giáo cuối cùng của Maldives, cải sang đạo Hồi và lấy tước hiệu Sultan Muhammad al-Adil.">Dhovemi</span> cải sang đạo Hồi dưới ảnh hưởng của một học giả Hồi giáo nước ngoài — danh tính và quê quán của người này đến nay vẫn còn tranh luận. Từ đó, Maldives trở thành một vương quốc Hồi giáo do các sultan cai trị qua nhiều triều đại. Nhà du hành <span class="nv" data-note="Học giả, nhà du hành người Maroc thế kỷ XIV; từng làm quan tòa (qadi) ở Malé và mô tả chi tiết xã hội Maldives trong tác phẩm du ký của mình.">Ibn Battuta</span> đến đây năm <span class="tg">1343</span>, làm quan tòa ở Malé và ghi lại một xã hội có nữ vương trị vì — sultana <span class="nv" data-note="Nữ quân chủ trị vì Maldives vào thế kỷ XIV, nhiều lần mất ngôi rồi giành lại.">Khadijah</span>.</p>
+
+      <p><b>Kháng chiến chống Bồ Đào Nha.</b> Năm <span class="tg">1558</span>, người Bồ Đào Nha chiếm Malé, muốn kiểm soát buôn bán trên Ấn Độ Dương. Mười lăm năm sau, năm <span class="tg">1573</span>, <span class="nv" data-note="Anh hùng dân tộc Maldives, quê ở đảo Utheemu (Haa Alif); lãnh đạo cuộc chiến du kích đánh đuổi người Bồ Đào Nha rồi lên ngôi sultan.">Muhammad Thakurufaanu</span> cùng các anh em dùng thuyền buồm đánh úp và đuổi quân Bồ ra khỏi thủ đô. Ngày chiến thắng ấy — tính theo lịch Hồi giáo — vẫn được kỷ niệm hằng năm là Quốc lễ.</p>
+
+      <p><b>Thời bảo hộ (1887 – 1965).</b> Sau giai đoạn chịu ảnh hưởng của người Hà Lan rồi người Anh ở Ceylon (Sri Lanka), năm <span class="tg">1887</span> Maldives chính thức trở thành xứ bảo hộ của Anh: London nắm quốc phòng và đối ngoại, còn sultan vẫn quản lý việc nội bộ. Năm 1932 bản hiến pháp đầu tiên ra đời. Năm <span class="tg">1953</span>, <span class="nv" data-note="Nhà cải cách, người lập ra nền cộng hòa thứ nhất của Maldives năm 1953; bị lật đổ sau vài tháng.">Mohamed Amin Didi</span> tuyên bố nền cộng hòa đầu tiên, nhưng chế độ sụp đổ chỉ sau vài tháng và vương quyền được khôi phục. Từ <span class="tg">1959</span> đến 1963, ba đảo san hô cực nam do <span class="nv" data-note="Thủ lĩnh của Cộng hòa Thống nhất Suvadive ở miền nam Maldives (1959–1963); sau đó sống lưu vong ở Seychelles.">Abdullah Afeef</span> đứng đầu còn ly khai thành “Cộng hòa Thống nhất Suvadive”, phản đối thuế khóa từ Malé, trước khi bị dẹp.</p>
+
+      <p><b>Độc lập và hai “người đàn ông mạnh” (1965 – 2008).</b> Maldives giành độc lập ngày <span class="tg">26/7/1965</span>, và đến <span class="tg">11/11/1968</span> thì bãi bỏ hẳn chế độ quân chủ<a class="cite" href="#ref-2">[2]</a>. Tổng thống <span class="nv" data-note="Tổng thống đầu tiên của nền cộng hòa thứ hai (1968–1978); người mở cửa cho ngành du lịch và hiện đại hóa đội tàu đánh cá.">Ibrahim Nasir</span> mở cửa đón khu nghỉ dưỡng đầu tiên năm <span class="tg">1972</span>. Người kế nhiệm, <span class="nv" data-note="Tổng thống Maldives 1978–2008 — ba mươi năm, một trong những thời kỳ cầm quyền dài nhất châu Á.">Maumoon Abdul Gayoom</span>, cầm quyền suốt <span class="tg">30 năm</span>, đưa đất nước giàu lên nhờ du lịch nhưng bị chỉ trích vì đàn áp đối lập. Năm 1988, một nhóm lính đánh thuê tìm cách đảo chính; Ấn Độ đưa quân sang dập tắt chỉ trong vài giờ — sự kiện vẫn được New Delhi nhắc lại như biểu tượng của vai trò “người bảo vệ”.</p>
+
+      <p><b>Dân chủ hóa đầy sóng gió (2008 – 2023).</b> Trận sóng thần ngày <span class="tg">26/12/2004</span> cùng các cuộc biểu tình buộc chính quyền cải cách. Hiến pháp năm <span class="tg">2008</span> mở ra bầu cử đa đảng, và nhà hoạt động <span class="nv" data-note="Tổng thống 2008–2012, nhà vận động nổi tiếng thế giới về biến đổi khí hậu; từ chức trong hoàn cảnh còn tranh cãi năm 2012.">Mohamed Nasheed</span> đắc cử. Tháng 2/2012, giữa lúc cảnh sát nổi loạn, ông rời ghế — phe ông gọi đó là đảo chính, phía đối lập gọi là từ chức; một ủy ban điều tra sau đó kết luận việc chuyển giao là hợp hiến, nhưng tranh luận chưa bao giờ dứt. Giai đoạn <span class="nv" data-note="Tổng thống 2013–2018, em cùng cha khác mẹ của Gayoom; thắt chặt quan hệ với Trung Quốc, sau này bị kết án tham nhũng.">Abdulla Yameen</span> (2013–2018) nghiêng mạnh về Trung Quốc, rồi <span class="nv" data-note="Tổng thống 2018–2023, theo chính sách “Ấn Độ trước tiên”.">Ibrahim Mohamed Solih</span> (2018–2023) kéo đất nước trở lại gần Ấn Độ.</p>
+
+      <p><b>Thời Muizzu (2023 – nay).</b> Kỹ sư xây dựng, cựu thị trưởng Malé <span class="nv" data-note="Tổng thống Maldives từ 11/2023; thắng cử với chiến dịch “India Out”; đảng PNC của ông giành đa số áp đảo tại Quốc hội năm 2024.">Mohamed Muizzu</span> nhậm chức tháng <span class="tg">11/2023</span>, thực hiện lời hứa yêu cầu các quân nhân Ấn Độ rút khỏi Maldives. Đảng của ông sau đó giành đa số áp đảo tại Quốc hội năm 2024. Bản sắc Maldives hôm nay vì thế là sự kết hợp giữa cội rễ Nam Á, đức tin Hồi giáo gần nghìn năm, nghề biển truyền thống và một nền kinh tế du lịch toàn cầu hóa — cùng một nền chính trị luôn dao động giữa các cường quốc láng giềng.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Maldives</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống · Phó Tổng thống</span>
+          <span class="tier-desc">Vừa là nguyên thủ vừa đứng đầu chính phủ; nhiệm kỳ 5 năm, tối đa hai nhiệm kỳ</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội (People's Majlis) · Tòa án Tối cao</span>
+          <span class="tier-desc">Quốc hội một viện bầu 5 năm một lần; tư pháp đứng đầu là Tòa án Tối cao</span>
+        </li>
+        <li>
+          <span class="tier-role">Hội đồng thành phố &amp; đảo san hô hành chính</span>
+          <span class="tier-desc">Các thành phố như Malé, Addu và 20 đảo san hô hành chính</span>
+        </li>
+        <li>
+          <span class="tier-role">Hội đồng đảo</span>
+          <span class="tier-desc">Cấp cơ sở trên từng đảo có người ở, do dân bầu trực tiếp</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Công dân phải là người Hồi giáo</b>
+        Hiến pháp 2008 xác định Hồi giáo là quốc giáo và quy định công dân Maldives phải theo đạo Hồi. Việc công khai thực hành tôn giáo khác bị cấm, dù du khách và lao động nước ngoài được giữ đức tin riêng.
+      </aside>
+
+      <p>Maldives là một nước cộng hòa tổng thống chế, đơn nhất. Tổng thống được dân bầu trực tiếp, vừa là nguyên thủ quốc gia vừa đứng đầu nội các, nắm quyền rất lớn trong việc bổ nhiệm và điều hành. Quốc hội một viện — <i>People's Majlis</i> — làm luật và giám sát chính phủ, còn hệ thống tư pháp vận hành theo sự kết hợp giữa luật thành văn và luật Hồi giáo (Sharia)<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Bộ máy hiện tại do Tổng thống <span class="nv" data-note="Tổng thống Maldives từ 11/2023.">Mohamed Muizzu</span> đứng đầu, với Phó Tổng thống <span class="nv" data-note="Phó Tổng thống Maldives trong chính quyền Muizzu.">Hussain Mohamed Latheef</span>; Chủ tịch Quốc hội là <span class="nv" data-note="Chủ tịch People's Majlis, thuộc đảng cầm quyền PNC.">Abdul Raheem Abdulla</span><a class="cite" href="#ref-2">[2]</a>. Với đa số tuyệt đối trong Quốc hội, đảng cầm quyền PNC có thể thông qua gần như mọi dự luật — điều khiến các nhóm đối lập và tổ chức nhân quyền lo ngại về cán cân quyền lực.</p>
+
+      <p>Phép thử lớn nhất đến ngày <span class="tg">4/4/2026</span>: chính phủ đưa ra trưng cầu dân ý bản sửa đổi hiến pháp lần thứ tám, nhằm tổ chức bầu cử tổng thống và Quốc hội cùng một ngày vào năm 2028, đồng nghĩa với việc rút ngắn nhiệm kỳ Quốc hội. Dù được 72/73 đại biểu ủng hộ, đề xuất bị cử tri bác bỏ với gần <span class="tg">69%</span> phiếu “Không”, tỷ lệ đi bầu khoảng 75%<a class="cite" href="#ref-3">[3]</a>. Tổng thống chấp nhận kết quả, còn phe đối lập coi đó là lời phán xét của dân chúng đối với thành tích của chính phủ.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Cho đến đầu thập niên 1970, Maldives sống chủ yếu nhờ đánh cá và buôn cá ngừ khô. Khu nghỉ dưỡng đầu tiên mở cửa năm 1972 đã thay đổi tất cả: đến nay, du lịch trực tiếp tạo ra khoảng <span class="tg">một phần tư GDP</span>, và nếu tính cả tác động gián tiếp thì chiếm hơn một nửa nền kinh tế<a class="cite" href="#ref-5">[5]</a>. Mô hình đặc trưng là “mỗi đảo một khu nghỉ dưỡng”: cả hòn đảo được cho thuê cho một tập đoàn khách sạn, tách biệt khỏi cộng đồng dân cư. Năm 2025, Maldives đón khoảng <span class="tg">2,2 triệu</span> lượt khách quốc tế<a class="cite" href="#ref-7">[7]</a> — gấp bốn lần dân số.</p>
+
+      <p>Theo Ngân hàng Thế giới, GDP năm 2025 đạt khoảng <span class="tg">7,7 tỷ USD</span>, tương đương khoảng <span class="tg">14.600 USD</span> mỗi người, tăng trưởng khoảng 6,3%<a class="cite" href="#ref-1">[1]</a> — mức thu nhập cao nhất Nam Á. Nghề cá vẫn là ngành xuất khẩu chủ lực, đặc biệt là cá ngừ đánh bắt bằng cần câu từng con, phương pháp được đánh giá là thân thiện với môi trường. Ngoài ra, gần như mọi thứ — từ gạo, rau quả đến nhiên liệu, vật liệu xây dựng — đều phải nhập khẩu.</p>
+
+      <p>Điểm yếu lớn nhất là nợ. Sau nhiều năm vay để xây cầu, sân bay, nhà ở, tỷ lệ nợ công lên tới khoảng <span class="tg">137% GDP</span> cuối năm 2025 và chỉ giảm về khoảng 128% sau khi chính phủ trả xong khoản trái phiếu Hồi giáo (sukuk) đáo hạn<a class="cite" href="#ref-5">[5]</a>. Ngày <span class="tg">2–3/4/2026</span>, Bộ Tài chính hoàn tất thanh toán <span class="tg">524,68 triệu USD</span> gồm 500 triệu tiền gốc và lãi, giúp Maldives tránh được kịch bản vỡ nợ mà thị trường từng lo ngại<a class="cite" href="#ref-4">[4]</a>. Tuy vậy, dự trữ ngoại hối ròng sau đó chỉ còn đủ cho khoảng ba tuần nhập khẩu, và tăng trưởng năm 2026 được dự báo chỉ quanh <span class="tg">1%</span><a class="cite" href="#ref-5">[5]</a>.</p>
+
+      <p>Năm 2026 cũng cho thấy mô hình “một ngành” mong manh đến đâu. Từ cuối tháng 2, xung đột ở Trung Đông khiến nhiều hãng hàng không vùng Vịnh — vốn là cầu nối chính đưa khách châu Âu tới Maldives — tạm ngừng bay; lượng khách mỗi ngày tụt từ khoảng 8.000 xuống dưới 5.000<a class="cite" href="#ref-6">[6]</a>. Đến cuối tháng 7, khi đường bay dần phục hồi, tổng lượng khách bảy tháng vẫn thấp hơn cùng kỳ năm trước khoảng <span class="tg">4,5%</span>; Trung Quốc, Nga và Anh là ba thị trường lớn nhất<a class="cite" href="#ref-7">[7]</a>.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Đời sống Maldives được định hình bởi hai trục: đạo Hồi và biển. Tiếng gọi cầu nguyện vang lên năm lần mỗi ngày trên mọi đảo, tháng Ramadan làm thay đổi nhịp sống cả nước, và cuối tuần rơi vào thứ Sáu – thứ Bảy. Rượu bia và thịt lợn bị cấm ở các đảo dân cư, chỉ được phục vụ trong khu nghỉ dưỡng dành cho du khách — tạo nên cảm giác có “hai Maldives” song song: một thế giới resort xa hoa và một thế giới làng đảo bảo thủ, sùng đạo.</p>
+
+      <p>Trên các đảo, cộng đồng nhỏ và gắn bó, ai cũng biết ai; nghề đánh cá, đóng thuyền <i>dhoni</i> truyền thống và nhịp trống <i>boduberu</i> trong các dịp lễ là những biểu tượng văn hóa dân gian. Nhiều người Maldives mang biệt danh dùng thay tên thật vì số tên phổ biến khá hạn chế. Xã hội từng được ghi nhận có tỷ lệ ly hôn rất cao so với thế giới, phản ánh tập quán hôn nhân linh hoạt trong lịch sử. Sự cách biệt giữa thủ đô chật chội và các đảo xa, áp lực nhà ở, thất nghiệp trong giới trẻ và tình trạng phụ thuộc lao động nhập cư là những vấn đề xã hội thường được nhắc đến. Đồng thời, người Maldives thể hiện tinh thần đoàn kết mạnh mẽ với thế giới Hồi giáo, thấy rõ qua lập trường về vấn đề Palestine.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Bộ ba nền tảng</b>
+        Ẩm thực Maldives xoay quanh ba thứ: cá (nhất là cá ngừ), dừa và tinh bột (gạo, khoai sọ, bột mì). Gần như món nào cũng có ít nhất một trong ba, và rất nhiều món có cả ba.
+      </aside>
+
+      <p>Nếu ẩm thực Việt Nam là ẩm thực của lúa nước, thì ẩm thực Maldives là ẩm thực của cá ngừ. Trên những hòn đảo cát nghèo đất trồng, người dân sống dựa vào biển và cây dừa; cá được ăn tươi, phơi khô, hun khói hoặc ninh thành nước dùng. Hương vị chịu ảnh hưởng mạnh của Sri Lanka và Nam Ấn — cay nồng với ớt, cà ri, lá cà ri — nhưng được làm dịu bởi nước cốt và cùi dừa nạo.</p>
+
+      <p>Sự khác biệt vùng miền không rõ rệt như ở các nước lớn, mà thể hiện chủ yếu giữa thủ đô và các đảo: Malé có nhiều quán ăn, quán trà với món ăn nhanh và ảnh hưởng quốc tế, còn các đảo xa giữ bữa cơm gia đình truyền thống với cá và cơm. Phía nam như Addu và Fuvahmulah có một số món và cách gọi riêng, phản ánh phương ngữ khác biệt.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu của Maldives</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Bữa sáng</span><span class="pick-name">Mas huni</span><span class="pick-desc">Cá ngừ xé trộn dừa nạo, hành, ớt và chanh, cuốn với bánh roshi — bữa sáng quốc dân.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Garudhiya</span><span class="pick-desc">Nước dùng cá ngừ trong vắt, ăn với cơm, chanh, ớt và hành — món “hồn cốt” của ẩm thực đảo.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Rihaakuru</span><span class="pick-desc">Mắm cá cô đặc từ nước dùng cá ninh lâu, đậm đà, dùng làm gia vị.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Mas riha</span><span class="pick-desc">Cà ri cá ngừ nấu với nước cốt dừa, ăn cùng cơm trắng hoặc roshi.</span></li>
+        <li><span class="pick-where">Quán trà</span><span class="pick-name">Hedhikaa</span><span class="pick-desc">Các món ăn vặt mặn ngọt bày sẵn ở quán trà buổi chiều, nhất là trong tháng Ramadan.</span></li>
+        <li><span class="pick-where">Quán trà</span><span class="pick-name">Gulha</span><span class="pick-desc">Bánh viên chiên nhân cá ngừ, dừa và ớt — món hedhikaa phổ biến nhất.</span></li>
+        <li><span class="pick-where">Quán trà</span><span class="pick-name">Masroshi</span><span class="pick-desc">Bánh roshi nhân cá ngừ dừa nướng hoặc nướng áp chảo.</span></li>
+        <li><span class="pick-where">Lễ hội</span><span class="pick-name">Fihunu mas</span><span class="pick-desc">Cá nướng tẩm ớt và gia vị trên than, thường xuất hiện trong các bữa tiệc.</span></li>
+        <li><span class="pick-where">Lễ hội</span><span class="pick-name">Kulhi boakibaa</span><span class="pick-desc">Bánh cá cay nướng từ gạo, cá và dừa, cắt miếng như bánh ngọt.</span></li>
+        <li><span class="pick-where">Tráng miệng</span><span class="pick-name">Bondibaiy</span><span class="pick-desc">Chè gạo nấu với nước cốt dừa, đường và hương liệu như bạch đậu khấu.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Đồ uống phổ biến nhất là trà sữa đường (<i>sai</i>) thưởng thức trong quán trà — nơi giao lưu xã hội quan trọng của đàn ông Maldives. Nước dừa tươi (<i>kurumba</i>) có mặt khắp nơi. Đặc biệt là <i>raa</i>, nhựa ngọt lấy từ hoa dừa do những người thợ trèo dừa (<i>raaveryn</i>) thu hoạch mỗi sáng, uống ngay khi còn tươi; nếu để lâu, nó sẽ lên men tự nhiên.</p>
+
+      <p>Văn hóa ăn uống mang tính gia đình và cộng đồng: người ta thường ăn bằng tay phải, bữa ăn đơn giản nhưng không thể thiếu cá. Sau bữa ăn, nhai trầu cau (<i>foh</i>) từng là tập quán phổ biến, nhất là ở thế hệ lớn tuổi. Trong tháng Ramadan, bữa xả chay buổi tối biến thành dịp sum họp với đủ loại hedhikaa.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Ở resort hay ở đảo dân cư?</b>
+        Từ khoảng năm 2009, chính phủ cho phép mở nhà nghỉ trên các đảo có người ở. Nhờ đó, du khách có thể trải nghiệm Maldives với chi phí thấp hơn nhiều, nhưng phải tuân thủ phong tục địa phương như ăn mặc kín đáo và không uống rượu.
+      </aside>
+
+      <p>Maldives hiện <b>chưa có di sản thế giới UNESCO nào</b>; danh sách dự kiến gồm các nhà thờ Hồi giáo xây bằng đá san hô cổ<a class="cite" href="#ref-2">[2]</a>. Bù lại, đảo san hô <span class="nv" data-note="Đảo san hô vòng ở trung bắc Maldives, được UNESCO công nhận là Khu dự trữ sinh quyển thế giới năm 2011; nổi tiếng với vịnh Hanifaru.">Baa</span> được công nhận là Khu dự trữ sinh quyển thế giới, sau đó là Addu và Fuvahmulah. Sức hút chính của đất nước nằm dưới mặt nước: rạn san hô, cá đuối manta, cá mập voi và làn nước trong như pha lê.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Maldives</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Malé</span><span class="pick-desc">Thành phố chật như nêm với chợ cá, tòa Trung tâm Hồi giáo mái vàng và những con phố đầy xe máy.</span></li>
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Hukuru Miskiy</span><span class="pick-desc">Nhà thờ Hồi giáo thứ Sáu cổ xây năm 1658 bằng đá san hô chạm khắc tinh xảo.</span></li>
+        <li><span class="pick-where">Vùng thủ đô</span><span class="pick-name">Hulhumalé &amp; cầu Sinamalé</span><span class="pick-desc">Đảo nhân tạo nối với Malé bằng cây cầu do Trung Quốc tài trợ, khánh thành năm 2018.</span></li>
+        <li><span class="pick-where">Đảo san hô Baa</span><span class="pick-name">Vịnh Hanifaru</span><span class="pick-desc">Nơi hàng trăm con cá đuối manta tụ về kiếm ăn theo mùa — cảnh tượng hiếm thấy trên thế giới.</span></li>
+        <li><span class="pick-where">Nam Ari</span><span class="pick-name">Vùng cá mập voi</span><span class="pick-desc">Một trong số ít nơi trên thế giới có thể gặp cá mập voi quanh năm.</span></li>
+        <li><span class="pick-where">Đảo san hô Raa</span><span class="pick-name">Vaadhoo</span><span class="pick-desc">Bãi biển phát sáng về đêm nhờ sinh vật phù du, được gọi là “biển sao”.</span></li>
+        <li><span class="pick-where">Bắc Malé</span><span class="pick-name">Maafushi</span><span class="pick-desc">Đảo dân cư tiên phong mô hình nhà nghỉ bình dân cho khách du lịch ba lô.</span></li>
+        <li><span class="pick-where">Cực nam</span><span class="pick-name">Fuvahmulah</span><span class="pick-desc">Đảo san hô chỉ có một hòn đảo, nổi tiếng với cá mập hổ và hồ nước ngọt hiếm hoi.</span></li>
+        <li><span class="pick-where">Cực nam</span><span class="pick-name">Đảo san hô Addu</span><span class="pick-desc">Thành phố lớn thứ hai, nằm dưới xích đạo, từng có căn cứ không quân Anh ở đảo Gan.</span></li>
+        <li><span class="pick-where">Cực bắc</span><span class="pick-name">Utheemu</span><span class="pick-desc">Quê hương anh hùng Thakurufaanu, còn giữ cung điện gỗ cổ của gia đình ông.</span></li>
+        <li><span class="pick-where">Bắc Malé</span><span class="pick-name">Banana Reef</span><span class="pick-desc">Một trong những điểm lặn biển được biết đến sớm nhất ở Maldives, gần sân bay quốc tế.</span></li>
+        <li><span class="pick-where">Khắp nước</span><span class="pick-name">Biệt thự trên mặt nước</span><span class="pick-desc">Hình ảnh biểu tượng của du lịch Maldives, do các khu nghỉ dưỡng trên đảo riêng đưa vào phổ biến.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Cuộc họp dưới đáy biển</b>
+        Tháng 10/2009, Tổng thống Nasheed và nội các đeo bình dưỡng khí họp dưới nước, ký văn kiện kêu gọi cắt giảm khí thải — hình ảnh gây tiếng vang toàn cầu về số phận các đảo quốc thấp.
+      </aside>
+
+      <p>Nằm cạnh các tuyến hàng hải huyết mạch của Ấn Độ Dương, Maldives luôn là đối tượng cạnh tranh ảnh hưởng giữa <span class="nv" data-note="Láng giềng lớn nhất, đối tác lâu năm về an ninh, y tế, giáo dục và viện trợ của Maldives.">Ấn Độ</span> và <span class="nv" data-note="Nhà đầu tư hạ tầng lớn thời Yameen; Hiệp định thương mại tự do Trung Quốc – Maldives có hiệu lực từ đầu năm 2025.">Trung Quốc</span>. Muizzu lên nắm quyền với chiến dịch “India Out” và chọn Thổ Nhĩ Kỳ, Trung Quốc cho những chuyến công du đầu tiên. Nhưng áp lực tài chính đã kéo ông trở lại thế cân bằng: tháng <span class="tg">7/2025</span>, Thủ tướng <span class="nv" data-note="Thủ tướng Ấn Độ; khách mời danh dự của lễ kỷ niệm 60 năm độc lập Maldives tháng 7/2025.">Narendra Modi</span> là khách mời danh dự của lễ kỷ niệm 60 năm độc lập, công bố gói tín dụng <span class="tg">4.850 crore rupee</span>, khởi động đàm phán thương mại tự do và giảm nghĩa vụ trả nợ hằng năm cho Maldives<a class="cite" href="#ref-8">[8]</a>.</p>
+
+      <p>Maldives cũng thể hiện lập trường đối ngoại riêng gắn với bản sắc Hồi giáo: tháng <span class="tg">4/2025</span>, chính phủ phê chuẩn luật cấm người mang hộ chiếu Israel nhập cảnh, như một hành động đoàn kết với Palestine<a class="cite" href="#ref-10">[10]</a>. Trên diễn đàn quốc tế, đất nước là tiếng nói hàng đầu của các đảo quốc nhỏ về biến đổi khí hậu, bởi phần lớn lãnh thổ chỉ cao hơn mặt biển khoảng một mét; xói lở bờ biển, xâm nhập mặn và tẩy trắng san hô đã là chuyện thường ngày. Câu trả lời của chính phủ là bồi đắp đảo nhân tạo cao hơn như Hulhumalé — một giải pháp tốn kém và gây tranh cãi về môi trường.</p>
+
+      <p>Ở trong nước, ba vấn đề nóng nhất hiện nay là gánh nặng nợ sau khi trả sukuk, sự mong manh của ngành du lịch trước các cú sốc bên ngoài như xung đột Trung Đông năm 2026, và cán cân quyền lực sau thất bại của chính phủ trong cuộc trưng cầu dân ý tháng 4/2026<a class="cite" href="#ref-3">[3]</a><a class="cite" href="#ref-5">[5]</a>. Các cuộc bầu cử tổng thống và Quốc hội tiếp theo dự kiến diễn ra lần lượt vào năm 2028 và 2029, nên những bất đồng về thời điểm bầu cử vẫn có thể còn quay lại.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Maldives</h2>
+      <ol class="funs">
+        <li><b>Quốc gia thấp nhất thế giới.</b> Điểm cao nhất chỉ khoảng 2,4 m — thấp hơn cả trần một căn phòng thông thường<a class="cite" href="#ref-2">[2]</a>.</li>
+        <li><b>Nhỏ nhất châu Á.</b> Với khoảng 298 km² và hơn nửa triệu dân, Maldives là nước nhỏ nhất châu Á cả về diện tích lẫn dân số.</li>
+        <li><b>Chữ viết từ phải sang trái lấy cảm hứng từ chữ số.</b> Chữ Thaana của tiếng Dhivehi có nhiều ký tự bắt nguồn từ chữ số Ả Rập và chữ số Dhivehi cổ — một hệ chữ hiếm có trên thế giới.</li>
+        <li><b>Từ “atoll” là của người Maldives.</b> Từ chỉ đảo san hô vòng trong nhiều ngôn ngữ châu Âu được cho là bắt nguồn từ tiếng Dhivehi <i>atholhu</i>.</li>
+        <li><b>Cấm thuốc lá theo thế hệ đầu tiên trên thế giới.</b> Từ ngày 1/11/2025, người sinh từ ngày 1/1/2007 trở đi bị cấm mua, sử dụng thuốc lá ở Maldives — vĩnh viễn<a class="cite" href="#ref-9">[9]</a>.</li>
+        <li><b>Từng là “ngân hàng” của Ấn Độ Dương.</b> Vỏ ốc tiền cowrie thu gom ở Maldives được dùng làm tiền tệ từ Tây Phi đến Trung Hoa suốt nhiều thế kỷ.</li>
+        <li><b>Đường xích đạo cắt ngang lãnh thổ.</b> Đảo san hô cực nam Addu nằm ở Nam bán cầu, trong khi phần lớn đất nước ở Bắc bán cầu.</li>
+        <li><b>Một nội các dưới đáy biển.</b> Năm 2009, chính phủ Maldives tổ chức cuộc họp nội các dưới nước đầu tiên trên thế giới để cảnh báo về biến đổi khí hậu.</li>
+        <li><b>Khách đông gấp bốn lần dân.</b> Mỗi năm Maldives đón hơn 2 triệu lượt khách, trong khi dân số chỉ khoảng nửa triệu<a class="cite" href="#ref-7">[7]</a>.</li>
+        <li><b>Sân bay trên một hòn đảo riêng.</b> Sân bay quốc tế chính chiếm trọn một hòn đảo cạnh thủ đô; du khách thường đi tiếp bằng thủy phi cơ hoặc tàu cao tốc tới resort.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Maldives gồm khoảng <span class="tg">1.192</span> đảo trong <span class="tg">26</span> đảo san hô vòng, đất liền chỉ ~298 km², dân số ~530 nghìn.</li>
+        <li>Lịch sử theo trục: Phật giáo → <span class="tg">1153</span> cải sang Hồi giáo → 1573 đuổi Bồ Đào Nha → 1887 bảo hộ Anh → <span class="tg">26/7/1965</span> độc lập → 1968 cộng hòa.</li>
+        <li>Gayoom cầm quyền 30 năm (1978–2008); Hiến pháp <span class="tg">2008</span> mở ra bầu cử đa đảng.</li>
+        <li>Chính trị dao động giữa Ấn Độ và Trung Quốc; Muizzu (từ <span class="tg">11/2023</span>) thắng cử với khẩu hiệu “India Out” nhưng sau đó hàn gắn với New Delhi.</li>
+        <li>Du lịch chiếm ~1/4 GDP trực tiếp, hơn 1/2 nếu tính gián tiếp; nợ công khoảng <span class="tg">128% GDP</span>.</li>
+        <li>Tháng <span class="tg">4/2026</span>: trả xong sukuk 500 triệu USD; trưng cầu dân ý sửa hiến pháp thất bại với ~69% phiếu chống.</li>
+        <li>Ẩm thực xoay quanh cá ngừ, dừa và tinh bột; món biểu tượng là mas huni và garudhiya.</li>
+        <li>Chưa có di sản thế giới UNESCO; nổi tiếng với cá đuối manta, cá mập voi và biệt thự trên mặt nước.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Maldives cải sang Hồi giáo vào năm nào, và trước đó cư dân theo tôn giáo gì?</p>
+          <details><summary>Xem đáp án</summary><p>Năm 1153, theo biên niên sử truyền thống; trước đó quần đảo theo Phật giáo hơn một nghìn năm.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Ai là anh hùng dân tộc đánh đuổi người Bồ Đào Nha khỏi Malé, vào năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Muhammad Thakurufaanu, năm 1573, sau 15 năm Bồ Đào Nha chiếm đóng (1558–1573).</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Cuộc trưng cầu dân ý ngày 4/4/2026 đề xuất điều gì, và kết quả ra sao?</p>
+          <details><summary>Xem đáp án</summary><p>Sửa hiến pháp để bầu cử tổng thống và Quốc hội cùng ngày (rút ngắn nhiệm kỳ Quốc hội); bị bác bỏ với khoảng 69% phiếu chống.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Vì sao xung đột Trung Đông năm 2026 ảnh hưởng mạnh đến kinh tế Maldives?</p>
+          <details><summary>Xem đáp án</summary><p>Vì các hãng hàng không vùng Vịnh — cầu nối chính đưa khách châu Âu đến — tạm ngừng bay, trong khi du lịch chiếm hơn một nửa nền kinh tế nếu tính cả tác động gián tiếp.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Mas huni là gì, và ba nguyên liệu nền tảng của ẩm thực Maldives là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Mas huni là cá ngừ trộn dừa nạo, hành, ớt, ăn với bánh roshi vào bữa sáng. Ba nền tảng: cá (nhất là cá ngừ), dừa và tinh bột.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Kể tên hai địa điểm thiên nhiên nổi tiếng của Maldives và cho biết Maldives có bao nhiêu di sản thế giới UNESCO.</p>
+          <details><summary>Xem đáp án</summary><p>Ví dụ: vịnh Hanifaru (Baa) với cá đuối manta, Nam Ari với cá mập voi, “biển sao” Vaadhoo, Fuvahmulah với cá mập hổ. Maldives chưa có di sản thế giới UNESCO nào.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">World Bank. <i>Maldives — World Bank Open Data</i> (dân số, GDP, GDP/người, tăng trưởng năm 2025). <a href="https://data.worldbank.org/country/maldives" target="_blank" rel="noopener">data.worldbank.org/country/maldives</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-2">Wikipedia contributors. <i>Maldives</i>. Wikipedia, Bách khoa toàn thư mở (diện tích, tổng điều tra 2022, số đảo, độ cao, tôn giáo, thể chế, danh sách dự kiến UNESCO). <a href="https://en.wikipedia.org/wiki/Maldives" target="_blank" rel="noopener">en.wikipedia.org/wiki/Maldives</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>2026 Maldivian constitutional referendum</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/2026_Maldivian_constitutional_referendum" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-4">Maldives Voice. <i>Maldives clears USD 500M Sukuk, strengthening fiscal outlook</i>. Tháng 4/2026. <a href="https://maldivesvoice.mv/2775" target="_blank" rel="noopener">maldivesvoice.mv</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-5">Direction générale du Trésor (Pháp). <i>Situation économique et financière des Maldives au printemps 2026</i>. 2026. <a href="https://www.tresor.economie.gouv.fr/Pays/MV/situation-economique-des-maldives" target="_blank" rel="noopener">tresor.economie.gouv.fr</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-6">Maldives Voice. <i>Tourist arrivals to Maldives drop sharply amid Middle East flight disruptions</i>. Tháng 3/2026. <a href="https://maldivesvoice.mv/2710" target="_blank" rel="noopener">maldivesvoice.mv</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-7">MMTV (Maldives). <i>Bản tin lượng khách du lịch đến Maldives 7 tháng đầu năm 2026</i>. 28/7/2026. <a href="https://en.mmtv.mv/11101" target="_blank" rel="noopener">en.mmtv.mv</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-8">All India Radio News. <i>PM Modi concludes successful State Visit to Maldives, terms it extremely productive</i>. 27/7/2025. <a href="https://www.newsonair.gov.in/pm-modi-concludes-successful-state-visit-to-maldives-terms-it-extremely-productive/" target="_blank" rel="noopener">newsonair.gov.in</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-9">Down To Earth. <i>Maldives becomes first country to impose generational ban on tobacco</i>. Tháng 11/2025. <a href="https://www.downtoearth.org.in/amp/story/health/maldives-becomes-first-country-to-impose-generational-ban-on-tobacco" target="_blank" rel="noopener">downtoearth.org.in</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-10">Maldives Independent. <i>Maldives bans Israel passport until “inhumane actions” end in Gaza</i>. Tháng 4/2025. <a href="https://maldivesindependent.com/morning-brief/maldives-bans-israel-passport-until-inhumane-actions-end-in-gaza-9275" target="_blank" rel="noopener">maldivesindependent.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, nợ, lượng khách) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Ước tính dân số Maldives chênh lệch giữa các nguồn tùy theo việc có tính lao động nước ngoài hay không. Các chi tiết còn tranh cãi — như danh tính người truyền đạo Hồi năm 1153 hay bản chất sự kiện tháng 2/2012 — được trình bày ở mức khái quát, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
