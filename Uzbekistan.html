@@ -1,0 +1,1140 @@
+<title>Uzbekistan — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Uzbekistan</div>
+          <h1>Uzbekistan</h1>
+          <div class="period">Châu Á · Trung Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 500 250" role="img" aria-label="Quốc kỳ Uzbekistan: ba dải ngang xanh lam, trắng, xanh lá ngăn bởi hai vạch đỏ mảnh; góc trên bên trái có trăng lưỡi liềm trắng và 12 ngôi sao trắng">
+            <rect width="500" height="250" fill="#1eb53a"/>
+            <rect width="500" height="125" fill="#0099b5"/>
+            <rect y="80" width="500" height="90" fill="#ce1126"/>
+            <rect y="85" width="500" height="80" fill="#ffffff"/>
+            <circle cx="70" cy="40" r="30" fill="#ffffff"/>
+            <circle cx="80" cy="40" r="30" fill="#0099b5"/>
+            <g fill="#ffffff"><polygon points="136.00,10.00 137.35,14.15 141.71,14.15 138.18,16.71 139.53,20.85 136.00,18.29 132.47,20.85 133.82,16.71 130.29,14.15 134.65,14.15"/><polygon points="160.00,10.00 161.35,14.15 165.71,14.15 162.18,16.71 163.53,20.85 160.00,18.29 156.47,20.85 157.82,16.71 154.29,14.15 158.65,14.15"/><polygon points="184.00,10.00 185.35,14.15 189.71,14.15 186.18,16.71 187.53,20.85 184.00,18.29 180.47,20.85 181.82,16.71 178.29,14.15 182.65,14.15"/><polygon points="112.00,34.00 113.35,38.15 117.71,38.15 114.18,40.71 115.53,44.85 112.00,42.29 108.47,44.85 109.82,40.71 106.29,38.15 110.65,38.15"/><polygon points="136.00,34.00 137.35,38.15 141.71,38.15 138.18,40.71 139.53,44.85 136.00,42.29 132.47,44.85 133.82,40.71 130.29,38.15 134.65,38.15"/><polygon points="160.00,34.00 161.35,38.15 165.71,38.15 162.18,40.71 163.53,44.85 160.00,42.29 156.47,44.85 157.82,40.71 154.29,38.15 158.65,38.15"/><polygon points="184.00,34.00 185.35,38.15 189.71,38.15 186.18,40.71 187.53,44.85 184.00,42.29 180.47,44.85 181.82,40.71 178.29,38.15 182.65,38.15"/><polygon points="88.00,58.00 89.35,62.15 93.71,62.15 90.18,64.71 91.53,68.85 88.00,66.29 84.47,68.85 85.82,64.71 82.29,62.15 86.65,62.15"/><polygon points="112.00,58.00 113.35,62.15 117.71,62.15 114.18,64.71 115.53,68.85 112.00,66.29 108.47,68.85 109.82,64.71 106.29,62.15 110.65,62.15"/><polygon points="136.00,58.00 137.35,62.15 141.71,62.15 138.18,64.71 139.53,68.85 136.00,66.29 132.47,68.85 133.82,64.71 130.29,62.15 134.65,62.15"/><polygon points="160.00,58.00 161.35,62.15 165.71,62.15 162.18,64.71 163.53,68.85 160.00,66.29 156.47,68.85 157.82,64.71 154.29,62.15 158.65,62.15"/><polygon points="184.00,58.00 185.35,62.15 189.71,62.15 186.18,64.71 187.53,68.85 184.00,66.29 180.47,68.85 181.82,64.71 178.29,62.15 182.65,62.15"/></g>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Uzbekistan là trái tim của Con đường Tơ lụa — nơi có Samarkand, Bukhara và Khiva, những thành phố mà tên gọi từng đồng nghĩa với sự giàu có và tri thức của cả thế giới Hồi giáo trung đại. Đây là quê hương của nhà toán học đã cho nhân loại chữ “algorithm”, của thầy thuốc Ibn Sina và của đế chế Timur. Sau 25 năm khép kín dưới thời Islam Karimov, đất nước gần 38,4 triệu dân — đông nhất Trung Á — đang mở cửa nhanh chóng dưới thời Shavkat Mirziyoyev, dù quyền lực vẫn tập trung cao độ. Nếu chỉ nhớ một điều về Uzbekistan, hãy nhớ: đây là một vùng đất từng ở trung tâm thế giới, nay đang tìm cách quay lại vị trí ấy.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">448.978 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~38,4 triệu<a class="cite" href="#ref-2">[2]</a><small>thường trú, 1/4/2026</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Tashkent</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Uzbek<small>tiếng Nga dùng rộng rãi</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Hồi giáo Sunni<small>~94% dân số<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Som (UZS)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~4.660 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính IMF 2026</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">TK VI – IV TCN</span>
+          <span class="tl-what">Sogdiana, Bactria, Khwarazm</span>
+          <span class="tl-note">Các vùng đất người Iran cổ thuộc đế chế Ba Tư Achaemenid, buôn bán khắp lục địa</span>
+        </li>
+        <li>
+          <span class="tl-when">329 – 327 TCN</span>
+          <span class="tl-what">Alexander Đại đế đến Marakanda</span>
+          <span class="tl-note">Quân Macedonia chiếm tiền thân của Samarkand, vấp phải kháng cự dai dẳng của người Sogd</span>
+        </li>
+        <li>
+          <span class="tl-when">TK I – III</span>
+          <span class="tl-what">Đế chế Kushan &amp; Con đường Tơ lụa</span>
+          <span class="tl-note">Phật giáo lan dọc sông Amu Darya; thương nhân Sogd làm chủ tuyến buôn Á – Âu</span>
+        </li>
+        <li>
+          <span class="tl-when">TK VIII</span>
+          <span class="tl-what">Người Ả Rập &amp; Hồi giáo</span>
+          <span class="tl-note">Quân Ả Rập chinh phục vùng “Ma Wara an-Nahr”; trận Talas năm 751 chặn bước nhà Đường</span>
+        </li>
+        <li>
+          <span class="tl-when">819 – 999</span>
+          <span class="tl-what">Nhà Samanid</span>
+          <span class="tl-note">Bukhara thành kinh đô văn hóa Ba Tư – Hồi giáo, nơi Ibn Sina trưởng thành</span>
+        </li>
+        <li>
+          <span class="tl-when">1220</span>
+          <span class="tl-what">Thành Cát Tư Hãn tàn phá</span>
+          <span class="tl-note">Bukhara và Samarkand bị san phẳng, đế chế Khwarazm sụp đổ</span>
+        </li>
+        <li>
+          <span class="tl-when">1370</span>
+          <span class="tl-what">Timur lập đế chế</span>
+          <span class="tl-note">Samarkand thành kinh đô của một đế chế trải từ Ấn Độ đến Anatolia</span>
+        </li>
+        <li>
+          <span class="tl-when">thập niên 1420</span>
+          <span class="tl-what">Đài thiên văn Ulugh Beg</span>
+          <span class="tl-note">Cháu nội Timur biến Samarkand thành trung tâm thiên văn học hàng đầu thế giới</span>
+        </li>
+        <li>
+          <span class="tl-when">TK XVI – XIX</span>
+          <span class="tl-what">Ba hãn quốc</span>
+          <span class="tl-note">Người Uzbek Shaybanid nắm quyền; vùng đất chia thành các hãn quốc Bukhara, Khiva, Kokand</span>
+        </li>
+        <li>
+          <span class="tl-when">1865 – 1876</span>
+          <span class="tl-what">Nga chinh phục</span>
+          <span class="tl-note">Tashkent thất thủ năm 1865; Khiva, Bukhara thành xứ bảo hộ, Kokand bị sáp nhập</span>
+        </li>
+        <li>
+          <span class="tl-when">1924</span>
+          <span class="tl-what">Lập CHXHCN Xô viết Uzbek</span>
+          <span class="tl-note">Moskva vạch lại biên giới Trung Á theo dân tộc; thủ đô dời về Tashkent năm 1930</span>
+        </li>
+        <li>
+          <span class="tl-when">26/4/1966</span>
+          <span class="tl-what">Động đất Tashkent</span>
+          <span class="tl-note">Phá hủy phần lớn khu phố cũ; thành phố được xây lại theo kiến trúc hiện đại Xô viết</span>
+        </li>
+        <li>
+          <span class="tl-when">31/8/1991</span>
+          <span class="tl-what">Tuyên bố độc lập</span>
+          <span class="tl-note">Islam Karimov lãnh đạo nước Uzbekistan độc lập suốt 25 năm</span>
+        </li>
+        <li>
+          <span class="tl-when">2016</span>
+          <span class="tl-what">Thời Mirziyoyev bắt đầu</span>
+          <span class="tl-note">Karimov qua đời; người kế nhiệm mở cửa biên giới, tự do hóa tiền tệ</span>
+        </li>
+        <li>
+          <span class="tl-when">2023</span>
+          <span class="tl-what">Hiến pháp mới</span>
+          <span class="tl-note">Trưng cầu dân ý kéo nhiệm kỳ tổng thống lên 7 năm và “đặt lại” số nhiệm kỳ</span>
+        </li>
+        <li>
+          <span class="tl-when">2026</span>
+          <span class="tl-what">Năm của những lần đầu tiên</span>
+          <span class="tl-note">Lần đầu dự World Cup, kiến trúc hiện đại Tashkent vào danh sách UNESCO, nước rút gia nhập WTO</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại thời cổ đại dựa trên sử liệu Hy Lạp, Ba Tư, Trung Hoa và khảo cổ học nên chỉ mang tính tương đối. Ngày Độc lập chính thức được kỷ niệm là 1/9, dù tuyên bố độc lập được Xô viết Tối cao thông qua ngày 31/8/1991.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>“Nội lục kép”</b>
+        Uzbekistan là một trong hai quốc gia trên thế giới bị bao quanh bởi các nước cũng không giáp biển (nước còn lại là Liechtenstein). Muốn ra đại dương, hàng hóa phải đi qua ít nhất hai biên giới.
+      </aside>
+
+      <p class="lede">Uzbekistan nằm giữa hai con sông lớn nhất Trung Á — Amu Darya và Syr Darya — và giáp cả bốn nước “-stan” còn lại của khu vực cùng với Afghanistan.</p>
+
+      <p>Với diện tích khoảng <span class="tg">448.978 km²</span><a class="cite" href="#ref-1">[1]</a> — lớn hơn Việt Nam chừng một phần ba — Uzbekistan có hình dáng kéo dài từ tây bắc xuống đông nam. Gần 4/5 lãnh thổ là sa mạc và thảo nguyên khô, nổi bật là sa mạc <span class="nv" data-note="Sa mạc cát đỏ rộng lớn nằm giữa hai sông Amu Darya và Syr Darya, trải qua Uzbekistan, Kazakhstan và Turkmenistan.">Kyzylkum</span> (“cát đỏ”) ở trung tâm. Phía đông là rìa dãy Thiên Sơn và Pamir-Alay, nơi có đỉnh <span class="nv" data-note="Đỉnh núi cao nhất Uzbekistan, thuộc dãy Gissar trên biên giới với Tajikistan.">Khazret Sultan</span> cao <span class="tg">4.643 m</span>. Ẩn giữa các dãy núi ấy là <span class="nv" data-note="Lòng chảo màu mỡ chia sẻ giữa Uzbekistan, Kyrgyzstan và Tajikistan — vùng đông dân nhất và cũng phức tạp nhất Trung Á về biên giới, sắc tộc.">thung lũng Fergana</span> — vùng đất trù phú, đông dân nhất Trung Á. Khí hậu lục địa khắc nghiệt: mùa hè nóng trên 40°C, mùa đông có thể xuống dưới 0°C.</p>
+
+      <p>Ở cực tây bắc là vết thương sinh thái lớn nhất của Liên Xô cũ: <span class="nv" data-note="Từng là hồ nước lớn thứ tư thế giới; teo tóp từ thập niên 1960 khi nước hai con sông Amu Darya và Syr Darya bị chuyển hướng để trồng bông.">biển Aral</span>. Từ thập niên 1960, nước hai con sông bị lấy để tưới bông, khiến hồ nước từng lớn thứ tư hành tinh co lại chỉ còn một phần nhỏ, để lại những con tàu mắc cạn giữa sa mạc muối<a class="cite" href="#ref-11">[11]</a>.</p>
+
+      <p>Dân số thường trú đạt <span class="tg">38.382.685 người</span> vào ngày 1/4/2026, tăng khoảng <span class="tg">1,8%</span> mỗi năm<a class="cite" href="#ref-2">[2]</a> — nghĩa là Uzbekistan chiếm gần một nửa dân số toàn Trung Á. Khoảng 19,6 triệu người sống ở đô thị, gần ngang với khu vực nông thôn<a class="cite" href="#ref-2">[2]</a>. Người Uzbek chiếm khoảng 84% dân số, tiếp đến là người Tajik, Kazakh, Nga và Karakalpak<a class="cite" href="#ref-12">[12]</a>. Về hành chính, cả nước gồm 12 tỉnh (viloyat), thủ đô Tashkent và nước cộng hòa tự trị <span class="nv" data-note="Nước cộng hòa tự trị chiếm khoảng 37% diện tích Uzbekistan, quê hương của người Karakalpak — dân tộc gần với người Kazakh — bao trùm vùng biển Aral.">Karakalpakstan</span> ở phía tây — rộng hơn một phần ba lãnh thổ nhưng thưa dân.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử vùng đất Uzbekistan là lịch sử của một ngã tư: mọi đế chế lớn của lục địa Á – Âu, từ Ba Tư, Hy Lạp, Ả Rập, Mông Cổ đến Nga, đều từng đi qua và để lại dấu vết.</p>
+
+      <p><b>Thời cổ đại.</b> Từ thiên niên kỷ thứ nhất TCN, các dân tộc nói tiếng Iran đã lập nên những vùng định cư nông nghiệp có hệ thống thủy lợi phức tạp: <span class="nv" data-note="Vùng đất quanh thung lũng sông Zarafshan, trung tâm là Samarkand (Marakanda) và Bukhara; người Sogd là thương nhân lừng danh trên Con đường Tơ lụa.">Sogdiana</span> ở lưu vực sông Zarafshan, <span class="nv" data-note="Vùng ốc đảo ở hạ lưu sông Amu Darya, gần biển Aral; trung tâm sau này là Khiva và Urgench.">Khwarazm</span> ở hạ lưu Amu Darya và Bactria ở phía nam. Năm <span class="tg">329 TCN</span>, <span class="nv" data-note="Vua Macedonia (356–323 TCN), người chinh phục đế chế Ba Tư và tiến sâu vào Trung Á.">Alexander Đại đế</span> tiến vào Marakanda — tiền thân của Samarkand — nhưng mất gần ba năm mới dẹp được cuộc kháng chiến của người Sogd do <span class="nv" data-note="Thủ lĩnh người Sogd lãnh đạo cuộc khởi nghĩa chống quân Macedonia (329–328 TCN).">Spitamenes</span> lãnh đạo. Các thế kỷ sau, dưới thời đế chế <span class="nv" data-note="Đế chế do người Nguyệt Chi lập ra (khoảng TK I–III), kiểm soát vùng Bactria, Afghanistan và Bắc Ấn, góp phần truyền bá Phật giáo sang Trung Á và Trung Hoa.">Kushan</span>, Phật giáo theo các đoàn lạc đà truyền sang Trung Hoa, còn thương nhân Sogd trở thành “người trung gian” của Con đường Tơ lụa.</p>
+
+      <aside class="sidenote">
+        <b>“Vùng đất bên kia sông”</b>
+        Người Ả Rập gọi khu vực giữa Amu Darya và Syr Darya là <i>Ma Wara an-Nahr</i>, còn người châu Âu dịch là Transoxiana — “bên kia sông Oxus” (tên cổ của Amu Darya). Đó gần như chính là Uzbekistan ngày nay.
+      </aside>
+
+      <p><b>Hồi giáo hóa và thời hoàng kim (TK VIII – XII).</b> Đầu thế kỷ VIII, quân Ả Rập chinh phục vùng đất này; năm <span class="tg">751</span>, trận Talas đánh bại nhà Đường, chấm dứt ảnh hưởng Trung Hoa ở phía tây. Dưới triều <span class="nv" data-note="Triều đại người Ba Tư (819–999) đóng đô ở Bukhara, nổi tiếng bảo trợ khoa học và văn học tiếng Ba Tư.">Samanid</span> (819–999), Bukhara trở thành một trong những trung tâm tri thức rực rỡ nhất thế giới Hồi giáo. Vùng đất này sản sinh ra cả một thế hệ thiên tài: nhà toán học <span class="nv" data-note="Muhammad ibn Musa al-Khwarizmi (khoảng 780–850), người Khwarazm, cha đẻ của đại số; tên ông Latinh hóa thành “algorithm”.">al-Khwarizmi</span>, nhà sưu tập thánh huấn <span class="nv" data-note="Muhammad al-Bukhari (810–870), tác giả bộ Sahih al-Bukhari — tập hadith được xem là quan trọng nhất của Hồi giáo Sunni sau kinh Qur'an.">al-Bukhari</span>, nhà bác học <span class="nv" data-note="Abu Rayhan al-Biruni (973–1048), người Khwarazm, nhà thiên văn, địa lý và nhân học, từng tính bán kính Trái Đất khá chính xác.">al-Biruni</span> và thầy thuốc <span class="nv" data-note="Ibn Sina (Avicenna, 980–1037), sinh gần Bukhara, tác giả “Quy tắc y học” — sách giáo khoa y học chuẩn của châu Âu suốt nhiều thế kỷ.">Ibn Sina</span>, sinh năm <span class="tg">980</span> gần Bukhara.</p>
+
+      <p><b>Mông Cổ và đế chế Timur (1220 – 1500).</b> Năm <span class="tg">1220</span>, <span class="nv" data-note="Người sáng lập đế chế Mông Cổ (khoảng 1162–1227); cuộc tây chinh 1219–1221 xóa sổ đế chế Khwarazm.">Thành Cát Tư Hãn</span> tàn phá Bukhara và Samarkand sau khi vua Khwarazm giết sứ thần Mông Cổ. Hơn một thế kỷ sau, từ đống tro tàn ấy nổi lên <span class="nv" data-note="Timur (Tamerlane, 1336–1405), sinh gần Shahrisabz, lập đế chế từ Ấn Độ đến Anatolia; người Uzbek ngày nay tôn ông là anh hùng dân tộc dù ông không phải người Uzbek theo nghĩa hẹp.">Timur</span> (Tamerlane), người từ năm <span class="tg">1370</span> biến Samarkand thành kinh đô của một đế chế trải dài từ Delhi đến Ankara. Ông chinh chiến tàn bạo nhưng đưa thợ giỏi từ khắp nơi về xây những công trình mái vòm xanh ngọc huyền thoại. Cháu nội ông, <span class="nv" data-note="Ulugh Beg (1394–1449), vua – nhà thiên văn, xây đài thiên văn ở Samarkand và lập danh mục hơn 1.000 ngôi sao.">Ulugh Beg</span>, xây đài thiên văn ở Samarkand những năm 1420 và lập bảng sao chính xác nhất thời ấy. Một hậu duệ khác, <span class="nv" data-note="Zahir ud-Din Muhammad Babur (1483–1530), sinh ở Andijan thuộc thung lũng Fergana, sáng lập đế chế Mughal ở Ấn Độ năm 1526.">Babur</span> sinh ở Andijan, sau khi bị đuổi khỏi quê hương đã sang Ấn Độ lập nên đế chế Mughal năm 1526.</p>
+
+      <p><b>Các hãn quốc Uzbek (TK XVI – XIX).</b> Đầu thế kỷ XVI, người Uzbek du mục do <span class="nv" data-note="Muhammad Shaybani (khoảng 1451–1510), thủ lĩnh người Uzbek, lật đổ nhà Timur ở Transoxiana.">Muhammad Shaybani</span> dẫn đầu từ thảo nguyên phương bắc tràn xuống, lật đổ nhà Timur. Cái tên “Uzbek” bắt nguồn từ liên minh bộ lạc này. Khi Con đường Tơ lụa suy tàn vì thương mại đường biển, vùng đất dần chia thành ba hãn quốc khép kín: <b>Bukhara</b>, <b>Khiva</b> và <b>Kokand</b>, nổi tiếng với chợ nô lệ và những cuộc chiến tranh liên miên.</p>
+
+      <p><b>Thời Nga và Xô viết (1865 – 1991).</b> Trong “Ván cờ lớn” với nước Anh, đế quốc Nga lần lượt chiếm Tashkent (<span class="tg">1865</span>), Samarkand (1868), biến Bukhara và Khiva thành xứ bảo hộ và sáp nhập Kokand (1876). Sau Cách mạng 1917, chính quyền Xô viết vạch lại biên giới theo dân tộc và lập nước Cộng hòa Xô viết Uzbek năm <span class="tg">1924</span>. Đó là thời kỳ hai mặt: một mặt là tập thể hóa, đàn áp giới trí thức Hồi giáo và độc canh cây bông; mặt khác là xóa mù chữ, điện khí hóa và đô thị hóa. Trận động đất ngày <span class="tg">26/4/1966</span> phá hủy khu phố cũ Tashkent, mở đường cho một thành phố mới hiện đại theo kiểu Xô viết.</p>
+
+      <p><b>Độc lập và hai thời kỳ (1991 – nay).</b> Ngày <span class="tg">31/8/1991</span>, Uzbekistan tuyên bố độc lập. <span class="nv" data-note="Islam Karimov (1938–2016), lãnh đạo Uzbekistan từ thời Xô viết (1989) đến khi qua đời năm 2016.">Islam Karimov</span> cai trị suốt 25 năm theo lối khép kín: kiểm soát chặt tiền tệ, biên giới và tôn giáo, trấn áp đối lập. Vụ dập tắt biểu tình ở Andijan năm <span class="tg">2005</span> khiến hàng trăm người thiệt mạng — con số chính xác đến nay vẫn còn tranh cãi giữa chính quyền và các tổ chức nhân quyền. Khi Karimov qua đời năm <span class="tg">2016</span>, Thủ tướng <span class="nv" data-note="Shavkat Mirziyoyev (sinh 1957), Thủ tướng 2003–2016, Tổng thống từ tháng 12/2016.">Shavkat Mirziyoyev</span> lên thay và khởi động công cuộc “Uzbekistan Mới”: thả nổi đồng som năm 2017, mở lại biên giới với láng giềng, miễn thị thực cho du khách và chấm dứt lao động cưỡng bức trong ngành bông. Bản sắc Uzbek hôm nay vì thế mang nhiều tầng lớp: gốc Iran định cư cổ xưa, ngôn ngữ Turk của dân du mục, đức tin Hồi giáo Sunni, dấu ấn Nga – Xô viết, cùng niềm tự hào về Timur và các nhà bác học Con đường Tơ lụa.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Uzbekistan</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, nhiệm kỳ 7 năm; nắm quyền hành pháp thực chất, có Văn phòng Tổng thống hỗ trợ</span>
+        </li>
+        <li>
+          <span class="tier-role">Oliy Majlis · Chính phủ</span>
+          <span class="tier-desc">Quốc hội hai viện (Hạ viện &amp; Thượng viện) và Nội các do Thủ tướng đứng đầu</span>
+        </li>
+        <li>
+          <span class="tier-role">Karakalpakstan · 12 tỉnh · Tashkent</span>
+          <span class="tier-desc">Cộng hòa tự trị, các tỉnh (viloyat) và thủ đô; lãnh đạo tỉnh (hokim) do Tổng thống bổ nhiệm</span>
+        </li>
+        <li>
+          <span class="tier-role">Huyện · Thành phố · Mahalla</span>
+          <span class="tier-desc">Cấp cơ sở; mahalla (khu phố tự quản) là mắt xích quản lý xã hội đặc trưng</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Mahalla</b>
+        Mỗi khu dân cư truyền thống có hội đồng mahalla lo việc cưới hỏi, ma chay, trợ cấp và hòa giải. Nhà nước dùng mạng lưới này để phân phát phúc lợi — nhưng nó cũng là kênh giám sát xã hội rất hiệu quả.
+      </aside>
+
+      <p>Trên giấy tờ, Uzbekistan là nước cộng hòa bán tổng thống với tam quyền phân lập; trên thực tế, quyền lực tập trung rất mạnh vào tay Tổng thống. Chưa có đảng đối lập thực sự nào được đăng ký, và các cuộc bầu cử chủ yếu là giữa những đảng ủng hộ chính phủ.</p>
+
+      <p>Bước ngoặt gần nhất là cuộc trưng cầu dân ý ngày <span class="tg">30/4/2023</span>, thông qua hiến pháp sửa đổi với hơn 90% phiếu thuận: nhiệm kỳ tổng thống kéo dài từ 5 lên <span class="tg">7 năm</span>, và số nhiệm kỳ được “đặt lại từ đầu”. Ngay sau đó, Mirziyoyev tổ chức bầu cử sớm ngày 9/7/2023 và tái đắc cử với <span class="tg">87,7%</span> phiếu bầu; quan sát viên OSCE nhận xét cuộc bầu cử được tổ chức chu đáo nhưng thiếu cạnh tranh chính trị thực chất<a class="cite" href="#ref-5">[5]</a>. Về lý thuyết, ông có thể cầm quyền đến năm 2037.</p>
+
+      <p>Thủ tướng hiện nay là <span class="nv" data-note="Abdulla Aripov (sinh 1961), Thủ tướng Uzbekistan từ tháng 12/2016.">Abdulla Aripov</span>, giữ chức từ năm 2016<a class="cite" href="#ref-1">[1]</a>. Một gương mặt ngày càng nổi bật là <span class="nv" data-note="Con gái lớn của Tổng thống Mirziyoyev; từ tháng 6/2025 là người đứng đầu Văn phòng Tổng thống sau khi bộ máy này được tái cơ cấu.">Saida Mirziyoyeva</span>, con gái Tổng thống, được bổ nhiệm làm người đứng đầu Văn phòng Tổng thống từ tháng <span class="tg">6/2025</span><a class="cite" href="#ref-6">[6]</a> và thường xuyên đại diện đất nước trong các cuộc gặp quốc tế. Giới quan sát vì thế đặt câu hỏi về kịch bản chuyển giao quyền lực trong tương lai — một chủ đề chính quyền không bàn công khai.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Dưới thời Karimov, kinh tế Uzbekistan vận hành theo kiểu “nửa Xô viết”: nhà nước kiểm soát ngoại hối, giá bông và lúa mì, đồng som có hai tỷ giá chính thức và chợ đen. Cuộc cải cách tháng 9/2017 thả nổi tỷ giá đã mở đường cho một làn sóng đầu tư nước ngoài, tư nhân hóa và mở cửa thương mại.</p>
+
+      <p>Năm 2025, GDP ước đạt khoảng <span class="tg">145 tỷ USD</span>, tăng trưởng quanh <span class="tg">7,5%</span>; xuất khẩu tăng khoảng 23%, còn dự trữ vàng và ngoại tệ vượt 55 tỷ euro<a class="cite" href="#ref-3">[3]</a>. GDP bình quân đầu người danh nghĩa được IMF ước khoảng <span class="tg">4.660 USD</span> năm 2026, tương đương hơn 14.000 USD theo sức mua tương đương<a class="cite" href="#ref-1">[1]</a>. Nền kinh tế dựa trên vài trụ cột: vàng (mỏ lộ thiên <span class="nv" data-note="Một trong những mỏ vàng lộ thiên lớn nhất thế giới, nằm giữa sa mạc Kyzylkum, do tập đoàn Navoi khai thác.">Muruntau</span> thuộc nhóm lớn nhất thế giới), khí đốt, đồng, bông và dệt may, nông sản — đặc biệt là trái cây, rau quả — cùng ngành ô tô lắp ráp hợp tác với các hãng nước ngoài.</p>
+
+      <p>Một nguồn thu không kém quan trọng là kiều hối. Năm 2025, người lao động ở nước ngoài gửi về <span class="tg">18,9 tỷ USD</span>, gấp ba lần năm 2020, trong đó gần 4/5 đến từ Nga<a class="cite" href="#ref-4">[4]</a>. Sự phụ thuộc này vừa là phao cứu sinh cho hàng triệu gia đình nông thôn, vừa khiến nền kinh tế nhạy cảm với biến động chính trị và kinh tế ở Nga. Mục tiêu dài hạn của chính phủ là đưa GDP lên 220–230 tỷ euro vào năm 2030 và gia nhập WTO<a class="cite" href="#ref-3">[3]</a>.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Xã hội Uzbek xoay quanh gia đình lớn và mahalla. Con cái thường sống gần cha mẹ, con trai út theo truyền thống ở lại chăm lo bố mẹ già, và đám cưới là sự kiện xã hội quan trọng bậc nhất — có thể mời hàng trăm khách và khiến cả gia đình phải tiết kiệm nhiều năm. Lòng hiếu khách được xem là danh dự: khách đến nhà luôn được mời trà và bày một mâm <i>dastarkhan</i> đầy bánh trái, kẹo, hoa quả khô.</p>
+
+      <p>Hồi giáo là nền tảng văn hóa của khoảng 94% dân số<a class="cite" href="#ref-1">[1]</a>, nhưng 70 năm Xô viết đã để lại một xã hội khá thế tục: nhiều người coi mình là Hồi giáo về bản sắc hơn là thực hành nghiêm ngặt. Dưới thời Karimov, nhà nước kiểm soát chặt hoạt động tôn giáo vì lo ngại chủ nghĩa cực đoan; thời Mirziyoyev nới lỏng hơn, cho phép đeo khăn trùm đầu nơi công cộng và mở lại nhiều nhà thờ Hồi giáo.</p>
+
+      <p>Về ngôn ngữ, tiếng Uzbek thuộc ngữ hệ Turk, gần với tiếng Duy Ngô Nhĩ, nhưng vay mượn rất nhiều từ tiếng Ba Tư và Ả Rập. Trong thế kỷ XX, chữ viết đã đổi ba lần — từ chữ Ả Rập sang Latinh (1928), sang Kirin (1940), rồi lại sang Latinh từ năm 1993 — và đến nay biển hiệu, sách báo vẫn dùng song song hai hệ chữ. Ngày lễ lớn nhất là <span class="nv" data-note="Tết năm mới của người Ba Tư và các dân tộc Trung Á, diễn ra vào ngày xuân phân (21/3); được UNESCO công nhận là di sản phi vật thể.">Navruz</span> (21/3), Tết đón xuân có nguồn gốc Ba Tư tiền Hồi giáo. Người Uzbek cũng tự hào về nghề thủ công: lụa ikat Margilan, gốm Rishtan, thêu suzani — và về âm nhạc cổ điển <i>shashmaqam</i> của Bukhara.</p>
+
+      <p>Về tâm lý xã hội, người Uzbek thường được mô tả là tôn trọng tuổi tác và thứ bậc, kín đáo khi bàn chuyện chính trị, nhưng rất cởi mở và nhiệt tình trong giao tiếp đời thường. Xã hội rất trẻ và tăng dân số nhanh; thế hệ lớn lên sau 2016 kết nối internet, học tiếng Anh và đi lao động nước ngoài nhiều hơn hẳn cha mẹ mình.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Plov — quốc hồn quốc túy</b>
+        Văn hóa và truyền thống nấu plov của Uzbekistan được UNESCO đưa vào danh sách di sản văn hóa phi vật thể năm 2016. Người ta nói ở Uzbekistan có bao nhiêu vùng thì có bấy nhiêu kiểu plov.
+      </aside>
+
+      <p>Ẩm thực Uzbek là ẩm thực của thảo nguyên gặp ốc đảo: thịt cừu và bò là trung tâm, mỡ đuôi cừu tạo vị béo đặc trưng, bột mì làm nên bánh, mì và vỏ bánh hấp, còn rau quả từ các ốc đảo — dưa, nho, lựu, mơ — làm nên tiếng tăm của những khu chợ. Món ăn đậm đà, nhiều dầu, ít cay và dùng gia vị kiểu Trung Á: thì là Ai Cập (zira), rau mùi, hạt tiêu đen.</p>
+
+      <p>Có những khác biệt vùng miền rõ rệt. Samarkand nổi tiếng với bánh mì tròn <i>non</i> giữ được nhiều ngày và plov xếp lớp. Bukhara giữ nhiều món ảnh hưởng Ba Tư và cộng đồng Do Thái cổ. Khwarazm (Khiva) có món <i>shivit oshi</i> — mì xanh trộn thì là. Thung lũng Fergana đông dân thì chuộng plov kiểu chảo lớn và các món nướng. Tashkent, thành phố đa sắc tộc, pha trộn ảnh hưởng Nga, Hàn (từ cộng đồng Koryo-saram bị Stalin cưỡng bức di cư) và Tatar.</p>
+
+      <p>Đồ uống quốc dân là trà xanh (<i>kok choy</i>), uống quanh năm trong những quán trà <i>choyxona</i>, nơi đàn ông tụ tập trên giường gỗ trải thảm. Chủ nhà rót trà chỉ đến lưng chén — chén đầy là ngầm ý mời khách về. Bánh mì <i>non</i> được coi là thiêng liêng: không bao giờ đặt úp, không bỏ đi, và thường được bẻ bằng tay chứ không dùng dao.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu của Uzbekistan</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Plov (Osh)</span><span class="pick-desc">Cơm thịt cừu nấu trong chảo gang lớn với cà rốt vàng, hành, tỏi nguyên củ và đậu gà — món ăn của mọi dịp lễ.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Non</span><span class="pick-desc">Bánh mì tròn nướng trong lò đất tandir, giữa in hoa văn bằng con dấu chekich.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Samsa</span><span class="pick-desc">Bánh nướng nhân thịt cừu và hành, vỏ giòn nhiều lớp, nướng sát thành lò tandir.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Shashlik</span><span class="pick-desc">Thịt cừu, bò hoặc gan xiên nướng trên than, ăn kèm hành tây ngâm giấm và bánh non.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Lagman</span><span class="pick-desc">Mì kéo tay với thịt và rau xào, gốc gác từ ẩm thực người Duy Ngô Nhĩ và Dungan.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Manti</span><span class="pick-desc">Bánh bao hấp to nhân thịt cừu băm và mỡ đuôi, chấm sữa chua hoặc kem chua.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Shurpa</span><span class="pick-desc">Súp thịt cừu hầm với khoai tây, cà rốt và đậu, ấm bụng mùa đông.</span></li>
+        <li><span class="pick-where">Tashkent</span><span class="pick-name">Norin</span><span class="pick-desc">Mì cắt sợi nhỏ trộn thịt ngựa luộc thái mỏng, ăn nguội — món sáng truyền thống.</span></li>
+        <li><span class="pick-where">Khwarazm</span><span class="pick-name">Shivit oshi</span><span class="pick-desc">Mì màu xanh lục nhờ nhồi thì là tươi, ăn với nước sốt thịt và sữa chua.</span></li>
+        <li><span class="pick-where">Navruz</span><span class="pick-name">Sumalak</span><span class="pick-desc">Chè mầm lúa mì nấu suốt đêm bên vạc lớn, gắn với nghi lễ đón xuân của phụ nữ.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Dưa vàng &amp; trái cây khô</span><span class="pick-desc">Dưa Mirzachul, nho khô, mơ khô nổi tiếng khắp Trung Á và Nga.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Văn hóa ăn uống Uzbek mang đậm tính cộng đồng. Plov thường do đàn ông nấu trong những chiếc chảo khổng lồ cho đám cưới, lễ cắt bao quy đầu hay “buổi plov sáng” — tục lệ đón khách từ sáng sớm trong các dịp đại sự. Bữa ăn luôn bắt đầu bằng trà, bánh và đồ ngọt, sau đó mới đến súp và món chính; plov thường được dọn sau cùng. Ăn bằng tay phải, chia sẻ chung đĩa lớn và mời khách thêm nhiều lần là phép lịch sự cơ bản.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Di sản mới nhất</b>
+        Tháng 7/2026, mười công trình hiện đại của Tashkent — dựng lên chủ yếu sau trận động đất 1966 — được ghi danh với tên “Kiến trúc hiện đại Tashkent: hiện đại và truyền thống ở Trung Á”, cho thấy UNESCO nay coi trọng cả di sản thế kỷ XX.
+      </aside>
+
+      <p>Uzbekistan hiện có <span class="tg">8 di sản thế giới</span> được UNESCO công nhận — 6 di sản văn hóa và 2 di sản thiên nhiên; di sản mới nhất là quần thể kiến trúc hiện đại Tashkent, được ghi danh năm <span class="tg">2026</span><a class="cite" href="#ref-7">[7]</a>. Từ khi miễn thị thực cho công dân nhiều nước và mở tuyến tàu cao tốc Afrosiyob nối Tashkent – Samarkand – Bukhara, du lịch trở thành ngành tăng trưởng nhanh.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Uzbekistan</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Samarkand</span><span class="pick-name">Quảng trường Registan</span><span class="pick-desc">Ba trường madrasa mái vòm xanh ngọc đối diện nhau — biểu tượng quốc gia, di sản từ 2001.</span></li>
+        <li><span class="pick-where">Samarkand</span><span class="pick-name">Shah-i-Zinda &amp; Gur-e-Amir</span><span class="pick-desc">Con đường lăng mộ phủ gạch men xanh lam và lăng Timur — hình mẫu cho Taj Mahal.</span></li>
+        <li><span class="pick-where">Bukhara</span><span class="pick-name">Trung tâm lịch sử Bukhara</span><span class="pick-desc">Tháp Kalyan cao hơn 45 m, thành Ark và hồ Lyab-i Hauz — thành phố cổ còn nguyên vẹn hơn 2.000 năm.</span></li>
+        <li><span class="pick-where">Khwarazm</span><span class="pick-name">Itchan Kala, Khiva</span><span class="pick-desc">Thành nội tường đất khép kín như bảo tàng ngoài trời; di sản đầu tiên của Uzbekistan (1990).</span></li>
+        <li><span class="pick-where">Kashkadarya</span><span class="pick-name">Shahrisabz</span><span class="pick-desc">Quê Timur với tàn tích cung điện Ak-Saray khổng lồ, di sản từ năm 2000.</span></li>
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Tashkent</span><span class="pick-desc">Quần thể Hast Imam giữ bản kinh Qur'an cổ, chợ Chorsu mái vòm và tàu điện ngầm như cung điện.</span></li>
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Kiến trúc hiện đại Tashkent</span><span class="pick-desc">Bê tông Xô viết khoác hoa văn Trung Á; di sản UNESCO mới nhất (2026).</span></li>
+        <li><span class="pick-where">Fergana</span><span class="pick-name">Margilan &amp; Rishtan</span><span class="pick-desc">Xưởng dệt lụa ikat thủ công và làng gốm men xanh lừng danh của thung lũng Fergana.</span></li>
+        <li><span class="pick-where">Karakalpakstan</span><span class="pick-name">Moynaq — nghĩa địa tàu</span><span class="pick-desc">Những con tàu gỉ sét nằm giữa sa mạc nơi từng là bờ biển Aral.</span></li>
+        <li><span class="pick-where">Karakalpakstan</span><span class="pick-name">Bảo tàng Savitsky, Nukus</span><span class="pick-desc">Kho tranh tiên phong Xô viết bị cấm đoán, được mệnh danh “Louvre của sa mạc”.</span></li>
+        <li><span class="pick-where">Đông Bắc</span><span class="pick-name">Chimgan – Hồ Charvak</span><span class="pick-desc">Núi Tây Thiên Sơn cách Tashkent hai giờ; trượt tuyết mùa đông, cắm trại mùa hè.</span></li>
+        <li><span class="pick-where">Navoi</span><span class="pick-name">Hồ Aydarkul &amp; Nuratau</span><span class="pick-desc">Hồ nước giữa sa mạc Kyzylkum, ngủ lều yurt và cưỡi lạc đà.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Chính sách “đa vector”</b>
+        Uzbekistan không tham gia khối quân sự CSTO do Nga dẫn dắt và cũng không vào Liên minh Kinh tế Á – Âu (chỉ là quan sát viên), đồng thời giữ quan hệ tốt với Trung Quốc, Mỹ, EU, Thổ Nhĩ Kỳ và các nước vùng Vịnh.
+      </aside>
+
+      <p>Về đối ngoại, Uzbekistan theo đuổi đường lối cân bằng giữa các cường quốc. Nga vẫn là đối tác lao động và an ninh quan trọng nhất, Trung Quốc là nhà đầu tư và bạn hàng lớn, còn phương Tây được xem là nguồn vốn, công nghệ và tính chính danh cho cải cách. Thời Mirziyoyev, Tashkent chủ động hòa giải với các láng giềng Trung Á — giải quyết phần lớn tranh chấp biên giới với Kyrgyzstan và Tajikistan — thay cho thái độ đối đầu thời Karimov.</p>
+
+      <p>Vấn đề kinh tế – đối ngoại lớn nhất hiện nay là gia nhập Tổ chức Thương mại Thế giới. Sau gần ba thập kỷ đàm phán, chính phủ đặt mục tiêu hoàn tất vào tháng <span class="tg">12/2026</span>; ngày 25/9/2026, Saida Mirziyoyeva đã gặp Tổng Giám đốc WTO để bàn các bước còn lại<a class="cite" href="#ref-9">[9]</a>.</p>
+
+      <p>Thách thức an ninh dài hạn là nước. Afghanistan đang đào kênh <span class="nv" data-note="Kênh thủy lợi do chính quyền Taliban khởi công năm 2022 ở miền bắc Afghanistan, lấy nước từ sông Amu Darya.">Qosh Tepa</span> dài khoảng <span class="tg">285 km</span>, có thể lấy đi khoảng <span class="tg">20%</span> lưu lượng sông Amu Darya, với hơn 200 km đã được đào và dự kiến xong năm 2028<a class="cite" href="#ref-8">[8]</a>. Với một nền nông nghiệp tưới tiêu ở hạ lưu và thảm họa biển Aral còn đó, đây là nguy cơ hiện hữu cho Uzbekistan và Turkmenistan; Tashkent hiện chọn cách đối thoại và hợp tác với chính quyền Taliban thay vì đối đầu.</p>
+
+      <p>Ở trong nước, giới quan sát quốc tế ghi nhận những thay đổi thực chất về kinh tế và tự do đi lại, nhưng nhận định cải cách chính trị còn hạn chế: báo chí độc lập bị kiểm soát, đối lập không có không gian hoạt động. Tháng 7/2022, đề xuất bỏ quyền ly khai của Karakalpakstan trong dự thảo hiến pháp đã gây ra biểu tình ở Nukus và bị dập tắt với nhiều người thiệt mạng, buộc chính quyền rút lại điều khoản này. Bên cạnh đó là các bài toán dân số trẻ cần việc làm, sự phụ thuộc vào kiều hối từ Nga và hậu quả môi trường của vùng Aral.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Uzbekistan</h2>
+      <ol class="funs">
+        <li><b>Chữ “algorithm” sinh ra từ đây.</b> Từ này là dạng Latinh hóa tên của al-Khwarizmi, nhà toán học người Khwarazm; còn “algebra” (đại số) bắt nguồn từ tên cuốn sách của ông.</li>
+        <li><b>Nội lục kép hiếm hoi.</b> Uzbekistan và Liechtenstein là hai quốc gia duy nhất phải vượt qua ít nhất hai biên giới mới ra được biển.</li>
+        <li><b>Plov là di sản UNESCO.</b> Văn hóa nấu plov được ghi danh di sản phi vật thể năm 2016; có những chảo plov nấu một lần đủ cho hàng nghìn người.</li>
+        <li><b>Tàu điện ngầm đầu tiên ở Trung Á.</b> Metro Tashkent khai trương năm 1977, mỗi ga trang trí như cung điện với đèn chùm và gốm men; lệnh cấm chụp ảnh chỉ được bỏ năm 2018.</li>
+        <li><b>Người sáng lập đế chế Mughal là người Fergana.</b> Babur sinh ở Andijan năm 1483; hậu duệ của ông về sau xây Taj Mahal ở Ấn Độ.</li>
+        <li><b>Bản đồ sao chính xác nhất thời trung đại.</b> Ulugh Beg ở Samarkand lập danh mục hơn 1.000 ngôi sao bằng một cung đo khổng lồ đào sâu vào lòng đất — phần còn lại vẫn có thể tham quan.</li>
+        <li><b>Một biển bị “uống cạn”.</b> Biển Aral co lại mạnh đến mức các thị trấn đánh cá như Moynaq nay cách mép nước hàng chục, thậm chí hơn trăm km<a class="cite" href="#ref-11">[11]</a>.</li>
+        <li><b>Ba lần đổi chữ trong một thế kỷ.</b> Chữ viết tiếng Uzbek chuyển từ Ả Rập sang Latinh, sang Kirin rồi trở lại Latinh — nên ba thế hệ trong một nhà có thể đọc ba bảng chữ khác nhau.</li>
+        <li><b>Lần đầu dự World Cup.</b> Uzbekistan là đội Trung Á đầu tiên dự World Cup năm 2026; dù dừng bước ở vòng bảng, bàn thắng của Eldor Shomurodov được trao giải bàn đẹp nhất vòng bảng<a class="cite" href="#ref-10">[10]</a>.</li>
+        <li><b>“Louvre của sa mạc”.</b> Ở Nukus xa xôi, Igor Savitsky đã lén sưu tầm hàng chục nghìn hiện vật và tranh tiên phong bị chính quyền Xô viết cấm, tạo nên một trong những bộ sưu tập nghệ thuật độc đáo nhất thế giới.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Uzbekistan có khoảng <span class="tg">38,4 triệu</span> dân — đông nhất Trung Á — diện tích <span class="tg">448.978 km²</span>, là nước “nội lục kép”.</li>
+        <li>Trục lịch sử: Sogdiana &amp; Khwarazm → Hồi giáo hóa → Samanid (Bukhara) → Mông Cổ (<span class="tg">1220</span>) → Timur (<span class="tg">1370</span>) → ba hãn quốc → Nga chinh phục (1865) → Xô viết (1924) → độc lập (<span class="tg">1991</span>).</li>
+        <li>Quê hương của al-Khwarizmi, al-Bukhari, al-Biruni, Ibn Sina, Timur, Ulugh Beg và Babur.</li>
+        <li>Islam Karimov cai trị 1991–2016; Shavkat Mirziyoyev từ <span class="tg">2016</span>, mở cửa kinh tế nhưng giữ quyền lực tập trung.</li>
+        <li>Hiến pháp <span class="tg">2023</span>: nhiệm kỳ tổng thống 7 năm, số nhiệm kỳ được đặt lại.</li>
+        <li>Kinh tế dựa vào vàng, khí đốt, bông, nông sản và kiều hối (<span class="tg">18,9 tỷ USD</span> năm 2025, gần 4/5 từ Nga).</li>
+        <li>Plov, bánh non và trà xanh là linh hồn ẩm thực; 8 di sản UNESCO, nổi bật là Samarkand, Bukhara, Khiva.</li>
+        <li>Vấn đề nóng: gia nhập WTO, kênh Qosh Tepa của Afghanistan, thảm họa biển Aral, cải cách chính trị chậm.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Nhà chinh phục nào đã biến Samarkand thành kinh đô một đế chế từ năm 1370, và người cháu nổi tiếng về thiên văn của ông là ai?</p>
+          <details><summary>Xem đáp án</summary><p>Timur (Tamerlane); cháu nội ông là Ulugh Beg, người xây đài thiên văn Samarkand những năm 1420.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Từ tiếng Anh nào bắt nguồn từ tên một nhà toán học người Khwarazm?</p>
+          <details><summary>Xem đáp án</summary><p>“Algorithm” — từ tên al-Khwarizmi (khoảng 780–850); “algebra” lấy từ tên cuốn sách của ông.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Cuộc trưng cầu dân ý năm 2023 đã thay đổi điều gì quan trọng nhất về chức vụ tổng thống?</p>
+          <details><summary>Xem đáp án</summary><p>Kéo dài nhiệm kỳ từ 5 lên 7 năm và đặt lại số nhiệm kỳ, cho phép Mirziyoyev tranh cử thêm hai lần.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Món ăn quốc gia của Uzbekistan là gì, gồm những nguyên liệu chính nào?</p>
+          <details><summary>Xem đáp án</summary><p>Plov (osh): gạo nấu chảo gang với thịt cừu, cà rốt vàng, hành, tỏi và đậu gà; được UNESCO công nhận năm 2016.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Kể tên ít nhất bốn di sản thế giới UNESCO của Uzbekistan.</p>
+          <details><summary>Xem đáp án</summary><p>Itchan Kala (Khiva), Trung tâm lịch sử Bukhara, Shahrisabz, Samarkand – Ngã tư các nền văn hóa, Tây Thiên Sơn, Hành lang Zarafshan – Karakum, Sa mạc mùa đông lạnh Turan, Kiến trúc hiện đại Tashkent.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Vì sao kênh Qosh Tepa của Afghanistan khiến Uzbekistan lo ngại?</p>
+          <details><summary>Xem đáp án</summary><p>Kênh dài khoảng 285 km có thể lấy đi khoảng 20% lưu lượng sông Amu Darya — nguồn nước sống còn của nông nghiệp hạ lưu, nơi vốn đã chịu thảm họa biển Aral.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Uzbekistan</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp diện tích, cơ cấu tôn giáo 2025, GDP theo IMF World Economic Outlook 2026, lãnh đạo hiện tại). <a href="https://en.wikipedia.org/wiki/Uzbekistan" target="_blank" rel="noopener">en.wikipedia.org/wiki/Uzbekistan</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-2">Kun.uz (dẫn số liệu Cơ quan Thống kê Quốc gia Uzbekistan). <i>Uzbekistan’s population nears 38.4 million with 1.8% annual growth</i>. 16/4/2026. <a href="https://kun.uz/en/news/2026/04/16/uzbekistans-population-nears-384-million-with-18-annual-growth" target="_blank" rel="noopener">kun.uz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-3">Euronews. <i>Uzbekistan economy grows in 2025 driven by investment and exports</i>. 19/1/2026. <a href="https://euronews.com/business/2026/01/19/uzbekistan-economy-grows-in-2025-driven-by-investment-and-exports" target="_blank" rel="noopener">euronews.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-4">Kun.uz (dẫn số liệu Ngân hàng Trung ương Uzbekistan). <i>Remittances to Uzbekistan exceed $18.9 billion, tripling in five years</i>. 17/3/2026. <a href="https://kun.uz/en/news/2026/03/17/remittances-to-uzbekistan-exceed-189-billion-tripling-in-five-years" target="_blank" rel="noopener">kun.uz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-5">Wikipedia contributors. <i>2023 Uzbek presidential election</i>. Wikipedia, Bách khoa toàn thư mở (kết quả bầu cử, trưng cầu dân ý 30/4/2023, đánh giá của OSCE/ODIHR). <a href="https://en.wikipedia.org/wiki/2023_Uzbek_presidential_election" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-6">Kun.uz. <i>Saida Mirziyoyeva appointed Head of Uzbekistan’s reorganized Presidential Administration</i>. 23/6/2025. <a href="https://kun.uz/en/news/2025/06/23/saida-mirziyoyeva-appointed-head-of-uzbekistans-reorganized-presidential-administration" target="_blank" rel="noopener">kun.uz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-7">Wikipedia contributors. <i>List of World Heritage Sites in Uzbekistan</i>. Wikipedia, Bách khoa toàn thư mở (8 di sản, cập nhật 2026); xem thêm Euronews, <i>Grand designs: Tashkent’s modernist architecture joins UNESCO World Heritage list</i>, 2/8/2026. <a href="https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Uzbekistan" target="_blank" rel="noopener">en.wikipedia.org</a> · <a href="https://www.euronews.com/2026/08/02/grand-designs-tashkents-modernist-architecture-joins-unesco-world-heritage-list" target="_blank" rel="noopener">euronews.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-8">The Times of Central Asia. <i>Afghanistan advances Qosh Tepa canal while urging regional water cooperation</i>. <a href="https://timesca.com/afghanistan-advances-qosh-tepa-canal-while-urging-regional-water-cooperation/" target="_blank" rel="noopener">timesca.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-9">Kun.uz. <i>Saida Mirziyoyeva meets WTO chief to discuss Uzbekistan’s membership bid</i>. 25/9/2026. <a href="https://kun.uz/en/news/2026/09/25/saida-mirziyoyeva-meets-wto-chief-to-discuss-uzbekistans-membership-bid" target="_blank" rel="noopener">kun.uz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-10">Zamin.uz. <i>How did FIFA evaluate Uzbekistan’s historic debut at the 2026 World Cup?</i>. 2026. <a href="https://zamin.uz/en/sport/213976-how-did-fifa-evaluate-uzbekistan-s-historic-debut-at-the-2026-world-cup.html" target="_blank" rel="noopener">zamin.uz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-11">NASA Earth Observatory. <i>World of Change: Shrinking Aral Sea</i>. <a href="https://earthobservatory.nasa.gov/world-of-change/AralSea" target="_blank" rel="noopener">earthobservatory.nasa.gov</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-12">Central Intelligence Agency. <i>The World Factbook: Uzbekistan</i> (cơ cấu dân tộc, ước tính 2017). <a href="https://www.cia.gov/the-world-factbook/countries/uzbekistan/" target="_blank" rel="noopener">cia.gov</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, kiều hối) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Các chi tiết còn tranh cãi — như số người thiệt mạng ở Andijan 2005 và Nukus 2022, hay vai trò của gia đình Tổng thống trong chính trường — được trình bày ở mức khái quát, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
