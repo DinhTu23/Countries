@@ -1,0 +1,1151 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Nepal — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<!-- quốc kỳ Nepal không phải hình chữ nhật: bỏ khung chữ nhật, giữ bóng đổ theo đường viền cờ -->
+<style>
+.flag.flag-pennant{width:clamp(92px,20vw,116px);}
+.flag.flag-pennant svg{border:none;border-radius:0;box-shadow:none;filter:drop-shadow(0 1px 1px rgba(74,53,25,.18)) drop-shadow(0 6px 14px rgba(74,53,25,.14));}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Nepal</div>
+          <h1>Nepal</h1>
+          <div class="period">Châu Á · Nam Á</div>
+        </div>
+        <figure class="flag flag-pennant">
+          <svg viewBox="-2.582 -4.664 71.571 87.246" role="img" aria-label="Quốc kỳ Nepal: hai hình tam giác đỏ thắm chồng lên nhau, viền xanh lam, mặt trăng trắng ở tam giác trên và mặt trời trắng ở tam giác dưới">
+            <polygon points="0,0 60,37.574 17.574,37.574 60,80 0,80" fill="#003893" stroke="#003893" stroke-width="5.165" stroke-linejoin="miter" stroke-miterlimit="10"/>
+            <polygon points="0,0 60,37.574 17.574,37.574 60,80 0,80" fill="#dc143c"/>
+            <g fill="#ffffff">
+              <path d="M3.05,23.483 A11.95,11.95 0 0 0 26.95,23.483 A12.84,12.84 0 0 1 3.05,23.483 Z"/>
+              <path d="M9.439,29.045 L7.425,27.538 L9.862,26.916 L8.578,24.754 L11.068,25.112 L10.709,22.623 L12.872,23.907 L13.493,21.47 L15,23.483 L16.507,21.47 L17.128,23.907 L19.291,22.623 L18.932,25.112 L21.422,24.754 L20.138,26.916 L22.575,27.538 L20.561,29.045 Z"/>
+              <path d="M12.892,50.921 L15,45.947 L17.108,50.921 L21.42,47.667 L20.758,53.029 L26.12,52.367 L22.866,56.679 L27.84,58.787 L22.866,60.894 L26.12,65.207 L20.758,64.545 L21.42,69.907 L17.108,66.653 L15,71.627 L12.892,66.653 L8.58,69.907 L9.242,64.545 L3.88,65.207 L7.134,60.894 L2.16,58.787 L7.134,56.679 L3.88,52.367 L9.242,53.029 L8.58,47.667 Z"/>
+              <circle cx="15" cy="58.787" r="8.143"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Nepal là một dải đất hẹp kẹp giữa hai gã khổng lồ Ấn Độ và Trung Quốc, nhưng lại chứa tám trong mười bốn đỉnh núi cao nhất hành tinh, kể cả Everest. Đây là quê hương của Đức Phật, là vương quốc Hindu cuối cùng trên thế giới cho tới năm 2008, và là một trong số rất ít nước châu Á chưa từng bị biến thành thuộc địa. Sau hai thập kỷ chuyển đổi từ quân chủ sang cộng hòa liên bang, năm 2025 làn sóng biểu tình của thế hệ Gen Z đã lật đổ chính phủ, và năm 2026 cử tri trao quyền lực cho một cựu rapper 35 tuổi. Nếu chỉ nhớ một điều về Nepal, hãy nhớ: đây là đất nước sống bằng nghệ thuật giữ thăng bằng — giữa núi và đồng bằng, giữa Hindu và Phật giáo, giữa New Delhi và Bắc Kinh, giữa thế hệ cũ và thế hệ mới.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">147.181 km²<a class="cite" href="#ref-1">[1]</a><small>Bản đồ chính thức của Nepal (2020) ghi 147.516 km²</small></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~29,2 triệu<a class="cite" href="#ref-1">[1]</a><small>Tổng điều tra dân số 2021</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Kathmandu</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Nepal<small>trong số 123 tiếng mẹ đẻ<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Hindu giáo ~81%<a class="cite" href="#ref-1">[1]</a><small>Phật giáo ~8%, Hồi giáo ~5%, Kirat ~3%</small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Rupee Nepal (रू, NPR)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~1.513 USD<a class="cite" href="#ref-2">[2]</a><small>danh nghĩa, ước tính sơ bộ năm tài khóa 2025/26</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~TK VI – V TCN</span>
+          <span class="tl-what">Đức Phật đản sinh</span>
+          <span class="tl-note">Thái tử Siddhartha Gautama ra đời tại Lumbini, vùng Terai phía nam Nepal ngày nay</span>
+        </li>
+        <li>
+          <span class="tl-when">~TK IV – V</span>
+          <span class="tl-what">Vương triều Licchavi</span>
+          <span class="tl-note">Nhà nước có văn bia đầu tiên ở thung lũng Kathmandu, giao thương rộng với Ấn Độ và Tây Tạng</span>
+        </li>
+        <li>
+          <span class="tl-when">879</span>
+          <span class="tl-what">Mở đầu lịch Nepal Sambat</span>
+          <span class="tl-note">Kỷ nguyên lịch riêng của người Newar, đến nay vẫn được dùng song song trong lễ hội</span>
+        </li>
+        <li>
+          <span class="tl-when">~1200</span>
+          <span class="tl-what">Thời Malla</span>
+          <span class="tl-note">Các vua Malla mở ra thời hoàng kim của nghệ thuật, kiến trúc chùa tháp Newar</span>
+        </li>
+        <li>
+          <span class="tl-when">cuối TK XV</span>
+          <span class="tl-what">Thung lũng chia ba</span>
+          <span class="tl-note">Sau Yaksha Malla, Kathmandu, Patan và Bhaktapur tách thành ba vương quốc kình địch</span>
+        </li>
+        <li>
+          <span class="tl-when">1768</span>
+          <span class="tl-what">Thống nhất Nepal</span>
+          <span class="tl-note">Vua xứ Gorkha Prithvi Narayan Shah chiếm Kathmandu, đặt nền móng nhà nước Nepal hiện đại</span>
+        </li>
+        <li>
+          <span class="tl-when">1814 – 1816</span>
+          <span class="tl-what">Chiến tranh Anh – Nepal</span>
+          <span class="tl-note">Hiệp ước Sugauli buộc Nepal nhượng nhiều lãnh thổ, nhưng giữ được độc lập</span>
+        </li>
+        <li>
+          <span class="tl-when">1846</span>
+          <span class="tl-what">Thảm sát Kot &amp; nhà Rana</span>
+          <span class="tl-note">Jung Bahadur Rana nắm quyền, lập chế độ thừa tướng cha truyền con nối suốt 104 năm</span>
+        </li>
+        <li>
+          <span class="tl-when">1951</span>
+          <span class="tl-what">Chấm dứt chế độ Rana</span>
+          <span class="tl-note">Cách mạng dân chủ đưa vua Tribhuvan trở lại nắm quyền, Nepal mở cửa với thế giới</span>
+        </li>
+        <li>
+          <span class="tl-when">29/5/1953</span>
+          <span class="tl-what">Chinh phục Everest</span>
+          <span class="tl-note">Tenzing Norgay và Edmund Hillary là những người đầu tiên đứng trên nóc nhà thế giới</span>
+        </li>
+        <li>
+          <span class="tl-when">1960</span>
+          <span class="tl-what">Chế độ Panchayat</span>
+          <span class="tl-note">Vua Mahendra giải tán quốc hội, cấm đảng phái, cai trị qua hệ thống hội đồng không đảng</span>
+        </li>
+        <li>
+          <span class="tl-when">1990</span>
+          <span class="tl-what">Phong trào Nhân dân I</span>
+          <span class="tl-note">Jana Andolan khôi phục đa đảng, Nepal thành nền quân chủ lập hiến</span>
+        </li>
+        <li>
+          <span class="tl-when">1996 – 2006</span>
+          <span class="tl-what">Nội chiến &amp; thảm sát hoàng gia</span>
+          <span class="tl-note">Nổi dậy Maoist làm khoảng 16.000 người chết; năm 2001 vua Birendra bị sát hại cùng gia đình</span>
+        </li>
+        <li>
+          <span class="tl-when">28/5/2008</span>
+          <span class="tl-what">Nước cộng hòa ra đời</span>
+          <span class="tl-note">Quốc hội lập hiến bãi bỏ chế độ quân chủ 240 năm của nhà Shah</span>
+        </li>
+        <li>
+          <span class="tl-when">2015</span>
+          <span class="tl-what">Động đất &amp; Hiến pháp mới</span>
+          <span class="tl-note">Trận động đất tháng 4 tàn phá miền trung; ngày 20/9 Nepal thông qua hiến pháp liên bang 7 tỉnh</span>
+        </li>
+        <li>
+          <span class="tl-when">2025 – 2026</span>
+          <span class="tl-what">Cách mạng Gen Z</span>
+          <span class="tl-note">Biểu tình lật đổ chính phủ Oli; bầu cử 5/3/2026 đưa Balen Shah lên làm Thủ tướng</span>
+        </li>
+      </ol>
+      <p class="band-foot">Năm sinh của Đức Phật vẫn còn tranh cãi giữa các học giả (thường được đặt quanh thế kỷ VI hoặc V TCN). Niên đại thời Licchavi và đầu thời Malla dựa chủ yếu vào văn bia và biên niên sử chép muộn, nên chỉ mang tính gần đúng.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Vì sao có hai con số diện tích</b>
+        Năm 2020, Nepal công bố bản đồ mới đưa vùng Kalapani – Lipulekh – Limpiyadhura (đang do Ấn Độ quản lý) vào lãnh thổ, nâng diện tích chính thức lên 147.516 km². Các nguồn quốc tế phần lớn vẫn dùng con số cũ 147.181 km².
+      </aside>
+
+      <p class="lede">Nepal là một quốc gia không giáp biển, dài và hẹp như một bậc thang khổng lồ: từ đồng bằng Terai gần ngang mực nước biển ở phía nam vọt lên tới đỉnh Everest cao 8.848,86 m ở phía bắc, chỉ trong khoảng 150–250 km.</p>
+
+      <p>Với diện tích khoảng <span class="tg">147.181 km²</span><a class="cite" href="#ref-1">[1]</a> — nhỏ hơn nửa Việt Nam — Nepal giáp <span class="nv" data-note="Khu tự trị Tây Tạng của Trung Quốc nằm ở phía bắc, ngăn cách với Nepal bởi dãy Himalaya.">Tây Tạng (Trung Quốc)</span> ở phía bắc và Ấn Độ ở ba mặt còn lại. Địa hình chia thành ba dải song song. Dải <b>Himal</b> phía bắc là vùng núi tuyết, nơi có tám trong mười bốn đỉnh trên 8.000 m của thế giới, gồm Everest, Kangchenjunga, Lhotse, Makalu, Cho Oyu, Dhaulagiri, Manaslu và Annapurna. Dải <b>Pahad</b> ở giữa là vùng đồi núi trung du với những thung lũng màu mỡ như Kathmandu và Pokhara — cái nôi văn minh của đất nước. Dải <b>Terai</b> phía nam là đồng bằng phù sa nối dài từ đồng bằng sông Hằng, vựa lúa và nơi tập trung gần một nửa dân số.</p>
+
+      <p>Sự chênh lệch độ cao ấy tạo nên một trong những dải khí hậu đa dạng nhất hành tinh: từ rừng nhiệt đới có tê giác một sừng và hổ Bengal ở Chitwan, đến rừng đỗ quyên — quốc hoa — ở trung du, rồi băng hà vĩnh cửu trên Himalaya. Gió mùa mùa hè mang lại phần lớn lượng mưa trong năm, cũng là mùa sạt lở đất thường xuyên. Nepal còn nằm ngay trên đường va chạm giữa mảng kiến tạo Ấn Độ và Á – Âu, nên động đất là mối đe dọa thường trực.</p>
+
+      <p>Theo tổng điều tra năm 2021, Nepal có khoảng <span class="tg">29,2 triệu người</span><a class="cite" href="#ref-1">[1]</a>, thuộc <span class="tg">125 nhóm sắc tộc – đẳng cấp</span> và nói <span class="tg">123 tiếng mẹ đẻ</span><a class="cite" href="#ref-1">[1]</a>. Có thể hình dung bốn khối lớn: các dân tộc bản địa <i>Janajati</i> (khoảng 35%, như Magar, Tamang, Newar, Rai, Gurung, Sherpa), nhóm <i>Khas Arya</i> nói tiếng Nepal gồm các đẳng cấp Bahun (Brahmin) và Chhetri (khoảng 30%), người <i>Madheshi</i> ở đồng bằng Terai (khoảng 16%) và cộng đồng <i>Dalit</i> từng bị coi là “tiện dân” (khoảng 14%)<a class="cite" href="#ref-1">[1]</a>. Tiếng Nepal, viết bằng chữ Devanagari, là ngôn ngữ chung; nhưng tiếng Maithili, Bhojpuri, Tharu, Tamang hay Newar vẫn là tiếng mẹ đẻ của hàng triệu người.</p>
+
+      <p>Dân số tăng rất chậm vì một hiện tượng đặc trưng: di cư lao động. Hàng triệu thanh niên Nepal đang làm việc ở Ấn Độ, các nước vùng Vịnh, Malaysia, Hàn Quốc hay Nhật Bản; ở nhiều làng miền núi, gần như chỉ còn người già, phụ nữ và trẻ em. Trong khi đó, thung lũng Kathmandu phình to nhanh chóng, với kẹt xe, ô nhiễm không khí và nạn xây dựng tự phát.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Nepal là câu chuyện của một thung lũng nhỏ trở thành một quốc gia — và của những triều đại học cách tồn tại giữa các đế chế lớn bằng cả gươm giáo lẫn sự khéo léo.</p>
+
+      <p><b>Thời cổ đại.</b> Thung lũng Kathmandu từng là một hồ nước cổ; truyền thuyết Phật giáo kể rằng Bồ Tát <span class="nv" data-note="Bồ Tát trí tuệ trong Phật giáo Đại thừa; theo truyền thuyết Newar, ngài dùng gươm chém núi cho nước hồ thoát đi, tạo ra thung lũng Kathmandu.">Manjushri</span> đã chém núi cho nước thoát đi để con người đến ở. Ở vùng Terai, khoảng thế kỷ VI hoặc V TCN, thái tử <span class="nv" data-note="Tức Đức Phật Thích Ca Mâu Ni, sinh tại vườn Lumbini, thuộc dòng tộc Thích Ca (Shakya) với kinh thành Kapilavastu.">Siddhartha Gautama</span> chào đời tại <span class="nv" data-note="Nơi Đức Phật đản sinh, nay thuộc tỉnh Lumbini; di sản thế giới UNESCO từ năm 1997.">Lumbini</span>. Vài thế kỷ sau, hoàng đế Ấn Độ Ashoka dựng một trụ đá có khắc chữ tại đây để đánh dấu thánh tích — bằng chứng vật chất quan trọng nhất về nơi Đức Phật ra đời.</p>
+
+      <p><b>Licchavi và Malla (TK IV – 1768).</b> Khoảng thế kỷ IV – V, vương triều <span class="nv" data-note="Vương triều để lại những văn bia chữ Phạn sớm nhất ở thung lũng Kathmandu; gắn với thời Amshuverma (TK VII) và quan hệ hôn nhân với triều đình Tây Tạng.">Licchavi</span> dựng nên nhà nước đầu tiên có văn bia ở thung lũng Kathmandu, nằm trên con đường thương mại nối Ấn Độ với Tây Tạng. Từ khoảng năm <span class="tg">1200</span>, các vua <span class="nv" data-note="Các vương triều cai trị thung lũng Kathmandu từ khoảng năm 1200 đến 1768, bảo trợ nghệ thuật Newar và xây dựng ba quảng trường Durbar.">Malla</span> mở ra thời hoàng kim của văn hóa Newar: chùa tháp nhiều tầng mái, tượng đồng, gỗ chạm khắc tinh xảo. Sau khi vua Yaksha Malla mất vào cuối thế kỷ XV, thung lũng bị chia thành ba vương quốc Kathmandu, Patan và Bhaktapur. Ba vương quốc kình địch nhau bằng cách thi nhau xây dựng — và chính cuộc thi đua ấy để lại ba quảng trường Durbar lộng lẫy ngày nay.</p>
+
+      <aside class="sidenote">
+        <b>Gorkha — cái tên đi khắp thế giới</b>
+        Gorkha là một tiểu quốc nhỏ trên đồi phía tây Kathmandu. Từ tên gọi này mà có từ “Gurkha” — chỉ những người lính Nepal nổi tiếng thiện chiến, được Anh tuyển mộ từ sau chiến tranh 1814–1816 đến tận ngày nay.
+      </aside>
+
+      <p><b>Thống nhất và bành trướng (1743 – 1816).</b> Vua xứ Gorkha là <span class="nv" data-note="Vị vua (1723–1775) được coi là người khai quốc Nepal hiện đại; ông ví Nepal như “củ khoai giữa hai tảng đá” Trung Hoa và Ấn Độ.">Prithvi Narayan Shah</span> dành hơn hai mươi năm chinh phục các tiểu quốc xung quanh và chiếm Kathmandu ngày <span class="tg">25/9/1768</span><a class="cite" href="#ref-1">[1]</a>. Ông để lại một câu nói nổi tiếng: Nepal như “củ khoai kẹp giữa hai tảng đá” — một chỉ dẫn chiến lược mà giới ngoại giao Nepal vẫn nhắc đến hôm nay. Những người kế vị tiếp tục bành trướng, có lúc lãnh thổ kéo dài từ sông Teesta ở phía đông đến sông Sutlej ở phía tây. Cuộc bành trướng ấy va chạm với Công ty Đông Ấn Anh, dẫn đến chiến tranh <span class="tg">1814 – 1816</span>. Hiệp ước <span class="nv" data-note="Hiệp ước ký năm 1815, phê chuẩn năm 1816, xác lập phần lớn biên giới Nepal ngày nay, trong đó sông Mahakali là ranh giới phía tây.">Sugauli</span> buộc Nepal nhượng khoảng một phần ba lãnh thổ, nhưng đất nước vẫn giữ được độc lập.</p>
+
+      <p><b>Thời Rana (1846 – 1951).</b> Năm <span class="tg">1846</span>, sau cuộc thảm sát Kot tại sân triều đình, <span class="nv" data-note="Thừa tướng (1817–1877) lập ra chế độ Rana; ông là người Nepal đầu tiên thăm châu Âu (1850) và ban hành bộ luật Muluki Ain năm 1854.">Jung Bahadur Rana</span> giành quyền lực và biến chức thừa tướng thành chức vụ cha truyền con nối trong gia tộc mình, còn vua Shah chỉ là bù nhìn. Nhà Rana giữ Nepal gần như đóng cửa hoàn toàn với thế giới, đổi lại sự ủng hộ của Anh bằng việc cung cấp lính Gurkha. Bộ luật Muluki Ain năm 1854 đã luật hóa hệ thống đẳng cấp — một di sản mà xã hội Nepal còn phải gỡ đến tận hôm nay.</p>
+
+      <p><b>Từ cách mạng đến Panchayat (1951 – 1990).</b> Năm <span class="tg">1951</span>, một cuộc cách mạng do Đảng Đại hội Nepal dẫn dắt, với sự hậu thuẫn của Ấn Độ mới độc lập, đã chấm dứt chế độ Rana và đưa vua <span class="nv" data-note="Vua Nepal (1906–1955), người chạy sang Đại sứ quán Ấn Độ năm 1950 để chống nhà Rana, trở về nắm quyền năm 1951.">Tribhuvan</span> trở lại. Nepal mở cửa, gia nhập Liên Hợp Quốc năm 1955, và cuộc bầu cử đầu tiên năm 1959 đưa B. P. Koirala lên làm thủ tướng. Nhưng chỉ một năm sau, năm <span class="tg">1960</span>, vua <span class="nv" data-note="Vua Nepal (1920–1972), người giải tán chính phủ dân cử năm 1960 và lập chế độ Panchayat không đảng phái.">Mahendra</span> giải tán quốc hội, cấm đảng phái và lập chế độ Panchayat, đặt mọi quyền lực trong tay nhà vua suốt ba mươi năm.</p>
+
+      <p><b>Dân chủ, nội chiến và thảm kịch (1990 – 2008).</b> Phong trào Nhân dân (Jana Andolan) năm <span class="tg">1990</span> khôi phục chế độ đa đảng và quân chủ lập hiến. Thế nhưng chính trị bất ổn và bất bình đẳng ở nông thôn đã nuôi dưỡng cuộc nổi dậy của Đảng Cộng sản Nepal (Maoist) từ năm <span class="tg">1996</span>, kéo dài mười năm và cướp đi khoảng <span class="tg">16.000</span> sinh mạng<a class="cite" href="#ref-1">[1]</a>. Giữa cuộc chiến, ngày 1/6/2001, thái tử <span class="nv" data-note="Thái tử Nepal (1971–2001); theo kết luận chính thức, ông đã bắn chết vua cha, hoàng hậu cùng nhiều thành viên hoàng tộc rồi tự sát. Nhiều người dân Nepal đến nay vẫn nghi ngờ phiên bản này.">Dipendra</span> được cho là đã xả súng giết vua <span class="nv" data-note="Vua Nepal (1945–2001), được dân chúng quý mến; người đã chấp nhận chế độ quân chủ lập hiến năm 1990.">Birendra</span> cùng nhiều thành viên hoàng tộc. Người kế vị là vua <span class="nv" data-note="Vị vua cuối cùng của Nepal (trị vì 2001–2008); việc ông giải tán chính phủ và nắm toàn quyền năm 2005 dẫn tới sự sụp đổ của chế độ quân chủ.">Gyanendra</span> nắm toàn quyền năm 2005, khiến các đảng và phe Maoist liên minh lại. Phong trào Nhân dân lần II năm 2006 buộc nhà vua trao trả quyền lực, hiệp định hòa bình được ký cùng năm, và ngày <span class="tg">28/5/2008</span> Quốc hội lập hiến bãi bỏ chế độ quân chủ 240 năm.</p>
+
+      <p><b>Cộng hòa liên bang (2008 – nay).</b> Sau bảy năm tranh cãi, Hiến pháp ngày <span class="tg">20/9/2015</span> biến Nepal thành nước cộng hòa dân chủ liên bang thế tục với bảy tỉnh — chỉ vài tháng sau trận động đất ngày 25/4/2015 làm gần 9.000 người thiệt mạng. Nhưng “trò chơi ghế” giữa ba lão tướng K. P. Sharma Oli, Sher Bahadur Deuba và Pushpa Kamal Dahal (Prachanda) khiến chính phủ thay đổi liên tục, tham nhũng tràn lan. Tháng <span class="tg">9/2025</span>, lệnh chặn mạng xã hội trở thành giọt nước tràn ly: biểu tình của thế hệ Gen Z làm ít nhất <span class="tg">76 người</span> chết, tòa nhà quốc hội bị đốt, Thủ tướng Oli từ chức ngày 9/9<a class="cite" href="#ref-3">[3]</a>. Bản sắc Nepal hôm nay là sự giao thoa giữa văn minh Ấn – Hindu ở đồng bằng và văn hóa Tây Tạng – Phật giáo trên núi, được buộc chặt bởi niềm tự hào chưa từng là thuộc địa — và giờ thêm vào đó là tiếng nói nôn nóng của một thế hệ trẻ muốn đất nước thay đổi thật sự.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Nepal</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, vai trò chủ yếu mang tính nghi lễ; hiện là Ram Chandra Paudel</span>
+        </li>
+        <li>
+          <span class="tier-role">Thủ tướng &amp; Hội đồng Bộ trưởng · Quốc hội liên bang</span>
+          <span class="tier-desc">Hành pháp do Thủ tướng đứng đầu; Hạ viện 275 ghế và Thượng viện 59 ghế</span>
+        </li>
+        <li>
+          <span class="tier-role">7 tỉnh</span>
+          <span class="tier-desc">Mỗi tỉnh có hội đồng tỉnh và thủ hiến riêng, theo Hiến pháp 2015</span>
+        </li>
+        <li>
+          <span class="tier-role">753 đơn vị chính quyền địa phương</span>
+          <span class="tier-desc">Thành phố đô thị lớn, thành phố, đô thị và xã nông thôn — cấp gần dân nhất</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Hệ thống bầu cử hỗn hợp</b>
+        Trong 275 ghế Hạ viện, 165 ghế bầu trực tiếp theo khu vực (đa số tương đối), 110 ghế chia theo tỷ lệ phiếu đảng. Cơ chế này vốn được thiết kế để không đảng nào dễ dàng chiếm đa số — điều khiến chiến thắng năm 2026 càng gây bất ngờ.
+      </aside>
+
+      <p>Nepal là nước cộng hòa nghị viện liên bang. Tổng thống do một đại cử tri đoàn gồm nghị sĩ liên bang và tỉnh bầu ra, giữ vai trò nguyên thủ mang tính biểu tượng; quyền điều hành thực sự nằm ở Thủ tướng, người lãnh đạo đảng hoặc liên minh chiếm đa số tại Hạ viện. Hiến pháp 2015 tuyên bố Nepal là nhà nước thế tục, dù vẫn bảo hộ con bò — linh vật của Hindu giáo — với tư cách quốc thú.</p>
+
+      <p>Cuộc bầu cử ngày <span class="tg">5/3/2026</span> đã thay đổi hoàn toàn bàn cờ chính trị. <span class="nv" data-note="Rastriya Swatantra Party — Đảng Độc lập Quốc gia, thành lập năm 2022, định vị là lực lượng chống tham nhũng và chống “đảng cũ”.">Đảng Độc lập Quốc gia (RSP)</span> giành <span class="tg">182/275 ghế</span>, vượt xa ngưỡng đa số 138 ghế; Đại hội Nepal chỉ còn 38 ghế, CPN (UML) của ông Oli còn 25 ghế. Đây là lần đầu tiên kể từ năm 1999 một đảng đơn độc chiếm đa số, và là kết quả tốt thứ hai trong lịch sử bầu cử Nepal<a class="cite" href="#ref-3">[3]</a>.</p>
+
+      <p>Ngày <span class="tg">27/3/2026</span>, <span class="nv" data-note="Sinh năm 1990 tại Kathmandu; kỹ sư kết cấu, rapper hip-hop, thị trưởng Kathmandu từ 2022, gia nhập RSP tháng 1/2026 và đánh bại cựu Thủ tướng Oli ngay tại khu vực Jhapa-5.">Balen Shah</span> tuyên thệ nhậm chức Thủ tướng ở tuổi 35<a class="cite" href="#ref-4">[4]</a><a class="cite" href="#ref-8">[8]</a>. Chính phủ của ông thu gọn số bộ từ 22 xuống 17, công bố “Hiến chương quản trị 100 điểm” và đặt trọng tâm vào chống tham nhũng, số hóa dịch vụ công<a class="cite" href="#ref-8">[8]</a>. Trước đó, từ ngày 12/9/2025, cựu Chánh án <span class="nv" data-note="Cựu Chánh án Tòa án Tối cao Nepal, người phụ nữ đầu tiên đứng đầu chính phủ Nepal, giữ chức Thủ tướng lâm thời từ 9/2025 đến 3/2026.">Sushila Karki</span> đã giữ chức Thủ tướng lâm thời — người phụ nữ đầu tiên lãnh đạo chính phủ Nepal — để tổ chức cuộc bầu cử này<a class="cite" href="#ref-3">[3]</a>.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Nepal vẫn là một trong những nền kinh tế nhỏ nhất châu Á. Theo ước tính sơ bộ của Cơ quan Thống kê Quốc gia, quy mô GDP năm tài khóa 2025/26 vào khoảng <span class="tg">6.600 tỷ rupee</span>, tăng trưởng khoảng <span class="tg">3,85%</span>, và thu nhập bình quân đầu người đạt khoảng <span class="tg">1.513 USD</span><a class="cite" href="#ref-2">[2]</a> — chưa bằng một phần ba mức của Việt Nam. Nông nghiệp vẫn nuôi sống phần lớn lao động, nhưng đóng góp ngày càng ít vào GDP; công nghiệp nhỏ bé, còn dịch vụ — thương mại, du lịch, bất động sản, ngân hàng — là khu vực lớn nhất.</p>
+
+      <aside class="sidenote">
+        <b>Năm tài khóa kiểu Nepal</b>
+        Năm tài khóa của Nepal bắt đầu vào giữa tháng 7 dương lịch theo lịch Bikram Sambat, nên số liệu thường ghi dạng “2025/26” — tức từ tháng 7/2025 đến tháng 7/2026.
+      </aside>
+
+      <p>Trụ cột thực sự của nền kinh tế là <b>kiều hối</b>. Trong năm tài khóa 2025/26, Nepal nhận khoảng <span class="tg">2.360 tỷ rupee (16,19 tỷ USD)</span> tiền gửi về từ lao động ở nước ngoài, tăng 37,1% so với năm trước và vượt cả tổng ngân sách quốc gia đã giải ngân trong năm<a class="cite" href="#ref-5">[5]</a>. So với quy mô GDP, dòng tiền này tương đương khoảng <span class="tg">một phần ba nền kinh tế</span><a class="cite" href="#ref-2">[2]</a><a class="cite" href="#ref-5">[5]</a>. Kiều hối giúp giảm nghèo, nuôi dự trữ ngoại hối và tiêu dùng, nhưng cũng phản ánh một thực tế cay đắng: trong nước không đủ việc làm cho người trẻ.</p>
+
+      <p>Hai “mỏ vàng” tiềm năng khác là <b>thủy điện</b> và <b>du lịch</b>. Những con sông đổ xuống từ Himalaya mang lại trữ lượng thủy điện khổng lồ; Nepal đã bắt đầu bán điện cho Ấn Độ và Bangladesh vào mùa mưa. Du lịch leo núi, trekking và hành hương Phật giáo mang về ngoại tệ đáng kể, dù dễ tổn thương trước động đất, dịch bệnh hay bất ổn chính trị. Điểm yếu cố hữu là sự phụ thuộc vào Ấn Độ: phần lớn hàng nhập khẩu, xăng dầu và tuyến đường ra biển đều đi qua nước láng giềng phía nam — bài học cay đắng trong đợt phong tỏa biên giới năm 2015.</p>
+
+      <p>Nepal vốn được Liên Hợp Quốc lên lịch “tốt nghiệp” khỏi nhóm các nước kém phát triển nhất (LDC) vào tháng <span class="tg">11/2026</span>. Tuy nhiên, viện dẫn bất ổn chính trị và nền kinh tế mong manh, Nepal đã đề nghị lùi thời hạn đến <span class="tg">11/2029</span>; Ủy ban Chính sách Phát triển của Liên Hợp Quốc đã khuyến nghị gia hạn ba năm, chờ Đại hội đồng phê chuẩn<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Điều làm du khách ngạc nhiên nhất ở Nepal là ranh giới mờ nhạt giữa Hindu giáo và Phật giáo. Cùng một ngôi đền có thể được người Hindu thờ như thần Shiva và người Phật tử thờ như một vị Bồ Tát; người Newar có thể vừa mời tu sĩ Bà-la-môn vừa mời sư Phật giáo làm lễ. Ở thung lũng Kathmandu, truyền thống <b>Kumari</b> — tôn một bé gái chưa đến tuổi dậy thì thuộc dòng tộc Phật giáo Shakya làm hóa thân của nữ thần Hindu Taleju — là biểu tượng sống động nhất của sự hòa trộn ấy.</p>
+
+      <p>Năm của người Nepal xoay quanh lễ hội. <b>Dashain</b> vào mùa thu là lễ lớn nhất, kỷ niệm chiến thắng của nữ thần Durga trước quỷ dữ: người già bôi <i>tika</i> đỏ lên trán con cháu, gia đình đoàn tụ, cả nước gần như nghỉ làm. Tiếp theo là <b>Tihar</b>, lễ hội ánh sáng kéo dài năm ngày, mỗi ngày tôn vinh một đối tượng — quạ, chó, bò, rồi con người. Người Nepal dùng lịch <span class="nv" data-note="Âm dương lịch chính thức của Nepal, đi trước dương lịch khoảng 56–57 năm; năm mới thường rơi vào giữa tháng 4 dương lịch.">Bikram Sambat</span> làm lịch chính thức, nên trong khi thế giới đang ở năm 2026, giấy tờ ở Kathmandu ghi năm 2083.</p>
+
+      <p>Về tâm lý xã hội, hệ thống đẳng cấp đã bị cấm phân biệt từ năm 1963 và bị hình sự hóa sau này, nhưng vẫn ảnh hưởng đến hôn nhân, cơ hội và quyền lực; giới tinh hoa chính trị lâu nay chủ yếu xuất thân từ các đẳng cấp Bahun và Chhetri. Người Nepal thường được mô tả là hiếu khách, nhẫn nại và khiêm nhường; câu cửa miệng <i>“Ke garne?”</i> (“Biết làm sao được?”) phản ánh một thái độ chấp nhận số phận trước thiên tai và chính trị. Chính vì vậy, làn sóng Gen Z năm 2025 được xem như một bước ngoặt tâm lý: thế hệ lớn lên cùng mạng xã hội và những chuyến đi làm thuê xa xứ đã không còn chấp nhận câu “biết làm sao được” nữa.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>“Dal bhat power, 24 hour”</b>
+        Câu nói vui mà dân trekking nào cũng thuộc: phần cơm dal bhat ở nhà trọ trên núi thường được thêm cơm và súp đậu miễn phí cho đến khi bạn no — nguồn năng lượng cho cả ngày leo dốc.
+      </aside>
+
+      <p>Ẩm thực Nepal mộc mạc, no lâu và gắn chặt với nhịp sống nông nghiệp vùng núi. Triết lý cốt lõi là sự đầy đủ trong một mâm cơm: tinh bột, đạm từ đậu lăng, rau theo mùa và một chút đồ chua thật đậm vị. Gia vị chịu ảnh hưởng Ấn Độ — nghệ, thì là, rau mùi, ớt — nhưng nhẹ nhàng hơn, ít bơ sữa hơn, và dùng nhiều tỏi, gừng, hạt <i>timur</i> (một loại tiêu giống tiêu Tứ Xuyên, làm tê đầu lưỡi).</p>
+
+      <p>Ba dải địa hình tạo ra ba phong cách. Vùng núi cao chịu ảnh hưởng Tây Tạng: mì <i>thukpa</i>, bánh <i>tsampa</i> từ lúa mạch rang, trà bơ, thịt bò Tây Tạng sấy khô. Vùng trung du là quê của <i>dal bhat</i> và ẩm thực <b>Newar</b> ở thung lũng Kathmandu — một nền ẩm thực đô thị cầu kỳ với hàng trăm món gắn với lễ nghi. Vùng Terai gần với ẩm thực Bắc Ấn và Bihar: cà ri, bánh mì dẹt, đồ ngọt sữa, món <i>litti chokha</i>. Người Thakali ở thung lũng Kali Gandaki nổi tiếng nấu dal bhat ngon nhất, đến mức “Thakali khana” trở thành thương hiệu nhà hàng khắp nước.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu của Nepal</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Dal bhat tarkari</span><span class="pick-desc">Cơm trắng, súp đậu lăng, rau cà ri và dưa achar — bữa ăn quốc dân, thường ăn hai lần mỗi ngày.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Momo</span><span class="pick-desc">Bánh bao nhân thịt trâu, gà hoặc rau, hấp hay chiên, chấm sốt cà chua – mè cay; món ăn vặt số một.</span></li>
+        <li><span class="pick-where">Kali Gandaki</span><span class="pick-name">Thakali khana</span><span class="pick-desc">Mâm dal bhat kiểu Thakali với bơ ghee, rau cải lên men và thịt cừu, bày trong đĩa đồng.</span></li>
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Samay baji</span><span class="pick-desc">Mâm lễ của người Newar: cốm gạo dẹt, thịt trâu nướng, đậu nành rang, trứng luộc và rượu gạo.</span></li>
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Bara · Chatamari</span><span class="pick-desc">Bánh đậu lăng chiên và “pizza Newar” từ bột gạo phủ thịt băm, trứng.</span></li>
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Yomari</span><span class="pick-desc">Bánh bột gạo hình giọt nước nhân mật mía và mè, làm trong lễ Yomari Punhi đầu mùa đông.</span></li>
+        <li><span class="pick-where">Bhaktapur</span><span class="pick-name">Juju dhau</span><span class="pick-desc">“Vua sữa chua” ủ trong bát đất nung, đặc sánh và béo ngậy.</span></li>
+        <li><span class="pick-where">Trung du</span><span class="pick-name">Gundruk · Dhido</span><span class="pick-desc">Rau cải lên men phơi khô ăn kèm bột kê hoặc kiều mạch nấu đặc — món của nông dân miền núi.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Sel roti</span><span class="pick-desc">Bánh gạo chiên hình vòng tròn, ngọt nhẹ, không thể thiếu trong dịp Dashain và Tihar.</span></li>
+        <li><span class="pick-where">Đồi núi phía đông</span><span class="pick-name">Sekuwa</span><span class="pick-desc">Thịt ướp gia vị xiên que nướng trên lửa củi, phổ biến từ Dharan đến khắp các quán vỉa hè.</span></li>
+        <li><span class="pick-where">Vùng núi cao</span><span class="pick-name">Thukpa</span><span class="pick-desc">Mì nước nóng kiểu Tây Tạng với rau và thịt, món sưởi ấm của người Sherpa và Thakali.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Đồ uống quốc dân là <b>chiya</b> — trà sữa nấu với gừng, bạch đậu khấu và nhiều đường, được rót cả ngày từ những ấm nhôm ở góc phố. Trên núi, người ta uống trà bơ muối kiểu Tây Tạng. Đồ uống có cồn truyền thống gồm <i>raksi</i> (rượu chưng cất từ kê hoặc gạo), <i>chhyang</i> (rượu gạo đục) và <i>tongba</i> của vùng phía đông — kê lên men đựng trong ống tre, chế nước sôi rồi hút bằng ống hút tre.</p>
+
+      <p>Văn hóa ăn uống mang đậm dấu ấn Hindu: phần lớn người Hindu kiêng thịt bò (giết bò là phạm pháp), nhiều gia đình Bahun ăn chay; người ta ăn bằng tay phải, và thức ăn đã chạm miệng (<i>jutho</i>) bị coi là không còn sạch để chia sẻ. Bữa chính thường vào giữa buổi sáng và buổi tối, xen giữa là những bữa nhẹ với chiya, bánh quy hay đậu rang.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Bảy di tích trong một di sản</b>
+        Di sản “Thung lũng Kathmandu” gồm bảy khu: ba quảng trường Durbar (Kathmandu, Patan, Bhaktapur), hai bảo tháp Swayambhunath và Boudhanath, cùng hai đền Hindu Pashupatinath và Changu Narayan.
+      </aside>
+
+      <p>Nepal có <span class="tg">4 di sản thế giới</span> được UNESCO công nhận — hai di sản văn hóa (Thung lũng Kathmandu, Lumbini) và hai di sản thiên nhiên (Vườn quốc gia Sagarmatha, Vườn quốc gia Chitwan)<a class="cite" href="#ref-1">[1]</a>. Con số khiêm tốn, nhưng riêng thung lũng Kathmandu đã gói trong đó bảy khu di tích; còn ngoài danh sách UNESCO là cả một thế giới đường mòn trekking, thung lũng ẩn và tu viện trên đỉnh núi.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Nepal</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Quảng trường Durbar Kathmandu</span><span class="pick-desc">Cung điện Hanuman Dhoka, đền đài thời Malla và ngôi nhà của nữ thần sống Kumari.</span></li>
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Swayambhunath</span><span class="pick-desc">“Chùa Khỉ” trên đồi, với đôi mắt Phật nhìn xuống toàn thành phố.</span></li>
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Boudhanath</span><span class="pick-desc">Một trong những bảo tháp lớn nhất thế giới, trung tâm của cộng đồng Phật giáo Tây Tạng lưu vong.</span></li>
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Pashupatinath</span><span class="pick-desc">Đền thờ Shiva linh thiêng nhất Nepal bên sông Bagmati, nơi diễn ra lễ hỏa táng ngoài trời.</span></li>
+        <li><span class="pick-where">Thung lũng Kathmandu</span><span class="pick-name">Bhaktapur &amp; Patan</span><span class="pick-desc">Hai cố đô Newar với quảng trường gạch đỏ, chùa năm tầng Nyatapola và xưởng gốm, đồ đồng.</span></li>
+        <li><span class="pick-where">Miền trung</span><span class="pick-name">Pokhara – hồ Phewa</span><span class="pick-desc">Thành phố hồ dưới chân dãy Annapurna, cửa ngõ trekking và thủ phủ dù lượn.</span></li>
+        <li><span class="pick-where">Miền trung</span><span class="pick-name">Vòng Annapurna</span><span class="pick-desc">Cung đường trekking kinh điển vượt đèo Thorong La cao hơn 5.400 m.</span></li>
+        <li><span class="pick-where">Đông Bắc</span><span class="pick-name">Sagarmatha – Everest Base Camp</span><span class="pick-desc">Xứ sở người Sherpa với làng Namche Bazaar và trại nền Everest; di sản thiên nhiên từ 1979.</span></li>
+        <li><span class="pick-where">Terai</span><span class="pick-name">Vườn quốc gia Chitwan</span><span class="pick-desc">Rừng nhiệt đới của tê giác một sừng, hổ Bengal và cá sấu gharial.</span></li>
+        <li><span class="pick-where">Terai</span><span class="pick-name">Lumbini</span><span class="pick-desc">Nơi Đức Phật đản sinh, với đền Maya Devi, trụ đá Ashoka và các chùa của nhiều quốc gia.</span></li>
+        <li><span class="pick-where">Tây Bắc</span><span class="pick-name">Upper Mustang – Lo Manthang</span><span class="pick-desc">Vương quốc cổ có tường bao trên cao nguyên khô cằn, văn hóa Tây Tạng gần như nguyên vẹn.</span></li>
+        <li><span class="pick-where">Terai đông</span><span class="pick-name">Janakpur</span><span class="pick-desc">Theo sử thi Ramayana là quê nàng Sita, với đền Janaki Mandir trắng lộng lẫy và tranh Mithila.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>“Củ khoai giữa hai tảng đá”</b>
+        Hình ảnh của Prithvi Narayan Shah vẫn là chìa khóa để hiểu ngoại giao Nepal: không thể chọn phe giữa Ấn Độ và Trung Quốc, chỉ có thể giữ cân bằng và tận dụng sự cạnh tranh của hai bên.
+      </aside>
+
+      <p>Ngoại giao Nepal xoay quanh hai láng giềng khổng lồ. Với Ấn Độ, quan hệ gần gũi đặc biệt: biên giới mở, người hai nước đi lại không cần hộ chiếu, chung tôn giáo và nhiều tập quán; nhưng sự gần gũi ấy cũng đi kèm nỗi lo bị chi phối, nhất là sau đợt phong tỏa biên giới năm 2015. Với Trung Quốc, Nepal tham gia Sáng kiến Vành đai và Con đường (2017), mong có thêm đường giao thương qua Tây Tạng để bớt phụ thuộc vào phía nam. Nepal cũng là một trong những nước đóng góp quân gìn giữ hòa bình nhiều nhất cho Liên Hợp Quốc, và là thành viên sáng lập SAARC, có trụ sở tại Kathmandu.</p>
+
+      <p>Điểm nóng lãnh thổ dai dẳng nhất là vùng <span class="nv" data-note="Tam giác lãnh thổ ở cực tây bắc Nepal, nơi giao nhau giữa Nepal, Ấn Độ và Tây Tạng; Nepal yêu sách dựa trên Hiệp ước Sugauli, Ấn Độ đang quản lý.">Kalapani – Lipulekh – Limpiyadhura</span>. Nepal khẳng định đây là lãnh thổ của mình theo Hiệp ước Sugauli 1816, lấy sông Mahakali làm ranh giới phía tây, trong khi Ấn Độ đang quản lý vùng này. Ngày <span class="tg">1/8/2026</span>, Ấn Độ và Trung Quốc chính thức nối lại thương mại qua đèo Lipulekh, bất chấp công hàm phản đối mà Bộ Ngoại giao Nepal gửi đi từ tháng 5<a class="cite" href="#ref-7">[7]</a> — một minh họa rõ ràng cho thế yếu của “củ khoai” khi hai “tảng đá” bắt tay nhau.</p>
+
+      <p>Trong nước, câu hỏi lớn nhất là liệu chính phủ Balen Shah có biến được kỳ vọng của thế hệ Gen Z thành thay đổi thực chất. Sau trăm ngày đầu, ông vẫn có tỷ lệ ủng hộ rất cao, nhưng chính phủ cũng sớm vướng vào những vụ cách chức, từ chức của bộ trưởng và tranh cãi quanh việc giải tỏa khu ổ chuột<a class="cite" href="#ref-4">[4]</a><a class="cite" href="#ref-8">[8]</a>; phong cách phát ngôn mang màu sắc dân tộc chủ nghĩa từ thời làm thị trưởng — như treo bản đồ “Đại Nepal” trước năm 1816 — khiến giới ngoại giao trong khu vực dè chừng<a class="cite" href="#ref-8">[8]</a>. Các bài toán dài hạn vẫn nằm đó: tạo việc làm để giữ chân người trẻ, giảm phụ thuộc kiều hối, chuẩn bị “tốt nghiệp” LDC, và thích ứng với biến đổi khí hậu khi sông băng Himalaya tan nhanh, làm tăng nguy cơ lũ quét từ hồ băng.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Nepal</h2>
+      <ol class="funs">
+        <li><b>Lá cờ không hình chữ nhật duy nhất thế giới.</b> Quốc kỳ Nepal gồm hai tam giác chồng lên nhau, tượng trưng cho dãy Himalaya và hai tôn giáo lớn; Hiến pháp còn ghi chi tiết từng bước dựng hình học để vẽ cờ.</li>
+        <li><b>Múi giờ lệch 45 phút.</b> Nepal dùng giờ UTC+5:45 — một trong rất ít múi giờ lệch 45 phút trên thế giới, nhanh hơn Ấn Độ 15 phút.</li>
+        <li><b>Đang sống ở năm 2083.</b> Lịch chính thức Bikram Sambat đi trước dương lịch khoảng 56–57 năm, và năm mới rơi vào giữa tháng 4.</li>
+        <li><b>Tám trên mười bốn “nóc nhà”.</b> Nepal sở hữu tám trong mười bốn đỉnh núi cao trên 8.000 m của thế giới; Everest được Nepal và Trung Quốc cùng đo lại năm 2020 ở độ cao 8.848,86 m.</li>
+        <li><b>Nữ thần sống.</b> Kumari là một bé gái được tôn làm hiện thân của nữ thần Taleju, sống trong cung điện riêng ở quảng trường Durbar và chỉ “nghỉ hưu” khi đến tuổi dậy thì.</li>
+        <li><b>Có hẳn một ngày lễ dành cho chó.</b> Trong lễ Tihar, ngày Kukur Tihar, chó được đeo vòng hoa vạn thọ, bôi tika và thết đãi món ngon để tạ ơn lòng trung thành.</li>
+        <li><b>Lính Gurkha hơn hai thế kỷ.</b> Từ sau chiến tranh Anh – Nepal, người Nepal được tuyển vào quân đội Anh, rồi cả Ấn Độ và lực lượng cảnh sát Singapore — truyền thống kéo dài đến nay.</li>
+        <li><b>Chưa từng là thuộc địa.</b> Dù thua Anh năm 1816 và mất nhiều đất, Nepal chưa bao giờ bị cai trị trực tiếp bởi một đế quốc phương Tây.</li>
+        <li><b>Thủ tướng là rapper.</b> Balen Shah từng phát hành những bản rap chỉ trích tham nhũng, và khi nhậm chức năm 2026 ở tuổi 35 đã trở thành lãnh đạo quốc gia trẻ nhất thế giới đương nhiệm<a class="cite" href="#ref-8">[8]</a>.</li>
+        <li><b>Kiều hối lớn hơn cả ngân sách.</b> Năm tài khóa 2025/26, tiền người Nepal ở nước ngoài gửi về (16,19 tỷ USD) vượt cả ngân sách mà nhà nước thực chi trong năm<a class="cite" href="#ref-5">[5]</a>.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Nepal có khoảng <span class="tg">29,2 triệu</span> dân (2021), diện tích <span class="tg">147.181 km²</span>, không giáp biển, kẹp giữa Ấn Độ và Trung Quốc.</li>
+        <li>Ba dải địa hình: Himal (núi tuyết, 8/14 đỉnh trên 8.000 m) – Pahad (trung du, thung lũng Kathmandu) – Terai (đồng bằng phía nam).</li>
+        <li>Trục lịch sử: Lumbini → Licchavi → Malla → <span class="tg">1768</span> Prithvi Narayan Shah thống nhất → Sugauli 1816 → Rana 1846–1951 → Panchayat → 1990 → nội chiến → cộng hòa <span class="tg">2008</span>.</li>
+        <li>Hiến pháp <span class="tg">2015</span>: cộng hòa liên bang thế tục, 7 tỉnh, 753 đơn vị địa phương.</li>
+        <li>Biểu tình Gen Z <span class="tg">9/2025</span> lật đổ chính phủ Oli; bầu cử 5/3/2026, RSP thắng 182/275 ghế, Balen Shah làm Thủ tướng.</li>
+        <li>Kinh tế dựa vào kiều hối (~1/3 GDP), du lịch và thủy điện; GDP/người khoảng <span class="tg">1.513 USD</span>.</li>
+        <li>Ẩm thực: dal bhat, momo, ẩm thực Newar; đồ uống chiya, tongba, raksi.</li>
+        <li>4 di sản UNESCO; tranh chấp Kalapani – Lipulekh với Ấn Độ là điểm nóng lãnh thổ lớn nhất.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Ai là người thống nhất Nepal, và ông chiếm Kathmandu vào năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Vua xứ Gorkha Prithvi Narayan Shah, chiếm Kathmandu năm 1768.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Chế độ Rana là gì và kết thúc vào năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Chế độ thừa tướng cha truyền con nối do Jung Bahadur Rana lập ra sau thảm sát Kot năm 1846, biến vua Shah thành bù nhìn; chấm dứt bởi cách mạng năm 1951.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Sự kiện nào trực tiếp dẫn đến việc Thủ tướng Oli từ chức tháng 9/2025, và ai lên làm Thủ tướng sau bầu cử 2026?</p>
+          <details><summary>Xem đáp án</summary><p>Làn sóng biểu tình Gen Z bùng lên sau lệnh chặn mạng xã hội; sau bầu cử ngày 5/3/2026, Balen Shah của đảng RSP trở thành Thủ tướng.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Bữa ăn quốc dân của Nepal gồm những thành phần nào?</p>
+          <details><summary>Xem đáp án</summary><p>Dal bhat tarkari: cơm (bhat), súp đậu lăng (dal), rau cà ri (tarkari) và dưa achar.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Kể tên bốn di sản thế giới UNESCO của Nepal.</p>
+          <details><summary>Xem đáp án</summary><p>Thung lũng Kathmandu, Lumbini, Vườn quốc gia Sagarmatha và Vườn quốc gia Chitwan.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Vì sao vùng Kalapani – Lipulekh là điểm nóng trong quan hệ Nepal – Ấn Độ?</p>
+          <details><summary>Xem đáp án</summary><p>Nepal yêu sách vùng này theo Hiệp ước Sugauli 1816 (sông Mahakali là biên giới phía tây) và đưa vào bản đồ chính thức năm 2020, nhưng Ấn Độ đang quản lý; năm 2026 Ấn Độ và Trung Quốc vẫn mở lại thương mại qua đèo Lipulekh bất chấp phản đối của Nepal.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Nepal</i>. Wikipedia, The Free Encyclopedia (tổng hợp số liệu diện tích, Tổng điều tra dân số 2021, cơ cấu tôn giáo – sắc tộc, di sản UNESCO, các mốc lịch sử). <a href="https://en.wikipedia.org/wiki/Nepal" target="_blank" rel="noopener">en.wikipedia.org/wiki/Nepal</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-2">B360 Nepal. <i>NSO projects national GDP at Rs 6.6tn, growth estimated at 3.85 pc for FY 2025/26</i>. 24/5/2026 (dẫn ước tính sơ bộ của Cơ quan Thống kê Quốc gia Nepal). <a href="https://www.b360nepal.com/detail/28741/nso-projects-national-gdp-at-rs-66tn-growth-estimated-at-385-pc-for-fy-202526" target="_blank" rel="noopener">b360nepal.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>2026 Nepalese general election</i>. Wikipedia, The Free Encyclopedia. <a href="https://en.wikipedia.org/wiki/2026_Nepalese_general_election" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-4">Wikipedia contributors. <i>Balen Shah cabinet</i>. Wikipedia, The Free Encyclopedia. <a href="https://en.wikipedia.org/wiki/Balen_Shah_cabinet" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-5">Onlinekhabar English. <i>Nepal received Rs 2.36 trillion in remittances in FY 2025/26</i>. 27/8/2026 (dẫn số liệu Ngân hàng Trung ương Nepal – Nepal Rastra Bank). <a href="https://english.onlinekhabar.com/remittances-nepal-2026.html" target="_blank" rel="noopener">english.onlinekhabar.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-6">Atlantic Council. <i>Nepal and Bangladesh are delaying LDC graduation. Now comes the hard part</i>. 31/7/2026. <a href="https://www.atlanticcouncil.org/dispatches/nepal-and-bangladesh-are-delaying-ldc-graduation-now-comes-the-hard-part/" target="_blank" rel="noopener">atlanticcouncil.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-7">The Star (Malaysia). <i>India, China begin trade through Lipulekh Pass despite Nepal's territorial objections</i>. 6/8/2026. <a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/06/india-china-begin-trade-through-lipulekh-pass-despite-nepals-territorial-objections" target="_blank" rel="noopener">thestar.com.my</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-8">Wikipedia contributors. <i>Balen Shah</i>. Wikipedia, The Free Encyclopedia. <a href="https://en.wikipedia.org/wiki/Balen_Shah" target="_blank" rel="noopener">en.wikipedia.org/wiki/Balen_Shah</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, kiều hối, kết quả bầu cử) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Tỷ trọng kiều hối so với GDP là ước tính của người soạn từ hai nguồn [2] và [5]. Các chi tiết còn tranh cãi — như năm sinh Đức Phật, phiên bản chính thức về vụ thảm sát hoàng gia 2001 hay tranh chấp Kalapani — được trình bày ở mức khái quát, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
+
+</body></html>
