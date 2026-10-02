@@ -1,0 +1,1130 @@
+<title>Kazakhstan — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Kazakhstan</div>
+          <h1>Kazakhstan</h1>
+          <div class="period">Châu Á · Trung Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 200 100" role="img" aria-label="Quốc kỳ Kazakhstan: nền xanh da trời, mặt trời vàng 32 tia trên chim đại bàng thảo nguyên, dải hoa văn dân tộc vàng ở cạnh cán cờ"><rect width="200" height="100" fill="#00afca"/><path fill="none" stroke="#fec50c" stroke-width="1.3" stroke-linecap="round" d="M16.20,6.25 C20.50,6.05 21.50,1.05 18.60,0.85 C16.80,0.75 16.90,2.85 18.40,2.85M16.20,6.25 C20.50,6.45 21.50,11.45 18.60,11.65 C16.80,11.75 16.90,9.65 18.40,9.65M11.80,6.25 C7.50,6.05 6.50,1.05 9.40,0.85 C11.20,0.75 11.10,2.85 9.60,2.85M11.80,6.25 C7.50,6.45 6.50,11.45 9.40,11.65 C11.20,11.75 11.10,9.65 9.60,9.65M16.20,18.75 C20.50,18.55 21.50,13.55 18.60,13.35 C16.80,13.25 16.90,15.35 18.40,15.35M16.20,18.75 C20.50,18.95 21.50,23.95 18.60,24.15 C16.80,24.25 16.90,22.15 18.40,22.15M11.80,18.75 C7.50,18.55 6.50,13.55 9.40,13.35 C11.20,13.25 11.10,15.35 9.60,15.35M11.80,18.75 C7.50,18.95 6.50,23.95 9.40,24.15 C11.20,24.25 11.10,22.15 9.60,22.15M16.20,31.25 C20.50,31.05 21.50,26.05 18.60,25.85 C16.80,25.75 16.90,27.85 18.40,27.85M16.20,31.25 C20.50,31.45 21.50,36.45 18.60,36.65 C16.80,36.75 16.90,34.65 18.40,34.65M11.80,31.25 C7.50,31.05 6.50,26.05 9.40,25.85 C11.20,25.75 11.10,27.85 9.60,27.85M11.80,31.25 C7.50,31.45 6.50,36.45 9.40,36.65 C11.20,36.75 11.10,34.65 9.60,34.65M16.20,43.75 C20.50,43.55 21.50,38.55 18.60,38.35 C16.80,38.25 16.90,40.35 18.40,40.35M16.20,43.75 C20.50,43.95 21.50,48.95 18.60,49.15 C16.80,49.25 16.90,47.15 18.40,47.15M11.80,43.75 C7.50,43.55 6.50,38.55 9.40,38.35 C11.20,38.25 11.10,40.35 9.60,40.35M11.80,43.75 C7.50,43.95 6.50,48.95 9.40,49.15 C11.20,49.25 11.10,47.15 9.60,47.15M16.20,56.25 C20.50,56.05 21.50,51.05 18.60,50.85 C16.80,50.75 16.90,52.85 18.40,52.85M16.20,56.25 C20.50,56.45 21.50,61.45 18.60,61.65 C16.80,61.75 16.90,59.65 18.40,59.65M11.80,56.25 C7.50,56.05 6.50,51.05 9.40,50.85 C11.20,50.75 11.10,52.85 9.60,52.85M11.80,56.25 C7.50,56.45 6.50,61.45 9.40,61.65 C11.20,61.75 11.10,59.65 9.60,59.65M16.20,68.75 C20.50,68.55 21.50,63.55 18.60,63.35 C16.80,63.25 16.90,65.35 18.40,65.35M16.20,68.75 C20.50,68.95 21.50,73.95 18.60,74.15 C16.80,74.25 16.90,72.15 18.40,72.15M11.80,68.75 C7.50,68.55 6.50,63.55 9.40,63.35 C11.20,63.25 11.10,65.35 9.60,65.35M11.80,68.75 C7.50,68.95 6.50,73.95 9.40,74.15 C11.20,74.25 11.10,72.15 9.60,72.15M16.20,81.25 C20.50,81.05 21.50,76.05 18.60,75.85 C16.80,75.75 16.90,77.85 18.40,77.85M16.20,81.25 C20.50,81.45 21.50,86.45 18.60,86.65 C16.80,86.75 16.90,84.65 18.40,84.65M11.80,81.25 C7.50,81.05 6.50,76.05 9.40,75.85 C11.20,75.75 11.10,77.85 9.60,77.85M11.80,81.25 C7.50,81.45 6.50,86.45 9.40,86.65 C11.20,86.75 11.10,84.65 9.60,84.65M16.20,93.75 C20.50,93.55 21.50,88.55 18.60,88.35 C16.80,88.25 16.90,90.35 18.40,90.35M16.20,93.75 C20.50,93.95 21.50,98.95 18.60,99.15 C16.80,99.25 16.90,97.15 18.40,97.15M11.80,93.75 C7.50,93.55 6.50,88.55 9.40,88.35 C11.20,88.25 11.10,90.35 9.60,90.35M11.80,93.75 C7.50,93.95 6.50,98.95 9.40,99.15 C11.20,99.25 11.10,97.15 9.60,97.15"/><path fill="#fec50c" d="M14.00,4.05L16.20,6.25L14.00,8.45L11.80,6.25ZM14.00,16.55L16.20,18.75L14.00,20.95L11.80,18.75ZM14.00,29.05L16.20,31.25L14.00,33.45L11.80,31.25ZM14.00,41.55L16.20,43.75L14.00,45.95L11.80,43.75ZM14.00,54.05L16.20,56.25L14.00,58.45L11.80,56.25ZM14.00,66.55L16.20,68.75L14.00,70.95L11.80,68.75ZM14.00,79.05L16.20,81.25L14.00,83.45L11.80,81.25ZM14.00,91.55L16.20,93.75L14.00,95.95L11.80,93.75Z"/><circle cx="100" cy="38" r="11.5" fill="#fec50c"/><path fill="#fec50c" d="M99.27,24.52L100.00,16.00L100.73,24.52ZM101.92,24.64L104.29,16.42L103.34,24.92ZM104.49,25.27L108.42,17.67L105.83,25.82ZM106.88,26.39L112.22,19.71L108.10,27.20ZM109.02,27.95L115.56,22.44L110.05,28.98ZM110.80,29.90L118.29,25.78L111.61,31.12ZM112.18,32.17L120.33,29.58L112.73,33.51ZM113.08,34.66L121.58,33.71L113.36,36.08ZM113.48,37.27L122.00,38.00L113.48,38.73ZM113.36,39.92L121.58,42.29L113.08,41.34ZM112.73,42.49L120.33,46.42L112.18,43.83ZM111.61,44.88L118.29,50.22L110.80,46.10ZM110.05,47.02L115.56,53.56L109.02,48.05ZM108.10,48.80L112.22,56.29L106.88,49.61ZM105.83,50.18L108.42,58.33L104.49,50.73ZM103.34,51.08L104.29,59.58L101.92,51.36ZM100.73,51.48L100.00,60.00L99.27,51.48ZM98.08,51.36L95.71,59.58L96.66,51.08ZM95.51,50.73L91.58,58.33L94.17,50.18ZM93.12,49.61L87.78,56.29L91.90,48.80ZM90.98,48.05L84.44,53.56L89.95,47.02ZM89.20,46.10L81.71,50.22L88.39,44.88ZM87.82,43.83L79.67,46.42L87.27,42.49ZM86.92,41.34L78.42,42.29L86.64,39.92ZM86.52,38.73L78.00,38.00L86.52,37.27ZM86.64,36.08L78.42,33.71L86.92,34.66ZM87.27,33.51L79.67,29.58L87.82,32.17ZM88.39,31.12L81.71,25.78L89.20,29.90ZM89.95,28.98L84.44,22.44L90.98,27.95ZM91.90,27.20L87.78,19.71L93.12,26.39ZM94.17,25.82L91.58,17.67L95.51,25.27ZM96.66,24.92L95.71,16.42L98.08,24.64Z"/><path fill="#fec50c" d="M100.0,62.0 L104.0,61.0 L110.0,60.0 L118.0,58.0 L127.0,55.0 L136.0,51.5 L146.0,49.5 L141.0,53.5 L148.0,53.5 L140.0,57.0 L146.0,57.5 L136.0,60.5 L141.0,61.5 L130.0,64.5 L133.0,66.0 L122.0,67.5 L112.0,68.3 L106.0,69.5 L104.0,73.0 L106.0,77.5 L100.0,75.5 L94.0,77.5 L96.0,73.0 L94.0,69.5 L88.0,68.3 L78.0,67.5 L67.0,66.0 L70.0,64.5 L59.0,61.5 L64.0,60.5 L54.0,57.5 L60.0,57.0 L52.0,53.5 L59.0,53.5 L54.0,49.5 L64.0,51.5 L73.0,55.0 L82.0,58.0 L90.0,60.0 L96.0,61.0Z"/><path fill="#fec50c" d="M102.8,62.5 Q103,57.6 99.5,56.6 Q96.2,56.4 95.4,58.6 L92.8,59.6 L96,60.6 Q97.2,62.6 100,63Z"/></svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Kazakhstan là quốc gia không giáp biển lớn nhất thế giới — một thảo nguyên mênh mông rộng gần gấp chín lần Việt Nam nhưng chỉ có khoảng hai mươi triệu dân. Từng là quê hương của những bộ tộc du mục cưỡi ngựa, rồi trở thành vùng biên của đế quốc Nga và một phòng thí nghiệm khắc nghiệt của Liên Xô, Kazakhstan độc lập năm 1991 và nhờ dầu mỏ, uranium đã vươn lên thành nền kinh tế lớn nhất Trung Á. Năm 2026, đất nước vừa thông qua hiến pháp mới, thay quốc hội hai viện bằng một viện duy nhất mang tên Kurultai. Nếu chỉ nhớ một điều về Kazakhstan, hãy nhớ: đây là nghệ thuật giữ thăng bằng — giữa Nga và Trung Quốc, giữa ký ức du mục và tham vọng hiện đại hóa, giữa cải cách và kiểm soát.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">2.724.910 km²<a class="cite" href="#ref-1">[1]</a><small>lớn thứ 9 thế giới</small></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~20,6 triệu<a class="cite" href="#ref-1">[1]</a><small>ước tính 8/2026</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Astana<small>thành phố lớn nhất: Almaty</small></span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Tiếng Kazakh<small>tiếng Nga dùng chính thức song song</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Hồi giáo Sunni<small>~69%; Kitô giáo ~17%<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Tenge (₸, KZT)</span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~17.500 USD<a class="cite" href="#ref-1">[1]</a><small>danh nghĩa, ước tính IMF 2026</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">~3500 TCN</span>
+          <span class="tl-what">Văn hóa Botai</span>
+          <span class="tl-note">Dấu vết sớm nhất về việc con người cưỡi và vắt sữa ngựa trên thảo nguyên phía bắc</span>
+        </li>
+        <li>
+          <span class="tl-when">TK VIII – III TCN</span>
+          <span class="tl-what">Thời đại Saka</span>
+          <span class="tl-note">Các bộ tộc du mục Saka để lại những gò mộ vàng, trong đó có “Người Vàng” ở Issyk</span>
+        </li>
+        <li>
+          <span class="tl-when">TK VI – VIII</span>
+          <span class="tl-what">Hãn quốc Đột Quyết</span>
+          <span class="tl-note">Thảo nguyên được Turk hóa; nền móng ngôn ngữ của người Kazakh hình thành</span>
+        </li>
+        <li>
+          <span class="tl-when">1219 – 1221</span>
+          <span class="tl-what">Mông Cổ phá Otrar</span>
+          <span class="tl-note">Thành Gia Tư Hãn tàn phá các đô thị Con đường Tơ lụa; vùng đất vào tay Kim Trướng hãn quốc</span>
+        </li>
+        <li>
+          <span class="tl-when">1465</span>
+          <span class="tl-what">Hãn quốc Kazakh ra đời</span>
+          <span class="tl-note">Kerei và Janibek tách khỏi hãn quốc Uzbek, đặt nền cho dân tộc Kazakh</span>
+        </li>
+        <li>
+          <span class="tl-when">1723</span>
+          <span class="tl-what">“Năm đại họa”</span>
+          <span class="tl-note">Quân Dzungar tràn vào thảo nguyên, người Kazakh bỏ chạy trong thảm cảnh</span>
+        </li>
+        <li>
+          <span class="tl-when">1731</span>
+          <span class="tl-what">Xin Nga bảo hộ</span>
+          <span class="tl-note">Abulkhair của Tiểu Zhuz thề trung thành với Nga, mở đầu quá trình sáp nhập kéo dài</span>
+        </li>
+        <li>
+          <span class="tl-when">1837 – 1847</span>
+          <span class="tl-what">Khởi nghĩa Kenesary</span>
+          <span class="tl-note">Cuộc kháng cự lớn cuối cùng của hãn quốc trước sự bành trướng của Nga</span>
+        </li>
+        <li>
+          <span class="tl-when">1917 – 1920</span>
+          <span class="tl-what">Chính quyền Alash Orda</span>
+          <span class="tl-note">Trí thức Kazakh lập chính phủ tự trị ngắn ngủi trước khi Hồng quân thắng thế</span>
+        </li>
+        <li>
+          <span class="tl-when">1930 – 1933</span>
+          <span class="tl-what">Nạn đói Asharshylyk</span>
+          <span class="tl-note">Tập thể hóa cưỡng bức xóa sổ lối sống du mục, cướp đi khoảng 1,5 triệu sinh mạng</span>
+        </li>
+        <li>
+          <span class="tl-when">1949 – 1989</span>
+          <span class="tl-what">Bãi thử Semipalatinsk</span>
+          <span class="tl-note">Liên Xô cho nổ 456 quả bom hạt nhân; bãi thử đóng cửa ngày 29/8/1991</span>
+        </li>
+        <li>
+          <span class="tl-when">12/1986</span>
+          <span class="tl-what">Sự kiện Jeltoqsan</span>
+          <span class="tl-note">Thanh niên Almaty biểu tình phản đối việc Moskva áp đặt lãnh đạo người Nga</span>
+        </li>
+        <li>
+          <span class="tl-when">16/12/1991</span>
+          <span class="tl-what">Độc lập</span>
+          <span class="tl-note">Nước cộng hòa cuối cùng tuyên bố rời Liên Xô; Nazarbayev làm tổng thống</span>
+        </li>
+        <li>
+          <span class="tl-when">1997</span>
+          <span class="tl-what">Dời đô lên phía bắc</span>
+          <span class="tl-note">Thủ đô chuyển từ Almaty về Akmola, năm sau đổi tên thành Astana</span>
+        </li>
+        <li>
+          <span class="tl-when">2019 · 1/2022</span>
+          <span class="tl-what">Chuyển giao &amp; Qantar</span>
+          <span class="tl-note">Nazarbayev từ chức; bạo loạn tháng Giêng chấm dứt hẳn ảnh hưởng của ông</span>
+        </li>
+        <li>
+          <span class="tl-when">2026</span>
+          <span class="tl-what">Hiến pháp mới</span>
+          <span class="tl-note">Trưng cầu dân ý 15/3, Kurultai một viện thay quốc hội hai viện, tái lập chức phó tổng thống</span>
+        </li>
+      </ol>
+      <p class="band-foot">Niên đại cổ đại dựa vào khảo cổ học nên mang tính ước lệ; vai trò của văn hóa Botai trong việc thuần hóa ngựa vẫn còn tranh luận. Số người chết trong nạn đói 1930–1933 được các nhà nghiên cứu ước tính rất khác nhau, phổ biến từ 1,5 đến hơn 2 triệu người.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Một đường biên kỷ lục</b>
+        Biên giới Kazakhstan – Nga dài khoảng 7.600 km, là một trong những đường biên giới đất liền liền mạch dài nhất thế giới — chi tiết địa lý giải thích vì sao Nga luôn là mối quan hệ quan trọng bậc nhất với Astana.
+      </aside>
+
+      <p class="lede">Kazakhstan trải dài từ bờ sông Volga và biển Caspi ở phía tây đến dãy núi Altai giáp Trung Quốc ở phía đông, phía bắc giáp Nga, phía nam giáp Turkmenistan, Uzbekistan và Kyrgyzstan.</p>
+
+      <p>Với diện tích khoảng <span class="tg">2.724.910 km²</span><a class="cite" href="#ref-1">[1]</a>, Kazakhstan là quốc gia lớn thứ chín thế giới và là nước không giáp đại dương lớn nhất hành tinh. Phần lớn lãnh thổ là thảo nguyên, bán hoang mạc và hoang mạc — vùng đất phẳng lặng mà người Kazakh gọi là <i>dala</i>. Núi non chỉ tập trung ở rìa đông nam, nơi dãy <span class="nv" data-note="Dãy núi lớn ở Trung Á, trải qua Kazakhstan, Kyrgyzstan và Trung Quốc; đỉnh cao nhất phía Kazakhstan là Khan Tengri (khoảng 7.000 m).">Thiên Sơn</span> và Altai tạo nên những hồ nước trong vắt, rừng vân sam và tuyết phủ quanh năm. Khí hậu lục địa khắc nghiệt: mùa đông ở Astana có thể xuống dưới −40°C, trong khi mùa hè ở miền nam nóng trên 40°C.</p>
+
+      <p>Hai thảm họa môi trường thời Xô viết vẫn in dấu lên bản đồ. <span class="nv" data-note="Từng là hồ lớn thứ tư thế giới, nằm giữa Kazakhstan và Uzbekistan; teo tóp từ thập niên 1960 do các con sông nuôi hồ bị chặn để tưới bông.">Biển Aral</span> gần như biến mất sau khi nước sông bị chuyển sang tưới bông, dù phần phía bắc thuộc Kazakhstan đã hồi sinh một phần nhờ con đập Kokaral hoàn thành năm 2005. Ở phía đông bắc, bãi thử hạt nhân Semipalatinsk để lại di chứng phóng xạ cho hàng chục vạn người dân.</p>
+
+      <p>Dân số hiện vào khoảng <span class="tg">20,6 triệu người</span><a class="cite" href="#ref-1">[1]</a>, tức mật độ chỉ khoảng 7–8 người/km² — thuộc hàng thưa thớt nhất thế giới. Người Kazakh chiếm khoảng <span class="tg">71,5%</span>, người Nga khoảng <span class="tg">14,4%</span>, phần còn lại là người Uzbek, Ukraina, Duy Ngô Nhĩ, Đức, Tatar, Triều Tiên và hàng chục dân tộc khác<a class="cite" href="#ref-1">[1]</a>. Bức tranh đa sắc tộc ấy là hệ quả của thời Xô viết, khi Kazakhstan trở thành nơi lưu đày cả những dân tộc bị Stalin cưỡng bức di dời. Ba mươi năm qua, tỷ lệ người Kazakh tăng mạnh nhờ sinh suất cao và chính sách khuyến khích kiều bào (<i>qandas</i>) hồi hương, trong khi nhiều người Nga, Đức đã rời đi.</p>
+
+      <p>Hành chính, cả nước chia thành <span class="tg">17 tỉnh</span> (<i>oblys</i>) và ba thành phố trực thuộc trung ương là Astana, Almaty và Shymkent; ba tỉnh mới — Abai, Jetisu và Ulytau — được lập năm 2022. Dân cư dồn về hai cực: miền nam ấm áp, đông đúc, nói tiếng Kazakh nhiều hơn; và miền bắc lạnh giá, công nghiệp, nơi tiếng Nga còn chiếm ưu thế.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Kazakhstan là câu chuyện của thảo nguyên — nơi các đế chế du mục nổi lên rồi tan biến như gió, và nơi một dân tộc chỉ thật sự có nhà nước hiện đại của riêng mình từ năm 1991.</p>
+
+      <p><b>Thảo nguyên thời cổ.</b> Khoảng <span class="tg">3500 TCN</span>, cư dân văn hóa Botai ở phía bắc đã sống phụ thuộc gần như hoàn toàn vào ngựa — khảo cổ học tìm thấy dấu vết sữa ngựa trong gốm và vết dây cương trên răng ngựa, dù việc họ có phải là người đầu tiên thuần hóa ngựa hay không vẫn còn tranh cãi. Từ thế kỷ VIII TCN, các bộ tộc <span class="nv" data-note="Nhóm du mục nói tiếng Iran, người Hy Lạp gọi là Scythia châu Á; nổi tiếng với nghệ thuật vàng 'phong cách động vật'.">Saka</span> làm chủ vùng đất này. Năm 1969, các nhà khảo cổ khai quật ở gò Issyk gần Almaty một bộ hài cốt khoác trang phục đính hơn bốn nghìn mảnh vàng — “Người Vàng” ngày nay là biểu tượng quốc gia, đứng trên đỉnh tượng đài Độc lập ở Almaty.</p>
+
+      <p><b>Các đế chế Turk và Con đường Tơ lụa (TK VI – XII).</b> Từ thế kỷ VI, Hãn quốc Đột Quyết rồi các nhà nước Karluk, Karakhanid lần lượt Turk hóa thảo nguyên. Ở miền nam, các thành phố ốc đảo như Otrar, Taraz, Sayram phồn thịnh nhờ Con đường Tơ lụa và tiếp nhận Hồi giáo. Nhà triết học <span class="nv" data-note="Abu Nasr al-Farabi (~870–950), triết gia Hồi giáo lớn, được tôn là 'người thầy thứ hai' sau Aristotle; theo truyền thống sinh ở vùng Farab (Otrar), nay thuộc nam Kazakhstan.">al-Farabi</span>, được tôn là “người thầy thứ hai” sau Aristotle, theo truyền thống sinh ra ở vùng Otrar. Thế kỷ XII, nhà truyền đạo Sufi <span class="nv" data-note="Khoja Ahmed Yasawi (mất khoảng 1166), nhà thơ và nhà truyền giáo Sufi, có công lớn trong việc Hồi giáo hóa các dân tộc Turk; lăng mộ ông ở Turkistan là di sản UNESCO.">Khoja Ahmed Yasawi</span> truyền bá Hồi giáo bằng thơ tiếng Turk, khiến tôn giáo này bám rễ trong đời sống du mục.</p>
+
+      <aside class="sidenote">
+        <b>Ba Zhuz</b>
+        Từ thế kỷ XVI–XVII, người Kazakh chia thành ba liên minh bộ lạc: Đại Zhuz (đông nam), Trung Zhuz (trung và bắc) và Tiểu Zhuz (tây). Đến nay, nhiều người Kazakh vẫn biết mình thuộc zhuz nào và dòng họ nào.
+      </aside>
+
+      <p><b>Mông Cổ và sự ra đời của dân tộc Kazakh (1219 – TK XVII).</b> Năm <span class="tg">1219</span>, sau khi thống đốc Otrar giết đoàn thương nhân của <span class="nv" data-note="Thành Cát Tư Hãn (~1162–1227), người sáng lập Đế quốc Mông Cổ; cuộc chinh phạt Trung Á của ông bắt đầu từ vụ thảm sát đoàn thương nhân ở Otrar.">Thành Cát Tư Hãn</span>, quân Mông Cổ san phẳng thành và toàn bộ vùng đất rơi vào tay các hãn quốc kế thừa, đặc biệt là Kim Trướng hãn quốc. Năm <span class="tg">1465</span>, hai hậu duệ của dòng Thành Cát Tư Hãn là <span class="nv" data-note="Kerei và Janibek, hai sultan rời bỏ hãn quốc Uzbek của Abu'l-Khayr, dẫn các bộ lạc về thung lũng sông Chu, lập nên Hãn quốc Kazakh.">Kerei và Janibek</span> dẫn các bộ tộc tách khỏi hãn quốc Uzbek, lập nên Hãn quốc Kazakh — năm 2015, Kazakhstan long trọng kỷ niệm 550 năm nhà nước. Cái tên “Kazakh” được cho là bắt nguồn từ một từ Turk mang nghĩa “người tự do, kẻ lang bạt”.</p>
+
+      <p><b>Năm đại họa và sự bành trướng của Nga (1723 – 1917).</b> Năm <span class="tg">1723</span>, quân Dzungar (Oirat) từ phía đông tràn vào thảo nguyên, đẩy người Kazakh vào thảm cảnh mà ký ức dân gian gọi là <i>Aqtaban shubyryndy</i> — “những năm chạy trốn đến mòn gót chân”. Bị kẹp giữa Dzungar và các thế lực khác, năm <span class="tg">1731</span> <span class="nv" data-note="Abulkhair Khan (1693–1748), khan của Tiểu Zhuz, người đầu tiên tuyên thệ trung thành với Nga hoàng, mở đường cho sự sáp nhập của Nga.">Abulkhair</span>, khan của Tiểu Zhuz, xin quy phục Nga. Giữa thế kỷ XVIII, <span class="nv" data-note="Ablai Khan (1711–1781), khan nổi tiếng nhất của người Kazakh, khéo léo giữ thế cân bằng giữa Nga và nhà Thanh, được xem là anh hùng dân tộc.">Ablai Khan</span> khéo léo cân bằng giữa nhà Thanh và Nga — một bài học “ngoại giao đa phương” mà người Kazakh hôm nay vẫn nhắc tới. Nhưng từng bước, Nga xóa bỏ quyền lực các khan; cuộc khởi nghĩa của <span class="nv" data-note="Kenesary Kasymov (1802–1847), cháu nội Ablai Khan, khan cuối cùng của người Kazakh, lãnh đạo cuộc kháng chiến chống Nga 1837–1847 và tử trận ở Kyrgyzstan.">Kenesary Kasymov</span> (<span class="tg">1837 – 1847</span>) là nỗ lực lớn cuối cùng nhằm khôi phục hãn quốc. Cuối thế kỷ XIX, làn sóng nông dân Nga, Ukraina đến khai khẩn đồng cỏ khiến dân du mục mất dần bãi chăn — mâu thuẫn bùng nổ thành cuộc nổi dậy năm 1916. Cùng thời kỳ ấy, nhà thơ <span class="nv" data-note="Abai Kunanbaiuly (1845–1904), nhà thơ, nhà tư tưởng, người đặt nền cho văn học viết tiếng Kazakh hiện đại; tác phẩm nổi tiếng nhất là 'Những lời răn' (Qara sözder).">Abai Kunanbaiuly</span> đặt nền móng cho văn học viết tiếng Kazakh hiện đại.</p>
+
+      <p><b>Thời Xô viết (1920 – 1991).</b> Sau Cách mạng Tháng Mười, trí thức Kazakh do <span class="nv" data-note="Alikhan Bukeikhanov (1866–1937), lãnh tụ phong trào Alash, chủ tịch chính quyền Alash Orda; bị xử bắn trong cuộc Đại thanh trừng năm 1937.">Alikhan Bukeikhanov</span> dẫn dắt lập chính quyền tự trị Alash Orda (<span class="tg">1917 – 1920</span>), nhưng bị Hồng quân giải tán. Thảm kịch lớn nhất đến với chiến dịch tập thể hóa và định cư cưỡng bức: trong nạn đói <i>Asharshylyk</i> <span class="tg">1930 – 1933</span>, ước tính khoảng 1,5 triệu người Kazakh — gần bốn phần mười dân tộc — đã chết, hàng chục vạn người khác chạy sang Trung Quốc, Mông Cổ. Thập niên 1930–1940, Kazakhstan thành nơi lưu đày của người Đức, Chechnya, Triều Tiên, Ba Lan và trại cải tạo ALZhIR dành cho vợ con “kẻ thù nhân dân”. Năm 1954, chiến dịch Khai hoang đất hoang của <span class="nv" data-note="Nikita Khrushchev (1894–1971), lãnh đạo Liên Xô 1953–1964, khởi xướng chiến dịch khai hoang hàng chục triệu hecta thảo nguyên để trồng lúa mì.">Khrushchev</span> biến thảo nguyên phía bắc thành vựa lúa mì và đưa thêm hàng trăm nghìn người Slav đến định cư. Từ <span class="tg">1949</span> đến <span class="tg">1989</span>, bãi thử Semipalatinsk hứng chịu 456 vụ nổ hạt nhân, còn sân bay vũ trụ Baikonur đưa <span class="nv" data-note="Yuri Gagarin (1934–1968), phi công vũ trụ Liên Xô, người đầu tiên bay vào vũ trụ ngày 12/4/1961 từ Baikonur.">Yuri Gagarin</span> vào vũ trụ năm 1961. Tháng <span class="tg">12/1986</span>, khi Moskva thay lãnh đạo người Kazakh <span class="nv" data-note="Dinmukhamed Kunaev (1912–1993), Bí thư thứ nhất Đảng Cộng sản Kazakhstan gần 25 năm; việc ông bị thay bằng Gennady Kolbin (người Nga) châm ngòi cho biểu tình Jeltoqsan.">Kunaev</span> bằng một người Nga chưa từng sống ở Kazakhstan, thanh niên Almaty xuống đường — sự kiện <i>Jeltoqsan</i> (“Tháng Mười Hai”) bị đàn áp nhưng nay được coi là tiếng nói dân tộc đầu tiên.</p>
+
+      <p><b>Độc lập và kỷ nguyên Nazarbayev (1991 – 2019).</b> Ngày <span class="tg">16/12/1991</span>, Kazakhstan là nước cộng hòa cuối cùng tuyên bố độc lập khỏi Liên Xô. <span class="nv" data-note="Nursultan Nazarbayev (sinh 1940), lãnh đạo Kazakhstan từ 1989 đến 2019, được trao danh hiệu 'Elbasy' (Lãnh tụ dân tộc) năm 2010; danh hiệu và nhiều đặc quyền bị bãi bỏ sau năm 2022.">Nursultan Nazarbayev</span> cầm quyền gần ba thập kỷ, từ bỏ kho vũ khí hạt nhân thừa hưởng từ Liên Xô, mời các tập đoàn dầu khí phương Tây vào khai thác và năm <span class="tg">1997</span> dời đô từ Almaty lên Akmola giữa thảo nguyên — năm sau đổi tên thành Astana (“thủ đô”). Thành phố mọc lên với những công trình vị lai, trở thành biểu tượng tham vọng của nhà nước trẻ.</p>
+
+      <p><b>Từ “Kazakhstan mới” đến hiến pháp 2026.</b> Tháng <span class="tg">3/2019</span>, Nazarbayev bất ngờ từ chức nhưng vẫn giữ nhiều quyền lực; thủ đô bị đổi tên thành Nur-Sultan để vinh danh ông. Tháng <span class="tg">1/2022</span>, biểu tình phản đối giá khí đốt hóa lỏng tăng vọt biến thành bạo loạn đẫm máu — sự kiện <i>Qantar</i> (“Tháng Giêng”) — với ít nhất 238 người thiệt mạng theo số liệu chính thức; Tổng thống <span class="nv" data-note="Kassym-Jomart Tokayev (sinh 1953), nhà ngoại giao, từng là Thủ tướng và Phó Tổng thư ký LHQ; Tổng thống Kazakhstan từ 3/2019, tái đắc cử năm 2022 với nhiệm kỳ 7 năm.">Tokayev</span> mời lực lượng của Tổ chức Hiệp ước An ninh Tập thể (CSTO) vào hỗ trợ, rồi nhân đó gạt bỏ ảnh hưởng của gia đình Nazarbayev. Thủ đô lấy lại tên Astana, chức danh “Lãnh tụ dân tộc” bị xóa khỏi hiến pháp. Bản sắc Kazakhstan hôm nay vì thế là sự chồng lớp: ký ức du mục và Hồi giáo Sufi, di sản Nga – Xô viết sâu đậm, cùng một chủ nghĩa dân tộc dân sự đang lớn dần trong thế hệ trẻ.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Kazakhstan (theo Hiến pháp 2026)</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Tổng thống</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, nắm quyền lực trung tâm; nhiệm kỳ 7 năm, không tái cử</span>
+        </li>
+        <li>
+          <span class="tier-role">Phó Tổng thống · Kurultai · Chính phủ</span>
+          <span class="tier-desc">Phó Tổng thống tái lập; quốc hội một viện 145 ghế; Chính phủ do Thủ tướng đứng đầu</span>
+        </li>
+        <li>
+          <span class="tier-role">17 tỉnh &amp; 3 thành phố trực thuộc trung ương</span>
+          <span class="tier-desc">Đứng đầu là akim (tỉnh trưởng) do Tổng thống bổ nhiệm</span>
+        </li>
+        <li>
+          <span class="tier-role">Huyện, thành phố cấp tỉnh, khu dân cư nông thôn</span>
+          <span class="tier-desc">Akim cấp làng, thị trấn được dân bầu trực tiếp từ năm 2021</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Kurultai là gì?</b>
+        Trong truyền thống thảo nguyên Turk – Mông, <i>kurultai</i> là đại hội các thủ lĩnh bộ lạc để bầu khan và quyết việc lớn. Đặt tên quốc hội mới theo thiết chế cổ này là cách nhà nước gắn cải cách với cội nguồn du mục.
+      </aside>
+
+      <p>Kazakhstan là nhà nước đơn nhất theo chế độ tổng thống, trong đó quyền lực thực tế tập trung rất lớn vào nguyên thủ. Năm 2026 đánh dấu thay đổi thể chế sâu rộng nhất kể từ độc lập: trong cuộc trưng cầu dân ý ngày <span class="tg">15/3/2026</span>, khoảng <span class="tg">87%</span> cử tri tán thành một bản hiến pháp hoàn toàn mới với tỷ lệ đi bầu hơn 73%<a class="cite" href="#ref-2">[2]</a>. Hiến pháp có hiệu lực từ <span class="tg">1/7/2026</span>, thay quốc hội hai viện (Mazhilis và Thượng viện) bằng một viện duy nhất — <b>Kurultai</b> — gồm <span class="tg">145 đại biểu</span> bầu hoàn toàn theo danh sách đảng; đồng thời tái lập chức phó tổng thống vốn bị bãi bỏ năm 1996 và lập thêm Hội đồng Nhân dân làm cơ quan tham vấn có quyền sáng kiến lập pháp<a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Cuộc bầu cử Kurultai đầu tiên diễn ra ngày <span class="tg">23/8/2026</span>. Đảng cầm quyền Amanat (tiền thân là Nur Otan của Nazarbayev) trước đó đã sáp nhập vào đảng Ädilet; Ädilet giành <span class="tg">71,17%</span> phiếu và <span class="tg">110/145 ghế</span>, bốn đảng khác chia nhau số ghế còn lại<a class="cite" href="#ref-3">[3]</a>. Chủ tịch đảng <span class="nv" data-note="Aibek Dadebai, chủ tịch đảng Ädilet từ 5/2026, được bầu làm Chủ tịch Kurultai ngày 28/8/2026.">Aibek Dadebai</span> được bầu làm Chủ tịch Kurultai. Phái đoàn quan sát của OSCE đánh giá cuộc bầu cử được chuẩn bị tốt về kỹ thuật nhưng thiếu đa nguyên chính trị thực sự<a class="cite" href="#ref-3">[3]</a>.</p>
+
+      <p>Ngày <span class="tg">31/8/2026</span>, <span class="nv" data-note="Erlan Karin (sinh khoảng 1976), nhà khoa học chính trị, từng là Phó Chánh văn phòng thứ nhất Phủ Tổng thống; Phó Tổng thống đầu tiên theo hiến pháp 2026.">Erlan Karin</span> — trợ lý chính trị thân cận của Tokayev — trở thành Phó Tổng thống, còn <span class="nv" data-note="Olzhas Bektenov (sinh khoảng 1980), từng đứng đầu Cơ quan Chống tham nhũng, Thủ tướng Kazakhstan từ 2/2024 và được tái bổ nhiệm năm 2026.">Olzhas Bektenov</span> tiếp tục giữ ghế Thủ tướng<a class="cite" href="#ref-4">[4]</a>. Chính quyền gọi văn bản mới là “Hiến pháp của Nhân dân”, chuyển từ mô hình “siêu tổng thống” sang “cộng hòa tổng thống với quốc hội có ảnh hưởng”; các nhà phê bình thì cho rằng quyền lực thực chất vẫn nằm trong tay tổng thống và câu hỏi lớn nhất là ai sẽ kế nhiệm khi nhiệm kỳ của Tokayev kết thúc năm 2029.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Kazakhstan là nền kinh tế lớn nhất Trung Á, với GDP danh nghĩa ước khoảng <span class="tg">360 tỷ USD</span> và GDP bình quân đầu người khoảng <span class="tg">17.500 USD</span> năm 2026 — tương đương gần <span class="tg">48.000 USD</span> nếu tính theo sức mua<a class="cite" href="#ref-1">[1]</a>. Chỉ số phát triển con người đạt mức “rất cao”. Sự thịnh vượng đó phần lớn nằm dưới lòng đất: dầu mỏ, khí đốt, uranium, đồng, kẽm, crôm và hầu như đủ cả bảng tuần hoàn.</p>
+
+      <p>Dầu mỏ là xương sống của ngân sách và xuất khẩu. Ba mỏ khổng lồ Tengiz, Kashagan và Karachaganak do các tập đoàn như Chevron, ExxonMobil, Eni, Shell cùng khai thác với quỹ quốc gia. Năm 2025, riêng mỏ Tengiz đã vượt <span class="tg">39 triệu tấn</span> sau khi hoàn tất dự án mở rộng, còn Kashagan đạt khoảng 18 triệu tấn<a class="cite" href="#ref-5">[5]</a>. Một phần nguồn thu được tích vào Quỹ Quốc gia (National Fund) để dự phòng khi giá dầu biến động.</p>
+
+      <p>Ít người biết rằng Kazakhstan là nước sản xuất uranium số một thế giới từ năm 2009, chiếm khoảng <span class="tg">40%</span> sản lượng toàn cầu năm 2025<a class="cite" href="#ref-6">[6]</a>. Sau cuộc trưng cầu dân ý tháng 10/2024 với khoảng 70% ủng hộ, nước này đang chuẩn bị xây nhà máy điện hạt nhân đầu tiên gần làng Ulken bên hồ Balkhash, do Rosatom của Nga làm tổng thầu với hai lò VVER-1200, dự kiến khởi công năm 2027<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Điểm yếu lớn nhất là sự phụ thuộc vào hàng hóa thô và tuyến xuất khẩu qua Nga. Khoảng <span class="tg">80%</span> dầu xuất khẩu của Kazakhstan đi qua đường ống của Liên doanh Đường ống Caspi (CPC) tới cảng Novorossiysk trên Biển Đen<a class="cite" href="#ref-7">[7]</a>. Chính phủ vì vậy thúc đẩy “Hành lang Trung tâm” (Middle Corridor) xuyên biển Caspi sang Azerbaijan, Gruzia, Thổ Nhĩ Kỳ để vòng tránh Nga, đồng thời đặt mục tiêu đa dạng hóa sang chế biến, nông nghiệp (lúa mì, bột mì) và công nghệ số. Lạm phát cao và đồng tenge mất giá vẫn là những vấn đề thường trực của người dân.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Văn hóa Kazakh mang đậm dấu ấn du mục: ngôi nhà lều <i>kiiz üi</i> (yurt) có thể tháo dỡ trong một giờ, nghệ thuật săn bằng đại bàng vàng (<i>berkutchi</i>), những môn thể thao trên lưng ngựa như <i>kökpar</i> — tranh xác dê — và đàn hai dây <i>dombra</i> gần như nhà nào cũng có. Lễ năm mới <b>Nauryz</b> vào ngày xuân phân (21–23/3) là dịp lễ lớn và vui nhất trong năm. Hồi giáo ở Kazakhstan mang tính ôn hòa, hòa trộn với tín ngưỡng thờ trời Tengri và tục tôn kính tổ tiên; nhà nước theo nguyên tắc thế tục.</p>
+
+      <aside class="sidenote">
+        <b>“Jeti ata” — bảy đời tổ tiên</b>
+        Theo truyền thống, mỗi người Kazakh phải thuộc tên bảy đời tổ tiên bên nội. Quy tắc này từng là cách tránh hôn nhân cận huyết giữa các dòng họ du mục và đến nay vẫn được nhiều gia đình giữ.
+      </aside>
+
+      <p>Về tâm lý xã hội, lòng hiếu khách được xem là danh dự: khách đến nhà dù quen hay lạ đều được mời ngồi vào <i>dastarkhan</i> (mâm tiệc) và tiếp trà không ngớt. Người già — đặc biệt là các <i>aqsaqal</i> (“râu bạc”) — được kính trọng sâu sắc; quan hệ dòng họ và zhuz vẫn âm thầm ảnh hưởng đến cơ hội nghề nghiệp. Xã hội song ngữ rõ rệt: ở đô thị, nhất là Almaty và miền bắc, tiếng Nga vẫn phổ biến trong công việc, trong khi giới trẻ ngày càng tự hào nói tiếng Kazakh. Kế hoạch chuyển chữ viết tiếng Kazakh từ chữ Kirin sang chữ Latinh được công bố từ năm 2017, nhưng đến tháng 9/2026 vẫn chưa có thời hạn hoàn tất chính thức<a class="cite" href="#ref-8">[8]</a>. Một đặc điểm khác là chủ nghĩa thực dụng và tinh thần “ổn định trên hết” — ký ức về các biến động đầu thập niên 1990 và năm 2022 khiến nhiều người đặt trật tự lên trước tự do chính trị.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Đầu cừu cho khách quý</b>
+        Trong những dịp trọng đại, đầu cừu luộc được dâng cho vị khách được kính trọng nhất. Người ấy cắt từng phần chia cho mọi người theo ý nghĩa: tai cho người trẻ để “biết lắng nghe”, vòm miệng cho con gái để “ăn nói khéo”.
+      </aside>
+
+      <p>Ẩm thực Kazakh sinh ra từ đời sống du mục, nên triết lý của nó là thịt, sữa và sự no đủ để chống chọi với mùa đông dài. Thịt ngựa và thịt cừu là nguyên liệu quý nhất; rau xanh ít xuất hiện trong món truyền thống. Cuối thu, các gia đình tổ chức <i>sogym</i> — mổ gia súc để dự trữ thịt cho cả mùa đông, làm xúc xích, phơi khô và hun khói.</p>
+
+      <p>Sự khác biệt vùng miền gắn với lịch sử. Miền tây giáp biển Caspi dùng nhiều cá và lạc đà; miền nam ấm áp chịu ảnh hưởng mạnh của ẩm thực Uzbek và Duy Ngô Nhĩ với cơm plov, mì <i>lagman</i>, bánh hấp <i>manty</i>; miền bắc mang dấu ấn Nga với súp borscht và pelmeni. Đồ uống đặc trưng là <b>kumys</b> — sữa ngựa lên men chua nhẹ, hơi có ga — và <b>shubat</b>, sữa lạc đà lên men; người Kazakh cũng là những người uống trà nhiều bậc nhất thế giới, thường pha trà đen đậm với sữa. Văn hóa ăn uống xoay quanh mâm <i>dastarkhan</i> bày tràn đồ ăn, nơi chủ nhà rót trà chỉ lưng chén để khách được rót lại nhiều lần — rót đầy chén bị coi như ngụ ý mời khách về.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu trên thảo nguyên</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Quốc hồn quốc túy</span><span class="pick-name">Beshbarmak</span><span class="pick-desc">Thịt ngựa hoặc cừu luộc thái lát trên bánh bột cán mỏng, rưới nước hành — tên món nghĩa là “năm ngón tay” vì xưa ăn bốc.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Kazy</span><span class="pick-desc">Xúc xích thịt ngựa nhồi trong ruột ngựa, giữ nguyên dải mỡ — món không thể thiếu trong mâm tiệc.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Baursak</span><span class="pick-desc">Bánh bột rán phồng tròn, được rải lên mâm như lời chúc no đủ trong mọi dịp lễ.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Kuyrdak</span><span class="pick-desc">Lòng, gan, tim cừu xào hành — món nấu ngay sau khi mổ gia súc để đãi khách.</span></li>
+        <li><span class="pick-where">Đồ uống</span><span class="pick-name">Kumys</span><span class="pick-desc">Sữa ngựa lên men chua nhẹ, được tin là tốt cho sức khỏe, uống nhiều vào mùa hè.</span></li>
+        <li><span class="pick-where">Miền tây &amp; nam</span><span class="pick-name">Shubat</span><span class="pick-desc">Sữa lạc đà lên men, đặc và béo hơn kumys, phổ biến ở vùng hoang mạc.</span></li>
+        <li><span class="pick-where">Miền nam</span><span class="pick-name">Plov</span><span class="pick-desc">Cơm rang với thịt cừu, cà rốt và hành trong vạc gang lớn, di sản chung của Trung Á.</span></li>
+        <li><span class="pick-where">Miền nam</span><span class="pick-name">Manty</span><span class="pick-desc">Bánh bao hấp lớn nhân thịt cừu băm và bí đỏ, chấm kem chua hoặc giấm ớt.</span></li>
+        <li><span class="pick-where">Ảnh hưởng Duy Ngô Nhĩ</span><span class="pick-name">Lagman</span><span class="pick-desc">Mì kéo tay xào hoặc nấu nước với thịt bò, ớt chuông và rau.</span></li>
+        <li><span class="pick-where">Đồ ăn vặt</span><span class="pick-name">Kurt</span><span class="pick-desc">Viên sữa chua phơi khô cứng và mặn, món ăn mang theo đường dài của dân du mục.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Ở các thành phố lớn, ẩm thực Kazakhstan phản ánh đúng bức tranh đa sắc tộc: quán Hàn Quốc của cộng đồng Koryo-saram bán món cà rốt trộn cay <i>morkovcha</i>, quán Uzbek bày lò nướng samsa, và quán shashlyk nướng than có mặt ở mọi góc phố. Almaty còn tự hào là quê hương của táo — loài táo dại <i>Malus sieversii</i> mọc trên sườn Thiên Sơn được xác định là tổ tiên của hầu hết giống táo trồng ngày nay, và tên cũ của thành phố, Alma-Ata, thường được hiểu là “cha của táo”.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Khoảng cách thảo nguyên</b>
+        Từ Almaty đến Astana gần 1.000 km đường chim bay. Du khách thường kết hợp máy bay nội địa với tàu đêm, và nên tính thời gian di chuyển rộng rãi hơn dự kiến.
+      </aside>
+
+      <p>Kazakhstan hiện có <span class="tg">7 di sản thế giới</span> được UNESCO công nhận — gồm 4 di sản văn hóa và 3 di sản thiên nhiên, trong đó ba di sản xuyên biên giới với các nước láng giềng; mới nhất là quần thể đền thờ trong hang đá ở Mangystau được ghi danh năm 2026<a class="cite" href="#ref-9">[9]</a>. Ngoài các di sản, sức hút của đất nước nằm ở những cảnh quan hoang sơ rất ít khách du lịch và hai đô thị đối lập: Astana vị lai và Almaty xanh mướt dưới chân núi.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Kazakhstan</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Thủ đô</span><span class="pick-name">Astana</span><span class="pick-desc">Tháp Baiterek, lều khổng lồ Khan Shatyr và quả cầu Nur Alem — thành phố mọc lên giữa thảo nguyên sau năm 1997.</span></li>
+        <li><span class="pick-where">Đông nam</span><span class="pick-name">Almaty</span><span class="pick-desc">Cố đô xanh rợp cây, nhà thờ gỗ Zenkov, đồi Kok-Tobe và sân trượt băng trên núi Medeu.</span></li>
+        <li><span class="pick-where">Đông nam</span><span class="pick-name">Hẻm núi Charyn</span><span class="pick-desc">“Thung lũng Lâu đài” với vách đá đỏ cam, thường được ví như Grand Canyon thu nhỏ.</span></li>
+        <li><span class="pick-where">Đông nam</span><span class="pick-name">Hồ Kolsai &amp; Kaindy</span><span class="pick-desc">Chuỗi hồ núi xanh ngọc, trong đó Kaindy có rừng vân sam chết đứng nhô lên từ mặt nước.</span></li>
+        <li><span class="pick-where">Đông nam</span><span class="pick-name">Altyn-Emel &amp; Tamgaly</span><span class="pick-desc">Cồn cát “biết hát” giữa vườn quốc gia và hàng nghìn bức khắc đá thời đồ đồng (di sản UNESCO).</span></li>
+        <li><span class="pick-where">Miền nam</span><span class="pick-name">Turkistan</span><span class="pick-desc">Lăng Khoja Ahmed Yasawi do Timur cho xây cuối thế kỷ XIV — di sản UNESCO đầu tiên của Kazakhstan.</span></li>
+        <li><span class="pick-where">Miền nam</span><span class="pick-name">Otrar &amp; Taraz</span><span class="pick-desc">Phế tích các thành phố Con đường Tơ lụa, một phần di sản xuyên quốc gia hành lang Trường An – Thiên Sơn.</span></li>
+        <li><span class="pick-where">Miền tây</span><span class="pick-name">Mangystau</span><span class="pick-desc">Cao nguyên đá vôi Bozzhyra như hành tinh khác và các đền thờ trong hang như Beket-Ata, Shakpak-Ata.</span></li>
+        <li><span class="pick-where">Miền bắc</span><span class="pick-name">Burabay</span><span class="pick-desc">“Thụy Sĩ của thảo nguyên”: hồ nước, rừng thông và đá granite kỳ dị gần Astana.</span></li>
+        <li><span class="pick-where">Miền trung</span><span class="pick-name">Saryarka</span><span class="pick-desc">Thảo nguyên và hồ Korgalzhyn — nơi hồng hạc làm tổ ở cực bắc nhất thế giới (di sản UNESCO).</span></li>
+        <li><span class="pick-where">Tây nam</span><span class="pick-name">Baikonur</span><span class="pick-desc">Sân bay vũ trụ lâu đời nhất thế giới, nơi Gagarin cất cánh; Nga vẫn thuê đến năm 2050.</span></li>
+        <li><span class="pick-where">Tây nam</span><span class="pick-name">Biển Aral</span><span class="pick-desc">Những con tàu gỉ sét nằm giữa sa mạc — bài học môi trường đắt giá, nay phần phía bắc đang hồi sinh.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Chính sách “đa vectơ”</b>
+        Thuật ngữ do Nazarbayev đặt ra: giữ quan hệ tốt đồng thời với Nga, Trung Quốc, phương Tây và thế giới Hồi giáo, không để bất kỳ cường quốc nào chi phối hoàn toàn.
+      </aside>
+
+      <p>Nằm kẹp giữa Nga và Trung Quốc, Kazakhstan theo đuổi chính sách đối ngoại “đa vectơ”. Nước này là thành viên Liên minh Kinh tế Á – Âu và CSTO do Nga dẫn dắt, thành viên Tổ chức Hợp tác Thượng Hải, là mắt xích quan trọng trong sáng kiến Vành đai và Con đường của Trung Quốc — ý tưởng này chính được ông Tập Cận Bình công bố tại Astana năm 2013 — đồng thời có quan hệ năng lượng sâu rộng với Mỹ và châu Âu. Kazakhstan cũng nổi tiếng với vai trò trung gian: từng tổ chức các vòng đàm phán Astana về Syria và tự quảng bá là quốc gia đi đầu về giải trừ vũ khí hạt nhân. Tháng <span class="tg">11/2025</span>, Astana tuyên bố gia nhập Hiệp định Abraham do Mỹ bảo trợ, dù trước đó vốn đã có quan hệ ngoại giao với Israel<a class="cite" href="#ref-10">[10]</a>.</p>
+
+      <p>Vấn đề nóng nhất hiện nay là cuộc chiến Nga – Ukraina. Kazakhstan không công nhận việc Nga sáp nhập lãnh thổ Ukraina và cố gắng tránh vi phạm lệnh trừng phạt phương Tây, nhưng vẫn phụ thuộc vào Nga về giao thông và thương mại. Năm 2026, các cuộc tấn công bằng drone của Ukraina nhắm vào tàu chở dầu tại cảng của CPC hồi tháng Giêng và tháng 6–7 khiến Kazakhstan mất khoảng <span class="tg">3,5 triệu tấn</span> sản lượng, buộc chính phủ hạ mục tiêu khai thác năm 2026 từ 98 xuống <span class="tg">96 triệu tấn</span><a class="cite" href="#ref-7">[7]</a>. Việc chọn Rosatom xây nhà máy điện hạt nhân đầu tiên cũng cho thấy quan hệ với Moskva vẫn khó thay thế<a class="cite" href="#ref-6">[6]</a>.</p>
+
+      <p>Ở trong nước, các thách thức lớn gồm quá trình chuyển giao quyền lực sau năm 2029, khoảng cách giàu nghèo giữa các thành phố dầu mỏ và vùng nông thôn, tham nhũng, lạm phát, cùng sự thiếu vắng đối lập chính trị độc lập mà các tổ chức nhân quyền thường xuyên phê phán. Về môi trường, Kazakhstan phải đối mặt với tình trạng thiếu nước ngày càng nghiêm trọng khi các dòng sông xuyên biên giới bắt nguồn từ Trung Quốc và Kyrgyzstan bị khai thác mạnh, ô nhiễm không khí do than đá ở các đô thị lớn và mực nước biển Caspi đang hạ thấp.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Kazakhstan</h2>
+      <ol class="funs">
+        <li><b>Nước không giáp biển lớn nhất thế giới.</b> Bờ biển Caspi của Kazakhstan dài hàng nghìn km, nhưng Caspi là hồ nước mặn khép kín, nên về mặt địa lý Kazakhstan vẫn là quốc gia lục địa lớn nhất hành tinh.</li>
+        <li><b>Quê hương của quả táo.</b> Táo dại <i>Malus sieversii</i> trên sườn Thiên Sơn quanh Almaty là tổ tiên di truyền của hầu hết giống táo trồng trên thế giới.</li>
+        <li><b>Nơi con người lần đầu bay vào vũ trụ.</b> Yuri Gagarin cất cánh từ Baikonur năm 1961; đến nay sân bay vũ trụ này vẫn được Nga thuê và là nơi phóng nhiều tàu Soyuz.</li>
+        <li><b>Từ bỏ kho hạt nhân lớn thứ tư thế giới.</b> Khi độc lập, Kazakhstan thừa hưởng hơn một nghìn đầu đạn hạt nhân Liên Xô và đã tự nguyện chuyển hết về Nga trong thập niên 1990.</li>
+        <li><b>“Vua” uranium.</b> Khoảng 40% uranium khai thác trên thế giới năm 2025 đến từ Kazakhstan, chủ yếu bằng phương pháp hòa tách tại chỗ dưới lòng đất<a class="cite" href="#ref-6">[6]</a>.</li>
+        <li><b>Thủ đô bốn lần đổi tên.</b> Thành phố Akmolinsk đã lần lượt mang tên Tselinograd, Akmola, Astana, Nur-Sultan rồi trở lại Astana năm 2022.</li>
+        <li><b>Săn bằng đại bàng vàng.</b> Nghệ thuật huấn luyện đại bàng săn cáo, sói vẫn được truyền dạy; nghề nuôi chim săn được UNESCO ghi danh là di sản văn hóa phi vật thể chung của nhiều nước, trong đó có Kazakhstan.</li>
+        <li><b>Hồng hạc giữa thảo nguyên.</b> Hồ Tengiz – Korgalzhyn ở trung tâm đất nước là nơi hồng hạc làm tổ ở cực bắc nhất thế giới, nằm trong di sản thiên nhiên Saryarka.</li>
+        <li><b>Hơn một trăm dân tộc cùng sống.</b> Do lịch sử lưu đày thời Stalin, Kazakhstan có cộng đồng người Hàn, người Đức, người Chechnya lớn — nhà nước có hẳn một Hội đồng Nhân dân các dân tộc.</li>
+        <li><b>Quốc hội mang tên đại hội du mục.</b> Từ năm 2026, cơ quan lập pháp một viện được đặt tên Kurultai, theo hội đồng truyền thống nơi các thủ lĩnh thảo nguyên bầu khan.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Diện tích <span class="tg">2,72 triệu km²</span> (thứ 9 thế giới, lớn nhất trong các nước không giáp biển) nhưng dân số chỉ khoảng <span class="tg">20,6 triệu</span>.</li>
+        <li>Trục lịch sử: Saka → các đế chế Turk → Mông Cổ → Hãn quốc Kazakh (<span class="tg">1465</span>) → Nga sáp nhập → Liên Xô → độc lập <span class="tg">16/12/1991</span>.</li>
+        <li>Vết thương thời Xô viết: nạn đói Asharshylyk (1930–1933), bãi thử Semipalatinsk (456 vụ nổ), thảm họa biển Aral.</li>
+        <li>Thủ đô Astana (từ <span class="tg">1997</span>); thành phố lớn nhất là Almaty.</li>
+        <li>Hiến pháp mới thông qua ngày <span class="tg">15/3/2026</span>: Kurultai một viện <span class="tg">145 ghế</span>, tái lập phó tổng thống (Erlan Karin); Tổng thống Tokayev, Thủ tướng Bektenov.</li>
+        <li>Kinh tế lớn nhất Trung Á, GDP/người ~<span class="tg">17.500 USD</span>; dầu mỏ là trụ cột, uranium đứng số 1 thế giới (~40%).</li>
+        <li>Ẩm thực du mục: beshbarmak, kazy, baursak, kumys; trà sữa và văn hóa mâm dastarkhan.</li>
+        <li>7 di sản UNESCO; đối ngoại “đa vectơ” giữa Nga, Trung Quốc và phương Tây; ~80% dầu xuất khẩu đi qua đường ống CPC.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Hãn quốc Kazakh được thành lập năm nào và bởi ai?</p>
+          <details><summary>Xem đáp án</summary><p>Năm 1465, bởi hai sultan Kerei và Janibek — những người dẫn các bộ tộc tách khỏi hãn quốc Uzbek.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">“Asharshylyk” là gì và vì sao nó là ký ức đau thương của người Kazakh?</p>
+          <details><summary>Xem đáp án</summary><p>Là nạn đói 1930–1933 do chính sách tập thể hóa và định cư cưỡng bức dân du mục của Liên Xô, khiến khoảng 1,5 triệu người Kazakh (theo nhiều ước tính) thiệt mạng.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Hiến pháp năm 2026 đã thay đổi cơ quan lập pháp của Kazakhstan như thế nào?</p>
+          <details><summary>Xem đáp án</summary><p>Thay quốc hội hai viện (Mazhilis và Thượng viện) bằng Kurultai một viện gồm 145 đại biểu bầu theo danh sách đảng; đồng thời tái lập chức phó tổng thống.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Kể tên hai mặt hàng khoáng sản giúp Kazakhstan có vị thế đặc biệt trên thị trường thế giới, và tuyến xuất khẩu dầu chính của nước này.</p>
+          <details><summary>Xem đáp án</summary><p>Dầu mỏ và uranium (số 1 thế giới, ~40% sản lượng). Khoảng 80% dầu xuất khẩu đi qua đường ống CPC tới cảng Novorossiysk của Nga.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Beshbarmak là món gì, và kumys khác shubat ở điểm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Beshbarmak là thịt ngựa hoặc cừu luộc ăn với bánh bột cán mỏng, tên có nghĩa “năm ngón tay”. Kumys là sữa ngựa lên men, còn shubat là sữa lạc đà lên men.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Di sản UNESCO đầu tiên của Kazakhstan là gì, nằm ở đâu?</p>
+          <details><summary>Xem đáp án</summary><p>Lăng Khoja Ahmed Yasawi ở thành phố Turkistan (miền nam), được công nhận năm 2003.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Kazakhstan</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp diện tích, dân số ước tính 8/2026, cơ cấu dân tộc 2026, tôn giáo theo điều tra dân số 2021, GDP theo IMF World Economic Outlook 2026). <a href="https://en.wikipedia.org/wiki/Kazakhstan" target="_blank" rel="noopener">en.wikipedia.org/wiki/Kazakhstan</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-2">CEVRO University – Centre for Analysis of Political Systems (CAPS). <i>Kazakhstan adopts new constitution after March 2026 referendum</i>. 2026. <a href="https://www.cevro.cz/en/caps/kazakhstan-adopts-new-constitution-after-march-2026-referendum" target="_blank" rel="noopener">cevro.cz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-3">Wikipedia contributors. <i>2026 Kazakh legislative election</i>. Wikipedia, Bách khoa toàn thư mở (kết quả chính thức và đánh giá của OSCE). <a href="https://en.wikipedia.org/wiki/2026_Kazakh_legislative_election" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-4">Dunyo News Agency. <i>Kazakhstan Appoints Vice President and Prime Minister Under New Constitution</i>. 31/8/2026. <a href="https://dunyo.info/en/central_asia/v-kazahstane-v-sootvetstvii-s-novoy-konstituciey-naznacheny-vice-prezident" target="_blank" rel="noopener">dunyo.info</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-5">Interfax-Kazakhstan. Tin về sản lượng các mỏ Tengiz và Kashagan năm 2025. 18/2/2026. <a href="https://interfax.kz/en/news/77893" target="_blank" rel="noopener">interfax.kz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-6">World Nuclear Association. <i>Uranium and Nuclear Power in Kazakhstan</i>. Cập nhật 2026. <a href="https://www.world-nuclear.org/information-library/country-profiles/countries-g-n/kazakhstan" target="_blank" rel="noopener">world-nuclear.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-7">Pipeline &amp; Gas Journal. <i>Kazakhstan cuts 2026 oil production goal after Ukrainian CPC strikes</i>. Tháng 8/2026. <a href="https://www.pgjonline.com/news/2026/august/kazakhstan-cuts-2026-oil-production-goal-after-ukrainian-cpc-strikes" target="_blank" rel="noopener">pgjonline.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-8">Hronika.kz. <i>Kazakhstan Yet to Set Timeline for Transition to Latin Script</i>. 8/9/2026. <a href="https://hronika.kz/?p=18619" target="_blank" rel="noopener">hronika.kz</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-9">Wikipedia contributors. <i>List of World Heritage Sites in Kazakhstan</i>. Wikipedia, Bách khoa toàn thư mở (danh sách 7 di sản, cập nhật 2026). <a href="https://en.wikipedia.org/wiki/List_of_World_Heritage_Sites_in_Kazakhstan" target="_blank" rel="noopener">en.wikipedia.org</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-10">Anadolu Agency. <i>Kazakhstan confirms joining Abraham Accords</i>. 7/11/2025. <a href="https://www.aa.com.tr/en/world/kazakhstan-confirms-joining-abraham-accords/3737753" target="_blank" rel="noopener">aa.com.tr</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, sản lượng) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Phần lịch sử cổ – trung đại, văn hóa và ẩm thực tổng hợp từ kiến thức bách khoa phổ thông; các chi tiết còn tranh cãi — như vai trò của văn hóa Botai, số nạn nhân nạn đói 1930–1933 hay đánh giá về tính dân chủ của cải cách 2026 — được trình bày kèm ghi chú, tránh khẳng định một chiều.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
