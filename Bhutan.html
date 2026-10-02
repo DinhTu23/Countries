@@ -1,0 +1,1155 @@
+<title>Bhutan — Hồ sơ quốc gia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+/* ── tokens ───────────────────────────────────────────── */
+:root{
+  --bg:#f4ecda;
+  --surface:#fffdf7;
+  --surface-2:#eadfc4;
+  --ink:#2a2015;
+  --ink-soft:#6a5842;
+  --ink-faint:#8b7a61;
+  --border:#d7c4a0;
+  --border-soft:#e4d6b8;
+  --accent:#9c5322;
+  --accent-deep:#6d3813;
+  --name-ink:#2c6136;
+  --name-line:#7fb98c;
+  --marker:#ffdf5e;
+  --marker-ink:#3d2f0a;
+  --shadow:0 1px 2px rgba(74,53,25,.06), 0 8px 24px rgba(74,53,25,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16120c;
+    --surface:#1f1910;
+    --surface-2:#2a2217;
+    --ink:#ece1cb;
+    --ink-soft:#b7a686;
+    --ink-faint:#8d7d63;
+    --border:#453a25;
+    --border-soft:#372e1e;
+    --accent:#dd9d59;
+    --accent-deep:#f0bd85;
+    --name-ink:#8fd39c;
+    --name-line:#3f6b45;
+    --marker:rgba(226,177,49,.34);
+    --marker-ink:#f6e3ab;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16120c;
+  --surface:#1f1910;
+  --surface-2:#2a2217;
+  --ink:#ece1cb;
+  --ink-soft:#b7a686;
+  --ink-faint:#8d7d63;
+  --border:#453a25;
+  --border-soft:#372e1e;
+  --accent:#dd9d59;
+  --accent-deep:#f0bd85;
+  --name-ink:#8fd39c;
+  --name-line:#3f6b45;
+  --marker:rgba(226,177,49,.34);
+  --marker-ink:#f6e3ab;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.34);
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Serif",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.8;
+  padding-inline:18px;
+  padding-block:0 56px;
+}
+
+/* ── progress ─────────────────────────────────────────── */
+.progress-wrap{
+  position:fixed; top:0; left:0; right:0; z-index:40;
+  padding-top:env(safe-area-inset-top, 0px);
+  pointer-events:none;
+}
+.progress-bar{height:3px; width:0%; background:var(--accent);}
+
+/* ── page grid ────────────────────────────────────────── */
+.page{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  justify-content:center;
+  margin:0 auto;
+  padding-top:38px;
+}
+.rail{display:none;}
+.content{min-width:0;}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{
+  border-bottom:1px solid var(--border);
+  padding-bottom:26px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+}
+h1{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.75rem,5vw,2.6rem);
+  line-height:1.2;
+  margin:.28em 0 .4em;
+  text-wrap:balance;
+  letter-spacing:-.01em;
+}
+.period{
+  display:inline-block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.2em .9em;
+}
+.legend{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px 18px;
+  margin:20px 0 0;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.76rem;
+  color:var(--ink-faint);
+}
+.legend-hint{font-style:italic;}
+
+/* ── highlights ───────────────────────────────────────── */
+.nv{
+  font-weight:600;
+  color:var(--name-ink);
+  border-bottom:2px solid var(--name-line);
+  cursor:help;
+  border-radius:1px;
+}
+.nv:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+.tg{
+  font-weight:600;
+  color:var(--marker-ink);
+  background-image:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 92%, transparent 92%);
+  padding:0 .18em;
+  border-radius:2px;
+}
+.tip{
+  position:fixed; z-index:60;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:10px 13px;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.8rem;
+  line-height:1.55;
+  box-shadow:var(--shadow);
+}
+
+/* ── table of contents rail ───────────────────────────── */
+.toc-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  text-transform:uppercase; letter-spacing:.14em;
+  font-size:.64rem; font-weight:700;
+  color:var(--ink-faint);
+  margin-bottom:12px;
+}
+.toc-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2px;}
+.toc-list a{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.4;
+  color:var(--ink-soft);
+  text-decoration:none;
+  padding:6px 0 6px 12px;
+  border-left:2px solid var(--border-soft);
+}
+.toc-list a:hover{color:var(--accent-deep);}
+.toc-list a.is-active{
+  color:var(--accent-deep);
+  font-weight:600;
+  border-left-color:var(--accent);
+}
+
+/* ── prose ────────────────────────────────────────────── */
+.prose{max-width:100%;}
+.prose p{margin:0 0 1.15em;}
+h2{
+  font-family:"Noto Serif Display","Noto Serif",Georgia,serif;
+  font-size:1.42rem;
+  font-weight:700;
+  color:var(--ink);
+  margin:2.6em 0 .85em;
+  text-wrap:balance;
+}
+h2 .h2-num{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.35em;
+}
+.lede{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--ink-soft);
+  line-height:1.7;
+}
+
+/* ── sidenote ─────────────────────────────────────────── */
+.sidenote{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.82rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+  border-left:3px solid var(--accent);
+  background:var(--surface-2);
+  border-radius:0 8px 8px 0;
+  padding:12px 15px;
+  margin:0 0 1.4em;
+}
+.sidenote b{
+  display:block;
+  color:var(--accent-deep);
+  font-weight:700;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin-bottom:.4em;
+}
+.sidenote i{font-style:italic;}
+
+/* ── bands (full content width) ───────────────────────── */
+.band{margin:2.8em 0;}
+.band-title{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin:0 0 16px;
+}
+.band-foot{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem;
+  color:var(--ink-faint);
+  margin:12px 0 0;
+  font-style:italic;
+}
+
+/* timeline */
+.timeline{
+  list-style:none; margin:0; padding:0;
+  display:flex;
+  overflow-x:auto;
+  scrollbar-width:thin;
+  padding-bottom:6px;
+}
+.timeline li{
+  flex:1 0 152px;
+  min-width:152px;
+  position:relative;
+  border-top:2px solid var(--border);
+  padding:18px 14px 0 0;
+}
+.timeline li::before{
+  content:"";
+  position:absolute; top:-6px; left:0;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--bg);
+  border:2px solid var(--accent);
+}
+.timeline li:last-child::before{background:var(--accent);}
+.tl-when{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:.04em;
+  color:var(--accent-deep);
+  font-variant-numeric:tabular-nums;
+}
+.tl-what{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:.98rem; font-weight:700;
+  line-height:1.35;
+  margin:.25em 0 .2em;
+}
+.tl-note{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.74rem;
+  line-height:1.5;
+  color:var(--ink-soft);
+}
+
+/* hierarchy diagram */
+.tiers{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; align-items:center; gap:0;}
+.tiers li{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 18px;
+  text-align:center;
+}
+.tiers li + li{margin-top:22px; position:relative;}
+.tiers li + li::before{
+  content:"";
+  position:absolute; top:-18px; left:50%;
+  width:2px; height:14px;
+  background:var(--border);
+  transform:translateX(-50%);
+}
+.tier-role{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.02rem;
+  color:var(--accent-deep);
+}
+.tier-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-top:.15em;
+}
+
+/* memo cards */
+.memo{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+}
+.memo li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-top:3px solid var(--accent);
+  border-radius:8px;
+  padding:14px 16px;
+  font-size:.88rem;
+  line-height:1.65;
+}
+
+/* quiz cards */
+.quiz{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+  gap:14px;
+  counter-reset:q;
+}
+.quiz li{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  display:flex;
+  flex-direction:column;
+}
+.q-num{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem; font-weight:700;
+  letter-spacing:.14em;
+  color:var(--accent);
+  margin-bottom:.5em;
+}
+.q-text{
+  font-weight:600;
+  font-size:.94rem;
+  line-height:1.6;
+  margin:0 0 auto;
+}
+.quiz details{
+  margin-top:14px;
+  border-top:1px dashed var(--border);
+  padding-top:11px;
+}
+.quiz summary{
+  cursor:pointer;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.78rem;
+  font-weight:600;
+  color:var(--accent-deep);
+  list-style:none;
+}
+.quiz summary::-webkit-details-marker{display:none;}
+.quiz summary::before{content:"▸ "; }
+.quiz details[open] summary::before{content:"▾ ";}
+.quiz details p{
+  margin:.6em 0 0;
+  font-size:.85rem;
+  line-height:1.65;
+  color:var(--ink-soft);
+}
+.quiz summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+/* next lesson */
+.next{
+  margin-top:3.4em;
+  border-top:2px solid var(--accent);
+  padding-top:20px;
+  text-align:center;
+}
+.next span{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.66rem; font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.5em;
+}
+.next strong{
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-size:1.12rem;
+  font-weight:700;
+  color:var(--accent-deep);
+}
+
+/* ── wide layout ──────────────────────────────────────── */
+@media (min-width:700px){
+  .tiers li{width:100%;}
+  .tiers li:nth-child(1){width:56%;}
+  .tiers li:nth-child(2){width:72%;}
+  .tiers li:nth-child(3){width:86%;}
+  .tiers li:nth-child(4){width:100%;}
+}
+
+@media (min-width:980px){
+  body{padding-inline:22px;}
+  .page{
+    grid-template-columns:clamp(118px,14vw,158px) minmax(0,1fr);
+    gap:clamp(24px,3.4vw,36px);
+    max-width:1000px;
+    padding-top:52px;
+  }
+  .rail{
+    display:block;
+    position:sticky;
+    top:calc(env(safe-area-inset-top, 0px) + 28px);
+    align-self:start;
+    max-height:calc(100vh - 80px);
+    overflow-y:auto;
+  }
+  .content{--note-w:clamp(148px,22%,200px);}
+  .prose{max-width:calc(100% - var(--note-w) - 30px);}
+  .sidenote{
+    float:right;
+    clear:right;
+    width:var(--note-w);
+    margin-right:calc(-1 * (var(--note-w) + 30px));
+    margin-top:.35em;
+    margin-bottom:1.6em;
+    background:transparent;
+    border-left:2px solid var(--border);
+    border-radius:0;
+    padding:2px 0 2px 13px;
+  }
+}
+</style>
+
+<!-- ── thành phần bổ sung cho "Hồ sơ quốc gia" (không có trong mẫu Bài 1 LSVN): thẻ số liệu nhanh, thẻ món ăn/địa điểm, danh sách điều thú vị và khối trích dẫn Vancouver — dùng lại đúng bộ token màu/font ở trên ── -->
+<style>
+.facts{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:12px;
+}
+.facts li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.fact-label{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.4em;
+}
+.fact-value{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1.05rem;
+  color:var(--ink);
+  line-height:1.4;
+}
+.fact-value small{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-weight:600;
+  font-size:.68rem;
+  color:var(--ink-soft);
+  margin-top:.25em;
+  text-transform:none;
+  letter-spacing:0;
+}
+
+/* thẻ món ăn / địa điểm */
+.picks{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.picks li{
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  padding:13px 16px;
+}
+.pick-where{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:.3em;
+}
+.pick-name{
+  display:block;
+  font-family:"Noto Serif Display","Noto Serif",serif;
+  font-weight:700;
+  font-size:1rem;
+  line-height:1.35;
+  color:var(--accent-deep);
+}
+.pick-desc{
+  display:block;
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.79rem;
+  line-height:1.6;
+  color:var(--ink-soft);
+  margin-top:.35em;
+}
+
+/* danh sách điều thú vị */
+.funs{
+  list-style:none; margin:0; padding:0;
+  counter-reset:fun;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:12px;
+}
+.funs li{
+  counter-increment:fun;
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border-soft);
+  border-radius:10px;
+  padding:14px 16px 14px 48px;
+  font-size:.87rem;
+  line-height:1.65;
+}
+.funs li::before{
+  content:counter(fun);
+  position:absolute; left:14px; top:14px;
+  width:23px; height:23px;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--bg);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.72rem; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+}
+.funs b{
+  color:var(--accent-deep);
+  font-weight:700;
+}
+
+/* quốc kỳ ở khối hero */
+.hero-row{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  flex-wrap:wrap-reverse;
+}
+.hero-main{flex:1 1 300px; min-width:0;}
+.flag{
+  margin:0;
+  flex:0 0 auto;
+  width:clamp(122px,28vw,150px);
+}
+.flag svg{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--border);
+  border-radius:5px;
+  box-shadow:var(--shadow);
+}
+/* trích dẫn Vancouver */
+.cite{
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  vertical-align:super;
+  line-height:1;
+  padding:0 .1em;
+  border-radius:3px;
+}
+.cite:hover, .cite:focus-visible{ text-decoration:underline; outline:none; }
+
+.refs{list-style:none; margin:0; padding:0; counter-reset:ref;}
+.refs li{
+  counter-increment:ref;
+  position:relative;
+  padding:12px 0 12px 2.1em;
+  border-top:1px solid var(--border-soft);
+  font-family:"Noto Sans",system-ui,sans-serif;
+  font-size:.85rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  scroll-margin-top:80px;
+}
+.refs li:first-child{border-top:none;}
+.refs li::before{
+  content: counter(ref) ".";
+  position:absolute; left:0; top:12px;
+  font-weight:700;
+  color:var(--accent-deep);
+  font-size:.8rem;
+}
+.refs li:target{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+.refs a{color:var(--accent-deep);}
+.refs .ref-meta{
+  display:block;
+  font-style:italic;
+  color:var(--ink-faint);
+  font-size:.78rem;
+  margin-top:.25em;
+}
+</style>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+
+<div class="page">
+
+  <nav class="rail" aria-label="Mục lục hồ sơ quốc gia">
+    <div class="toc-title">Mục lục</div>
+    <ul class="toc-list">
+      <li><a href="#ho-so-nhanh">Hồ sơ nhanh</a></li>
+      <li><a href="#dong-thoi-gian">Dòng thời gian</a></li>
+      <li><a href="#dia-ly-con-nguoi">Địa lý &amp; con người</a></li>
+      <li><a href="#lich-su-ban-sac">Lịch sử &amp; bản sắc</a></li>
+      <li><a href="#the-che-quyen-luc">Thể chế &amp; quyền lực</a></li>
+      <li><a href="#kinh-te">Kinh tế</a></li>
+      <li><a href="#van-hoa-tam-ly">Văn hóa &amp; tâm lý xã hội</a></li>
+      <li><a href="#am-thuc">Ẩm thực</a></li>
+      <li><a href="#dia-diem">Địa điểm nổi tiếng</a></li>
+      <li><a href="#vi-the-quoc-te">Vị thế quốc tế &amp; vấn đề nóng</a></li>
+      <li><a href="#dieu-thu-vi">10 điều thú vị</a></li>
+      <li><a href="#ghi-nho">Ghi nhớ nhanh</a></li>
+      <li><a href="#on-tap">Câu hỏi ôn tập</a></li>
+      <li><a href="#tham-khao">Tài liệu tham khảo</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+
+    <header class="hero">
+      <div class="hero-row">
+        <div class="hero-main">
+          <div class="eyebrow">Hồ sơ quốc gia · Bhutan</div>
+          <h1>Bhutan</h1>
+          <div class="period">Châu Á · Nam Á</div>
+        </div>
+        <figure class="flag">
+          <svg viewBox="0 0 30 20" role="img" aria-label="Quốc kỳ Bhutan: chia chéo từ góc dưới bên cán lên góc trên bên ngoài, nửa trên màu vàng, nửa dưới màu cam, rồng sấm trắng nằm dọc đường chéo">
+            <polygon fill="#ffd520" points="0,0 30,0 0,20"/>
+            <polygon fill="#ff4e12" points="30,0 30,20 0,20"/>
+            <g stroke-linecap="round" stroke-linejoin="round">
+              <g stroke="#6e5f4f" stroke-width="1.25" fill="none"><path d="M7.88,15.87 L10.28,17.89"/><path d="M9.85,12.35 L8.95,9.35"/><path d="M13.74,10.32 L16.14,12.34"/><path d="M17.97,9.52 L17.07,6.52"/></g>
+              <g stroke="#ffffff" stroke-width="0.85" fill="none"><path d="M7.88,15.87 L10.28,17.89"/><path d="M9.85,12.35 L8.95,9.35"/><path d="M13.74,10.32 L16.14,12.34"/><path d="M17.97,9.52 L17.07,6.52"/></g>
+              <g fill="#ffffff" stroke="#6e5f4f" stroke-width="0.2"><polygon points="5.47,16.46 5.36,15.39 6.26,15.93"/><polygon points="7.84,13.92 7.74,12.85 8.64,13.40"/><polygon points="9.95,10.62 9.85,9.55 10.75,10.10"/><polygon points="11.38,9.91 11.28,8.84 12.18,9.39"/><polygon points="15.17,9.53 15.07,8.46 15.97,9.01"/><polygon points="18.27,7.74 18.17,6.67 19.07,7.21"/></g>
+              <polygon fill="#ffffff" stroke="#6e5f4f" stroke-width="0.2" points="4.50,17.51 1.80,18.81 2.90,17.41 1.60,16.61 4.00,16.51"/>
+              <path fill="none" stroke="#6e5f4f" stroke-width="2.75" d="M4.20,17.51 L4.67,17.47 L5.13,17.41 L5.57,17.33 L5.99,17.22 L6.39,17.07 L6.76,16.88 L7.10,16.65 L7.42,16.38 L7.72,16.08 L7.99,15.73 L8.24,15.36 L8.47,14.96 L8.69,14.55 L8.91,14.12 L9.12,13.69 L9.33,13.26 L9.55,12.84 L9.79,12.45 L10.04,12.07 L10.31,11.73 L10.60,11.43 L10.93,11.16 L11.27,10.94 L11.64,10.75 L12.04,10.60 L12.46,10.49 L12.91,10.41 L13.36,10.35 L13.83,10.32 L14.31,10.29 L14.79,10.27 L15.27,10.24 L15.74,10.20 L16.20,10.15 L16.64,10.06 L17.06,9.95 L17.45,9.80 L17.82,9.61 L18.17,9.38 L18.49,9.11 L18.78,8.81 L19.05,8.47 L19.30,8.09 L19.54,7.70 L19.76,7.28 L19.97,6.85 L20.18,6.42 L20.40,5.99"/>
+              <path fill="none" stroke="#ffffff" stroke-width="2.3" d="M4.20,17.51 L4.67,17.47 L5.13,17.41 L5.57,17.33 L5.99,17.22 L6.39,17.07 L6.76,16.88 L7.10,16.65 L7.42,16.38 L7.72,16.08 L7.99,15.73 L8.24,15.36 L8.47,14.96 L8.69,14.55 L8.91,14.12 L9.12,13.69 L9.33,13.26 L9.55,12.84 L9.79,12.45 L10.04,12.07 L10.31,11.73 L10.60,11.43 L10.93,11.16 L11.27,10.94 L11.64,10.75 L12.04,10.60 L12.46,10.49 L12.91,10.41 L13.36,10.35 L13.83,10.32 L14.31,10.29 L14.79,10.27 L15.27,10.24 L15.74,10.20 L16.20,10.15 L16.64,10.06 L17.06,9.95 L17.45,9.80 L17.82,9.61 L18.17,9.38 L18.49,9.11 L18.78,8.81 L19.05,8.47 L19.30,8.09 L19.54,7.70 L19.76,7.28 L19.97,6.85 L20.18,6.42 L20.40,5.99"/>
+              <path fill="none" stroke="#d9cfbf" stroke-width="0.18" stroke-dasharray="0.35 0.55" d="M4.20,17.51 L4.67,17.47 L5.13,17.41 L5.57,17.33 L5.99,17.22 L6.39,17.07 L6.76,16.88 L7.10,16.65 L7.42,16.38 L7.72,16.08 L7.99,15.73 L8.24,15.36 L8.47,14.96 L8.69,14.55 L8.91,14.12 L9.12,13.69 L9.33,13.26 L9.55,12.84 L9.79,12.45 L10.04,12.07 L10.31,11.73 L10.60,11.43 L10.93,11.16 L11.27,10.94 L11.64,10.75 L12.04,10.60 L12.46,10.49 L12.91,10.41 L13.36,10.35 L13.83,10.32 L14.31,10.29 L14.79,10.27 L15.27,10.24 L15.74,10.20 L16.20,10.15 L16.64,10.06 L17.06,9.95 L17.45,9.80 L17.82,9.61 L18.17,9.38 L18.49,9.11 L18.78,8.81 L19.05,8.47 L19.30,8.09 L19.54,7.70 L19.76,7.28 L19.97,6.85 L20.18,6.42 L20.40,5.99"/>
+              <g fill="#ffffff" stroke="#6e5f4f" stroke-width="0.22"><circle cx="10.42" cy="18.10" r="0.72"/><circle cx="8.81" cy="9.14" r="0.72"/><circle cx="16.27" cy="12.55" r="0.72"/><circle cx="16.93" cy="6.31" r="0.72"/></g>
+              <g stroke="#6e5f4f" stroke-width="0.8" fill="none"><path d="M21.15,5.19 L19.75,3.39"/><path d="M21.85,4.69 L21.15,2.69"/><path d="M20.75,5.89 L19.05,4.69"/></g>
+              <g stroke="#ffffff" stroke-width="0.45" fill="none"><path d="M21.15,5.19 L19.75,3.39"/><path d="M21.85,4.69 L21.15,2.69"/><path d="M20.75,5.89 L19.05,4.69"/></g>
+              <ellipse cx="22.05" cy="5.59" rx="2.3" ry="1.45" transform="rotate(-33.3 22.05 5.59)" fill="#ffffff" stroke="#6e5f4f" stroke-width="0.22"/>
+              <path d="M23.25,5.69 L25.45,5.09 L24.25,6.09 L25.15,6.69 L22.95,6.49 Z" fill="#ffffff" stroke="#6e5f4f" stroke-width="0.2"/>
+              <path d="M22.25,4.49 L22.65,2.99 M22.95,4.69 L23.85,3.49" stroke="#6e5f4f" stroke-width="0.35" fill="none"/>
+              <circle cx="22.55" cy="5.24" r="0.3" fill="#3a2e24"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+      <p class="legend">
+        <span><span class="nv" style="cursor:default">Tên riêng</span></span>
+        <span><span class="tg">Mốc thời gian &amp; số liệu quan trọng</span></span>
+        <span class="legend-hint">rê chuột vào tên riêng để xem chú thích</span>
+      </p>
+    </header>
+
+    <p class="lede">Bhutan là một vương quốc Phật giáo nhỏ bé kẹp giữa hai gã khổng lồ Ấn Độ và Trung Quốc trên sườn đông Himalaya, với chưa đầy tám mươi vạn dân. Đất nước này gần như đóng cửa với thế giới cho đến thập niên 1960, chỉ có truyền hình từ năm 1999, và nổi tiếng toàn cầu vì đặt “Tổng hạnh phúc quốc gia” lên trên tăng trưởng GDP. Năm 2008, chính nhà vua chủ động trao quyền cho một nền dân chủ nghị viện, biến Bhutan thành quốc gia quân chủ lập hiến trẻ nhất thế giới. Nếu chỉ nhớ một điều về Bhutan, hãy nhớ: đây là thử nghiệm táo bạo về việc hiện đại hóa mà không đánh mất bản sắc — và thử nghiệm ấy đang chịu sức ép lớn từ làn sóng người trẻ rời đi.</p>
+
+    <section class="band" id="ho-so-nhanh">
+      <h2 class="band-title">Hồ sơ nhanh</h2>
+      <ul class="facts">
+        <li><span class="fact-label">Diện tích</span><span class="fact-value">38.394 km²<a class="cite" href="#ref-1">[1]</a></span></li>
+        <li><span class="fact-label">Dân số</span><span class="fact-value">~784.000<a class="cite" href="#ref-2">[2]</a><small>dự báo chính thức 2025</small></span></li>
+        <li><span class="fact-label">Thủ đô</span><span class="fact-value">Thimphu</span></li>
+        <li><span class="fact-label">Ngôn ngữ</span><span class="fact-value">Dzongkha<small>cùng Tshangla, Nepal…</small></span></li>
+        <li><span class="fact-label">Tôn giáo chính</span><span class="fact-value">Phật giáo Kim Cương thừa<small>~75%; Ấn Độ giáo ~23%<a class="cite" href="#ref-1">[1]</a></small></span></li>
+        <li><span class="fact-label">Tiền tệ</span><span class="fact-value">Ngultrum (Nu., BTN)<small>neo 1:1 với rupee Ấn Độ</small></span></li>
+        <li><span class="fact-label">GDP/người</span><span class="fact-value">~4.250 USD<a class="cite" href="#ref-2">[2]</a><small>danh nghĩa, năm 2024</small></span></li>
+      </ul>
+    </section>
+
+    <section class="band" id="dong-thoi-gian">
+      <h2 class="band-title">Dòng thời gian</h2>
+      <ol class="timeline">
+        <li>
+          <span class="tl-when">TK VII</span>
+          <span class="tl-what">Những ngôi đền đầu tiên</span>
+          <span class="tl-note">Theo truyền thống, vua Tây Tạng Songtsen Gampo dựng Kyichu Lhakhang (Paro) và Jambay Lhakhang (Bumthang)</span>
+        </li>
+        <li>
+          <span class="tl-when">~746</span>
+          <span class="tl-what">Guru Rinpoche đến Bumthang</span>
+          <span class="tl-note">Đạo sư Padmasambhava truyền Phật giáo Mật tông — mốc khởi đầu đời sống tâm linh Bhutan</span>
+        </li>
+        <li>
+          <span class="tl-when">TK XIII</span>
+          <span class="tl-what">Phái Drukpa bén rễ</span>
+          <span class="tl-note">Phajo Drugom Zhigpo từ Tây Tạng sang truyền dòng Drukpa Kagyu, sau thành quốc giáo</span>
+        </li>
+        <li>
+          <span class="tl-when">1616</span>
+          <span class="tl-what">Zhabdrung đến Bhutan</span>
+          <span class="tl-note">Ngawang Namgyal lưu vong khỏi Tây Tạng, bắt đầu thống nhất các thung lũng thành một quốc gia</span>
+        </li>
+        <li>
+          <span class="tl-when">1629</span>
+          <span class="tl-what">Dzong Simtokha</span>
+          <span class="tl-note">Pháo đài – tu viện đầu tiên theo mô hình kết hợp chính quyền và tôn giáo</span>
+        </li>
+        <li>
+          <span class="tl-when">1651</span>
+          <span class="tl-what">Zhabdrung qua đời</span>
+          <span class="tl-note">Cái chết được giữ bí mật nhiều thập kỷ; mở đầu hơn hai thế kỷ cai trị của các Desi và nội chiến</span>
+        </li>
+        <li>
+          <span class="tl-when">1865</span>
+          <span class="tl-what">Hiệp ước Sinchula</span>
+          <span class="tl-note">Thua Anh trong Chiến tranh Duar, Bhutan mất dải đồng bằng Duar để đổi lấy khoản trợ cấp hằng năm</span>
+        </li>
+        <li>
+          <span class="tl-when">17/12/1907</span>
+          <span class="tl-what">Lập triều Wangchuck</span>
+          <span class="tl-note">Ugyen Wangchuck được tôn làm Druk Gyalpo đầu tiên tại Punakha — nay là Quốc khánh</span>
+        </li>
+        <li>
+          <span class="tl-when">1910 · 1949</span>
+          <span class="tl-what">Hiệp ước Punakha &amp; với Ấn Độ</span>
+          <span class="tl-note">Anh rồi Ấn Độ được “hướng dẫn” đối ngoại; điều khoản này chỉ được bỏ khi sửa hiệp ước năm 2007</span>
+        </li>
+        <li>
+          <span class="tl-when">1953 · 1961</span>
+          <span class="tl-what">Mở cửa dè dặt</span>
+          <span class="tl-note">Vua thứ ba lập Quốc hội Tshogdu, bãi bỏ nông nô; kế hoạch 5 năm đầu tiên làm đường sá với Ấn Độ</span>
+        </li>
+        <li>
+          <span class="tl-when">1971</span>
+          <span class="tl-what">Gia nhập Liên Hợp Quốc</span>
+          <span class="tl-note">Chủ quyền của Bhutan được quốc tế công nhận rộng rãi</span>
+        </li>
+        <li>
+          <span class="tl-when">1972 – 1974</span>
+          <span class="tl-what">Vua thứ tư &amp; mở cửa du lịch</span>
+          <span class="tl-note">Jigme Singye Wangchuck lên ngôi năm 16 tuổi; đón những du khách đầu tiên dịp lễ đăng quang</span>
+        </li>
+        <li>
+          <span class="tl-when">1990s</span>
+          <span class="tl-what">Khủng hoảng Lhotshampa</span>
+          <span class="tl-note">Chính sách “một dân tộc, một quốc gia” đẩy khoảng 100.000 người gốc Nepal sang trại tị nạn</span>
+        </li>
+        <li>
+          <span class="tl-when">2006 – 2008</span>
+          <span class="tl-what">Quân chủ lập hiến</span>
+          <span class="tl-note">Vua thứ năm kế vị; bầu cử dân chủ đầu tiên (3/2008) và Hiến pháp ban hành 18/7/2008</span>
+        </li>
+        <li>
+          <span class="tl-when">12/2023</span>
+          <span class="tl-what">Tốt nghiệp LDC &amp; Gelephu</span>
+          <span class="tl-note">Ra khỏi nhóm nước kém phát triển; nhà vua công bố dự án Thành phố Chánh niệm Gelephu</span>
+        </li>
+        <li>
+          <span class="tl-when">2025 – 2026</span>
+          <span class="tl-what">Thủy điện &amp; đàm phán biên giới</span>
+          <span class="tl-note">Khánh thành Punatsangchhu-II (1.020 MW); vòng họp chuyên gia thứ 15 với Trung Quốc</span>
+        </li>
+      </ol>
+      <p class="band-foot">Các mốc trước thế kỷ XVII chủ yếu dựa trên biên niên tôn giáo và truyền thuyết chép muộn, nên niên đại (như năm 659 cho các ngôi đền của Songtsen Gampo hay năm 746 cho chuyến đi của Guru Rinpoche) mang tính ước lệ.</p>
+    </section>
+
+    <div class="prose">
+
+      <h2 id="dia-ly-con-nguoi"><span class="h2-num">Phần một</span>Địa lý &amp; con người</h2>
+
+      <aside class="sidenote">
+        <b>Về số liệu dân số</b>
+        Tổng điều tra năm 2017 đếm được khoảng 727.000 người. Con số trong bài là dự báo của Cục Thống kê Quốc gia Bhutan cho năm 2025; các ước tính quốc tế có thể chênh lệch do làn sóng di cư ra nước ngoài mấy năm gần đây.
+      </aside>
+
+      <p class="lede">Người Bhutan gọi đất nước mình là <span class="nv" data-note="Nghĩa là “Đất nước của Rồng Sấm”; tên gọi gắn với dòng Phật giáo Drukpa — “druk” là tiếng sấm, được hình dung như tiếng rồng gầm.">Druk Yul</span> — “Đất nước Rồng Sấm” — một dải núi non không giáp biển, phía bắc giáp Tây Tạng (Trung Quốc), ba phía còn lại giáp Ấn Độ.</p>
+
+      <p>Với diện tích khoảng <span class="tg">38.394 km²</span><a class="cite" href="#ref-1">[1]</a> — nhỏ hơn diện tích vùng Tây Nguyên của Việt Nam — Bhutan có một trong những địa hình dốc đứng nhất thế giới. Chỉ trong khoảng cách chưa tới 200 km theo chiều bắc – nam, độ cao giảm từ hơn <span class="tg">7.500 m</span> ở dãy Himalaya xuống dưới 200 m ở đồng bằng giáp bang Assam và Tây Bengal của Ấn Độ. Đất nước vì thế chia thành ba dải khí hậu rõ rệt: vùng núi tuyết cao nguyên phía bắc, vùng thung lũng ôn đới ở giữa — nơi tập trung các dzong và phần lớn dân cư — và vùng chân núi cận nhiệt đới nóng ẩm phía nam. Đỉnh cao nhất là <span class="nv" data-note="Cao 7.570 m, nằm trên biên giới với Tây Tạng; được xem là ngọn núi cao nhất thế giới chưa có ai lên tới đỉnh.">Gangkhar Puensum</span> (<span class="tg">7.570 m</span>)<a class="cite" href="#ref-1">[1]</a>.</p>
+
+      <p>Rừng phủ khoảng 70% lãnh thổ, và Hiến pháp quy định đất nước phải luôn giữ ít nhất <span class="tg">60%</span> diện tích là rừng. Nhờ vậy, cùng với thủy điện gần như là nguồn điện duy nhất, Bhutan là một trong số rất ít quốc gia hấp thụ nhiều khí CO₂ hơn lượng thải ra.</p>
+
+      <p>Dân số được dự báo khoảng <span class="tg">784.000 người</span> vào năm 2025<a class="cite" href="#ref-2">[2]</a>, phân bố rất thưa. Ba nhóm cư dân chính là người <span class="nv" data-note="Nhóm gốc Tây Tạng sống chủ yếu ở miền tây và miền trung, chiếm ưu thế về chính trị và văn hóa; tiếng Dzongkha bắt nguồn từ ngôn ngữ của họ.">Ngalop</span> ở miền tây, người <span class="nv" data-note="Có nghĩa “người phương đông”, được xem là cư dân lâu đời nhất, nói tiếng Tshangla; là nhóm đông dân nhất theo nhiều ước tính.">Sharchop</span> ở miền đông và người <span class="nv" data-note="“Người phương nam” — cư dân gốc Nepal theo Ấn Độ giáo, di cư đến vùng chân núi phía nam từ cuối thế kỷ XIX.">Lhotshampa</span> gốc Nepal ở miền nam, bên cạnh nhiều cộng đồng nhỏ ở vùng núi cao. Trên lãnh thổ có khoảng hai chục ngôn ngữ, nhưng tiếng Dzongkha là quốc ngữ, còn tiếng Anh là ngôn ngữ giảng dạy trong trường học. Thủ đô <span class="nv" data-note="Thủ đô từ năm 1961 (trước đó triều đình đóng ở Punakha vào mùa đông và Bumthang); đô thị lớn nhất, khoảng hơn một trăm nghìn dân.">Thimphu</span> nằm ở độ cao khoảng 2.300 m, là một trong những thủ đô cao nhất thế giới.</p>
+
+      <h2 id="lich-su-ban-sac"><span class="h2-num">Phần hai</span>Lịch sử &amp; bản sắc</h2>
+
+      <p class="lede">Lịch sử Bhutan gắn chặt với Phật giáo đến mức khó tách đâu là chính trị, đâu là tôn giáo — và chính sự hòa quyện ấy đã tạo ra một quốc gia khác biệt hẳn với Tây Tạng láng giềng.</p>
+
+      <p><b>Thời tiền sử và truyền thuyết.</b> Dấu vết công cụ đá cho thấy con người đã sống ở các thung lũng Bhutan từ rất sớm, theo tín ngưỡng <span class="nv" data-note="Tôn giáo bản địa vùng Himalaya có trước Phật giáo, thờ thần núi, thần sông; nhiều nghi lễ Bon vẫn còn tồn tại trong làng quê Bhutan.">Bon</span> thờ thần núi, thần nước. Biên niên tôn giáo kể rằng vào thế kỷ VII, vua Tây Tạng <span class="nv" data-note="Vị vua thống nhất đế chế Tây Tạng (mất năm 649 hoặc 650), được cho là đã dựng 108 ngôi đền để trấn yểm một nữ quỷ khổng lồ nằm trên vùng Himalaya.">Songtsen Gampo</span> dựng hai ngôi đền Kyichu Lhakhang ở Paro và Jambay Lhakhang ở Bumthang — những công trình Phật giáo cổ nhất còn lại. Khoảng năm <span class="tg">746</span>, <span class="nv" data-note="Tức Padmasambhava, đạo sư Mật tông người Ấn Độ, được người Bhutan tôn là “Đức Phật thứ hai”; tương truyền đã cưỡi hổ cái bay tới vách đá Taktsang ở Paro.">Guru Rinpoche</span> đến Bumthang chữa bệnh cho một vị vua địa phương và truyền Phật giáo Mật tông; hình ảnh của ngài đến nay vẫn hiện diện ở hầu hết các đền chùa.</p>
+
+      <p><b>Các dòng tu và thời phân tán (TK IX – XVI).</b> Suốt nhiều thế kỷ, Bhutan chưa phải là một quốc gia thống nhất mà là tập hợp các thung lũng do thủ lĩnh địa phương và các dòng tu Tây Tạng cạnh tranh ảnh hưởng. Thế kỷ XIII, <span class="nv" data-note="Phajo Drugom Zhigpo (1184–1251), nhà sư Tây Tạng đã đưa dòng Drukpa Kagyu vào miền tây Bhutan; con cháu ông trở thành những gia tộc tôn giáo có thế lực.">Phajo Drugom Zhigpo</span> mang dòng <span class="nv" data-note="Một nhánh của phái Kagyu trong Phật giáo Tây Tạng, nay là quốc giáo của Bhutan; tên nước Druk Yul cũng bắt nguồn từ đây.">Drukpa Kagyu</span> vào miền tây. Thế kỷ XV – XVI là thời của những nhà sư lập dị như <span class="nv" data-note="Drukpa Kunley (1455–1529), “vị thánh điên” dùng hài hước và tình dục để giảng đạo; biểu tượng dương vật vẽ trên tường nhà Bhutan gắn với ông.">Drukpa Kunley</span> và nhà khai mỏ kho tàng tâm linh <span class="nv" data-note="Pema Lingpa (1450–1521), vị “tertön” (người khai mở kho tàng giáo pháp) vĩ đại nhất của Bhutan, quê ở Bumthang; hoàng tộc Wangchuck được cho là hậu duệ của ông.">Pema Lingpa</span> — hai nhân vật đến nay vẫn được dân gian yêu mến.</p>
+
+      <aside class="sidenote">
+        <b>Dzong là gì?</b>
+        Dzong là pháo đài đồ sộ có tường dốc màu trắng, vừa là trụ sở hành chính của huyện, vừa là tu viện của tăng đoàn. Kiến trúc này là hiện thân của hệ thống “chhoesi” — chính quyền và tôn giáo cùng chung một mái nhà.
+      </aside>
+
+      <p><b>Zhabdrung thống nhất đất nước (1616 – 1651).</b> Năm <span class="tg">1616</span>, <span class="nv" data-note="Ngawang Namgyal (1594–1651), lãnh đạo dòng Drukpa, chạy khỏi Tây Tạng sau tranh chấp kế vị; được coi là người sáng lập quốc gia Bhutan.">Zhabdrung Ngawang Namgyal</span>, một lãnh đạo dòng Drukpa thua trong cuộc tranh chấp kế vị ở Tây Tạng, chạy sang Bhutan. Trong ba thập kỷ, ông đánh bại các đối thủ địa phương, đẩy lùi nhiều cuộc tấn công của Tây Tạng và xây dựng mạng lưới dzong khắp các thung lũng, khởi đầu bằng dzong Simtokha năm <span class="tg">1629</span>. Zhabdrung đặt ra bộ luật, mô hình cai trị kép chhoesi — một <span class="nv" data-note="Người đứng đầu tăng đoàn trung ương, chức vụ do Zhabdrung lập ra và tồn tại đến ngày nay.">Je Khenpo</span> phụ trách tôn giáo và một Desi phụ trách thế tục — cùng những nghi lễ, trang phục mà người Bhutan vẫn dùng. Khi ông mất năm <span class="tg">1651</span>, cái chết được giữ kín nhiều thập kỷ để tránh tan rã.</p>
+
+      <p><b>Thời các Desi và va chạm với Anh (1651 – 1907).</b> Không có người kế vị đủ uy tín, Bhutan rơi vào hơn hai thế kỷ tranh giành giữa các <span class="nv" data-note="Tổng đốc (penlop) các vùng; mạnh nhất là Penlop Paro ở miền tây và Penlop Trongsa ở miền trung.">penlop</span> (tổng đốc vùng). Ở phía nam, những cuộc đột kích xuống đồng bằng dẫn tới xung đột với Công ty Đông Ấn Anh từ năm 1772. Sau Chiến tranh Duar, <span class="nv" data-note="Ký năm 1865, buộc Bhutan nhượng dải đồng bằng Duar màu mỡ cho Anh để đổi lấy khoản trợ cấp hằng năm.">Hiệp ước Sinchula</span> năm <span class="tg">1865</span> lấy đi dải đất bằng màu mỡ duy nhất của Bhutan. Cuối thế kỷ XIX, Penlop Trongsa <span class="nv" data-note="Ugyen Wangchuck (1862–1926), thắng trận Changlimithang năm 1885, giúp Anh trong chuyến viễn chinh Younghusband vào Tây Tạng năm 1904, rồi được tôn làm vua đầu tiên năm 1907.">Ugyen Wangchuck</span> thắng trận Changlimithang (<span class="tg">1885</span>) và dần nắm toàn quyền.</p>
+
+      <p><b>Triều Wangchuck và mở cửa dè dặt (1907 – 1972).</b> Ngày <span class="tg">17/12/1907</span>, hội nghị các thủ lĩnh và tăng lữ ở Punakha tôn Ugyen Wangchuck làm <span class="nv" data-note="“Vua Rồng” — tước hiệu của quân chủ Bhutan.">Druk Gyalpo</span> đầu tiên — ngày này nay là Quốc khánh. Hiệp ước Punakha năm 1910 giao cho Anh quyền “hướng dẫn” đối ngoại, điều khoản sau được Ấn Độ kế thừa trong hiệp ước năm 1949. Vua thứ ba <span class="nv" data-note="Jigme Dorji Wangchuck (trị vì 1952–1972), được gọi là “cha đẻ của Bhutan hiện đại”.">Jigme Dorji Wangchuck</span> mới thực sự mở cửa: lập Quốc hội <span class="tg">1953</span>, bãi bỏ chế độ nông nô, khởi động kế hoạch 5 năm đầu tiên năm 1961 với tiền và kỹ sư Ấn Độ để làm những con đường ô tô đầu tiên, và đưa Bhutan vào Liên Hợp Quốc năm <span class="tg">1971</span>.</p>
+
+      <p><b>Vua thứ tư và “Tổng hạnh phúc quốc gia” (1972 – 2006).</b> Lên ngôi năm 16 tuổi, <span class="nv" data-note="Jigme Singye Wangchuck (sinh 1955, trị vì 1972–2006), người đưa ra khái niệm Tổng hạnh phúc quốc gia và tự nguyện thoái vị để mở đường cho dân chủ.">Jigme Singye Wangchuck</span> chủ trương phát triển có chọn lọc, gói gọn trong khái niệm <span class="tg">Tổng hạnh phúc quốc gia</span> (GNH). Mặt trái của việc bảo vệ bản sắc là chính sách “một dân tộc, một quốc gia” cuối thập niên 1980: bắt buộc mặc trang phục và theo phép tắc Driglam Namzha, siết luật quốc tịch. Căng thẳng ở miền nam bùng nổ, và khoảng <span class="tg">100.000</span> người Lhotshampa phải sống trong các trại tị nạn ở Nepal suốt gần hai thập kỷ, phần lớn sau đó được tái định cư ở Mỹ, Canada, Úc và châu Âu<a class="cite" href="#ref-1">[1]</a>. Đây vẫn là chương gây tranh cãi nhất trong lịch sử hiện đại Bhutan: chính phủ coi đó là xử lý người nhập cư bất hợp pháp, còn các tổ chức nhân quyền coi là trục xuất có hệ thống.</p>
+
+      <p><b>Dân chủ từ trên xuống (2006 – nay).</b> Năm 2006, vua thứ tư thoái vị nhường ngôi cho con trai <span class="nv" data-note="Jigme Khesar Namgyel Wangchuck (sinh 1980), vua thứ năm, đăng quang chính thức ngày 6/11/2008; học tại Anh và Mỹ.">Jigme Khesar Namgyel Wangchuck</span>. Tháng <span class="tg">3/2008</span>, Bhutan tổ chức bầu cử quốc hội đầu tiên, và ngày <span class="tg">18/7/2008</span> Hiến pháp được ban hành, chuyển đất nước sang quân chủ lập hiến — một cuộc chuyển đổi hiếm hoi mà chính nhà vua thúc đẩy, trong khi không ít người dân còn muốn giữ chế độ cũ. Bản sắc Bhutan hôm nay vì thế là sự pha trộn giữa niềm tin Kim Cương thừa, lòng tôn kính sâu sắc với hoàng gia và một ý thức mạnh mẽ về việc phải giữ mình giữa hai cường quốc.</p>
+    </div>
+
+    <figure class="band" id="the-che-quyen-luc" style="margin-inline:0;">
+      <figcaption class="band-title">Bộ máy nhà nước Bhutan</figcaption>
+      <ol class="tiers">
+        <li>
+          <span class="tier-role">Druk Gyalpo (Vua Rồng)</span>
+          <span class="tier-desc">Nguyên thủ quốc gia, biểu tượng thống nhất; phải nghỉ hưu ở tuổi 65 theo Hiến pháp</span>
+        </li>
+        <li>
+          <span class="tier-role">Quốc hội lưỡng viện · Chính phủ · Tòa án</span>
+          <span class="tier-desc">Hội đồng Quốc gia (25 ghế) và Quốc hội (47 ghế); Hội đồng Bộ trưởng do Thủ tướng đứng đầu</span>
+        </li>
+        <li>
+          <span class="tier-role">20 dzongkhag (huyện/tỉnh)</span>
+          <span class="tier-desc">Mỗi dzongkhag có dzong làm trụ sở chung cho chính quyền và tăng đoàn</span>
+        </li>
+        <li>
+          <span class="tier-role">205 gewog &amp; các thromde đô thị</span>
+          <span class="tier-desc">Cấp cơ sở với chính quyền do dân bầu</span>
+        </li>
+      </ol>
+    </figure>
+
+    <div class="prose">
+      <aside class="sidenote">
+        <b>Nhà vua có thể bị phế truất</b>
+        Hiến pháp 2008 cho phép Quốc hội khởi động thủ tục buộc nhà vua thoái vị nếu vi phạm Hiến pháp — cần ít nhất hai phần ba tổng số thành viên ủng hộ, sau đó đưa ra trưng cầu dân ý toàn quốc.
+      </aside>
+
+      <p>Bhutan là nhà nước quân chủ lập hiến đơn nhất. Nhà vua vẫn giữ vai trò rất lớn trong thực tế — bổ nhiệm 5 trong 25 thành viên Hội đồng Quốc gia, các thẩm phán tối cao và những chức vụ hiến định — nhưng quyền lập pháp và hành pháp thuộc về Quốc hội và Hội đồng Bộ trưởng. Bên cạnh bộ máy thế tục, tăng đoàn trung ương do <span class="nv" data-note="Người đứng đầu tôn giáo của Bhutan, có địa vị nghi lễ ngang hàng nhà vua.">Je Khenpo</span> đứng đầu vẫn là trụ cột của mô hình chhoesi, dù Hiến pháp yêu cầu tôn giáo đứng ngoài chính trị.</p>
+
+      <p>Bầu cử Quốc hội diễn ra theo hai vòng độc đáo: vòng sơ bộ chọn ra hai đảng có nhiều phiếu nhất, vòng tổng tuyển cử chỉ để hai đảng này tranh 47 ghế. Kết quả là mỗi nhiệm kỳ chỉ có một đảng cầm quyền và một đảng đối lập. Từ năm 2008 đến nay, cử tri Bhutan có thói quen “thay ngựa” sau mỗi nhiệm kỳ. Lần gần nhất, Đảng Dân chủ Nhân dân thắng cuộc bầu cử đầu năm 2024 và <span class="nv" data-note="Tshering Tobgay (sinh 1965), từng là Thủ tướng 2013–2018; nhậm chức nhiệm kỳ thứ hai ngày 28/1/2024.">Tshering Tobgay</span> trở lại ghế Thủ tướng từ ngày <span class="tg">28/1/2024</span><a class="cite" href="#ref-1">[1]</a>. Nhiệm kỳ này đặt trọng tâm vào phục hồi kinh tế và giữ chân người trẻ.</p>
+
+      <h2 id="kinh-te"><span class="h2-num">Phần ba</span>Kinh tế</h2>
+
+      <p>Kinh tế Bhutan nhỏ, phụ thuộc sâu vào Ấn Độ — đối tác thương mại áp đảo, nhà tài trợ lớn nhất và là nơi đồng ngultrum được neo giá ngang bằng với đồng rupee. GDP bình quân đầu người năm 2024 khoảng <span class="tg">4.250 USD</span><a class="cite" href="#ref-2">[2]</a>, và theo ước tính của IMF có thể lên khoảng <span class="tg">4.700 USD</span> năm 2026, tương đương hơn 19.000 USD tính theo sức mua tương đương<a class="cite" href="#ref-1">[1]</a>. Tháng <span class="tg">12/2023</span>, Bhutan chính thức ra khỏi nhóm các nước kém phát triển nhất (LDC) của Liên Hợp Quốc. Thất nghiệp chung thấp (khoảng 2,9% quý II/2025), nhưng tỷ lệ thất nghiệp thanh niên vẫn ở mức <span class="tg">17,3%</span><a class="cite" href="#ref-2">[2]</a>.</p>
+
+      <p>Trụ cột lớn nhất là <b>thủy điện</b>. Những con sông dốc đổ từ Himalaya được khai thác qua các dự án xây bằng vốn vay và viện trợ Ấn Độ, rồi bán điện ngược lại cho Ấn Độ. Ngày <span class="tg">11/11/2025</span>, nhà máy <span class="nv" data-note="Nhà máy thủy điện kiểu dòng chảy trên sông Punatsangchhu, 6 tổ máy; vốn hoàn toàn từ Ấn Độ, gồm 30% viện trợ và 70% vốn vay.">Punatsangchhu-II</span> công suất <span class="tg">1.020 MW</span> được Thủ tướng Ấn Độ Modi và nhà vua cùng khánh thành, nâng tổng công suất lắp đặt của Bhutan lên hơn <span class="tg">3.500 MW</span><a class="cite" href="#ref-3">[3]</a> — trong khi tiềm năng kỹ thuật ước tính tới khoảng 30.000 MW. Nông nghiệp vẫn nuôi sống phần lớn dân nông thôn, còn công nghiệp chủ yếu là luyện ferro-silic dựa trên điện giá rẻ.</p>
+
+      <aside class="sidenote">
+        <b>“Giá trị cao, lượng khách thấp”</b>
+        Thay vì du lịch đại trà, Bhutan thu phí phát triển bền vững (SDF) theo ngày với khách nước ngoài: 200 USD từ năm 2022, rồi giảm còn 100 USD từ tháng 9/2023 để kích cầu. Khách Ấn Độ chịu mức phí thấp hơn nhiều.
+      </aside>
+
+      <p>Ngành thứ hai là <b>du lịch</b>, vận hành theo triết lý “giá trị cao, lượng khách thấp”. Năm 2025, Bhutan đón khoảng <span class="tg">209.000</span> lượt khách quốc tế, tăng hơn 44% so với năm trước; khoản phí 100 USD/ngày mang về khoảng 43 triệu USD, và tỷ lệ khách ngoài Ấn Độ đã tăng lên khoảng 40%<a class="cite" href="#ref-4">[4]</a>.</p>
+
+      <p>Một chương bất ngờ là <b>tiền mã hóa</b>. Thông qua quỹ đầu tư nhà nước <span class="nv" data-note="Druk Holding and Investments — tập đoàn đầu tư thuộc nhà nước Bhutan, quản lý các doanh nghiệp quốc doanh lớn.">DHI</span>, Bhutan từng lặng lẽ dùng điện thủy điện dư thừa để đào bitcoin, đạt đỉnh khoảng 13.000 BTC vào cuối năm 2024. Đến tháng 4/2026, dữ liệu trên chuỗi cho thấy lượng nắm giữ đã giảm còn gần <span class="tg">4.000 BTC</span> sau nhiều đợt chuyển đi, với mục đích chưa được công bố rõ<a class="cite" href="#ref-5">[5]</a>.</p>
+
+      <p>Tham vọng lớn nhất là <span class="nv" data-note="Đặc khu hành chính rộng khoảng 2.500 km² ở miền nam, giáp bang Assam (Ấn Độ), có luật cơ bản riêng; do nhà vua công bố ngày 17/12/2023.">Thành phố Chánh niệm Gelephu</span> (GMC) — một đặc khu hành chính rộng khoảng <span class="tg">2.500 km²</span> ở miền nam, có khung pháp lý riêng thân thiện với doanh nghiệp, với sân bay quốc tế đang xây dựng. Tháng 12/2025, nhà vua tuyên bố cam kết dùng nguồn dự trữ bitcoin để tài trợ cho dự án<a class="cite" href="#ref-6">[6]</a>. Gelephu được kỳ vọng tạo việc làm giữ chân người trẻ, nhưng quy mô và tốc độ thu hút đầu tư vẫn là câu hỏi mở.</p>
+
+      <h2 id="van-hoa-tam-ly"><span class="h2-num">Phần bốn</span>Văn hóa &amp; tâm lý xã hội</h2>
+
+      <p>Phật giáo Kim Cương thừa thấm vào mọi ngóc ngách đời sống Bhutan: cờ cầu nguyện phấp phới trên đèo, bánh xe kinh quay bằng sức nước bên suối, những bảo tháp trắng ở ngã ba đường. Các lễ hội <span class="nv" data-note="Lễ hội tôn giáo hằng năm tôn vinh Guru Rinpoche, tổ chức ở sân các dzong và tu viện; nổi bật với điệu múa mặt nạ “cham” và tấm thangka khổng lồ (thongdrel) trưng lúc bình minh.">tsechu</span> với điệu múa mặt nạ cham là dịp cả làng tụ họp, vừa là nghi lễ vừa là hội hè. Ở miền nam, người Lhotshampa theo Ấn Độ giáo đón Dashain và Tihar.</p>
+
+      <p>Bản sắc được bảo vệ có chủ đích. Bộ quy tắc ứng xử <span class="nv" data-note="Bộ phép tắc ứng xử truyền thống quy định cách ăn mặc, chào hỏi, ngồi, ăn uống và hành xử ở nơi công cộng, được chính thức hóa từ thời Zhabdrung và tái khẳng định cuối thập niên 1980.">Driglam Namzha</span> quy định cách chào hỏi, cách ngồi và trang phục; công chức và học sinh mặc <b>gho</b> (nam) và <b>kira</b> (nữ) khi làm việc, đến trường hay vào dzong. Kiến trúc nhà mới cũng phải giữ phong cách truyền thống với khung gỗ chạm vẽ. Bắn cung là môn thể thao quốc gia — các trận đấu kéo dài cả ngày, đầy tiếng hát, nhảy múa và lời trêu chọc đối thủ.</p>
+
+      <aside class="sidenote">
+        <b>Tổng hạnh phúc quốc gia</b>
+        GNH được xây dựng quanh bốn trụ cột: phát triển kinh tế – xã hội bền vững, bảo tồn môi trường, gìn giữ văn hóa và quản trị tốt. Các khảo sát GNH định kỳ đo cả thời gian dành cho gia đình, giấc ngủ, lòng tin cộng đồng hay đời sống tâm linh.
+      </aside>
+
+      <p>Về tâm lý xã hội, người Bhutan thường được mô tả là điềm tĩnh, coi trọng cộng đồng và có lòng tôn kính rất lớn với hoàng gia — ảnh nhà vua và hoàng hậu có mặt ở hầu hết nhà dân, cửa hàng. Quan niệm nghiệp báo khiến việc sát sinh bị xem nhẹ nhàng hơn khi do người khác làm: nhiều người ăn thịt nhưng thịt thường nhập từ Ấn Độ. Xã hội tương đối bình đẳng giới ở một số mặt — ở nhiều vùng, tài sản truyền cho con gái và chàng rể về ở nhà vợ. Song thế hệ trẻ lớn lên cùng điện thoại thông minh đang cảm thấy rõ khoảng cách giữa lý tưởng “hạnh phúc” và thực tế cơ hội việc làm hạn chế.</p>
+
+      <h2 id="am-thuc"><span class="h2-num">Phần năm</span>Ẩm thực</h2>
+
+      <aside class="sidenote">
+        <b>Ema datshi</b>
+        Món quốc hồn quốc túy: ớt xanh hoặc đỏ hầm với pho mát. Ở Bhutan, ớt được coi là rau chứ không phải gia vị, và một bữa ăn “thiếu cay” gần như không tồn tại.
+      </aside>
+
+      <p>Ẩm thực Bhutan giản dị, ấm nóng và cay xé lưỡi — phù hợp với khí hậu lạnh vùng núi. Triết lý cốt lõi xoay quanh bộ ba: <b>gạo</b> (nhất là gạo đỏ), <b>ớt</b> và <b>datshi</b> — pho mát làm từ sữa bò hoặc sữa bò Tây Tạng (yak). Món ăn thường được hầm thay vì xào, ít gia vị phức tạp nhưng rất nhiều ớt; thịt bò, lợn, gà, thịt khô và mỡ lợn sấy là những nguồn đạm phổ biến.</p>
+
+      <p>Khác biệt vùng miền gắn với độ cao. Các thung lũng miền tây như Paro, Punakha trồng gạo đỏ trứ danh. Bumthang ở miền trung quá lạnh cho lúa nên dùng kiều mạch làm mì và bánh. Miền đông ăn ngô xay (kharang) thay cơm, còn miền nam mang đậm khẩu vị Nepal với dal bhat và cà ri. Vùng núi cao phía bắc sống nhờ yak: sữa, bơ, pho mát cứng chura.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Món tiêu biểu của Bhutan</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Ema datshi</span><span class="pick-desc">Ớt hầm pho mát — quốc món, xuất hiện trong gần như mọi bữa ăn.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Kewa · Shamu datshi</span><span class="pick-desc">Biến thể với khoai tây hoặc nấm hầm pho mát, dịu cay hơn cho người mới thử.</span></li>
+        <li><span class="pick-where">Miền tây</span><span class="pick-name">Gạo đỏ Bhutan</span><span class="pick-desc">Gạo lứt hạt ngắn màu hồng trồng ở thung lũng Paro, dẻo và thơm bùi.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Phaksha paa</span><span class="pick-desc">Thịt lợn (thường là ba chỉ sấy khô) hầm với củ cải và ớt khô.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Jasha maroo</span><span class="pick-desc">Gà băm nấu với cà chua, hành, gừng và ớt thành món sốt sệt ăn cùng cơm.</span></li>
+        <li><span class="pick-where">Haa</span><span class="pick-name">Hoentoe</span><span class="pick-desc">Bánh bao vỏ kiều mạch nhân củ cải phơi khô, pho mát và rau — đặc sản thung lũng Haa.</span></li>
+        <li><span class="pick-where">Bumthang</span><span class="pick-name">Puta</span><span class="pick-desc">Mì kiều mạch ép tay, trộn bơ và ớt — món của vùng không trồng được lúa.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Momo</span><span class="pick-desc">Bánh hấp gốc Tây Tạng nhân thịt, pho mát hoặc rau, chấm tương ớt ezay.</span></li>
+        <li><span class="pick-where">Miền đông</span><span class="pick-name">Kharang &amp; Zaw</span><span class="pick-desc">Ngô xay nấu thay cơm, và cơm rang giòn ăn kèm trà bơ.</span></li>
+        <li><span class="pick-where">Cả nước</span><span class="pick-name">Suja</span><span class="pick-desc">Trà bơ mặn đánh với muối — thức uống tiếp khách không thể thiếu.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <p>Đồ uống đặc trưng ngoài trà bơ <b>suja</b> là <b>ara</b> — rượu chưng cất tại nhà từ gạo, ngô hoặc kê, thường được hâm nóng với trứng và bơ trong ngày lạnh. Bên cạnh đó là thói quen nhai <b>doma</b> (cau trầu) phổ biến khắp nơi, khiến nụ cười của nhiều người dân nhuộm đỏ.</p>
+
+      <p>Văn hóa ăn uống mang tính cộng đồng. Theo truyền thống, người Bhutan ăn bằng tay phải, ngồi trên sàn quanh những chiếc bát chung. Khi được mời đồ ăn, phép lịch sự là từ chối một hai lần — câu “meshu meshu” — trước khi nhận. Trong các lễ hội và trận bắn cung, ara và các món datshi được chia sẻ hào phóng, biến bữa ăn thành một phần của nghi lễ cộng đồng.</p>
+
+      <h2 id="dia-diem"><span class="h2-num">Phần sáu</span>Địa điểm nổi tiếng</h2>
+
+      <aside class="sidenote">
+        <b>Chưa có di sản thế giới</b>
+        Dù đã phê chuẩn Công ước Di sản Thế giới từ năm 2001, Bhutan chưa đề cử chính thức địa điểm nào; 8 địa điểm nằm trong danh sách dự kiến từ năm 2012. Điệu múa trống Drametse thì đã được UNESCO ghi danh là di sản văn hóa phi vật thể.
+      </aside>
+
+      <p>Bhutan hiện có <span class="tg">0 di sản thế giới</span> được UNESCO công nhận, nhưng có <span class="tg">8 địa điểm</span> trong danh sách dự kiến, gồm nhóm năm dzong lớn (Punakha, Wangdue Phodrang, Paro, Trongsa, Dagana), tu viện Tamzhing và bốn khu bảo tồn thiên nhiên<a class="cite" href="#ref-7">[7]</a>. Phần lớn du khách đến Bhutan để chiêm ngưỡng những dzong đồ sộ, tu viện treo trên vách đá và các cung đường trekking xuyên Himalaya.</p>
+    </div>
+
+    <section class="band">
+      <h2 class="band-title">Những điểm đến định hình hình ảnh Bhutan</h2>
+      <ul class="picks">
+        <li><span class="pick-where">Paro</span><span class="pick-name">Tu viện Taktsang (Hang Hổ)</span><span class="pick-desc">Tu viện bám trên vách đá cao khoảng 900 m so với thung lũng — biểu tượng số một của Bhutan.</span></li>
+        <li><span class="pick-where">Punakha</span><span class="pick-name">Dzong Punakha</span><span class="pick-desc">Dzong đẹp nhất nước, nằm giữa hợp lưu hai dòng sông Pho Chhu và Mo Chhu, nơi các vua đăng quang.</span></li>
+        <li><span class="pick-where">Paro</span><span class="pick-name">Rinpung Dzong &amp; Bảo tàng Quốc gia</span><span class="pick-desc">Pháo đài thế kỷ XVII và tháp canh Ta Dzong cải tạo thành bảo tàng.</span></li>
+        <li><span class="pick-where">Thimphu</span><span class="pick-name">Thủ đô Thimphu</span><span class="pick-desc">Tashichho Dzong, tượng Phật Dordenma khổng lồ trên đồi và ngã tư có cảnh sát chỉ đường bằng tay.</span></li>
+        <li><span class="pick-where">Thimphu – Punakha</span><span class="pick-name">Đèo Dochula</span><span class="pick-desc">108 bảo tháp tưởng niệm trên đèo cao khoảng 3.100 m, ngày quang thấy cả dãy Himalaya.</span></li>
+        <li><span class="pick-where">Wangdue</span><span class="pick-name">Thung lũng Phobjikha</span><span class="pick-desc">Thung lũng băng hà nơi sếu cổ đen từ Tây Tạng về trú đông, bên tu viện Gangtey.</span></li>
+        <li><span class="pick-where">Bumthang</span><span class="pick-name">Thung lũng Bumthang</span><span class="pick-desc">“Trái tim tâm linh” với Jambay Lhakhang, Kurjey Lhakhang và quê hương Pema Lingpa.</span></li>
+        <li><span class="pick-where">Trung tâm</span><span class="pick-name">Dzong Trongsa</span><span class="pick-desc">Dzong lớn nhất nước, cái nôi quyền lực của triều Wangchuck.</span></li>
+        <li><span class="pick-where">Punakha</span><span class="pick-name">Chimi Lhakhang</span><span class="pick-desc">Ngôi đền của “vị thánh điên” Drukpa Kunley, nơi các cặp vợ chồng đến cầu con.</span></li>
+        <li><span class="pick-where">Miền tây</span><span class="pick-name">Thung lũng Haa</span><span class="pick-desc">Thung lũng hẻo lánh mới mở cho du khách từ năm 2002, giữ nguyên nhịp sống làng quê.</span></li>
+        <li><span class="pick-where">Miền nam</span><span class="pick-name">Vườn quốc gia Royal Manas</span><span class="pick-desc">Rừng nhiệt đới nối liền Ấn Độ, nơi sống của hổ, voi, tê giác một sừng.</span></li>
+        <li><span class="pick-where">Miền bắc</span><span class="pick-name">Cung trekking Snowman</span><span class="pick-desc">Một trong những cung đi bộ đường dài khó nhất thế giới, kéo dài gần một tháng qua nhiều đèo trên 5.000 m.</span></li>
+      </ul>
+    </section>
+
+    <div class="prose">
+      <h2 id="vi-the-quoc-te"><span class="h2-num">Phần bảy</span>Vị thế quốc tế &amp; vấn đề nóng</h2>
+
+      <aside class="sidenote">
+        <b>Ngoại giao “khép kín”</b>
+        Bhutan chủ trương không có quan hệ ngoại giao với bất kỳ thành viên thường trực nào của Hội đồng Bảo an Liên Hợp Quốc, kể cả Trung Quốc và Mỹ, dù vẫn duy trì liên lạc không chính thức.
+      </aside>
+
+      <p>Về đối ngoại, Bhutan là một trong những quốc gia thận trọng nhất thế giới. Ấn Độ là đối tác chiến lược gần như duy nhất — nguồn viện trợ, thị trường điện, tuyến giao thông ra biển và cả lực lượng huấn luyện quân sự. Bhutan là thành viên Liên Hợp Quốc, <span class="nv" data-note="Hiệp hội Nam Á vì sự hợp tác khu vực — Bhutan là thành viên sáng lập năm 1985.">SAARC</span> và BIMSTEC, và giữ quan hệ ngoại giao chính thức với một số lượng nước khiêm tốn. Năm 2003, quân đội Bhutan mở chiến dịch quét sạch các nhóm vũ trang ly khai Ấn Độ trú ẩn ở rừng phía nam, củng cố lòng tin với New Delhi.</p>
+
+      <p>Vấn đề nóng nhất trong nước là <b>làn sóng di cư</b>. Sau đại dịch, hàng chục nghìn người trẻ có học vấn rời đi, chủ yếu sang Úc theo diện du học và tay nghề. Theo báo chí Bhutan, khoảng <span class="tg">65.000</span> người Bhutan đang sống hoặc làm việc ở nước ngoài — tương đương gần 9% dân số; riêng giai đoạn 2024 – 2025 có khoảng 1.500 công chức nghỉ việc tự nguyện, và kiều hối từ Úc năm 2025 đạt khoảng 253 triệu USD<a class="cite" href="#ref-8">[8]</a>. Với một quốc gia chưa tới tám mươi vạn dân, đây là thách thức mang tính sống còn, đặt dấu hỏi lên chính câu chuyện “đất nước hạnh phúc”.</p>
+
+      <p>Vấn đề đối ngoại nổi bật là <b>biên giới với Trung Quốc</b>, vốn chưa từng được phân định. Hai nước đã thỏa thuận “lộ trình ba bước” năm 2021 và lập nhóm kỹ thuật chung về phân định, phân giới. Cuộc họp nhóm chuyên gia lần thứ 15 diễn ra tại Bắc Kinh từ ngày <span class="tg">30/3 – 1/4/2026</span>, hai bên khẳng định tiến triển và cam kết duy trì đà đàm phán<a class="cite" href="#ref-9">[9]</a>. Vấn đề nhạy cảm vì một phần khu vực tranh chấp nằm gần cao nguyên <span class="nv" data-note="Cao nguyên tiếp giáp ba nước Bhutan – Trung Quốc – Ấn Độ, nơi từng xảy ra cuộc đối đầu quân sự Trung – Ấn năm 2017.">Doklam</span>, sát “cổ gà” Siliguri chiến lược của Ấn Độ — mọi nhượng bộ của Thimphu đều bị New Delhi theo dõi sát sao. Ngoài ra, sự phụ thuộc vào thủy điện trước rủi ro biến đổi khí hậu, khả năng trả nợ các dự án điện, và bài toán làm sao để Gelephu thực sự thành động lực tăng trưởng là những câu hỏi lớn cho thập kỷ tới.</p>
+    </div>
+
+    <section class="band" id="dieu-thu-vi">
+      <h2 class="band-title">10 điều thú vị về Bhutan</h2>
+      <ol class="funs">
+        <li><b>Đo bằng hạnh phúc.</b> Từ thập niên 1970, vua thứ tư tuyên bố Tổng hạnh phúc quốc gia quan trọng hơn GDP; năm 2011, Liên Hợp Quốc thông qua nghị quyết do Bhutan đề xuất về hạnh phúc như một mục tiêu phát triển.</li>
+        <li><b>Âm carbon.</b> Với hơn 70% lãnh thổ là rừng và Hiến pháp bắt buộc giữ tối thiểu 60%, Bhutan hấp thụ nhiều khí nhà kính hơn lượng thải ra.</li>
+        <li><b>Ngọn núi chưa ai chinh phục.</b> Gangkhar Puensum (7.570 m) được xem là đỉnh núi cao nhất thế giới chưa có người lên tới, vì Bhutan cấm leo các đỉnh cao trên 6.000 m để tôn trọng thần núi<a class="cite" href="#ref-1">[1]</a>.</li>
+        <li><b>Thủ đô không có đèn giao thông.</b> Ở Thimphu, cảnh sát mặc đồng phục đứng chỉ đường bằng những động tác tay uyển chuyển tại ngã tư trung tâm; đèn tín hiệu từng được lắp thử nhưng bị gỡ vì người dân không thích.</li>
+        <li><b>Truyền hình đến năm 1999.</b> Bhutan là một trong những nước cuối cùng trên thế giới cho phép truyền hình và Internet, đúng dịp kỷ niệm 25 năm trị vì của vua thứ tư.</li>
+        <li><b>Ớt là rau, không phải gia vị.</b> Món quốc hồn ema datshi dùng ớt làm nguyên liệu chính, và chợ nào cũng có những núi ớt phơi đỏ rực trên mái nhà vào mùa thu.</li>
+        <li><b>Vua phải nghỉ hưu.</b> Hiến pháp 2008 quy định nhà vua thoái vị ở tuổi 65, và cho phép Quốc hội khởi động thủ tục buộc vua thoái vị nếu vi phạm Hiến pháp.</li>
+        <li><b>Từng cấm bán thuốc lá.</b> Năm 2004, Bhutan trở thành nước đầu tiên cấm bán thuốc lá trên toàn quốc; lệnh cấm chỉ được nới lỏng năm 2021 để hạn chế buôn lậu qua biên giới thời COVID-19.</li>
+        <li><b>Linh vật kỳ quặc.</b> Con vật quốc gia là takin, trông như lai giữa bò và dê; truyền thuyết kể rằng Drukpa Kunley đã ghép đầu dê vào bộ xương bò để tạo ra nó.</li>
+        <li><b>Một trong những sân bay khó nhất thế giới.</b> Đường băng Paro nằm giữa thung lũng hẹp vây quanh bởi núi cao, chỉ một nhóm nhỏ phi công được huấn luyện đặc biệt mới được phép hạ cánh, và chỉ bay ban ngày.</li>
+      </ol>
+    </section>
+
+    <section class="band" id="ghi-nho">
+      <h2 class="band-title">Ghi nhớ nhanh</h2>
+      <ul class="memo">
+        <li>Bhutan có khoảng <span class="tg">784.000</span> dân, diện tích <span class="tg">38.394 km²</span>, nằm giữa Ấn Độ và Trung Quốc; thủ đô Thimphu.</li>
+        <li>Trục lịch sử: Guru Rinpoche (TK VIII) → Zhabdrung thống nhất (<span class="tg">1616</span>) → thời Desi → triều Wangchuck (<span class="tg">1907</span>) → LHQ (1971) → Hiến pháp (<span class="tg">2008</span>).</li>
+        <li>Mô hình chhoesi: chính quyền và tăng đoàn cùng chung dzong; Je Khenpo đứng đầu tôn giáo.</li>
+        <li>Quân chủ lập hiến từ 2008; vua Jigme Khesar Namgyel Wangchuck; Thủ tướng Tshering Tobgay từ <span class="tg">1/2024</span>.</li>
+        <li>Kinh tế dựa vào thủy điện bán cho Ấn Độ (hơn <span class="tg">3.500 MW</span> sau Punatsangchhu-II) và du lịch “giá trị cao” với phí 100 USD/ngày.</li>
+        <li>Ẩm thực: gạo đỏ, ớt và pho mát — ema datshi là quốc món; trà bơ suja, rượu ara.</li>
+        <li>Chưa có di sản thế giới UNESCO (8 địa điểm dự kiến); biểu tượng là tu viện Taktsang và dzong Punakha.</li>
+        <li>Vấn đề nóng: làn sóng di cư sang Úc, đàm phán biên giới với Trung Quốc, dự án Gelephu.</li>
+      </ul>
+    </section>
+
+    <section class="band" id="on-tap">
+      <h2 class="band-title">Câu hỏi ôn tập</h2>
+      <ol class="quiz">
+        <li>
+          <div class="q-num">Câu 1</div>
+          <p class="q-text">Ai là người thống nhất Bhutan thành một quốc gia, và ông đến Bhutan năm nào?</p>
+          <details><summary>Xem đáp án</summary><p>Zhabdrung Ngawang Namgyal, lãnh đạo dòng Drukpa lưu vong từ Tây Tạng, đến Bhutan năm 1616.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 2</div>
+          <p class="q-text">Quốc khánh Bhutan (17/12) kỷ niệm sự kiện gì?</p>
+          <details><summary>Xem đáp án</summary><p>Ngày 17/12/1907, Ugyen Wangchuck được tôn làm Druk Gyalpo đầu tiên tại Punakha, mở đầu triều Wangchuck.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 3</div>
+          <p class="q-text">Điều gì đặc biệt trong cách Bhutan chuyển sang dân chủ năm 2008?</p>
+          <details><summary>Xem đáp án</summary><p>Chính nhà vua chủ động thúc đẩy: vua thứ tư thoái vị, Hiến pháp 2008 giới hạn quyền lực hoàng gia, quy định vua nghỉ hưu ở tuổi 65 và có thể bị buộc thoái vị.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 4</div>
+          <p class="q-text">Hai nguồn thu ngoại tệ chủ lực của Bhutan là gì?</p>
+          <details><summary>Xem đáp án</summary><p>Thủy điện bán cho Ấn Độ và du lịch “giá trị cao, lượng khách thấp” với phí phát triển bền vững 100 USD/ngày.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 5</div>
+          <p class="q-text">Ba thành phần cốt lõi của ẩm thực Bhutan là gì, và món nào là quốc món?</p>
+          <details><summary>Xem đáp án</summary><p>Gạo (nhất là gạo đỏ), ớt và pho mát datshi; quốc món là ema datshi — ớt hầm pho mát.</p></details>
+        </li>
+        <li>
+          <div class="q-num">Câu 6</div>
+          <p class="q-text">Bhutan có bao nhiêu di sản thế giới UNESCO? Kể tên hai địa điểm biểu tượng của nước này.</p>
+          <details><summary>Xem đáp án</summary><p>Chưa có di sản thế giới nào (8 địa điểm trong danh sách dự kiến). Hai biểu tượng: tu viện Taktsang (Hang Hổ) ở Paro và dzong Punakha.</p></details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="band" id="tham-khao">
+      <h2 class="band-title">Tài liệu tham khảo</h2>
+      <ol class="refs">
+        <li id="ref-1">Wikipedia contributors. <i>Bhutan</i>. Wikipedia, Bách khoa toàn thư mở (tổng hợp diện tích, cơ cấu tôn giáo 2020, GDP theo IMF World Economic Outlook 2026, lịch sử và chính trị). <a href="https://en.wikipedia.org/wiki/Bhutan" target="_blank" rel="noopener">en.wikipedia.org/wiki/Bhutan</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-2">National Statistics Bureau of Bhutan. <i>2nd Quarter Socio-Economic Indicators 2025</i>. 2025 (dân số dự báo 2025, GDP/người 2024, lao động – việc làm quý II/2025). <a href="https://www.nsb.gov.bt/wp-content/uploads/dlm_uploads/2025/09/2nd-Quarter-Socio-Economic-Indicators-2025.pdf" target="_blank" rel="noopener">nsb.gov.bt</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-3">The Tribune (India). <i>PM Modi, Bhutan King inaugurate Punatsangchhu-II hydropower project</i>. Tháng 11/2025. <a href="https://www.tribuneindia.com/news/world/pm-modi-bhutan-king-inaugurate-punatsangchhu-ii-hydropower-project-marking-new-milestone-in-bilateral-energy-partnership" target="_blank" rel="noopener">tribuneindia.com</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-4">India Outbound. <i>Bhutan registers 44.3 pc rise in tourist arrivals in 2025</i>. 2026. <a href="https://indiaoutbound.info/?p=212033" target="_blank" rel="noopener">indiaoutbound.info</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-5">The Block. <i>Bhutan moves $23 million worth of bitcoin; total holdings down 70% from peak</i>. 9/4/2026. <a href="https://www.theblock.co/post/396818/bhutan-moves-23-million-worth-bitcoin" target="_blank" rel="noopener">theblock.co</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-6">Wikipedia contributors. <i>Gelephu Mindfulness City</i>. Wikipedia, Bách khoa toàn thư mở. <a href="https://en.wikipedia.org/wiki/Gelephu_Mindfulness_City" target="_blank" rel="noopener">en.wikipedia.org/wiki/Gelephu_Mindfulness_City</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-7">UNESCO World Heritage Centre. <i>Bhutan — States Parties</i>. <a href="https://whc.unesco.org/en/statesparties/bt" target="_blank" rel="noopener">whc.unesco.org/en/statesparties/bt</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-8">Asia News Network (Kuensel). <i>The quiet exodus: Why young, skilled, and educated Bhutanese leave</i>. 2026. <a href="https://asianews.network/the-quiet-exodus-why-young-skilled-and-educated-bhutanese-leave/" target="_blank" rel="noopener">asianews.network</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+        <li id="ref-9">Ministry of Foreign Affairs of the People's Republic of China. <i>The 15th Expert Group Meeting on the China-Bhutan Boundary Issues Held in Beijing</i>. 4/2026. <a href="https://www.fmprc.gov.cn/eng/wjb/zzjg_663340/bianhaisi_eng_665278/bianhaixiangguanxinwen_665280/202604/t20260401_11884879.html" target="_blank" rel="noopener">fmprc.gov.cn</a><span class="ref-meta">Truy cập ngày 2/10/2026.</span></li>
+      </ol>
+      <p class="band-foot">Số liệu định lượng (dân số, diện tích, GDP, du lịch, di cư) được viết lại theo cách hiểu của người soạn, không sao chép nguyên văn nguồn. Các chi tiết còn tranh cãi — như khủng hoảng người Lhotshampa thập niên 1990 hay các khu vực tranh chấp biên giới với Trung Quốc — được trình bày ở mức khái quát, nêu rõ các quan điểm khác nhau.</p>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  /* reading progress */
+  var bar = document.getElementById('progress');
+  function tick(){
+    var h = document.documentElement;
+    var top = h.scrollTop || document.body.scrollTop || window.scrollY || 0;
+    var max = (h.scrollHeight || document.body.scrollHeight) - (h.clientHeight || window.innerHeight);
+    bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+  }
+  window.addEventListener('scroll', tick, {passive:true});
+  window.addEventListener('resize', tick);
+  tick();
+
+  /* scroll spy */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc-list a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if (links.length) links[0].classList.add('is-active');
+  if ('IntersectionObserver' in window && targets.length){
+    var io = new IntersectionObserver(function(){
+      var activeId = null;
+      for (var i = 0; i < targets.length; i++){
+        var r = targets[i].getBoundingClientRect();
+        if (r.top <= window.innerHeight * 0.35) activeId = targets[i].id;
+      }
+      if (!activeId) activeId = targets[0].id;
+      links.forEach(function(a){
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + activeId);
+      });
+    }, {rootMargin:'-20% 0px -60% 0px', threshold:[0,1]});
+    targets.forEach(function(t){ io.observe(t); });
+  }
+
+  /* name tooltips */
+  var tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function place(el){
+    tip.textContent = el.getAttribute('data-note');
+    tip.hidden = false;
+    var w = Math.min(280, window.innerWidth - 24);
+    tip.style.width = w + 'px';
+    var r = el.getBoundingClientRect();
+    var left = r.left + r.width / 2 - w / 2;
+    left = Math.max(12, Math.min(left, window.innerWidth - w - 12));
+    tip.style.left = left + 'px';
+    var th = tip.offsetHeight;
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.top = top + 'px';
+  }
+  function hide(){ tip.hidden = true; }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-note]'), function(el){
+    el.setAttribute('tabindex','0');
+    el.addEventListener('mouseenter', function(){ place(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function(){ place(el); });
+    el.addEventListener('blur', hide);
+  });
+  window.addEventListener('scroll', hide, {passive:true});
+})();
+</script>
